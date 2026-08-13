@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+.DS_Store
+Thumbs.db
+08_INPUT/audio/
+09_ARCHIVE/tmp/

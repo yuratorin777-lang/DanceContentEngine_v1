@@ -1,0 +1,68 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-08-13T15:07:27.339Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 0,
+    "sourcesFailed": 6,
+    "rawFacts": 0,
+    "uniqueFacts": 0,
+    "relevantSignals": 0,
+    "durationMs": 15076
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": false,
+      "count": 0,
+      "durationMs": 62,
+      "error": "getaddrinfo EAI_AGAIN news.google.com"
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": false,
+      "count": 0,
+      "durationMs": 5002,
+      "error": "Request timeout"
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": false,
+      "count": 0,
+      "durationMs": 3,
+      "error": "getaddrinfo EAI_AGAIN news.google.com"
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": false,
+      "count": 0,
+      "durationMs": 5001,
+      "error": "Request timeout"
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": false,
+      "count": 0,
+      "durationMs": 2,
+      "error": "getaddrinfo EAI_AGAIN news.google.com"
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": false,
+      "count": 0,
+      "durationMs": 5004,
+      "error": "Request timeout"
+    }
+  ],
+  "signals": []
+}

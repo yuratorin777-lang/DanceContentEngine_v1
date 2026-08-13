@@ -1,0 +1,110 @@
+DanceContentEngine_v1
+├── 00_SYSTEM
+│   ├── AI_WORK_RULES.md
+│   ├── ANALYST_BRIEF.md
+│   ├── DATA_FLOW.md
+│   ├── DOCUMENT_RULES.md
+│   ├── README.md
+│   ├── ROLES.md
+│   └── SYSTEM_INDEX.md
+├── 01_KNOWLEDGE
+│   ├── .gitkeep
+│   ├── KNOWLEDGE_INDEX.md
+│   ├── OWNER_INPUT_RULES.md
+│   └── README.md
+├── 02_RESEARCH
+│   ├── Аналитик
+│   │   ├── SERPUKHOV-AUDIENCE-ANALYSIS.md
+│   │   ├── SERPUKHOV-COMPETITOR-MAP.md
+│   │   ├── SERPUKHOV-EXECUTIVE-BRIEF.md
+│   │   ├── SERPUKHOV-HANDOVER.md
+│   │   ├── SERPUKHOV-MARKET-ANALYSIS.md
+│   │   └── SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
+│   ├── .gitkeep
+│   ├── AI-ANALYST-BRIEF.md
+│   ├── AI-ANALYST-ONBOARDING.md
+│   ├── AI-ANALYST-ROLE.md
+│   ├── ANALYST_BRIEF.md
+│   ├── ANALYST-DELIVERABLE-STANDARD.md
+│   ├── README.md
+│   ├── RESEARCH_INDEX.md
+│   ├── SERPUKHOV_ANALYSIS_BRIEF.md
+│   └── SERPUKHOV-RESEARCH-TASK.md
+├── 03_AUDIENCE
+│   ├── .gitkeep
+│   ├── AUDIENCE_INDEX.md
+│   └── README.md
+├── 04_CONTENT
+│   ├── .gitkeep
+│   ├── CONTENT_INDEX.md
+│   ├── CONTENT_WORK_RULES.md
+│   └── README.md
+├── 05_SEO
+│   ├── .gitkeep
+│   ├── LOCAL_SEO_RULES.md
+│   ├── README.md
+│   └── SEO_INDEX.md
+├── 06_ANALYTICS
+│   ├── .gitkeep
+│   ├── ANALYTICS_INDEX.md
+│   └── README.md
+├── 07_AUTOMATION
+│   ├── Rardar_world feed
+│   │   ├── engine
+│   │   │   ├── config.json
+│   │   │   ├── radar_engine.js
+│   │   │   ├── RADAR_PROFILE_DANCE_SERPUKHOV.md
+│   │   │   └── README.md
+│   │   ├── ENGINE_INTEGRATION.md
+│   │   ├── package.json
+│   │   ├── RADAR_BUILD_PLAN.md
+│   │   ├── RADAR_ENGINE.md
+│   │   ├── RADAR_ITEM_SCHEMA.md
+│   │   ├── RADAR_OUTPUT_SPEC
+│   │   ├── RADAR_PROFILE_DANCE_SERPUKHOV.md
+│   │   ├── RADAR_SOURCE_STRATEGY.md
+│   │   └── README.md
+│   ├── .gitkeep
+│   ├── AUTOMATION_INDEX.md
+│   └── README.md
+├── 08_INPUT
+│   ├── .gitkeep
+│   ├── INPUT_INDEX.md
+│   └── README.md
+├── 09_ARCHIVE
+│   ├── .gitkeep
+│   └── README.md
+├── apps
+│   ├── web
+│   │   ├── public
+│   │   │   ├── file.svg
+│   │   │   ├── globe.svg
+│   │   │   ├── next.svg
+│   │   │   ├── vercel.svg
+│   │   │   └── window.svg
+│   │   ├── src
+│   │   │   └── app
+│   │   │       ├── favicon.ico
+│   │   │       ├── globals.css
+│   │   │       ├── layout.tsx
+│   │   │       └── page.tsx
+│   │   ├── .gitignore
+│   │   ├── AGENTS.md
+│   │   ├── CLAUDE.md
+│   │   ├── eslint.config.mjs
+│   │   ├── next-env.d.ts
+│   │   ├── next.config.ts
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── README.md
+│   │   └── tsconfig.json
+│   ├── README_NEXT.md
+│   └── README.md
+├── .gitignore
+├── CREATE_NEXT.cmd
+├── INTERVIEW_150_QUESTIONS.md
+├── project_tree.js
+├── README.md
+├── START_HERE.md
+└── structure.txt

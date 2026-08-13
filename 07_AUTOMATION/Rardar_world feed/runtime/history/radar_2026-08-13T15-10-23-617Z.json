@@ -1,0 +1,124 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-08-13T15:10:23.611Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 90,
+    "uniqueFacts": 6,
+    "relevantSignals": 2,
+    "durationMs": 5357
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 15,
+      "durationMs": 796,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 15,
+      "durationMs": 773,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 15,
+      "durationMs": 1423,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 875,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 821,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 15,
+      "durationMs": 646,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "google-news-dance-health-injury-aHR0cHM6Ly9uZXdzLmdvb2ds",
+      "source": "Google News — dance health injury",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Teenager Overcomes Two Injuries to Dance in ‘The Nutcracker’ - Stanford Children's Health",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWFE0SVpkWmRPMWNMSkxtRkVDLV9nNFl4UXJZcjRjV1laWDFOazF5S3VucDZjbDJwNFBudVJzYUUxWXpKYzhRTU5YMzFqVlUtdXo5TE5Hclp3VVo0Z29nN0hWcFBoWUhOV2dacFdZdDdxZGl2UE9jY1oyMmtETk4zVllVSDdwdlVtNlpoNlVhRjVsRHlr?oc=5",
+      "content": "Teenager Overcomes Two Injuries to Dance in ‘The Nutcracker’ &nbsp;&nbsp; Stanford Children's Health",
+      "publishedAt": "2023-12-07T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:10:23.605Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 67,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "HEALTH_SAFETY": [
+            "health"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "google-news-dance-world-championships-aHR0cHM6Ly9uZXdzLmdvb2ds",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dance Worlds 2026 Performance Order & Schedule - FloCheer",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS0xVWTl3VFBrVmVncGhCYTNBVEZMU0lIN1Ffell2ejMtS05mbEV6RTJfbl9CNmdvVDRFNmwzbEdCUTk0U2VjYk5lRk1MdF84aEsxRnhaMkVFcUx1LUFTU0llOVV5b2ZvU1hkTDlVcGFiaEg2cUh3YUdfaWtuMXpMckJ2cm5WM0dVVnRxYnk2dEc?oc=5",
+      "content": "Dance Worlds 2026 Performance Order & Schedule &nbsp;&nbsp; FloCheer",
+      "publishedAt": "2026-04-20T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:10:22.137Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

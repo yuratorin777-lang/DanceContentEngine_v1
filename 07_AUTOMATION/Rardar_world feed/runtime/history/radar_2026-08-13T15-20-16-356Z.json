@@ -1,0 +1,1060 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-08-13T15:20:16.349Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 90,
+    "uniqueFacts": 57,
+    "duplicatesRemoved": 33,
+    "relevantSignals": 35,
+    "durationMs": 4040
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 15,
+      "durationMs": 744,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 15,
+      "durationMs": 501,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 15,
+      "durationMs": 813,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 651,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 760,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 15,
+      "durationMs": 516,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0a2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Международный день танца на видеоплатформе Leo Classics - Belcanto.ru",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GVWUzVFEwWlRTeWE0UXowbGx0MkV6OEtOTzExTGpVdTl0UEVZaTIxbEV2UUo4aEFSaDBKanlkRGMyWkhsekJvbG0zX3pRdw?oc=5",
+      "content": "Международный день танца на видеоплатформе Leo Classics &nbsp;&nbsp; Belcanto.ru",
+      "publishedAt": "2025-04-27T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.574Z",
+      "analysis": {
+        "relevance": 92,
+        "relevanceLevel": "HIGH",
+        "contentPotential": 100,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "международн",
+            "международ"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4MGZ2eDNs",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "The effects of early childhood dancesport intervention on executive function in preschool children: a randomized controlled trial - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rb1dEZm0waFlnWGVlb0sxY19Uc2lCblZ0bUl4V292dU5mVE9GMVBxYnNCUnpueFo0bS1oTm9aeWdHbjcyVHc3LWF4bWJRMlZoT2ctbFE1NmtrRzgwd1RZ?oc=5",
+      "content": "The effects of early childhood dancesport intervention on executive function in preschool children: a randomized controlled trial &nbsp;&nbsp; Nature",
+      "publishedAt": "2025-07-11T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.391Z",
+      "analysis": {
+        "relevance": 75,
+        "relevanceLevel": "HIGH",
+        "contentPotential": 83,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "UC Dance Team represents US at ICU World Championships - The News Record",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5",
+      "content": "UC Dance Team represents US at ICU World Championships &nbsp;&nbsp; The News Record",
+      "publishedAt": "2026-05-07T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.047Z",
+      "analysis": {
+        "relevance": 70,
+        "relevanceLevel": "HIGH",
+        "contentPotential": 88,
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Battle Ground longboarder makes history with eighth-place world championship finish - The Reflector",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT201cVhIbXJzajNNWkRjNjA2SS1RT1dyYzEtSHZpNWZuSWhpNTFiSVpHby00a0x4LWpXYXBYVzVtcTQyYzBGcnpiZTRzRG9rUlhzd2RjWXVYbWlXdm5OZzJLbFNUSkZtVzVINW50YXU0ai1nUUsyRnM0QzdmdzF6ZEdPUkx6cDRPaWdFTXlvTU02NzhmMzh3dFd5T3hVVlUzb0pqT2xpbzlRNG5IenJDWURhbzRrM2oxcWZyZUtqWmlVWUcy?oc=5",
+      "content": "Battle Ground longboarder makes history with eighth-place world championship finish &nbsp;&nbsp; The Reflector",
+      "publishedAt": "2026-08-11T19:48:37.000Z",
+      "collectedAt": "2026-08-13T15:20:15.045Z",
+      "analysis": {
+        "relevance": 65,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 73,
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Marquette student places in Irish Dance World Championship - marquettewire.org",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5",
+      "content": "Marquette student places in Irish Dance World Championship &nbsp;&nbsp; marquettewire.org",
+      "publishedAt": "2026-04-14T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.046Z",
+      "analysis": {
+        "relevance": 65,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 73,
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "U.S. Sends Full Slate of Skaters to World Championships - U.S. Figure Skating",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU2RyWFFNajdFY3pJNEU3UEdpM05ZdU1tVTVoRzlLT2s4dUp0REtna1BLYXdfdU9VNHIzVkRmTU53bm1uaTB6SGVNQjNkLUxXSC11eGs1bDF4WDR2bDNrOUc0eFVvSzZnNHpoTmJaOGlna2NmcDBsMDZKZXdXeGVIa0ZOTkl2c1hyRnlmSUVTWjMwdGhTTEVaQzB5Z3RabEdFdW1KMmVwNzJzU0ZtUXNqTTJERzMtdkxILVh1NnFsMG9fdmVPLU1mcjdR?oc=5",
+      "content": "U.S. Sends Full Slate of Skaters to World Championships &nbsp;&nbsp; U.S. Figure Skating",
+      "publishedAt": "2026-03-24T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.048Z",
+      "analysis": {
+        "relevance": 65,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 73,
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "source": "Google News — Серпухов дети танцы",
+      "sourceScope": "LOCAL",
+      "sourceWeight": 1,
+      "title": "Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5",
+      "content": "Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды &nbsp;&nbsp; Смитанка",
+      "publishedAt": "2026-06-05T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.064Z",
+      "analysis": {
+        "relevance": 62,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 70,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "Серпухов",
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6Z2ZidnY5",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "NEW RESEARCH ASSOCIATES DANCE AND POSITIVE AFFECT IN CHILDREN AND ADOLESCENTS - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVjdiaG92YzV5ZmlkWFdDZk03MzkwdXdsNkdUbng1bmtlWW9IeDdyeFNqRy1pWUdMZGxldFp4Y0QzMkhqM0U2b0FkVG5nM2d1MEh5ZmJ2OXZlS0hBdVNMdVZhOFZ3MUpzZlptZ1MxaEQ4UE05UlE2NGlSQ2hlaUVSVFN0R1piNHVFekkwR0RKdlQ4b2hlZnEzR2dMVW1VVzZjSm9PU0hWVWhadzhkN2ZfdjN1a0llbEJTS0VRNm82ajhrTVZXZjYteG1kLUFsZw?oc=5",
+      "content": "NEW RESEARCH ASSOCIATES DANCE AND POSITIVE AFFECT IN CHILDREN AND ADOLESCENTS &nbsp;&nbsp; PR Newswire",
+      "publishedAt": "2026-06-16T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.389Z",
+      "analysis": {
+        "relevance": 62,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 80,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children",
+            "adolescent"
+          ],
+          "CONTENT_SIGNAL": [
+            "new",
+            "research"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxd2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Как студия \"Лариса\" развивала культуру танца в Барнауле - Алтапресс — новости Барнаула и Алтайского края",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbnJtVlhXOE5CVXc1NlRRR2NTTEkweFhPUXNLNjNXOC1TQ0ItN2FXN3cwWWdnZ1cxRzdJamJlVnhyU1FtMXgtTmtkVFVDTllIa0gxV3VGOUQwbDBOel9oYzZCVV9KTDJlZmFGeUR2UlM0UlVXWjEyTGR5d3FCZXdvZ1BuSzludFdrUkdVLUFFYWw4NEduMEV6NVRNQTZMZ0NfcnREXzIzSUpZV2Vha1lrcmh5TElqdFdqS1g5dnJsUGdtdEJVbGpseG9XQk95WV9va3lvTjZMRQ?oc=5",
+      "content": "Как студия \"Лариса\" развивала культуру танца в Барнауле &nbsp;&nbsp; Алтапресс — новости Барнаула и Алтайского края",
+      "publishedAt": "2025-09-03T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.574Z",
+      "analysis": {
+        "relevance": 61,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 79,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов",
+            "как"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "source": "Google News — dance health injury",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Teenager Overcomes Two Injuries to Dance in ‘The Nutcracker’ - Stanford Children's Health",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWFE0SVpkWmRPMWNMSkxtRkVDLV9nNFl4UXJZcjRjV1laWDFOazF5S3VucDZjbDJwNFBudVJzYUUxWXpKYzhRTU5YMzFqVlUtdXo5TE5Hclp3VVo0Z29nN0hWcFBoWUhOV2dacFdZdDdxZGl2UE9jY1oyMmtETk4zVllVSDdwdlVtNlpoNlVhRjVsRHlr?oc=5",
+      "content": "Teenager Overcomes Two Injuries to Dance in ‘The Nutcracker’ &nbsp;&nbsp; Stanford Children's Health",
+      "publishedAt": "2023-12-07T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:16.334Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 67,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "HEALTH_SAFETY": [
+            "health"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "The influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial - Frontiers",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGVjNEFWRzZZR1VrcnVCUFpEMy1uMjVtbWZ3MWZFeGtXeWJ5b19kR1pleWFRa29qNGhCTVF4cjV2em9HanpYbkxkRF85eTNnLTNvTXpDWTQtNVdyLVJZVTV1TmtLUTBKX2g2MHo4RW5pWlpIRnJpN0FMTUN3MG0yUmxXMjdiVGlsam5SMnJtTjA?oc=5",
+      "content": "The influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial &nbsp;&nbsp; Frontiers",
+      "publishedAt": "2026-07-17T19:43:45.000Z",
+      "collectedAt": "2026-08-13T15:20:14.389Z",
+      "analysis": {
+        "relevance": 58,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 66,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllMGZ2eDNs",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "How Dance Develops In Children - Association for Psychological Science",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5",
+      "content": "How Dance Develops In Children &nbsp;&nbsp; Association for Psychological Science",
+      "publishedAt": "2025-06-13T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.391Z",
+      "analysis": {
+        "relevance": 58,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 66,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "В Госдуме призвали не запрещать детям танцевать под иностранную музыку - АСТВ",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTkNDd3kxMVFfY1JyUERLZWVDcHRsNXpfUzg3NFBPOHl1QnZUbnJ6ajVUQUtQRktvUGFVVldzODNJRWlHRlVNZ1hyaVlvSmJUNThlTXMwRjRDQjEwNkpVVWlDaVRLODVBZ2tfeHNaSi04UmN2YlFVU0RrOFRSQ3A4ZnEtTlllUE5hQUVwX280d0xDazV6c3hMcm1LaHdiV2Q4X3NWNktuOWdHbkNtSm5jYQ?oc=5",
+      "content": "В Госдуме призвали не запрещать детям танцевать под иностранную музыку &nbsp;&nbsp; АСТВ",
+      "publishedAt": "2026-05-08T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.572Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwa2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Танцы, песни и рисунки: Ещё три творческих конкурса стартуют в Забайкалье в рамках Русского форума - Официальный портал Забайкальского края",
+      "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE54bngwaVBjNVgzRVM1WWlHTDVDMUhMMXB2cWo1V0FjSGUyb0l1SDJUSVIwZmozd2xOd05la2pB?oc=5",
+      "content": "Танцы, песни и рисунки: Ещё три творческих конкурса стартуют в Забайкалье в рамках Русского форума &nbsp;&nbsp; Официальный портал Забайкальского края",
+      "publishedAt": "2025-11-07T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.572Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "конкурс",
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6ZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Хореограф, поставившая танец под речь Путина, критиковала военных РФ - Вот Так",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fNXdwU1Q2azA4WXJCQnJsbFM0NTItQXVwS1N6bllQbUFTU2daNjRGNmx6ZWF5MFZ0em13ZjdPUVlJY050UnpjRWw2NUtYTi1xSGFlNGFtdVA5Z2RkT1NiTWJvRjg?oc=5",
+      "content": "Хореограф, поставившая танец под речь Путина, критиковала военных РФ &nbsp;&nbsp; Вот Так",
+      "publishedAt": "2026-04-08T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.573Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "хореограф"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "«Боярушка» покорила жюри на телеканале «Культура»: красивая история красивого танца - Истра.РФ",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSmotLXc2TFdjNERnaDhDT1NnVHRVekxJbkxYQXAyVmNkY18wNGVGaHNvRGhpamZaOFBoeC01Ull1dDduMGVFRXlIY2NPQm9zbGxKSE1xUDJkMzdmWGlMSy1uS2NrbUtLSl9CVjdUZDIyQm1xS3hzb1VpMlVJN3pmeVZrd1hTYmNlbnlXaFRTc2o3REpmT1FtYlo5THJUTWU0MkxyMWZYckg4NUxuRE5HYThuYmtBdmNyN19lVVZnRUdKN2h4dzdwVQ?oc=5",
+      "content": "«Боярушка» покорила жюри на телеканале «Культура»: красивая история красивого танца &nbsp;&nbsp; Истра.РФ",
+      "publishedAt": "2025-10-01T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.573Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWliZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "В День Свердловской области на выставке «Россия» выступит ансамбль танца детской филармонии «Улыбка» - Областная газета | Свердловская область",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4tNUQ0aGltSm5oZUsyajNLajJyS255cGc4WGJrcllPX0lPUEhlTlU3MjcwSHA4WUktWW1nLWIwQ2NVeFRZdkp3VzdfVTAwVVc3ZXBkQW5zbjU4NENnRlNwZjFvc1ZPN2luYmRYbw?oc=5",
+      "content": "В День Свердловской области на выставке «Россия» выступит ансамбль танца детской филармонии «Улыбка» &nbsp;&nbsp; Областная газета | Свердловская область",
+      "publishedAt": "2023-11-16T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.574Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4d2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Самарский ансамбль башкирского танца «Ляйсан» стал финалистом конкурса «Детский Байык-2025» - Samddn.ru",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMVktMmxvMms1b0EteTJ5YkpXb2Y4bWo5R1QybVU2RHRtUldqRlAzdHdINWl0SlpPNVcwamcwUVYydDBtbVN2T0pSWHk4dldKUXJrUXBkOGt1WmtLZUZkb3Q3WUFFQllscUpUeGVhUndxb1JJRWFNcTdtRW5vUmFoNllZX1RHdzNXTERGYkVtd2JRNGlWRklKOUw2LXRzNkNfLTloUFBfZmhjYXhvTEFXczhQTzJQY2ZOeklMLVhUa2JGWEptR3F3?oc=5",
+      "content": "Самарский ансамбль башкирского танца «Ляйсан» стал финалистом конкурса «Детский Байык-2025» &nbsp;&nbsp; Samddn.ru",
+      "publishedAt": "2025-06-04T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.574Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 64,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "конкурс",
+            "детск",
+            "танц"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "source": "Google News — dance health injury",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Professional dancers face high injury risks during daily practice - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOE84b21KX1JwUmxFdGVzWGktN2lpVUcydzVhbUdkeTJyZ296Z3h3X1BodEE0TldXTktVdVlSS2VaeXcwX2J4dGd4SUNueVhzeVVyTF9zYnZkbEVOZWgyQXJDemJJdDNlNmtyU0FrS2YyVHp2V19JUVNEMWRwUHh4VHVHQnd4VGJDSGVvV0dOOEU4dUVHOGltajhXMU5IV0o2YzVCNFJ3ak12S3hoNEVvcjFLWQ?oc=5",
+      "content": "Professional dancers face high injury risks during daily practice &nbsp;&nbsp; News-Medical",
+      "publishedAt": "2026-03-19T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:16.332Z",
+      "analysis": {
+        "relevance": 55,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 73,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "HEALTH_SAFETY": [
+            "injury"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1d2ZidnY5",
+      "source": "Google News — dance health injury",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "UNLV physical therapy students help dance, music students with critical healthcare - FOX5 Vegas",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV1Q5clZXMjhsNDl4U2RVSzBuYXF5WTg3UWM2ZFBVaFEwTUh3Tll1dFY4ZmsyeWJVN01TenZQdGVfcjROYS1vMFlBYmNkVGZ4YUdueTV2Z3RfOVZmcTRyNWZkZ3ZsX3dmWkUyT2FIQ0VJMGt5cFMycS1WczVKTnpnWFFkb1RSS1g2MjRrMVFGMkxqcWU3bHNYYm1Ma2luTlRsbE5IcWpXNmZSZVhubEhwU0UzSkJKZ2tuWkNR0gHPAUFVX3lxTE81NFNldFJweW5DLUxmTEVja2NBWk9VWjNybWNSMHNZT2RBTG1RMGpoUFdXQ2NfRGpkMHdTbmZVbVBoVTJ3c19jbEc4eUFUQWphaGVPeGdVSEt0V1E0N3VxNG96N1JKdi1kRmpjczhIQkNIZG91ME1zMzVDbGRvOEtZaVM2Nmw2NUswTksxT3RUNVZ6SzFUYzM3ejZoeG9zYzRBaEJxZlpVYmJTbk95bW9sVjV4VTNSS28wTlVwMnI5a01FZU84Q1lLN09kSWNRYw?oc=5",
+      "content": "UNLV physical therapy students help dance, music students with critical healthcare &nbsp;&nbsp; FOX5 Vegas",
+      "publishedAt": "2025-11-21T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:16.332Z",
+      "analysis": {
+        "relevance": 50,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 58,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "HEALTH_SAFETY": [
+            "health"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlla2Z2eDNs",
+      "source": "Google News — dance health injury",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Common Ballet Injuries in Adolescents and Teens - Children's Hospital of Philadelphia",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB5cFB1Z2NBTUtTMzNrZGVWdFRwY3I0Szd6cnJ1UGU1Um4zRDB5V21zRUt0czRCRjBNbkR5OHNUNmNENGJDekpLZnJidWlzcUM4SV90dW9EdkkzeHl6OVQwSXBINVl6MWVqWVBRc3ZQVlVHZVcxblNzaW93?oc=5",
+      "content": "Common Ballet Injuries in Adolescents and Teens &nbsp;&nbsp; Children's Hospital of Philadelphia",
+      "publishedAt": "2020-03-11T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:16.334Z",
+      "analysis": {
+        "relevance": 50,
+        "relevanceLevel": "MEDIUM",
+        "contentPotential": 58,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "ballet"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children",
+            "adolescent"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllZWZ2eDNs",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Physical activity may help ease fatigue in children with developmental disabilities - Virginia Tech News",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBVbUg2RE9ZM3VDa2pUSk12am5uZGFxUHNxZ2luQWlxRWNRYWg2aVBPYzBIU2E5Tl9VdWVSTlZHOWxXRjZLV0VtdF9IS3NtR2l5b0w0RHFrVFA1eU1oQ2F6NXkzQTZwVER3a2JlRXQ3VTZHNEhCbVM1eA?oc=5",
+      "content": "Physical activity may help ease fatigue in children with developmental disabilities &nbsp;&nbsp; Virginia Tech News",
+      "publishedAt": "2026-07-06T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.809Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "contentPotential": 46,
+        "primaryCategory": "ADJACENT_DANCE_RELEVANT",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "HEALTH_SAFETY": [
+            "physical activity"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "physical activity"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3MGZ2eDNs",
+      "source": "Google News — Серпухов дети танцы",
+      "sourceScope": "LOCAL",
+      "sourceWeight": 1,
+      "title": "Серпухов для детей: кружки, секции и курсы - Клерк.ру",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kMG5KU284UDM5WjJRQ2l6WHNLVmc2emZXOUo3blRJUlRjM0VWVENDSlY5MUxiMmN4Q2MzRlhLRVJfdFFyTkQza0Z0M2lHVXhuV0tPSnhrUnZwUUE?oc=5",
+      "content": "Серпухов для детей: кружки, секции и курсы &nbsp;&nbsp; Клерк.ру",
+      "publishedAt": "2026-05-27T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:13.065Z",
+      "analysis": {
+        "relevance": 30,
+        "relevanceLevel": "LOW",
+        "contentPotential": 38,
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "детей"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "Серпухов"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "Dance + fun + preschoolers = UND research - University of North Dakota (UND)",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdmlHRWF0Y0EzNFR4RFMzZEoyVGpTRmRRZGFnelFDYVM0eHZZRFNQbDZoV2JGTkYtZjBPdU9xLTRaWC1mZmVabzVsMlY3VS1sWkI0a1A1Tnpkb25MS1RmdTRZanBQNE5YZ2U2aUsxOEczb21QUUFwX0xDT2ptNTA3UVhn?oc=5",
+      "content": "Dance + fun + preschoolers = UND research &nbsp;&nbsp; University of North Dakota (UND)",
+      "publishedAt": "2026-04-23T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.389Z",
+      "analysis": {
+        "relevance": 30,
+        "relevanceLevel": "LOW",
+        "contentPotential": 40,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "research"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "Babies process music long before they dance to it - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZnBrWW0zV1VWZVJPLVlBNXlEZW1rU01QQ2s4ZjRRcE1DNEUtVGFNejVhTWRiSkw4Sy1wTkpuU015ejlMc0Q4THU5dWRhakhfcUJWWnZZUTk1NkZ2aElCUG5LcHlmNGRWYTdCMGFJVGo2MXU5U0MxLVJJRHZERnNfWkFMdTBWS1ZxM04wNm9OUkRISjlYaEdybjVUM24wZw?oc=5",
+      "content": "Babies process music long before they dance to it &nbsp;&nbsp; News-Medical",
+      "publishedAt": "2026-07-09T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.390Z",
+      "analysis": {
+        "relevance": 30,
+        "relevanceLevel": "LOW",
+        "contentPotential": 40,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "ASU professor creates 'Red,' an interactive dance with toddlers - ASU News",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQODZuaVJYWHppeVNPcEtKbUFZLXZBdDd4NG9nbnlQRWlNOGFiUG9vb3JuQUk4bEY3V1BTSENIVjRzVE5sVWxPUmQ0TVprUkN0NU5lN2IxWUkyenN2eDlSbUEyc3lBN3JUejNBYjh3MUZVcUYwRXRyQklvVW9WTjEyM3ItYndKc0tHVll2RUd5Sjd6eFlyVGRDdDE1U1dXZnAwaTIxQXFoSHhoeDZfNkJUZXln?oc=5",
+      "content": "ASU professor creates 'Red,' an interactive dance with toddlers &nbsp;&nbsp; ASU News",
+      "publishedAt": "2025-10-31T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:14.390Z",
+      "analysis": {
+        "relevance": 30,
+        "relevanceLevel": "LOW",
+        "contentPotential": 40,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlka2Z2eDNs",
+      "source": "Google News — dance children development",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.8,
+      "title": "Dance programs linked to developmental gains in toddlers, research suggests - The Sector",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE90OE1XNzRqWkVJa2pHV2ZxdEd3V2xkb1o2MFVGRWFWRWFBTnlNOUVqVEZUeGU5Qks1dGlkellSaV9xSWFKb0VzU2FMLUdRT2FNSXdhOGRNRkNteTB2blQ5ZDJ1cmNxTEhwTzNZNTdlMVBpR2IzWlE?oc=5",
+      "content": "Dance programs linked to developmental gains in toddlers, research suggests &nbsp;&nbsp; The Sector",
+      "publishedAt": "2026-03-11T19:03:13.000Z",
+      "collectedAt": "2026-08-13T15:20:14.391Z",
+      "analysis": {
+        "relevance": 30,
+        "relevanceLevel": "LOW",
+        "contentPotential": 40,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "research"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Cincinnati Dance Team Takes Gold at ICU Championships - University of Cincinnati Athletics",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORlgxWEFNNzJ1aEZJdXN0N3ZNNF8ydTFMVFBRSzNVVWl6eFUxOW8zYUlSVDgtVWhjOXA2LUlIdG5GcVFnYS12SFNLZ19zSGxwMnFXeXE0dGh5UXlqTUdXUXRDQjRvYXVUUkZuWTE1Tjd3Y0dORGp5MGxyY01ybUwzcDlKZS1oMHpPY2MwVmRxeGdJVUtLOFpJ?oc=5",
+      "content": "Cincinnati Dance Team Takes Gold at ICU Championships &nbsp;&nbsp; University of Cincinnati Athletics",
+      "publishedAt": "2026-04-24T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.045Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE - FOX 10 Phoenix",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOHpfazF2LW5MOFE0eHNVNFBXQkgzZVNzbUExTVRja0VRZHJLaWpxblgtXzc0WWY4MlEzaENnRURUR0tOTDF2REtneFdFTmhWT2xwZ2pHQ2hqdjZaZzNMaEtOQ2lmV0JXUG5pdm9LdEhoTmJSOEItMU1nS3pkaFJQbG1FQVZKaG1DbHIzRWJWZlZPMnprN0xfS01R0gGfAUFVX3lxTE5yb0UwUEFqNFFfS0lvaDJHUTRMb0ltNVI2ZUhrV1BSOVpQLUhxZFlxam1DeDBPTU1KMzVUWlJPQmJTYVhSSFVvaFVXWWFZN1RmMXlPamtRSmhrNEZfY1Q4Mjktc1B2RWYxWS1HSnloU1o5QWlieXZhT2paTlo5VmRpOWlpcWsyN3U2R2c3d2hLOGl4ZV9IZjZQaENZODZfZw?oc=5",
+      "content": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE &nbsp;&nbsp; FOX 10 Phoenix",
+      "publishedAt": "2026-07-26T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.046Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "hip hop",
+            "championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Teen dance crew claims world title by 0.01 points after on-stage blunder - RNZ",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMi1VT0xXeDNiODZYZF9CelI0NWduUTM2aTZ0ekZZRHotZU1MMGF6RGZ6R01WeGE0cmd3T2FaLTA5WGU1dFdnTlBVT2t6bGtVQk02SFo2UGktYXVrNkZ4WTUyUklQRnllRXN4ZnZuZXZGcE95ZmNJM0NJajlLdVI4blFGMW5zR1U2N3NvMmt4VndBYllfaW9YUjhCa0V3LXZsNEVSOHJkbG9PckU?oc=5",
+      "content": "Teen dance crew claims world title by 0.01 points after on-stage blunder &nbsp;&nbsp; RNZ",
+      "publishedAt": "2026-08-12T23:50:14.000Z",
+      "collectedAt": "2026-08-13T15:20:15.046Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Aboian and Veselukhin Win Ice Dance Title, Cap Season Undefeated - U.S. Figure Skating",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNXdkTE1lRW5GVlJweU1KS0hPOFd6cm5Mc016elc1cXYzV0pxRjRQYU84OWkwbTBieS1Mc1Y5RXQ3SXA5UG5WRC1odDhJV0F6NkNRQjJDX3M3QTl2S0doWU5QTlJhcXktVTJ5dGUxbl9UcEN2ZFFSa0FkTnMyTnM4SUx0NzJtamIxUnhtb1N4Q2FJdWoxNjI1cHpyUy1FYjN1Zzl0UlNsQzVfZFpSQlFydVJ4OHBmeGk2UDZyX054R3ptQjN3MGRfc0VCc1hma08zX2k3b25B?oc=5",
+      "content": "Aboian and Veselukhin Win Ice Dance Title, Cap Season Undefeated &nbsp;&nbsp; U.S. Figure Skating",
+      "publishedAt": "2026-03-07T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.047Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Local Representation: Gilbert Crews compete at World Hip Hop Dance Championship - phoenix.org",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaklRblNNODJCRWQ3RldZV1g1QUIzMHRjR1BvRXpnY2lKSGR6RDlFQ3RqcEdRU3dvQ2pVV24wQWF2WnJMOHhSOU5Yc0VaVDlzeEF1NFlaMVVNS2FBWDVTRHJ2OThHVHlFcjk3dVQ3dUlzdkFVdUpSa3p5SVpXY2FKcl8tT3d1bVBJelUtLUs0TXZ5alNURHhObmVVR2k1NmUxWmRvbVBhTG1ONm1neWktWnJJb1B3cU9aVzRadDItMmdpTTNXcDAwZlZHWjBqa191Rndya0V5TVdQb05MNV82bzdRNjVYeFI3d0JIMVllX2RtckJrbDZuRGhHaHBuUQ?oc=5",
+      "content": "Local Representation: Gilbert Crews compete at World Hip Hop Dance Championship &nbsp;&nbsp; phoenix.org",
+      "publishedAt": "2026-07-26T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.047Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "hip hop",
+            "championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE - FOX 10 Phoenix",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43RWtUcmptTjNHSFc3QURHSmZoc2ZZbXUxSFY1VFc1UmU4RlFuQlExaTdmNFpjTG5iTGdPbzVLYzJUUVNIc3BubVh2X1pDLTExT19KdmxTTW5zdHY3UTBMa1UzSk9BZ9IBa0FVX3lxTE45UEcwY0ZwV2VlSy1KMzRKMm9FSGpJT2xIUXVRQWdwNnJYQnNGQzNKSGk3X0doRWNYOExUeUhnRmJEODRjWlFkZUZKbWJCUGJObThVTjEwN0xrUGQzWlZlSkM1RFJLOC0zVlY0?oc=5",
+      "content": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE &nbsp;&nbsp; FOX 10 Phoenix",
+      "publishedAt": "2026-07-26T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.048Z",
+      "analysis": {
+        "relevance": 29,
+        "relevanceLevel": "LOW",
+        "contentPotential": 29,
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "hip hop",
+            "championship"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnd2ZidnY5",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "After-school sports an overall boon to children and teens, study shows - Medical Xpress",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOXFSOXlVelZPLTR5YUNZYzVXM2dZRlJRRkpxME15X29LemYxRXVsWjVFNGpXT252a2lIWW8zNWprdDI2U2dNcG1ZcHFuZlVURjBfdXlZTndWRmFxOEZOdDhIOE5JSkxzYmxsdzNpMkE0MWRISlRZYzlROVZMbXdoY0VvQQ?oc=5",
+      "content": "After-school sports an overall boon to children and teens, study shows &nbsp;&nbsp; Medical Xpress",
+      "publishedAt": "2026-05-12T07:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.810Z",
+      "analysis": {
+        "relevance": 28,
+        "relevanceLevel": "LOW",
+        "contentPotential": 38,
+        "primaryCategory": "ADJACENT_DANCE_RELEVANT",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "CONTENT_SIGNAL": [
+            "study"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxZ2ZidnY5",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Study: VR Helps Children With Autism Participate in Exercise and Sports - New York Institute of Technology",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbDBwNEZ5MTFnaUZjTjlsemFUUmYwcEZQSXB1Q1N1UXE2NmpweVB2cy1CdFBTNHdKNkVZZzljLVZjYm9kenJNM3ZpWnRNdGk4RGRpVmNPUWd5Sm1jdHpGNjdsWmZzTTRhbTBYRHRybXVNZHJxb0hHQkxFOXhkNndNcUF0dGlXa0lNdTRUMEFYSlUwYVpINUtkelA5Z3hmb0xObGxTQThuN2JFZw?oc=5",
+      "content": "Study: VR Helps Children With Autism Participate in Exercise and Sports &nbsp;&nbsp; New York Institute of Technology",
+      "publishedAt": "2025-12-10T08:00:00.000Z",
+      "collectedAt": "2026-08-13T15:20:15.812Z",
+      "analysis": {
+        "relevance": 28,
+        "relevanceLevel": "LOW",
+        "contentPotential": 38,
+        "primaryCategory": "ADJACENT_DANCE_RELEVANT",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "CONTENT_SIGNAL": [
+            "new",
+            "study"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "exercise",
+            "sport"
+          ]
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

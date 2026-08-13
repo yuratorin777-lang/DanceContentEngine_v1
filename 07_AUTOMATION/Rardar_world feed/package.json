@@ -1,0 +1,8 @@
+{
+  "name": "dance-content-engine-radar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "radar": "node engine/radar_engine.js"
+  }
+}
