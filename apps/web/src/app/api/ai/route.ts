@@ -1142,7 +1142,7 @@ async function callAI(
           body:
             JSON.stringify({
               model:
-                "llama-3.3-70b-versatile",
+                "llama-3.1-8b-instant",
 
               messages: [
                 {
@@ -1213,7 +1213,7 @@ async function callAI(
 
       model:
         data?.model ||
-        "llama-3.3-70b-versatile",
+        "llama-3.1-8b-instant",
 
       usage:
         data?.usage ||
@@ -1236,7 +1236,7 @@ export async function GET() {
 
     provider: "Groq",
 
-    model: "llama-3.3-70b-versatile",
+    model: "llama-3.1-8b-instant",
 
     env: {
       keyExists: Boolean(key),
