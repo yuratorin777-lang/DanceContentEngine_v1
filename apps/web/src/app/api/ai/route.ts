@@ -1096,19 +1096,21 @@ EXECUTION RULES:
 
 /*
  * ==================================================
- * GROQ / LLAMA AI CALL
+ * GEMINI AI CALL (SUPPORTS 1M+ TOKENS CONTEXT)
  * ==================================================
  */
+
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 
 async function callAI(
   systemPrompt: string,
   userPrompt: string
 ) {
-  const apiKey = GROQ_API_KEY;
+  const apiKey = GEMINI_API_KEY;
 
   if (!apiKey) {
     throw new Error(
-      "GROQ_API_KEY is not configured."
+      "GEMINI_API_KEY is not configured in environment variables."
     );
   }
 
@@ -1118,65 +1120,66 @@ async function callAI(
   const timeoutId =
     setTimeout(
       () => controller.abort(),
-      30000
+      60000 // 60 секунд на случай обработки крупного контекста
     );
 
   try {
+    const url =
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
     const response =
-      await fetch(
-        "https://api.groq.com/openai/v1/chat/completions",
-        {
-          method: "POST",
+      await fetch(url, {
+        method: "POST",
 
-          signal:
-            controller.signal,
+        signal:
+          controller.signal,
 
-          headers: {
-            "Content-Type":
-              "application/json",
+        headers: {
+          "Content-Type":
+            "application/json",
+        },
 
-            Authorization:
-              `Bearer ${apiKey}`,
-          },
-
-          body:
-            JSON.stringify({
-              model:
-                "groq/compound",
-
-              messages: [
+        body:
+          JSON.stringify({
+            systemInstruction: {
+              parts: [
                 {
-                  role:
-                    "system",
-
-                  content:
+                  text:
                     systemPrompt,
                 },
-
-                {
-                  role:
-                    "user",
-
-                  content:
-                    userPrompt,
-                },
               ],
+            },
 
-              max_tokens:
-                1000,
+            contents: [
+              {
+                role:
+                  "user",
 
+                parts: [
+                  {
+                    text:
+                      userPrompt,
+                  },
+                ],
+              },
+            ],
+
+            generationConfig: {
               temperature:
                 0.7,
-            }),
-        }
-      );
+
+              maxOutputTokens:
+                2000,
+            },
+          }),
+      });
 
     const raw =
       await response.text();
 
     if (!response.ok) {
       throw new Error(
-        `Groq API error ${response.status}: ${raw.slice(
+        `Gemini API error ${response.status}: ${raw.slice(
           0,
           1000
         )}`
@@ -1190,13 +1193,14 @@ async function callAI(
         JSON.parse(raw);
     } catch {
       throw new Error(
-        "Groq API returned invalid JSON."
+        "Gemini API returned invalid JSON."
       );
     }
 
     const content =
-      data?.choices?.[0]?.message
-        ?.content;
+      data?.candidates?.[0]
+        ?.content?.parts?.[0]
+        ?.text;
 
     if (
       typeof content !==
@@ -1204,7 +1208,7 @@ async function callAI(
       !content.trim()
     ) {
       throw new Error(
-        "Groq API returned no message content."
+        "Gemini API returned no message content."
       );
     }
 
@@ -1212,11 +1216,10 @@ async function callAI(
       content,
 
       model:
-        data?.model ||
-        "groq/compound",
+        "gemini-2.0-flash",
 
       usage:
-        data?.usage ||
+        data?.usageMetadata ||
         null,
     };
   } finally {
@@ -1227,16 +1230,16 @@ async function callAI(
 }
 
 export async function GET() {
-  const key = GROQ_API_KEY;
+  const key = GEMINI_API_KEY;
 
   return NextResponse.json({
     ok: true,
     service: "DanceContentEngine AI Gateway",
     status: "ready",
 
-    provider: "Groq",
+    provider: "Google Gemini",
 
-    model: "groq/compound",
+    model: "gemini-2.0-flash",
 
     env: {
       keyExists: Boolean(key),
@@ -1362,7 +1365,7 @@ export async function POST(
 
     /*
      * ==================================================
-     * CALL GROQ / LLAMA
+     * CALL GEMINI API
      * ==================================================
      */
 
@@ -1391,7 +1394,7 @@ export async function POST(
           ai.model,
 
         provider:
-          "Groq / Llama",
+          "Google Gemini",
 
         filesLoaded:
           files.length,
