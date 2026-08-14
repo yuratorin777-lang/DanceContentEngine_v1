@@ -9,6 +9,10 @@ import {
   buildWriterUserPrompt,
 } from "../../../../../../07_AUTOMATION/writer";
 
+import {
+  validateWriterOutput,
+} from "../../../../../../07_AUTOMATION/validator";
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -1404,6 +1408,21 @@ ${writerSystemPrompt}
 
     /*
      * ==================================================
+     * VALIDATE WRITER OUTPUT
+     * ==================================================
+     */
+
+    const validation =
+      await validateWriterOutput({
+        task,
+        outputContract,
+        content: ai.content,
+        context: formatContext(files),
+        projectRoot: PROJECT_ROOT,
+      });
+
+    /*
+     * ==================================================
      * RESPONSE
      * ==================================================
      */
@@ -1454,6 +1473,14 @@ ${writerSystemPrompt}
 
         usage:
           ai.usage,
+
+        validation: {
+          status: validation.status,
+          score: validation.score,
+          summary: validation.summary,
+          violations: validation.violations,
+          rulesLoaded: validation.rulesLoaded,
+        },
       },
     });
   } catch (
