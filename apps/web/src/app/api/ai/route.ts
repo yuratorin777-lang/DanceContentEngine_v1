@@ -5,17 +5,24 @@ import path from "path";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+/*
+ * ==================================================
+ * PROJECT ROOT
+ * ==================================================
+ */
+
 const PROJECT_ROOT = path.resolve(process.cwd(), "../..");
 
-const AI_API_URL =
-  process.env.AI_API_URL ||
-  "https://openrouter.ai/api/v1/chat/completions";
+/*
+ * ==================================================
+ * GROK CONFIGURATION
+ * ==================================================
+ */
 
-const AI_API_KEY = process.env.AI_API_KEY || "";
-
-const AI_MODEL =
-  process.env.AI_MODEL ||
-  "openai/gpt-4o-mini";
+const GROK_API_KEY =
+  process.env.GROK_API_KEY ||
+  process.env.XAI_API_KEY ||
+  "";
 
 /*
  * ==================================================
@@ -281,11 +288,6 @@ function getPriority(
  * ==================================================
  * PROFILE PRIORITY
  * ==================================================
- *
- * Профиль не создаёт новую систему поиска.
- *
- * Он только немного меняет порядок важности
- * уже найденных документов.
  */
 
 function getProfileBoost(
@@ -419,10 +421,6 @@ function isEligibleFile(
     return false;
   }
 
-  /*
-   * Radar history никогда не является
-   * рабочим контекстом.
-   */
   if (
     isRadarHistoryPath(
       normalized
@@ -498,14 +496,6 @@ async function collectFiles(
           "/"
         );
 
-    /*
-     * В корне проекта заходим только
-     * в рабочие AI-домены.
-     *
-     * apps, package.json, package-lock,
-     * src и прочий технический код
-     * автоматически не попадают.
-     */
     if (
       relativeDir === "" &&
       entry.isDirectory() &&
@@ -516,9 +506,6 @@ async function collectFiles(
       continue;
     }
 
-    /*
-     * Radar history исключаем целиком.
-     */
     if (
       entry.isDirectory() &&
       relativePath ===
@@ -807,9 +794,6 @@ async function buildContext(
       );
   }
 
-  /*
-   * Radar latest добавляется отдельно.
-   */
   if (
     includeRadar
   ) {
@@ -823,9 +807,6 @@ async function buildContext(
     }
   }
 
-  /*
-   * Убираем дубли.
-   */
   const unique =
     new Map<
       string,
@@ -857,13 +838,6 @@ async function buildContext(
       unique.values()
     );
 
-  /*
-   * Профиль влияет только
-   * на порядок документов.
-   *
-   * Мы не создаём отдельный индекс,
-   * отдельный поиск или новую архитектуру.
-   */
   files.sort(
     (a, b) => {
       const scoreA =
@@ -884,9 +858,6 @@ async function buildContext(
     }
   );
 
-  /*
-   * Жёсткий общий лимит.
-   */
   const selected: ContextFile[] =
     [];
 
@@ -1103,7 +1074,7 @@ EXECUTION RULES:
 
 /*
  * ==================================================
- * AI CALL
+ * GROQ / LLAMA AI CALL
  * ==================================================
  */
 
@@ -1111,115 +1082,127 @@ async function callAI(
   systemPrompt: string,
   userPrompt: string
 ) {
-  if (
-    !AI_API_KEY
-  ) {
+  const apiKey =
+    process.env.GROQ_API_KEY || "";
+
+  if (!apiKey) {
     throw new Error(
-      "AI_API_KEY is not configured."
+      "GROQ_API_KEY is not configured."
     );
   }
 
-  const response =
-    await fetch(
-      AI_API_URL,
-      {
-        method: "POST",
+  const controller =
+    new AbortController();
 
-        headers: {
-          "Content-Type":
-            "application/json",
-
-          Authorization:
-            `Bearer ${AI_API_KEY}`,
-
-          "HTTP-Referer":
-            process.env.AI_SITE_URL ||
-            "https://dance-content-engine.vercel.app",
-
-          "X-Title":
-            "Dance Content Engine",
-        },
-
-        body: JSON.stringify({
-          model:
-            AI_MODEL,
-
-          temperature:
-            0.7,
-
-          messages: [
-            {
-              role:
-                "system",
-
-              content:
-                systemPrompt,
-            },
-
-            {
-              role:
-                "user",
-
-              content:
-                userPrompt,
-            },
-          ],
-        }),
-      }
+  const timeoutId =
+    setTimeout(
+      () => controller.abort(),
+      30000
     );
-
-  const raw =
-    await response.text();
-
-  if (
-    !response.ok
-  ) {
-    throw new Error(
-      `AI API error ${response.status}: ${raw.slice(
-        0,
-        1000
-      )}`
-    );
-  }
-
-  let data;
 
   try {
-    data =
-      JSON.parse(
-        raw
+    const response =
+      await fetch(
+        "https://api.groq.com/openai/v1/chat/completions",
+        {
+          method: "POST",
+
+          signal:
+            controller.signal,
+
+          headers: {
+            "Content-Type":
+              "application/json",
+
+            "Authorization":
+              `Bearer ${apiKey}`,
+          },
+
+          body:
+            JSON.stringify({
+              model:
+                "llama-3.3-70b-versatile",
+
+              messages: [
+                {
+                  role:
+                    "system",
+
+                  content:
+                    systemPrompt,
+                },
+
+                {
+                  role:
+                    "user",
+
+                  content:
+                    userPrompt,
+                },
+              ],
+
+              max_tokens:
+                300,
+
+              temperature:
+                0.7,
+            }),
+        }
       );
-  } catch {
-    throw new Error(
-      "AI API returned invalid JSON."
+
+    const raw =
+      await response.text();
+
+    if (!response.ok) {
+      throw new Error(
+        `Groq API error ${response.status}: ${raw.slice(
+          0,
+          1000
+        )}`
+      );
+    }
+
+    let data;
+
+    try {
+      data =
+        JSON.parse(raw);
+    } catch {
+      throw new Error(
+        "Groq API returned invalid JSON."
+      );
+    }
+
+    const content =
+      data?.choices?.[0]?.message
+        ?.content;
+
+    if (
+      typeof content !==
+        "string" ||
+      !content.trim()
+    ) {
+      throw new Error(
+        "Groq API returned no message content."
+      );
+    }
+
+    return {
+      content,
+
+      model:
+        data?.model ||
+        "llama-3.3-70b-versatile",
+
+      usage:
+        data?.usage ||
+        null,
+    };
+  } finally {
+    clearTimeout(
+      timeoutId
     );
   }
-
-  const content =
-    data?.choices?.[0]?.message
-      ?.content;
-
-  if (
-    typeof content !==
-      "string" ||
-    !content.trim()
-  ) {
-    throw new Error(
-      "AI API returned no message content."
-    );
-  }
-
-  return {
-    content,
-
-    model:
-      data?.model ||
-      AI_MODEL,
-
-    usage:
-      data?.usage ||
-      null,
-  };
 }
 
 /*
@@ -1239,7 +1222,10 @@ export async function GET() {
       "ready",
 
     model:
-      AI_MODEL,
+  "llama-3.3-70b-versatile",
+
+provider:
+  "Groq / Llama",
 
     projectRoot:
       "DanceContentEngine_v1",
@@ -1307,6 +1293,7 @@ export async function POST(
       return NextResponse.json(
         {
           ok: false,
+
           error:
             "Task is required.",
         },
@@ -1318,13 +1305,8 @@ export async function POST(
 
     /*
      * ==================================================
-     * BOOTSTRAP CONTEXT
+     * BUILD PROJECT CONTEXT
      * ==================================================
-     *
-     * Один и тот же scanner.
-     *
-     * Profile только меняет приоритет
-     * документов перед жёстким лимитом.
      */
 
     const files =
@@ -1336,7 +1318,7 @@ export async function POST(
 
     /*
      * ==================================================
-     * AI
+     * BUILD PROMPTS
      * ==================================================
      */
 
@@ -1352,11 +1334,23 @@ export async function POST(
         files
       );
 
+    /*
+     * ==================================================
+     * CALL GROQ / LLAMA
+     * ==================================================
+     */
+
     const ai =
       await callAI(
         systemPrompt,
         userPrompt
       );
+
+    /*
+     * ==================================================
+     * RESPONSE
+     * ==================================================
+     */
 
     return NextResponse.json({
       ok: true,
@@ -1369,6 +1363,9 @@ export async function POST(
 
         model:
           ai.model,
+
+        provider:
+          "Groq / Llama",
 
         filesLoaded:
           files.length,
