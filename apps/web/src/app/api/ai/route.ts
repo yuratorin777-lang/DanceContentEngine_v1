@@ -1405,7 +1405,7 @@ export async function POST(
           profile,
           context,
         }),
-        3000,
+        6000,
         {
           responseMimeType: "application/json",
           responseSchema: CONTENT_PLAN_SCHEMA,

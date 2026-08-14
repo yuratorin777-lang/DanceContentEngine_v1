@@ -17,7 +17,6 @@ export type ContentPlan = {
   sourcePriorities: string[];
 };
 
-
 export const CONTENT_PLAN_SCHEMA = {
   type: "OBJECT",
   properties: {
@@ -39,6 +38,24 @@ export const CONTENT_PLAN_SCHEMA = {
     sourcePriorities: { type: "ARRAY", items: { type: "STRING" } },
   },
   required: [
+    "audience",
+    "topic",
+    "subtopic",
+    "goal",
+    "channel",
+    "format",
+    "audienceNeed",
+    "keyMessage",
+    "contentAngle",
+    "researchSignals",
+    "knowledgeNeeds",
+    "radarSignals",
+    "seoConsiderations",
+    "cta",
+    "constraints",
+    "sourcePriorities",
+  ],
+  propertyOrdering: [
     "audience",
     "topic",
     "subtopic",
@@ -89,8 +106,14 @@ You are the CONTENT PLANNER of DanceContentEngine_v1.
 
 ROLE:
 You are the strategic planning layer between project intelligence and the Writer.
-You do NOT write the final content.
-You convert a content request into a precise, evidence-based execution brief for the Writer.
+You do NOT write final content.
+You convert a content request into a sufficiently detailed, evidence-based Content Brief that tells the Writer WHAT to achieve, WHY it matters, WHAT information is needed, and WHAT constraints apply.
+
+IMPORTANT ARCHITECTURE RULE:
+The Planner is not the Writer and does not replace the future Information / Content Architect.
+The Planner gives direction and requirements.
+The Writer will later use the brief together with the relevant project context and knowledge to decide HOW to develop the material in depth.
+Therefore do not try to place the whole knowledge base inside the plan.
 
 SOURCE HIERARCHY:
 - 02_RESEARCH = market, competitors, demand, research evidence.
@@ -103,40 +126,31 @@ SOURCE HIERARCHY:
 
 CORE RULES:
 1. Do not invent project facts.
-2. Do not invent audience pain points when the supplied sources do not support them.
-3. Distinguish evidence-backed signals from planning inference.
-4. Do not rewrite the project methodology.
-5. Do not write the final post, article or publication text.
-6. Give the Writer a concrete execution brief.
-7. Prefer the strongest relevant evidence over generic content advice.
-8. Use multiple relevant source layers when available.
-9. If information is missing, explicitly say so in the corresponding field.
-10. Plan for the requested channel and format.
-11. CTA must match the task and available evidence; do not invent URLs, prices or schedules.
-12. The Planner may later receive additional architectural strategy input; preserve a clean separation between planning and execution.
+2. Do not invent audience pain points when sources do not support them; clearly mark planning inference when appropriate.
+3. Use the strongest relevant evidence available across multiple project layers.
+4. Plan for the requested channel and format.
+5. Identify the audience need/problem/opportunity the content should address.
+6. Define a meaningful topic and subtopic, not a generic label.
+7. Define a concrete content objective.
+8. Define the key message and content angle.
+9. Identify what Research, Knowledge and Radar information is relevant for the Writer.
+10. Identify constraints and factual requirements that the Writer must respect.
+11. CTA must match the task and available evidence; do not invent URLs, prices, schedules or offers.
+12. If information is missing, state that it is missing rather than filling the gap with invented facts.
+13. Keep every field useful and substantive, but avoid repeating the project context.
+14. This is a strategic brief, not an analytical essay.
+
+DETAIL LEVEL:
+The brief must be detailed enough that another competent Writer could execute the task without guessing the strategic intent.
+Use short but substantive prose in scalar fields.
+For arrays, include the most relevant items only; prefer evidence-backed, actionable items over generic lists.
+Do not optimize for brevity at the expense of strategic completeness.
 
 OUTPUT:
-Return ONLY valid JSON.
-Do not wrap JSON in markdown fences.
-Use exactly these top-level fields:
-{
-  "audience": string,
-  "topic": string,
-  "subtopic": string,
-  "goal": string,
-  "channel": string,
-  "format": string,
-  "audienceNeed": string,
-  "keyMessage": string,
-  "contentAngle": string,
-  "researchSignals": string[],
-  "knowledgeNeeds": string[],
-  "radarSignals": string[],
-  "seoConsiderations": string[],
-  "cta": string,
-  "constraints": string[],
-  "sourcePriorities": string[]
-}
+Return ONLY one complete JSON object matching the provided schema.
+Do not use markdown fences.
+Do not stop before every required field is present.
+Ensure the JSON is syntactically complete.
 `;
 }
 
@@ -156,8 +170,9 @@ ${task}
 PROJECT CONTEXT:
 ${context || "No project context supplied."}
 
-Build the strategic execution brief now.
-Return ONLY the JSON object defined by the system instructions.
+Build the full strategic Content Brief now.
+The plan should be sufficiently detailed for the Writer to execute the task, while leaving the Writer responsible for selecting and using the detailed source material needed for the actual content.
+Return ONLY the complete JSON object defined by the system instructions.
 `;
 }
 
@@ -207,7 +222,7 @@ export function parseContentPlan(raw: string): ContentPlan {
       try {
         return normalizePlan(JSON.parse(fenced[1]));
       } catch {
-        return { ...DEFAULT_PLAN };
+        // continue with next recovery strategy
       }
     }
 
@@ -217,7 +232,7 @@ export function parseContentPlan(raw: string): ContentPlan {
       try {
         return normalizePlan(JSON.parse(text.slice(start, end + 1)));
       } catch {
-        return { ...DEFAULT_PLAN };
+        // incomplete JSON cannot be safely repaired here
       }
     }
 

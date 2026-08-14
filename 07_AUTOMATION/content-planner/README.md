@@ -1,24 +1,28 @@
-# Content Planner v1
+# Content Planner v2
 
 ## Назначение
 
-Content Planner превращает входную контентную задачу в структурированное стратегическое задание для Writer.
+Content Planner превращает входную контентную задачу в развёрнутый, но структурированный стратегический brief для Writer.
 
-Planner не пишет финальный контент и не проводит новое рыночное исследование. Он синтезирует уже доступные слои проекта:
-
-- 02_RESEARCH — исследования, рынок, конкуренты, спрос;
-- 03_AUDIENCE — аудитория, боли, потребности, вопросы, путь;
-- 01_KNOWLEDGE — экспертное знание;
-- 07_AUTOMATION/Rardar world feed/runtime/latest.json — актуальные внешние сигналы;
-- 04_CONTENT — контентная методология;
-- 05_SEO — поисковые возможности, когда релевантно;
-- 06_ANALYTICS — результаты и сигналы эффективности, когда они есть.
+Planner отвечает за направление и требования к будущему материалу, а не за написание финального текста и не за пересказ всей базы знаний.
 
 ## INPUT
 
 - user task;
 - context profile;
 - project context.
+
+## STRATEGIC INPUT LAYERS
+
+- 02_RESEARCH — рынок, конкуренты, спрос, исследования;
+- 03_AUDIENCE — потребности, боли, вопросы, возражения, язык и путь аудитории;
+- 01_KNOWLEDGE — экспертное и owner knowledge;
+- 07_AUTOMATION/Rardar world feed — актуальные внешние сигналы;
+- 04_CONTENT — контентная методология;
+- 05_SEO — поисковый контекст, если релевантно;
+- 06_ANALYTICS — фактическая эффективность, если доступна.
+
+В будущем Planner может получать дополнительный стратегический вход от Information / Content Architect без изменения своей основной роли.
 
 ## PROCESS
 
@@ -27,37 +31,43 @@ Planner не пишет финальный контент и не проводи
 3. Определить тему и под-тему.
 4. Определить цель.
 5. Определить канал и формат.
-6. Определить информационную потребность аудитории.
-7. Выделить релевантные research / audience / knowledge / radar signals.
-8. Определить ключевой смысл и возможный CTA.
-9. Сформировать ограничения и требования Writer.
-10. Не придумывать отсутствующие факты.
+6. Определить ключевую потребность аудитории.
+7. Сформировать ключевой смысл и контентный угол.
+8. Выделить релевантные research / audience / knowledge / radar signals.
+9. Определить, какие знания и факты Writer должен учитывать.
+10. Зафиксировать CTA и ограничения.
+11. Сформировать приоритеты источников.
+12. Вернуть полный структурированный JSON brief.
 
 ## OUTPUT
 
-Planner возвращает структурированный JSON с полями:
+Planner возвращает:
 
-- audience
-- topic
-- subtopic
-- goal
-- channel
-- format
-- audienceNeed
-- keyMessage
-- contentAngle
-- researchSignals
-- knowledgeNeeds
-- radarSignals
-- seoConsiderations
-- cta
-- constraints
-- sourcePriorities
+- audience;
+- topic;
+- subtopic;
+- goal;
+- channel;
+- format;
+- audienceNeed;
+- keyMessage;
+- contentAngle;
+- researchSignals;
+- knowledgeNeeds;
+- radarSignals;
+- seoConsiderations;
+- cta;
+- constraints;
+- sourcePriorities.
 
 ## Архитектурное правило
 
-Planner сейчас работает как стратегический слой над Analyst / Research / Audience / Knowledge / Radar.
+Planner не заменяет Analyst.
+Planner не заменяет будущего Information / Content Architect.
+Planner не заменяет Writer.
 
-В будущем он может получать дополнительный структурированный вход от Information / Content Architect без изменения своей базовой роли.
+Planner отвечает на вопрос:
+**Что именно должен решить будущий контент и в каком направлении его нужно создавать?**
 
-Planner не заменяет Analyst и не заменяет Architect.
+Writer отвечает на вопрос:
+**Как раскрыть эту задачу на основе релевантных материалов проекта?**
