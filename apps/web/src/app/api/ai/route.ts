@@ -1125,7 +1125,7 @@ async function callAI(
 
   try {
     const url =
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash:generateContent?key=${apiKey}`;
 
     const response =
       await fetch(url, {
@@ -1232,30 +1232,37 @@ async function callAI(
 export async function GET() {
   const key = GEMINI_API_KEY;
 
-  return NextResponse.json({
-    ok: true,
-    service: "DanceContentEngine AI Gateway",
-    status: "ready",
+  if (!key) {
+    return NextResponse.json({
+      ok: false,
+      error: "GEMINI_API_KEY is missing",
+    });
+  }
 
-    provider: "Google Gemini",
+  try {
+    // Делаем запрос к Google API за официальным списком доступных моделей
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`
+    );
+    const data = await res.json();
 
-    model: "gemini-1.5-flash",
+    const availableModels = data?.models
+      ? data.models.map((m: any) => m.name.replace("models/", ""))
+      : [];
 
-    env: {
-      keyExists: Boolean(key),
-      keyLength: key.length,
-      keyPrefix: key ? key.slice(0, 8) : "",
-    },
-
-    projectRoot: PROJECT_ROOT,
-
-    profiles: [
-      "CONTENT",
-      "RESEARCH",
-      "ANALYTICS",
-      "GENERAL",
-    ],
-  });
+    return NextResponse.json({
+      ok: true,
+      service: "DanceContentEngine AI Gateway",
+      provider: "Google Gemini",
+      keyExists: true,
+      availableModels, // <--- ЗДЕСЬ БУДЕТ ТОЧНЫЙ СПИСОК МОДЕЛЕЙ
+    });
+  } catch (err: any) {
+    return NextResponse.json({
+      ok: false,
+      error: err?.message || "Failed to fetch models from Google",
+    });
+  }
 }
 
 /*
