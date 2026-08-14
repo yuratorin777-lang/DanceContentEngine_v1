@@ -1205,30 +1205,25 @@ async function callAI(
   }
 }
 
-/*
- * ==================================================
- * GET
- * ==================================================
- */
-
 export async function GET() {
+  const key = process.env.GROQ_API_KEY || "";
+
   return NextResponse.json({
     ok: true,
+    service: "DanceContentEngine AI Gateway",
+    status: "ready",
 
-    service:
-      "DanceContentEngine AI Gateway",
+    provider: "Groq",
 
-    status:
-      "ready",
+    model: "llama-3.3-70b-versatile",
 
-    model:
-  "llama-3.3-70b-versatile",
+    env: {
+      keyExists: Boolean(key),
+      keyLength: key.length,
+      keyPrefix: key ? key.slice(0, 8) : "",
+    },
 
-provider:
-  "Groq / Llama",
-
-    projectRoot:
-      "DanceContentEngine_v1",
+    projectRoot: "DanceContentEngine_v1",
 
     profiles: [
       "CONTENT",
@@ -1236,9 +1231,6 @@ provider:
       "ANALYTICS",
       "GENERAL",
     ],
-
-    message:
-      "AI gateway is running.",
   });
 }
 
