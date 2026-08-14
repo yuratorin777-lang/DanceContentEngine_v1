@@ -17,6 +17,47 @@ export type ContentPlan = {
   sourcePriorities: string[];
 };
 
+
+export const CONTENT_PLAN_SCHEMA = {
+  type: "OBJECT",
+  properties: {
+    audience: { type: "STRING" },
+    topic: { type: "STRING" },
+    subtopic: { type: "STRING" },
+    goal: { type: "STRING" },
+    channel: { type: "STRING" },
+    format: { type: "STRING" },
+    audienceNeed: { type: "STRING" },
+    keyMessage: { type: "STRING" },
+    contentAngle: { type: "STRING" },
+    researchSignals: { type: "ARRAY", items: { type: "STRING" } },
+    knowledgeNeeds: { type: "ARRAY", items: { type: "STRING" } },
+    radarSignals: { type: "ARRAY", items: { type: "STRING" } },
+    seoConsiderations: { type: "ARRAY", items: { type: "STRING" } },
+    cta: { type: "STRING" },
+    constraints: { type: "ARRAY", items: { type: "STRING" } },
+    sourcePriorities: { type: "ARRAY", items: { type: "STRING" } },
+  },
+  required: [
+    "audience",
+    "topic",
+    "subtopic",
+    "goal",
+    "channel",
+    "format",
+    "audienceNeed",
+    "keyMessage",
+    "contentAngle",
+    "researchSignals",
+    "knowledgeNeeds",
+    "radarSignals",
+    "seoConsiderations",
+    "cta",
+    "constraints",
+    "sourcePriorities",
+  ],
+};
+
 export type PlannerInput = {
   task: string;
   profile?: string;

@@ -14,6 +14,7 @@ import {
   buildPlannerUserPrompt,
   parseContentPlan,
   formatContentPlanForWriter,
+  CONTENT_PLAN_SCHEMA,
 } from "../../../../../../07_AUTOMATION/content-planner";
 
 import {
@@ -1122,7 +1123,8 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 async function callAI(
   systemPrompt: string,
   userPrompt: string,
-  maxOutputTokens = 2000
+  maxOutputTokens = 2000,
+  options: { responseMimeType?: string; responseSchema?: unknown } = {}
 ) {
   const apiKey = GEMINI_API_KEY;
 
@@ -1187,6 +1189,12 @@ async function callAI(
                 0.7,
 
               maxOutputTokens,
+              ...(options.responseMimeType
+                ? { responseMimeType: options.responseMimeType }
+                : {}),
+              ...(options.responseSchema
+                ? { responseSchema: options.responseSchema }
+                : {}),
             },
           }),
       });
@@ -1397,7 +1405,11 @@ export async function POST(
           profile,
           context,
         }),
-        1000
+        1200,
+        {
+          responseMimeType: "application/json",
+          responseSchema: CONTENT_PLAN_SCHEMA,
+        }
       );
 
     const contentPlan =
@@ -1528,6 +1540,9 @@ ${writerSystemPrompt}
 
         plannerUsage:
           planner.usage,
+
+        plannerRaw:
+          planner.content,
 
         usage:
           ai.usage,
