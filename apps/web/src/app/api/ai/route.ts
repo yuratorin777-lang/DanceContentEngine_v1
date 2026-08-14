@@ -11,15 +11,17 @@ export const dynamic = "force-dynamic";
  * ==================================================
  */
 
-const PROJECT_ROOT = path.resolve(process.cwd(), "../..");
+// На Vercel process.cwd() указывает на корень проекта
+const PROJECT_ROOT = process.cwd();
 
 /*
  * ==================================================
- * GROK CONFIGURATION
+ * GROQ CONFIGURATION
  * ==================================================
  */
 
-const GROK_API_KEY =
+const GROQ_API_KEY =
+  process.env.GROQ_API_KEY ||
   process.env.GROK_API_KEY ||
   process.env.XAI_API_KEY ||
   "";
@@ -1082,8 +1084,7 @@ async function callAI(
   systemPrompt: string,
   userPrompt: string
 ) {
-  const apiKey =
-    process.env.GROQ_API_KEY || "";
+  const apiKey = GROQ_API_KEY;
 
   if (!apiKey) {
     throw new Error(
@@ -1206,7 +1207,7 @@ async function callAI(
 }
 
 export async function GET() {
-  const key = process.env.GROQ_API_KEY || "";
+  const key = GROQ_API_KEY;
 
   return NextResponse.json({
     ok: true,
@@ -1223,7 +1224,7 @@ export async function GET() {
       keyPrefix: key ? key.slice(0, 8) : "",
     },
 
-    projectRoot: "DanceContentEngine_v1",
+    projectRoot: PROJECT_ROOT,
 
     profiles: [
       "CONTENT",
@@ -1247,8 +1248,21 @@ export async function POST(
     Date.now();
 
   try {
-    const body =
-      (await request.json()) as AIRequest;
+    let body: AIRequest;
+
+    try {
+      body = (await request.json()) as AIRequest;
+    } catch {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: "Invalid or empty JSON body in request.",
+        },
+        {
+          status: 400,
+        }
+      );
+    }
 
     const task =
       typeof body.task ===
