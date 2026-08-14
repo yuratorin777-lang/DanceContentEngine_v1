@@ -3,6 +3,12 @@ import fs from "fs/promises";
 import fsSync from "fs";
 import path from "path";
 
+import {
+  detectWriterOutputContract,
+  buildWriterSystemPrompt,
+  buildWriterUserPrompt,
+} from "../../../../../../07_AUTOMATION/writer";
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -1358,17 +1364,31 @@ export async function POST(
      * ==================================================
      */
 
-    const systemPrompt =
-      buildSystemPrompt(
-        profile
+    const outputContract =
+      detectWriterOutputContract(task);
+
+    const writerSystemPrompt =
+      buildWriterSystemPrompt(
+        outputContract
       );
 
+    const systemPrompt =
+      `${buildSystemPrompt(profile)}
+
+==================================================
+WRITER EXECUTION LAYER
+==================================================
+
+${writerSystemPrompt}
+`;
+
     const userPrompt =
-      buildUserPrompt(
+      buildWriterUserPrompt({
         task,
         profile,
-        files
-      );
+        context: formatContext(files),
+        outputContract,
+      });
 
     /*
      * ==================================================
@@ -1396,6 +1416,8 @@ export async function POST(
 
       meta: {
         profile,
+
+        outputContract,
 
         model:
           ai.model,
