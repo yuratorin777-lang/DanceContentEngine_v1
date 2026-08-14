@@ -11,16 +11,20 @@ export const dynamic = "force-dynamic";
  * ==================================================
  */
 
-function resolveProjectRoot(): string {
-  const cwd = process.cwd();
-  // Если мы внутри apps/web или apps\web, поднимаемся в корень монорепозитория
-  if (cwd.endsWith("apps/web") || cwd.endsWith("apps\\web")) {
-    return path.resolve(cwd, "../..");
-  }
-  return cwd;
-}
+// На Vercel process.cwd() указывает на корень проекта
+const PROJECT_ROOT = process.cwd();
 
-const PROJECT_ROOT = resolveProjectRoot();
+/*
+ * ==================================================
+ * GROQ CONFIGURATION
+ * ==================================================
+ */
+
+const GROQ_API_KEY =
+  process.env.GROQ_API_KEY ||
+  process.env.GROK_API_KEY ||
+  process.env.XAI_API_KEY ||
+  "";
 
 /*
  * ==================================================
