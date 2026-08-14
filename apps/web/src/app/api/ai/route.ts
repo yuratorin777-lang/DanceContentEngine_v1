@@ -10,6 +10,13 @@ import {
 } from "../../../../../../07_AUTOMATION/writer";
 
 import {
+  buildPlannerSystemPrompt,
+  buildPlannerUserPrompt,
+  parseContentPlan,
+  formatContentPlanForWriter,
+} from "../../../../../../07_AUTOMATION/content-planner";
+
+import {
   validateWriterOutput,
 } from "../../../../../../07_AUTOMATION/validator";
 
@@ -1114,7 +1121,8 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 
 async function callAI(
   systemPrompt: string,
-  userPrompt: string
+  userPrompt: string,
+  maxOutputTokens = 2000
 ) {
   const apiKey = GEMINI_API_KEY;
 
@@ -1178,8 +1186,7 @@ async function callAI(
               temperature:
                 0.7,
 
-              maxOutputTokens:
-                2000,
+              maxOutputTokens,
             },
           }),
       });
@@ -1368,8 +1375,46 @@ export async function POST(
      * ==================================================
      */
 
+    const context = formatContext(files);
+
     const outputContract =
       detectWriterOutputContract(task);
+
+    /*
+     * ==================================================
+     * CONTENT PLANNER
+     * ==================================================
+     *
+     * Planner synthesizes Research / Audience / Knowledge / Radar
+     * into a structured execution brief for Writer.
+     */
+
+    const planner =
+      await callAI(
+        buildPlannerSystemPrompt(),
+        buildPlannerUserPrompt({
+          task,
+          profile,
+          context,
+        }),
+        1000
+      );
+
+    const contentPlan =
+      parseContentPlan(
+        planner.content
+      );
+
+    const plannerBrief =
+      formatContentPlanForWriter(
+        contentPlan
+      );
+
+    /*
+     * ==================================================
+     * WRITER
+     * ==================================================
+     */
 
     const writerSystemPrompt =
       buildWriterSystemPrompt(
@@ -1378,6 +1423,16 @@ export async function POST(
 
     const systemPrompt =
       `${buildSystemPrompt(profile)}
+
+==================================================
+CONTENT PLANNER EXECUTION LAYER
+==================================================
+
+The Content Planner has already converted the user's request into a strategic execution brief.
+Use this brief as planning guidance, but treat the supplied project sources as the factual source of truth.
+Do not invent information that is absent from the sources.
+
+${plannerBrief}
 
 ==================================================
 WRITER EXECUTION LAYER
@@ -1390,20 +1445,15 @@ ${writerSystemPrompt}
       buildWriterUserPrompt({
         task,
         profile,
-        context: formatContext(files),
+        context: `${plannerBrief}\n\nSUPPLIED PROJECT CONTEXT:\n${context}`,
         outputContract,
       });
-
-    /*
-     * ==================================================
-     * CALL GEMINI API
-     * ==================================================
-     */
 
     const ai =
       await callAI(
         systemPrompt,
-        userPrompt
+        userPrompt,
+        2000
       );
 
     /*
@@ -1438,6 +1488,11 @@ ${writerSystemPrompt}
 
         outputContract,
 
+        contentPlan,
+
+        plannerModel:
+          planner.model,
+
         model:
           ai.model,
 
@@ -1470,6 +1525,9 @@ ${writerSystemPrompt}
         durationMs:
           Date.now() -
           started,
+
+        plannerUsage:
+          planner.usage,
 
         usage:
           ai.usage,
