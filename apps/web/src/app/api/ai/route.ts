@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
+import fsSync from "fs";
 import path from "path";
 
 export const runtime = "nodejs";
@@ -7,12 +8,30 @@ export const dynamic = "force-dynamic";
 
 /*
  * ==================================================
- * PROJECT ROOT
+ * PROJECT ROOT DETECTION (MONOREPO & VERCEL SAFE)
  * ==================================================
  */
 
-// На Vercel process.cwd() указывает на корень проекта
-const PROJECT_ROOT = process.cwd();
+function resolveProjectRoot(): string {
+  const cwd = process.cwd();
+
+  // 1. Проверяем на 2 уровня выше (если мы внутри apps/web)
+  const twoUp = path.resolve(cwd, "../..");
+  if (fsSync.existsSync(path.join(twoUp, "00_SYSTEM"))) {
+    return twoUp;
+  }
+
+  // 2. Проверяем на 1 уровень выше
+  const oneUp = path.resolve(cwd, "..");
+  if (fsSync.existsSync(path.join(oneUp, "00_SYSTEM"))) {
+    return oneUp;
+  }
+
+  // 3. Фолбэк, если запуск идет прямо из корня
+  return cwd;
+}
+
+const PROJECT_ROOT = resolveProjectRoot();
 
 /*
  * ==================================================
@@ -61,6 +80,7 @@ const EXCLUDED_DIRS = new Set([
   "dist",
   "build",
   "coverage",
+  "apps",
 ]);
 
 /*
@@ -1115,7 +1135,7 @@ async function callAI(
             "Content-Type":
               "application/json",
 
-            "Authorization":
+            Authorization:
               `Bearer ${apiKey}`,
           },
 
@@ -1143,7 +1163,7 @@ async function callAI(
               ],
 
               max_tokens:
-                300,
+                1000,
 
               temperature:
                 0.7,

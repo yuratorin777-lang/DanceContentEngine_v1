@@ -60,7 +60,7 @@ DanceContentEngine_v1
 │   │   ├── RADAR_BUILD_PLAN.md
 │   │   ├── RADAR_ENGINE.md
 │   │   ├── RADAR_ITEM_SCHEMA.md
-│   │   ├── RADAR_OUTPUT_SPEC
+│   │   ├── RADAR_OUTPUT_SPEC.md
 │   │   ├── RADAR_PROFILE_DANCE_SERPUKHOV.md
 │   │   ├── RADAR_SOURCE_STRATEGY.md
 │   │   └── README.md
@@ -84,10 +84,14 @@ DanceContentEngine_v1
 │   │   │   └── window.svg
 │   │   ├── src
 │   │   │   └── app
+│   │   │       ├── api
+│   │   │       │   └── ai
+│   │   │       │       └── route.ts
 │   │   │       ├── favicon.ico
 │   │   │       ├── globals.css
 │   │   │       ├── layout.tsx
 │   │   │       └── page.tsx
+│   │   ├── .env.local
 │   │   ├── .gitignore
 │   │   ├── AGENTS.md
 │   │   ├── CLAUDE.md
