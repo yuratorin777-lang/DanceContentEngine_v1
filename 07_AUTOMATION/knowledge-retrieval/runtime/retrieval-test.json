@@ -1,0 +1,2981 @@
+{
+  "generatedAt": "2026-08-15T09:40:11.269Z",
+  "query": {
+    "audience": "Родители детей дошкольного и младшего школьного возраста (3-8 лет) в Серпухове, ищущие развивающие и увлекательные внешкольные занятия.",
+    "topic": "Набор детей на новый танцевальный сезон",
+    "subtopic": "Преимущества танцев для развития ребенка и комфортная адаптация в школе",
+    "goal": "Привлечь новых родителей к записи детей на первое занятие или в группы нового танцевального сезона, подчеркивая положительный опыт ребенка, его развитие и комфортную адаптацию.",
+    "audienceNeed": "Родители хотят найти для ребенка занятие, которое будет ему нравиться, где будет хороший педагог, и где они увидят реальный прогресс, а также уверены в безопасности и комфортной адаптации.",
+    "keyMessage": "Танцы — это радость для ребенка, его гармоничное развитие и уверенность в себе под руководством внимательного педагога, с видимыми результатами и возможностью выступать на сцене.",
+    "contentAngle": "Фокус на радости и всестороннем развитии ребенка через танец, поддерживающей атмосфере, ощутимых результатах и легкой адаптации.",
+    "researchSignals": [
+      "Удовольствие ребенка от занятий и позитивные отношения с педагогом являются важными факторами удовлетворенности родителей.",
+      "Родители ценят видимый прогресс в координации, чувстве ритма, технике и уверенности.",
+      "Возможности для выступлений являются видимым результатом для родителей."
+    ],
+    "knowledgeNeeds": [
+      "Возрастные группы",
+      "Танцевальные направления",
+      "Педагогический подход",
+      "Адаптация детей",
+      "Прогресс ребенка",
+      "Выступления"
+    ],
+    "radarSignals": [
+      "Новые исследования о связи танцев и позитивного эмоционального состояния детей."
+    ],
+    "seoConsiderations": [
+      "Серпухов",
+      "детские танцы Серпухов",
+      "танцы для детей"
+    ],
+    "constraints": [
+      "Не придумывать цены.",
+      "Не придумывать расписание.",
+      "Не придумывать даты.",
+      "Использовать первое занятие вместо пробного занятия."
+    ],
+    "sourcePriorities": [
+      "02_RESEARCH",
+      "03_AUDIENCE",
+      "01_KNOWLEDGE",
+      "07_AUTOMATION",
+      "04_CONTENT",
+      "05_SEO"
+    ]
+  },
+  "candidates": [
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES",
+        "purpose": "Exact local search volumes were NOT available from the public sources reviewed in this phase. Therefore this report does not invent monthly query numbers.",
+        "priority": 85,
+        "size": 9227,
+        "modifiedAt": "2026-08-13T14:15:45.129Z",
+        "keywords": [
+          "танцы",
+          "local",
+          "серпухов",
+          "content",
+          "cluster",
+          "search",
+          "детей",
+          "opportunity",
+          "ребенок",
+          "dance",
+          "pages",
+          "выбрать",
+          "ребенка",
+          "exact",
+          "likely",
+          "questions",
+          "style",
+          "проходит",
+          "ребенку",
+          "choice"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 46.07,
+      "reasons": [
+        "audience match",
+        "strategic match",
+        "expert relevance",
+        "adjacent relevance",
+        "substantive source"
+      ],
+      "match": {
+        "direct": 24,
+        "audience": 26,
+        "strategic": 30,
+        "expert": 45,
+        "adjacent": 28,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_OUTPUT_SPEC.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_OUTPUT_SPEC.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "1. PURPOSE",
+        "purpose": "RADAR OUTPUT SPECIFICATION",
+        "priority": 90,
+        "size": 23456,
+        "modifiedAt": "2026-08-13T15:36:08.529Z",
+        "keywords": [
+          "radar",
+          "материала",
+          "означает",
+          "материал",
+          "указывает",
+          "source",
+          "развитие",
+          "результат",
+          "content",
+          "необходимо",
+          "является",
+          "информационный",
+          "используется",
+          "события",
+          "содержит",
+          "relevance",
+          "world",
+          "информации",
+          "latest",
+          "output"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 37.07,
+      "reasons": [
+        "expert relevance",
+        "substantive source"
+      ],
+      "match": {
+        "direct": 24,
+        "audience": 11,
+        "strategic": 24,
+        "expert": 36,
+        "adjacent": 16,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 85,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/engine/RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR PROFILE — DANCE / SERPUKHOV v1.1",
+        "purpose": "Профиль определяет, какую внешнюю информацию Radar / World Feed считает потенциально полезной для Dance Content Engine.",
+        "priority": 90,
+        "size": 5029,
+        "modifiedAt": "2026-08-13T12:07:10.000Z",
+        "keywords": [
+          "связи",
+          "radar",
+          "материал",
+          "танцы",
+          "активности",
+          "активностью",
+          "возраст",
+          "география",
+          "детьми",
+          "другие",
+          "медицинские",
+          "международные",
+          "обучение",
+          "обучением",
+          "питание",
+          "потенциально",
+          "развитие",
+          "связанные",
+          "сигнал",
+          "сигналы"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 31.7,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 21,
+        "audience": 7,
+        "strategic": 15,
+        "expert": 36,
+        "adjacent": 7,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR PROFILE — DANCE / SERPUKHOV v1.1",
+        "purpose": "Профиль определяет, какую внешнюю информацию Radar / World Feed считает потенциально полезной для Dance Content Engine.",
+        "priority": 90,
+        "size": 5029,
+        "modifiedAt": "2026-08-13T12:07:10.000Z",
+        "keywords": [
+          "связи",
+          "radar",
+          "материал",
+          "танцы",
+          "активности",
+          "активностью",
+          "возраст",
+          "география",
+          "детьми",
+          "другие",
+          "медицинские",
+          "международные",
+          "обучение",
+          "обучением",
+          "питание",
+          "потенциально",
+          "развитие",
+          "связанные",
+          "сигнал",
+          "сигналы"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 31.7,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 21,
+        "audience": 7,
+        "strategic": 15,
+        "expert": 36,
+        "adjacent": 7,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-AUDIENCE-ANALYSIS.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-AUDIENCE-ANALYSIS",
+        "purpose": "Public evidence suggests that parents evaluate children's dance through a combination of:",
+        "priority": 85,
+        "size": 7894,
+        "modifiedAt": "2026-08-13T14:15:11.843Z",
+        "keywords": [
+          "parents",
+          "reviews",
+          "accessed",
+          "https",
+          "dance",
+          "children",
+          "yandex",
+          "child",
+          "parent",
+          "interpretation",
+          "sources",
+          "evidence",
+          "mention",
+          "performance",
+          "visible",
+          "dance_kids",
+          "families",
+          "local",
+          "public",
+          "stage"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 31.69,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 11,
+        "audience": 7,
+        "strategic": 6,
+        "expert": 9,
+        "adjacent": 15,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "01_KNOWLEDGE/OWNER_INPUT_RULES.md",
+        "domain": "01_KNOWLEDGE",
+        "fileName": "OWNER_INPUT_RULES.md",
+        "extension": ".md",
+        "type": "rules",
+        "title": "OWNER INPUT RULES",
+        "purpose": "Owner knowledge is a first-class source.",
+        "priority": 90,
+        "size": 447,
+        "modifiedAt": "2026-08-13T10:25:10.000Z",
+        "keywords": [
+          "owner",
+          "source",
+          "external",
+          "knowledge",
+          "preserve",
+          "statement",
+          "answers",
+          "before",
+          "choose",
+          "cleaned",
+          "conflict",
+          "conflicts",
+          "editing",
+          "experience",
+          "first-class",
+          "input",
+          "interviews",
+          "material",
+          "never",
+          "owner_input_rules"
+        ],
+        "sourceRole": "expert-knowledge",
+        "radarMetadata": null
+      },
+      "score": 30.5,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 40,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 80,
+        "contentDepth": 30,
+        "sourcePriority": 80
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-MARKET-ANALYSIS.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-MARKET-ANALYSIS.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-MARKET-ANALYSIS",
+        "purpose": "The Serpukhov children's dance market is not a single homogeneous category. It contains at least four overlapping offer clusters:",
+        "priority": 85,
+        "size": 9950,
+        "modifiedAt": "2026-08-13T14:14:27.642Z",
+        "keywords": [
+          "dance",
+          "https",
+          "children",
+          "local",
+          "accessed",
+          "market",
+          "interpretation",
+          "cultural",
+          "serpuhov",
+          "around",
+          "child",
+          "choreography",
+          "parent",
+          "serpukhov",
+          "sports",
+          "activities",
+          "adjacent",
+          "ballet",
+          "content",
+          "development"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 29.95,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 5,
+        "audience": 4,
+        "strategic": 12,
+        "expert": 9,
+        "adjacent": 12,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-COMPETITOR-MAP.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-COMPETITOR-MAP",
+        "purpose": "The local field can be divided into:",
+        "priority": 85,
+        "size": 8457,
+        "modifiedAt": "2026-08-13T14:15:26.275Z",
+        "keywords": [
+          "dance",
+          "local",
+          "children",
+          "https",
+          "modern",
+          "positioning",
+          "public",
+          "interpretation",
+          "choreography",
+          "stage",
+          "source",
+          "ballroom",
+          "child",
+          "cultural",
+          "other",
+          "trial",
+          "accessed",
+          "competitor",
+          "development",
+          "ensemble"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 25.55,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-EXECUTIVE-BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-EXECUTIVE-BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-EXECUTIVE-BRIEF",
+        "purpose": "Serpukhov has a meaningful and fragmented children's dance ecosystem. The market includes sports ballroom, modern dance, choreography/ballet and cultural ensembles, plus multi-service children's centres and adjacent sports/creative activities.",
+        "priority": 85,
+        "size": 6285,
+        "modifiedAt": "2026-08-13T14:15:58.086Z",
+        "keywords": [
+          "local",
+          "dance",
+          "https",
+          "children",
+          "content",
+          "market",
+          "parent",
+          "parents",
+          "reviews",
+          "child",
+          "interpretation",
+          "opportunity",
+          "sources",
+          "decision",
+          "facts",
+          "providers",
+          "public",
+          "style",
+          "visible",
+          "ballroom"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-HANDOVER.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-HANDOVER.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-HANDOVER",
+        "purpose": "Completed the first open-web analytical baseline for:",
+        "priority": 85,
+        "size": 5520,
+        "modifiedAt": "2026-08-13T14:16:26.298Z",
+        "keywords": [
+          "local",
+          "market",
+          "baseline",
+          "parent",
+          "research",
+          "search",
+          "children",
+          "content",
+          "evidence",
+          "priority",
+          "audience",
+          "competitor",
+          "dance",
+          "first-party",
+          "official",
+          "public",
+          "competitors",
+          "cultural",
+          "established",
+          "exact"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/AI-ANALYST-BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "AI-ANALYST-BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "AI-ANALYST — MASTER BRIEF",
+        "purpose": "You are the Local Market & Audience Analyst for a dance school.",
+        "priority": 85,
+        "size": 3043,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "local",
+          "content",
+          "research",
+          "demand",
+          "dance",
+          "audience",
+          "competitors",
+          "every",
+          "identify",
+          "information",
+          "market",
+          "questions",
+          "analytical",
+          "children",
+          "collect",
+          "commercial",
+          "decision",
+          "deliverables",
+          "major",
+          "opportunities"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/engine/config.json",
+        "domain": "07_AUTOMATION",
+        "fileName": "config.json",
+        "extension": ".json",
+        "type": "config",
+        "title": "config",
+        "purpose": "{",
+        "priority": 60,
+        "size": 4621,
+        "modifiedAt": "2026-08-13T12:07:10.000Z",
+        "keywords": [
+          "dance",
+          "google",
+          "world",
+          "children",
+          "https",
+          "scope",
+          "search",
+          "weight",
+          "development",
+          "activity",
+          "global",
+          "physical",
+          "серпухов",
+          "championship",
+          "child",
+          "competition",
+          "health",
+          "injury",
+          "research",
+          "sport"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 23.78,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 8,
+        "audience": 4,
+        "strategic": 15,
+        "expert": 9,
+        "adjacent": 2,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 70,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/AI-ANALYST-ROLE.md",
+        "domain": "02_RESEARCH",
+        "fileName": "AI-ANALYST-ROLE.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "AI-ANALYST — ROLE DEFINITION",
+        "purpose": "AI-ANALYST-001",
+        "priority": 85,
+        "size": 2231,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "research",
+          "facts",
+          "audience",
+          "content",
+          "local",
+          "market",
+          "source",
+          "artifacts",
+          "conclusions",
+          "explicitly",
+          "sources",
+          "02_research",
+          "analysis",
+          "analyst",
+          "current",
+          "decisions",
+          "definition",
+          "identified",
+          "important",
+          "information"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 23.45,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 50,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/SERPUKHOV_ANALYSIS_BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV_ANALYSIS_BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV — ANALYTICAL RESEARCH BRIEF",
+        "purpose": "Build a decision-grade knowledge base for a children's dance school and local content/SEO system in Serpukhov.",
+        "priority": 85,
+        "size": 1446,
+        "modifiedAt": "2026-08-13T10:25:10.000Z",
+        "keywords": [
+          "local",
+          "serpukhov",
+          "content",
+          "questions",
+          "research",
+          "brief",
+          "children",
+          "competitor",
+          "competitors",
+          "dance",
+          "facts",
+          "information",
+          "market",
+          "opportunity",
+          "primary",
+          "school",
+          "search",
+          "source",
+          "sources",
+          "actions"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 23.45,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 50,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/SERPUKHOV-RESEARCH-TASK.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-RESEARCH-TASK.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV PILOT — INITIAL ANALYST TASK",
+        "purpose": "Create the first complete analytical baseline for a children's dance school operating in Serpukhov.",
+        "priority": 85,
+        "size": 1926,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "local",
+          "content",
+          "dance",
+          "first",
+          "research",
+          "analyst",
+          "school",
+          "sources",
+          "analytical",
+          "audience",
+          "baseline",
+          "business",
+          "children",
+          "create",
+          "estimates",
+          "expert",
+          "future",
+          "landscape",
+          "meaningful",
+          "questions"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 23.45,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 50,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/validator/index.ts",
+        "domain": "07_AUTOMATION",
+        "fileName": "index.ts",
+        "extension": ".ts",
+        "type": "code",
+        "title": "index",
+        "purpose": "Материал index.ts",
+        "priority": 60,
+        "size": 9838,
+        "modifiedAt": "2026-08-14T18:06:27.000Z",
+        "keywords": [
+          "index"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 22.37,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 7,
+        "strategic": 6,
+        "expert": 9,
+        "adjacent": 4,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 85,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "04_CONTENT/CONTENT_WORK_RULES.md",
+        "domain": "04_CONTENT",
+        "fileName": "CONTENT_WORK_RULES.md",
+        "extension": ".md",
+        "type": "rules",
+        "title": "CONTENT WORK RULES",
+        "purpose": "Every content item needs:",
+        "priority": 75,
+        "size": 2340,
+        "modifiedAt": "2026-08-14T18:21:16.067Z",
+        "keywords": [
+          "занятие",
+          "занятий",
+          "использовать",
+          "пробных",
+          "content",
+          "promotional",
+          "выражения",
+          "материал",
+          "первое",
+          "разрешено",
+          "context",
+          "анализа",
+          "аналитический",
+          "вместо",
+          "вопрос",
+          "выражение",
+          "группу",
+          "допустимости",
+          "дословно",
+          "занятию"
+        ],
+        "sourceRole": "content-methodology",
+        "radarMetadata": null
+      },
+      "score": 22.31,
+      "reasons": [],
+      "match": {
+        "direct": 3,
+        "audience": 11,
+        "strategic": 9,
+        "expert": 9,
+        "adjacent": 5,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 60
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/AI-ANALYST-ONBOARDING.md",
+        "domain": "02_RESEARCH",
+        "fileName": "AI-ANALYST-ONBOARDING.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "AI-ANALYST — ONBOARDING",
+        "purpose": "Before doing research, read:",
+        "priority": 85,
+        "size": 686,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "readme",
+          "00_system",
+          "02_research",
+          "conflict",
+          "report",
+          "research",
+          "scope",
+          "01_knowledge",
+          "03_audience",
+          "05_seo",
+          "ai_work_rules",
+          "ai-analyst",
+          "ai-analyst-brief",
+          "ai-analyst-onboarding",
+          "ai-analyst-role",
+          "before",
+          "begin",
+          "choosing",
+          "current",
+          "data_flow"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 22.25,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 30,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/ANALYST_BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "ANALYST_BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "AI-ANALYST BRIEF",
+        "purpose": "You are the AI Analyst for Dance Content Engine.",
+        "priority": 85,
+        "size": 668,
+        "modifiedAt": "2026-08-13T10:25:10.000Z",
+        "keywords": [
+          "00_system",
+          "brief",
+          "research",
+          "before",
+          "owner",
+          "actual",
+          "ai_work_rules",
+          "ai-analyst",
+          "analyst",
+          "analyst_brief",
+          "analytical",
+          "behalf",
+          "complete",
+          "completion",
+          "content",
+          "dance",
+          "decision",
+          "decisions",
+          "deliverables",
+          "document_rules"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 22.25,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 30,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/ANALYST-DELIVERABLE-STANDARD.md",
+        "domain": "02_RESEARCH",
+        "fileName": "ANALYST-DELIVERABLE-STANDARD.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "ANALYST DELIVERABLE STANDARD",
+        "purpose": "Every major research package must contain:",
+        "priority": 85,
+        "size": 646,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "analysis",
+          "document",
+          "every",
+          "findings",
+          "major",
+          "questions",
+          "research",
+          "should",
+          "unresolved",
+          "actions",
+          "analyst",
+          "analyst-deliverable-standard",
+          "avoid",
+          "brief",
+          "build",
+          "built",
+          "certainty",
+          "clearly",
+          "completed",
+          "conclusion"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 22.25,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 30,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/engine/radar_engine.js",
+        "domain": "07_AUTOMATION",
+        "fileName": "radar_engine.js",
+        "extension": ".js",
+        "type": "code",
+        "title": "radar_engine",
+        "purpose": "Материал radar_engine.js",
+        "priority": 90,
+        "size": 15138,
+        "modifiedAt": "2026-08-13T15:27:28.606Z",
+        "keywords": [
+          "radar_engine"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 20.7,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 85,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/knowledge-retrieval/retriever.ts",
+        "domain": "07_AUTOMATION",
+        "fileName": "retriever.ts",
+        "extension": ".ts",
+        "type": "code",
+        "title": "retriever",
+        "purpose": "Материал retriever.ts",
+        "priority": 60,
+        "size": 24600,
+        "modifiedAt": "2026-08-15T09:17:35.888Z",
+        "keywords": [
+          "retriever"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 20.4,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 100,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/knowledge-retrieval/index.ts",
+        "domain": "07_AUTOMATION",
+        "fileName": "index.ts",
+        "extension": ".ts",
+        "type": "code",
+        "title": "index",
+        "purpose": "Материал index.ts",
+        "priority": 60,
+        "size": 19037,
+        "modifiedAt": "2026-08-15T09:39:29.095Z",
+        "keywords": [
+          "index"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 20.1,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 100,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/writer/index.ts",
+        "domain": "07_AUTOMATION",
+        "fileName": "index.ts",
+        "extension": ".ts",
+        "type": "code",
+        "title": "index",
+        "purpose": "Материал index.ts",
+        "priority": 60,
+        "size": 3961,
+        "modifiedAt": "2026-08-14T17:37:12.000Z",
+        "keywords": [
+          "index"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 19.9,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 3,
+        "expert": 9,
+        "adjacent": 2,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 70,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_ENGINE.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_ENGINE.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR / WORLD FEED ENGINE v1",
+        "purpose": "Continuous external-information acquisition for Dance Content Engine.",
+        "priority": 90,
+        "size": 4163,
+        "modifiedAt": "2026-08-13T11:30:46.000Z",
+        "keywords": [
+          "dance",
+          "source",
+          "engine",
+          "activity",
+          "content",
+          "directly",
+          "world",
+          "children",
+          "education",
+          "evidence",
+          "knowledge",
+          "local",
+          "radar",
+          "relevance",
+          "competitions",
+          "confidence",
+          "cultural",
+          "durable",
+          "health",
+          "items"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 19.8,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 70,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/content-planner/index.ts",
+        "domain": "07_AUTOMATION",
+        "fileName": "index.ts",
+        "extension": ".ts",
+        "type": "code",
+        "title": "index",
+        "purpose": "Материал index.ts",
+        "priority": 60,
+        "size": 8845,
+        "modifiedAt": "2026-08-14T19:22:51.000Z",
+        "keywords": [
+          "index"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 19.2,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 85,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_BUILD_PLAN.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_BUILD_PLAN.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR ENGINE BUILD PLAN v1",
+        "purpose": "Use:",
+        "priority": 90,
+        "size": 1099,
+        "modifiedAt": "2026-08-13T11:30:46.000Z",
+        "keywords": [
+          "source",
+          "engine",
+          "radar",
+          "daily",
+          "start",
+          "build",
+          "classification",
+          "classify",
+          "collectors",
+          "reuse",
+          "sources",
+          "world",
+          "architecture",
+          "broad",
+          "collect",
+          "competition",
+          "conceptually",
+          "connect",
+          "content",
+          "dance"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 18.6,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "00_SYSTEM/ANALYST_BRIEF.md",
+        "domain": "00_SYSTEM",
+        "fileName": "ANALYST_BRIEF.md",
+        "extension": ".md",
+        "type": "document",
+        "title": "AI ANALYST BRIEF",
+        "purpose": "Подготовить большую аналитическую базу для локального контент- и SEO-движка школы в Серпухове и Новокузнецке.",
+        "priority": 95,
+        "size": 1473,
+        "modifiedAt": "2026-08-13T10:09:18.000Z",
+        "keywords": [
+          "opportunities",
+          "задача",
+          "конкурентов",
+          "контент",
+          "аналитик",
+          "аналитическую",
+          "большую",
+          "важно",
+          "внешний",
+          "возможности",
+          "вокруг",
+          "вопросы",
+          "датой",
+          "детских",
+          "детского",
+          "информационные",
+          "исследовать",
+          "источников",
+          "источником",
+          "каждый"
+        ],
+        "sourceRole": "system-governance",
+        "radarMetadata": null
+      },
+      "score": 18.29,
+      "reasons": [],
+      "match": {
+        "direct": 5,
+        "audience": 4,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 4,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 30,
+        "sourcePriority": 30
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Battle Ground longboarder makes history with eighth-place world championship finish - The Reflector",
+        "purpose": "Battle Ground longboarder makes history with eighth-place world championship finish - The Reflector\n\nBattle Ground longboarder makes history with eighth-place world championship finish &nbsp;&nbsp; The Reflector",
+        "priority": 68,
+        "size": 1063,
+        "modifiedAt": "2026-08-13T18:49:34.818Z",
+        "keywords": [
+          "battle",
+          "championship",
+          "eighth-place",
+          "finish",
+          "ground",
+          "history",
+          "longboarder",
+          "makes",
+          "reflector",
+          "world"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+          "relevance": 68,
+          "relevanceLevel": "MEDIUM",
+          "primaryCategory": "DANCE_WORLD",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "championship"
+            ],
+            "DANCE_WORLD": [
+              "world championship"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance world championships",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT201cVhIbXJzajNNWkRjNjA2SS1RT1dyYzEtSHZpNWZuSWhpNTFiSVpHby00a0x4LWpXYXBYVzVtcTQyYzBGcnpiZTRzRG9rUlhzd2RjWXVYbWlXdm5OZzJLbFNUSkZtVzVINW50YXU0ai1nUUsyRnM0QzdmdzF6ZEdPUkx6cDRPaWdFTXlvTU02NzhmMzh3dFd5T3hVVlUzb0pqT2xpbzlRNG5IenJDWURhbzRrM2oxcWZyZUtqWmlVWUcy?oc=5",
+          "collectedAt": "2026-08-13T18:49:34.818Z",
+          "publishedAt": "2026-08-11T19:48:37.000Z"
+        }
+      },
+      "score": 18.1,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 100,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Детский праздник для семей участников СВО прошел в Серпухове - 360.ru",
+        "purpose": "Детский праздник для семей участников СВО прошел в Серпухове - 360.ru\n\nДетский праздник для семей участников СВО прошел в Серпухове &nbsp;&nbsp; 360.ru",
+        "priority": 60,
+        "size": 1040,
+        "modifiedAt": "2026-08-13T18:49:32.407Z",
+        "keywords": [
+          "детский",
+          "праздник",
+          "прошел",
+          "семей",
+          "серпухове",
+          "участников"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5",
+          "relevance": 25,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "LOCAL_ECOSYSTEM",
+          "matchedCategories": {
+            "LOCAL_ECOSYSTEM": [
+              "Серпухов",
+              "детск"
+            ]
+          },
+          "context": {
+            "local": true,
+            "russia": false,
+            "global": false
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — Серпухов дети танцы",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVGxNRnpWSEJvM2F6N2tLbFFlWjBFcHBBZy1FU1o1SGdUZ3N0cmxaV3cwLU95ZzEwNmtUdXNPcmJkbWJJUk04QlZjSXc1YVVBUU5ueXkzV1o3b3lMTkVNY1NjRDN2RHpVT3J1Y245Y3J3b1ZMYkg3WVpOejFObmNHdkpVNXhkdjBNaWhyRVVZeHVWdm1NcEE?oc=5",
+          "collectedAt": "2026-08-13T18:49:32.407Z",
+          "publishedAt": "2026-08-06T15:45:00.000Z"
+        }
+      },
+      "score": 18.1,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 4,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 90,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка",
+        "purpose": "Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка\n\nСерпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды &nbsp;&nbsp; Смитанка",
+        "priority": 65,
+        "size": 1162,
+        "modifiedAt": "2026-08-13T18:49:32.408Z",
+        "keywords": [
+          "бургеры",
+          "гавайи",
+          "мальдивы",
+          "открываются",
+          "падл-корты",
+          "серпуховские",
+          "смитанка",
+          "танцы"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+          "relevance": 65,
+          "relevanceLevel": "MEDIUM",
+          "primaryCategory": "LOCAL_DANCE",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "танц"
+            ],
+            "LOCAL_ECOSYSTEM": [
+              "Серпухов",
+              "танц"
+            ]
+          },
+          "context": {
+            "local": true,
+            "russia": false,
+            "global": false
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — Серпухов дети танцы",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5",
+          "collectedAt": "2026-08-13T18:49:32.408Z",
+          "publishedAt": "2026-06-05T07:00:00.000Z"
+        }
+      },
+      "score": 18.08,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 3,
+        "audience": 0,
+        "strategic": 6,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 75,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6YWZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6YWZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "В выходные жители и гости Серпухова могут отлично провести время на городских пляжах. - ОТВ-Серпухов",
+        "purpose": "В выходные жители и гости Серпухова могут отлично провести время на городских пляжах. - ОТВ-Серпухов\n\nВ выходные жители и гости Серпухова могут отлично провести время на городских пляжах. &nbsp;&nbsp; ОТВ-Серпухов",
+        "priority": 60,
+        "size": 1223,
+        "modifiedAt": "2026-08-13T18:49:32.407Z",
+        "keywords": [
+          "время",
+          "выходные",
+          "городских",
+          "гости",
+          "жители",
+          "могут",
+          "отв-серпухов",
+          "отлично",
+          "пляжах",
+          "провести",
+          "серпухова"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6YWZidnY5",
+          "relevance": 25,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "LOCAL_ECOSYSTEM",
+          "matchedCategories": {
+            "LOCAL_ECOSYSTEM": [
+              "Серпухов"
+            ]
+          },
+          "context": {
+            "local": true,
+            "russia": false,
+            "global": false
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — Серпухов дети танцы",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOU1ZpNnQzc015OTRjSzZ4ekJDdXNQZVNTZzAyWC1OVENmWUJ0Tzh1RUduMHhOYktzOE4ybnNMelgzdVU0ZVZEd2pCZlBqUmNKTjVEZnJCXzViTE1OSnVnc2FsODJ0VFItTWFCVktmcDJ0WmhkY1ZBUWc2MmdVMWdyR0tDR09veGRGcGNubnpBejNiMnh2QXNHcXpaSWhQdHVHQ1l4UElmckQ0eVlZZHk5VEZWQTZ6eFl6NXFBUElVY3dFM0FEWENfcS1xN0o?oc=5",
+          "collectedAt": "2026-08-13T18:49:32.407Z",
+          "publishedAt": "2026-08-08T11:50:35.000Z"
+        }
+      },
+      "score": 18,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 100,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Хоровод и башкирский танец: как прошёл первый день детской Фольклориады в Уфе [ВИДЕО] - Bash.News",
+        "purpose": "Хоровод и башкирский танец: как прошёл первый день детской Фольклориады в Уфе [ВИДЕО] - Bash.News\n\nХоровод и башкирский танец: как прошёл первый день детской Фольклориады в Уфе [ВИДЕО] &nbsp;&nbsp; Bash.News",
+        "priority": 60,
+        "size": 1174,
+        "modifiedAt": "2026-08-13T18:49:33.134Z",
+        "keywords": [
+          "башкирский",
+          "видео",
+          "детской",
+          "первый",
+          "прошёл",
+          "танец",
+          "фольклориады",
+          "хоровод"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
+          "relevance": 27,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "LOCAL_ECOSYSTEM",
+          "matchedCategories": {
+            "LOCAL_ECOSYSTEM": [
+              "детск"
+            ],
+            "CONTENT_SIGNAL": [
+              "new",
+              "как"
+            ]
+          },
+          "context": {
+            "local": true,
+            "russia": true,
+            "global": false
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — детские танцы Россия",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb042akJTVEI1eVZsLVo2bDgwRVNZZEwxQWdDaWQ3NGhHTWlVUUk4V1lOaTJLWG54TDBIODVnRU02dVpPMFU2M2RwOXhsVFF3NnVTeFVmUnJxZ3VNU2stSXliN1A2RDVSbnNvS1lXZ010OVVzUWhBblc1aDNZTjJwTWNkbUEzRy1WeDlQT0lGU3phdHdDRG5CYWhZZXdEaGpXUm9TU0ZYTQ?oc=5",
+          "collectedAt": "2026-08-13T18:49:33.134Z",
+          "publishedAt": "2026-06-24T07:00:00.000Z"
+        }
+      },
+      "score": 17.75,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 3,
+        "audience": 0,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 2,
+        "freshness": 75,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Teen dance crew claims world title by 0.01 points after on-stage blunder - RNZ",
+        "purpose": "Teen dance crew claims world title by 0.01 points after on-stage blunder - RNZ\n\nTeen dance crew claims world title by 0.01 points after on-stage blunder &nbsp;&nbsp; RNZ",
+        "priority": 60,
+        "size": 940,
+        "modifiedAt": "2026-08-13T18:49:34.820Z",
+        "keywords": [
+          "after",
+          "blunder",
+          "claims",
+          "dance",
+          "on-stage",
+          "points",
+          "title",
+          "world"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+          "relevance": 36,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "CORE_DANCE",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "dance"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance world championships",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMi1VT0xXeDNiODZYZF9CelI0NWduUTM2aTZ0ekZZRHotZU1MMGF6RGZ6R01WeGE0cmd3T2FaLTA5WGU1dFdnTlBVT2t6bGtVQk02SFo2UGktYXVrNkZ4WTUyUklQRnllRXN4ZnZuZXZGcE95ZmNJM0NJajlLdVI4blFGMW5zR1U2N3NvMmt4VndBYllfaW9YUjhCa0V3LXZsNEVSOHJkbG9PckU?oc=5",
+          "collectedAt": "2026-08-13T18:49:34.820Z",
+          "publishedAt": "2026-08-12T23:50:14.000Z"
+        }
+      },
+      "score": 17.7,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 100,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_ITEM_SCHEMA.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_ITEM_SCHEMA.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR ITEM SCHEMA v1",
+        "purpose": "{",
+        "priority": 90,
+        "size": 837,
+        "modifiedAt": "2026-08-13T11:30:46.000Z",
+        "keywords": [
+          "audience",
+          "local",
+          "schema",
+          "archived",
+          "article",
+          "categories",
+          "change",
+          "changing",
+          "confidence",
+          "content",
+          "content_potential",
+          "dance",
+          "directory",
+          "entities",
+          "facts",
+          "format",
+          "freshness",
+          "global",
+          "hypotheses",
+          "importance"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 17.4,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_SOURCE_STRATEGY.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_SOURCE_STRATEGY.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR SOURCE STRATEGY v1",
+        "purpose": "Do not hard-code a giant website list into the engine.",
+        "priority": 90,
+        "size": 904,
+        "modifiedAt": "2026-08-13T11:30:46.000Z",
+        "keywords": [
+          "dance",
+          "organisations",
+          "source",
+          "discovery",
+          "health",
+          "institutions",
+          "local",
+          "media",
+          "public",
+          "sources",
+          "broad",
+          "calendars",
+          "championship",
+          "child-development",
+          "class",
+          "classes",
+          "collection",
+          "collector",
+          "communities",
+          "competition"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 17.4,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "The influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial - Frontiers",
+        "purpose": "The influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial - Frontiers\n\nThe influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial &nbsp;&nbsp; Frontiers",
+        "priority": 64,
+        "size": 1133,
+        "modifiedAt": "2026-08-13T18:49:33.988Z",
+        "keywords": [
+          "dance",
+          "aesthetic",
+          "children",
+          "controlled",
+          "cultural",
+          "curriculum",
+          "elements",
+          "frontiers",
+          "identity",
+          "influence",
+          "integrating",
+          "literacy",
+          "national",
+          "randomized",
+          "trial"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+          "relevance": 64,
+          "relevanceLevel": "MEDIUM",
+          "primaryCategory": "CORE_DANCE",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "dance"
+            ],
+            "CHILD_DEVELOPMENT": [
+              "child",
+              "children"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance children development",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGVjNEFWRzZZR1VrcnVCUFpEMy1uMjVtbWZ3MWZFeGtXeWJ5b19kR1pleWFRa29qNGhCTVF4cjV2em9HanpYbkxkRF85eTNnLTNvTXpDWTQtNVdyLVJZVTV1TmtLUTBKX2g2MHo4RW5pWlpIRnJpN0FMTUN3MG0yUmxXMjdiVGlsam5SMnJtTjA?oc=5",
+          "collectedAt": "2026-08-13T18:49:33.988Z",
+          "publishedAt": "2026-07-17T19:43:45.000Z"
+        }
+      },
+      "score": 17.4,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 90,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/ENGINE_INTEGRATION.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "ENGINE_INTEGRATION.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "Radar / World Feed Engine v1.1",
+        "purpose": "Это обновление классификатора существующего движка Radar / World Feed.",
+        "priority": 60,
+        "size": 1148,
+        "modifiedAt": "2026-08-13T12:07:32.000Z",
+        "keywords": [
+          "radar",
+          "world",
+          "engine",
+          "runtime",
+          "scoring",
+          "активностью",
+          "движка",
+          "движок",
+          "детьми",
+          "добавлен",
+          "добавлены",
+          "запуск",
+          "изменилось",
+          "история",
+          "классификатора",
+          "классификация",
+          "материал",
+          "международные",
+          "области",
+          "обновление"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 17.2,
+      "reasons": [],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 9,
+        "adjacent": 2,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6a2Z2eDNs",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6a2Z2eDNs.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE - FOX 10 Phoenix",
+        "purpose": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE - FOX 10 Phoenix\n\nWorld Hip Hop Dance Championship begins featuring Arizona varsity crew KODE &nbsp;&nbsp; FOX 10 Phoenix",
+        "priority": 60,
+        "size": 1046,
+        "modifiedAt": "2026-08-13T18:49:34.821Z",
+        "keywords": [
+          "arizona",
+          "begins",
+          "championship",
+          "dance",
+          "featuring",
+          "phoenix",
+          "varsity",
+          "world"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6a2Z2eDNs",
+          "relevance": 36,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "CORE_DANCE",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "dance",
+              "hip hop",
+              "championship"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance world championships",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43RWtUcmptTjNHSFc3QURHSmZoc2ZZbXUxSFY1VFc1UmU4RlFuQlExaTdmNFpjTG5iTGdPbzVLYzJUUVNIc3BubVh2X1pDLTExT19KdmxTTW5zdHY3UTBMa1UzSk9BZ9IBa0FVX3lxTE45UEcwY0ZwV2VlSy1KMzRKMm9FSGpJT2xIUXVRQWdwNnJYQnNGQzNKSGk3X0doRWNYOExUeUhnRmJEODRjWlFkZUZKbWJCUGJObThVTjEwN0xrUGQzWlZlSkM1RFJLOC0zVlY0?oc=5",
+          "collectedAt": "2026-08-13T18:49:34.821Z",
+          "publishedAt": "2026-07-26T07:00:00.000Z"
+        }
+      },
+      "score": 17.2,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 90,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfZ2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfZ2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Local Representation: Gilbert Crews compete at World Hip Hop Dance Championship - phoenix.org",
+        "purpose": "Local Representation: Gilbert Crews compete at World Hip Hop Dance Championship - phoenix.org\n\nLocal Representation: Gilbert Crews compete at World Hip Hop Dance Championship &nbsp;&nbsp; phoenix.org",
+        "priority": 60,
+        "size": 1106,
+        "modifiedAt": "2026-08-13T18:49:34.820Z",
+        "keywords": [
+          "championship",
+          "compete",
+          "crews",
+          "dance",
+          "gilbert",
+          "local",
+          "phoenix",
+          "representation",
+          "world"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfZ2ZidnY5",
+          "relevance": 36,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "CORE_DANCE",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "dance",
+              "hip hop",
+              "championship"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance world championships",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaklRblNNODJCRWQ3RldZV1g1QUIzMHRjR1BvRXpnY2lKSGR6RDlFQ3RqcEdRU3dvQ2pVV24wQWF2WnJMOHhSOU5Yc0VaVDlzeEF1NFlaMVVNS2FBWDVTRHJ2OThHVHlFcjk3dVQ3dUlzdkFVdUpSa3p5SVpXY2FKcl8tT3d1bVBJelUtLUs0TXZ5alNURHhObmVVR2k1NmUxWmRvbVBhTG1ONm1neWktWnJJb1B3cU9aVzRadDItMmdpTTNXcDAwZlZHWjBqa191Rndya0V5TVdQb05MNV82bzdRNjVYeFI3d0JIMVllX2RtckJrbDZuRGhHaHBuUQ?oc=5",
+          "collectedAt": "2026-08-13T18:49:34.820Z",
+          "publishedAt": "2026-07-26T07:00:00.000Z"
+        }
+      },
+      "score": 17.2,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 90,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    }
+  ],
+  "selected": [
+    {
+      "item": {
+        "path": "01_KNOWLEDGE/OWNER_INPUT_RULES.md",
+        "domain": "01_KNOWLEDGE",
+        "fileName": "OWNER_INPUT_RULES.md",
+        "extension": ".md",
+        "type": "rules",
+        "title": "OWNER INPUT RULES",
+        "purpose": "Owner knowledge is a first-class source.",
+        "priority": 90,
+        "size": 447,
+        "modifiedAt": "2026-08-13T10:25:10.000Z",
+        "keywords": [
+          "owner",
+          "source",
+          "external",
+          "knowledge",
+          "preserve",
+          "statement",
+          "answers",
+          "before",
+          "choose",
+          "cleaned",
+          "conflict",
+          "conflicts",
+          "editing",
+          "experience",
+          "first-class",
+          "input",
+          "interviews",
+          "material",
+          "never",
+          "owner_input_rules"
+        ],
+        "sourceRole": "expert-knowledge",
+        "radarMetadata": null
+      },
+      "score": 30.5,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 40,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 80,
+        "contentDepth": 30,
+        "sourcePriority": 80
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES",
+        "purpose": "Exact local search volumes were NOT available from the public sources reviewed in this phase. Therefore this report does not invent monthly query numbers.",
+        "priority": 85,
+        "size": 9227,
+        "modifiedAt": "2026-08-13T14:15:45.129Z",
+        "keywords": [
+          "танцы",
+          "local",
+          "серпухов",
+          "content",
+          "cluster",
+          "search",
+          "детей",
+          "opportunity",
+          "ребенок",
+          "dance",
+          "pages",
+          "выбрать",
+          "ребенка",
+          "exact",
+          "likely",
+          "questions",
+          "style",
+          "проходит",
+          "ребенку",
+          "choice"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 46.07,
+      "reasons": [
+        "audience match",
+        "strategic match",
+        "expert relevance",
+        "adjacent relevance",
+        "substantive source"
+      ],
+      "match": {
+        "direct": 24,
+        "audience": 26,
+        "strategic": 30,
+        "expert": 45,
+        "adjacent": 28,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-AUDIENCE-ANALYSIS.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-AUDIENCE-ANALYSIS",
+        "purpose": "Public evidence suggests that parents evaluate children's dance through a combination of:",
+        "priority": 85,
+        "size": 7894,
+        "modifiedAt": "2026-08-13T14:15:11.843Z",
+        "keywords": [
+          "parents",
+          "reviews",
+          "accessed",
+          "https",
+          "dance",
+          "children",
+          "yandex",
+          "child",
+          "parent",
+          "interpretation",
+          "sources",
+          "evidence",
+          "mention",
+          "performance",
+          "visible",
+          "dance_kids",
+          "families",
+          "local",
+          "public",
+          "stage"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 31.69,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 11,
+        "audience": 7,
+        "strategic": 6,
+        "expert": 9,
+        "adjacent": 15,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-MARKET-ANALYSIS.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-MARKET-ANALYSIS.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-MARKET-ANALYSIS",
+        "purpose": "The Serpukhov children's dance market is not a single homogeneous category. It contains at least four overlapping offer clusters:",
+        "priority": 85,
+        "size": 9950,
+        "modifiedAt": "2026-08-13T14:14:27.642Z",
+        "keywords": [
+          "dance",
+          "https",
+          "children",
+          "local",
+          "accessed",
+          "market",
+          "interpretation",
+          "cultural",
+          "serpuhov",
+          "around",
+          "child",
+          "choreography",
+          "parent",
+          "serpukhov",
+          "sports",
+          "activities",
+          "adjacent",
+          "ballet",
+          "content",
+          "development"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 29.95,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 5,
+        "audience": 4,
+        "strategic": 12,
+        "expert": 9,
+        "adjacent": 12,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "04_CONTENT/CONTENT_WORK_RULES.md",
+        "domain": "04_CONTENT",
+        "fileName": "CONTENT_WORK_RULES.md",
+        "extension": ".md",
+        "type": "rules",
+        "title": "CONTENT WORK RULES",
+        "purpose": "Every content item needs:",
+        "priority": 75,
+        "size": 2340,
+        "modifiedAt": "2026-08-14T18:21:16.067Z",
+        "keywords": [
+          "занятие",
+          "занятий",
+          "использовать",
+          "пробных",
+          "content",
+          "promotional",
+          "выражения",
+          "материал",
+          "первое",
+          "разрешено",
+          "context",
+          "анализа",
+          "аналитический",
+          "вместо",
+          "вопрос",
+          "выражение",
+          "группу",
+          "допустимости",
+          "дословно",
+          "занятию"
+        ],
+        "sourceRole": "content-methodology",
+        "radarMetadata": null
+      },
+      "score": 22.31,
+      "reasons": [],
+      "match": {
+        "direct": 3,
+        "audience": 11,
+        "strategic": 9,
+        "expert": 9,
+        "adjacent": 5,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 60
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Battle Ground longboarder makes history with eighth-place world championship finish - The Reflector",
+        "purpose": "Battle Ground longboarder makes history with eighth-place world championship finish - The Reflector\n\nBattle Ground longboarder makes history with eighth-place world championship finish &nbsp;&nbsp; The Reflector",
+        "priority": 68,
+        "size": 1063,
+        "modifiedAt": "2026-08-13T18:49:34.818Z",
+        "keywords": [
+          "battle",
+          "championship",
+          "eighth-place",
+          "finish",
+          "ground",
+          "history",
+          "longboarder",
+          "makes",
+          "reflector",
+          "world"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+          "relevance": 68,
+          "relevanceLevel": "MEDIUM",
+          "primaryCategory": "DANCE_WORLD",
+          "matchedCategories": {
+            "CORE_DANCE": [
+              "championship"
+            ],
+            "DANCE_WORLD": [
+              "world championship"
+            ]
+          },
+          "context": {
+            "local": false,
+            "russia": false,
+            "global": true
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — dance world championships",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT201cVhIbXJzajNNWkRjNjA2SS1RT1dyYzEtSHZpNWZuSWhpNTFiSVpHby00a0x4LWpXYXBYVzVtcTQyYzBGcnpiZTRzRG9rUlhzd2RjWXVYbWlXdm5OZzJLbFNUSkZtVzVINW50YXU0ai1nUUsyRnM0QzdmdzF6ZEdPUkx6cDRPaWdFTXlvTU02NzhmMzh3dFd5T3hVVlUzb0pqT2xpbzlRNG5IenJDWURhbzRrM2oxcWZyZUtqWmlVWUcy?oc=5",
+          "collectedAt": "2026-08-13T18:49:34.818Z",
+          "publishedAt": "2026-08-11T19:48:37.000Z"
+        }
+      },
+      "score": 18.1,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 100,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/runtime/latest.json#signal-aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5",
+        "domain": "07_AUTOMATION",
+        "fileName": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5.json",
+        "extension": ".json",
+        "type": "radar_signal",
+        "title": "Детский праздник для семей участников СВО прошел в Серпухове - 360.ru",
+        "purpose": "Детский праздник для семей участников СВО прошел в Серпухове - 360.ru\n\nДетский праздник для семей участников СВО прошел в Серпухове &nbsp;&nbsp; 360.ru",
+        "priority": 60,
+        "size": 1040,
+        "modifiedAt": "2026-08-13T18:49:32.407Z",
+        "keywords": [
+          "детский",
+          "праздник",
+          "прошел",
+          "семей",
+          "серпухове",
+          "участников"
+        ],
+        "sourceRole": "radar-external-signal",
+        "radarMetadata": {
+          "signalId": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5",
+          "relevance": 25,
+          "relevanceLevel": "LOW",
+          "primaryCategory": "LOCAL_ECOSYSTEM",
+          "matchedCategories": {
+            "LOCAL_ECOSYSTEM": [
+              "Серпухов",
+              "детск"
+            ]
+          },
+          "context": {
+            "local": true,
+            "russia": false,
+            "global": false
+          },
+          "confidence": 0.8,
+          "isFact": true,
+          "source": "Google News — Серпухов дети танцы",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVGxNRnpWSEJvM2F6N2tLbFFlWjBFcHBBZy1FU1o1SGdUZ3N0cmxaV3cwLU95ZzEwNmtUdXNPcmJkbWJJUk04QlZjSXc1YVVBUU5ueXkzV1o3b3lMTkVNY1NjRDN2RHpVT3J1Y245Y3J3b1ZMYkg3WVpOejFObmNHdkpVNXhkdjBNaWhyRVVZeHVWdm1NcEE?oc=5",
+          "collectedAt": "2026-08-13T18:49:32.407Z",
+          "publishedAt": "2026-08-06T15:45:00.000Z"
+        }
+      },
+      "score": 18.1,
+      "reasons": [
+        "radar signal"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 4,
+        "strategic": 3,
+        "expert": 0,
+        "adjacent": 0,
+        "freshness": 90,
+        "confidence": 80,
+        "novelty": 90,
+        "contentDepth": 30,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_OUTPUT_SPEC.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_OUTPUT_SPEC.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "1. PURPOSE",
+        "purpose": "RADAR OUTPUT SPECIFICATION",
+        "priority": 90,
+        "size": 23456,
+        "modifiedAt": "2026-08-13T15:36:08.529Z",
+        "keywords": [
+          "radar",
+          "материала",
+          "означает",
+          "материал",
+          "указывает",
+          "source",
+          "развитие",
+          "результат",
+          "content",
+          "необходимо",
+          "является",
+          "информационный",
+          "используется",
+          "события",
+          "содержит",
+          "relevance",
+          "world",
+          "информации",
+          "latest",
+          "output"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 37.07,
+      "reasons": [
+        "expert relevance",
+        "substantive source"
+      ],
+      "match": {
+        "direct": 24,
+        "audience": 11,
+        "strategic": 24,
+        "expert": 36,
+        "adjacent": 16,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 85,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/engine/RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR PROFILE — DANCE / SERPUKHOV v1.1",
+        "purpose": "Профиль определяет, какую внешнюю информацию Radar / World Feed считает потенциально полезной для Dance Content Engine.",
+        "priority": 90,
+        "size": 5029,
+        "modifiedAt": "2026-08-13T12:07:10.000Z",
+        "keywords": [
+          "связи",
+          "radar",
+          "материал",
+          "танцы",
+          "активности",
+          "активностью",
+          "возраст",
+          "география",
+          "детьми",
+          "другие",
+          "медицинские",
+          "международные",
+          "обучение",
+          "обучением",
+          "питание",
+          "потенциально",
+          "развитие",
+          "связанные",
+          "сигнал",
+          "сигналы"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 31.7,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 21,
+        "audience": 7,
+        "strategic": 15,
+        "expert": 36,
+        "adjacent": 7,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "07_AUTOMATION/Rardar_world feed/RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "domain": "07_AUTOMATION",
+        "fileName": "RADAR_PROFILE_DANCE_SERPUKHOV.md",
+        "extension": ".md",
+        "type": "automation",
+        "title": "RADAR PROFILE — DANCE / SERPUKHOV v1.1",
+        "purpose": "Профиль определяет, какую внешнюю информацию Radar / World Feed считает потенциально полезной для Dance Content Engine.",
+        "priority": 90,
+        "size": 5029,
+        "modifiedAt": "2026-08-13T12:07:10.000Z",
+        "keywords": [
+          "связи",
+          "radar",
+          "материал",
+          "танцы",
+          "активности",
+          "активностью",
+          "возраст",
+          "география",
+          "детьми",
+          "другие",
+          "медицинские",
+          "международные",
+          "обучение",
+          "обучением",
+          "питание",
+          "потенциально",
+          "развитие",
+          "связанные",
+          "сигнал",
+          "сигналы"
+        ],
+        "sourceRole": "automation-context",
+        "radarMetadata": null
+      },
+      "score": 31.7,
+      "reasons": [
+        "expert relevance"
+      ],
+      "match": {
+        "direct": 21,
+        "audience": 7,
+        "strategic": 15,
+        "expert": 36,
+        "adjacent": 7,
+        "freshness": 40,
+        "confidence": 60,
+        "novelty": 50,
+        "contentDepth": 50,
+        "sourcePriority": 70
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-COMPETITOR-MAP.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-COMPETITOR-MAP",
+        "purpose": "The local field can be divided into:",
+        "priority": 85,
+        "size": 8457,
+        "modifiedAt": "2026-08-13T14:15:26.275Z",
+        "keywords": [
+          "dance",
+          "local",
+          "children",
+          "https",
+          "modern",
+          "positioning",
+          "public",
+          "interpretation",
+          "choreography",
+          "stage",
+          "source",
+          "ballroom",
+          "child",
+          "cultural",
+          "other",
+          "trial",
+          "accessed",
+          "competitor",
+          "development",
+          "ensemble"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 25.55,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 85,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-EXECUTIVE-BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-EXECUTIVE-BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-EXECUTIVE-BRIEF",
+        "purpose": "Serpukhov has a meaningful and fragmented children's dance ecosystem. The market includes sports ballroom, modern dance, choreography/ballet and cultural ensembles, plus multi-service children's centres and adjacent sports/creative activities.",
+        "priority": 85,
+        "size": 6285,
+        "modifiedAt": "2026-08-13T14:15:58.086Z",
+        "keywords": [
+          "local",
+          "dance",
+          "https",
+          "children",
+          "content",
+          "market",
+          "parent",
+          "parents",
+          "reviews",
+          "child",
+          "interpretation",
+          "opportunity",
+          "sources",
+          "decision",
+          "facts",
+          "providers",
+          "public",
+          "style",
+          "visible",
+          "ballroom"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/Аналитик/SERPUKHOV-HANDOVER.md",
+        "domain": "02_RESEARCH",
+        "fileName": "SERPUKHOV-HANDOVER.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "SERPUKHOV-HANDOVER",
+        "purpose": "Completed the first open-web analytical baseline for:",
+        "priority": 85,
+        "size": 5520,
+        "modifiedAt": "2026-08-13T14:16:26.298Z",
+        "keywords": [
+          "local",
+          "market",
+          "baseline",
+          "parent",
+          "research",
+          "search",
+          "children",
+          "content",
+          "evidence",
+          "priority",
+          "audience",
+          "competitor",
+          "dance",
+          "first-party",
+          "official",
+          "public",
+          "competitors",
+          "cultural",
+          "established",
+          "exact"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    },
+    {
+      "item": {
+        "path": "02_RESEARCH/AI-ANALYST-BRIEF.md",
+        "domain": "02_RESEARCH",
+        "fileName": "AI-ANALYST-BRIEF.md",
+        "extension": ".md",
+        "type": "research",
+        "title": "AI-ANALYST — MASTER BRIEF",
+        "purpose": "You are the Local Market & Audience Analyst for a dance school.",
+        "priority": 85,
+        "size": 3043,
+        "modifiedAt": "2026-08-13T10:36:50.000Z",
+        "keywords": [
+          "local",
+          "content",
+          "research",
+          "demand",
+          "dance",
+          "audience",
+          "competitors",
+          "every",
+          "identify",
+          "information",
+          "market",
+          "questions",
+          "analytical",
+          "children",
+          "collect",
+          "commercial",
+          "decision",
+          "deliverables",
+          "major",
+          "opportunities"
+        ],
+        "sourceRole": "research-evidence",
+        "radarMetadata": null
+      },
+      "score": 24.65,
+      "reasons": [
+        "substantive source"
+      ],
+      "match": {
+        "direct": 0,
+        "audience": 0,
+        "strategic": 0,
+        "expert": 0,
+        "adjacent": 10,
+        "freshness": 40,
+        "confidence": 85,
+        "novelty": 75,
+        "contentDepth": 70,
+        "sourcePriority": 100
+      }
+    }
+  ],
+  "composition": {
+    "direct": 0,
+    "audience": 0,
+    "expert": 1,
+    "research": 7,
+    "adjacent": 0,
+    "radar": 2,
+    "strategic": 1,
+    "total": 14
+  }
+}
