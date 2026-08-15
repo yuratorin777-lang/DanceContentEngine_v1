@@ -14,17 +14,11 @@ export type RetrievalSourceRole =
 
 export type RetrievalCandidate = {
   item: any;
-
   role: RetrievalSourceRole;
-
   content: string;
-
   size: number;
-
   relevance: number;
-
   sourcePriority: number;
-
   reasons: string[];
 };
 
@@ -67,15 +61,27 @@ export type KnowledgePackage = {
   };
 
   candidates: RetrievalCandidate[];
-
   selected: RetrievalCandidate[];
-
   composition: RetrievalComposition;
 };
 
 const DEFAULT_LIMITS = {
-  maxCharacters: 220_000,
-  maxSources: 28,
+  /*
+   * Physical context ceiling.
+   *
+   * This is NOT a semantic relevance limit.
+   * It exists to keep the model request within
+   * a predictable context budget.
+   */
+  maxCharacters: 180_000,
+
+  /*
+   * Maximum number of source documents.
+   *
+   * Diversity is more important than simply
+   * taking the top N documents.
+   */
+  maxSources: 30,
 };
 
 const STOP_WORDS = new Set([
@@ -133,6 +139,8 @@ const EXCLUDED_FILES = new Set([
 const EXCLUDED_TYPES = new Set([
   "code",
   "config",
+  "data",
+  "automation",
 ]);
 
 const DOMAIN_ROLE_MAP: Record<
@@ -156,47 +164,26 @@ const ROLE_ORDER: RetrievalSourceRole[] = [
   "seo",
   "input",
   "radar",
-  "system",
-  "other",
 ];
 
-function normalize(
-  text: string
-): string {
-  return String(
-    text || ""
-  )
+function normalize(text: string): string {
+  return String(text || "")
     .toLowerCase()
-    .replace(
-      /ё/g,
-      "е"
-    )
-    .replace(
-      /[^a-zа-я0-9\s_-]/gi,
-      " "
-    )
-    .replace(
-      /\s+/g,
-      " "
-    )
+    .replace(/ё/g, "е")
+    .replace(/[^a-zа-я0-9\s_-]/gi, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
-function tokenize(
-  text: string
-): string[] {
+function tokenize(text: string): string[] {
   return [
     ...new Set(
-      normalize(
-        text
-      )
+      normalize(text)
         .split(" ")
         .filter(
           token =>
             token.length >= 4 &&
-            !STOP_WORDS.has(
-              token
-            )
+            !STOP_WORDS.has(token)
         )
     ),
   ];
@@ -207,15 +194,11 @@ function overlapScore(
   text: string
 ): number {
   const queryTokens =
-    tokenize(
-      query
-    );
+    tokenize(query);
 
   const textTokens =
     new Set(
-      tokenize(
-        text
-      )
+      tokenize(text)
     );
 
   if (
@@ -228,9 +211,7 @@ function overlapScore(
   const hits =
     queryTokens.filter(
       token =>
-        textTokens.has(
-          token
-        )
+        textTokens.has(token)
     ).length;
 
   return Math.min(
@@ -246,54 +227,6 @@ function overlapScore(
         100
     )
   );
-}
-
-function joinPlan(
-  plan: any
-): string {
-  return [
-    plan?.audience,
-    plan?.topic,
-    plan?.subtopic,
-    plan?.goal,
-    plan?.audienceNeed,
-    plan?.keyMessage,
-    plan?.contentAngle,
-    ...(Array.isArray(
-      plan?.researchSignals
-    )
-      ? plan.researchSignals
-      : []),
-    ...(Array.isArray(
-      plan?.knowledgeNeeds
-    )
-      ? plan.knowledgeNeeds
-      : []),
-    ...(Array.isArray(
-      plan?.radarSignals
-    )
-      ? plan.radarSignals
-      : []),
-    ...(Array.isArray(
-      plan?.seoConsiderations
-    )
-      ? plan.seoConsiderations
-      : []),
-    ...(Array.isArray(
-      plan?.constraints
-    )
-      ? plan.constraints
-      : []),
-    ...(Array.isArray(
-      plan?.sourcePriorities
-    )
-      ? plan.sourcePriorities
-      : []),
-  ]
-    .filter(Boolean)
-    .join(
-      " "
-    );
 }
 
 function roleOf(
@@ -331,6 +264,17 @@ function isExcludedItem(
       item.fileName || ""
     ).toLowerCase();
 
+  const domain =
+    String(
+      item.domain || ""
+    );
+
+  const type =
+    String(
+      item.type || ""
+    );
+
+  // Technical placeholders are never useful to Writer.
   if (
     EXCLUDED_FILES.has(
       fileName
@@ -339,12 +283,42 @@ function isExcludedItem(
     return true;
   }
 
+  // Radar is an explicit exception: Radar signals are content-bearing
+  // external inputs even though they live inside 07_AUTOMATION.
+  if (
+    type === "radar_signal"
+  ) {
+    return false;
+  }
+
+  // System governance is not writing material.
+  if (
+    domain === "00_SYSTEM"
+  ) {
+    return true;
+  }
+
+  // Automation is infrastructure, not Writer context.
+  if (
+    domain === "07_AUTOMATION"
+  ) {
+    return true;
+  }
+
+  // Explicit technical item types are excluded everywhere.
   if (
     EXCLUDED_TYPES.has(
-      String(
-        item.type || ""
-      )
+      type
     )
+  ) {
+    return true;
+  }
+
+  // Navigation documents describe the library; they are not content sources.
+  if (
+    type === "index" ||
+    type === "readme" ||
+    fileName === "readme.md"
   ) {
     return true;
   }
@@ -420,8 +394,7 @@ function sourcePriorityScore(
     ) {
       return Math.max(
         40,
-        100 -
-          i * 10
+        100 - i * 10
       );
     }
   }
@@ -453,9 +426,7 @@ function buildSearchText(
     content,
   ]
     .filter(Boolean)
-    .join(
-      " "
-    );
+    .join(" ");
 }
 
 function calculateRelevance(
@@ -481,9 +452,7 @@ function calculateRelevance(
       plan?.contentAngle,
     ]
       .filter(Boolean)
-      .join(
-        " "
-      );
+      .join(" ");
 
   const audienceQuery =
     [
@@ -491,9 +460,7 @@ function calculateRelevance(
       plan?.audienceNeed,
     ]
       .filter(Boolean)
-      .join(
-        " "
-      );
+      .join(" ");
 
   const researchQuery =
     [
@@ -503,9 +470,7 @@ function calculateRelevance(
         []),
     ]
       .filter(Boolean)
-      .join(
-        " "
-      );
+      .join(" ");
 
   const strategicQuery =
     [
@@ -515,9 +480,7 @@ function calculateRelevance(
         []),
     ]
       .filter(Boolean)
-      .join(
-        " "
-      );
+      .join(" ");
 
   const direct =
     overlapScore(
@@ -544,9 +507,7 @@ function calculateRelevance(
     );
 
   const role =
-    roleOf(
-      item
-    );
+    roleOf(item);
 
   const sourcePriority =
     sourcePriorityScore(
@@ -562,46 +523,46 @@ function calculateRelevance(
     sourcePriority * 0.15;
 
   /*
-   * Role-specific bonuses are deliberately small.
+   * Маленькие role bonuses.
    *
-   * We do NOT want to force artificial source
-   * domination just because of the role.
+   * Они помогают не потерять тип источника,
+   * но не позволяют одному домену захватить
+   * весь пакет.
    */
 
   if (
-    role ===
-    "knowledge" &&
+    role === "knowledge" &&
     research >= 15
   ) {
     relevance += 4;
   }
 
   if (
-    role ===
-    "audience" &&
+    role === "audience" &&
     audience >= 15
   ) {
     relevance += 4;
   }
 
   if (
-    role ===
-    "research" &&
+    role === "research" &&
     research >= 15
   ) {
     relevance += 4;
   }
 
   if (
-    role ===
-    "input"
+    role === "input"
   ) {
     relevance += 3;
   }
 
+  /*
+   * Radar receives a small relevance bonus.
+   */
+
   if (
-    role ===
-    "radar"
+    role === "radar"
   ) {
     const radarRelevance =
       Number(
@@ -612,30 +573,29 @@ function calculateRelevance(
     relevance +=
       Math.min(
         8,
-        radarRelevance /
-          12
+        radarRelevance / 12
       );
 
     if (
       item?.radarMetadata
         ?.context?.local
     ) {
-      relevance +=
-        3;
+      relevance += 3;
     }
   }
 
+  /*
+   * Indexes / READMEs are navigation material.
+   * They are not forbidden, but strongly de-prioritized.
+   */
+
   if (
-    isNavigationItem(
-      item
-    )
+    isNavigationItem(item)
   ) {
-    relevance -=
-      15;
+    relevance -= 15;
   }
 
-  const reasons: string[] =
-    [];
+  const reasons: string[] = [];
 
   if (
     direct >= 20
@@ -670,8 +630,7 @@ function calculateRelevance(
   }
 
   if (
-    sourcePriority >=
-    80
+    sourcePriority >= 80
   ) {
     reasons.push(
       "planner source priority"
@@ -679,8 +638,7 @@ function calculateRelevance(
   }
 
   if (
-    role ===
-    "radar"
+    role === "radar"
   ) {
     reasons.push(
       "current radar signal"
@@ -688,9 +646,7 @@ function calculateRelevance(
   }
 
   if (
-    isNavigationItem(
-      item
-    )
+    isNavigationItem(item)
   ) {
     reasons.push(
       "navigation source"
@@ -700,8 +656,7 @@ function calculateRelevance(
   return {
     relevance:
       Math.round(
-        relevance *
-          100
+        relevance * 100
       ) / 100,
 
     sourcePriority,
@@ -719,8 +674,8 @@ async function resolveContent(
   }
 
   /*
-   * Radar signal content already exists in
-   * the Librarian item metadata.
+   * Radar signal data is already represented
+   * inside the Librarian map item.
    */
   if (
     item.type ===
@@ -739,9 +694,7 @@ async function resolveContent(
       ),
     ]
       .filter(Boolean)
-      .join(
-        "\n"
-      );
+      .join("\n");
   }
 
   const relativePath =
@@ -767,9 +720,7 @@ async function resolveContent(
       item.sourceRole,
     ]
       .filter(Boolean)
-      .join(
-        "\n"
-      );
+      .join("\n");
   }
 
   const absolutePath =
@@ -862,54 +813,66 @@ function addToComposition(
   role: RetrievalSourceRole,
   size: number
 ) {
-  if (
-    role ===
-    "knowledge"
-  ) {
-    composition.knowledge++;
-  } else if (
-    role ===
-    "audience"
-  ) {
-    composition.audience++;
-  } else if (
-    role ===
-    "research"
-  ) {
-    composition.research++;
-  } else if (
-    role ===
-    "content"
-  ) {
-    composition.content++;
-  } else if (
-    role ===
-    "seo"
-  ) {
-    composition.seo++;
-  } else if (
-    role ===
-    "input"
-  ) {
-    composition.input++;
-  } else if (
-    role ===
-    "radar"
-  ) {
-    composition.radar++;
-  } else if (
-    role ===
-    "system"
-  ) {
-    composition.system++;
-  } else {
-    composition.other++;
+  switch (role) {
+    case "knowledge":
+      composition.knowledge++;
+      break;
+
+    case "audience":
+      composition.audience++;
+      break;
+
+    case "research":
+      composition.research++;
+      break;
+
+    case "content":
+      composition.content++;
+      break;
+
+    case "seo":
+      composition.seo++;
+      break;
+
+    case "input":
+      composition.input++;
+      break;
+
+    case "radar":
+      composition.radar++;
+      break;
+
+    case "system":
+      composition.system++;
+      break;
+
+    default:
+      composition.other++;
+      break;
   }
 
   composition.total++;
-  composition.characters +=
-    size;
+  composition.characters += size;
 }
+
+/*
+ * ==================================================
+ * DIVERSITY SELECTION
+ * ==================================================
+ *
+ * The key job of Retriever.
+ *
+ * Pass 1:
+ * give every meaningful source role a chance.
+ *
+ * Pass 2:
+ * use the remaining context budget for the
+ * strongest unused candidates.
+ *
+ * Pass 3:
+ * if large documents do not fit, use smaller
+ * unused sources to preserve diversity.
+ */
 
 function selectDiverseSources(
   ranked: RetrievalCandidate[],
@@ -925,15 +888,6 @@ function selectDiverseSources(
 
   let totalCharacters =
     0;
-
-  /*
-   * First pass:
-   *
-   * Give every meaningful role a chance.
-   *
-   * This is diversity protection,
-   * not relevance ranking.
-   */
 
   for (
     const role of ROLE_ORDER
@@ -982,11 +936,8 @@ function selectDiverseSources(
   }
 
   /*
-   * Second pass:
-   *
-   * Fill remaining capacity with the best
-   * unused candidates while respecting the
-   * physical context limit.
+   * Fill remaining capacity with the
+   * strongest unused candidates.
    */
 
   for (
@@ -1028,13 +979,8 @@ function selectDiverseSources(
   }
 
   /*
-   * Third pass:
-   *
-   * When a large source does not fit,
-   * try smaller unused sources.
-   *
-   * This prevents one huge document from
-   * destroying diversity.
+   * Large sources should not prevent the
+   * package from filling remaining space.
    */
 
   if (
@@ -1118,24 +1064,14 @@ export async function discoverAndRank(
     const item of allItems
   ) {
     if (
-      isExcludedItem(
-        item
-      )
+      isExcludedItem(item)
     ) {
       continue;
     }
 
     const role =
-      roleOf(
-        item
-      );
+      roleOf(item);
 
-    /*
-     * Internal system files remain available
-     * only as low-priority fallback knowledge.
-     *
-     * They are never deliberately preferred.
-     */
     const content =
       await resolveContent(
         projectRoot,
@@ -1155,62 +1091,46 @@ export async function discoverAndRank(
         plan
       );
 
-    const candidate:
-      RetrievalCandidate = {
+    candidates.push({
       item,
-
       role,
-
       content,
-
       size:
         content.length,
-
       relevance:
         result.relevance,
-
       sourcePriority:
         result.sourcePriority,
-
       reasons:
         result.reasons,
-    };
-
-    candidates.push(
-      candidate
-    );
+    });
   }
 
   /*
-   * Ranking is only used to order candidates.
+   * Relevance is used only to create an order.
    *
-   * It is NOT used as the meaning of the
-   * retrieval system.
-   *
-   * Diversity selection below has priority
-   * over simply taking the top N.
+   * It is NOT the sole selection criterion.
    */
 
   const ranked =
-    [...candidates]
-      .sort(
-        (a, b) => {
-          if (
-            b.relevance !==
-            a.relevance
-          ) {
-            return (
-              b.relevance -
-              a.relevance
-            );
-          }
-
+    [...candidates].sort(
+      (a, b) => {
+        if (
+          b.relevance !==
+          a.relevance
+        ) {
           return (
-            b.size -
-            a.size
+            b.relevance -
+            a.relevance
           );
         }
-      );
+
+        return (
+          b.size -
+          a.size
+        );
+      }
+    );
 
   const selected =
     selectDiverseSources(
@@ -1239,39 +1159,31 @@ export async function discoverAndRank(
     limits: {
       maxCharacters:
         limits.maxCharacters,
-
       maxSources:
         limits.maxSources,
     },
 
     query: {
       audience:
-        plan?.audience ||
-        "",
+        plan?.audience || "",
 
       topic:
-        plan?.topic ||
-        "",
+        plan?.topic || "",
 
       subtopic:
-        plan?.subtopic ||
-        "",
+        plan?.subtopic || "",
 
       goal:
-        plan?.goal ||
-        "",
+        plan?.goal || "",
 
       audienceNeed:
-        plan?.audienceNeed ||
-        "",
+        plan?.audienceNeed || "",
 
       keyMessage:
-        plan?.keyMessage ||
-        "",
+        plan?.keyMessage || "",
 
       contentAngle:
-        plan?.contentAngle ||
-        "",
+        plan?.contentAngle || "",
 
       researchSignals:
         Array.isArray(
@@ -1351,8 +1263,11 @@ export function formatKnowledgePackage(
 KNOWLEDGE RETRIEVAL PACKAGE
 ==================================================
 
-MAX CHARACTERS: ${pkg.limits.maxCharacters}
-MAX SOURCES: ${pkg.limits.maxSources}
+MAX CHARACTERS:
+${pkg.limits.maxCharacters}
+
+MAX SOURCES:
+${pkg.limits.maxSources}
 
 SELECTED SOURCES:
 ${pkg.composition.total}
@@ -1382,17 +1297,29 @@ Other: ${pkg.composition.other}
       ) => {
         return `
 SOURCE ${index + 1}
-PATH: ${candidate.item.path}
-ROLE: ${candidate.role}
-TYPE: ${candidate.item.type}
-SIZE: ${candidate.size}
-RELEVANCE: ${candidate.relevance}
-REASONS: ${
-          candidate.reasons.join(
-            ", "
-          ) ||
-          "selected for diversity and context coverage"
-        }
+
+PATH:
+${candidate.item.path}
+
+ROLE:
+${candidate.role}
+
+TYPE:
+${candidate.item.type}
+
+SIZE:
+${candidate.size}
+
+RELEVANCE:
+${candidate.relevance}
+
+REASONS:
+${
+  candidate.reasons.join(
+    ", "
+  ) ||
+  "selected for diversity and context coverage"
+}
 
 TITLE:
 ${candidate.item.title || ""}
@@ -1407,8 +1334,6 @@ ${candidate.content}
 
   return (
     header +
-    blocks.join(
-      "\n"
-    )
+    blocks.join("\n")
   );
 }

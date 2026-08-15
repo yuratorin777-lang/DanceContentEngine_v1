@@ -8,6 +8,24 @@ DanceContentEngine_v1
 │   ├── ROLES.md
 │   └── SYSTEM_INDEX.md
 ├── 01_KNOWLEDGE
+│   ├── 2026-08-15_01 Как я пришел в танцы
+│   │   └── raw_parts
+│   │       └── 01 Как я пришел в танцы.md
+│   ├── 2026-08-15_02_Что_удержало_меня_в_тенцах_на_десятилетия
+│   │   └── raw_parts
+│   │       └── 02_Что_удержало_меня_в_тенцах_на_десятилетия.md
+│   ├── 2026-08-15_03_что_я_понял_о_танцах_спустя_много_времени
+│   │   └── raw_parts
+│   │       └── 03_что_я_понял_о_танцах_спустя_много_времени.md
+│   ├── 2026-08-15_04_Как_поменялись_дети_и_родители_за_это_время
+│   │   └── raw_parts
+│   │       └── 04_Как_поменялись_дети_и_родители_за_это_время.md
+│   ├── 2026-08-15_05_Что_сегодня_в_танцах_стало_лучше
+│   │   └── raw_parts
+│   │       └── 05_Что_сегодня_в_танцах_стало_лучше.md
+│   ├── 2026-08-15_06 Что в танцах стало хуже
+│   │   └── raw_parts
+│   │       └── 06 Что в танцах стало хуже.md
 │   ├── .gitkeep
 │   ├── KNOWLEDGE_INDEX.md
 │   ├── OWNER_INPUT_RULES.md
@@ -49,6 +67,15 @@ DanceContentEngine_v1
 │   ├── ANALYTICS_INDEX.md
 │   └── README.md
 ├── 07_AUTOMATION
+│   ├── content-planner
+│   │   ├── index.ts
+│   │   └── README.md
+│   ├── knowledge-retrieval
+│   │   ├── index.ts
+│   │   ├── README.md
+│   │   ├── retriever-smoke-test.ts
+│   │   ├── retriever.ts
+│   │   └── tsconfig.json
 │   ├── Rardar_world feed
 │   │   ├── engine
 │   │   │   ├── config.json
@@ -64,11 +91,20 @@ DanceContentEngine_v1
 │   │   ├── RADAR_PROFILE_DANCE_SERPUKHOV.md
 │   │   ├── RADAR_SOURCE_STRATEGY.md
 │   │   └── README.md
+│   ├── validator
+│   │   ├── index.ts
+│   │   └── README.md
+│   ├── writer
+│   │   ├── index.ts
+│   │   └── README.md
 │   ├── .gitkeep
 │   ├── AUTOMATION_INDEX.md
 │   └── README.md
 ├── 08_INPUT
 │   ├── .gitkeep
+│   ├── 05_Что_сегодня_в_танцах_стало_лучше.aac
+│   ├── 06 Что в танцах стало хуже.aac
+│   ├── тест.aac
 │   ├── INPUT_INDEX.md
 │   └── README.md
 ├── 09_ARCHIVE
@@ -85,7 +121,9 @@ DanceContentEngine_v1
 │   │   ├── src
 │   │   │   └── app
 │   │   │       ├── api
-│   │   │       │   └── ai
+│   │   │       │   ├── ai
+│   │   │       │   │   └── route.ts
+│   │   │       │   └── clean-transcript
 │   │   │       │       └── route.ts
 │   │   │       ├── favicon.ico
 │   │   │       ├── globals.css
@@ -108,6 +146,7 @@ DanceContentEngine_v1
 ├── .gitignore
 ├── CREATE_NEXT.cmd
 ├── INTERVIEW_150_QUESTIONS.md
+├── process_audio.py
 ├── project_tree.js
 ├── README.md
 ├── START_HERE.md

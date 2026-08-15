@@ -4,6 +4,10 @@ import fsSync from "fs";
 import path from "path";
 
 import {
+  buildRetrievalPackage,
+} from "../../../../../../07_AUTOMATION/knowledge-retrieval/retriever";
+
+import {
   detectWriterOutputContract,
   buildWriterSystemPrompt,
   buildWriterUserPrompt,
@@ -33,19 +37,16 @@ export const dynamic = "force-dynamic";
 function resolveProjectRoot(): string {
   const cwd = process.cwd();
 
-  // 1. Проверяем на 2 уровня выше (если мы внутри apps/web)
   const twoUp = path.resolve(cwd, "../..");
   if (fsSync.existsSync(path.join(twoUp, "00_SYSTEM"))) {
     return twoUp;
   }
 
-  // 2. Проверяем на 1 уровень выше
   const oneUp = path.resolve(cwd, "..");
   if (fsSync.existsSync(path.join(oneUp, "00_SYSTEM"))) {
     return oneUp;
   }
 
-  // 3. Фолбэк, если запуск идет прямо из корня
   return cwd;
 }
 
@@ -53,77 +54,22 @@ const PROJECT_ROOT = resolveProjectRoot();
 
 /*
  * ==================================================
- * GROQ CONFIGURATION
+ * RETRIEVAL LIMITS
  * ==================================================
+ *
+ * Retriever controls the amount and diversity of the
+ * library context. Radar is intentionally NOT limited
+ * here beyond the retriever's own diversity logic.
  */
 
-const GROQ_API_KEY =
-  process.env.GROQ_API_KEY ||
-  process.env.GROK_API_KEY ||
-  process.env.XAI_API_KEY ||
-  "";
-
-/*
- * ==================================================
- * CONTEXT LIMITS
- * ==================================================
- */
-
-const MAX_FILE_SIZE = 300_000;
-const MAX_TOTAL_CONTEXT = 1_500_000;
-
-/*
- * ==================================================
- * PROJECT DOMAINS
- * ==================================================
- */
-
-const INCLUDED_DOMAINS = new Set([
-  "00_SYSTEM",
-  "01_KNOWLEDGE",
-  "02_RESEARCH",
-  "03_AUDIENCE",
-  "04_CONTENT",
-  "05_SEO",
-  "06_ANALYTICS",
-  "07_AUTOMATION",
-  "08_INPUT",
-]);
-
-const EXCLUDED_DIRS = new Set([
-  "node_modules",
-  ".next",
-  ".git",
-  ".vercel",
-  "dist",
-  "build",
-  "coverage",
-  "apps",
-]);
-
-/*
- * ==================================================
- * ALLOWED FILE TYPES
- * ==================================================
- */
-
-const ALLOWED_EXTENSIONS = new Set([
-  ".md",
-  ".json",
-  ".txt",
-]);
+const RETRIEVAL_MAX_CHARACTERS = 180_000;
+const RETRIEVAL_MAX_SOURCES = 30;
 
 /*
  * ==================================================
  * TYPES
  * ==================================================
  */
-
-type ContextFile = {
-  path: string;
-  content: string;
-  priority: number;
-};
 
 type ContextProfile =
   | "CONTENT"
@@ -139,6 +85,35 @@ type AIRequest = {
   includeRadar?: boolean;
 };
 
+type RetrievalItem = {
+  path?: string;
+  type?: string;
+  title?: string;
+  purpose?: string;
+  fileName?: string;
+  sourceRole?: string;
+  keywords?: string[];
+  radarMetadata?: Record<string, unknown> | null;
+};
+
+type RetrievalCandidate = {
+  item: RetrievalItem;
+  role?: string;
+  size?: number;
+  relevance?: number;
+  reasons?: string[];
+};
+
+type RetrievalPackage = {
+  generatedAt: string;
+  limits: {
+    maxCharacters: number;
+    maxSources: number;
+  };
+  composition: Record<string, number>;
+  selected: RetrievalCandidate[];
+};
+
 /*
  * ==================================================
  * PATH SAFETY
@@ -151,6 +126,10 @@ function safeProjectPath(
   const normalized = relativePath
     .replace(/\\/g, "/")
     .replace(/^\/+/, "");
+
+  if (normalized.includes("#signal-")) {
+    return null;
+  }
 
   const absolute = path.resolve(
     PROJECT_ROOT,
@@ -169,763 +148,285 @@ function safeProjectPath(
   return absolute;
 }
 
-async function pathExists(
-  target: string
-): Promise<boolean> {
-  try {
-    await fs.access(target);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
 /*
  * ==================================================
- * CONTEXT FILTER
+ * RETRIEVAL SEED
  * ==================================================
+ *
+ * This is deliberately deterministic. We do not ask
+ * another model to plan before retrieval, because the
+ * planner already exists downstream. The seed gives the
+ * Retriever enough task/profile signal to build a broad,
+ * diverse source package without inventing project facts.
  */
 
-function shouldExclude(
-  name: string
-): boolean {
-  return EXCLUDED_DIRS.has(name);
-}
-
-function isAllowedProjectPath(
-  relativePath: string
-): boolean {
-  const normalized =
-    relativePath.replace(/\\/g, "/");
-
-  const firstSegment =
-    normalized.split("/")[0];
-
-  return INCLUDED_DOMAINS.has(
-    firstSegment
-  );
-}
-
-function isRadarHistoryPath(
-  relativePath: string
-): boolean {
-  const normalized =
-    relativePath.replace(/\\/g, "/");
-
-  return normalized.includes(
-    "07_AUTOMATION/Rardar_world feed/runtime/history/"
-  );
-}
-
-/*
- * ==================================================
- * PRIORITY
- * ==================================================
- */
-
-function getPriority(
-  relativePath: string
-): number {
-  const normalized =
-    relativePath.replace(/\\/g, "/");
-
-  if (
-    normalized.endsWith("SYSTEM_INDEX.md") ||
-    normalized.endsWith("CONTENT_INDEX.md") ||
-    normalized.endsWith("ANALYTICS_INDEX.md") ||
-    normalized.endsWith("AUDIENCE_INDEX.md") ||
-    normalized.endsWith("SEO_INDEX.md") ||
-    normalized.endsWith("KNOWLEDGE_INDEX.md") ||
-    normalized.endsWith("RESEARCH_INDEX.md") ||
-    normalized.endsWith("AUTOMATION_INDEX.md")
-  ) {
-    return 100;
-  }
-
-  if (
-    normalized ===
-    "07_AUTOMATION/Rardar_world feed/runtime/latest.json"
-  ) {
-    return 98;
-  }
-
-  if (
-    normalized.startsWith(
-      "00_SYSTEM/"
-    )
-  ) {
-    return 95;
-  }
-
-  if (
-    normalized.startsWith(
-      "01_KNOWLEDGE/"
-    )
-  ) {
-    return 90;
-  }
-
-  if (
-    normalized.startsWith(
-      "02_RESEARCH/"
-    )
-  ) {
-    return 85;
-  }
-
-  if (
-    normalized.startsWith(
-      "03_AUDIENCE/"
-    )
-  ) {
-    return 80;
-  }
-
-  if (
-    normalized.startsWith(
-      "04_CONTENT/"
-    )
-  ) {
-    return 75;
-  }
-
-  if (
-    normalized.startsWith(
-      "05_SEO/"
-    )
-  ) {
-    return 70;
-  }
-
-  if (
-    normalized.startsWith(
-      "06_ANALYTICS/"
-    )
-  ) {
-    return 65;
-  }
-
-  if (
-    normalized.startsWith(
-      "07_AUTOMATION/"
-    )
-  ) {
-    return 60;
-  }
-
-  if (
-    normalized.startsWith(
-      "08_INPUT/"
-    )
-  ) {
-    return 55;
-  }
-
-  return 30;
-}
-
-/*
- * ==================================================
- * PROFILE PRIORITY
- * ==================================================
- */
-
-function getProfileBoost(
-  relativePath: string,
-  profile: ContextProfile
-): number {
-  const normalized =
-    relativePath.replace(/\\/g, "/");
-
-  switch (profile) {
-    case "CONTENT": {
-      if (
-        normalized.startsWith("04_CONTENT/")
-      ) {
-        return 40;
-      }
-
-      if (
-        normalized.startsWith("03_AUDIENCE/")
-      ) {
-        return 30;
-      }
-
-      if (
-        normalized.startsWith("02_RESEARCH/")
-      ) {
-        return 25;
-      }
-
-      if (
-        normalized.startsWith("01_KNOWLEDGE/")
-      ) {
-        return 20;
-      }
-
-      if (
-        normalized.startsWith("05_SEO/")
-      ) {
-        return 15;
-      }
-
-      if (
-        normalized.startsWith("07_AUTOMATION/")
-      ) {
-        return 10;
-      }
-
-      return 0;
-    }
-
-    case "RESEARCH": {
-      if (
-        normalized.startsWith("02_RESEARCH/")
-      ) {
-        return 40;
-      }
-
-      if (
-        normalized.startsWith("01_KNOWLEDGE/")
-      ) {
-        return 30;
-      }
-
-      if (
-        normalized.startsWith("03_AUDIENCE/")
-      ) {
-        return 20;
-      }
-
-      if (
-        normalized.startsWith("07_AUTOMATION/")
-      ) {
-        return 15;
-      }
-
-      return 0;
-    }
-
-    case "ANALYTICS": {
-      if (
-        normalized.startsWith("06_ANALYTICS/")
-      ) {
-        return 40;
-      }
-
-      if (
-        normalized.startsWith("02_RESEARCH/")
-      ) {
-        return 25;
-      }
-
-      if (
-        normalized.startsWith("03_AUDIENCE/")
-      ) {
-        return 20;
-      }
-
-      if (
-        normalized.startsWith("07_AUTOMATION/")
-      ) {
-        return 15;
-      }
-
-      return 0;
-    }
-
-    case "GENERAL":
-    default:
-      return 0;
-  }
-}
-
-/*
- * ==================================================
- * FILE ELIGIBILITY
- * ==================================================
- */
-
-function isEligibleFile(
-  relativePath: string,
-  fileName: string
-): boolean {
-  const normalized =
-    relativePath.replace(/\\/g, "/");
-
-  if (
-    !isAllowedProjectPath(
-      normalized
-    )
-  ) {
-    return false;
-  }
-
-  if (
-    isRadarHistoryPath(
-      normalized
-    )
-  ) {
-    return false;
-  }
-
-  const extension =
-    path
-      .extname(fileName)
-      .toLowerCase();
-
-  if (
-    !ALLOWED_EXTENSIONS.has(
-      extension
-    )
-  ) {
-    return false;
-  }
-
-  return true;
-}
-
-/*
- * ==================================================
- * PROJECT SCANNER
- * ==================================================
- */
-
-async function collectFiles(
-  currentDir: string,
-  relativeDir = ""
-): Promise<ContextFile[]> {
-  const result: ContextFile[] = [];
-
-  let entries;
-
-  try {
-    entries = await fs.readdir(
-      currentDir,
-      {
-        withFileTypes: true,
-      }
-    );
-  } catch {
-    return result;
-  }
-
-  for (const entry of entries) {
-    if (
-      shouldExclude(
-        entry.name
-      )
-    ) {
-      continue;
-    }
-
-    const absolutePath =
-      path.join(
-        currentDir,
-        entry.name
-      );
-
-    const relativePath =
-      path
-        .join(
-          relativeDir,
-          entry.name
-        )
-        .replace(
-          /\\/g,
-          "/"
-        );
-
-    if (
-      relativeDir === "" &&
-      entry.isDirectory() &&
-      !INCLUDED_DOMAINS.has(
-        entry.name
-      )
-    ) {
-      continue;
-    }
-
-    if (
-      entry.isDirectory() &&
-      relativePath ===
-        "07_AUTOMATION/Rardar_world feed/runtime/history"
-    ) {
-      continue;
-    }
-
-    if (
-      entry.isDirectory()
-    ) {
-      const nested =
-        await collectFiles(
-          absolutePath,
-          relativePath
-        );
-
-      result.push(
-        ...nested
-      );
-
-      continue;
-    }
-
-    if (
-      !entry.isFile()
-    ) {
-      continue;
-    }
-
-    if (
-      !isEligibleFile(
-        relativePath,
-        entry.name
-      )
-    ) {
-      continue;
-    }
-
-    try {
-      const stat =
-        await fs.stat(
-          absolutePath
-        );
-
-      if (
-        stat.size >
-        MAX_FILE_SIZE
-      ) {
-        continue;
-      }
-
-      const content =
-        await fs.readFile(
-          absolutePath,
-          "utf8"
-        );
-
-      result.push({
-        path:
-          relativePath,
-
-        content,
-
-        priority:
-          getPriority(
-            relativePath
-          ),
-      });
-    } catch {
-      continue;
-    }
-  }
-
-  return result;
-}
-
-/*
- * ==================================================
- * REQUESTED PATHS
- * ==================================================
- */
-
-async function readRequestedPaths(
+function buildRetrievalSeed(
+  task: string,
+  profile: ContextProfile,
   requestedPaths: string[]
-): Promise<ContextFile[]> {
-  const result: ContextFile[] = [];
+) {
+  const defaultPriorities: Record<
+    ContextProfile,
+    string[]
+  > = {
+    CONTENT: [
+      "01_KNOWLEDGE",
+      "03_AUDIENCE",
+      "02_RESEARCH",
+      "04_CONTENT",
+      "05_SEO",
+      "08_INPUT",
+    ],
+    RESEARCH: [
+      "02_RESEARCH",
+      "01_KNOWLEDGE",
+      "03_AUDIENCE",
+      "04_CONTENT",
+      "05_SEO",
+      "08_INPUT",
+    ],
+    ANALYTICS: [
+      "06_ANALYTICS",
+      "02_RESEARCH",
+      "03_AUDIENCE",
+      "01_KNOWLEDGE",
+      "04_CONTENT",
+      "05_SEO",
+      "08_INPUT",
+    ],
+    GENERAL: [
+      "01_KNOWLEDGE",
+      "02_RESEARCH",
+      "03_AUDIENCE",
+      "04_CONTENT",
+      "05_SEO",
+      "06_ANALYTICS",
+      "08_INPUT",
+    ],
+  };
 
-  for (
-    const relativePath of
-    requestedPaths
-  ) {
-    const normalized =
-      relativePath.replace(
-        /\\/g,
-        "/"
-      );
-
-    if (
-      !isAllowedProjectPath(
-        normalized
-      )
-    ) {
-      continue;
-    }
-
-    if (
-      isRadarHistoryPath(
-        normalized
-      )
-    ) {
-      continue;
-    }
-
-    const absolutePath =
-      safeProjectPath(
-        normalized
-      );
-
-    if (
-      !absolutePath
-    ) {
-      continue;
-    }
-
-    if (
-      !(await pathExists(
-        absolutePath
-      ))
-    ) {
-      continue;
-    }
-
-    try {
-      const stat =
-        await fs.stat(
-          absolutePath
-        );
-
-      if (
-        stat.isDirectory()
-      ) {
-        const nested =
-          await collectFiles(
-            absolutePath,
-            normalized
-          );
-
-        result.push(
-          ...nested
-        );
-
-        continue;
-      }
-
-      if (
-        !stat.isFile()
-      ) {
-        continue;
-      }
-
-      if (
-        !isEligibleFile(
-          normalized,
-          path.basename(
-            normalized
-          )
-        )
-      ) {
-        continue;
-      }
-
-      if (
-        stat.size >
-        MAX_FILE_SIZE
-      ) {
-        continue;
-      }
-
-      const content =
-        await fs.readFile(
-          absolutePath,
-          "utf8"
-        );
-
-      result.push({
-        path:
-          normalized,
-
-        content,
-
-        priority:
-          getPriority(
-            normalized
-          ),
-      });
-    } catch {
-      continue;
-    }
-  }
-
-  return result;
+  return {
+    audience: "",
+    topic: task,
+    subtopic: profile,
+    goal: task,
+    audienceNeed: "",
+    keyMessage: task,
+    contentAngle: task,
+    researchSignals: [],
+    knowledgeNeeds: [
+      "реальный опыт",
+      "экспертные знания",
+      "актуальные исследования",
+      "аудитория",
+    ],
+    radarSignals: [task],
+    seoConsiderations: [],
+    constraints: [
+      "Не придумывать факты, которых нет в библиотеке проекта.",
+    ],
+    sourcePriorities: [
+      ...requestedPaths,
+      ...defaultPriorities[profile],
+    ],
+  };
 }
 
 /*
  * ==================================================
- * RADAR
+ * RETRIEVAL CONTEXT RESOLUTION
  * ==================================================
+ *
+ * Librarian builds the map.
+ * Retriever chooses the diverse bounded package.
+ * Route only materializes the selected package for the
+ * Planner / Writer.
  */
 
-async function readLatestRadar():
-  Promise<ContextFile | null> {
-  const radarPath =
-    path.join(
-      PROJECT_ROOT,
-      "07_AUTOMATION",
-      "Rardar_world feed",
-      "runtime",
-      "latest.json"
-    );
+async function readSelectedItemContent(
+  candidate: RetrievalCandidate
+): Promise<string> {
+  const item = candidate.item;
 
-  if (
-    !(await pathExists(
-      radarPath
-    ))
-  ) {
-    return null;
+  if (!item) {
+    return "";
+  }
+
+  if (item.type === "radar_signal") {
+    const metadata =
+      item.radarMetadata
+        ? `\nRADAR METADATA:\n${JSON.stringify(
+            item.radarMetadata,
+            null,
+            2
+          )}`
+        : "";
+
+    return [
+      item.title,
+      item.purpose,
+      ...(item.keywords || []),
+      metadata,
+    ]
+      .filter(Boolean)
+      .join("\n");
+  }
+
+  const relativePath = String(
+    item.path || ""
+  );
+
+  const absolutePath =
+    safeProjectPath(relativePath);
+
+  if (!absolutePath) {
+    return [
+      item.title,
+      item.purpose,
+      ...(item.keywords || []),
+    ]
+      .filter(Boolean)
+      .join("\n");
   }
 
   try {
-    const stat =
-      await fs.stat(
-        radarPath
+    const stat = await fs.stat(
+      absolutePath
+    );
+
+    if (!stat.isFile()) {
+      return [
+        item.title,
+        item.purpose,
+      ]
+        .filter(Boolean)
+        .join("\n");
+    }
+
+    if (stat.size > 1_500_000) {
+      return [
+        item.title,
+        item.purpose,
+      ]
+        .filter(Boolean)
+        .join("\n");
+    }
+
+    return await fs.readFile(
+      absolutePath,
+      "utf8"
+    );
+  } catch {
+    return [
+      item.title,
+      item.purpose,
+      ...(item.keywords || []),
+    ]
+      .filter(Boolean)
+      .join("\n");
+  }
+}
+
+async function buildRetrievedContext(
+  retrievalPackage: RetrievalPackage,
+  includeRadar: boolean
+): Promise<{
+  filesLoaded: number;
+  contextCharacters: number;
+  sources: string[];
+  context: string;
+}> {
+  const selected = includeRadar
+    ? retrievalPackage.selected
+    : retrievalPackage.selected.filter(
+        candidate =>
+          candidate.item?.type !==
+          "radar_signal"
       );
 
+  const blocks: string[] = [];
+  const sources: string[] = [];
+  let totalCharacters = 0;
+
+  for (const candidate of selected) {
+    const item = candidate.item;
+
+    if (!item) continue;
+
     if (
-      stat.size >
-      MAX_FILE_SIZE
+      !includeRadar &&
+      item.type === "radar_signal"
     ) {
-      return null;
+      continue;
     }
 
     const content =
-      await fs.readFile(
-        radarPath,
-        "utf8"
+      await readSelectedItemContent(
+        candidate
       );
 
-    return {
-      path:
-        "07_AUTOMATION/Rardar_world feed/runtime/latest.json",
-
-      content,
-
-      priority: 98,
-    };
-  } catch {
-    return null;
-  }
-}
-
-/*
- * ==================================================
- * CONTEXT BUILDER
- * ==================================================
- */
-
-async function buildContext(
-  requestedPaths: string[],
-  includeRadar: boolean,
-  profile: ContextProfile
-): Promise<ContextFile[]> {
-  let files: ContextFile[];
-
-  if (
-    requestedPaths.length > 0
-  ) {
-    files =
-      await readRequestedPaths(
-        requestedPaths
-      );
-  } else {
-    files =
-      await collectFiles(
-        PROJECT_ROOT
-      );
-  }
-
-  if (
-    includeRadar
-  ) {
-    const radar =
-      await readLatestRadar();
-
-    if (radar) {
-      files.push(
-        radar
-      );
+    if (!content.trim()) {
+      continue;
     }
-  }
 
-  const unique =
-    new Map<
-      string,
-      ContextFile
-    >();
-
-  for (
-    const file of files
-  ) {
-    const existing =
-      unique.get(
-        file.path
+    const pathLabel =
+      String(
+        item.path ||
+          item.title ||
+          "unknown-source"
       );
+
+    const role =
+      String(
+        candidate.role ||
+          item.sourceRole ||
+          item.type ||
+          "source"
+      );
+
+    const block = `
+==================================================
+SOURCE: ${pathLabel}
+ROLE: ${role}
+==================================================
+
+${content}
+
+==================================================
+END SOURCE: ${pathLabel}
+==================================================
+`;
+
+    const nextCharacters =
+      totalCharacters + block.length;
 
     if (
-      !existing ||
-      file.priority >
-        existing.priority
-    ) {
-      unique.set(
-        file.path,
-        file
-      );
-    }
-  }
-
-  files =
-    Array.from(
-      unique.values()
-    );
-
-  files.sort(
-    (a, b) => {
-      const scoreA =
-        a.priority +
-        getProfileBoost(
-          a.path,
-          profile
-        );
-
-      const scoreB =
-        b.priority +
-        getProfileBoost(
-          b.path,
-          profile
-        );
-
-      return scoreB - scoreA;
-    }
-  );
-
-  const selected: ContextFile[] =
-    [];
-
-  let totalSize = 0;
-
-  for (
-    const file of files
-  ) {
-    const blockSize =
-      file.content.length;
-
-    if (
-      totalSize +
-        blockSize >
-      MAX_TOTAL_CONTEXT
+      nextCharacters >
+      RETRIEVAL_MAX_CHARACTERS
     ) {
       continue;
     }
 
-    selected.push(
-      file
-    );
-
-    totalSize +=
-      blockSize;
+    blocks.push(block);
+    sources.push(pathLabel);
+    totalCharacters =
+      nextCharacters;
   }
 
-  return selected;
+  return {
+    filesLoaded: sources.length,
+    contextCharacters: totalCharacters,
+    sources,
+    context:
+      blocks.length
+        ? blocks.join("\n")
+        : `
+NO RETRIEVED PROJECT DOCUMENTS WERE LOADED.
+
+Do not invent project-specific information.
+State that the required context is missing.
+`,
+  };
 }
 
 /*
@@ -945,7 +446,7 @@ You are an executor working inside an existing project methodology.
 CONTEXT PROFILE:
 ${profile}
 
-Read the supplied project context before acting.
+Read the supplied retrieved project context before acting.
 
 CORE PRINCIPLES:
 
@@ -953,7 +454,7 @@ CORE PRINCIPLES:
 2. Do not invent facts, prices, schedules, events, achievements or business results.
 3. Distinguish FACT, INFERENCE, HYPOTHESIS and RECOMMENDATION when relevant.
 4. Preserve source information.
-5. Treat 01_KNOWLEDGE as expert knowledge.
+5. Treat 01_KNOWLEDGE as expert knowledge and owner experience.
 6. Treat 02_RESEARCH as research evidence.
 7. Treat 02_RESEARCH/Аналитик as research produced by the AI Analyst.
 8. Treat 03_AUDIENCE as audience information.
@@ -969,6 +470,7 @@ CORE PRINCIPLES:
 18. When creating content, combine different relevant types of project material.
 19. Recommendations must be based on available evidence.
 20. Never claim that an action has happened unless the supplied context confirms it.
+21. The retrieved context is a bounded selection from the full project library; do not assume it is the whole library.
 
 PROFILE BEHAVIOR:
 
@@ -977,6 +479,7 @@ CONTENT
 - Use RADAR as a source of current external signals when available.
 - Do not build content from a single document.
 - Seek interesting combinations of different evidence and ideas.
+- Use owner knowledge when relevant.
 - Avoid formulaic repetition.
 
 RESEARCH
@@ -986,18 +489,18 @@ RESEARCH
 
 ANALYTICS
 - Prefer ANALYTICS.
-- Use RESEARCH, AUDIENCE and AUTOMATION when useful.
+- Use RESEARCH, AUDIENCE and KNOWLEDGE when useful.
 - Focus on measurements, patterns, anomalies and conclusions supported by data.
 
 GENERAL
-- Use the broad project context.
+- Use the broad retrieved project context.
 - Select the most relevant available information for the task.
 
 GENERAL DATA FLOW:
 
 INPUT
-→ processing
-→ Knowledge / Research
+→ Librarian
+→ Retriever
 → Content Plan
 → Draft
 → Validation
@@ -1007,6 +510,12 @@ INPUT
 → feedback into Research / Audience / Knowledge
 
 ROLES:
+
+LIBRARIAN
+Maintains the factual map of the information library.
+
+RETRIEVER
+Builds a bounded and diverse context package from that map.
 
 ANALYST
 Researches and structures evidence.
@@ -1040,34 +549,9 @@ When creating content, prefer useful, specific, varied and evidence-based materi
  */
 
 function formatContext(
-  files: ContextFile[]
+  context: string
 ): string {
-  if (
-    !files.length
-  ) {
-    return `
-NO PROJECT DOCUMENTS WERE LOADED.
-
-Do not invent project-specific information.
-State that the required context is missing.
-`;
-  }
-
-  return files
-    .map(
-      file => `
-==================================================
-SOURCE: ${file.path}
-==================================================
-
-${file.content}
-
-==================================================
-END SOURCE: ${file.path}
-==================================================
-`
-    )
-    .join("\n");
+  return context;
 }
 
 /*
@@ -1079,7 +563,7 @@ END SOURCE: ${file.path}
 function buildUserPrompt(
   task: string,
   profile: ContextProfile,
-  files: ContextFile[]
+  context: string
 ): string {
   return `
 CONTEXT PROFILE:
@@ -1090,10 +574,10 @@ USER TASK:
 
 ${task}
 
-PROJECT CONTEXT:
+RETRIEVED PROJECT CONTEXT:
 
 ${formatContext(
-  files
+  context
 )}
 
 EXECUTION RULES:
@@ -1114,21 +598,23 @@ EXECUTION RULES:
 
 /*
  * ==================================================
- * GEMINI AI CALL (SUPPORTS 1M+ TOKENS CONTEXT)
+ * GEMINI
  * ==================================================
  */
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
+const GEMINI_API_KEY =
+  process.env.GEMINI_API_KEY || "";
 
 async function callAI(
   systemPrompt: string,
   userPrompt: string,
   maxOutputTokens = 2000,
-  options: { responseMimeType?: string; responseSchema?: unknown } = {}
+  options: {
+    responseMimeType?: string;
+    responseSchema?: unknown;
+  } = {}
 ) {
-  const apiKey = GEMINI_API_KEY;
-
-  if (!apiKey) {
+  if (!GEMINI_API_KEY) {
     throw new Error(
       "GEMINI_API_KEY is not configured in environment variables."
     );
@@ -1140,64 +626,64 @@ async function callAI(
   const timeoutId =
     setTimeout(
       () => controller.abort(),
-      60000 // 60 секунд на случай обработки крупного контекста
+      60000
     );
 
   try {
     const url =
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
     const response =
-      await fetch(url, {
-        method: "POST",
-
-        signal:
-          controller.signal,
-
-        headers: {
-          "Content-Type":
-            "application/json",
-        },
-
-        body:
-          JSON.stringify({
-            systemInstruction: {
-              parts: [
-                {
-                  text:
-                    systemPrompt,
-                },
-              ],
-            },
-
-            contents: [
-              {
-                role:
-                  "user",
-
+      await fetch(
+        url,
+        {
+          method: "POST",
+          signal:
+            controller.signal,
+          headers: {
+            "Content-Type":
+              "application/json",
+          },
+          body:
+            JSON.stringify({
+              systemInstruction: {
                 parts: [
                   {
                     text:
-                      userPrompt,
+                      systemPrompt,
                   },
                 ],
               },
-            ],
-
-            generationConfig: {
-              temperature:
-                0.7,
-
-              maxOutputTokens,
-              ...(options.responseMimeType
-                ? { responseMimeType: options.responseMimeType }
-                : {}),
-              ...(options.responseSchema
-                ? { responseSchema: options.responseSchema }
-                : {}),
-            },
-          }),
-      });
+              contents: [
+                {
+                  role: "user",
+                  parts: [
+                    {
+                      text:
+                        userPrompt,
+                    },
+                  ],
+                },
+              ],
+              generationConfig: {
+                temperature: 0.7,
+                maxOutputTokens,
+                ...(options.responseMimeType
+                  ? {
+                      responseMimeType:
+                        options.responseMimeType,
+                    }
+                  : {}),
+                ...(options.responseSchema
+                  ? {
+                      responseSchema:
+                        options.responseSchema,
+                    }
+                  : {}),
+              },
+            }),
+        }
+      );
 
     const raw =
       await response.text();
@@ -1211,11 +697,10 @@ async function callAI(
       );
     }
 
-    let data;
+    let data: any;
 
     try {
-      data =
-        JSON.parse(raw);
+      data = JSON.parse(raw);
     } catch {
       throw new Error(
         "Gemini API returned invalid JSON."
@@ -1239,10 +724,8 @@ async function callAI(
 
     return {
       content,
-
       model:
         "gemini-2.5-flash",
-
       usage:
         data?.usageMetadata ||
         null,
@@ -1254,38 +737,56 @@ async function callAI(
   }
 }
 
-export async function GET() {
-  const key = GEMINI_API_KEY;
+/*
+ * ==================================================
+ * GET
+ * ==================================================
+ */
 
-  if (!key) {
+export async function GET() {
+  if (!GEMINI_API_KEY) {
     return NextResponse.json({
       ok: false,
-      error: "GEMINI_API_KEY is missing",
+      error:
+        "GEMINI_API_KEY is missing",
     });
   }
 
   try {
-    // Делаем запрос к Google API за официальным списком доступных моделей
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`
-    );
-    const data = await res.json();
+    const res =
+      await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
+      );
 
-    const availableModels = data?.models
-      ? data.models.map((m: any) => m.name.replace("models/", ""))
-      : [];
+    const data =
+      await res.json();
+
+    const availableModels =
+      data?.models
+        ? data.models.map(
+            (m: any) =>
+              m.name.replace(
+                "models/",
+                ""
+              )
+          )
+        : [];
 
     return NextResponse.json({
       ok: true,
-      service: "DanceContentEngine AI Gateway",
-      provider: "Google Gemini",
+      service:
+        "DanceContentEngine AI Gateway",
+      provider:
+        "Google Gemini",
       keyExists: true,
-      availableModels, // <--- ЗДЕСЬ БУДЕТ ТОЧНЫЙ СПИСОК МОДЕЛЕЙ
+      availableModels,
     });
   } catch (err: any) {
     return NextResponse.json({
       ok: false,
-      error: err?.message || "Failed to fetch models from Google",
+      error:
+        err?.message ||
+        "Failed to fetch models from Google",
     });
   }
 }
@@ -1306,12 +807,14 @@ export async function POST(
     let body: AIRequest;
 
     try {
-      body = (await request.json()) as AIRequest;
+      body =
+        (await request.json()) as AIRequest;
     } catch {
       return NextResponse.json(
         {
           ok: false,
-          error: "Invalid or empty JSON body in request.",
+          error:
+            "Invalid or empty JSON body in request.",
         },
         {
           status: 400,
@@ -1326,9 +829,7 @@ export async function POST(
         : "";
 
     const requestedPaths =
-      Array.isArray(
-        body.paths
-      )
+      Array.isArray(body.paths)
         ? body.paths.filter(
             item =>
               typeof item ===
@@ -1340,7 +841,8 @@ export async function POST(
       body.includeRadar !==
       false;
 
-    const profile: ContextProfile =
+    const profile:
+      ContextProfile =
       body.profile ===
         "CONTENT" ||
       body.profile ===
@@ -1354,7 +856,6 @@ export async function POST(
       return NextResponse.json(
         {
           ok: false,
-
           error:
             "Task is required.",
         },
@@ -1366,35 +867,50 @@ export async function POST(
 
     /*
      * ==================================================
-     * BUILD PROJECT CONTEXT
+     * LIBRARIAN → RETRIEVER
      * ==================================================
      */
 
-    const files =
-      await buildContext(
-        requestedPaths,
-        includeRadar,
-        profile
+    const retrievalSeed =
+      buildRetrievalSeed(
+        task,
+        profile,
+        requestedPaths
+      );
+
+    const retrievalPackage =
+      await buildRetrievalPackage(
+        PROJECT_ROOT,
+        retrievalSeed,
+        {
+          maxCharacters:
+            RETRIEVAL_MAX_CHARACTERS,
+          maxSources:
+            RETRIEVAL_MAX_SOURCES,
+        }
+      ) as RetrievalPackage;
+
+    const retrieved =
+      await buildRetrievedContext(
+        retrievalPackage,
+        includeRadar
       );
 
     /*
      * ==================================================
-     * BUILD PROMPTS
+     * OUTPUT CONTRACT
      * ==================================================
      */
 
-    const context = formatContext(files);
-
     const outputContract =
-      detectWriterOutputContract(task);
+      detectWriterOutputContract(
+        task
+      );
 
     /*
      * ==================================================
      * CONTENT PLANNER
      * ==================================================
-     *
-     * Planner synthesizes Research / Audience / Knowledge / Radar
-     * into a structured execution brief for Writer.
      */
 
     const planner =
@@ -1403,12 +919,15 @@ export async function POST(
         buildPlannerUserPrompt({
           task,
           profile,
-          context,
+          context:
+            retrieved.context,
         }),
         6000,
         {
-          responseMimeType: "application/json",
-          responseSchema: CONTENT_PLAN_SCHEMA,
+          responseMimeType:
+            "application/json",
+          responseSchema:
+            CONTENT_PLAN_SCHEMA,
         }
       );
 
@@ -1434,14 +953,16 @@ export async function POST(
       );
 
     const systemPrompt =
-      `${buildSystemPrompt(profile)}
+      `${buildSystemPrompt(
+        profile
+      )}
 
 ==================================================
 CONTENT PLANNER EXECUTION LAYER
 ==================================================
 
 The Content Planner has already converted the user's request into a strategic execution brief.
-Use this brief as planning guidance, but treat the supplied project sources as the factual source of truth.
+Use this brief as planning guidance, but treat the retrieved project sources as the factual source of truth.
 Do not invent information that is absent from the sources.
 
 ${plannerBrief}
@@ -1457,7 +978,8 @@ ${writerSystemPrompt}
       buildWriterUserPrompt({
         task,
         profile,
-        context: `${plannerBrief}\n\nSUPPLIED PROJECT CONTEXT:\n${context}`,
+        context:
+          `${plannerBrief}\n\nRETRIEVED PROJECT CONTEXT:\n${retrieved.context}`,
         outputContract,
       });
 
@@ -1470,7 +992,7 @@ ${writerSystemPrompt}
 
     /*
      * ==================================================
-     * VALIDATE WRITER OUTPUT
+     * VALIDATOR
      * ==================================================
      */
 
@@ -1479,8 +1001,10 @@ ${writerSystemPrompt}
         task,
         outputContract,
         content: ai.content,
-        context: formatContext(files),
-        projectRoot: PROJECT_ROOT,
+        context:
+          retrieved.context,
+        projectRoot:
+          PROJECT_ROOT,
       });
 
     /*
@@ -1497,9 +1021,7 @@ ${writerSystemPrompt}
 
       meta: {
         profile,
-
         outputContract,
-
         contentPlan,
 
         plannerModel:
@@ -1512,27 +1034,46 @@ ${writerSystemPrompt}
           "Google Gemini",
 
         filesLoaded:
-          files.length,
+          retrieved.filesLoaded,
 
         sources:
-          files.map(
-            file =>
-              file.path
-          ),
+          retrieved.sources,
 
         radarIncluded:
           includeRadar,
 
         contextCharacters:
-          files.reduce(
-            (
-              sum,
-              file
-            ) =>
-              sum +
-              file.content.length,
-            0
-          ),
+          retrieved.contextCharacters,
+
+        retrieval: {
+          limits:
+            retrievalPackage.limits,
+          composition:
+            retrievalPackage.composition,
+          selected:
+            retrievalPackage.selected.map(
+              candidate => ({
+                path:
+                  candidate.item?.path ||
+                  candidate.item?.title ||
+                  "",
+                role:
+                  candidate.role ||
+                  candidate.item?.sourceRole ||
+                  candidate.item?.type ||
+                  "source",
+                relevance:
+                  candidate.relevance ??
+                  null,
+                size:
+                  candidate.size ??
+                  null,
+                reasons:
+                  candidate.reasons ||
+                  [],
+              })
+            ),
+        },
 
         durationMs:
           Date.now() -
@@ -1541,24 +1082,24 @@ ${writerSystemPrompt}
         plannerUsage:
           planner.usage,
 
-        plannerRaw:
-          planner.content,
-
         usage:
           ai.usage,
 
         validation: {
-          status: validation.status,
-          score: validation.score,
-          summary: validation.summary,
-          violations: validation.violations,
-          rulesLoaded: validation.rulesLoaded,
+          status:
+            validation.status,
+          score:
+            validation.score,
+          summary:
+            validation.summary,
+          violations:
+            validation.violations,
+          rulesLoaded:
+            validation.rulesLoaded,
         },
       },
     });
-  } catch (
-    error
-  ) {
+  } catch (error) {
     console.error(
       "AI GATEWAY ERROR:",
       error
@@ -1567,10 +1108,8 @@ ${writerSystemPrompt}
     return NextResponse.json(
       {
         ok: false,
-
         error:
-          error instanceof
-          Error
+          error instanceof Error
             ? error.message
             : "Unknown AI gateway error.",
       },
