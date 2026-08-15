@@ -1152,80 +1152,94 @@ export async function writeLibraryMap(
  * STANDALONE LOCAL RUNNER
  * ==================================================
  *
- * Для локального запуска используем process.cwd(),
- * поэтому import.meta / __dirname не нужны.
+ * При прямом запуске:
+ * node 07_AUTOMATION\knowledge-retrieval\index.ts
+ *
+ * Librarian строит карту.
+ *
+ * При импорте этого модуля в route.ts
+ * Librarian НЕ запускается автоматически.
  */
 
-const projectRoot =
-  path.resolve(
-    process.cwd()
+const isDirectRun =
+  ["index.ts", "index.js"].includes(
+    path.basename(
+      process.argv[1] || ""
+    )
   );
 
-writeLibraryMap(
-  projectRoot
-)
-  .then(
-    map => {
-      console.log(
-        "=============================================="
-      );
+if (isDirectRun) {
+  const projectRoot =
+    path.resolve(
+      process.cwd()
+    );
 
-      console.log(
-        " DanceContentEngine — Librarian v1.1"
-      );
-
-      console.log(
-        "=============================================="
-      );
-
-      console.log(
-        `Project: ${map.project}`
-      );
-
-      console.log(
-        `Indexed items: ${map.items.length}`
-      );
-
-      console.log(
-        "\nDomains:"
-      );
-
-      for (
-        const [
-          domain,
-          count,
-        ] of Object.entries(
-          map.domains
-        )
-      ) {
+  writeLibraryMap(
+    projectRoot
+  )
+    .then(
+      map => {
         console.log(
-          `- ${domain}: ${count}`
+          "=============================================="
+        );
+
+        console.log(
+          " DanceContentEngine — Librarian v1.1"
+        );
+
+        console.log(
+          "=============================================="
+        );
+
+        console.log(
+          `Project: ${map.project}`
+        );
+
+        console.log(
+          `Indexed items: ${map.items.length}`
+        );
+
+        console.log(
+          "\nDomains:"
+        );
+
+        for (
+          const [
+            domain,
+            count,
+          ] of Object.entries(
+            map.domains
+          )
+        ) {
+          console.log(
+            `- ${domain}: ${count}`
+          );
+        }
+
+        const radarCount =
+          map.items.filter(
+            item =>
+              item.type ===
+              "radar_signal"
+          ).length;
+
+        console.log(
+          `\nRadar signals: ${radarCount}`
+        );
+
+        console.log(
+          "\nSaved: 07_AUTOMATION/knowledge-retrieval/runtime/library-map.json"
         );
       }
+    )
+    .catch(
+      error => {
+        console.error(
+          "LIBRARIAN FAILED:",
+          error
+        );
 
-      const radarCount =
-        map.items.filter(
-          item =>
-            item.type ===
-            "radar_signal"
-        ).length;
-
-      console.log(
-        `\nRadar signals: ${radarCount}`
-      );
-
-      console.log(
-        "\nSaved: 07_AUTOMATION/knowledge-retrieval/runtime/library-map.json"
-      );
-    }
-  )
-  .catch(
-    error => {
-      console.error(
-        "LIBRARIAN FAILED:",
-        error
-      );
-
-      process.exit(1);
-    }
-  );
+        process.exit(1);
+      }
+    );
+}

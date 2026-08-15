@@ -1,26 +1,54 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
+export type RetrievalSourceRole =
+  | "knowledge"
+  | "audience"
+  | "research"
+  | "content"
+  | "seo"
+  | "input"
+  | "radar"
+  | "system"
+  | "other";
+
 export type RetrievalCandidate = {
   item: any;
-  score: number;
+
+  role: RetrievalSourceRole;
+
+  content: string;
+
+  size: number;
+
+  relevance: number;
+
+  sourcePriority: number;
+
   reasons: string[];
-  match: {
-    direct: number;
-    audience: number;
-    strategic: number;
-    expert: number;
-    adjacent: number;
-    freshness: number;
-    confidence: number;
-    novelty: number;
-    contentDepth: number;
-    sourcePriority: number;
-  };
+};
+
+export type RetrievalComposition = {
+  knowledge: number;
+  audience: number;
+  research: number;
+  content: number;
+  seo: number;
+  input: number;
+  radar: number;
+  system: number;
+  other: number;
+  total: number;
+  characters: number;
 };
 
 export type KnowledgePackage = {
   generatedAt: string;
+
+  limits: {
+    maxCharacters: number;
+    maxSources: number;
+  };
 
   query: {
     audience: string;
@@ -42,30 +70,12 @@ export type KnowledgePackage = {
 
   selected: RetrievalCandidate[];
 
-  composition: {
-    direct: number;
-    audience: number;
-    expert: number;
-    research: number;
-    adjacent: number;
-    radar: number;
-    strategic: number;
-    total: number;
-  };
+  composition: RetrievalComposition;
 };
 
 const DEFAULT_LIMITS = {
-  discoveryPool: 40,
-
-  selectedTotal: 14,
-
-  direct: 3,
-  audience: 2,
-  expert: 3,
-  research: 3,
-  adjacent: 2,
-  radar: 2,
-  strategic: 1,
+  maxCharacters: 220_000,
+  maxSources: 28,
 };
 
 const STOP_WORDS = new Set([
@@ -120,78 +130,93 @@ const EXCLUDED_FILES = new Set([
   ".gitkeep",
 ]);
 
-const NAVIGATION_TYPES = new Set([
-  "index",
-  "readme",
+const EXCLUDED_TYPES = new Set([
+  "code",
+  "config",
 ]);
 
-const NAVIGATION_FILE_NAMES = new Set([
-  "README.md",
-]);
+const DOMAIN_ROLE_MAP: Record<
+  string,
+  RetrievalSourceRole
+> = {
+  "00_SYSTEM": "system",
+  "01_KNOWLEDGE": "knowledge",
+  "02_RESEARCH": "research",
+  "03_AUDIENCE": "audience",
+  "04_CONTENT": "content",
+  "05_SEO": "seo",
+  "08_INPUT": "input",
+};
 
-function normalize(text: string): string {
-  return text
+const ROLE_ORDER: RetrievalSourceRole[] = [
+  "knowledge",
+  "audience",
+  "research",
+  "content",
+  "seo",
+  "input",
+  "radar",
+  "system",
+  "other",
+];
+
+function normalize(
+  text: string
+): string {
+  return String(
+    text || ""
+  )
     .toLowerCase()
-    .replace(/ё/g, "е")
-    .replace(/[^a-zа-я0-9\s_-]/gi, " ")
-    .replace(/\s+/g, " ")
+    .replace(
+      /ё/g,
+      "е"
+    )
+    .replace(
+      /[^a-zа-я0-9\s_-]/gi,
+      " "
+    )
+    .replace(
+      /\s+/g,
+      " "
+    )
     .trim();
 }
 
-function tokenize(text: string): string[] {
+function tokenize(
+  text: string
+): string[] {
   return [
     ...new Set(
-      normalize(text)
+      normalize(
+        text
+      )
         .split(" ")
         .filter(
           token =>
             token.length >= 4 &&
-            !STOP_WORDS.has(token)
+            !STOP_WORDS.has(
+              token
+            )
         )
     ),
   ];
-}
-
-function joinPlan(plan: any): string {
-  return [
-    plan?.audience,
-    plan?.topic,
-    plan?.subtopic,
-    plan?.goal,
-    plan?.audienceNeed,
-    plan?.keyMessage,
-    plan?.contentAngle,
-    ...(Array.isArray(plan?.researchSignals)
-      ? plan.researchSignals
-      : []),
-    ...(Array.isArray(plan?.knowledgeNeeds)
-      ? plan.knowledgeNeeds
-      : []),
-    ...(Array.isArray(plan?.radarSignals)
-      ? plan.radarSignals
-      : []),
-    ...(Array.isArray(plan?.seoConsiderations)
-      ? plan.seoConsiderations
-      : []),
-    ...(Array.isArray(plan?.constraints)
-      ? plan.constraints
-      : []),
-    ...(Array.isArray(plan?.sourcePriorities)
-      ? plan.sourcePriorities
-      : []),
-  ]
-    .filter(Boolean)
-    .join(" ");
 }
 
 function overlapScore(
   query: string,
   text: string
 ): number {
-  const queryTokens = tokenize(query);
-  const textTokens = new Set(
-    tokenize(text)
-  );
+  const queryTokens =
+    tokenize(
+      query
+    );
+
+  const textTokens =
+    new Set(
+      tokenize(
+        text
+      )
+    );
 
   if (
     !queryTokens.length ||
@@ -203,58 +228,108 @@ function overlapScore(
   const hits =
     queryTokens.filter(
       token =>
-        textTokens.has(token)
+        textTokens.has(
+          token
+        )
     ).length;
 
   return Math.min(
     100,
     Math.round(
-      (hits /
+      (
+        hits /
         Math.max(
           queryTokens.length,
           1
-        )) *
+        )
+      ) *
         100
     )
   );
 }
 
-function contentDepthScore(
-  content: string
-): number {
-  const length = content.length;
-
-  if (length === 0) return 0;
-  if (length < 300) return 10;
-  if (length < 1000) return 30;
-  if (length < 3000) return 50;
-  if (length < 7000) return 70;
-  if (length < 15000) return 85;
-
-  return 100;
+function joinPlan(
+  plan: any
+): string {
+  return [
+    plan?.audience,
+    plan?.topic,
+    plan?.subtopic,
+    plan?.goal,
+    plan?.audienceNeed,
+    plan?.keyMessage,
+    plan?.contentAngle,
+    ...(Array.isArray(
+      plan?.researchSignals
+    )
+      ? plan.researchSignals
+      : []),
+    ...(Array.isArray(
+      plan?.knowledgeNeeds
+    )
+      ? plan.knowledgeNeeds
+      : []),
+    ...(Array.isArray(
+      plan?.radarSignals
+    )
+      ? plan.radarSignals
+      : []),
+    ...(Array.isArray(
+      plan?.seoConsiderations
+    )
+      ? plan.seoConsiderations
+      : []),
+    ...(Array.isArray(
+      plan?.constraints
+    )
+      ? plan.constraints
+      : []),
+    ...(Array.isArray(
+      plan?.sourcePriorities
+    )
+      ? plan.sourcePriorities
+      : []),
+  ]
+    .filter(Boolean)
+    .join(
+      " "
+    );
 }
 
-function isTechnicalPlaceholder(
+function roleOf(
+  item: any
+): RetrievalSourceRole {
+  if (
+    item?.type ===
+    "radar_signal"
+  ) {
+    return "radar";
+  }
+
+  const domain =
+    String(
+      item?.domain || ""
+    );
+
+  return (
+    DOMAIN_ROLE_MAP[
+      domain
+    ] ||
+    "other"
+  );
+}
+
+function isExcludedItem(
   item: any
 ): boolean {
-  if (!item) return true;
+  if (!item) {
+    return true;
+  }
 
   const fileName =
     String(
       item.fileName || ""
     ).toLowerCase();
-
-  const title =
-    String(
-      item.title || ""
-    ).trim()
-    .toLowerCase();
-
-  const purpose =
-    String(
-      item.purpose || ""
-    ).trim()
-    .toLowerCase();
 
   if (
     EXCLUDED_FILES.has(
@@ -265,8 +340,11 @@ function isTechnicalPlaceholder(
   }
 
   if (
-    title === ".gitkeep" ||
-    purpose === "материал .gitkeep"
+    EXCLUDED_TYPES.has(
+      String(
+        item.type || ""
+      )
+    )
   ) {
     return true;
   }
@@ -277,76 +355,22 @@ function isTechnicalPlaceholder(
 function isNavigationItem(
   item: any
 ): boolean {
-  if (!item) return false;
+  const type =
+    String(
+      item?.type || ""
+    );
 
   const fileName =
     String(
-      item.fileName || ""
-    );
+      item?.fileName || ""
+    ).toLowerCase();
 
-  if (
-    NAVIGATION_FILE_NAMES.has(
-      fileName
-    )
-  ) {
-    return true;
-  }
-
-  return NAVIGATION_TYPES.has(
-    String(
-      item.type || ""
-    )
+  return (
+    type === "index" ||
+    type === "readme" ||
+    fileName ===
+      "readme.md"
   );
-}
-
-function categoryRole(
-  item: any
-): string {
-  if (
-    item?.type ===
-    "radar_signal"
-  ) {
-    return "radar";
-  }
-
-  if (
-    item?.domain ===
-    "03_AUDIENCE"
-  ) {
-    return "audience";
-  }
-
-  if (
-    item?.domain ===
-    "01_KNOWLEDGE"
-  ) {
-    return "expert";
-  }
-
-  if (
-    item?.domain ===
-    "02_RESEARCH"
-  ) {
-    return "research";
-  }
-
-  if (
-    item?.domain ===
-      "04_CONTENT" ||
-    item?.domain ===
-      "05_SEO"
-  ) {
-    return "strategic";
-  }
-
-  if (
-    item?.domain ===
-    "06_ANALYTICS"
-  ) {
-    return "analytics";
-  }
-
-  return "other";
 }
 
 function sourcePriorityScore(
@@ -360,37 +384,44 @@ function sourcePriorityScore(
       ? plan.sourcePriorities
       : [];
 
-  const normalizedPath =
-    String(
-      item?.path || ""
-    ).toLowerCase();
+  const itemPath =
+    normalize(
+      String(
+        item?.path || ""
+      )
+    );
 
-  const normalizedDomain =
-    String(
-      item?.domain || ""
-    ).toLowerCase();
+  const itemDomain =
+    normalize(
+      String(
+        item?.domain || ""
+      )
+    );
 
   for (
-    let index = 0;
-    index < priorities.length;
-    index++
+    let i = 0;
+    i < priorities.length;
+    i++
   ) {
     const priority =
-      String(
-        priorities[index]
-      ).toLowerCase();
+      normalize(
+        String(
+          priorities[i]
+        )
+      );
 
     if (
-      normalizedPath.includes(
+      itemPath.includes(
         priority
       ) ||
-      normalizedDomain.includes(
+      itemDomain.includes(
         priority
       )
     ) {
       return Math.max(
         40,
-        100 - index * 10
+        100 -
+          i * 10
       );
     }
   }
@@ -398,139 +429,299 @@ function sourcePriorityScore(
   return 30;
 }
 
-function radarFreshnessScore(
-  item: any
-): number {
+function buildSearchText(
+  item: any,
+  content: string
+): string {
+  return [
+    item?.title,
+    item?.purpose,
+    ...(item?.keywords || []),
+    item?.sourceRole,
+    item?.radarMetadata
+      ?.primaryCategory,
+    ...Object.keys(
+      item?.radarMetadata
+        ?.matchedCategories ||
+        {}
+    ),
+    ...Object.values(
+      item?.radarMetadata
+        ?.matchedCategories ||
+        {}
+    ).flat(),
+    content,
+  ]
+    .filter(Boolean)
+    .join(
+      " "
+    );
+}
+
+function calculateRelevance(
+  item: any,
+  content: string,
+  plan: any
+): {
+  relevance: number;
+  sourcePriority: number;
+  reasons: string[];
+} {
+  const searchText =
+    buildSearchText(
+      item,
+      content
+    );
+
+  const directQuery =
+    [
+      plan?.topic,
+      plan?.subtopic,
+      plan?.keyMessage,
+      plan?.contentAngle,
+    ]
+      .filter(Boolean)
+      .join(
+        " "
+      );
+
+  const audienceQuery =
+    [
+      plan?.audience,
+      plan?.audienceNeed,
+    ]
+      .filter(Boolean)
+      .join(
+        " "
+      );
+
+  const researchQuery =
+    [
+      ...(plan?.researchSignals ||
+        []),
+      ...(plan?.knowledgeNeeds ||
+        []),
+    ]
+      .filter(Boolean)
+      .join(
+        " "
+      );
+
+  const strategicQuery =
+    [
+      plan?.goal,
+      plan?.contentAngle,
+      ...(plan?.seoConsiderations ||
+        []),
+    ]
+      .filter(Boolean)
+      .join(
+        " "
+      );
+
+  const direct =
+    overlapScore(
+      directQuery,
+      searchText
+    );
+
+  const audience =
+    overlapScore(
+      audienceQuery,
+      searchText
+    );
+
+  const research =
+    overlapScore(
+      researchQuery,
+      searchText
+    );
+
+  const strategic =
+    overlapScore(
+      strategicQuery,
+      searchText
+    );
+
+  const role =
+    roleOf(
+      item
+    );
+
+  const sourcePriority =
+    sourcePriorityScore(
+      item,
+      plan
+    );
+
+  let relevance =
+    direct * 0.30 +
+    audience * 0.20 +
+    research * 0.20 +
+    strategic * 0.15 +
+    sourcePriority * 0.15;
+
+  /*
+   * Role-specific bonuses are deliberately small.
+   *
+   * We do NOT want to force artificial source
+   * domination just because of the role.
+   */
+
   if (
-    item?.type !==
-    "radar_signal"
+    role ===
+    "knowledge" &&
+    research >= 15
   ) {
-    return 40;
+    relevance += 4;
   }
 
-  const metadata =
-    item?.radarMetadata;
+  if (
+    role ===
+    "audience" &&
+    audience >= 15
+  ) {
+    relevance += 4;
+  }
 
   if (
-    typeof metadata?.freshness ===
-    "number"
+    role ===
+    "research" &&
+    research >= 15
   ) {
-    return Math.max(
-      0,
+    relevance += 4;
+  }
+
+  if (
+    role ===
+    "input"
+  ) {
+    relevance += 3;
+  }
+
+  if (
+    role ===
+    "radar"
+  ) {
+    const radarRelevance =
+      Number(
+        item?.radarMetadata
+          ?.relevance || 0
+      );
+
+    relevance +=
       Math.min(
-        100,
-        metadata.freshness
-      )
-    );
+        8,
+        radarRelevance /
+          12
+      );
+
+    if (
+      item?.radarMetadata
+        ?.context?.local
+    ) {
+      relevance +=
+        3;
+    }
   }
-
-  const publishedAt =
-    metadata?.publishedAt;
-
-  if (!publishedAt) {
-    return 50;
-  }
-
-  const time =
-    new Date(
-      publishedAt
-    ).getTime();
 
   if (
-    Number.isNaN(time)
+    isNavigationItem(
+      item
+    )
   ) {
-    return 50;
+    relevance -=
+      15;
   }
 
-  const ageDays =
-    Math.max(
-      0,
-      (Date.now() - time) /
-        86_400_000
-    );
+  const reasons: string[] =
+    [];
 
-  if (ageDays <= 7) return 100;
-  if (ageDays <= 30) return 90;
-  if (ageDays <= 90) return 75;
-  if (ageDays <= 180) return 60;
-  if (ageDays <= 365) return 40;
-
-  return 20;
-}
-
-function confidenceScore(
-  item: any
-): number {
   if (
-    typeof item?.radarMetadata
-      ?.confidence ===
-    "number"
+    direct >= 20
   ) {
-    return Math.round(
-      item.radarMetadata.confidence *
-        100
+    reasons.push(
+      "direct relevance"
     );
   }
 
   if (
-    item?.domain ===
-      "01_KNOWLEDGE" ||
-    item?.domain ===
-      "02_RESEARCH"
+    audience >= 20
   ) {
-    return 85;
+    reasons.push(
+      "audience relevance"
+    );
   }
 
   if (
-    item?.type ===
-    "radar_signal"
+    research >= 20
   ) {
-    return 70;
+    reasons.push(
+      "research relevance"
+    );
   }
 
-  return 60;
+  if (
+    strategic >= 20
+  ) {
+    reasons.push(
+      "strategic relevance"
+    );
+  }
+
+  if (
+    sourcePriority >=
+    80
+  ) {
+    reasons.push(
+      "planner source priority"
+    );
+  }
+
+  if (
+    role ===
+    "radar"
+  ) {
+    reasons.push(
+      "current radar signal"
+    );
+  }
+
+  if (
+    isNavigationItem(
+      item
+    )
+  ) {
+    reasons.push(
+      "navigation source"
+    );
+  }
+
+  return {
+    relevance:
+      Math.round(
+        relevance *
+          100
+      ) / 100,
+
+    sourcePriority,
+
+    reasons,
+  };
 }
 
-function noveltyScore(
-  item: any
-): number {
-  if (
-    item?.type ===
-    "radar_signal"
-  ) {
-    return 90;
-  }
-
-  if (
-    item?.domain ===
-    "08_INPUT"
-  ) {
-    return 90;
-  }
-
-  if (
-    item?.domain ===
-    "01_KNOWLEDGE"
-  ) {
-    return 80;
-  }
-
-  if (
-    item?.domain ===
-    "02_RESEARCH"
-  ) {
-    return 75;
-  }
-
-  return 50;
-}
-
-async function resolveCandidateContent(
+async function resolveContent(
   projectRoot: string,
   item: any
 ): Promise<string> {
-  if (!item) return "";
+  if (!item) {
+    return "";
+  }
 
+  /*
+   * Radar signal content already exists in
+   * the Librarian item metadata.
+   */
   if (
     item.type ===
     "radar_signal"
@@ -541,13 +732,16 @@ async function resolveCandidateContent(
       ...(item.keywords || []),
       item.radarMetadata
         ?.primaryCategory,
-      Object.keys(
+      JSON.stringify(
         item.radarMetadata
-          ?.matchedCategories || {}
+          ?.matchedCategories ||
+          {}
       ),
     ]
       .filter(Boolean)
-      .join(" ");
+      .join(
+        "\n"
+      );
   }
 
   const relativePath =
@@ -556,7 +750,12 @@ async function resolveCandidateContent(
     );
 
   if (
-    !relativePath ||
+    !relativePath
+  ) {
+    return "";
+  }
+
+  if (
     relativePath.includes(
       "#signal-"
     )
@@ -568,7 +767,9 @@ async function resolveCandidateContent(
       item.sourceRole,
     ]
       .filter(Boolean)
-      .join(" ");
+      .join(
+        "\n"
+      );
   }
 
   const absolutePath =
@@ -585,14 +786,7 @@ async function resolveCandidateContent(
         path.sep
     )
   ) {
-    return [
-      item.title,
-      item.purpose,
-      ...(item.keywords || []),
-      item.sourceRole,
-    ]
-      .filter(Boolean)
-      .join(" ");
+    return "";
   }
 
   try {
@@ -604,28 +798,14 @@ async function resolveCandidateContent(
     if (
       !stat.isFile()
     ) {
-      return [
-        item.title,
-        item.purpose,
-        ...(item.keywords || []),
-        item.sourceRole,
-      ]
-        .filter(Boolean)
-        .join(" ");
+      return "";
     }
 
     if (
       stat.size >
       1_500_000
     ) {
-      return [
-        item.title,
-        item.purpose,
-        ...(item.keywords || []),
-        item.sourceRole,
-      ]
-        .filter(Boolean)
-        .join(" ");
+      return "";
     }
 
     return await fs.readFile(
@@ -633,723 +813,11 @@ async function resolveCandidateContent(
       "utf8"
     );
   } catch {
-    return [
-      item.title,
-      item.purpose,
-      ...(item.keywords || []),
-      item.sourceRole,
-    ]
-      .filter(Boolean)
-      .join(" ");
+    return "";
   }
 }
 
-async function relevanceFor(
-  item: any,
-  plan: any,
-  projectRoot: string
-): Promise<RetrievalCandidate> {
-  const content =
-    await resolveCandidateContent(
-      projectRoot,
-      item
-    );
-
-  const searchable =
-    [
-      content,
-      item.title,
-      item.purpose,
-      ...(item.keywords || []),
-      item.sourceRole,
-      item.radarMetadata
-        ?.primaryCategory,
-      ...Object.keys(
-        item.radarMetadata
-          ?.matchedCategories || {}
-      ),
-      ...Object.values(
-        item.radarMetadata
-          ?.matchedCategories || {}
-      ).flat(),
-    ]
-      .filter(Boolean)
-      .join(" ");
-
-  const directQuery =
-    [
-      plan?.topic,
-      plan?.subtopic,
-      plan?.keyMessage,
-      plan?.contentAngle,
-    ]
-      .filter(Boolean)
-      .join(" ");
-
-  const audienceQuery =
-    [
-      plan?.audience,
-      plan?.audienceNeed,
-    ]
-      .filter(Boolean)
-      .join(" ");
-
-  const strategicQuery =
-    [
-      plan?.goal,
-      plan?.contentAngle,
-      ...(plan?.seoConsiderations || []),
-    ]
-      .filter(Boolean)
-      .join(" ");
-
-  const expertQuery =
-    Array.isArray(
-      plan?.knowledgeNeeds
-    )
-      ? plan.knowledgeNeeds.join(
-          " "
-        )
-      : "";
-
-  const researchQuery =
-    Array.isArray(
-      plan?.researchSignals
-    )
-      ? plan.researchSignals.join(
-          " "
-        )
-      : "";
-
-  const adjacentQuery =
-    [
-      plan?.audienceNeed,
-      plan?.contentAngle,
-      ...(plan?.researchSignals || []),
-      ...(plan?.knowledgeNeeds || []),
-    ]
-      .filter(Boolean)
-      .join(" ");
-
-  const direct =
-    overlapScore(
-      directQuery,
-      searchable
-    );
-
-  const audience =
-    overlapScore(
-      audienceQuery,
-      searchable
-    );
-
-  const strategic =
-    overlapScore(
-      strategicQuery,
-      searchable
-    );
-
-  let expert =
-    overlapScore(
-      expertQuery,
-      searchable
-    );
-
-  if (
-    item.domain ===
-    "01_KNOWLEDGE"
-  ) {
-    expert =
-      Math.min(
-        100,
-        40 +
-          expert * 0.6
-      );
-  }
-
-  const research =
-    overlapScore(
-      researchQuery,
-      searchable
-    );
-
-  const adjacentRaw =
-    overlapScore(
-      adjacentQuery,
-      searchable
-    );
-
-  const role =
-    categoryRole(
-      item
-    );
-
-  let adjacent =
-    adjacentRaw;
-
-  if (
-    role === "audience" ||
-    role === "expert" ||
-    role === "research"
-  ) {
-    adjacent =
-      Math.min(
-        100,
-        adjacentRaw + 10
-      );
-  }
-
-  const freshness =
-    radarFreshnessScore(
-      item
-    );
-
-  const confidence =
-    confidenceScore(
-      item
-    );
-
-  const novelty =
-    noveltyScore(
-      item
-    );
-
-  const contentDepth =
-    contentDepthScore(
-      content
-    );
-
-  const sourcePriority =
-    sourcePriorityScore(
-      item,
-      plan
-    );
-
-  const navigationPenalty =
-    isNavigationItem(
-      item
-    )
-      ? -18
-      : 0;
-
-  const placeholderPenalty =
-    isTechnicalPlaceholder(
-      item
-    )
-      ? -100
-      : 0;
-
-  const shallowPenalty =
-    contentDepth < 25
-      ? -12
-      : 0;
-
-  /*
-   * Важный принцип:
-   * прямое смысловое соответствие
-   * важнее свежести/priority.
-   */
-  let score =
-    direct * 0.26 +
-    audience * 0.15 +
-    strategic * 0.10 +
-    expert * 0.12 +
-    adjacent * 0.11 +
-    freshness * 0.05 +
-    confidence * 0.06 +
-    novelty * 0.04 +
-    contentDepth * 0.06 +
-    sourcePriority * 0.05;
-
-  /*
-   * Radar получает дополнительный бонус
-   * только когда он реально относится
-   * к задаче.
-   */
-  if (
-    item.type ===
-    "radar_signal"
-  ) {
-    const radarRelevance =
-      Number(
-        item.radarMetadata
-          ?.relevance || 0
-      );
-
-    const radarCategory =
-      String(
-        item.radarMetadata
-          ?.primaryCategory || ""
-      );
-
-    const radarContext =
-      item.radarMetadata
-        ?.context || {};
-
-    const radarTopicFit =
-      overlapScore(
-        directQuery,
-        [
-          item.title,
-          item.purpose,
-          radarCategory,
-          Object.keys(
-            item.radarMetadata
-              ?.matchedCategories ||
-              {}
-          ),
-        ]
-          .flat()
-          .join(" ")
-      );
-
-    const localBonus =
-      radarContext.local &&
-      normalize(
-        String(
-          plan?.audience || ""
-        )
-      ).includes(
-        "серпухов"
-      )
-        ? 8
-        : 0;
-
-    if (
-      radarTopicFit >= 20 ||
-      audience >= 20 ||
-      strategic >= 20
-    ) {
-      score +=
-        Math.min(
-          8,
-          radarRelevance / 12
-        ) +
-        localBonus;
-    } else {
-      score -= 4;
-    }
-  }
-
-  score +=
-    Math.min(
-      5,
-      Math.max(
-        0,
-        (item.priority || 0) /
-          20
-      )
-    );
-
-  score +=
-    navigationPenalty +
-    placeholderPenalty +
-    shallowPenalty;
-
-  if (
-    role === "research" &&
-    research >= 20
-  ) {
-    score += 4;
-  }
-
-  if (
-    role === "expert" &&
-    expert >= 25
-  ) {
-    score += 4;
-  }
-
-  if (
-    role === "audience" &&
-    audience >= 25
-  ) {
-    score += 4;
-  }
-
-  if (
-    role === "strategic" &&
-    strategic >= 25
-  ) {
-    score += 3;
-  }
-
-  const reasons: string[] = [];
-
-  if (direct >= 25) {
-    reasons.push(
-      "direct topic match"
-    );
-  }
-
-  if (audience >= 25) {
-    reasons.push(
-      "audience match"
-    );
-  }
-
-  if (strategic >= 25) {
-    reasons.push(
-      "strategic match"
-    );
-  }
-
-  if (expert >= 25) {
-    reasons.push(
-      "expert relevance"
-    );
-  }
-
-  if (research >= 25) {
-    reasons.push(
-      "research relevance"
-    );
-  }
-
-  if (adjacent >= 25) {
-    reasons.push(
-      "adjacent relevance"
-    );
-  }
-
-  if (
-    contentDepth >= 70
-  ) {
-    reasons.push(
-      "substantive source"
-    );
-  }
-
-  if (
-    item.type ===
-    "radar_signal"
-  ) {
-    reasons.push(
-      "radar signal"
-    );
-  }
-
-  if (
-    isNavigationItem(
-      item
-    )
-  ) {
-    reasons.push(
-      "navigation source"
-    );
-  }
-
-  return {
-    item,
-
-    score:
-      Math.round(
-        score * 100
-      ) / 100,
-
-    reasons,
-
-    match: {
-      direct:
-        Math.round(
-          direct
-        ),
-
-      audience:
-        Math.round(
-          audience
-        ),
-
-      strategic:
-        Math.round(
-          strategic
-        ),
-
-      expert:
-        Math.round(
-          expert
-        ),
-
-      adjacent:
-        Math.round(
-          adjacent
-        ),
-
-      freshness:
-        Math.round(
-          freshness
-        ),
-
-      confidence:
-        Math.round(
-          confidence
-        ),
-
-      novelty:
-        Math.round(
-          novelty
-        ),
-
-      contentDepth:
-        Math.round(
-          contentDepth
-        ),
-
-      sourcePriority:
-        Math.round(
-          sourcePriority
-        ),
-    },
-  };
-}
-
-function canBeSelected(
-  candidate: RetrievalCandidate
-): boolean {
-  if (
-    isTechnicalPlaceholder(
-      candidate.item
-    )
-  ) {
-    return false;
-  }
-
-  /*
-   * README и INDEX допускаются
-   * только если у них есть реальная
-   * содержательная связь и нет лучшего
-   * содержательного кандидата.
-   */
-  if (
-    isNavigationItem(
-      candidate.item
-    ) &&
-    candidate.match.contentDepth <
-      60
-  ) {
-    return false;
-  }
-
-  return candidate.score >=
-    18;
-}
-
-function classifyBucket(
-  candidate: RetrievalCandidate
-): string {
-  const item =
-    candidate.item;
-
-  if (
-    item.type ===
-    "radar_signal"
-  ) {
-    return "radar";
-  }
-
-  if (
-    item.domain ===
-    "03_AUDIENCE"
-  ) {
-    return "audience";
-  }
-
-  if (
-    item.domain ===
-    "01_KNOWLEDGE"
-  ) {
-    return "expert";
-  }
-
-  if (
-    item.domain ===
-    "02_RESEARCH"
-  ) {
-    return "research";
-  }
-
-  if (
-    item.domain ===
-      "04_CONTENT" ||
-    item.domain ===
-      "05_SEO"
-  ) {
-    return "strategic";
-  }
-
-  if (
-    candidate.match.direct >= 25
-  ) {
-    return "direct";
-  }
-
-  if (
-    candidate.match.adjacent >= 25
-  ) {
-    return "adjacent";
-  }
-
-  return "other";
-}
-
-function diversify(
-  ranked: RetrievalCandidate[],
-  limits = DEFAULT_LIMITS
-): RetrievalCandidate[] {
-  const buckets: Record<
-    string,
-    RetrievalCandidate[]
-  > = {
-    direct: [],
-    audience: [],
-    expert: [],
-    research: [],
-    adjacent: [],
-    radar: [],
-    strategic: [],
-    other: [],
-  };
-
-  const sorted =
-    [...ranked]
-      .filter(
-        canBeSelected
-      )
-      .sort(
-        (
-          a,
-          b
-        ) =>
-          b.score -
-          a.score
-      );
-
-  for (
-    const candidate of sorted
-  ) {
-    const bucket =
-      classifyBucket(
-        candidate
-      );
-
-    buckets[bucket].push(
-      candidate
-    );
-  }
-
-  const selected: RetrievalCandidate[] =
-    [];
-
-  const used =
-    new Set<string>();
-
-  const take =
-    (
-      bucket: RetrievalCandidate[],
-      count: number
-    ) => {
-      for (
-        const candidate of bucket
-      ) {
-        if (
-          selected.length >=
-            limits.selectedTotal ||
-          count <= 0
-        ) {
-          break;
-        }
-
-        const key =
-          candidate.item.path;
-
-        if (
-          used.has(key)
-        ) {
-          continue;
-        }
-
-        used.add(key);
-        selected.push(
-          candidate
-        );
-        count--;
-      }
-    };
-
-  /*
-   * Сначала покрываем смысловые роли.
-   */
-  take(
-    buckets.direct,
-    limits.direct
-  );
-
-  take(
-    buckets.audience,
-    limits.audience
-  );
-
-  take(
-    buckets.expert,
-    limits.expert
-  );
-
-  take(
-    buckets.research,
-    limits.research
-  );
-
-  take(
-    buckets.adjacent,
-    limits.adjacent
-  );
-
-  take(
-    buckets.strategic,
-    limits.strategic
-  );
-
-  take(
-    buckets.radar,
-    limits.radar
-  );
-
-  /*
-   * Потом добираем лучшие оставшиеся
-   * содержательные источники.
-   */
-  for (
-    const candidate of sorted
-  ) {
-    if (
-      selected.length >=
-      limits.selectedTotal
-    ) {
-      break;
-    }
-
-    const key =
-      candidate.item.path;
-
-    if (
-      used.has(key)
-    ) {
-      continue;
-    }
-
-    used.add(key);
-    selected.push(
-      candidate
-    );
-  }
-
-  return selected.slice(
-    0,
-    limits.selectedTotal
-  );
-}
-
-export async function loadLibraryMap(
+async function loadLibraryMap(
   projectRoot: string
 ): Promise<any> {
   const mapPath =
@@ -1372,11 +840,268 @@ export async function loadLibraryMap(
   );
 }
 
+function emptyComposition():
+  RetrievalComposition {
+  return {
+    knowledge: 0,
+    audience: 0,
+    research: 0,
+    content: 0,
+    seo: 0,
+    input: 0,
+    radar: 0,
+    system: 0,
+    other: 0,
+    total: 0,
+    characters: 0,
+  };
+}
+
+function addToComposition(
+  composition: RetrievalComposition,
+  role: RetrievalSourceRole,
+  size: number
+) {
+  if (
+    role ===
+    "knowledge"
+  ) {
+    composition.knowledge++;
+  } else if (
+    role ===
+    "audience"
+  ) {
+    composition.audience++;
+  } else if (
+    role ===
+    "research"
+  ) {
+    composition.research++;
+  } else if (
+    role ===
+    "content"
+  ) {
+    composition.content++;
+  } else if (
+    role ===
+    "seo"
+  ) {
+    composition.seo++;
+  } else if (
+    role ===
+    "input"
+  ) {
+    composition.input++;
+  } else if (
+    role ===
+    "radar"
+  ) {
+    composition.radar++;
+  } else if (
+    role ===
+    "system"
+  ) {
+    composition.system++;
+  } else {
+    composition.other++;
+  }
+
+  composition.total++;
+  composition.characters +=
+    size;
+}
+
+function selectDiverseSources(
+  ranked: RetrievalCandidate[],
+  maxCharacters: number,
+  maxSources: number
+): RetrievalCandidate[] {
+  const selected:
+    RetrievalCandidate[] =
+    [];
+
+  const used =
+    new Set<string>();
+
+  let totalCharacters =
+    0;
+
+  /*
+   * First pass:
+   *
+   * Give every meaningful role a chance.
+   *
+   * This is diversity protection,
+   * not relevance ranking.
+   */
+
+  for (
+    const role of ROLE_ORDER
+  ) {
+    if (
+      selected.length >=
+      maxSources
+    ) {
+      break;
+    }
+
+    const candidate =
+      ranked.find(
+        item =>
+          !used.has(
+            item.item.path
+          ) &&
+          item.role ===
+            role
+      );
+
+    if (
+      !candidate
+    ) {
+      continue;
+    }
+
+    if (
+      totalCharacters +
+        candidate.size >
+      maxCharacters
+    ) {
+      continue;
+    }
+
+    used.add(
+      candidate.item.path
+    );
+
+    selected.push(
+      candidate
+    );
+
+    totalCharacters +=
+      candidate.size;
+  }
+
+  /*
+   * Second pass:
+   *
+   * Fill remaining capacity with the best
+   * unused candidates while respecting the
+   * physical context limit.
+   */
+
+  for (
+    const candidate of ranked
+  ) {
+    if (
+      selected.length >=
+      maxSources
+    ) {
+      break;
+    }
+
+    if (
+      used.has(
+        candidate.item.path
+      )
+    ) {
+      continue;
+    }
+
+    if (
+      totalCharacters +
+        candidate.size >
+      maxCharacters
+    ) {
+      continue;
+    }
+
+    used.add(
+      candidate.item.path
+    );
+
+    selected.push(
+      candidate
+    );
+
+    totalCharacters +=
+      candidate.size;
+  }
+
+  /*
+   * Third pass:
+   *
+   * When a large source does not fit,
+   * try smaller unused sources.
+   *
+   * This prevents one huge document from
+   * destroying diversity.
+   */
+
+  if (
+    selected.length <
+    maxSources
+  ) {
+    const smallSources =
+      [...ranked]
+        .filter(
+          candidate =>
+            !used.has(
+              candidate.item.path
+            )
+        )
+        .sort(
+          (a, b) =>
+            a.size -
+            b.size
+        );
+
+    for (
+      const candidate of smallSources
+    ) {
+      if (
+        selected.length >=
+        maxSources
+      ) {
+        break;
+      }
+
+      if (
+        used.has(
+          candidate.item.path
+        )
+      ) {
+        continue;
+      }
+
+      if (
+        totalCharacters +
+          candidate.size >
+        maxCharacters
+      ) {
+        continue;
+      }
+
+      used.add(
+        candidate.item.path
+      );
+
+      selected.push(
+        candidate
+      );
+
+      totalCharacters +=
+        candidate.size;
+    }
+  }
+
+  return selected;
+}
+
 export async function discoverAndRank(
   libraryMap: any,
   plan: any,
-  limits = DEFAULT_LIMITS,
-  projectRoot = process.cwd()
+  projectRoot = process.cwd(),
+  limits = DEFAULT_LIMITS
 ): Promise<KnowledgePackage> {
   const allItems =
     Array.isArray(
@@ -1385,133 +1110,168 @@ export async function discoverAndRank(
       ? libraryMap.items
       : [];
 
-  const scored =
-    await Promise.all(
-      allItems.map(
-        (item: any) =>
-          relevanceFor(
-            item,
-            plan,
-            projectRoot
-          )
+  const candidates:
+    RetrievalCandidate[] =
+    [];
+
+  for (
+    const item of allItems
+  ) {
+    if (
+      isExcludedItem(
+        item
       )
+    ) {
+      continue;
+    }
+
+    const role =
+      roleOf(
+        item
+      );
+
+    /*
+     * Internal system files remain available
+     * only as low-priority fallback knowledge.
+     *
+     * They are never deliberately preferred.
+     */
+    const content =
+      await resolveContent(
+        projectRoot,
+        item
+      );
+
+    if (
+      !content.trim()
+    ) {
+      continue;
+    }
+
+    const result =
+      calculateRelevance(
+        item,
+        content,
+        plan
+      );
+
+    const candidate:
+      RetrievalCandidate = {
+      item,
+
+      role,
+
+      content,
+
+      size:
+        content.length,
+
+      relevance:
+        result.relevance,
+
+      sourcePriority:
+        result.sourcePriority,
+
+      reasons:
+        result.reasons,
+    };
+
+    candidates.push(
+      candidate
     );
+  }
+
+  /*
+   * Ranking is only used to order candidates.
+   *
+   * It is NOT used as the meaning of the
+   * retrieval system.
+   *
+   * Diversity selection below has priority
+   * over simply taking the top N.
+   */
 
   const ranked =
-    scored.sort(
-      (
-        a,
-        b
-      ) =>
-        b.score -
-        a.score
-    );
+    [...candidates]
+      .sort(
+        (a, b) => {
+          if (
+            b.relevance !==
+            a.relevance
+          ) {
+            return (
+              b.relevance -
+              a.relevance
+            );
+          }
 
-  const candidates =
-    ranked.slice(
-      0,
-      limits.discoveryPool
-    );
+          return (
+            b.size -
+            a.size
+          );
+        }
+      );
 
   const selected =
-    diversify(
+    selectDiverseSources(
       ranked,
-      limits
+      limits.maxCharacters,
+      limits.maxSources
     );
 
-  const composition = {
-    direct:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "direct"
-      ).length,
+  const composition =
+    emptyComposition();
 
-    audience:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "audience"
-      ).length,
-
-    expert:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "expert"
-      ).length,
-
-    research:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "research"
-      ).length,
-
-    adjacent:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "adjacent"
-      ).length,
-
-    radar:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "radar"
-      ).length,
-
-    strategic:
-      selected.filter(
-        x =>
-          classifyBucket(
-            x
-          ) ===
-          "strategic"
-      ).length,
-
-    total:
-      selected.length,
-  };
+  for (
+    const candidate of selected
+  ) {
+    addToComposition(
+      composition,
+      candidate.role,
+      candidate.size
+    );
+  }
 
   return {
     generatedAt:
       new Date().toISOString(),
 
+    limits: {
+      maxCharacters:
+        limits.maxCharacters,
+
+      maxSources:
+        limits.maxSources,
+    },
+
     query: {
       audience:
-        plan?.audience || "",
+        plan?.audience ||
+        "",
 
       topic:
-        plan?.topic || "",
+        plan?.topic ||
+        "",
 
       subtopic:
-        plan?.subtopic || "",
+        plan?.subtopic ||
+        "",
 
       goal:
-        plan?.goal || "",
+        plan?.goal ||
+        "",
 
       audienceNeed:
-        plan?.audienceNeed || "",
+        plan?.audienceNeed ||
+        "",
 
       keyMessage:
-        plan?.keyMessage || "",
+        plan?.keyMessage ||
+        "",
 
       contentAngle:
-        plan?.contentAngle || "",
+        plan?.contentAngle ||
+        "",
 
       researchSignals:
         Array.isArray(
@@ -1556,7 +1316,8 @@ export async function discoverAndRank(
           : [],
     },
 
-    candidates,
+    candidates:
+      ranked,
 
     selected,
 
@@ -1564,56 +1325,90 @@ export async function discoverAndRank(
   };
 }
 
+export async function buildRetrievalPackage(
+  projectRoot: string,
+  plan: any,
+  limits = DEFAULT_LIMITS
+): Promise<KnowledgePackage> {
+  const libraryMap =
+    await loadLibraryMap(
+      projectRoot
+    );
+
+  return discoverAndRank(
+    libraryMap,
+    plan,
+    projectRoot,
+    limits
+  );
+}
+
 export function formatKnowledgePackage(
   pkg: KnowledgePackage
 ): string {
+  const header = `
+==================================================
+KNOWLEDGE RETRIEVAL PACKAGE
+==================================================
+
+MAX CHARACTERS: ${pkg.limits.maxCharacters}
+MAX SOURCES: ${pkg.limits.maxSources}
+
+SELECTED SOURCES:
+${pkg.composition.total}
+
+TOTAL CHARACTERS:
+${pkg.composition.characters}
+
+COMPOSITION:
+Knowledge: ${pkg.composition.knowledge}
+Audience: ${pkg.composition.audience}
+Research: ${pkg.composition.research}
+Content: ${pkg.composition.content}
+SEO: ${pkg.composition.seo}
+Input: ${pkg.composition.input}
+Radar: ${pkg.composition.radar}
+System: ${pkg.composition.system}
+Other: ${pkg.composition.other}
+
+==================================================
+`;
+
   const blocks =
     pkg.selected.map(
       (
         candidate,
         index
       ) => {
-        const item =
-          candidate.item;
-
         return `
-==================================================
-SOURCE ${index + 1}: ${item.path}
-ROLE: ${item.sourceRole}
-TYPE: ${item.type}
-SCORE: ${candidate.score}
+SOURCE ${index + 1}
+PATH: ${candidate.item.path}
+ROLE: ${candidate.role}
+TYPE: ${candidate.item.type}
+SIZE: ${candidate.size}
+RELEVANCE: ${candidate.relevance}
 REASONS: ${
           candidate.reasons.join(
             ", "
           ) ||
-          "relevant project source"
+          "selected for diversity and context coverage"
         }
-==================================================
-TITLE: ${item.title}
-PURPOSE: ${item.purpose}
-KEYWORDS: ${
-          (
-            item.keywords ||
-            []
-          ).join(", ")
-        }
-CONTENT DEPTH: ${
-          candidate.match
-            .contentDepth
-        }
-RADAR METADATA: ${
-          item.radarMetadata
-            ? JSON.stringify(
-                item.radarMetadata
-              )
-            : "none"
-        }
+
+TITLE:
+${candidate.item.title || ""}
+
+CONTENT:
+${candidate.content}
+
 ==================================================
 `;
       }
     );
 
-  return blocks.join(
-    "\n"
+  return (
+    header +
+    blocks.join(
+      "\n"
+    )
   );
 }

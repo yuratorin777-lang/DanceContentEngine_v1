@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T09:40:01.655Z",
+  "generatedAt": "2026-08-15T10:20:27.824Z",
   "project": "DanceContentEngine_v1",
   "version": "1.1",
   "domains": {
@@ -2620,8 +2620,8 @@
       "title": "index",
       "purpose": "Материал index.ts",
       "priority": 60,
-      "size": 19037,
-      "modifiedAt": "2026-08-15T09:39:29.095Z",
+      "size": 19421,
+      "modifiedAt": "2026-08-15T10:19:46.762Z",
       "keywords": [
         "index"
       ],
