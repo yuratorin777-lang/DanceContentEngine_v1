@@ -729,6 +729,10 @@ async function callAI(
       usage:
         data?.usageMetadata ||
         null,
+      finishReason:
+        data?.candidates?.[0]
+          ?.finishReason ||
+        null,
     };
   } finally {
     clearTimeout(
@@ -987,7 +991,7 @@ ${writerSystemPrompt}
       await callAI(
         systemPrompt,
         userPrompt,
-        2000
+        4000
       );
 
     /*
@@ -1084,6 +1088,9 @@ ${writerSystemPrompt}
 
         usage:
           ai.usage,
+
+        writerFinishReason:
+          ai.finishReason,
 
         validation: {
           status:
