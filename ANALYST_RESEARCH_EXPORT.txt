@@ -1,0 +1,1936 @@
+﻿==================================================
+ DANCE CONTENT ENGINE — ANALYST RESEARCH EXPORT
+==================================================
+Research root: C:\Users\User\Desktop\DanceContentEngine_v1\02_RESEARCH
+Documents found: 15
+
+##################################################
+FILE: AI-ANALYST-BRIEF.md
+##################################################
+
+# AI-ANALYST вЂ” MASTER BRIEF
+
+You are the Local Market & Audience Analyst for a dance school.
+
+Your task is to build the analytical foundation for a content and SEO system.
+
+## Pilot geography
+SERPUKHOV, MOSCOW REGION, RUSSIA.
+
+Novokuznetsk is intentionally OUT OF SCOPE for the pilot.
+
+## Before every major task
+1. State the research objective.
+2. State the expected result.
+3. List the internal documents/data you will use.
+4. Identify missing information.
+5. Define deliverables.
+6. Only then start research.
+
+## Research logic
+Do not collect information randomly.
+
+For every topic:
+QUESTION в†’ SOURCES в†’ FACTS в†’ VERIFICATION в†’ STRUCTURE в†’ ANALYSIS в†’ CONCLUSION в†’ ACTIONABLE OPPORTUNITY.
+
+## Main research domains
+
+### 1. Market
+- children's dance market;
+- dance studios and schools;
+- sports sections;
+- choreography;
+- ballroom / competitive dance;
+- related children's activities.
+
+### 2. Competitors
+For relevant competitors collect where available:
+- name;
+- location;
+- directions;
+- age groups;
+- prices;
+- offers;
+- positioning;
+- website;
+- social channels;
+- content themes;
+- reviews/signals;
+- strengths;
+- weaknesses;
+- differentiation.
+
+### 3. Audience
+Research parents as decision makers:
+- segments;
+- needs;
+- fears;
+- objections;
+- motivations;
+- questions;
+- selection criteria;
+- language;
+- decision journey.
+
+### 4. Search demand
+Identify:
+- local commercial queries;
+- informational queries;
+- questions;
+- long-tail topics;
+- age-specific demand;
+- parent-problem demand;
+- related child-development demand;
+- content gaps.
+
+Do not equate search-volume estimates with actual demand without noting the limitations of the source.
+
+### 5. Content landscape
+Study:
+- what competitors publish;
+- what themes repeat;
+- what appears useful;
+- what is weak/generic;
+- which questions remain poorly answered;
+- which topics can be covered from the school's unique expertise.
+
+### 6. Local ecosystem
+Research:
+- local events;
+- competitions;
+- venues;
+- organisations;
+- local media;
+- community sources;
+- parent communities;
+- relevant local institutions.
+
+### 7. Opportunities
+Identify opportunities for:
+- local SEO;
+- blog/articles;
+- VK;
+- Instagram;
+- Telegram;
+- educational content;
+- trust-building content;
+- conversion content.
+
+## Critical rule
+Do not recommend mass SEO pages merely because a keyword exists.
+
+A local page/topic should have a genuine reason to exist:
+- useful information;
+- real local relevance;
+- unique evidence;
+- clear audience need;
+- or a legitimate commercial purpose.
+
+## Analytical quality
+Separate every major statement into:
+FACT / INTERPRETATION / HYPOTHESIS / RECOMMENDATION.
+
+If data is unavailable, say so.
+
+## Deliverables
+At minimum:
+1. SERPUKHOV-MARKET-ANALYSIS.md
+2. SERPUKHOV-AUDIENCE-ANALYSIS.md
+3. SERPUKHOV-COMPETITOR-MAP.md
+4. SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
+5. SERPUKHOV-EXECUTIVE-BRIEF.md
+6. SERPUKHOV-HANDOVER.md
+
+Additional artifacts are allowed only when they materially improve the result.
+
+All files go directly into `02_RESEARCH/`.
+
+
+
+##################################################
+FILE: AI-ANALYST-ONBOARDING.md
+##################################################
+
+# AI-ANALYST вЂ” ONBOARDING
+
+Before doing research, read:
+
+1. `/README.md`
+2. `/00_SYSTEM/SYSTEM_INDEX.md`
+3. `/00_SYSTEM/AI_WORK_RULES.md`
+4. `/00_SYSTEM/DATA_FLOW.md`
+5. `/01_KNOWLEDGE/README.md`
+6. `/02_RESEARCH/README.md`
+7. `/03_AUDIENCE/README.md`
+8. `/05_SEO/README.md`
+9. `/02_RESEARCH/AI-ANALYST-ROLE.md`
+10. `/02_RESEARCH/AI-ANALYST-BRIEF.md`
+
+Then report:
+- what the system is;
+- what the current pilot is;
+- what your role is;
+- what is in scope;
+- what is out of scope;
+- what sources you will use;
+- what you do not yet know.
+
+Do not begin the full research until this understanding is stated.
+
+If two documents conflict, report the conflict instead of choosing silently.
+
+
+
+##################################################
+FILE: AI-ANALYST-ROLE.md
+##################################################
+
+# AI-ANALYST вЂ” ROLE DEFINITION
+
+## Code
+AI-ANALYST-001
+
+## Role
+Local Market & Audience Analyst
+
+## Status
+Active вЂ” Pilot
+
+## Scope
+Dance school content, local market, parents/audience, competitors, search demand and content opportunities.
+
+## Mission
+Provide the school with a reliable, structured and current information base for decisions about content, SEO, positioning and audience communication.
+
+## Main result
+A decision-ready picture of the Serpukhov market and audience that can be consumed by other AI systems without repeating the research.
+
+## Responsibilities
+- market research;
+- competitor research;
+- target audience research;
+- search-demand research;
+- content-gap analysis;
+- local ecosystem research;
+- trend monitoring;
+- fact verification;
+- knowledge structuring;
+- analytical conclusions;
+- preparation of reusable research artifacts.
+
+## Does NOT do
+- make business decisions;
+- invent facts;
+- publish content unless explicitly tasked later;
+- replace the owner's expert opinion;
+- silently change system architecture;
+- treat assumptions as facts.
+
+## Working principle
+FACTS в†’ VERIFICATION в†’ STRUCTURE в†’ ANALYSIS в†’ CONCLUSIONS в†’ RECOMMENDATIONS.
+
+## Source hierarchy
+1. Owner-provided verified information.
+2. Official/local primary sources.
+3. Reputable secondary sources.
+4. Search results and public discussions as signals, not automatic truth.
+5. AI inference вЂ” only when explicitly labelled as hypothesis.
+
+## Required source metadata
+For important external facts record:
+- source;
+- URL or identifiable reference;
+- date accessed/published when available;
+- what the source proves;
+- confidence / reliability note.
+
+## Definition of Done
+Research is complete when:
+- the defined scope has been covered;
+- important facts have sources;
+- facts and hypotheses are separated;
+- contradictions are identified;
+- major data gaps are listed;
+- conclusions follow from evidence;
+- practical opportunities are identified;
+- Executive Brief and Handover are prepared;
+- all reusable artifacts are saved in `02_RESEARCH/`.
+
+## Output location
+All Analyst artifacts for the current pilot are stored directly in:
+`02_RESEARCH/`
+
+Do not create additional folders unless explicitly authorised.
+
+
+
+##################################################
+FILE: ANALYST_BRIEF.md
+##################################################
+
+# AI-ANALYST BRIEF
+
+You are the AI Analyst for Dance Content Engine.
+
+Before work:
+1. Read `/README.md`.
+2. Read `/00_SYSTEM/SYSTEM_INDEX.md`.
+3. Read `/00_SYSTEM/AI_WORK_RULES.md`.
+4. Read `/00_SYSTEM/ROLES.md`.
+5. Read `/00_SYSTEM/DOCUMENT_RULES.md`.
+6. Read the relevant research brief.
+
+Before research, state:
+- objective;
+- expected result;
+- source documents used;
+- missing information;
+- deliverables and recipients.
+
+Do not start the actual research until this preflight is complete.
+
+At completion produce:
+- analytical report;
+- Executive Brief for owner/decision maker;
+- Handover for the next AI.
+
+Do not make strategic decisions on behalf of the owner.
+
+
+
+##################################################
+FILE: ANALYST-DELIVERABLE-STANDARD.md
+##################################################
+
+# ANALYST DELIVERABLE STANDARD
+
+Every major research package must contain:
+
+## 1. Executive Brief
+A short management summary:
+- key findings;
+- important facts;
+- opportunities;
+- risks;
+- unresolved questions;
+- recommended next actions.
+
+## 2. Main research
+Detailed evidence and analysis.
+
+## 3. Handover
+State:
+- what was completed;
+- files created;
+- confirmed findings;
+- hypotheses;
+- unresolved questions;
+- data gaps;
+- what the next AI can build from this;
+- what should NOT yet be built.
+
+## Document quality
+Every major document should clearly distinguish:
+FACT
+SOURCE
+ANALYSIS
+CONCLUSION
+RECOMMENDATION
+
+Avoid unsupported certainty.
+
+
+
+##################################################
+FILE: README.md
+##################################################
+
+# 02_RESEARCH
+
+РќР°Р·РЅР°С‡РµРЅРёРµ: РІРЅРµС€РЅСЏСЏ Р°РєС‚СѓР°Р»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ, СЃРѕР±РёСЂР°РµРјР°СЏ Radar Рё Р°РЅР°Р»РёС‚РёРєРѕРј.
+
+Р—РґРµСЃСЊ С…СЂР°РЅСЏС‚СЃСЏ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ, РїРѕРёСЃРєРѕРІС‹Р№ СЃРїСЂРѕСЃ, РєРѕРЅРєСѓСЂРµРЅС‚С‹, Р»РѕРєР°Р»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ, С‚СЂРµРЅРґС‹ Рё РёСЃС‚РѕС‡РЅРёРєРё.
+
+РљР°Р¶РґС‹Р№ РІРЅРµС€РЅРёР№ С„Р°РєС‚ РїРѕ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё СЃРѕС…СЂР°РЅСЏРµС‚СЃСЏ РІРјРµСЃС‚Рµ СЃ РёСЃС‚РѕС‡РЅРёРєРѕРј Рё РґР°С‚РѕР№.
+
+
+
+##################################################
+FILE: RESEARCH_INDEX.md
+##################################################
+
+# RESEARCH INDEX
+
+Current pilot geography: SERPUKHOV.
+
+Research streams:
+- local market;
+- competitors;
+- audience;
+- search demand;
+- content landscape;
+- local events;
+- trends;
+- products and pricing;
+- opportunities and gaps.
+
+Research outputs should preserve source, date and confidence.
+
+Do not create a separate folder for every research stream unless the volume later justifies it.
+
+
+
+##################################################
+FILE: SERPUKHOV_ANALYSIS_BRIEF.md
+##################################################
+
+# SERPUKHOV вЂ” ANALYTICAL RESEARCH BRIEF
+
+## Objective
+Build a decision-grade knowledge base for a children's dance school and local content/SEO system in Serpukhov.
+
+## Primary questions
+1. What is the local market of children's dance and related activities?
+2. Who are the main competitors?
+3. What products, formats, prices and positioning are visible?
+4. What are parents actually searching for?
+5. What questions, fears and objections appear in public discussions?
+6. What content do competitors publish and what remains underserved?
+7. Which local topics can support useful SEO coverage?
+8. Which local events, organizations and information sources matter?
+9. What opportunities are realistic for a small expert school?
+10. What data is still missing?
+
+## Research principles
+- Serpukhov only for the pilot.
+- Prefer primary/local sources when available.
+- Record source and date for material claims.
+- Separate facts, inference and hypotheses.
+- Do not treat search snippets as verified facts.
+- Do not recommend actions merely because a competitor does them.
+
+## Deliverables
+1. Serpukhov Market Analysis
+2. Competitor Map
+3. Audience & Parent Questions Map
+4. Search Demand / Semantic Opportunity Map
+5. Content Opportunity Map
+6. Local Information Source Map
+7. Risks / Data Gaps
+8. Executive Brief
+9. Handover
+
+## Final principle
+The research is successful when another AI can use it without having to repeat the same discovery work.
+
+
+
+##################################################
+FILE: SERPUKHOV-RESEARCH-TASK.md
+##################################################
+
+# SERPUKHOV PILOT вЂ” INITIAL ANALYST TASK
+
+## Objective
+Create the first complete analytical baseline for a children's dance school operating in Serpukhov.
+
+## Business context
+The school has a long-standing expert base in dance education and sports dance. The future content system will combine:
+- owner's expert knowledge;
+- continuously collected external research;
+- audience understanding;
+- local SEO;
+- social content;
+- analytics.
+
+The Analyst supplies the factual and analytical foundation. The Analyst does not make final business decisions.
+
+## Questions to answer
+
+### Market
+What is the local landscape of children's dance and related activities?
+
+### Competition
+Who are the meaningful local competitors and how do they position themselves?
+
+### Audience
+What are parents actually choosing, fearing, asking and comparing?
+
+### Search
+What does the local search landscape look like and which topic clusters appear promising?
+
+### Content
+Which questions are poorly answered online?
+Which topics are overused and generic?
+Where can the school's real expertise create a meaningful advantage?
+
+### Local
+What local events, organisations, communities and information sources matter?
+
+### Opportunities
+What should the future content engine pay attention to first?
+
+## Required output
+Produce:
+1. `SERPUKHOV-MARKET-ANALYSIS.md`
+2. `SERPUKHOV-AUDIENCE-ANALYSIS.md`
+3. `SERPUKHOV-COMPETITOR-MAP.md`
+4. `SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md`
+5. `SERPUKHOV-EXECUTIVE-BRIEF.md`
+6. `SERPUKHOV-HANDOVER.md`
+
+All documents must be saved in `02_RESEARCH/`.
+
+## Research standard
+Prefer primary/local sources where possible.
+Record sources and dates.
+Do not invent missing values.
+When estimates are used, label them as estimates.
+
+## First phase
+Do not optimise for speed at the expense of research quality.
+The first report becomes the baseline against which the Radar and later research processes will be designed.
+
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-AUDIENCE-ANALYSIS.md
+##################################################
+
+# SERPUKHOV-AUDIENCE-ANALYSIS
+
+**Research date:** 13 August 2026  
+**Geography:** Serpukhov, Moscow Region  
+**Object:** Parents as decision-makers for children's extracurricular dance
+
+---
+
+## 1. Executive finding
+
+Public evidence suggests that parents evaluate children's dance through a combination of:
+
+- whether the child actually wants to attend;
+- teacher's relationship with the child;
+- visible progress;
+- safety / age appropriateness;
+- discipline and regularity;
+- convenience;
+- performance opportunities;
+- atmosphere and peer group;
+- communication with parents;
+- price/value.
+
+However, the current public evidence is largely qualitative and review-based. It is useful for identifying recurring decision themes, but it is NOT sufficient to estimate their relative importance statistically.
+
+---
+
+## 2. FACT: Child enjoyment is repeatedly mentioned
+
+Local reviews of Dance Kids, РЎРёР»СЊС„РёРґР° and other studios repeatedly describe children attending willingly, being excited about lessons and showing what they learned at home.
+
+Examples:
+- Dance Kids reviews mention children asking whether there will be dance class and attending willingly.
+- A РЎРёР»СЊС„РёРґР° review describes a child who previously needed persuasion but now runs to classes.
+- Reviews of other dance studios similarly mention children enjoying classes.
+
+Sources:
+- https://yandex.com/maps/org/dance_kids/112848922775/reviews/ вЂ” accessed 13 Aug 2026.
+- https://yandex.com/maps/org/silfida_studio/66467683028/reviews/ вЂ” accessed 13 Aug 2026.
+- https://yandex.com/maps/org/studiya_sovremennogo_tantsa_iriny_zabubeninoy/117935614116/reviews/ вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** Parent satisfaction is closely linked to the child's subjective experience, not only to technical outcomes.
+
+---
+
+## 3. FACT: Teacher-child relationship is a repeated theme
+
+Reviews frequently praise:
+- finding an approach to individual children;
+- warmth;
+- attention;
+- ability to motivate;
+- clear explanation;
+- discipline without excessive harshness.
+
+For example, reviews of Р­Р»РµРіР°РЅСЃ explicitly mention teachers finding an approach to children and parents; reviews of modern-dance studios also highlight attentive teachers and motivation.
+
+Sources:
+- https://uchistancevat.ru/serpuhov/tantsevalnaya-studiya-elegans-170852676021 вЂ” accessed 13 Aug 2026.
+- https://yandex.com/maps/org/studiya_sovremennogo_tantsa_iriny_zabubeninoy/117935614116/reviews/ вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** "Who teaches my child and how they interact with them" appears to be a major trust mechanism.
+
+---
+
+## 4. FACT: Parents notice visible progress
+
+Reviews mention:
+- better coordination;
+- rhythm;
+- technique;
+- confidence;
+- physical development;
+- new skills;
+- stage performance.
+
+A Dance Kids review, for example, describes improvement in coordination and ability to follow rhythm after joining.
+
+Source:
+- https://yandex.com/maps/org/dance_kids/112848922775/related/ вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** Parents need observable evidence that lessons produce change. "We teach dance" is weaker than demonstrating what changes over time.
+
+---
+
+## 5. FACT: Parents value organisational transparency
+
+Examples found in reviews include:
+- online payment;
+- information in parent chats;
+- visible classes / cameras;
+- administrator responsiveness;
+- clear communication;
+- support around performances.
+
+Sources:
+- https://yandex.com/maps/org/dance_kids/112848922775/related/ вЂ” accessed 13 Aug 2026.
+- https://yandex.by/maps/org/ovatsiya/122847511503/reviews/ вЂ” accessed 13 Aug 2026.
+- https://uchistancevat.ru/serpuhov/tantsevalnaya-studiya-elegans-170852676021 вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** The service is experienced by parents as an ongoing system, not just a weekly lesson.
+
+---
+
+## 6. FACT: Convenience appears in parent evidence
+
+A Dance Kids review explicitly cites convenient location and online payment among selection advantages.
+
+Source:
+- https://yandex.com/maps/org/dance_kids/112848922775/related/ вЂ” accessed 13 Aug 2026.
+
+**HYPOTHESIS:** For families with preschool children, location and schedule may strongly influence final selection. This should be validated with a larger parent sample.
+
+---
+
+## 7. FACT: Performance is an important visible outcome
+
+Local providers repeatedly use:
+- report concerts;
+- competitions;
+- public performances;
+- costumes;
+- stage numbers;
+- festivals
+
+as part of the experience.
+
+Examples:
+- Р­Р»РµРіР°РЅСЃ report concert at Р”Рљ "Р РѕСЃСЃРёСЏ".
+- Р РѕСЃСЃРёСЏРЅРѕС‡РєР° open-air performance.
+- РЎРёР»СЊС„РёРґР° reviews mention competitions, numbers and costumes.
+
+Sources:
+- https://culture.ru/events/4484342/otchyotnyi-kontsert-elegans вЂ” accessed 13 Aug 2026.
+- https://serp.mk.ru/culture/2026/06/07/rossiyanochka-stancevala-pod-otkrytym-nebom-u-dk-rossiya.html вЂ” accessed 13 Aug 2026.
+- https://yandex.com/maps/org/silfida_studio/66467683028/reviews/ вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** Performance functions both as a child motivation mechanism and as proof visible to parents.
+
+---
+
+## 8. FACT: Parents encounter several different value propositions
+
+The local market communicates:
+- health and physical development;
+- confidence and self-expression;
+- discipline;
+- technical dance development;
+- stage experience;
+- competition;
+- friendships;
+- creativity;
+- cultural participation.
+
+Sources:
+- provider websites and public listings cited throughout this package.
+
+**INTERPRETATION:** Parent intent is heterogeneous. A single generic persona such as "РјР°РјР° 30вЂ“40 Р»РµС‚, С…РѕС‡РµС‚ СЂР°Р·РІРёС‚РёСЏ СЂРµР±РµРЅРєР°" is inadequate for content planning.
+
+---
+
+## 9. Audience decision framework
+
+A useful analytical model is:
+
+### Child-side factors
+- "РњРЅРµ РЅСЂР°РІРёС‚СЃСЏ?"
+- "РњРЅРµ РЅСЂР°РІРёС‚СЃСЏ РїРµРґР°РіРѕРі?"
+- "РњРЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ?"
+- "РЇ РјРѕРіСѓ СЌС‚Рѕ РґРµР»Р°С‚СЊ?"
+- "РЈ РјРµРЅСЏ РїРѕР»СѓС‡Р°РµС‚СЃСЏ?"
+
+### Parent-side factors
+- "Р‘РµР·РѕРїР°СЃРЅРѕ Р»Рё?"
+- "РџРѕРґС…РѕРґРёС‚ Р»Рё РІРѕР·СЂР°СЃС‚Сѓ?"
+- "Р•СЃС‚СЊ Р»Рё СЂРµР·СѓР»СЊС‚Р°С‚?"
+- "РљР°РєРѕР№ РїРµРґР°РіРѕРі?"
+- "РљР°Рє СѓСЃС‚СЂРѕРµРЅР° РґРёСЃС†РёРїР»РёРЅР°?"
+- "РЎРєРѕР»СЊРєРѕ СЌС‚Рѕ СЃС‚РѕРёС‚?"
+- "РЈРґРѕР±РЅРѕ Р»Рё РµР·РґРёС‚СЊ?"
+- "Р§С‚Рѕ Р±СѓРґРµС‚ С‡РµСЂРµР· 3вЂ“12 РјРµСЃСЏС†РµРІ?"
+- "Р‘СѓРґРµС‚ Р»Рё СЂРµР±С‘РЅРѕРє РІС‹СЃС‚СѓРїР°С‚СЊ?"
+- "РљР°Рє С€РєРѕР»Р° РѕР±С‰Р°РµС‚СЃСЏ СЃ СЂРѕРґРёС‚РµР»СЏРјРё?"
+
+These questions are partly evidence-based and partly analytical synthesis; they should be validated before being treated as a complete audience model.
+
+---
+
+## 10. HYPOTHESES requiring further validation
+
+1. Parents of 3вЂ“5-year-olds need more reassurance about adaptation than parents of older children.
+2. Parents of 6вЂ“9-year-olds increasingly compare progress, teachers and opportunities to perform.
+3. Parents of older children may place greater weight on style relevance, social environment and level of training.
+4. Families choosing sports ballroom may evaluate competition/progression differently from families choosing modern dance.
+5. Convenience may become decisive when several comparable studios are available.
+
+These are hypotheses, not established facts.
+
+---
+
+## 11. What is NOT established
+
+Open sources do not allow reliable conclusions about:
+- exact parent income segments;
+- gender split of decision-makers;
+- exact willingness to pay;
+- most important criterion by percentage;
+- churn reasons;
+- actual objections at the point of sale;
+- why families switch from one local studio to another at population scale.
+
+---
+
+## 12. Recommendation for research/content system
+
+Future audience research should capture questions in the parents' own wording and tag each observation by:
+**age Г— child goal Г— parent goal Г— fear/objection Г— decision stage Г— style Г— evidence source.**
+
+This will make later content generation substantially more useful than a static demographic persona.
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-COMPETITOR-MAP.md
+##################################################
+
+# SERPUKHOV-COMPETITOR-MAP
+
+**Research date:** 13 August 2026  
+**Geography:** Serpukhov  
+**Purpose:** Map meaningful children's dance competitors and adjacent alternatives
+
+---
+
+## 1. Competitive landscape summary
+
+The local field can be divided into:
+
+- **Sports/ballroom:** Р¦РўРЎ Р¦РЎРљРђ / local sports-dance presence, РўР°Р»Р°РЅС‚, Р­Р»РµРіР°РЅСЃ.
+- **Modern dance:** РРјРїСѓР»СЊСЃ, Marvel, SKYseven, Releve and other studios.
+- **Classical/choreography:** РЎРёР»СЊС„РёРґР°, Р”РµР±СЋС‚ and related cultural groups.
+- **Cultural/ensemble:** Р РѕСЃСЃРёСЏРЅРѕС‡РєР°, Р’РµСЂС‚РёРєР°Р»СЊ, РљР»РµРІРµСЂ.
+- **Multi-service children's centres:** STARlife and other development centres.
+
+The market is therefore competitive both within dance and across adjacent extracurricular categories.
+
+---
+
+## 2. High-relevance competitor profiles
+
+### РЎРёР»СЊС„РёРґР°
+
+**FACT**
+- Children's and teenagers' choreography studio in Serpukhov.
+- Offers rhythmics, children's dance, classical dance, acrobatics, ballet pilates and modern.
+- Early-development groups for ages 2вЂ“4.
+- Promotes first-year stage participation.
+
+Sources:
+- https://silfida.dance/ вЂ” accessed 13 Aug 2026.
+- 2GIS/local listings вЂ” accessed 13 Aug 2026.
+
+**POSITIONING INTERPRETATION**
+Development + choreography + stage + early age.
+
+**PARENT SIGNAL**
+Reviews emphasize teachers, competitions, costumes, numbers and a child wanting to attend.
+
+Source:
+- https://yandex.com/maps/org/silfida_studio/66467683028/reviews/
+
+---
+
+### РРјРїСѓР»СЊСЃ
+
+**FACT**
+- Modern-dance school.
+- States that children train from age 3.
+- Positions itself around free/live dance, self-expression, strong choreography base and technical execution.
+- Public site lists trial lesson at 400 в‚Ѕ and monthly packages from 5,800 to 6,700 в‚Ѕ.
+
+Source:
+- https://impulsedanceschool.ru/ вЂ” accessed 13 Aug 2026.
+
+**POSITIONING INTERPRETATION**
+Modern dance + self-expression + technical foundation + disciplined learning environment.
+
+---
+
+### Releve
+
+**FACT**
+- Dance school at РњРёС€РёРЅР° 12Р‘.
+- Public local listings associate it with children's dance and several dance categories.
+- A local media article documents children's participation in Releve master classes.
+- Public directories place it close to other dance providers.
+
+Sources:
+- https://urbanplaces.su/ru_moskovskaya-oblast/serpuhov-gorodskoj-okrug-serpuhov/address-mishina-proezd-12b
+- https://zebra-media.online/devochki-malchiki-tantsuem/
+- https://serpuhov.big-book-edu.ru/shkoly-balnyh-tancev/
+
+**POSITIONING INTERPRETATION**
+Established local dance-school identity with a modern/creative component.
+
+---
+
+### Р­Р»РµРіР°РЅСЃ
+
+**FACT**
+- Children's dance presence from age 3 is documented by the city information source.
+- Public descriptions include ballroom dance, Latin, choreography and other dance-related activities.
+- Report concert at Р”Рљ "Р РѕСЃСЃРёСЏ".
+- Public reviews mention teacher professionalism, child-friendly approach, transparent observation of classes and performance preparation.
+
+Sources:
+- https://t.me/s/serpuhov_live/76145
+- https://culture.ru/events/4484342/otchyotnyi-kontsert-elegans
+- https://uchistancevat.ru/serpuhov/tantsevalnaya-studiya-elegans-170852676021
+
+**POSITIONING INTERPRETATION**
+Ballroom/sport + performance + broad age coverage + strong local presence.
+
+---
+
+### Р¦РўРЎ Р¦РЎРљРђ / Dance Life presence
+
+**FACT**
+- The official Р¦РўРЎ Р¦РЎРљРђ site lists a Serpukhov location/phone.
+- The organisation describes itself as a sports-dance centre focused on ballroom dance for children and adults, with ten dances, choreography and stretching.
+
+Source:
+- https://cska-dance.ru/ вЂ” accessed 13 Aug 2026.
+
+**POSITIONING INTERPRETATION**
+Sports-dance credibility, structured training and competition orientation.
+
+---
+
+### STARlife
+
+**FACT**
+- Multi-service children's centre.
+- Offers dance alongside education, languages, martial arts, art and other activities.
+- Public local information lists modern dance, rhythmics and dance for young children.
+
+Sources:
+- https://starlife-center.orgs.biz/
+- https://regions.ru/serpuhov/sport/v-kakuyu-sektsiyu-otdat-rebenka-v-serpuhove
+
+**POSITIONING INTERPRETATION**
+Convenience through a broader children's-services ecosystem rather than dance specialization alone.
+
+---
+
+### SKYseven
+
+**FACT**
+- Public local listing includes modern dance, K-pop, hip-hop, Latin and other styles.
+- Children's Latin is listed from approximately 4.5 years.
+- Public listing states first lesson free.
+
+Source:
+- https://dance-studio-skyseven.orgs.biz/
+
+**POSITIONING INTERPRETATION**
+Breadth of styles and accessible trial entry.
+
+---
+
+### Marvel
+
+**FACT**
+- Local directories identify Marvel as a children's modern-dance school.
+- Listed address: Р’РѕСЂРѕС€РёР»РѕРІР° 137.
+- Public directory lists children's choreography and contemporary, with trial/price information.
+
+Source:
+- https://zoon.ru/msk/gorod-serpuhov/trainings/type-sovremennye_tantsy_dlya_detej/street-ulitsa_voroshilova/
+- https://serpuhov.big-book-edu.ru/shkoly-tancev-dlya-detey/
+
+**POSITIONING INTERPRETATION**
+Modern/contemporary niche with local accessibility.
+
+---
+
+### Р РѕСЃСЃРёСЏРЅРѕС‡РєР°
+
+**FACT**
+- Local choreographic ensemble with folk and pop dance.
+- Current local media reports performances in 2026.
+- Cultural portal describes it as an established ensemble with strong stage presentation.
+
+Sources:
+- https://serp.mk.ru/culture/2026/06/07/rossiyanochka-stancevala-pod-otkrytym-nebom-u-dk-rossiya.html
+- https://culture.ru/events/5704426/obrazcovyi-kollektiv-khoreograficheskii-ansambl-rossiyanochka
+
+**POSITIONING INTERPRETATION**
+Cultural identity + stage + local heritage + collective participation.
+
+---
+
+## 3. Cultural-house competitive layer
+
+The official local information channel lists:
+- Р”РµР±СЋС‚ вЂ” ballet studio, from 5;
+- Р РѕСЃСЃРёСЏРЅРѕС‡РєР° вЂ” choreographic ensemble, from 7;
+- Р’РµСЂС‚РёРєР°Р»СЊ вЂ” pop-dance studio, from 5;
+- Р”РµР±СЋС‚РёРє вЂ” ballet circle, from 5;
+- РљР»РµРІРµСЂ вЂ” pop-dance circle, from 3.5.
+
+Source:
+- https://t.me/s/serpuhov_live/88098 вЂ” accessed 13 Aug 2026.
+
+This layer is important because families may compare private studios with established cultural-house groups.
+
+---
+
+## 4. Competitive positioning matrix
+
+| Player | Core type | Age signal | Main promise | Visible proof |
+|---|---|---:|---|---|
+| РЎРёР»СЊС„РёРґР° | choreography/ballet | 2вЂ“4+ | development + stage | competitions, performances |
+| РРјРїСѓР»СЊСЃ | modern | 3+ | self-expression + technique | videos, trial |
+| Releve | mixed dance | children | creative dance training | local history/events |
+| Р­Р»РµРіР°РЅСЃ | ballroom/sport | 3+ | dance + performance | concerts, competition |
+| Р¦РўРЎ Р¦РЎРљРђ | ballroom/sport | children | structured sports dance | federation/network |
+| STARlife | multi-service | 3+ | convenience + broad child development | multiple services |
+| SKYseven | mixed modern | 4.5+ for listed child Latin | many styles | free trial / classes |
+| Marvel | modern/contemporary | children | contemporary/modern | local listings |
+| Р РѕСЃСЃРёСЏРЅРѕС‡РєР° | cultural ensemble | 7+ | folk/stage/culture | concerts, local visibility |
+
+---
+
+## 5. Important analytical observation
+
+The strongest competitor differences are not simply "style A vs style B".
+
+They include:
+
+**training model**
+- sport;
+- stage;
+- creative;
+- developmental;
+- cultural;
+
+and
+
+**proof model**
+- medals;
+- performances;
+- visible child progress;
+- teacher reputation;
+- atmosphere;
+- institutional recognition.
+
+---
+
+## 6. HYPOTHESIS
+
+A parent may compare two providers from different dance segments when both satisfy the same underlying goal, for example:
+- "give the child an active hobby";
+- "help with confidence";
+- "prepare for stage";
+- "improve physical development";
+- "keep the child meaningfully occupied."
+
+This should be validated through direct parent interviews/surveys.
+
+---
+
+## 7. Competitor data gaps
+
+Not reliably established for every competitor:
+- current capacity;
+- exact group sizes;
+- retention;
+- conversion from trial to paid;
+- actual prices for every age group;
+- parent acquisition channels;
+- advertising spend;
+- SEO traffic;
+- revenue;
+- staff turnover.
+
+Do not infer these from public visibility.
+
+---
+
+## 8. Recommendation
+
+For future content-gap analysis, benchmark competitors by **question and parent intent**, not only by domain/topic count. A competitor that publishes fewer pages may still dominate a specific high-intent local question.
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-EXECUTIVE-BRIEF.md
+##################################################
+
+# SERPUKHOV-EXECUTIVE-BRIEF
+
+**Research date:** 13 August 2026  
+**Audience:** Owner / decision-maker  
+**Purpose:** Executive summary of the first Serpukhov children's dance market baseline
+
+---
+
+## Executive summary
+
+### 1. What we learned
+
+Serpukhov has a meaningful and fragmented children's dance ecosystem. The market includes sports ballroom, modern dance, choreography/ballet and cultural ensembles, plus multi-service children's centres and adjacent sports/creative activities.
+
+The practical competitive unit is therefore not simply "dance school". Parents can compare providers with different styles when they solve the same underlying problem: activity, development, confidence, stage experience, discipline or a child's interest.
+
+---
+
+## 2. Key FACTS
+
+### FACT 1 вЂ” The market is diversified
+
+Public sources identify multiple local providers across ballroom, modern, choreography, ballet and cultural dance.
+
+Sources:
+- https://serpuhov.big-book-edu.ru/shkoly-tancev-dlya-detey/
+- https://2gis.ru/serpuhov/firm/70000001022870894/tab/inside
+
+### FACT 2 вЂ” Preschool entry is common
+
+Local providers recruit children from approximately 2вЂ“4 or 3 years depending on the programme.
+
+Sources:
+- https://silfida.dance/
+- https://impulsedanceschool.ru/
+- https://serpukhov.championika.dance/
+- https://t.me/s/serpuhov_live/76145
+
+### FACT 3 вЂ” Performance is a major visible part of the local ecosystem
+
+Local organisations regularly use concerts, competitions and public performances as part of their activity.
+
+Sources:
+- https://culture.ru/events/4484342/otchyotnyi-kontsert-elegans
+- https://serp.mk.ru/culture/2026/06/07/rossiyanochka-stancevala-pod-otkrytym-nebom-u-dk-rossiya.html
+
+### FACT 4 вЂ” Parents repeatedly mention child enjoyment and teacher relationship
+
+Local reviews repeatedly praise children wanting to attend, teachers finding an approach to children, visible progress and supportive atmosphere.
+
+Sources:
+- https://yandex.com/maps/org/dance_kids/112848922775/reviews/
+- https://yandex.com/maps/org/silfida_studio/66467683028/reviews/
+- https://yandex.com/maps/org/studiya_sovremennogo_tantsa_iriny_zabubeninoy/117935614116/reviews/
+
+### FACT 5 вЂ” The wider child market is larger than dance
+
+Local guides place dance alongside football, swimming, gymnastics, martial arts, acrobatics, education and other activities.
+
+Source:
+- https://regions.ru/serpuhov/sport/v-kakuyu-sektsiyu-otdat-rebenka-v-serpuhove
+
+---
+
+## 3. INTERPRETATION
+
+### Interpretation A
+
+The key competition is for **family time + parent trust + child's willingness to continue**, not only for "dance demand".
+
+### Interpretation B
+
+Age is a critical segmentation variable because local providers themselves structure offers by preschool and school-age groups.
+
+### Interpretation C
+
+Visible outcomes matter: stage appearances, competitions, progress and teacher interaction repeatedly appear in public evidence.
+
+### Interpretation D
+
+Generic "dance is good for children" messaging is common. More decision-oriented educational content appears more promising.
+
+---
+
+## 4. HYPOTHESES
+
+These are not confirmed facts:
+
+1. Location and schedule may be decisive when comparable studios are nearby.
+2. Parent needs differ sharply by age.
+3. Preschool parents may need more adaptation/safety guidance.
+4. Parents of older children may place more weight on style, peer environment and level.
+5. Deep decision-support content may outperform generic benefit content in strategic value.
+
+---
+
+## 5. Key opportunities for the future Content Engine
+
+### Opportunity 1 вЂ” Parent decision support
+
+Build content around:
+- choosing an age;
+- choosing a style;
+- first lesson;
+- adaptation;
+- teacher;
+- progress;
+- safety;
+- schedule and logistics.
+
+### Opportunity 2 вЂ” Local comparison
+
+Develop evidence-based answers to:
+- which style is suitable for which child;
+- ballroom vs modern;
+- dance vs gymnastics;
+- what to look for in a local studio.
+
+### Opportunity 3 вЂ” Demonstrable expertise
+
+The future content system should favour concrete, experience-based explanations over generic claims.
+
+### Opportunity 4 вЂ” Local context
+
+Use Serpukhov-specific:
+- events;
+- cultural ecosystem;
+- local search intent;
+- parent questions;
+- neighbourhood/location context.
+
+---
+
+## 6. Risks
+
+### Risk 1 вЂ” Overgeneralisation
+
+Public reviews are not statistically representative of all parents.
+
+### Risk 2 вЂ” False search-volume certainty
+
+No verified local monthly search volumes were available in this phase.
+
+### Risk 3 вЂ” Stale competitor data
+
+Prices, schedules and groups can change quickly.
+
+### Risk 4 вЂ” Confusing visibility with market share
+
+A provider with many indexed pages or reviews is not automatically the largest provider.
+
+### Risk 5 вЂ” Treating hypotheses as facts
+
+The audience model must remain evidence-labelled until validated with first-party data.
+
+---
+
+## 7. Unresolved questions
+
+- What is the exact local search volume by age/style/query?
+- Which competitors have the largest active children's enrolment?
+- What is the actual parent decision hierarchy?
+- How often do parents switch schools?
+- What are the main reasons for rejection after a trial?
+- What is the true willingness-to-pay distribution?
+- What geographic radius is acceptable for different ages?
+- Which topics generate actual leads rather than traffic?
+
+---
+
+## 8. Recommended next actions for the research system
+
+1. Add quantitative keyword data.
+2. Collect first-party parent questions from calls, chats and CRM.
+3. Run a structured competitor SERP/content audit.
+4. Sample a larger set of local reviews and code them by decision factor.
+5. Validate age-specific hypotheses with parents.
+6. Refresh volatile competitor facts periodically.
+
+These are research/content-system recommendations, not a business strategy for the school.
+
+---
+
+## 9. Overall conclusion
+
+The first baseline indicates a **real, diversified local market with strong competition around trust, child experience, development and visible results**.
+
+The largest analytical opportunity is to understand the market through the parent's decision process rather than through a simple catalogue of dance styles.
+
+The next layer of the Content Engine should therefore become increasingly evidence-driven and first-party-data-driven.
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-HANDOVER.md
+##################################################
+
+# SERPUKHOV-HANDOVER
+
+**From:** AI-ANALYST-001 вЂ” Local Market & Audience Analyst  
+**To:** Next AI / future Radar and content systems  
+**Research date:** 13 August 2026  
+**Pilot:** Serpukhov
+
+---
+
+## 1. What was completed
+
+Completed the first open-web analytical baseline for:
+
+- local children's dance market;
+- adjacent children's activities;
+- competitors;
+- parent decision signals;
+- search landscape;
+- content opportunities;
+- local cultural ecosystem.
+
+The research was performed using public web sources, local business listings, directories, official/local publications and public review evidence.
+
+---
+
+## 2. Files created
+
+1. `SERPUKHOV-MARKET-ANALYSIS.md`
+2. `SERPUKHOV-AUDIENCE-ANALYSIS.md`
+3. `SERPUKHOV-COMPETITOR-MAP.md`
+4. `SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md`
+5. `SERPUKHOV-EXECUTIVE-BRIEF.md`
+6. `SERPUKHOV-HANDOVER.md`
+
+All belong in `02_RESEARCH/`.
+
+---
+
+## 3. CONFIRMED FINDINGS
+
+### Market
+- Serpukhov has multiple children's dance providers.
+- The market includes sports ballroom, modern dance, choreography/ballet and cultural ensembles.
+- Preschool entry is common.
+- Adjacent sports and developmental activities compete for the same family resources.
+- Several providers are concentrated around recurring local activity hubs.
+
+### Audience
+Public reviews repeatedly mention:
+- child enjoyment;
+- teacher-child relationship;
+- visible progress;
+- atmosphere;
+- communication;
+- performance;
+- convenience.
+
+These are recurring signals, not population-level percentages.
+
+### Competition
+Important local examples include:
+- РЎРёР»СЊС„РёРґР°;
+- РРјРїСѓР»СЊСЃ;
+- Releve;
+- Р­Р»РµРіР°РЅСЃ;
+- Р¦РўРЎ Р¦РЎРљРђ / local sports-dance presence;
+- STARlife;
+- SKYseven;
+- Marvel;
+- Р РѕСЃСЃРёСЏРЅРѕС‡РєР°;
+- municipal/cultural-house groups.
+
+### Search
+Observed search intent naturally divides into:
+- category;
+- age;
+- style;
+- choice/problem;
+- logistics;
+- local comparison.
+
+Exact monthly search volumes were not established.
+
+---
+
+## 4. HYPOTHESES
+
+The following should remain hypotheses until first-party validation:
+
+1. Location and schedule are major selection factors.
+2. Parent needs differ materially by child age.
+3. Adaptation is especially important for younger children.
+4. Parents of older children may compare style and training level more heavily.
+5. Decision-support content may have greater strategic value than generic "benefits of dance" articles.
+
+---
+
+## 5. DATA GAPS
+
+Not established:
+- total market volume;
+- total active enrolment;
+- revenue;
+- market share;
+- exact search volume;
+- parent income;
+- exact willingness to pay;
+- conversion rates;
+- retention/churn;
+- actual group capacity;
+- parent decision weights;
+- geographic travel radius;
+- competitor acquisition costs.
+
+Do not infer these from public visibility.
+
+---
+
+## 6. Source quality notes
+
+### High confidence
+- official provider pages;
+- official municipal/cultural sources;
+- official local publications when clearly sourced.
+
+### Medium confidence
+- reputable local directories;
+- 2GIS/business listings;
+- established local media.
+
+### Signal only
+- individual reviews;
+- social posts;
+- search-result snippets;
+- user discussions.
+
+A review is evidence that one person reported something; it is not evidence that all parents think the same way.
+
+---
+
+## 7. What the next AI can build from this
+
+The next system can use this baseline to:
+
+- design a structured keyword study;
+- create an evidence-coded competitor database;
+- build a parent-question taxonomy;
+- identify local content clusters;
+- monitor changes in competitors;
+- compare new observations with the baseline;
+- connect external research with first-party parent data.
+
+---
+
+## 8. What should NOT yet be built
+
+Do not treat this baseline as sufficient to create:
+
+- a final school strategy;
+- final positioning;
+- a product portfolio;
+- a pricing strategy;
+- financial model;
+- market-share forecast;
+- definitive parent persona;
+- definitive SEO keyword priorities with numeric volume;
+- claims of competitor market leadership.
+
+Those require additional evidence and/or explicit strategic work.
+
+---
+
+## 9. Recommended next research cycle
+
+### Priority 1
+Quantitative search-demand collection.
+
+### Priority 2
+First-party parent evidence:
+- CRM;
+- call notes;
+- chats;
+- enquiry forms;
+- objections;
+- reasons for choosing;
+- reasons for not choosing.
+
+### Priority 3
+Structured competitor SERP audit:
+- query;
+- ranking;
+- URL;
+- content format;
+- answer depth;
+- local relevance;
+- conversion path.
+
+### Priority 4
+Large-scale review coding.
+
+### Priority 5
+Periodic Radar refresh of volatile facts:
+- prices;
+- schedules;
+- new groups;
+- new competitors;
+- events;
+- offers.
+
+---
+
+## 10. Baseline principle
+
+The baseline should be treated as a **dated snapshot**, not permanent truth.
+
+External facts belong in research with source and date. The project rules explicitly require preserving primary sources and recording gaps rather than inventing missing values.
+
+Primary project rules:
+- `AI_WORK_RULES.md`
+- `SERPUKHOV-RESEARCH-TASK.md`
+- `AI-ANALYST-ROLE.md`
+- `ANALYST-DELIVERABLE-STANDARD.md`
+
+---
+
+## 11. Final handover statement
+
+The first Serpukhov market baseline is complete at the **open-web qualitative level**.
+
+It provides a structured foundation for further quantitative search research, first-party audience research and recurring Radar monitoring.
+
+It does NOT provide statistically representative audience estimates or verified market-size figures.
+
+That boundary must be preserved by every subsequent AI.
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-MARKET-ANALYSIS.md
+##################################################
+
+# SERPUKHOV-MARKET-ANALYSIS
+
+**Research package:** Serpukhov children's dance market baseline  
+**Research date:** 13 August 2026  
+**Geography:** Serpukhov, Moscow Region  
+**Status:** Baseline research  
+**Scope:** Children's dance and adjacent children's extracurricular activities
+
+---
+
+## 1. Executive finding
+
+The Serpukhov children's dance market is not a single homogeneous category. It contains at least four overlapping offer clusters:
+
+1. **Sports / ballroom dance** вЂ” competition, technique, partner work, tournaments and progression.
+2. **Modern / commercial dance** вЂ” hip-hop, jazz-funk, contemporary, K-pop, street styles and stage choreography.
+3. **Classical / choreography / ballet** вЂ” rhythmics, classical dance, acrobatics, ballet and structured choreographic development.
+4. **Culture-centre / ensemble model** вЂ” municipal or cultural-house collectives combining regular training with concerts, festivals and local cultural participation.
+
+There is also a broad adjacent market of sports, gymnastics, martial arts, theatre, music and developmental centres competing for the same family time and discretionary budget.
+
+The local market therefore appears **fragmented by parent intent**, not simply by dance style.
+
+---
+
+## 2. FACT: Local supply is broad
+
+Current local search and directory evidence identifies multiple children's dance providers and adjacent venues. A local directory lists Dance Kids, РЎРёР»СЊС„РёРґР°, Р¦РµРЅС‚СЂ С‚Р°РЅС†РµРІР°Р»СЊРЅРѕРіРѕ СЃРїРѕСЂС‚Р°, SKYseven, Marvel, РњР°С‚СЂС‘С€РєРё and other children's dance offerings; 2GIS also surfaces several dance and cultural venues in the city. [Accessed 13 Aug 2026]
+
+Sources:
+- https://serpuhov.big-book-edu.ru/shkoly-tancev-dlya-detey/
+- https://2gis.ru/serpuhov/search/РљСЂСѓР¶РєРё%20РґР»СЏ%20РґРµС‚РµР№
+- https://2gis.ru/serpuhov/firm/70000001022870894/tab/inside
+
+**INTERPRETATION:** The category is sufficiently populated that a generic "С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№" proposition is unlikely to describe the whole competitive field.
+
+---
+
+## 3. FACT: Age entry is concentrated around preschool years
+
+Examples:
+- РЎРёР»СЊС„РёРґР° explicitly offers early-development groups for ages 2вЂ“4.
+- РРјРїСѓР»СЊСЃ states that children train from age 3.
+- Р§РµРјРїРёРѕРЅРёРєР° РЎРµСЂРїСѓС…РѕРІ recruits ages 3вЂ“10 and divides groups into 3вЂ“5, 6вЂ“8 and 9вЂ“10.
+- STARlife has offered dance/rhythmics for children beginning around age 3.
+- Municipal cultural programming includes children's dance groups beginning from approximately 3вЂ“5 years depending on collective.
+
+Sources:
+- https://silfida.dance/ вЂ” accessed 13 Aug 2026
+- https://impulsedanceschool.ru/ вЂ” accessed 13 Aug 2026
+- https://serpukhov.championika.dance/ вЂ” accessed 13 Aug 2026
+- https://starlife-center.orgs.biz/ вЂ” accessed 13 Aug 2026
+- https://t.me/s/serpuhov_live/76145 вЂ” accessed 13 Aug 2026
+
+**INTERPRETATION:** Preschool entry is a major market gateway. Parents are often choosing not just a style, but a first structured extracurricular environment for a young child.
+
+---
+
+## 4. FACT: The local offer includes both commercial studios and institutional cultural groups
+
+The official Serpukhov information channel lists, among others, the ballet studio "Р”РµР±СЋС‚", choreographic ensemble "Р РѕСЃСЃРёСЏРЅРѕС‡РєР°", pop-dance studio "Р’РµСЂС‚РёРєР°Р»СЊ" and "РљР»РµРІРµСЂ", alongside other children's activities. The same source points families toward the House of Culture and the regional Р”Рљ.РњРћРЎР Р•Р“ portal for choosing activities.
+
+Source:
+- https://t.me/s/serpuhov_live/76145 вЂ” accessed 13 Aug 2026
+
+**INTERPRETATION:** Parents have a meaningful choice between commercial studios and lower-cost / culturally embedded group models. These models may compete even when their positioning is different.
+
+---
+
+## 5. FACT: Competition is geographically concentrated in several activity hubs
+
+Public listings show repeated concentration around:
+- СѓР». Р’РѕСЂРѕС€РёР»РѕРІР°;
+- РїСЂРѕРµР·Рґ РњРёС€РёРЅР° / СЃРїРѕСЂС‚РєРѕРјРїР»РµРєСЃ "Р®Р±РёР»РµР№РЅС‹Р№";
+- Р¤РёР·РєСѓР»СЊС‚СѓСЂРЅР°СЏ СѓР»., 16 / Р”Рљ Р РђРўР•Рџ;
+- РњРѕСЃРєРѕРІСЃРєРѕРµ С€РѕСЃСЃРµ / Р‘-РљР»Р°СЃСЃ.
+
+Examples:
+- РЎРёР»СЊС„РёРґР° вЂ” Р’РѕСЂРѕС€РёР»РѕРІР° 130Рђ.
+- SKYseven вЂ” Р’РѕСЂРѕС€РёР»РѕРІР° 126Рђ.
+- Dance Life / Р¦РўРЎ Р¦РЎРљРђ вЂ” Р’РѕСЂРѕС€РёР»РѕРІР° 126Рђ.
+- Releve вЂ” РњРёС€РёРЅР° 12Р‘.
+- Several studios are listed inside/around Р¤РёР·РєСѓР»СЊС‚СѓСЂРЅР°СЏ 16.
+- STARlife вЂ” РњРѕСЃРєРѕРІСЃРєРѕРµ С€РѕСЃСЃРµ 55Рђ.
+
+Sources:
+- business listings accessed 13 Aug 2026
+- https://2gis.ru/serpuhov/firm/70000001022870894/tab/inside
+- https://urbanplaces.su/ru_moskovskaya-oblast/serpuhov-gorodskoj-okrug-serpuhov/address-mishina-proezd-12b
+- https://starlife-center.orgs.biz/
+
+**INTERPRETATION:** Location convenience is likely a major practical selection factor, especially for preschool children and families scheduling several weekly activities. This should be treated as a hypothesis until parent-level evidence is collected.
+
+---
+
+## 6. FACT: The market spans multiple levels of specialization
+
+Examples:
+- РЎРёР»СЊС„РёРґР° combines rhythmics, children's dance, classical dance, acrobatics, ballet pilates and modern dance.
+- РРјРїСѓР»СЊСЃ positions itself around modern dance with a strong choreographic base and technical execution.
+- Р¦РўРЎ Р¦РЎРљРђ focuses on ballroom/sport dance and states that its programme includes ten dances, choreography and stretching.
+- Р РѕСЃСЃРёСЏРЅРѕС‡РєР° represents a long-standing local cultural/folk choreography model.
+- Р­Р»РµРіР°РЅСЃ combines ballroom, Latin, choreography and other dance-related programmes and has a strong concert component.
+
+Sources:
+- https://silfida.dance/
+- https://impulsedanceschool.ru/
+- https://cska-dance.ru/
+- https://serpuhov.mk.ru/culture/2026/06/07/rossiyanochka-stancevala-pod-otkrytym-nebom-u-dk-rossiya.html
+- https://uchistancevat.ru/serpuhov/tantsevalnaya-studiya-elegans-170852676021
+
+**INTERPRETATION:** "Dance school" is too broad a market unit for content research. Future analysis should segment by parent job-to-be-done and child age.
+
+---
+
+## 7. Adjacent market
+
+A 2025 local guide lists, among other options, STARlife (dance, yoga, stretching and martial arts), Р”Р®РЎРЁ "Р—РІРµР·РґР°" (football, swimming, basketball and other sports), Р”РІРѕСЂРµС† СЃРїРѕСЂС‚Р° "РћР»РёРјРї" (gymnastics, swimming, etc.) and РњРѕР»РѕРґС‘Р¶РЅС‹Р№ РґРѕСЃСѓРіРѕРІС‹Р№ С†РµРЅС‚СЂ "Р®РЅРѕСЃС‚СЊ" (acrobatics, aerobics, karate and dance aerobics).
+
+Source:
+- https://regions.ru/serpuhov/sport/v-kakuyu-sektsiyu-otdat-rebenka-v-serpuhove вЂ” published 25 Feb 2025, accessed 13 Aug 2026.
+
+**INTERPRETATION:** The real competitive environment is broader than dance. Parents are choosing how to allocate limited weekly time among sports, creative education and development activities.
+
+---
+
+## 8. FACT: The child population base is material
+
+In September 2025, 24,590 schoolchildren in the wider municipal area started the school year, including 2,120 first-graders.
+
+Source:
+- https://serp.mk.ru/social/2025/09/05/tysyachi-yunykh-serpukhovichey-shagnuli-v-novyy-uchebnyy-god.html вЂ” published 5 Sep 2025, accessed 13 Aug 2026.
+
+A 2024 Ministry of Education forecast also contains Serpukhov-specific educational planning figures, but these should not be interpreted as a direct count of the addressable dance market.
+
+**INTERPRETATION:** The city has a substantial child and school-age population base, so the category is not constrained by the absence of families with children.
+
+---
+
+## 9. FACT: Local dance is visible in public cultural life
+
+Recent examples include:
+- Р РѕСЃСЃРёСЏРЅРѕС‡РєР° performing in an open-air concert in June 2026.
+- Р­Р»РµРіР°РЅСЃ holding a report concert at Р”Рљ "Р РѕСЃСЃРёСЏ".
+- Local dance collectives participating in public events and competitions.
+
+Sources:
+- https://serp.mk.ru/culture/2026/06/07/rossiyanochka-stancevala-pod-otkrytym-nebom-u-dk-rossiya.html вЂ” published 7 Jun 2026.
+- https://culture.ru/events/4484342/otchyotnyi-koncert-elegans вЂ” accessed 13 Aug 2026.
+- https://t.me/s/serpuhov_live/111182 вЂ” accessed 13 Aug 2026.
+
+**INTERPRETATION:** Performance and public visibility are not peripheral: they are part of how several local organisations demonstrate outcomes.
+
+---
+
+## 10. Market structure
+
+| Segment | Core parent intent | Typical proof of value |
+|---|---|---|
+| Sports ballroom | sport, discipline, competition, progression | tournaments, classes, results |
+| Modern dance | interest, self-expression, current styles | videos, performances, atmosphere |
+| Choreography/ballet | technique, posture, development | pedagogy, progress, stage |
+| Cultural ensembles | belonging, performance, tradition | concerts, awards, local recognition |
+| Development centres | broad child development | convenience + multi-service offer |
+| Adjacent sports | physical activity / discipline | health, skills, competitions |
+
+---
+
+## 11. HYPOTHESIS
+
+The strongest segmentation variable for content is likely not "dance style" alone, but the combination:
+
+**age Г— parent objective Г— child motivation Г— desired level of commitment.**
+
+This is a hypothesis requiring direct audience validation.
+
+---
+
+## 12. Data gaps
+
+The current open-web baseline does NOT reliably establish:
+- total number of active children's dance groups;
+- market revenue or total market volume;
+- exact number of children enrolled in dance;
+- exact local search volumes;
+- conversion rates;
+- average customer lifetime;
+- parent household income;
+- actual travel radius;
+- cancellation/churn rates;
+- capacity utilisation of individual studios.
+
+These must not be invented.
+
+---
+
+## 13. Recommendation for the content engine
+
+Do not treat "children's dance in Serpukhov" as one keyword/content category. Build the research and later content knowledge base around:
+- age;
+- intent;
+- style;
+- experience level;
+- parent question;
+- local context.
+
+This is an analytical recommendation, not a business strategy.
+
+
+##################################################
+FILE: Аналитик\SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
+##################################################
+
+# SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES
+
+**Research date:** 13 August 2026  
+**Purpose:** Baseline of local search landscape and content opportunities
+
+---
+
+## 1. Important limitation
+
+Exact local search volumes were NOT available from the public sources reviewed in this phase. Therefore this report does not invent monthly query numbers.
+
+The search analysis is based on:
+- search-result visibility;
+- recurring local query formulations;
+- local directories;
+- provider landing pages;
+- SERP topic patterns;
+- public questions and review language.
+
+**FACT:** No numerical search-volume estimate should be treated as established from this baseline.
+
+---
+
+## 2. Observed query families
+
+### A. Core commercial
+
+- С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ РЎРµСЂРїСѓС…РѕРІ
+- РґРµС‚СЃРєРёРµ С‚Р°РЅС†С‹ РЎРµСЂРїСѓС…РѕРІ
+- С€РєРѕР»Р° С‚Р°РЅС†РµРІ РґР»СЏ РґРµС‚РµР№ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†РµРІР°Р»СЊРЅР°СЏ СЃС‚СѓРґРёСЏ РґР»СЏ РґРµС‚РµР№ РЎРµСЂРїСѓС…РѕРІ
+- РґРµС‚СЃРєР°СЏ С…РѕСЂРµРѕРіСЂР°С„РёСЏ РЎРµСЂРїСѓС…РѕРІ
+- СЃРїРѕСЂС‚РёРІРЅС‹Рµ С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ РЎРµСЂРїСѓС…РѕРІ
+
+**INTERPRETATION:** These are the highest-level category intents and are likely to be highly competitive.
+
+---
+
+### B. Age intent
+
+- С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ 3 Р»РµС‚ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ 4 Р»РµС‚ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ 5 Р»РµС‚ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†С‹ РґР»СЏ РґРѕС€РєРѕР»СЊРЅРёРєРѕРІ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†С‹ РґР»СЏ РґРµС‚РµР№ 6вЂ“8 Р»РµС‚ РЎРµСЂРїСѓС…РѕРІ
+- С‚Р°РЅС†С‹ РґР»СЏ РїРѕРґСЂРѕСЃС‚РєРѕРІ РЎРµСЂРїСѓС…РѕРІ
+
+**FACT:** Local providers repeatedly structure offers around age groups, including 2вЂ“4, 3вЂ“5, 6вЂ“8, 9вЂ“10 and older.
+
+Sources:
+- https://silfida.dance/
+- https://serpukhov.championika.dance/
+- https://impulsedanceschool.ru/
+- https://t.me/s/serpuhov_live/88098
+
+**OPPORTUNITY:** Age-specific pages and answers are strongly supported by the structure of the local market.
+
+---
+
+### C. Style intent
+
+Recurring local offer categories include:
+- Р±Р°Р»СЊРЅС‹Рµ С‚Р°РЅС†С‹;
+- С…РёРї-С…РѕРї;
+- contemporary;
+- modern dance;
+- jazz-funk;
+- K-pop;
+- Р±Р°Р»РµС‚;
+- СЂРёС‚РјРёРєР°;
+- СЌСЃС‚СЂР°РґРЅС‹Р№ С‚Р°РЅРµС†;
+- Р»Р°С‚РёРЅР°.
+
+Sources:
+- local provider pages and directories cited in competitor map.
+
+**OPPORTUNITY:** Style pages should answer not just "what is this style?" but "РєРѕРјСѓ РїРѕРґС…РѕРґРёС‚, СЃ РєР°РєРѕРіРѕ РІРѕР·СЂР°СЃС‚Р°, РєР°Рє РїСЂРѕС…РѕРґРёС‚ РїРµСЂРІРѕРµ Р·Р°РЅСЏС‚РёРµ, С‡РµРіРѕ Р¶РґР°С‚СЊ С‡РµСЂРµР· 1вЂ“3 РјРµСЃСЏС†Р°".
+
+---
+
+### D. Choice/problem queries
+
+Potential high-value information clusters:
+
+- РєР°Рє РІС‹Р±СЂР°С‚СЊ С‚Р°РЅС†С‹ СЂРµР±РµРЅРєСѓ;
+- РєР°РєРёРµ С‚Р°РЅС†С‹ РІС‹Р±СЂР°С‚СЊ РґРµРІРѕС‡РєРµ;
+- РєР°РєРёРµ С‚Р°РЅС†С‹ РІС‹Р±СЂР°С‚СЊ РјР°Р»СЊС‡РёРєСѓ;
+- СЃ РєР°РєРѕРіРѕ РІРѕР·СЂР°СЃС‚Р° РѕС‚РґР°РІР°С‚СЊ СЂРµР±РµРЅРєР° РЅР° С‚Р°РЅС†С‹;
+- С‡С‚Рѕ Р»СѓС‡С€Рµ: С‚Р°РЅС†С‹ РёР»Рё РіРёРјРЅР°СЃС‚РёРєР°;
+- РЅСѓР¶РЅС‹ Р»Рё С‚Р°РЅС†РµРІР°Р»СЊРЅС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё;
+- РјРѕР¶РЅРѕ Р»Рё РЅР°С‡Р°С‚СЊ С‚Р°РЅС†С‹ СЃ РЅСѓР»СЏ;
+- РєР°Рє РїРѕРґРіРѕС‚РѕРІРёС‚СЊ СЂРµР±РµРЅРєР° Рє РїРµСЂРІРѕРјСѓ Р·Р°РЅСЏС‚РёСЋ;
+- С‡С‚Рѕ РІР·СЏС‚СЊ РЅР° РїРµСЂРІРѕРµ Р·Р°РЅСЏС‚РёРµ;
+- РєР°Рє РїРѕРЅСЏС‚СЊ, С‡С‚Рѕ СЂРµР±РµРЅРєСѓ РїРѕРґС…РѕРґСЏС‚ С‚Р°РЅС†С‹.
+
+**HYPOTHESIS:** These may have strong decision value because they sit between information search and commercial choice. Their exact local volume needs verification.
+
+---
+
+## 3. Parent-language content signals
+
+Public reviews repeatedly contain themes around:
+- child enjoyment;
+- teacher approach;
+- visible progress;
+- discipline;
+- atmosphere;
+- concerts;
+- competitions;
+- communication;
+- convenience.
+
+Sources:
+- local Yandex review pages cited in Audience Analysis.
+
+**OPPORTUNITY:** Content should translate these themes into explicit answers.
+
+Examples:
+- "РљР°Рє РїСЂРѕС…РѕРґРёС‚ РїРµСЂРІРѕРµ Р·Р°РЅСЏС‚РёРµ РґР»СЏ СЂРµР±РµРЅРєР° 3вЂ“5 Р»РµС‚"
+- "Р§С‚Рѕ РґРµР»Р°С‚СЊ, РµСЃР»Рё СЂРµР±РµРЅРѕРє СЃС‚РµСЃРЅСЏРµС‚СЃСЏ РёРґС‚Рё РЅР° С‚Р°РЅС†С‹"
+- "РљР°Рє РїРѕРЅСЏС‚СЊ, С‡С‚Рѕ РїРµРґР°РіРѕРі РїРѕРґС…РѕРґРёС‚ РІР°С€РµРјСѓ СЂРµР±РµРЅРєСѓ"
+- "РљРѕРіРґР° РїРѕСЏРІР»СЏСЋС‚СЃСЏ РїРµСЂРІС‹Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹"
+- "РќСѓР¶РЅРѕ Р»Рё СЂРµР±РµРЅРєСѓ РІС‹СЃС‚СѓРїР°С‚СЊ РЅР° СЃС†РµРЅРµ"
+- "РљР°Рє РїСЂРѕС…РѕРґСЏС‚ СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ Рё СЃС‚РѕРёС‚ Р»Рё СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ"
+
+---
+
+## 4. Content gap hypothesis
+
+The local SERP appears to contain many pages that primarily sell:
+- classes;
+- trial lessons;
+- styles;
+- age groups;
+- prices;
+- registration.
+
+This creates a likely gap around **deep parent decision support**.
+
+**HYPOTHESIS:** The strongest informational opportunity may be content that answers the questions parents ask before they are ready to submit an application.
+
+This requires a systematic SERP audit before being treated as a confirmed content gap.
+
+---
+
+## 5. Generic content likely to be crowded
+
+Common themes across dance websites include:
+- benefits of dance;
+- confidence;
+- coordination;
+- posture;
+- flexibility;
+- creativity;
+- "make your child happy";
+- "professional teachers";
+- "friendly atmosphere".
+
+These themes are common across many providers.
+
+**INTERPRETATION:** Generic benefit articles are unlikely to create a durable differentiation by themselves.
+
+---
+
+## 6. Higher-value content opportunities
+
+### Cluster 1 вЂ” First choice
+
+- СЃ РєР°РєРѕРіРѕ РІРѕР·СЂР°СЃС‚Р° РЅР°С‡РёРЅР°С‚СЊ;
+- РєР°Рє РІС‹Р±СЂР°С‚СЊ РЅР°РїСЂР°РІР»РµРЅРёРµ;
+- С‡С‚Рѕ РґРµР»Р°С‚СЊ, РµСЃР»Рё СЂРµР±РµРЅРѕРє РЅРµ С…РѕС‡РµС‚;
+- РєР°Рє РїСЂРѕС…РѕРґРёС‚ РїСЂРѕР±РЅРѕРµ;
+- С‡С‚Рѕ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№;
+- РєР°Рє РІС‹Р±СЂР°С‚СЊ РіСЂСѓРїРїСѓ.
+
+### Cluster 2 вЂ” Adaptation
+
+- СЂРµР±РµРЅРѕРє Р±РѕРёС‚СЃСЏ РёРґС‚Рё РЅР° С‚Р°РЅС†С‹;
+- СЂРµР±РµРЅРѕРє РїР»Р°С‡РµС‚ РЅР° РїРµСЂРІРѕРј Р·Р°РЅСЏС‚РёРё;
+- СЂРµР±РµРЅРѕРє РЅРµ С…РѕС‡РµС‚ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р±РµР· СЂРѕРґРёС‚РµР»РµР№;
+- РєР°Рє РїСЂРѕС…РѕРґРёС‚ Р°РґР°РїС‚Р°С†РёСЏ 3вЂ“4-Р»РµС‚РЅРµРіРѕ СЂРµР±РµРЅРєР°.
+
+### Cluster 3 вЂ” Progress
+
+- РєРѕРіРґР° РїРѕСЏРІР»СЏСЋС‚СЃСЏ СЂРµР·СѓР»СЊС‚Р°С‚С‹;
+- С‡С‚Рѕ СЂРµР±РµРЅРѕРє РґРѕР»Р¶РµРЅ СѓРјРµС‚СЊ С‡РµСЂРµР· 1, 3, 6 РјРµСЃСЏС†РµРІ;
+- РєР°Рє РїРѕРЅСЏС‚СЊ РїСЂРѕРіСЂРµСЃСЃ;
+- Р·Р°С‡РµРј РЅСѓР¶РЅР° СЂРµРіСѓР»СЏСЂРЅРѕСЃС‚СЊ;
+- РїРѕС‡РµРјСѓ СЂРµР±РµРЅРѕРє "Р·РЅР°РµС‚ РґРІРёР¶РµРЅРёСЏ", РЅРѕ РЅРµ РїРѕРїР°РґР°РµС‚ РІ РјСѓР·С‹РєСѓ.
+
+### Cluster 4 вЂ” Safety and age
+
+- Р±РµР·РѕРїР°СЃРЅС‹ Р»Рё С‚Р°РЅС†С‹ РґР»СЏ РґРѕС€РєРѕР»СЊРЅРёРєРѕРІ;
+- РЅСѓР¶РЅР° Р»Рё СЂР°СЃС‚СЏР¶РєР°;
+- РєР°Рє СѓСЃС‚СЂРѕРµРЅР° С„РёР·РёС‡РµСЃРєР°СЏ РЅР°РіСЂСѓР·РєР°;
+- РєР°Рє РІС‹Р±РёСЂР°С‚СЊ РЅР°РіСЂСѓР·РєСѓ РїРѕ РІРѕР·СЂР°СЃС‚Сѓ.
+
+### Cluster 5 вЂ” Parent logistics
+
+- СЂР°СЃРїРёСЃР°РЅРёРµ;
+- РїСЂРѕРїСѓСЃРєРё;
+- С„РѕСЂРјР°;
+- РѕР±СѓРІСЊ;
+- СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ;
+- РєРѕРЅС†РµСЂС‚С‹;
+- СЃС‚РѕРёРјРѕСЃС‚СЊ;
+- РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СЂР°СЃС…РѕРґС‹.
+
+### Cluster 6 вЂ” Local comparison
+
+- С‚Р°РЅС†С‹ РёР»Рё РіРёРјРЅР°СЃС‚РёРєР° РІ РЎРµСЂРїСѓС…РѕРІРµ;
+- Р±Р°Р»СЊРЅС‹Рµ РёР»Рё СЃРѕРІСЂРµРјРµРЅРЅС‹Рµ С‚Р°РЅС†С‹;
+- Р±Р°Р»РµС‚ РёР»Рё СЃРѕРІСЂРµРјРµРЅРЅР°СЏ С…РѕСЂРµРѕРіСЂР°С„РёСЏ;
+- РєСѓРґР° РѕС‚РґР°С‚СЊ СЂРµР±РµРЅРєР° РЅР° С‚Р°РЅС†С‹ РІ РЎРµСЂРїСѓС…РѕРІРµ;
+- С‡РµРј РѕС‚Р»РёС‡Р°СЋС‚СЃСЏ С€РєРѕР»С‹.
+
+---
+
+## 7. Local SEO structure opportunity
+
+A future SEO knowledge base can be organised as:
+
+**Location**
+в†’ РЎРµСЂРїСѓС…РѕРІ
+
+**Age**
+в†’ 2вЂ“4 / 3вЂ“5 / 6вЂ“8 / 9вЂ“12 / РїРѕРґСЂРѕСЃС‚РєРё
+
+**Intent**
+в†’ РІС‹Р±СЂР°С‚СЊ / РЅР°С‡Р°С‚СЊ / СЃСЂР°РІРЅРёС‚СЊ / СЂРµС€РёС‚СЊ РїСЂРѕР±Р»РµРјСѓ / СѓР·РЅР°С‚СЊ С†РµРЅСѓ / Р·Р°РїРёСЃР°С‚СЊСЃСЏ
+
+**Style**
+в†’ ballroom / modern / hip-hop / ballet / choreography / K-pop / etc.
+
+**Question**
+в†’ adaptation / safety / progress / schedule / clothing / competitions
+
+This is a structural recommendation for future content work, not a final site architecture.
+
+---
+
+## 8. Search-demand limitations
+
+No verified:
+- monthly volumes;
+- CTR;
+- CPC;
+- conversion rate;
+- exact SERP share;
+- organic traffic of competitors.
+
+These require access to specialist search datasets and/or first-party analytics.
+
+---
+
+## 9. Recommended next research layer
+
+Before turning this into an SEO production plan, the next research cycle should:
+1. collect actual keyword volumes;
+2. cluster queries;
+3. inspect SERPs for each cluster;
+4. map competitor URLs;
+5. identify content formats ranking in each cluster;
+6. record unanswered questions;
+7. validate with actual parent questions from CRM, calls and chats.
+
+---
+
+## 10. Priority opportunity map
+
+| Opportunity | Evidence level | Likely decision value |
+|---|---|---|
+| Age-specific choice | FACT + INTERPRETATION | High |
+| First lesson/adaptation | Reviews + provider questions | High |
+| Teacher selection | Reviews | High |
+| Progress expectations | Reviews/provider claims | High |
+| Style comparison | Market structure | High |
+| Generic "benefits of dance" | Very common | Low/medium |
+| Local comparison pages | Search intent hypothesis | High |
+| Exact search volume | Missing | Unknown |
+
+---
+
+## 11. Conclusion
+
+The local search opportunity is likely less about publishing more generic dance articles and more about building a **decision-support layer for parents in Serpukhov**.
+
+That conclusion is an analytical recommendation based on the observed market and parent-language evidence; exact search demand still needs quantitative validation.
+
+

@@ -3,15 +3,24 @@ export type ContentPlan = {
   topic: string;
   subtopic: string;
   goal: string;
+
+  decisionStage: string;
+  contentJob: string;
+  contentRole: string;
+
   channel: string;
   format: string;
+  repurposingPotential: string;
+
   audienceNeed: string;
   keyMessage: string;
   contentAngle: string;
+
   researchSignals: string[];
   knowledgeNeeds: string[];
   radarSignals: string[];
   seoConsiderations: string[];
+
   cta: string;
   constraints: string[];
   sourcePriorities: string[];
@@ -19,56 +28,109 @@ export type ContentPlan = {
 
 export const CONTENT_PLAN_SCHEMA = {
   type: "OBJECT",
+
   properties: {
     audience: { type: "STRING" },
     topic: { type: "STRING" },
     subtopic: { type: "STRING" },
     goal: { type: "STRING" },
+
+    decisionStage: { type: "STRING" },
+    contentJob: { type: "STRING" },
+    contentRole: { type: "STRING" },
+
     channel: { type: "STRING" },
     format: { type: "STRING" },
+    repurposingPotential: { type: "STRING" },
+
     audienceNeed: { type: "STRING" },
     keyMessage: { type: "STRING" },
     contentAngle: { type: "STRING" },
-    researchSignals: { type: "ARRAY", items: { type: "STRING" } },
-    knowledgeNeeds: { type: "ARRAY", items: { type: "STRING" } },
-    radarSignals: { type: "ARRAY", items: { type: "STRING" } },
-    seoConsiderations: { type: "ARRAY", items: { type: "STRING" } },
+
+    researchSignals: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
+
+    knowledgeNeeds: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
+
+    radarSignals: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
+
+    seoConsiderations: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
+
     cta: { type: "STRING" },
-    constraints: { type: "ARRAY", items: { type: "STRING" } },
-    sourcePriorities: { type: "ARRAY", items: { type: "STRING" } },
+
+    constraints: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
+
+    sourcePriorities: {
+      type: "ARRAY",
+      items: { type: "STRING" },
+    },
   },
+
   required: [
     "audience",
     "topic",
     "subtopic",
     "goal",
+
+    "decisionStage",
+    "contentJob",
+    "contentRole",
+
     "channel",
     "format",
+    "repurposingPotential",
+
     "audienceNeed",
     "keyMessage",
     "contentAngle",
+
     "researchSignals",
     "knowledgeNeeds",
     "radarSignals",
     "seoConsiderations",
+
     "cta",
     "constraints",
     "sourcePriorities",
   ],
+
   propertyOrdering: [
     "audience",
     "topic",
     "subtopic",
     "goal",
+
+    "decisionStage",
+    "contentJob",
+    "contentRole",
+
     "channel",
     "format",
+    "repurposingPotential",
+
     "audienceNeed",
     "keyMessage",
     "contentAngle",
+
     "researchSignals",
     "knowledgeNeeds",
     "radarSignals",
     "seoConsiderations",
+
     "cta",
     "constraints",
     "sourcePriorities",
@@ -79,6 +141,16 @@ export type PlannerInput = {
   task: string;
   profile?: string;
   context?: string;
+
+  /**
+   * Strategic layer supplied by the route.
+   *
+   * Expected documents:
+   * - 04_CONTENT/CONTENT_CHANNEL_ARCHITECTURE.md
+   * - 04_CONTENT/CONTENT_STRATEGY.md
+   * - 04_CONTENT/CHANNEL_STRATEGY.md
+   */
+  strategyContext?: string;
 };
 
 const DEFAULT_PLAN: ContentPlan = {
@@ -86,15 +158,24 @@ const DEFAULT_PLAN: ContentPlan = {
   topic: "",
   subtopic: "",
   goal: "",
+
+  decisionStage: "",
+  contentJob: "",
+  contentRole: "",
+
   channel: "",
   format: "",
+  repurposingPotential: "",
+
   audienceNeed: "",
   keyMessage: "",
   contentAngle: "",
+
   researchSignals: [],
   knowledgeNeeds: [],
   radarSignals: [],
   seoConsiderations: [],
+
   cta: "",
   constraints: [],
   sourcePriorities: [],
@@ -105,52 +186,265 @@ export function buildPlannerSystemPrompt(): string {
 You are the CONTENT PLANNER of DanceContentEngine_v1.
 
 ROLE:
+
 You are the strategic planning layer between project intelligence and the Writer.
-You do NOT write final content.
-You convert a content request into a sufficiently detailed, evidence-based Content Brief that tells the Writer WHAT to achieve, WHY it matters, WHAT information is needed, and WHAT constraints apply.
 
-IMPORTANT ARCHITECTURE RULE:
-The Planner is not the Writer and does not replace the future Information / Content Architect.
-The Planner gives direction and requirements.
-The Writer will later use the brief together with the relevant project context and knowledge to decide HOW to develop the material in depth.
-Therefore do not try to place the whole knowledge base inside the plan.
+You DO NOT write the final content.
 
-SOURCE HIERARCHY:
-- 02_RESEARCH = market, competitors, demand, research evidence.
-- 03_AUDIENCE = audience needs, fears, questions, objections, language and journey.
-- 01_KNOWLEDGE = expert knowledge and owner knowledge.
-- 07_AUTOMATION/Rardar world feed = current external signals; treat them as signals, not automatically verified truth.
-- 04_CONTENT = content methodology and rules.
-- 05_SEO = search considerations when relevant.
-- 06_ANALYTICS = performance evidence when available.
+You convert a user content request into a structured Content Plan that defines:
 
-CORE RULES:
+WHAT the content is about
+WHY it exists
+WHO it serves
+WHICH audience decision stage it serves
+WHAT job the content performs
+WHAT type of content it is
+WHERE it should primarily be published
+WHAT format is appropriate
+WHAT source material is required
+WHAT constraints apply
+and whether the resulting idea can be meaningfully adapted to other channels.
+
+==================================================
+ARCHITECTURE
+==================================================
+
+The strategic flow is:
+
+AUDIENCE
+→ DECISION JOURNEY
+→ CONTENT JOB
+→ CONTENT STRATEGY
+→ CHANNEL STRATEGY
+→ CONTENT PLAN
+→ WRITER
+→ VALIDATION
+→ PUBLISHING
+→ ANALYTICS
+
+The Planner executes the existing architecture.
+
+The Planner does NOT redesign the architecture.
+
+==================================================
+SOURCE HIERARCHY
+==================================================
+
+Use project sources according to their role:
+
+02_RESEARCH
+= market, competitors, demand, research evidence.
+
+03_AUDIENCE
+= audience needs, fears, questions, objections, language and journey.
+
+01_KNOWLEDGE
+= expert knowledge and owner knowledge.
+
+07_AUTOMATION/Rardar world feed
+= current external signals.
+Treat Radar as signals, not automatically verified truth.
+
+04_CONTENT
+= content architecture, content strategy, channel strategy and content rules.
+
+05_SEO
+= search considerations when relevant.
+
+06_ANALYTICS
+= performance evidence when available.
+
+==================================================
+STRATEGIC DOCUMENTS
+==================================================
+
+When strategic context is supplied, use it as the governing strategic layer.
+
+The documents may define:
+
+- content jobs;
+- decision stages;
+- content roles;
+- audience needs;
+- channel roles;
+- channel limitations;
+- repurposing logic;
+- content mix;
+- strategic priorities.
+
+Do not contradict them without clearly identifying the conflict.
+
+==================================================
+CORE RULES
+==================================================
+
 1. Do not invent project facts.
-2. Do not invent audience pain points when sources do not support them; clearly mark planning inference when appropriate.
-3. Use the strongest relevant evidence available across multiple project layers.
-4. Plan for the requested channel and format.
-5. Identify the audience need/problem/opportunity the content should address.
-6. Define a meaningful topic and subtopic, not a generic label.
-7. Define a concrete content objective.
-8. Define the key message and content angle.
-9. Identify what Research, Knowledge and Radar information is relevant for the Writer.
-10. Identify constraints and factual requirements that the Writer must respect.
-11. CTA must match the task and available evidence; do not invent URLs, prices, schedules or offers.
-12. If information is missing, state that it is missing rather than filling the gap with invented facts.
-13. Keep every field useful and substantive, but avoid repeating the project context.
-14. This is a strategic brief, not an analytical essay.
 
-DETAIL LEVEL:
-The brief must be detailed enough that another competent Writer could execute the task without guessing the strategic intent.
-Use short but substantive prose in scalar fields.
-For arrays, include the most relevant items only; prefer evidence-backed, actionable items over generic lists.
-Do not optimize for brevity at the expense of strategic completeness.
+2. Do not invent audience pain points when sources do not support them.
 
-OUTPUT:
+3. Distinguish FACT, INTERPRETATION, HYPOTHESIS and UNKNOWN when relevant.
+
+4. Use multiple relevant evidence layers.
+
+5. The Planner must identify the audience decision stage.
+
+6. The Planner must identify the primary content job.
+
+7. The Planner must identify the content role.
+
+8. The Planner must identify the primary channel.
+
+9. The Planner must identify an appropriate format.
+
+10. The Planner must identify whether meaningful repurposing to other channels is possible.
+
+11. Do not choose channels merely because they exist.
+
+12. Do not force every idea into every channel.
+
+13. Do not make Radar the purpose of content by itself.
+
+14. Do not turn SEO considerations into content strategy unless relevant.
+
+15. Do not create a generic "benefits of dance" angle when a stronger decision-support or owner-expertise angle exists.
+
+16. Use owner knowledge when genuinely relevant.
+
+17. Do not turn owner observations into universal audience facts.
+
+18. CTA must be supported by available project information.
+
+19. Do not invent URLs, prices, schedules, offers, achievements or results.
+
+20. If necessary information is missing, leave the field explicit rather than inventing it.
+
+==================================================
+DECISION STAGE
+==================================================
+
+Choose the most appropriate stage from the available strategic model.
+
+Typical stages may include:
+
+TRIGGER
+PROBLEM_AWARENESS
+EXPLORATION
+SHORTLIST
+COMPARISON
+FIRST_CONTACT
+FIRST_LESSON
+ADAPTATION
+CONTINUE
+PROGRESS
+LOYALTY
+SWITCHING
+
+Do not force an artificial stage when the task does not fit.
+
+==================================================
+CONTENT JOB
+==================================================
+
+Choose the primary job the content performs.
+
+Typical jobs include:
+
+DISCOVERY
+DECISION_SUPPORT
+PROBLEM_EDUCATION
+EXPERT_AUTHORITY
+TRUST_BUILDING
+RELATIONSHIP
+LOCAL_RELEVANCE
+CONVERSION_SUPPORT
+RETENTION_SUPPORT
+
+Choose the primary job only.
+
+==================================================
+CONTENT ROLE
+==================================================
+
+Typical roles:
+
+OWNER_AUTHORITY
+EDUCATIONAL
+PROBLEM_SOLVING
+LOCAL
+COMMERCIAL
+SOCIAL_PROOF
+COMMUNITY
+RADAR_DRIVEN
+
+Choose the role that best describes the strategic function.
+
+==================================================
+CHANNEL
+==================================================
+
+Choose the PRIMARY channel only.
+
+Do not distribute the same piece automatically to every channel.
+
+The channel must follow the audience need, decision stage and content job.
+
+==================================================
+FORMAT
+==================================================
+
+Choose the most useful format for the selected channel and task.
+
+Examples:
+
+SOCIAL_POST
+LONGFORM_ARTICLE
+SHORT_VIDEO
+LONG_VIDEO
+CAROUSEL
+FAQ
+GUIDE
+CASE
+OWNER_STORY
+COMPARISON
+CHECKLIST
+
+==================================================
+REUSABILITY
+==================================================
+
+repurposingPotential should describe whether the core idea can later be meaningfully adapted into other formats/channels.
+
+Examples:
+
+HIGH
+MEDIUM
+LOW
+
+Add a short explanation.
+
+==================================================
+DETAIL LEVEL
+==================================================
+
+The plan must be strategically complete but compact.
+
+Do not rewrite the entire source context.
+
+Do not create an analytical essay.
+
+The Writer receives the selected project context separately.
+
+==================================================
+OUTPUT
+==================================================
+
 Return ONLY one complete JSON object matching the provided schema.
-Do not use markdown fences.
-Do not stop before every required field is present.
-Ensure the JSON is syntactically complete.
+
+No markdown fences.
+
+No comments.
+
+No additional text.
 `;
 }
 
@@ -158,119 +452,382 @@ export function buildPlannerUserPrompt({
   task,
   profile = "GENERAL",
   context = "",
+  strategyContext = "",
 }: PlannerInput): string {
   return `
 CONTENT PLANNER TASK
 
-Context profile: ${profile}
+Context profile:
+${profile}
 
 USER REQUEST:
 ${task}
 
-PROJECT CONTEXT:
-${context || "No project context supplied."}
+==================================================
+STRATEGIC CONTEXT
+==================================================
 
-Build the full strategic Content Brief now.
-The plan should be sufficiently detailed for the Writer to execute the task, while leaving the Writer responsible for selecting and using the detailed source material needed for the actual content.
-Return ONLY the complete JSON object defined by the system instructions.
+${
+  strategyContext.trim() ||
+  "No strategic documents supplied."
+}
+
+==================================================
+PROJECT / RETRIEVED CONTEXT
+==================================================
+
+${
+  context.trim() ||
+  "No project context supplied."
+}
+
+==================================================
+EXECUTION
+==================================================
+
+Use the strategic documents as the strategic layer.
+
+Use the retrieved project context as the factual/evidence layer.
+
+Determine:
+
+1. audience
+2. topic
+3. subtopic
+4. goal
+5. decisionStage
+6. contentJob
+7. contentRole
+8. primary channel
+9. format
+10. repurposing potential
+11. audience need
+12. key message
+13. content angle
+14. research signals
+15. knowledge needs
+16. radar signals
+17. SEO considerations
+18. CTA
+19. constraints
+20. source priorities
+
+Do not write the final article or post.
+
+Return ONLY the complete JSON object defined by the schema.
 `;
 }
 
-function normalizePlan(value: unknown): ContentPlan {
-  if (!value || typeof value !== "object") {
-    return { ...DEFAULT_PLAN };
+function normalizePlan(
+  value: unknown
+): ContentPlan {
+  if (
+    !value ||
+    typeof value !== "object"
+  ) {
+    return {
+      ...DEFAULT_PLAN,
+      researchSignals: [],
+      knowledgeNeeds: [],
+      radarSignals: [],
+      seoConsiderations: [],
+      constraints: [],
+      sourcePriorities: [],
+    };
   }
 
-  const input = value as Record<string, unknown>;
-  const stringField = (key: keyof ContentPlan): string =>
-    typeof input[key] === "string" ? String(input[key]) : "";
+  const input =
+    value as Record<
+      string,
+      unknown
+    >;
 
-  const arrayField = (key: keyof ContentPlan): string[] => {
-    return Array.isArray(input[key])
-      ? input[key].filter((item): item is string => typeof item === "string")
+  const stringField = (
+    key: keyof ContentPlan
+  ): string =>
+    typeof input[key] ===
+    "string"
+      ? String(input[key])
+      : "";
+
+  const arrayField = (
+    key: keyof ContentPlan
+  ): string[] =>
+    Array.isArray(input[key])
+      ? input[key].filter(
+          (
+            item
+          ): item is string =>
+            typeof item ===
+            "string"
+        )
       : [];
-  };
 
   return {
-    audience: stringField("audience"),
-    topic: stringField("topic"),
-    subtopic: stringField("subtopic"),
-    goal: stringField("goal"),
-    channel: stringField("channel"),
-    format: stringField("format"),
-    audienceNeed: stringField("audienceNeed"),
-    keyMessage: stringField("keyMessage"),
-    contentAngle: stringField("contentAngle"),
-    researchSignals: arrayField("researchSignals"),
-    knowledgeNeeds: arrayField("knowledgeNeeds"),
-    radarSignals: arrayField("radarSignals"),
-    seoConsiderations: arrayField("seoConsiderations"),
-    cta: stringField("cta"),
-    constraints: arrayField("constraints"),
-    sourcePriorities: arrayField("sourcePriorities"),
+    audience:
+      stringField("audience"),
+
+    topic:
+      stringField("topic"),
+
+    subtopic:
+      stringField("subtopic"),
+
+    goal:
+      stringField("goal"),
+
+    decisionStage:
+      stringField(
+        "decisionStage"
+      ),
+
+    contentJob:
+      stringField(
+        "contentJob"
+      ),
+
+    contentRole:
+      stringField(
+        "contentRole"
+      ),
+
+    channel:
+      stringField("channel"),
+
+    format:
+      stringField("format"),
+
+    repurposingPotential:
+      stringField(
+        "repurposingPotential"
+      ),
+
+    audienceNeed:
+      stringField(
+        "audienceNeed"
+      ),
+
+    keyMessage:
+      stringField(
+        "keyMessage"
+      ),
+
+    contentAngle:
+      stringField(
+        "contentAngle"
+      ),
+
+    researchSignals:
+      arrayField(
+        "researchSignals"
+      ),
+
+    knowledgeNeeds:
+      arrayField(
+        "knowledgeNeeds"
+      ),
+
+    radarSignals:
+      arrayField(
+        "radarSignals"
+      ),
+
+    seoConsiderations:
+      arrayField(
+        "seoConsiderations"
+      ),
+
+    cta:
+      stringField("cta"),
+
+    constraints:
+      arrayField(
+        "constraints"
+      ),
+
+    sourcePriorities:
+      arrayField(
+        "sourcePriorities"
+      ),
   };
 }
 
-export function parseContentPlan(raw: string): ContentPlan {
-  const text = raw.trim();
+export function parseContentPlan(
+  raw: string
+): ContentPlan {
+  const text =
+    raw.trim();
 
   try {
-    return normalizePlan(JSON.parse(text));
+    return normalizePlan(
+      JSON.parse(text)
+    );
   } catch {
-    const fenced = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+    const fenced =
+      text.match(
+        /```(?:json)?\s*([\s\S]*?)\s*```/i
+      );
+
     if (fenced?.[1]) {
       try {
-        return normalizePlan(JSON.parse(fenced[1]));
+        return normalizePlan(
+          JSON.parse(
+            fenced[1]
+          )
+        );
       } catch {
-        // continue with next recovery strategy
+        // continue
       }
     }
 
-    const start = text.indexOf("{");
-    const end = text.lastIndexOf("}");
-    if (start >= 0 && end > start) {
+    const start =
+      text.indexOf("{");
+
+    const end =
+      text.lastIndexOf("}");
+
+    if (
+      start >= 0 &&
+      end > start
+    ) {
       try {
-        return normalizePlan(JSON.parse(text.slice(start, end + 1)));
+        return normalizePlan(
+          JSON.parse(
+            text.slice(
+              start,
+              end + 1
+            )
+          )
+        );
       } catch {
-        // incomplete JSON cannot be safely repaired here
+        // incomplete JSON
       }
     }
 
-    return { ...DEFAULT_PLAN };
+    return {
+      ...DEFAULT_PLAN,
+      researchSignals: [],
+      knowledgeNeeds: [],
+      radarSignals: [],
+      seoConsiderations: [],
+      constraints: [],
+      sourcePriorities: [],
+    };
   }
 }
 
-export function formatContentPlanForWriter(plan: ContentPlan): string {
+export function formatContentPlanForWriter(
+  plan: ContentPlan
+): string {
   return `
 CONTENT PLANNER BRIEF
 
-Audience: ${plan.audience || "Not specified"}
-Topic: ${plan.topic || "Not specified"}
-Subtopic: ${plan.subtopic || "Not specified"}
-Goal: ${plan.goal || "Not specified"}
-Channel: ${plan.channel || "Not specified"}
-Format: ${plan.format || "Not specified"}
-Audience need: ${plan.audienceNeed || "Not specified"}
-Key message: ${plan.keyMessage || "Not specified"}
-Content angle: ${plan.contentAngle || "Not specified"}
-CTA: ${plan.cta || "Not specified"}
+Audience:
+${plan.audience || "Not specified"}
+
+Topic:
+${plan.topic || "Not specified"}
+
+Subtopic:
+${plan.subtopic || "Not specified"}
+
+Goal:
+${plan.goal || "Not specified"}
+
+Decision stage:
+${plan.decisionStage || "Not specified"}
+
+Content job:
+${plan.contentJob || "Not specified"}
+
+Content role:
+${plan.contentRole || "Not specified"}
+
+Primary channel:
+${plan.channel || "Not specified"}
+
+Format:
+${plan.format || "Not specified"}
+
+Repurposing potential:
+${plan.repurposingPotential || "Not specified"}
+
+Audience need:
+${plan.audienceNeed || "Not specified"}
+
+Key message:
+${plan.keyMessage || "Not specified"}
+
+Content angle:
+${plan.contentAngle || "Not specified"}
+
+CTA:
+${plan.cta || "Not specified"}
 
 Research signals:
-${plan.researchSignals.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.researchSignals
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 
 Knowledge needs:
-${plan.knowledgeNeeds.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.knowledgeNeeds
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 
 Radar signals:
-${plan.radarSignals.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.radarSignals
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 
 SEO considerations:
-${plan.seoConsiderations.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.seoConsiderations
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 
 Constraints:
-${plan.constraints.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.constraints
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 
 Source priorities:
-${plan.sourcePriorities.map((item) => `- ${item}`).join("\n") || "- None identified"}
+${
+  plan.sourcePriorities
+    .map(
+      item =>
+        `- ${item}`
+    )
+    .join("\n") ||
+  "- None identified"
+}
 `;
 }

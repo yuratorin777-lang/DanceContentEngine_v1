@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-08-16T06:48:58.582Z",
+  "runAt": "2026-08-16T06:45:16.937Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -16,16 +16,16 @@
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
     "rawFacts": 90,
-    "uniqueFacts": 56,
-    "duplicatesRemoved": 34,
-    "classifiedFacts": 56,
-    "relevantSignals": 36,
-    "durationMs": 3573
+    "uniqueFacts": 57,
+    "duplicatesRemoved": 33,
+    "classifiedFacts": 57,
+    "relevantSignals": 37,
+    "durationMs": 4642
   },
   "distribution": {
     "LOCAL_DANCE": 9,
     "DANCE_WORLD": 4,
-    "CORE_DANCE": 16,
+    "CORE_DANCE": 17,
     "ADJACENT_DOMAIN": 1,
     "LOCAL_ECOSYSTEM": 6
   },
@@ -34,42 +34,42 @@
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 15,
-      "durationMs": 608,
+      "durationMs": 771,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
       "count": 15,
-      "durationMs": 453,
+      "durationMs": 746,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 15,
-      "durationMs": 714,
+      "durationMs": 812,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 673,
+      "durationMs": 745,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 541,
+      "durationMs": 786,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 15,
-      "durationMs": 564,
+      "durationMs": 734,
       "error": null
     }
   ],
@@ -83,7 +83,7 @@
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GVWUzVFEwWlRTeWE0UXowbGx0MkV6OEtOTzExTGpVdTl0UEVZaTIxbEV2UUo4aEFSaDBKanlkRGMyWkhsekJvbG0zX3pRdw?oc=5",
       "content": "Международный день танца на видеоплатформе Leo Classics &nbsp;&nbsp; Belcanto.ru",
       "publishedAt": "2025-04-27T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.074Z",
+      "collectedAt": "2026-08-16T06:45:13.833Z",
       "analysis": {
         "relevance": 90,
         "relevanceLevel": "HIGH",
@@ -118,7 +118,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5",
       "content": "UC Dance Team represents US at ICU World Championships &nbsp;&nbsp; The News Record",
       "publishedAt": "2026-05-07T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.463Z",
+      "collectedAt": "2026-08-16T06:45:15.398Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
@@ -153,7 +153,7 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVjdiaG92YzV5ZmlkWFdDZk03MzkwdXdsNkdUbng1bmtlWW9IeDdyeFNqRy1pWUdMZGxldFp4Y0QzMkhqM0U2b0FkVG5nM2d1MEh5ZmJ2OXZlS0hBdVNMdVZhOFZ3MUpzZlptZ1MxaEQ4UE05UlE2NGlSQ2hlaUVSVFN0R1piNHVFekkwR0RKdlQ4b2hlZnEzR2dMVW1VVzZjSm9PU0hWVWhadzhkN2ZfdjN1a0llbEJTS0VRNm82ajhrTVZXZjYteG1kLUFsZw?oc=5",
       "content": "NEW RESEARCH ASSOCIATES DANCE AND POSITIVE AFFECT IN CHILDREN AND ADOLESCENTS &nbsp;&nbsp; PR Newswire",
       "publishedAt": "2026-06-16T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.788Z",
+      "collectedAt": "2026-08-16T06:45:14.648Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -182,38 +182,6 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Tech Pom earns Team USA, heads to the International Cheer Union World Championship - The Daily Toreador",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUDMwckpfT054ZDVzUEhOa0d4c0EwZmdyanhCTXJpcFpiMWc2aHJncTd3Nnd0Rkd6ZHFiTWZmUnFGc1JrZ2wxZHRpU2h0WGVvdElkTkg5aENkMThsWThzTkpCR1UtLVY4cVoxUEFvUWFVSmxsWFEtZE5qRnVuaG1YT0t2TmdFS1o3cmNIRnhmNks1SjFpVE1vakR2R2YwZ20xQ1NBa0E5Mjh1R1lpZms0ZGZLRmlsSUhRUFpMcDZ2bS04Zw?oc=5",
-      "content": "Tech Pom earns Team USA, heads to the International Cheer Union World Championship &nbsp;&nbsp; The Daily Toreador",
-      "publishedAt": "2026-04-23T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.462Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship",
-            "international"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
@@ -222,7 +190,7 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5",
       "content": "Marquette student places in Irish Dance World Championship &nbsp;&nbsp; Marquette Wire",
       "publishedAt": "2026-04-14T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.463Z",
+      "collectedAt": "2026-08-16T06:45:15.397Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -254,7 +222,7 @@
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU2RyWFFNajdFY3pJNEU3UEdpM05ZdU1tVTVoRzlLT2s4dUp0REtna1BLYXdfdU9VNHIzVkRmTU53bm1uaTB6SGVNQjNkLUxXSC11eGs1bDF4WDR2bDNrOUc0eFVvSzZnNHpoTmJaOGlna2NmcDBsMDZKZXdXeGVIa0ZOTkl2c1hyRnlmSUVTWjMwdGhTTEVaQzB5Z3RabEdFdW1KMmVwNzJzU0ZtUXNqTTJERzMtdkxILVh1NnFsMG9fdmVPLU1mcjdR?oc=5",
       "content": "U.S. Sends Full Slate of Skaters to World Championships &nbsp;&nbsp; U.S. Figure Skating",
       "publishedAt": "2026-03-24T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.463Z",
+      "collectedAt": "2026-08-16T06:45:15.398Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -277,6 +245,38 @@
       }
     },
     {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Tech Pom earns Team USA, heads to the International Cheer Union World Championship - The Daily Toreador",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUDMwckpfT054ZDVzUEhOa0d4c0EwZmdyanhCTXJpcFpiMWc2aHJncTd3Nnd0Rkd6ZHFiTWZmUnFGc1JrZ2wxZHRpU2h0WGVvdElkTkg5aENkMThsWThzTkpCR1UtLVY4cVoxUEFvUWFVSmxsWFEtZE5qRnVuaG1YT0t2TmdFS1o3cmNIRnhmNks1SjFpVE1vakR2R2YwZ20xQ1NBa0E5Mjh1R1lpZms0ZGZLRmlsSUhRUFpMcDZ2bS04Zw?oc=5",
+      "content": "Tech Pom earns Team USA, heads to the International Cheer Union World Championship &nbsp;&nbsp; The Daily Toreador",
+      "publishedAt": "2026-04-23T07:00:00.000Z",
+      "collectedAt": "2026-08-16T06:45:15.398Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship",
+            "international"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
       "source": "Google News — Серпухов дети танцы",
       "sourceScope": "LOCAL",
@@ -285,7 +285,7 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5",
       "content": "Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды &nbsp;&nbsp; Смитанка",
       "publishedAt": "2026-06-05T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.616Z",
+      "collectedAt": "2026-08-16T06:45:13.078Z",
       "analysis": {
         "relevance": 65,
         "relevanceLevel": "MEDIUM",
@@ -317,7 +317,7 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUjZiWDFyVDA5OXdHSDRwdm5zbFR5dVpjWGVwZkV3MXFzZXktc0YyejRwZFVwamVsNHYwNnVPTXhQM0pKSHRsaHdDa2hLS2JTaTNHZ0RCMVVSZ2E4NHgyeklaVGdybC01ZGlfQThyN0liSC1kT2Ewa05Xck1aT2lmcVhR?oc=5",
       "content": "Dance Movement Therapy: Evidence-Based Benefits for Mental Health and Well-Being &nbsp;&nbsp; GoodTherapy.org",
       "publishedAt": "2026-08-07T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.787Z",
+      "collectedAt": "2026-08-16T06:45:14.645Z",
       "analysis": {
         "relevance": 64,
         "relevanceLevel": "MEDIUM",
@@ -351,7 +351,7 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5",
       "content": "How Dance Develops In Children &nbsp;&nbsp; Association for Psychological Science",
       "publishedAt": "2025-06-13T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.789Z",
+      "collectedAt": "2026-08-16T06:45:14.649Z",
       "analysis": {
         "relevance": 64,
         "relevanceLevel": "MEDIUM",
@@ -383,7 +383,7 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rb1dEZm0waFlnWGVlb0sxY19Uc2lCblZ0bUl4V292dU5mVE9GMVBxYnNCUnpueFo0bS1oTm9aeWdHbjcyVHc3LWF4bWJRMlZoT2ctbFE1NmtrRzgwd1RZ?oc=5",
       "content": "The effects of early childhood dancesport intervention on executive function in preschool children: a randomized controlled trial &nbsp;&nbsp; Nature",
       "publishedAt": "2025-07-11T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.790Z",
+      "collectedAt": "2026-08-16T06:45:14.650Z",
       "analysis": {
         "relevance": 64,
         "relevanceLevel": "MEDIUM",
@@ -418,7 +418,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbnJtVlhXOE5CVXc1NlRRR2NTTEkweFhPUXNLNjNXOC1TQ0ItN2FXN3cwWWdnZ1cxRzdJamJlVnhyU1FtMXgtTmtkVFVDTllIa0gxV3VGOUQwbDBOel9oYzZCVV9KTDJlZmFGeUR2UlM0UlVXWjEyTGR5d3FCZXdvZ1BuSzludFdrUkdVLUFFYWw4NEduMEV6NVRNQTZMZ0NfcnREXzIzSUpZV2Vha1lrcmh5TElqdFdqS1g5dnJsUGdtdEJVbGpseG9XQk95WV9va3lvTjZMRQ?oc=5",
       "content": "Как студия \"Лариса\" развивала культуру танца в Барнауле &nbsp;&nbsp; Алтапресс — новости Барнаула и Алтайского края",
       "publishedAt": "2025-09-03T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.075Z",
+      "collectedAt": "2026-08-16T06:45:13.834Z",
       "analysis": {
         "relevance": 63,
         "relevanceLevel": "MEDIUM",
@@ -453,7 +453,7 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kMG5KU284UDM5WjJRQ2l6WHNLVmc2emZXOUo3blRJUlRjM0VWVENDSlY5MUxiMmN4Q2MzRlhLRVJfdFFyTkQza0Z0M2lHVXhuV0tPSnhrUnZwUUE?oc=5",
       "content": "Серпухов для детей: кружки, секции и курсы &nbsp;&nbsp; Клерк.Ру",
       "publishedAt": "2026-05-27T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.616Z",
+      "collectedAt": "2026-08-16T06:45:13.079Z",
       "analysis": {
         "relevance": 60,
         "relevanceLevel": "MEDIUM",
@@ -484,7 +484,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QOHU3MExSOFpHRHhsV0NUa05IYmpHYnBQVFdwWGxCMHlqMGFROS1RZW13Ny1wWkJ5OU5ZZjBabnhRU2RIMnBtQXZnemJ2bDhKMFJ6dWJhRGl3UHRsdThoNWVkcTZDMUE?oc=5",
       "content": "В ритме единства: в детском саду № 2 состоялся фестиваль танца, посвящённый Дню России &nbsp;&nbsp; Официальный сайт Администрации Санкт‑Петербурга",
       "publishedAt": "2026-08-15T09:05:05.000Z",
-      "collectedAt": "2026-08-16T06:48:56.071Z",
+      "collectedAt": "2026-08-16T06:45:13.831Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -517,7 +517,7 @@
       "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE54bngwaVBjNVgzRVM1WWlHTDVDMUhMMXB2cWo1V0FjSGUyb0l1SDJUSVIwZmozd2xOd05la2pB?oc=5",
       "content": "Танцы, песни и рисунки: Ещё три творческих конкурса стартуют в Забайкалье в рамках Русского форума &nbsp;&nbsp; Официальный портал Забайкальского края",
       "publishedAt": "2025-11-07T08:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.073Z",
+      "collectedAt": "2026-08-16T06:45:13.832Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -549,7 +549,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fNXdwU1Q2azA4WXJCQnJsbFM0NTItQXVwS1N6bllQbUFTU2daNjRGNmx6ZWF5MFZ0em13ZjdPUVlJY050UnpjRWw2NUtYTi1xSGFlNGFtdVA5Z2RkT1NiTWJvRjg?oc=5",
       "content": "Хореограф, поставившая танец под речь Путина, критиковала военных РФ &nbsp;&nbsp; Вот Так",
       "publishedAt": "2026-04-08T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.073Z",
+      "collectedAt": "2026-08-16T06:45:13.832Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -580,7 +580,7 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSmotLXc2TFdjNERnaDhDT1NnVHRVekxJbkxYQXAyVmNkY18wNGVGaHNvRGhpamZaOFBoeC01Ull1dDduMGVFRXlIY2NPQm9zbGxKSE1xUDJkMzdmWGlMSy1uS2NrbUtLSl9CVjdUZDIyQm1xS3hzb1VpMlVJN3pmeVZrd1hTYmNlbnlXaFRTc2o3REpmT1FtYlo5THJUTWU0MkxyMWZYckg4NUxuRE5HYThuYmtBdmNyN19lVVZnRUdKN2h4dzdwVQ?oc=5",
       "content": "«Боярушка» покорила жюри на телеканале «Культура»: красивая история красивого танца &nbsp;&nbsp; xn--80apydf.xn--p1ai",
       "publishedAt": "2025-10-01T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.073Z",
+      "collectedAt": "2026-08-16T06:45:13.832Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -611,7 +611,7 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4tNUQ0aGltSm5oZUsyajNLajJyS255cGc4WGJrcllPX0lPUEhlTlU3MjcwSHA4WUktWW1nLWIwQ2NVeFRZdkp3VzdfVTAwVVc3ZXBkQW5zbjU4NENnRlNwZjFvc1ZPN2luYmRYbw?oc=5",
       "content": "В День Свердловской области на выставке «Россия» выступит ансамбль танца детской филармонии «Улыбка» &nbsp;&nbsp; Областная газета | Свердловская область",
       "publishedAt": "2023-11-16T08:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.074Z",
+      "collectedAt": "2026-08-16T06:45:13.833Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -643,7 +643,7 @@
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMVktMmxvMms1b0EteTJ5YkpXb2Y4bWo5R1QybVU2RHRtUldqRlAzdHdINWl0SlpPNVcwamcwUVYydDBtbVN2T0pSWHk4dldKUXJrUXBkOGt1WmtLZUZkb3Q3WUFFQllscUpUeGVhUndxb1JJRWFNcTdtRW5vUmFoNllZX1RHdzNXTERGYkVtd2JRNGlWRklKOUw2LXRzNkNfLTloUFBfZmhjYXhvTEFXczhQTzJQY2ZOeklMLVhUa2JGWEptR3F3?oc=5",
       "content": "Самарский ансамбль башкирского танца «Ляйсан» стал финалистом конкурса «Детский Байык-2025» &nbsp;&nbsp; Дом дружбы народов Самарской области",
       "publishedAt": "2025-06-04T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.074Z",
+      "collectedAt": "2026-08-16T06:45:13.833Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -676,7 +676,7 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOE84b21KX1JwUmxFdGVzWGktN2lpVUcydzVhbUdkeTJyZ296Z3h3X1BodEE0TldXTktVdVlSS2VaeXcwX2J4dGd4SUNueVhzeVVyTF9zYnZkbEVOZWgyQXJDemJJdDNlNmtyU0FrS2YyVHp2V19JUVNEMWRwUHh4VHVHQnd4VGJDSGVvV0dOOEU4dUVHOGltajhXMU5IV0o2YzVCNFJ3ak12S3hoNEVvcjFLWQ?oc=5",
       "content": "Professional dancers face high injury risks during daily practice &nbsp;&nbsp; News-Medical",
       "publishedAt": "2026-03-19T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:58.567Z",
+      "collectedAt": "2026-08-16T06:45:16.921Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -710,7 +710,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQTVNHVjhneTMtSXV6QTJaTUJnMXVDM19oVmdPTFVaOHpSMUNTNmR0RXZwY1EzbVp3TzFZLUJoUU90Rm05VjcyMnR6Mnk3amhjQVBnZDJ3d1FDYjNvbnhKcWU0SHlYTVpvNHNXRVFPQUtYWk41S1FPbFA5bVI5ZEU2Qjl5WmFqS2FaWktPdU9iOEdnT0k2SmVHRTNGTXJqT19GT243YXZzQTRncjlueFJ3NGxoQ0Y3QTB1X1dSMVpwR293NmhraV9RZXJuVllSeHJTR2lubDFYNFNMYUM0c2dlTlpueDVqUnB4MGp4U2VQa051LWh2MGdFQ3pUYlU5aVlnRFJDQ0xTc1hpWnV6bkE5dEpXa1lwNzNLVWN4WXFtWdIBpgJBVV95cUxNbUtBSXFZZ3lmWl9OZ2lsY2tGYXZwaGs3TmxQNkctbDFVbVVrbm8wMi1obFZOR2gwSk9TVG9rTWdyWmRuSDFCbmNNY3hidklxRk9zZTF5RUpodmVNdTlERGNHWHF0VlduZHN0dVNYaHIzcXVUNmFzLWVhenVuM1pqeWszTnRkeHhTbTIyQk96cFpUY0hvczA2NG1QOXlYMHlRNnBYS2c5RkQ3RTBMX1RaMjJMQmo5RkJBeGFkd0FCT3BxaHJZMHZWTEhJck1mdmhET2VTeWhqWVlCOXExQzhGeVZsaXRBN2cyU1J0U1BfUTU0YU9jLXhnZmNnTEF1SWpXeXR6N19tZlBWcVNueS10Y3JENGhzR1k4TXRtWW1md1p4QkdWc3c?oc=5",
       "content": "Doctors and dancers decode the physics of movement and posture to prevent injuries &nbsp;&nbsp; The Hindu",
       "publishedAt": "2026-01-19T08:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:58.568Z",
+      "collectedAt": "2026-08-16T06:45:16.923Z",
       "analysis": {
         "relevance": 56,
         "relevanceLevel": "MEDIUM",
@@ -741,7 +741,7 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB5cFB1Z2NBTUtTMzNrZGVWdFRwY3I0Szd6cnJ1UGU1Um4zRDB5V21zRUt0czRCRjBNbkR5OHNUNmNENGJDekpLZnJidWlzcUM4SV90dW9EdkkzeHl6OVQwSXBINVl6MWVqWVBRc3ZQVlVHZVcxblNzaW93?oc=5",
       "content": "Common Ballet Injuries in Adolescents and Teens &nbsp;&nbsp; Children's Hospital of Philadelphia",
       "publishedAt": "2020-03-11T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:58.570Z",
+      "collectedAt": "2026-08-16T06:45:16.924Z",
       "analysis": {
         "relevance": 56,
         "relevanceLevel": "MEDIUM",
@@ -774,7 +774,7 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRjBhNG9XNWpYQVZlTXppdG41clpVNlVfMWh4TDAyWm85N0MtQ3BjNFZRMVAzT0JyTE1wWVdjcHZWcXk3SHdZcWxCMjJ1Uks0UnY3cGJJS29uZ05TUXJuNjlDYkh6VnN6amc5NFE0aW9xYmxBTHpmb0RCdkcyS2lWNjNWV0EtaGxKck1pOG9Nbm85WURDd0p5d1BGWHhWajNp?oc=5",
       "content": "Babies learn to ‘hear’ music and ‘dance’ within their first year &nbsp;&nbsp; The Brighter Side of News",
       "publishedAt": "2026-07-22T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.788Z",
+      "collectedAt": "2026-08-16T06:45:14.647Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -805,7 +805,7 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE90OE1XNzRqWkVJa2pHV2ZxdEd3V2xkb1o2MFVGRWFWRWFBTnlNOUVqVEZUeGU5Qks1dGlkellSaV9xSWFKb0VzU2FMLUdRT2FNSXdhOGRNRkNteTB2blQ5ZDJ1cmNxTEhwTzNZNTdlMVBpR2IzWlE?oc=5",
       "content": "Dance programs linked to developmental gains in toddlers, research suggests &nbsp;&nbsp; The Sector",
       "publishedAt": "2026-03-11T19:03:13.000Z",
-      "collectedAt": "2026-08-16T06:48:56.789Z",
+      "collectedAt": "2026-08-16T06:45:14.649Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -836,7 +836,7 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQODZuaVJYWHppeVNPcEtKbUFZLXZBdDd4NG9nbnlQRWlNOGFiUG9vb3JuQUk4bEY3V1BTSENIVjRzVE5sVWxPUmQ0TVprUkN0NU5lN2IxWUkyenN2eDlSbUEyc3lBN3JUejNBYjh3MUZVcUYwRXRyQklvVW9WTjEyM3ItYndKc0tHVll2RUd5Sjd6eFlyVGRDdDE1U1dXZnAwaTIxQXFoSHhoeDZfNkJUZXln?oc=5",
       "content": "ASU professor creates 'Red,' an interactive dance with toddlers &nbsp;&nbsp; ASU News",
       "publishedAt": "2025-10-31T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.789Z",
+      "collectedAt": "2026-08-16T06:45:14.650Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -859,6 +859,35 @@
       }
     },
     {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Cincinnati Dance Team Takes Gold at ICU Championships - University of Cincinnati Athletics",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORlgxWEFNNzJ1aEZJdXN0N3ZNNF8ydTFMVFBRSzNVVWl6eFUxOW8zYUlSVDgtVWhjOXA2LUlIdG5GcVFnYS12SFNLZ19zSGxwMnFXeXE0dGh5UXlqTUdXUXRDQjRvYXVUUkZuWTE1Tjd3Y0dORGp5MGxyY01ybUwzcDlKZS1oMHpPY2MwVmRxeGdJVUtLOFpJ?oc=5",
+      "content": "Cincinnati Dance Team Takes Gold at ICU Championships &nbsp;&nbsp; University of Cincinnati Athletics",
+      "publishedAt": "2026-04-24T07:00:00.000Z",
+      "collectedAt": "2026-08-16T06:45:15.397Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
@@ -867,7 +896,7 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOHpfazF2LW5MOFE0eHNVNFBXQkgzZVNzbUExTVRja0VRZHJLaWpxblgtXzc0WWY4MlEzaENnRURUR0tOTDF2REtneFdFTmhWT2xwZ2pHQ2hqdjZaZzNMaEtOQ2lmV0JXUG5pdm9LdEhoTmJSOEItMU1nS3pkaFJQbG1FQVZKaG1DbHIzRWJWZlZPMnprN0xfS01R0gGfAUFVX3lxTE5yb0UwUEFqNFFfS0lvaDJHUTRMb0ltNVI2ZUhrV1BSOVpQLUhxZFlxam1DeDBPTU1KMzVUWlJPQmJTYVhSSFVvaFVXWWFZN1RmMXlPamtRSmhrNEZfY1Q4Mjktc1B2RWYxWS1HSnloU1o5QWlieXZhT2paTlo5VmRpOWlpcWsyN3U2R2c3d2hLOGl4ZV9IZjZQaENZODZfZw?oc=5",
       "content": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE &nbsp;&nbsp; FOX 10 Phoenix",
       "publishedAt": "2026-07-26T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.460Z",
+      "collectedAt": "2026-08-16T06:45:15.397Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -877,63 +906,6 @@
             "dance",
             "hip hop",
             "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Cincinnati Dance Team Takes Gold at ICU Championships - University of Cincinnati Athletics",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORlgxWEFNNzJ1aEZJdXN0N3ZNNF8ydTFMVFBRSzNVVWl6eFUxOW8zYUlSVDgtVWhjOXA2LUlIdG5GcVFnYS12SFNLZ19zSGxwMnFXeXE0dGh5UXlqTUdXUXRDQjRvYXVUUkZuWTE1Tjd3Y0dORGp5MGxyY01ybUwzcDlKZS1oMHpPY2MwVmRxeGdJVUtLOFpJ?oc=5",
-      "content": "Cincinnati Dance Team Takes Gold at ICU Championships &nbsp;&nbsp; University of Cincinnati Athletics",
-      "publishedAt": "2026-04-24T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.461Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance",
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Dance Worlds 2026 Performance Order & Schedule - FloCheer",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS0xVWTl3VFBrVmVncGhCYTNBVEZMU0lIN1Ffell2ejMtS05mbEV6RTJfbl9CNmdvVDRFNmwzbEdCUTk0U2VjYk5lRk1MdF84aEsxRnhaMkVFcUx1LUFTU0llOVV5b2ZvU1hkTDlVcGFiaEg2cUh3YUdfaWtuMXpMckJ2cm5WM0dVVnRxYnk2dEc?oc=5",
-      "content": "Dance Worlds 2026 Performance Order & Schedule &nbsp;&nbsp; FloCheer",
-      "publishedAt": "2026-04-20T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.462Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
           ]
         },
         "context": {
@@ -954,7 +926,7 @@
       "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaklRblNNODJCRWQ3RldZV1g1QUIzMHRjR1BvRXpnY2lKSGR6RDlFQ3RqcEdRU3dvQ2pVV24wQWF2WnJMOHhSOU5Yc0VaVDlzeEF1NFlaMVVNS2FBWDVTRHJ2OThHVHlFcjk3dVQ3dUlzdkFVdUpSa3p5SVpXY2FKcl8tT3d1bVBJelUtLUs0TXZ5alNURHhObmVVR2k1NmUxWmRvbVBhTG1ONm1neWktWnJJb1B3cU9aVzRadDItMmdpTTNXcDAwZlZHWjBqa191Rndya0V5TVdQb05MNV82bzdRNjVYeFI3d0JIMVllX2RtckJrbDZuRGhHaHBuUQ?oc=5",
       "content": "Local Representation: Gilbert Crews compete at World Hip Hop Dance Championship &nbsp;&nbsp; phoenix.org",
       "publishedAt": "2026-07-26T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.462Z",
+      "collectedAt": "2026-08-16T06:45:15.398Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -976,6 +948,62 @@
       }
     },
     {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Aboian and Veselukhin Win Ice Dance Title, Cap Season Undefeated - U.S. Figure Skating",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNXdkTE1lRW5GVlJweU1KS0hPOFd6cm5Mc016elc1cXYzV0pxRjRQYU84OWkwbTBieS1Mc1Y5RXQ3SXA5UG5WRC1odDhJV0F6NkNRQjJDX3M3QTl2S0doWU5QTlJhcXktVTJ5dGUxbl9UcEN2ZFFSa0FkTnMyTnM4SUx0NzJtamIxUnhtb1N4Q2FJdWoxNjI1cHpyUy1FYjN1Zzl0UlNsQzVfZFpSQlFydVJ4OHBmeGk2UDZyX054R3ptQjN3MGRfc0VCc1hma08zX2k3b25B?oc=5",
+      "content": "Aboian and Veselukhin Win Ice Dance Title, Cap Season Undefeated &nbsp;&nbsp; U.S. Figure Skating",
+      "publishedAt": "2026-03-07T08:00:00.000Z",
+      "collectedAt": "2026-08-16T06:45:15.398Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dance Worlds 2026 Performance Order & Schedule - FloCheer",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS0xVWTl3VFBrVmVncGhCYTNBVEZMU0lIN1Ffell2ejMtS05mbEV6RTJfbl9CNmdvVDRFNmwzbEdCUTk0U2VjYk5lRk1MdF84aEsxRnhaMkVFcUx1LUFTU0llOVV5b2ZvU1hkTDlVcGFiaEg2cUh3YUdfaWtuMXpMckJ2cm5WM0dVVnRxYnk2dEc?oc=5",
+      "content": "Dance Worlds 2026 Performance Order & Schedule &nbsp;&nbsp; FloCheer",
+      "publishedAt": "2026-04-20T07:00:00.000Z",
+      "collectedAt": "2026-08-16T06:45:15.399Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6a2Z2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
@@ -984,7 +1012,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43RWtUcmptTjNHSFc3QURHSmZoc2ZZbXUxSFY1VFc1UmU4RlFuQlExaTdmNFpjTG5iTGdPbzVLYzJUUVNIc3BubVh2X1pDLTExT19KdmxTTW5zdHY3UTBMa1UzSk9BZ9IBa0FVX3lxTE45UEcwY0ZwV2VlSy1KMzRKMm9FSGpJT2xIUXVRQWdwNnJYQnNGQzNKSGk3X0doRWNYOExUeUhnRmJEODRjWlFkZUZKbWJCUGJObThVTjEwN0xrUGQzWlZlSkM1RFJLOC0zVlY0?oc=5",
       "content": "World Hip Hop Dance Championship begins featuring Arizona varsity crew KODE &nbsp;&nbsp; FOX 10 Phoenix",
       "publishedAt": "2026-07-26T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:57.463Z",
+      "collectedAt": "2026-08-16T06:45:15.399Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -1014,7 +1042,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeVVlY09MWVdoeG9zZFdsYjA5RWlmWGJoTll3Vk4zWkJMX2U3Yk55WkotV2ZhVkVuV1lxQzBydzlLdnRWYk5FcWdORGU3ZmNudjE2WHlJY2pJVW9xNW1pOTNtZklzVVNWZkptbl9KT3pMZURtQzRIR2I4eFFhTld3dUlSN09NYklPcHVpVmRKWkJMY1dlc0E0TERQZE1RRUZJRVJ3M294b3ZUbi1sYmU3eHZtWGt5VVJwVm9JQWE5LTdRbWc?oc=5",
       "content": "A U.K. report lays bare ‘catastrophic’ missed chances before stabbings at girls’ dance class &nbsp;&nbsp; CTV News",
       "publishedAt": "2026-04-13T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:58.569Z",
+      "collectedAt": "2026-08-16T06:45:16.923Z",
       "analysis": {
         "relevance": 31,
         "relevanceLevel": "LOW",
@@ -1045,7 +1073,7 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLVNfNzc5MXlILVdJbWlqbFBoMFZYanhKck5tV2JGNS1wRlNVNk9lWkxHZjh3cDJISGg3cUpHRDJKRElybGlvQmVIanhINkJMaS1zS2ZPREFJLURncThkb2pBTGRXM2RzMmwtMFFuTmFCYUxMMkdKaWhjajF2Vmh4Z19oZXdoUFRNQ3JiMlBRWVdWak94SENCRnNZZw?oc=5",
       "content": "Светлана Колосова: мама шестерых, жена священника, предприниматель - новости Серпухова &nbsp;&nbsp; Смитанка",
       "publishedAt": "2025-11-29T08:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.621Z",
+      "collectedAt": "2026-08-16T06:45:13.083Z",
       "analysis": {
         "relevance": 30,
         "relevanceLevel": "LOW",
@@ -1076,7 +1104,7 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb042akJTVEI1eVZsLVo2bDgwRVNZZEwxQWdDaWQ3NGhHTWlVUUk4V1lOaTJLWG54TDBIODVnRU02dVpPMFU2M2RwOXhsVFF3NnVTeFVmUnJxZ3VNU2stSXliN1A2RDVSbnNvS1lXZ010OVVzUWhBblc1aDNZTjJwTWNkbUEzRy1WeDlQT0lGU3phdHdDRG5CYWhZZXdEaGpXUm9TU0ZYTQ?oc=5",
       "content": "Хоровод и башкирский танец: как прошёл первый день детской Фольклориады в Уфе [ВИДЕО] &nbsp;&nbsp; Bash.News",
       "publishedAt": "2026-06-24T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:56.072Z",
+      "collectedAt": "2026-08-16T06:45:13.832Z",
       "analysis": {
         "relevance": 27,
         "relevanceLevel": "LOW",
@@ -1108,7 +1136,7 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVGxNRnpWSEJvM2F6N2tLbFFlWjBFcHBBZy1FU1o1SGdUZ3N0cmxaV3cwLU95ZzEwNmtUdXNPcmJkbWJJUk04QlZjSXc1YVVBUU5ueXkzV1o3b3lMTkVNY1NjRDN2RHpVT3J1Y245Y3J3b1ZMYkg3WVpOejFObmNHdkpVNXhkdjBNaWhyRVVZeHVWdm1NcEE?oc=5",
       "content": "Детский праздник для семей участников СВО прошел в Серпухове &nbsp;&nbsp; 360.ru",
       "publishedAt": "2026-08-06T15:45:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.615Z",
+      "collectedAt": "2026-08-16T06:45:13.077Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",
@@ -1137,7 +1165,7 @@
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOU1ZpNnQzc015OTRjSzZ4ekJDdXNQZVNTZzAyWC1OVENmWUJ0Tzh1RUduMHhOYktzOE4ybnNMelgzdVU0ZVZEd2pCZlBqUmNKTjVEZnJCXzViTE1OSnVnc2FsODJ0VFItTWFCVktmcDJ0WmhkY1ZBUWc2MmdVMWdyR0tDR09veGRGcGNubnpBejNiMnh2QXNHcXpaSWhQdHVHQ1l4UElmckQ0eVlZZHk5VEZWQTZ6eFl6NXFBUElVY3dFM0FEWENfcS1xN0o?oc=5",
       "content": "В выходные жители и гости Серпухова могут отлично провести время на городских пляжах. &nbsp;&nbsp; ОТВ-Серпухов",
       "publishedAt": "2026-08-08T11:50:35.000Z",
-      "collectedAt": "2026-08-16T06:48:55.616Z",
+      "collectedAt": "2026-08-16T06:45:13.078Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",
@@ -1165,7 +1193,7 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaWxzaTJVYVBmbWltaV9odEZDZDBWR2JucHNIb25QUGdYYWgtMXJueE1wMUN1Rkt1LU9tSUVjSkhrbXFSZ05UTWhPSWJRMmxGS1R0aE50NFBKNXdnWXNuaURhVzh4alRsOWhMY01zTlVfdS1MV1c3LWhBalZ0T3NzOWo0dEdPZGxFMDdMX09qQUJKd3h5N0xCR2M3THR0Mm83SlBWN044Z2x6NkxE?oc=5",
       "content": "1 мая в парках городского округа Серпухов — открытие тёплого сезона &nbsp;&nbsp; ОТВ-Серпухов",
       "publishedAt": "2026-04-29T07:00:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.619Z",
+      "collectedAt": "2026-08-16T06:45:13.082Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",
@@ -1193,7 +1221,7 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZlpWMVJ0M2o5YUU4UnRnX2RGWTliZVhDMVAtbW1URUJ2b2FleVNqV25oeGV4M3ZGTDlYRk1MNHIzMzhnWS1iLVRPSWotWWRTdkREaGEteHNzTkJUUTlHSmdMY2NpelRXT2Z1R01TaEd6NTBOOUduQm4wUmI5RFhlMDFmbXc3cGZTcEcxenZUdklpVWR0bXoxVGlNUk5ZckNaLXUtSkVENjFxY0dpZ0U3Qg?oc=5",
       "content": "Лежаки, фудкорт и белый песок: что ждет на «Мальдивах» и «Гавайях» в Серпухове &nbsp;&nbsp; REGIONS.ru",
       "publishedAt": "2026-08-08T13:29:00.000Z",
-      "collectedAt": "2026-08-16T06:48:55.620Z",
+      "collectedAt": "2026-08-16T06:45:13.082Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",

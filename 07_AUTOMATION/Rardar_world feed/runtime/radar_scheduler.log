@@ -1,0 +1,152 @@
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... OK (15)
+→ Google News — детские танцы Россия ... OK (15)
+→ Google News — dance children development ... OK (15)
+→ Google News — dance world championships ... OK (15)
+→ Google News — child physical activity ... OK (15)
+→ Google News — dance health injury ... OK (15)
+
+----------------------------------------------
+Raw facts:          90
+Unique facts:       57
+Duplicates removed: 33
+Classified facts:   57
+Relevant signals:   37
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+LOCAL_DANCE: 9
+DANCE_WORLD: 4
+CORE_DANCE: 17
+ADJACENT_DOMAIN: 1
+LOCAL_ECOSYSTEM: 6
+
+TOP SIGNALS:
+
+1. [90] Международный день танца на видеоплатформе Leo Classics - Belcanto.ru
+   LOCAL_DANCE | Google News — детские танцы Россия
+   https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GVWUzVFEwWlRTeWE0UXowbGx0MkV6OEtOTzExTGpVdTl0UEVZaTIxbEV2UUo4aEFSaDBKanlkRGMyWkhsekJvbG0zX3pRdw?oc=5
+
+2. [72] UC Dance Team represents US at ICU World Championships - The News Record
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5
+
+3. [68] NEW RESEARCH ASSOCIATES DANCE AND POSITIVE AFFECT IN CHILDREN AND ADOLESCENTS - PR Newswire
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMizgFBVV95cUxPVjdiaG92YzV5ZmlkWFdDZk03MzkwdXdsNkdUbng1bmtlWW9IeDdyeFNqRy1pWUdMZGxldFp4Y0QzMkhqM0U2b0FkVG5nM2d1MEh5ZmJ2OXZlS0hBdVNMdVZhOFZ3MUpzZlptZ1MxaEQ4UE05UlE2NGlSQ2hlaUVSVFN0R1piNHVFekkwR0RKdlQ4b2hlZnEzR2dMVW1VVzZjSm9PU0hWVWhadzhkN2ZfdjN1a0llbEJTS0VRNm82ajhrTVZXZjYteG1kLUFsZw?oc=5
+
+4. [68] Marquette student places in Irish Dance World Championship - Marquette Wire
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5
+
+5. [68] U.S. Sends Full Slate of Skaters to World Championships - U.S. Figure Skating
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiygFBVV95cUxOU2RyWFFNajdFY3pJNEU3UEdpM05ZdU1tVTVoRzlLT2s4dUp0REtna1BLYXdfdU9VNHIzVkRmTU53bm1uaTB6SGVNQjNkLUxXSC11eGs1bDF4WDR2bDNrOUc0eFVvSzZnNHpoTmJaOGlna2NmcDBsMDZKZXdXeGVIa0ZOTkl2c1hyRnlmSUVTWjMwdGhTTEVaQzB5Z3RabEdFdW1KMmVwNzJzU0ZtUXNqTTJERzMtdkxILVh1NnFsMG9fdmVPLU1mcjdR?oc=5
+
+6. [68] Tech Pom earns Team USA, heads to the International Cheer Union World Championship - The Daily Toreador
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUDMwckpfT054ZDVzUEhOa0d4c0EwZmdyanhCTXJpcFpiMWc2aHJncTd3Nnd0Rkd6ZHFiTWZmUnFGc1JrZ2wxZHRpU2h0WGVvdElkTkg5aENkMThsWThzTkpCR1UtLVY4cVoxUEFvUWFVSmxsWFEtZE5qRnVuaG1YT0t2TmdFS1o3cmNIRnhmNks1SjFpVE1vakR2R2YwZ20xQ1NBa0E5Mjh1R1lpZms0ZGZLRmlsSUhRUFpMcDZ2bS04Zw?oc=5
+
+7. [65] Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка
+   LOCAL_DANCE | Google News — Серпухов дети танцы
+   https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5
+
+8. [64] Dance Movement Therapy: Evidence-Based Benefits for Mental Health and Well-Being - GoodTherapy.org
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiggFBVV95cUxPUjZiWDFyVDA5OXdHSDRwdm5zbFR5dVpjWGVwZkV3MXFzZXktc0YyejRwZFVwamVsNHYwNnVPTXhQM0pKSHRsaHdDa2hLS2JTaTNHZ0RCMVVSZ2E4NHgyeklaVGdybC01ZGlfQThyN0liSC1kT2Ewa05Xck1aT2lmcVhR?oc=5
+
+9. [64] How Dance Develops In Children - Association for Psychological Science
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5
+
+10. [64] The effects of early childhood dancesport intervention on executive function in preschool children: a randomized controlled trial - Nature
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rb1dEZm0waFlnWGVlb0sxY19Uc2lCblZ0bUl4V292dU5mVE9GMVBxYnNCUnpueFo0bS1oTm9aeWdHbjcyVHc3LWF4bWJRMlZoT2ctbFE1NmtrRzgwd1RZ?oc=5
+
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... OK (15)
+→ Google News — детские танцы Россия ... OK (15)
+→ Google News — dance children development ... OK (15)
+→ Google News — dance world championships ... OK (15)
+→ Google News — child physical activity ... OK (15)
+→ Google News — dance health injury ... OK (15)
+
+----------------------------------------------
+Raw facts:          90
+Unique facts:       56
+Duplicates removed: 34
+Classified facts:   56
+Relevant signals:   36
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+LOCAL_DANCE: 9
+DANCE_WORLD: 4
+CORE_DANCE: 16
+ADJACENT_DOMAIN: 1
+LOCAL_ECOSYSTEM: 6
+
+TOP SIGNALS:
+
+1. [90] Международный день танца на видеоплатформе Leo Classics - Belcanto.ru
+   LOCAL_DANCE | Google News — детские танцы Россия
+   https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GVWUzVFEwWlRTeWE0UXowbGx0MkV6OEtOTzExTGpVdTl0UEVZaTIxbEV2UUo4aEFSaDBKanlkRGMyWkhsekJvbG0zX3pRdw?oc=5
+
+2. [72] UC Dance Team represents US at ICU World Championships - The News Record
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5
+
+3. [68] NEW RESEARCH ASSOCIATES DANCE AND POSITIVE AFFECT IN CHILDREN AND ADOLESCENTS - PR Newswire
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMizgFBVV95cUxPVjdiaG92YzV5ZmlkWFdDZk03MzkwdXdsNkdUbng1bmtlWW9IeDdyeFNqRy1pWUdMZGxldFp4Y0QzMkhqM0U2b0FkVG5nM2d1MEh5ZmJ2OXZlS0hBdVNMdVZhOFZ3MUpzZlptZ1MxaEQ4UE05UlE2NGlSQ2hlaUVSVFN0R1piNHVFekkwR0RKdlQ4b2hlZnEzR2dMVW1VVzZjSm9PU0hWVWhadzhkN2ZfdjN1a0llbEJTS0VRNm82ajhrTVZXZjYteG1kLUFsZw?oc=5
+
+4. [68] Tech Pom earns Team USA, heads to the International Cheer Union World Championship - The Daily Toreador
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUDMwckpfT054ZDVzUEhOa0d4c0EwZmdyanhCTXJpcFpiMWc2aHJncTd3Nnd0Rkd6ZHFiTWZmUnFGc1JrZ2wxZHRpU2h0WGVvdElkTkg5aENkMThsWThzTkpCR1UtLVY4cVoxUEFvUWFVSmxsWFEtZE5qRnVuaG1YT0t2TmdFS1o3cmNIRnhmNks1SjFpVE1vakR2R2YwZ20xQ1NBa0E5Mjh1R1lpZms0ZGZLRmlsSUhRUFpMcDZ2bS04Zw?oc=5
+
+5. [68] Marquette student places in Irish Dance World Championship - Marquette Wire
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5
+
+6. [68] U.S. Sends Full Slate of Skaters to World Championships - U.S. Figure Skating
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiygFBVV95cUxOU2RyWFFNajdFY3pJNEU3UEdpM05ZdU1tVTVoRzlLT2s4dUp0REtna1BLYXdfdU9VNHIzVkRmTU53bm1uaTB6SGVNQjNkLUxXSC11eGs1bDF4WDR2bDNrOUc0eFVvSzZnNHpoTmJaOGlna2NmcDBsMDZKZXdXeGVIa0ZOTkl2c1hyRnlmSUVTWjMwdGhTTEVaQzB5Z3RabEdFdW1KMmVwNzJzU0ZtUXNqTTJERzMtdkxILVh1NnFsMG9fdmVPLU1mcjdR?oc=5
+
+7. [65] Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка
+   LOCAL_DANCE | Google News — Серпухов дети танцы
+   https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5
+
+8. [64] Dance Movement Therapy: Evidence-Based Benefits for Mental Health and Well-Being - GoodTherapy.org
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiggFBVV95cUxPUjZiWDFyVDA5OXdHSDRwdm5zbFR5dVpjWGVwZkV3MXFzZXktc0YyejRwZFVwamVsNHYwNnVPTXhQM0pKSHRsaHdDa2hLS2JTaTNHZ0RCMVVSZ2E4NHgyeklaVGdybC01ZGlfQThyN0liSC1kT2Ewa05Xck1aT2lmcVhR?oc=5
+
+9. [64] How Dance Develops In Children - Association for Psychological Science
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5
+
+10. [64] The effects of early childhood dancesport intervention on executive function in preschool children: a randomized controlled trial - Nature
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rb1dEZm0waFlnWGVlb0sxY19Uc2lCblZ0bUl4V292dU5mVE9GMVBxYnNCUnpueFo0bS1oTm9aeWdHbjcyVHc3LWF4bWJRMlZoT2ctbFE1NmtrRzgwd1RZ?oc=5
+
