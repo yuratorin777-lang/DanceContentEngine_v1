@@ -151,6 +151,17 @@ export type PlannerInput = {
    * - 04_CONTENT/CHANNEL_STRATEGY.md
    */
   strategyContext?: string;
+
+  /**
+   * Optional explicit target channel.
+   *
+   * If supplied, Planner must use this channel
+   * as the primary channel and must not choose another.
+   *
+   * If empty, Planner selects the primary channel
+   * using Content Strategy and Channel Strategy.
+   */
+  requestedChannel?: string;
 };
 
 const DEFAULT_PLAN: ContentPlan = {
@@ -388,6 +399,53 @@ Do not distribute the same piece automatically to every channel.
 
 The channel must follow the audience need, decision stage and content job.
 
+IF AN EXPLICIT CHANNEL IS SUPPLIED:
+
+If the user explicitly specifies a target channel in the request:
+
+- use that channel as the primary channel;
+- do not select another channel;
+- do not reinterpret the task as belonging to another platform;
+- adapt the format and content behavior to that channel;
+- preserve the strategic role and limitations of that channel from CHANNEL_STRATEGY;
+- keep the channel in the final Content Plan exactly as the requested primary channel.
+
+IF NO CHANNEL IS SUPPLIED:
+
+If no target channel is explicitly specified:
+
+- select the primary channel using CONTENT_STRATEGY and CHANNEL_STRATEGY;
+- base the choice on audience need, decision stage, content job, depth, relationship role, search intent, content purpose and appropriate format;
+- do not select a channel merely because it exists;
+- do not default to Website/SEO for every detailed request;
+- do not default to VK or Telegram merely because the task is "content".
+
+CHANNEL SELECTION LOGIC:
+
+Website / SEO is generally appropriate when:
+- the request represents a durable information need;
+- search intent is meaningful;
+- parents need detailed decision support;
+- comparison, guide, FAQ or long-form explanation is useful;
+- the content should have evergreen value.
+
+VK is generally appropriate when:
+- the purpose is social engagement;
+- the content concerns events, activity, community, discussion or visible school life;
+- an owner's position can stimulate comments;
+- the material benefits from concise or medium-depth social consumption.
+
+Telegram is generally appropriate when:
+- deeper personal communication is valuable;
+- the content benefits from reflection, practical collections, expert commentary or a direct conversation with parents;
+- richer context is useful without requiring search-oriented structure.
+
+Other channels must be selected only according to the supplied Channel Strategy.
+
+The Planner is responsible for planning for the selected channel.
+
+The Writer must not override the selected channel.
+
 ==================================================
 FORMAT
 ==================================================
@@ -408,6 +466,10 @@ OWNER_STORY
 COMPARISON
 CHECKLIST
 
+The format must be appropriate to both:
+1. the user's requested task;
+2. the selected primary channel.
+
 ==================================================
 REUSABILITY
 ==================================================
@@ -421,6 +483,10 @@ MEDIUM
 LOW
 
 Add a short explanation.
+
+Do not confuse repurposing potential with automatic duplication.
+
+A high-repurposing idea still requires channel-native adaptation.
 
 ==================================================
 DETAIL LEVEL
@@ -453,6 +519,7 @@ export function buildPlannerUserPrompt({
   profile = "GENERAL",
   context = "",
   strategyContext = "",
+  requestedChannel = "",
 }: PlannerInput): string {
   return `
 CONTENT PLANNER TASK
@@ -462,6 +529,27 @@ ${profile}
 
 USER REQUEST:
 ${task}
+
+==================================================
+TARGET CHANNEL
+==================================================
+
+${
+  requestedChannel.trim()
+    ? `The user explicitly requested this primary channel:
+
+${requestedChannel.trim()}
+
+Use this channel as the PRIMARY CHANNEL.
+Do not select another channel.
+Plan the content specifically for this channel.
+`
+    : `No primary channel was explicitly requested.
+
+Select the PRIMARY CHANNEL using the supplied Content Strategy and Channel Strategy.
+The chosen channel must be justified by the content job, audience need, decision stage, content purpose and channel role.
+`
+}
 
 ==================================================
 STRATEGIC CONTEXT
@@ -511,6 +599,15 @@ Determine:
 18. CTA
 19. constraints
 20. source priorities
+
+If a target channel was explicitly supplied above:
+- use exactly that channel;
+- do not choose another channel;
+- make the format and content behavior native to that channel.
+
+If no target channel was supplied:
+- choose the primary channel from the strategic documents;
+- do not assume the channel from the subject alone.
 
 Do not write the final article or post.
 
