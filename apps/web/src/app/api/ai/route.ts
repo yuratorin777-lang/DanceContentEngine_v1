@@ -38,19 +38,30 @@ function resolveProjectRoot(): string {
   const cwd = process.cwd();
 
   const twoUp = path.resolve(cwd, "../..");
-  if (fsSync.existsSync(path.join(twoUp, "00_SYSTEM"))) {
+
+  if (
+    fsSync.existsSync(
+      path.join(twoUp, "00_SYSTEM")
+    )
+  ) {
     return twoUp;
   }
 
   const oneUp = path.resolve(cwd, "..");
-  if (fsSync.existsSync(path.join(oneUp, "00_SYSTEM"))) {
+
+  if (
+    fsSync.existsSync(
+      path.join(oneUp, "00_SYSTEM")
+    )
+  ) {
     return oneUp;
   }
 
   return cwd;
 }
 
-const PROJECT_ROOT = resolveProjectRoot();
+const PROJECT_ROOT =
+  resolveProjectRoot();
 
 /*
  * ==================================================
@@ -70,17 +81,22 @@ const STRATEGY_FILES = [
 async function loadStrategyContext(): Promise<string> {
   const blocks: string[] = [];
 
-  for (const relativePath of STRATEGY_FILES) {
-    const absolutePath = path.join(
-      PROJECT_ROOT,
-      relativePath
-    );
+  for (
+    const relativePath
+    of STRATEGY_FILES
+  ) {
+    const absolutePath =
+      path.join(
+        PROJECT_ROOT,
+        relativePath
+      );
 
     try {
-      const content = await fs.readFile(
-        absolutePath,
-        "utf8"
-      );
+      const content =
+        await fs.readFile(
+          absolutePath,
+          "utf8"
+        );
 
       blocks.push(`
 ==================================================
@@ -117,14 +133,13 @@ and must not invent strategic rules.
  * ==================================================
  * RETRIEVAL LIMITS
  * ==================================================
- *
- * Retriever controls the amount and diversity of the
- * library context. Radar is intentionally NOT limited
- * here beyond the retriever's own diversity logic.
  */
 
-const RETRIEVAL_MAX_CHARACTERS = 180_000;
-const RETRIEVAL_MAX_SOURCES = 30;
+const RETRIEVAL_MAX_CHARACTERS =
+  180_000;
+
+const RETRIEVAL_MAX_SOURCES =
+  30;
 
 /*
  * ==================================================
@@ -144,6 +159,16 @@ type AIRequest = {
   profile?: ContextProfile;
   paths?: string[];
   includeRadar?: boolean;
+
+  /*
+   * Explicit primary content channel.
+   *
+   * Examples:
+   * VK
+   * Telegram
+   * Website / SEO
+   */
+  channel?: string;
 };
 
 type RetrievalItem = {
@@ -154,7 +179,8 @@ type RetrievalItem = {
   fileName?: string;
   sourceRole?: string;
   keywords?: string[];
-  radarMetadata?: Record<string, unknown> | null;
+  radarMetadata?:
+    Record<string, unknown> | null;
 };
 
 type RetrievalCandidate = {
@@ -167,12 +193,17 @@ type RetrievalCandidate = {
 
 type RetrievalPackage = {
   generatedAt: string;
+
   limits: {
     maxCharacters: number;
     maxSources: number;
   };
-  composition: Record<string, number>;
-  selected: RetrievalCandidate[];
+
+  composition:
+    Record<string, number>;
+
+  selected:
+    RetrievalCandidate[];
 };
 
 /*
@@ -184,18 +215,28 @@ type RetrievalPackage = {
 function safeProjectPath(
   relativePath: string
 ): string | null {
-  const normalized = relativePath
-    .replace(/\\/g, "/")
-    .replace(/^\/+/, "");
+  const normalized =
+    relativePath
+      .replace(/\\/g, "/")
+      .replace(/^\/+/, "");
 
-  if (normalized.includes("#signal-")) {
+  /*
+   * Radar virtual references are never
+   * directly materialized as files.
+   */
+  if (
+    normalized.includes(
+      "#signal-"
+    )
+  ) {
     return null;
   }
 
-  const absolute = path.resolve(
-    PROJECT_ROOT,
-    normalized
-  );
+  const absolute =
+    path.resolve(
+      PROJECT_ROOT,
+      normalized
+    );
 
   if (
     absolute !== PROJECT_ROOT &&
@@ -214,11 +255,8 @@ function safeProjectPath(
  * RETRIEVAL SEED
  * ==================================================
  *
- * This is deliberately deterministic. We do not ask
- * another model to plan before retrieval, because the
- * planner already exists downstream. The seed gives the
- * Retriever enough task/profile signal to build a broad,
- * diverse source package without inventing project facts.
+ * Deterministic retrieval seed.
+ * Planner runs AFTER retrieval.
  */
 
 function buildRetrievalSeed(
@@ -238,6 +276,7 @@ function buildRetrievalSeed(
       "05_SEO",
       "08_INPUT",
     ],
+
     RESEARCH: [
       "02_RESEARCH",
       "01_KNOWLEDGE",
@@ -246,6 +285,7 @@ function buildRetrievalSeed(
       "05_SEO",
       "08_INPUT",
     ],
+
     ANALYTICS: [
       "06_ANALYTICS",
       "02_RESEARCH",
@@ -255,6 +295,7 @@ function buildRetrievalSeed(
       "05_SEO",
       "08_INPUT",
     ],
+
     GENERAL: [
       "01_KNOWLEDGE",
       "02_RESEARCH",
@@ -268,27 +309,48 @@ function buildRetrievalSeed(
 
   return {
     audience: "",
-    topic: task,
-    subtopic: profile,
-    goal: task,
+
+    topic:
+      task,
+
+    subtopic:
+      profile,
+
+    goal:
+      task,
+
     audienceNeed: "",
-    keyMessage: task,
-    contentAngle: task,
+
+    keyMessage:
+      task,
+
+    contentAngle:
+      task,
+
     researchSignals: [],
+
     knowledgeNeeds: [
       "реальный опыт",
       "экспертные знания",
       "актуальные исследования",
       "аудитория",
     ],
-    radarSignals: [task],
+
+    radarSignals: [
+      task,
+    ],
+
     seoConsiderations: [],
+
     constraints: [
       "Не придумывать факты, которых нет в библиотеке проекта.",
     ],
+
     sourcePriorities: [
       ...requestedPaths,
-      ...defaultPriorities[profile],
+      ...defaultPriorities[
+        profile
+      ],
     ],
   };
 }
@@ -297,23 +359,25 @@ function buildRetrievalSeed(
  * ==================================================
  * RETRIEVAL CONTEXT RESOLUTION
  * ==================================================
- *
- * Librarian builds the map.
- * Retriever chooses the diverse bounded package.
- * Route only materializes the selected package for the
- * Planner / Writer.
  */
 
 async function readSelectedItemContent(
   candidate: RetrievalCandidate
 ): Promise<string> {
-  const item = candidate.item;
+  const item =
+    candidate.item;
 
   if (!item) {
     return "";
   }
 
-  if (item.type === "radar_signal") {
+  /*
+   * Radar virtual source.
+   */
+  if (
+    item.type ===
+    "radar_signal"
+  ) {
     const metadata =
       item.radarMetadata
         ? `\nRADAR METADATA:\n${JSON.stringify(
@@ -326,36 +390,44 @@ async function readSelectedItemContent(
     return [
       item.title,
       item.purpose,
-      ...(item.keywords || []),
+      ...(item.keywords ||
+        []),
       metadata,
     ]
       .filter(Boolean)
       .join("\n");
   }
 
-  const relativePath = String(
-    item.path || ""
-  );
+  const relativePath =
+    String(
+      item.path || ""
+    );
 
   const absolutePath =
-    safeProjectPath(relativePath);
+    safeProjectPath(
+      relativePath
+    );
 
   if (!absolutePath) {
     return [
       item.title,
       item.purpose,
-      ...(item.keywords || []),
+      ...(item.keywords ||
+        []),
     ]
       .filter(Boolean)
       .join("\n");
   }
 
   try {
-    const stat = await fs.stat(
-      absolutePath
-    );
+    const stat =
+      await fs.stat(
+        absolutePath
+      );
 
-    if (!stat.isFile()) {
+    if (
+      !stat.isFile()
+    ) {
       return [
         item.title,
         item.purpose,
@@ -364,7 +436,10 @@ async function readSelectedItemContent(
         .join("\n");
     }
 
-    if (stat.size > 1_500_000) {
+    if (
+      stat.size >
+      1_500_000
+    ) {
       return [
         item.title,
         item.purpose,
@@ -381,7 +456,8 @@ async function readSelectedItemContent(
     return [
       item.title,
       item.purpose,
-      ...(item.keywords || []),
+      ...(item.keywords ||
+        []),
     ]
       .filter(Boolean)
       .join("\n");
@@ -397,26 +473,39 @@ async function buildRetrievedContext(
   sources: string[];
   context: string;
 }> {
-  const selected = includeRadar
-    ? retrievalPackage.selected
-    : retrievalPackage.selected.filter(
-        candidate =>
-          candidate.item?.type !==
-          "radar_signal"
-      );
+  const selected =
+    includeRadar
+      ? retrievalPackage.selected
+      : retrievalPackage.selected.filter(
+          candidate =>
+            candidate.item?.type !==
+            "radar_signal"
+        );
 
-  const blocks: string[] = [];
-  const sources: string[] = [];
-  let totalCharacters = 0;
+  const blocks: string[] =
+    [];
 
-  for (const candidate of selected) {
-    const item = candidate.item;
+  const sources: string[] =
+    [];
 
-    if (!item) continue;
+  let totalCharacters =
+    0;
+
+  for (
+    const candidate
+    of selected
+  ) {
+    const item =
+      candidate.item;
+
+    if (!item) {
+      continue;
+    }
 
     if (
       !includeRadar &&
-      item.type === "radar_signal"
+      item.type ===
+        "radar_signal"
     ) {
       continue;
     }
@@ -426,7 +515,9 @@ async function buildRetrievedContext(
         candidate
       );
 
-    if (!content.trim()) {
+    if (
+      !content.trim()
+    ) {
       continue;
     }
 
@@ -459,7 +550,8 @@ END SOURCE: ${pathLabel}
 `;
 
     const nextCharacters =
-      totalCharacters + block.length;
+      totalCharacters +
+      block.length;
 
     if (
       nextCharacters >
@@ -468,19 +560,32 @@ END SOURCE: ${pathLabel}
       continue;
     }
 
-    blocks.push(block);
-    sources.push(pathLabel);
+    blocks.push(
+      block
+    );
+
+    sources.push(
+      pathLabel
+    );
+
     totalCharacters =
       nextCharacters;
   }
 
   return {
-    filesLoaded: sources.length,
-    contextCharacters: totalCharacters,
+    filesLoaded:
+      sources.length,
+
+    contextCharacters:
+      totalCharacters,
+
     sources,
+
     context:
       blocks.length
-        ? blocks.join("\n")
+        ? blocks.join(
+            "\n"
+          )
         : `
 NO RETRIEVED PROJECT DOCUMENTS WERE LOADED.
 
@@ -617,54 +722,13 @@ function formatContext(
 
 /*
  * ==================================================
- * USER PROMPT
- * ==================================================
- */
-
-function buildUserPrompt(
-  task: string,
-  profile: ContextProfile,
-  context: string
-): string {
-  return `
-CONTEXT PROFILE:
-
-${profile}
-
-USER TASK:
-
-${task}
-
-RETRIEVED PROJECT CONTEXT:
-
-${formatContext(
-  context
-)}
-
-EXECUTION RULES:
-
-- Base project-specific conclusions on supplied documents.
-- Do not invent missing information.
-- If several documents disagree, identify the conflict.
-- Keep source paths when they matter.
-- If something is an inference, label it INFERENCE.
-- If something is unverified, label it HYPOTHESIS.
-- If a recommendation is made, label it RECOMMENDATION.
-- Use multiple relevant project materials.
-- Do not rely on one source when broader context is available.
-- Avoid generic repetitive output.
-- Produce a useful operational result.
-`;
-}
-
-/*
- * ==================================================
  * GEMINI
  * ==================================================
  */
 
 const GEMINI_API_KEY =
-  process.env.GEMINI_API_KEY || "";
+  process.env.GEMINI_API_KEY ||
+  "";
 
 async function callAI(
   systemPrompt: string,
@@ -675,7 +739,9 @@ async function callAI(
     responseSchema?: unknown;
   } = {}
 ) {
-  if (!GEMINI_API_KEY) {
+  if (
+    !GEMINI_API_KEY
+  ) {
     throw new Error(
       "GEMINI_API_KEY is not configured in environment variables."
     );
@@ -686,7 +752,8 @@ async function callAI(
 
   const timeoutId =
     setTimeout(
-      () => controller.abort(),
+      () =>
+        controller.abort(),
       60000
     );
 
@@ -698,13 +765,17 @@ async function callAI(
       await fetch(
         url,
         {
-          method: "POST",
+          method:
+            "POST",
+
           signal:
             controller.signal,
+
           headers: {
             "Content-Type":
               "application/json",
           },
+
           body:
             JSON.stringify({
               systemInstruction: {
@@ -715,9 +786,12 @@ async function callAI(
                   },
                 ],
               },
+
               contents: [
                 {
-                  role: "user",
+                  role:
+                    "user",
+
                   parts: [
                     {
                       text:
@@ -726,15 +800,20 @@ async function callAI(
                   ],
                 },
               ],
+
               generationConfig: {
-                temperature: 0.7,
+                temperature:
+                  0.7,
+
                 maxOutputTokens,
+
                 ...(options.responseMimeType
                   ? {
                       responseMimeType:
                         options.responseMimeType,
                     }
                   : {}),
+
                 ...(options.responseSchema
                   ? {
                       responseSchema:
@@ -749,7 +828,9 @@ async function callAI(
     const raw =
       await response.text();
 
-    if (!response.ok) {
+    if (
+      !response.ok
+    ) {
       throw new Error(
         `Gemini API error ${response.status}: ${raw.slice(
           0,
@@ -761,7 +842,10 @@ async function callAI(
     let data: any;
 
     try {
-      data = JSON.parse(raw);
+      data =
+        JSON.parse(
+          raw
+        );
     } catch {
       throw new Error(
         "Gemini API returned invalid JSON."
@@ -785,11 +869,14 @@ async function callAI(
 
     return {
       content,
+
       model:
         "gemini-2.5-flash",
+
       usage:
         data?.usageMetadata ||
         null,
+
       finishReason:
         data?.candidates?.[0]
           ?.finishReason ||
@@ -809,7 +896,9 @@ async function callAI(
  */
 
 export async function GET() {
-  if (!GEMINI_API_KEY) {
+  if (
+    !GEMINI_API_KEY
+  ) {
     return NextResponse.json({
       ok: false,
       error:
@@ -839,16 +928,22 @@ export async function GET() {
 
     return NextResponse.json({
       ok: true,
+
       service:
         "DanceContentEngine AI Gateway",
+
       provider:
         "Google Gemini",
-      keyExists: true,
+
+      keyExists:
+        true,
+
       availableModels,
     });
   } catch (err: any) {
     return NextResponse.json({
       ok: false,
+
       error:
         err?.message ||
         "Failed to fetch models from Google",
@@ -878,6 +973,7 @@ export async function POST(
       return NextResponse.json(
         {
           ok: false,
+
           error:
             "Invalid or empty JSON body in request.",
         },
@@ -887,6 +983,12 @@ export async function POST(
       );
     }
 
+    /*
+     * ------------------------------------------------
+     * REQUEST
+     * ------------------------------------------------
+     */
+
     const task =
       typeof body.task ===
       "string"
@@ -894,13 +996,21 @@ export async function POST(
         : "";
 
     const requestedPaths =
-      Array.isArray(body.paths)
+      Array.isArray(
+        body.paths
+      )
         ? body.paths.filter(
             item =>
               typeof item ===
               "string"
           )
         : [];
+
+    const requestedChannel =
+      typeof body.channel ===
+      "string"
+        ? body.channel.trim()
+        : "";
 
     const includeRadar =
       body.includeRadar !==
@@ -921,6 +1031,7 @@ export async function POST(
       return NextResponse.json(
         {
           ok: false,
+
           error:
             "Task is required.",
         },
@@ -931,9 +1042,9 @@ export async function POST(
     }
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * LIBRARIAN → RETRIEVER
-     * ==================================================
+     * ------------------------------------------------
      */
 
     const retrievalSeed =
@@ -950,6 +1061,7 @@ export async function POST(
         {
           maxCharacters:
             RETRIEVAL_MAX_CHARACTERS,
+
           maxSources:
             RETRIEVAL_MAX_SOURCES,
         }
@@ -962,9 +1074,9 @@ export async function POST(
       );
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * OUTPUT CONTRACT
-     * ==================================================
+     * ------------------------------------------------
      */
 
     const outputContract =
@@ -972,38 +1084,98 @@ export async function POST(
         task
       );
 
-      const strategyContext =
-  await loadStrategyContext();
+    /*
+     * ------------------------------------------------
+     * CONTENT STRATEGY
+     * ------------------------------------------------
+     */
+
+    const strategyContext =
+      await loadStrategyContext();
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * CONTENT PLANNER
-     * ==================================================
+     * ------------------------------------------------
+     *
+     * Important:
+     *
+     * requestedChannel is passed explicitly.
+     *
+     * If it exists, Planner MUST use it.
+     * If empty, Planner chooses channel according
+     * to the strategic documents.
      */
 
     const planner =
-  await callAI(
-    buildPlannerSystemPrompt(),
-    buildPlannerUserPrompt({
-      task,
-      profile,
-      context:
-        retrieved.context,
-      strategyContext,
-    }),
-    6000,
-    {
-      responseMimeType:
-        "application/json",
-      responseSchema:
-        CONTENT_PLAN_SCHEMA,
-    }
-  );
+      await callAI(
+        buildPlannerSystemPrompt(),
+
+        buildPlannerUserPrompt({
+          task,
+
+          profile,
+
+          context:
+            retrieved.context,
+
+          strategyContext,
+
+          requestedChannel,
+        }),
+
+        6000,
+
+        {
+          responseMimeType:
+            "application/json",
+
+          responseSchema:
+            CONTENT_PLAN_SCHEMA,
+        }
+      );
 
     const contentPlan =
       parseContentPlan(
         planner.content
       );
+
+    /*
+     * ------------------------------------------------
+     * CHANNEL SAFETY CHECK
+     * ------------------------------------------------
+     *
+     * If the request explicitly specified a channel,
+     * Planner's answer must match it.
+     *
+     * This protects the architecture from an LLM
+     * silently switching to another channel.
+     */
+
+    if (
+      requestedChannel &&
+      contentPlan.channel !==
+        requestedChannel
+    ) {
+      console.warn(
+        "PLANNER CHANNEL OVERRIDE:",
+        {
+          requestedChannel,
+          plannerChannel:
+            contentPlan.channel,
+        }
+      );
+
+      contentPlan.channel =
+        requestedChannel;
+
+      contentPlan.constraints =
+        [
+          ...contentPlan.constraints,
+
+          `Explicit channel requirement: ${requestedChannel}. Planner output was normalized to the requested channel.`,
+        ];
+    }
 
     const plannerBrief =
       formatContentPlanForWriter(
@@ -1011,9 +1183,9 @@ export async function POST(
       );
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * WRITER
-     * ==================================================
+     * ------------------------------------------------
      */
 
     const writerSystemPrompt =
@@ -1031,7 +1203,17 @@ CONTENT PLANNER EXECUTION LAYER
 ==================================================
 
 The Content Planner has already converted the user's request into a strategic execution brief.
-Use this brief as planning guidance, but treat the retrieved project sources as the factual source of truth.
+
+The selected PRIMARY CHANNEL is authoritative.
+
+The Writer MUST follow the PRIMARY CHANNEL specified in the Content Planner Brief.
+
+Do not silently move the content to another channel.
+
+The Writer must adapt tone, depth, structure, CTA and presentation to the selected channel.
+
+Treat the retrieved project sources as the factual source of truth.
+
 Do not invent information that is absent from the sources.
 
 ${plannerBrief}
@@ -1046,9 +1228,16 @@ ${writerSystemPrompt}
     const userPrompt =
       buildWriterUserPrompt({
         task,
+
         profile,
+
         context:
-          `${plannerBrief}\n\nRETRIEVED PROJECT CONTEXT:\n${retrieved.context}`,
+          `${plannerBrief}
+
+RETRIEVED PROJECT CONTEXT:
+
+${retrieved.context}`,
+
         outputContract,
       });
 
@@ -1060,26 +1249,31 @@ ${writerSystemPrompt}
       );
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * VALIDATOR
-     * ==================================================
+     * ------------------------------------------------
      */
 
     const validation =
       await validateWriterOutput({
         task,
+
         outputContract,
-        content: ai.content,
+
+        content:
+          ai.content,
+
         context:
           retrieved.context,
+
         projectRoot:
           PROJECT_ROOT,
       });
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * RESPONSE
-     * ==================================================
+     * ------------------------------------------------
      */
 
     return NextResponse.json({
@@ -1089,13 +1283,21 @@ ${writerSystemPrompt}
         ai.content,
 
       meta: {
-  profile,
-  outputContract,
-  contentPlan,
-  strategyDocuments: STRATEGY_FILES,
+        profile,
 
-  plannerModel:
-    planner.model,
+        requestedChannel:
+          requestedChannel ||
+          null,
+
+        outputContract,
+
+        contentPlan,
+
+        strategyDocuments:
+          STRATEGY_FILES,
+
+        plannerModel:
+          planner.model,
 
         model:
           ai.model,
@@ -1118,8 +1320,10 @@ ${writerSystemPrompt}
         retrieval: {
           limits:
             retrievalPackage.limits,
+
           composition:
             retrievalPackage.composition,
+
           selected:
             retrievalPackage.selected.map(
               candidate => ({
@@ -1127,17 +1331,21 @@ ${writerSystemPrompt}
                   candidate.item?.path ||
                   candidate.item?.title ||
                   "",
+
                 role:
                   candidate.role ||
                   candidate.item?.sourceRole ||
                   candidate.item?.type ||
                   "source",
+
                 relevance:
                   candidate.relevance ??
                   null,
+
                 size:
                   candidate.size ??
                   null,
+
                 reasons:
                   candidate.reasons ||
                   [],
@@ -1161,12 +1369,16 @@ ${writerSystemPrompt}
         validation: {
           status:
             validation.status,
+
           score:
             validation.score,
+
           summary:
             validation.summary,
+
           violations:
             validation.violations,
+
           rulesLoaded:
             validation.rulesLoaded,
         },
@@ -1181,6 +1393,7 @@ ${writerSystemPrompt}
     return NextResponse.json(
       {
         ok: false,
+
         error:
           error instanceof Error
             ? error.message
