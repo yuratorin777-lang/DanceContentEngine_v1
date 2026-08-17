@@ -1,6 +1,7 @@
 ﻿import os
 import glob
 import time
+import shutil
 import requests
 from datetime import datetime
 import whisper
@@ -10,6 +11,7 @@ from watchdog.events import FileSystemEventHandler
 # --- КОНФИГУРАЦИЯ ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_DIR = os.path.join(BASE_DIR, "08_input")
+PROCESSED_DIR = os.path.join(INPUT_DIR, "_processed")
 KNOWLEDGE_DIR = os.path.join(BASE_DIR, "01_KNOWLEDGE")
 
 # Твой URL на Vercel
@@ -46,14 +48,24 @@ def clean_via_vercel(raw_text, filename):
 
 def process_single_file(file_path):
     """Обрабатывает один конкретный аудиофайл"""
+    # Если файл находится внутри папки _processed — игнорируем
+    if os.path.commonpath([file_path, PROCESSED_DIR]) == PROCESSED_DIR:
+        return False
+
     filename = os.path.basename(file_path)
     name_without_ext, _ = os.path.splitext(filename)
     date_prefix = datetime.now().strftime("%Y-%m-%d")
     topic_folder_name = f"{date_prefix}_{name_without_ext}"
     expected_md_path = os.path.join(KNOWLEDGE_DIR, topic_folder_name, "raw_parts", f"{name_without_ext}.md")
 
+    # Проверка: если md уже создан, просто перемещаем исходник в _processed
     if os.path.exists(expected_md_path):
         print(f"⏭️ Пропуск (уже обработан): {filename}")
+        dest_path = os.path.join(PROCESSED_DIR, filename)
+        if os.path.exists(dest_path):
+            os.remove(dest_path)
+        shutil.move(file_path, dest_path)
+        print(f"📦 Файл перемещен в 08_input/_processed/{filename}")
         return False
 
     print(f"\n⏳ 1/2 Транскрибация локально: {filename}...")
@@ -76,21 +88,33 @@ def process_single_file(file_path):
         f.write("--- \n\n")
         f.write(cleaned_transcript)
 
-    print(f"✅ Успешно! Файл сохранен: 01_KNOWLEDGE/{topic_folder_name}/raw_parts/{name_without_ext}.md\n")
+    print(f"✅ Успешно! Файл сохранен: 01_KNOWLEDGE/{topic_folder_name}/raw_parts/{name_without_ext}.md")
+
+    # Перемещение обработанного аудиофайла в 08_input/_processed
+    os.makedirs(PROCESSED_DIR, exist_ok=True)
+    dest_path = os.path.join(PROCESSED_DIR, filename)
+    if os.path.exists(dest_path):
+        os.remove(dest_path)
+    shutil.move(file_path, dest_path)
+    print(f"📦 Исходное аудио перемещено в: 08_input/_processed/{filename}\n")
     return True
 
 def process_all_existing():
     """Сканирует папку 08_input и обрабатывает все новые файлы"""
     os.makedirs(INPUT_DIR, exist_ok=True)
+    os.makedirs(PROCESSED_DIR, exist_ok=True)
     os.makedirs(KNOWLEDGE_DIR, exist_ok=True)
 
     extensions = ("*.aac", "*.mp3", "*.m4a", "*.wav", "*.ogg")
     audio_files = []
     for ext in extensions:
-        audio_files.extend(glob.glob(os.path.join(INPUT_DIR, ext)))
+        # Берем только файлы из корня 08_input, не включая подпапку _processed
+        for f in glob.glob(os.path.join(INPUT_DIR, ext)):
+            if os.path.isfile(f):
+                audio_files.append(f)
 
     if not audio_files:
-        print("📥 В папке 08_input пока нет файлов.")
+        print("📥 В папке 08_input пока нет новых файлов.")
         return
 
     for file_path in audio_files:
@@ -103,14 +127,18 @@ class AudioFolderHandler(FileSystemEventHandler):
             return
         valid_exts = ('.aac', '.mp3', '.m4a', '.wav', '.ogg')
         if event.src_path.lower().endswith(valid_exts):
+            # Игнорируем файлы, попавшие в _processed
+            if "_processed" in event.src_path:
+                return
             print(f"\n🔔 Обнаружен новый файл: {os.path.basename(event.src_path)}")
-            # Небольшая пауза, чтобы файл успел полностью дописаться на диск
+            # Пауза для полной записи файла на диск
             time.sleep(2)
             process_single_file(event.src_path)
 
 def start_watching():
     """Запускает режим непрерывного наблюдения"""
     os.makedirs(INPUT_DIR, exist_ok=True)
+    os.makedirs(PROCESSED_DIR, exist_ok=True)
     os.makedirs(KNOWLEDGE_DIR, exist_ok=True)
 
     # 1. Сначала обрабатываем всё, что уже есть
