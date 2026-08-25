@@ -21,8 +21,6 @@ import {
   CONTENT_PLAN_SCHEMA,
 } from "../../../../../../07_AUTOMATION/content-planner";
 
-
-
 import {
   validateWriterOutput,
 } from "../../../../../../07_AUTOMATION/validator";
@@ -1171,9 +1169,9 @@ export async function POST(
     }
 
     const plannerBrief =
-  formatContentPlanForWriter(
-    contentPlan
-  );
+      formatContentPlanForWriter(
+        contentPlan
+      );
 
     /*
      * ------------------------------------------------
@@ -1286,8 +1284,8 @@ ${retrieved.context}`,
 
         contentPlan,
 
-strategyDocuments:
-  STRATEGY_FILES,
+        strategyDocuments:
+          STRATEGY_FILES,
 
         plannerModel:
           planner.model,
