@@ -34,7 +34,7 @@ import {
 } from "../../../../../../07_AUTOMATION/content-planner/weekly-plan";
 
 import {
-  saveWeeklyContentPlan,
+  buildWeeklyContentPlanResult,
 } from "../../../../../../07_AUTOMATION/content-planner/weekly-plan-store";
 
 export const runtime = "nodejs";
@@ -1553,34 +1553,24 @@ if (
   );
 }
 
-      const storedWeeklyPlan =
-        await saveWeeklyContentPlan({
-          projectRoot:
-            PROJECT_ROOT,
-
-          task,
-
-          profile,
-
-          requestedChannels:
-            weeklyChannels,
-
-          plan:
-            weeklyPlan,
-        });
+      const weeklyPlanResult =
+  buildWeeklyContentPlanResult({
+    task,
+    profile,
+    requestedChannels:
+      weeklyChannels,
+    plan:
+      weeklyPlan,
+  });
 
       return NextResponse.json({
-        ok: true,
-
-        mode:
-          "WEEKLY_PLAN",
-
-        weeklyContentPlan:
-          weeklyPlan,
-
-        storedWeeklyPlan,
-
-        meta: {
+  ok: true,
+  mode:
+    "WEEKLY_PLAN",
+  weeklyContentPlan:
+    weeklyPlan,
+  weeklyPlanResult,
+  meta: {
           profile,
 
           requestedChannels:
