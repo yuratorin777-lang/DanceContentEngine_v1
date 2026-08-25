@@ -26,6 +26,17 @@ import {
   validateWriterOutput,
 } from "../../../../../../07_AUTOMATION/validator";
 
+import {
+  buildWeeklyPlannerSystemPrompt,
+  buildWeeklyPlannerUserPrompt,
+  parseWeeklyContentPlan,
+  WEEKLY_CONTENT_PLAN_SCHEMA,
+} from "../../../../../../07_AUTOMATION/content-planner/weekly-plan";
+
+import {
+  saveWeeklyContentPlan,
+} from "../../../../../../07_AUTOMATION/content-planner/weekly-plan-store";
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -170,6 +181,7 @@ type AIRequest = {
   paths?: string[];
   includeRadar?: boolean;
   channel?: string;
+  channels?: string[];
 };
 
 type RetrievalItem = {
@@ -1320,14 +1332,36 @@ export async function POST(
         : [];
 
     const requestedChannel =
-      typeof body.channel ===
-      "string"
-        ? body.channel.trim()
-        : "";
+  typeof body.channel ===
+  "string"
+    ? body.channel.trim()
+    : "";
 
-    const includeRadar =
-      body.includeRadar !==
-      false;
+const requestedChannels =
+  Array.isArray(body.channels)
+    ? body.channels.filter(
+        item =>
+          typeof item === "string" &&
+          item.trim() !== ""
+      ).map(
+        item => item.trim()
+      )
+    : [];
+
+const weeklyChannels =
+  requestedChannels.length > 0
+    ? requestedChannels
+    : requestedChannel
+      ? [requestedChannel]
+      : [
+          "VK",
+          "Telegram",
+          "Website / SEO",
+        ];
+
+const includeRadar =
+  body.includeRadar !==
+  false;
 
     const profile:
       ContextProfile =
@@ -1457,6 +1491,120 @@ export async function POST(
       );
     }
 
+/*
+     * ------------------------------------------------
+     * CONTENT STRATEGY
+     * ------------------------------------------------
+     */
+
+    const strategyContext =
+      await loadStrategyContext();
+
+      /*
+     * ------------------------------------------------
+     * WEEKLY CONTENT PLAN
+     * ------------------------------------------------
+     */
+
+    if (
+      body.mode === "WEEKLY_PLAN"
+    ) {
+      const weeklyPlanner =
+        await callAI(
+          buildWeeklyPlannerSystemPrompt(),
+
+          buildWeeklyPlannerUserPrompt({
+            task,
+
+            profile,
+
+            analystContext:
+              analystContext.context,
+
+            strategyContext,
+
+            requestedChannels:
+              weeklyChannels,
+
+            periodDays: 7,
+          }),
+
+          8000,
+
+          {
+            responseMimeType:
+              "application/json",
+
+            responseSchema:
+              WEEKLY_CONTENT_PLAN_SCHEMA,
+          }
+        );
+
+      const weeklyPlan =
+        parseWeeklyContentPlan(
+          weeklyPlanner.content
+        );
+
+      const storedWeeklyPlan =
+        await saveWeeklyContentPlan({
+          projectRoot:
+            PROJECT_ROOT,
+
+          task,
+
+          profile,
+
+          requestedChannels:
+            weeklyChannels,
+
+          plan:
+            weeklyPlan,
+        });
+
+      return NextResponse.json({
+        ok: true,
+
+        mode:
+          "WEEKLY_PLAN",
+
+        weeklyContentPlan:
+          weeklyPlan,
+
+        storedWeeklyPlan,
+
+        meta: {
+          profile,
+
+          requestedChannels:
+            weeklyChannels,
+
+          analystEvidence: {
+            filesLoaded:
+              analystContext.filesLoaded,
+
+            contextCharacters:
+              analystContext.contextCharacters,
+
+            sources:
+              analystContext.sources,
+          },
+
+          strategyDocuments:
+            STRATEGY_FILES,
+
+          plannerModel:
+            weeklyPlanner.model,
+
+          plannerUsage:
+            weeklyPlanner.usage,
+
+          durationMs:
+            Date.now() -
+            started,
+        },
+      });
+    }
+
     /*
      * ------------------------------------------------
      * OUTPUT CONTRACT
@@ -1467,15 +1615,6 @@ export async function POST(
       detectWriterOutputContract(
         task
       );
-
-    /*
-     * ------------------------------------------------
-     * CONTENT STRATEGY
-     * ------------------------------------------------
-     */
-
-    const strategyContext =
-      await loadStrategyContext();
 
     /*
      * ------------------------------------------------
