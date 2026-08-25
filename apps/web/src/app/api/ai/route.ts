@@ -72,8 +72,7 @@ function resolveProjectRoot(): string {
   return cwd;
 }
 
-const PROJECT_ROOT =
-  resolveProjectRoot();
+const PROJECT_ROOT = resolveProjectRoot();
 
 /*
  * ==================================================
@@ -90,29 +89,23 @@ const STRATEGY_FILES = [
 async function loadStrategyContext(): Promise<string> {
   const blocks: string[] = [];
 
-  for (
-    const relativePath of STRATEGY_FILES
-  ) {
-    const absolutePath =
-      path.join(
-        PROJECT_ROOT,
-        relativePath
-      );
+  for (const relativePath of STRATEGY_FILES) {
+    const absolutePath = path.join(
+      PROJECT_ROOT,
+      relativePath
+    );
 
     try {
-      const content =
-        await fs.readFile(
-          absolutePath,
-          "utf8"
-        );
+      const content = await fs.readFile(
+        absolutePath,
+        "utf8"
+      );
 
       blocks.push(`
 ==================================================
 STRATEGIC DOCUMENT: ${relativePath}
 ==================================================
-
 ${content}
-
 ==================================================
 END STRATEGIC DOCUMENT: ${relativePath}
 ==================================================
@@ -143,24 +136,16 @@ and must not invent strategic rules.
  * ==================================================
  */
 
-const RETRIEVAL_MAX_CHARACTERS =
-  180_000;
-
-const RETRIEVAL_MAX_SOURCES =
-  30;
+const RETRIEVAL_MAX_CHARACTERS = 180_000;
+const RETRIEVAL_MAX_SOURCES = 30;
 
 /*
  * ==================================================
  * ANALYST EVIDENCE LIMITS
  * ==================================================
- *
- * Analyst evidence is separate from Retriever.
- *
- * Planner receives this layer as mandatory evidence.
  */
 
-const ANALYST_MAX_CHARACTERS =
-  90_000;
+const ANALYST_MAX_CHARACTERS = 90_000;
 
 /*
  * ==================================================
@@ -192,8 +177,7 @@ type RetrievalItem = {
   fileName?: string;
   sourceRole?: string;
   keywords?: string[];
-  radarMetadata?:
-    Record<string, unknown> | null;
+  radarMetadata?: Record<string, unknown> | null;
 };
 
 type RetrievalCandidate = {
@@ -210,10 +194,8 @@ type RetrievalPackage = {
     maxCharacters: number;
     maxSources: number;
   };
-  composition:
-    Record<string, number>;
-  selected:
-    RetrievalCandidate[];
+  composition: Record<string, number>;
+  selected: RetrievalCandidate[];
 };
 
 type ContextBuildResult = {
@@ -232,26 +214,23 @@ type ContextBuildResult = {
 function safeProjectPath(
   relativePath: string
 ): string | null {
-  const normalized =
-    relativePath
-      .replace(/\\/g, "/")
-      .replace(/^\/+/, "");
+  const normalized = relativePath
+    .replace(/\\/g, "/")
+    .replace(/^\/+/, "");
 
   /*
    * Radar virtual references are never
    * directly materialized as files.
    */
-  if (
-    normalized.includes("#signal-")
-  ) {
+
+  if (normalized.includes("#signal-")) {
     return null;
   }
 
-  const absolute =
-    path.resolve(
-      PROJECT_ROOT,
-      normalized
-    );
+  const absolute = path.resolve(
+    PROJECT_ROOT,
+    normalized
+  );
 
   if (
     absolute !== PROJECT_ROOT &&
@@ -321,23 +300,12 @@ function buildRetrievalSeed(
 
   return {
     audience: "",
-
-    topic:
-      task,
-
-    subtopic:
-      profile,
-
-    goal:
-      task,
-
+    topic: task,
+    subtopic: profile,
+    goal: task,
     audienceNeed: "",
-
-    keyMessage:
-      task,
-
-    contentAngle:
-      task,
+    keyMessage: task,
+    contentAngle: task,
 
     researchSignals: [],
 
@@ -374,8 +342,7 @@ function buildRetrievalSeed(
 async function readSelectedItemContent(
   candidate: RetrievalCandidate
 ): Promise<string> {
-  const item =
-    candidate.item;
+  const item = candidate.item;
 
   if (!item) {
     return "";
@@ -384,17 +351,17 @@ async function readSelectedItemContent(
   /*
    * Radar virtual source.
    */
-  if (
-    item.type === "radar_signal"
-  ) {
-    const metadata =
-      item.radarMetadata
-        ? `\nRADAR METADATA:\n${JSON.stringify(
-            item.radarMetadata,
-            null,
-            2
-          )}`
-        : "";
+
+  if (item.type === "radar_signal") {
+    const metadata = item.radarMetadata
+      ? `
+RADAR METADATA:
+${JSON.stringify(
+  item.radarMetadata,
+  null,
+  2
+)}`
+      : "";
 
     return [
       item.title,
@@ -406,15 +373,12 @@ async function readSelectedItemContent(
       .join("\n");
   }
 
-  const relativePath =
-    String(
-      item.path || ""
-    );
+  const relativePath = String(
+    item.path || ""
+  );
 
   const absolutePath =
-    safeProjectPath(
-      relativePath
-    );
+    safeProjectPath(relativePath);
 
   if (!absolutePath) {
     return [
@@ -427,10 +391,9 @@ async function readSelectedItemContent(
   }
 
   try {
-    const stat =
-      await fs.stat(
-        absolutePath
-      );
+    const stat = await fs.stat(
+      absolutePath
+    );
 
     if (!stat.isFile()) {
       return [
@@ -441,10 +404,7 @@ async function readSelectedItemContent(
         .join("\n");
     }
 
-    if (
-      stat.size >
-      1_500_000
-    ) {
+    if (stat.size > 1_500_000) {
       return [
         item.title,
         item.purpose,
@@ -482,25 +442,21 @@ async function buildRetrievedContext(
   retrievalPackage: RetrievalPackage,
   includeRadar: boolean
 ): Promise<ContextBuildResult> {
-  const selected =
-    includeRadar
-      ? retrievalPackage.selected
-      : retrievalPackage.selected.filter(
-          candidate =>
-            candidate.item?.type !==
-            "radar_signal"
-        );
+  const selected = includeRadar
+    ? retrievalPackage.selected
+    : retrievalPackage.selected.filter(
+        (candidate) =>
+          candidate.item?.type !==
+          "radar_signal"
+      );
 
   const blocks: string[] = [];
   const sources: string[] = [];
 
   let totalCharacters = 0;
 
-  for (
-    const candidate of selected
-  ) {
-    const item =
-      candidate.item;
+  for (const candidate of selected) {
+    const item = candidate.item;
 
     if (!item) {
       continue;
@@ -508,8 +464,7 @@ async function buildRetrievedContext(
 
     if (
       !includeRadar &&
-      item.type ===
-        "radar_signal"
+      item.type === "radar_signal"
     ) {
       continue;
     }
@@ -519,35 +474,29 @@ async function buildRetrievedContext(
         candidate
       );
 
-    if (
-      !content.trim()
-    ) {
+    if (!content.trim()) {
       continue;
     }
 
-    const pathLabel =
-      String(
-        item.path ||
-          item.title ||
-          "unknown-source"
-      );
+    const pathLabel = String(
+      item.path ||
+        item.title ||
+        "unknown-source"
+    );
 
-    const role =
-      String(
-        candidate.role ||
-          item.sourceRole ||
-          item.type ||
-          "source"
-      );
+    const role = String(
+      candidate.role ||
+        item.sourceRole ||
+        item.type ||
+        "source"
+    );
 
     const block = `
 ==================================================
 SOURCE: ${pathLabel}
 ROLE: ${role}
 ==================================================
-
 ${content}
-
 ==================================================
 END SOURCE: ${pathLabel}
 ==================================================
@@ -572,21 +521,20 @@ END SOURCE: ${pathLabel}
   }
 
   return {
-    filesLoaded:
-      sources.length,
+    filesLoaded: sources.length,
 
     contextCharacters:
       totalCharacters,
 
     sources,
 
-    context:
-      blocks.length
-        ? blocks.join("\n")
-        : `
+    context: blocks.length
+      ? blocks.join("\n")
+      : `
 NO RETRIEVED PROJECT DOCUMENTS WERE LOADED.
 
 Do not invent project-specific information.
+
 State that the required context is missing.
 `,
   };
@@ -597,20 +545,21 @@ State that the required context is missing.
  * ANALYST EVIDENCE
  * ==================================================
  *
- * IMPORTANT ARCHITECTURE:
+ * Analyst evidence is independent from Retriever.
  *
- * Planner does NOT depend on the generic 30-source
- * Retriever package for Analyst evidence.
+ * Planner receives this layer as mandatory evidence.
  *
- * Analyst output is a persistent research layer
- * stored in:
+ * Source:
  *
  * 02_RESEARCH/Аналитик
  *
- * This function reads that layer directly.
+ * or:
  *
- * Planner therefore has a deterministic analytical
- * basis independent of the broad Writer retrieval.
+ * 02_RESEARCH/Analyst
+ */
+
+/*
+ * Recursively collect Markdown files.
  */
 
 async function collectMarkdownFiles(
@@ -621,38 +570,29 @@ async function collectMarkdownFiles(
   let entries: fsSync.Dirent[];
 
   try {
-    entries =
-      await fs.readdir(
-        directory,
-        {
-          withFileTypes: true,
-        }
-      );
+    entries = await fs.readdir(
+      directory,
+      {
+        withFileTypes: true,
+      }
+    );
   } catch {
     return result;
   }
 
-  for (
-    const entry of entries
-  ) {
-    const fullPath =
-      path.join(
-        directory,
-        entry.name
-      );
+  for (const entry of entries) {
+    const fullPath = path.join(
+      directory,
+      entry.name
+    );
 
-    if (
-      entry.isDirectory()
-    ) {
+    if (entry.isDirectory()) {
       const nested =
         await collectMarkdownFiles(
           fullPath
         );
 
-      result.push(
-        ...nested
-      );
-
+      result.push(...nested);
       continue;
     }
 
@@ -672,10 +612,9 @@ async function collectMarkdownFiles(
 function isAnalystDocument(
   filePath: string
 ): boolean {
-  const normalized =
-    filePath
-      .replace(/\\/g, "/")
-      .toLowerCase();
+  const normalized = filePath
+    .replace(/\\/g, "/")
+    .toLowerCase();
 
   return (
     normalized.includes(
@@ -706,36 +645,29 @@ async function buildAnalystEvidenceContext(): Promise<
 
   const files: string[] = [];
 
-  for (
-    const directory of analystDirectories
-  ) {
+  for (const directory of analystDirectories) {
     const found =
       await collectMarkdownFiles(
         directory
       );
 
-    files.push(
-      ...found
-    );
+    files.push(...found);
   }
 
   /*
    * Deduplicate paths.
    */
-  const uniqueFiles =
-    Array.from(
-      new Set(files)
-    );
+
+  const uniqueFiles = Array.from(
+    new Set(files)
+  );
 
   /*
    * Deterministic ordering.
    */
-  uniqueFiles.sort(
-    (a, b) =>
-      a.localeCompare(
-        b,
-        "ru"
-      )
+
+  uniqueFiles.sort((a, b) =>
+    a.localeCompare(b, "ru")
   );
 
   const blocks: string[] = [];
@@ -743,12 +675,12 @@ async function buildAnalystEvidenceContext(): Promise<
 
   let totalCharacters = 0;
 
-  for (
-    const absolutePath of uniqueFiles
-  ) {
+  for (const absolutePath of uniqueFiles) {
     /*
-     * Safety: only Analyst documents.
+     * Safety:
+     * only Analyst documents.
      */
+
     if (
       !isAnalystDocument(
         absolutePath
@@ -758,21 +690,15 @@ async function buildAnalystEvidenceContext(): Promise<
     }
 
     try {
-      const stat =
-        await fs.stat(
-          absolutePath
-        );
+      const stat = await fs.stat(
+        absolutePath
+      );
 
-      if (
-        !stat.isFile()
-      ) {
+      if (!stat.isFile()) {
         continue;
       }
 
-      if (
-        stat.size >
-        1_500_000
-      ) {
+      if (stat.size > 1_500_000) {
         continue;
       }
 
@@ -782,29 +708,24 @@ async function buildAnalystEvidenceContext(): Promise<
           "utf8"
         );
 
-      if (
-        !content.trim()
-      ) {
+      if (!content.trim()) {
         continue;
       }
 
       const relativePath =
-        path.relative(
-          PROJECT_ROOT,
-          absolutePath
-        ).replace(
-          /\\/g,
-          "/"
-        );
+        path
+          .relative(
+            PROJECT_ROOT,
+            absolutePath
+          )
+          .replace(/\\/g, "/");
 
       const block = `
 ==================================================
 ANALYST EVIDENCE SOURCE: ${relativePath}
 ROLE: analyst_primary
 ==================================================
-
 ${content}
-
 ==================================================
 END ANALYST EVIDENCE SOURCE: ${relativePath}
 ==================================================
@@ -836,21 +757,20 @@ END ANALYST EVIDENCE SOURCE: ${relativePath}
   }
 
   return {
-    filesLoaded:
-      sources.length,
+    filesLoaded: sources.length,
 
     contextCharacters:
       totalCharacters,
 
     sources,
 
-    context:
-      blocks.length
-        ? blocks.join("\n")
-        : `
+    context: blocks.length
+      ? blocks.join("\n")
+      : `
 NO ANALYST EVIDENCE WAS LOADED.
 
 The Content Planner MUST NOT invent:
+
 - audience findings;
 - market findings;
 - competitor findings;
@@ -880,6 +800,7 @@ You are the AI execution layer of DanceContentEngine_v1.
 You are an executor working inside an existing project methodology.
 
 CONTEXT PROFILE:
+
 ${profile}
 
 Read the supplied context before acting.
@@ -971,23 +892,31 @@ The Writer does not replace the Content Plan.
 PROFILE BEHAVIOR:
 
 CONTENT
+
 - use the Analyst evidence as the strategic
   evidence base for the Content Plan;
+
 - use broad project knowledge only later,
   during Writer execution;
+
 - use Radar only when relevant.
 
 RESEARCH
+
 - prioritize research evidence;
+
 - focus on findings, gaps, contradictions
   and evidence.
 
 ANALYTICS
+
 - prioritize analytics;
+
 - use research and audience information
   when relevant.
 
 GENERAL
+
 - use the most relevant supplied context.
 
 GENERAL DATA FLOW:
@@ -1007,33 +936,42 @@ INPUT
 ROLES:
 
 LIBRARIAN
+
 Maintains the factual map of the information library.
 
 RETRIEVER
+
 Builds a bounded and diverse context package
 for content production.
 
 ANALYST
+
 Researches and structures evidence.
 
 RADAR
+
 Collects external signals.
 
 EDITOR
+
 Structures knowledge and controls quality.
 
 CONTENT PLANNER
+
 Converts Analyst evidence into a strategic
 Content Plan.
 
 WRITER
+
 Creates the final content using the Content Plan
 and wider project context.
 
 SEO ENGINE
+
 Works with search demand.
 
 ANALYTICS
+
 Measures results.
 
 The LLM executes these roles according
@@ -1066,8 +1004,7 @@ function formatContext(
  */
 
 const GEMINI_API_KEY =
-  process.env.GEMINI_API_KEY ||
-  "";
+  process.env.GEMINI_API_KEY || "";
 
 async function callAI(
   systemPrompt: string,
@@ -1087,75 +1024,71 @@ async function callAI(
   const controller =
     new AbortController();
 
-  const timeoutId =
-    setTimeout(
-      () =>
-        controller.abort(),
-      60000
-    );
+  const timeoutId = setTimeout(
+    () => controller.abort(),
+    60000
+  );
 
   try {
     const url =
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
     const response =
-      await fetch(
-        url,
-        {
-          method: "POST",
-          signal:
-            controller.signal,
-          headers: {
-            "Content-Type":
-              "application/json",
+      await fetch(url, {
+        method: "POST",
+
+        signal:
+          controller.signal,
+
+        headers: {
+          "Content-Type":
+            "application/json",
+        },
+
+        body: JSON.stringify({
+          systemInstruction: {
+            parts: [
+              {
+                text:
+                  systemPrompt,
+              },
+            ],
           },
 
-          body:
-            JSON.stringify({
-              systemInstruction: {
-                parts: [
-                  {
-                    text:
-                      systemPrompt,
-                  },
-                ],
-              },
+          contents: [
+            {
+              role: "user",
 
-              contents: [
+              parts: [
                 {
-                  role: "user",
-
-                  parts: [
-                    {
-                      text:
-                        userPrompt,
-                    },
-                  ],
+                  text:
+                    userPrompt,
                 },
               ],
+            },
+          ],
 
-              generationConfig: {
-                temperature: 0.7,
+          generationConfig: {
+            temperature: 0.7,
 
-                maxOutputTokens,
+            maxOutputTokens,
 
-                ...(options.responseMimeType
-                  ? {
-                      responseMimeType:
-                        options.responseMimeType,
-                    }
-                  : {}),
+            ...(options.responseMimeType
+              ? {
+                  responseMimeType:
+                    options.responseMimeType,
+                }
+              : {}),
 
-                ...(options.responseSchema
-                  ? {
-                      responseSchema:
-                        options.responseSchema,
-                    }
-                  : {}),
-              },
-            }),
-        }
-      );
+            ...(options.responseSchema
+              ? {
+                  responseSchema:
+                    options.responseSchema,
+                }
+              : {}),
+          },
+        }),
+      });
 
     const raw =
       await response.text();
@@ -1172,8 +1105,7 @@ async function callAI(
     let data: any;
 
     try {
-      data =
-        JSON.parse(raw);
+      data = JSON.parse(raw);
     } catch {
       throw new Error(
         "Gemini API returned invalid JSON."
@@ -1186,8 +1118,7 @@ async function callAI(
         ?.text;
 
     if (
-      typeof content !==
-        "string" ||
+      typeof content !== "string" ||
       !content.trim()
     ) {
       throw new Error(
@@ -1199,21 +1130,17 @@ async function callAI(
       content,
 
       model:
-        "gemini-3.5-flash-lite",
+        "gemini-2.5-flash",
 
       usage:
-        data?.usageMetadata ||
-        null,
+        data?.usageMetadata || null,
 
       finishReason:
         data?.candidates?.[0]
-          ?.finishReason ||
-        null,
+          ?.finishReason || null,
     };
   } finally {
-    clearTimeout(
-      timeoutId
-    );
+    clearTimeout(timeoutId);
   }
 }
 
@@ -1227,16 +1154,16 @@ export async function GET() {
   if (!GEMINI_API_KEY) {
     return NextResponse.json({
       ok: false,
+
       error:
         "GEMINI_API_KEY is missing",
     });
   }
 
   try {
-    const res =
-      await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
-      );
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
+    );
 
     const data =
       await res.json();
@@ -1261,8 +1188,7 @@ export async function GET() {
       provider:
         "Google Gemini",
 
-      keyExists:
-        true,
+      keyExists: true,
 
       availableModels,
     });
@@ -1286,10 +1212,15 @@ export async function GET() {
 export async function POST(
   request: NextRequest
 ) {
-  const started =
-    Date.now();
+  const started = Date.now();
 
   try {
+    /*
+     * ------------------------------------------------
+     * REQUEST
+     * ------------------------------------------------
+     */
+
     let body: AIRequest;
 
     try {
@@ -1299,6 +1230,7 @@ export async function POST(
       return NextResponse.json(
         {
           ok: false,
+
           error:
             "Invalid or empty JSON body in request.",
         },
@@ -1308,69 +1240,56 @@ export async function POST(
       );
     }
 
-    /*
-     * ------------------------------------------------
-     * REQUEST
-     * ------------------------------------------------
-     */
-
     const task =
-      typeof body.task ===
-      "string"
+      typeof body.task === "string"
         ? body.task.trim()
         : "";
 
     const requestedPaths =
-      Array.isArray(
-        body.paths
-      )
+      Array.isArray(body.paths)
         ? body.paths.filter(
-            item =>
-              typeof item ===
-              "string"
+            (item) =>
+              typeof item === "string"
           )
         : [];
 
     const requestedChannel =
-  typeof body.channel ===
-  "string"
-    ? body.channel.trim()
-    : "";
+      typeof body.channel === "string"
+        ? body.channel.trim()
+        : "";
 
-const requestedChannels =
-  Array.isArray(body.channels)
-    ? body.channels.filter(
-        item =>
-          typeof item === "string" &&
-          item.trim() !== ""
-      ).map(
-        item => item.trim()
-      )
-    : [];
+    const requestedChannels =
+      Array.isArray(body.channels)
+        ? body.channels
+            .filter(
+              (item) =>
+                typeof item === "string" &&
+                item.trim() !== ""
+            )
+            .map(
+              (item) => item.trim()
+            )
+        : [];
 
-const weeklyChannels =
-  requestedChannels.length > 0
-    ? requestedChannels
-    : requestedChannel
-      ? [requestedChannel]
-      : [
-          "VK",
-          "Telegram",
-          "Website / SEO",
-        ];
+    const weeklyChannels =
+      requestedChannels.length > 0
+        ? requestedChannels
+        : requestedChannel
+          ? [requestedChannel]
+          : [
+              "VK",
+              "Telegram",
+              "Website / SEO",
+            ];
 
-const includeRadar =
-  body.includeRadar !==
-  false;
+    const includeRadar =
+      body.includeRadar !== false;
 
     const profile:
       ContextProfile =
-      body.profile ===
-        "CONTENT" ||
-      body.profile ===
-        "RESEARCH" ||
-      body.profile ===
-        "ANALYTICS"
+      body.profile === "CONTENT" ||
+      body.profile === "RESEARCH" ||
+      body.profile === "ANALYTICS"
         ? body.profile
         : "GENERAL";
 
@@ -1378,6 +1297,7 @@ const includeRadar =
       return NextResponse.json(
         {
           ok: false,
+
           error:
             "Task is required.",
         },
@@ -1401,7 +1321,7 @@ const includeRadar =
       );
 
     const retrievalPackage =
-      await buildRetrievalPackage(
+      (await buildRetrievalPackage(
         PROJECT_ROOT,
         retrievalSeed,
         {
@@ -1411,10 +1331,12 @@ const includeRadar =
           maxSources:
             RETRIEVAL_MAX_SOURCES,
         }
-      ) as RetrievalPackage;
+      )) as RetrievalPackage;
 
     /*
+     * ------------------------------------------------
      * FULL LIBRARY CONTEXT
+     * ------------------------------------------------
      *
      * This will be used by Writer.
      */
@@ -1431,6 +1353,7 @@ const includeRadar =
      * ------------------------------------------------
      *
      * IMPORTANT:
+     *
      * This is intentionally independent
      * from the generic Retriever package.
      */
@@ -1467,7 +1390,7 @@ const includeRadar =
 
               selected:
                 retrievalPackage.selected.map(
-                  candidate => ({
+                  (candidate) => ({
                     path:
                       candidate.item?.path ||
                       candidate.item?.title ||
@@ -1491,7 +1414,7 @@ const includeRadar =
       );
     }
 
-/*
+    /*
      * ------------------------------------------------
      * CONTENT STRATEGY
      * ------------------------------------------------
@@ -1500,7 +1423,7 @@ const includeRadar =
     const strategyContext =
       await loadStrategyContext();
 
-      /*
+    /*
      * ------------------------------------------------
      * WEEKLY CONTENT PLAN
      * ------------------------------------------------
@@ -1541,36 +1464,43 @@ const includeRadar =
         );
 
       const weeklyPlan =
-  parseWeeklyContentPlan(
-    weeklyPlanner.content
-  );
+        parseWeeklyContentPlan(
+          weeklyPlanner.content
+        );
 
-if (
-  weeklyPlan.items.length === 0
-) {
-  throw new Error(
-    "WEEKLY CONTENT PLANNER ERROR: Gemini returned a valid JSON Weekly Content Plan, but items array is empty."
-  );
-}
+      if (
+        weeklyPlan.items.length === 0
+      ) {
+        throw new Error(
+          "WEEKLY CONTENT PLANNER ERROR: Gemini returned a valid JSON Weekly Content Plan, but items array is empty."
+        );
+      }
 
       const weeklyPlanResult =
-  buildWeeklyContentPlanResult({
-    task,
-    profile,
-    requestedChannels:
-      weeklyChannels,
-    plan:
-      weeklyPlan,
-  });
+        buildWeeklyContentPlanResult({
+          task,
+
+          profile,
+
+          requestedChannels:
+            weeklyChannels,
+
+          plan:
+            weeklyPlan,
+        });
 
       return NextResponse.json({
-  ok: true,
-  mode:
-    "WEEKLY_PLAN",
-  weeklyContentPlan:
-    weeklyPlan,
-  weeklyPlanResult,
-  meta: {
+        ok: true,
+
+        mode:
+          "WEEKLY_PLAN",
+
+        weeklyContentPlan:
+          weeklyPlan,
+
+        weeklyPlanResult,
+
+        meta: {
           profile,
 
           requestedChannels:
@@ -1619,65 +1549,164 @@ if (
      * CONTENT PLANNER
      * ------------------------------------------------
      *
-     * CRITICAL:
-     *
      * Planner receives:
+     *
      * 1. Analyst Evidence
      * 2. Strategy
      *
-     * Planner DOES NOT receive
+     * Planner does NOT receive
      * the full Writer library context.
      * ------------------------------------------------
      */
 
-    const plannerUserPrompt =
-  buildPlannerUserPrompt({
-    task,
-    profile,
-    context: "",
-    analystContext:
-      analystContext.context,
-    strategyContext,
-    requestedChannel,
-  });
+    const plannerUserPromptBase =
+      buildPlannerUserPrompt({
+        task,
 
-if (
-  !plannerUserPrompt.includes(
-    "ANALYST EVIDENCE"
-  )
-) {
-  throw new Error(
-    "CONTENT PLANNER HANDOFF ERROR: Analyst Evidence was not included in Planner prompt."
-  );
-}
+        profile,
 
-const planner =
-  await callAI(
-    buildPlannerSystemPrompt(),
-    plannerUserPrompt,
-    6000,
-    {
-      responseMimeType:
-        "application/json",
-      responseSchema:
-        CONTENT_PLAN_SCHEMA,
+        context: "",
+
+        analystContext:
+          analystContext.context,
+
+        strategyContext,
+
+        requestedChannel,
+      });
+
+    /*
+     * ==================================================
+     * CRITICAL ANALYST HANDOFF
+     * ==================================================
+     *
+     * We do not rely only on the internal
+     * implementation of buildPlannerUserPrompt().
+     *
+     * Analyst Evidence is explicitly appended
+     * to the final prompt sent to Gemini.
+     *
+     * This guarantees:
+     *
+     * Analyst
+     *    ↓
+     * Planner Gemini
+     *
+     * even if the builder changes later.
+     */
+
+    const plannerUserPrompt = `
+${plannerUserPromptBase}
+
+==================================================
+MANDATORY ANALYST EVIDENCE
+==================================================
+
+The following evidence was loaded directly from
+the persistent Analyst layer.
+
+This evidence is authoritative for strategic
+Content Planning.
+
+The Planner MUST use this evidence.
+
+The Planner MUST NOT replace it with generic
+model assumptions.
+
+The Planner MUST NOT invent unsupported:
+
+- audience findings;
+- market findings;
+- competitor findings;
+- search demand;
+- content opportunities;
+- local market conclusions;
+- analytical conclusions.
+
+If the Analyst evidence contains uncertainty,
+contradictions or hypotheses, preserve that
+distinction.
+
+==================================================
+ANALYST EVIDENCE
+==================================================
+
+${analystContext.context}
+
+==================================================
+END MANDATORY ANALYST EVIDENCE
+==================================================
+`;
+
+    /*
+     * ------------------------------------------------
+     * HANDOFF SAFETY CHECK
+     * ------------------------------------------------
+     */
+
+    if (
+      !plannerUserPrompt.includes(
+        "MANDATORY ANALYST EVIDENCE"
+      )
+    ) {
+      throw new Error(
+        "CONTENT PLANNER HANDOFF ERROR: Analyst Evidence was not included in final Planner prompt."
+      );
     }
-  );
+
+    if (
+      !plannerUserPrompt.includes(
+        analystContext.context
+      )
+    ) {
+      throw new Error(
+        "CONTENT PLANNER HANDOFF ERROR: Analyst Evidence content is missing from final Planner prompt."
+      );
+    }
+
+    /*
+     * ------------------------------------------------
+     * PLANNER GEMINI
+     * ------------------------------------------------
+     */
+
+    const planner =
+      await callAI(
+        buildPlannerSystemPrompt(),
+
+        plannerUserPrompt,
+
+        6000,
+
+        {
+          responseMimeType:
+            "application/json",
+
+          responseSchema:
+            CONTENT_PLAN_SCHEMA,
+        }
+      );
+
+    /*
+     * ------------------------------------------------
+     * PARSE CONTENT PLAN
+     * ------------------------------------------------
+     */
 
     const contentPlan =
-  parseContentPlan(
-    planner.content
-  );
+      parseContentPlan(
+        planner.content
+      );
 
-if (
-  !contentPlan ||
-  !contentPlan.topic ||
-  !contentPlan.channel
-) {
-  throw new Error(
-    "CONTENT PLANNER HANDOFF ERROR: Planner returned an incomplete Content Plan."
-  );
-}
+    if (
+      !contentPlan ||
+      !contentPlan.topic ||
+      !contentPlan.channel
+    ) {
+      throw new Error(
+        "CONTENT PLANNER HANDOFF ERROR: Planner returned an incomplete Content Plan."
+      );
+    }
 
     /*
      * ------------------------------------------------
@@ -1703,36 +1732,39 @@ if (
       contentPlan.channel =
         requestedChannel;
 
-      contentPlan.constraints =
-        [
-          ...contentPlan.constraints,
+      contentPlan.constraints = [
+        ...contentPlan.constraints,
 
-          `Explicit channel requirement: ${requestedChannel}. Planner output was normalized to the requested channel.`,
-        ];
+        `Explicit channel requirement: ${requestedChannel}. Planner output was normalized to the requested channel.`,
+      ];
     }
 
+    /*
+     * ------------------------------------------------
+     * PLANNER → WRITER BRIEF
+     * ------------------------------------------------
+     */
+
     const plannerBrief =
-  formatContentPlanForWriter(
-    contentPlan
-  );
+      formatContentPlanForWriter(
+        contentPlan
+      );
 
-if (
-  !plannerBrief.trim()
-) {
-  throw new Error(
-    "WRITER HANDOFF ERROR: Content Plan Brief is empty."
-  );
-}
+    if (!plannerBrief.trim()) {
+      throw new Error(
+        "WRITER HANDOFF ERROR: Content Plan Brief is empty."
+      );
+    }
 
-if (
-  !plannerBrief.includes(
-    contentPlan.channel
-  )
-) {
-  throw new Error(
-    "WRITER HANDOFF ERROR: Content Plan channel is missing from Writer Brief."
-  );
-}
+    if (
+      !plannerBrief.includes(
+        contentPlan.channel
+      )
+    ) {
+      throw new Error(
+        "WRITER HANDOFF ERROR: Content Plan channel is missing from Writer Brief."
+      );
+    }
 
     /*
      * ------------------------------------------------
@@ -1751,10 +1783,8 @@ if (
         outputContract
       );
 
-    const systemPrompt =
-      `${buildSystemPrompt(
-        profile
-      )}
+    const systemPrompt = `
+${buildSystemPrompt(profile)}
 
 ==================================================
 CONTENT PLANNER EXECUTION LAYER
@@ -1797,24 +1827,38 @@ ${writerSystemPrompt}
 `;
 
     const writerUserPrompt =
-  buildWriterUserPrompt({
-    task,
-    profile,
-    context:
-      `${plannerBrief}
+      buildWriterUserPrompt({
+        task,
+
+        profile,
+
+        context: `
+${plannerBrief}
+
 ==================================================
 RETRIEVED PROJECT CONTEXT
 ==================================================
+
 ${formatContext(
   retrieved.context
-)}`,
-    outputContract,
-  });
+)}
+`,
+
+        outputContract,
+      });
+
+    /*
+     * ------------------------------------------------
+     * WRITER GEMINI
+     * ------------------------------------------------
+     */
 
     const ai =
       await callAI(
         systemPrompt,
+
         writerUserPrompt,
+
         4000
       );
 
@@ -1828,30 +1872,37 @@ ${formatContext(
 ==================================================
 CONTENT PLAN
 ==================================================
+
 ${plannerBrief}
 
 ==================================================
 ANALYST EVIDENCE
 ==================================================
+
 ${analystContext.context}
 
 ==================================================
 RETRIEVED PROJECT CONTEXT
 ==================================================
+
 ${retrieved.context}
 `;
 
-const validation =
-  await validateWriterOutput({
-    task,
-    outputContract,
-    content:
-      ai.content,
-    context:
-      validationContext,
-    projectRoot:
-      PROJECT_ROOT,
-  });
+    const validation =
+      await validateWriterOutput({
+        task,
+
+        outputContract,
+
+        content:
+          ai.content,
+
+        context:
+          validationContext,
+
+        projectRoot:
+          PROJECT_ROOT,
+      });
 
     /*
      * ------------------------------------------------
@@ -1877,12 +1928,14 @@ const validation =
         /*
          * Final strategic Content Plan.
          */
+
         contentPlan,
 
         /*
          * Exact Analyst evidence used
          * to build the plan.
          */
+
         analystEvidence: {
           filesLoaded:
             analystContext.filesLoaded,
@@ -1909,6 +1962,7 @@ const validation =
         /*
          * Broad Writer context.
          */
+
         filesLoaded:
           retrieved.filesLoaded,
 
@@ -1930,7 +1984,7 @@ const validation =
 
           selected:
             retrievalPackage.selected.map(
-              candidate => ({
+              (candidate) => ({
                 path:
                   candidate.item?.path ||
                   candidate.item?.title ||
@@ -2005,6 +2059,7 @@ const validation =
             ? error.message
             : "Unknown AI gateway error.",
       },
+
       {
         status: 500,
       }
