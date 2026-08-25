@@ -21,9 +21,7 @@ import {
   CONTENT_PLAN_SCHEMA,
 } from "../../../../../../07_AUTOMATION/content-planner";
 
-import {
-  saveContentPlan,
-} from "../../../../../../07_AUTOMATION/content-planner/plan-store";
+
 
 import {
   validateWriterOutput,
@@ -1172,19 +1170,10 @@ export async function POST(
         ];
     }
 
-    const storedPlan =
-      await saveContentPlan({
-        projectRoot: PROJECT_ROOT,
-        task,
-        profile,
-        requestedChannel,
-        plan: contentPlan,
-      });
-
     const plannerBrief =
-      formatContentPlanForWriter(
-        contentPlan
-      );
+  formatContentPlanForWriter(
+    contentPlan
+  );
 
     /*
      * ------------------------------------------------
@@ -1297,11 +1286,8 @@ ${retrieved.context}`,
 
         contentPlan,
 
-        storedContentPlan:
-          storedPlan,
-
-        strategyDocuments:
-          STRATEGY_FILES,
+strategyDocuments:
+  STRATEGY_FILES,
 
         plannerModel:
           planner.model,
