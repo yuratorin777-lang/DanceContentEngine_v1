@@ -162,6 +162,14 @@ export type PlannerInput = {
    * using Content Strategy and Channel Strategy.
    */
   requestedChannel?: string;
+
+    /**
+   * Primary analytical evidence supplied by AI Analyst.
+   *
+   * This layer must be used as the main evidence base
+   * for Content Plan generation.
+   */
+  analystContext?: string;
 };
 
 const DEFAULT_PLAN: ContentPlan = {
@@ -284,6 +292,54 @@ The documents may define:
 - strategic priorities.
 
 Do not contradict them without clearly identifying the conflict.
+
+==================================================
+ANALYST EVIDENCE RULE
+==================================================
+
+The Content Plan MUST be based primarily on the
+AI Analyst research layer.
+
+The Analyst layer is the primary evidence source
+for:
+
+- audience;
+- parent needs;
+- decision journey;
+- market context;
+- competitors;
+- search demand;
+- content opportunities;
+- local context;
+- strategic conclusions derived from research.
+
+Priority order for planning:
+
+1. ANALYST RESEARCH
+2. AUDIENCE
+3. KNOWLEDGE
+4. CONTENT STRATEGY
+5. SEO
+6. RADAR
+7. OTHER PROJECT CONTEXT
+
+Do NOT create a Content Plan merely from generic
+project knowledge.
+
+If the Analyst evidence does not support a claim,
+do not invent it.
+
+When possible, researchSignals and sourcePriorities
+must point back to concrete Analyst documents.
+
+The Analyst layer is evidence.
+
+The Planner is synthesis.
+
+The Writer is execution.
+
+The Planner must not replace Analyst findings with
+generic assumptions or model knowledge.
 
 ==================================================
 CORE RULES
@@ -520,6 +576,7 @@ export function buildPlannerUserPrompt({
   context = "",
   strategyContext = "",
   requestedChannel = "",
+  analystContext = "",
 }: PlannerInput): string {
   return `
 CONTENT PLANNER TASK
@@ -529,6 +586,16 @@ ${profile}
 
 USER REQUEST:
 ${task}
+
+==================================================
+REQUESTED CHANNEL
+==================================================
+
+${
+  requestedChannel.trim()
+    ? requestedChannel
+    : "No channel explicitly specified. Planner may select the primary channel using the strategic documents."
+}
 
 ==================================================
 TARGET CHANNEL
@@ -576,6 +643,14 @@ EXECUTION
 Use the strategic documents as the strategic layer.
 
 Use the retrieved project context as the factual/evidence layer.
+
+CHANNEL DECISION:
+
+${
+  requestedChannel.trim()
+    ? `The requested channel is "${requestedChannel}". You MUST use this exact channel in the final Content Plan.`
+    : "No channel was explicitly requested. Select the primary channel using the strategic documents."
+}
 
 Determine:
 

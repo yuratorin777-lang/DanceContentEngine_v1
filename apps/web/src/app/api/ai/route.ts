@@ -22,6 +22,10 @@ import {
 } from "../../../../../../07_AUTOMATION/content-planner";
 
 import {
+  saveContentPlan,
+} from "../../../../../../07_AUTOMATION/content-planner/plan-store";
+
+import {
   validateWriterOutput,
 } from "../../../../../../07_AUTOMATION/validator";
 
@@ -159,15 +163,6 @@ type AIRequest = {
   profile?: ContextProfile;
   paths?: string[];
   includeRadar?: boolean;
-
-  /*
-   * Explicit primary content channel.
-   *
-   * Examples:
-   * VK
-   * Telegram
-   * Website / SEO
-   */
   channel?: string;
 };
 
@@ -1177,6 +1172,15 @@ export async function POST(
         ];
     }
 
+    const storedPlan =
+      await saveContentPlan({
+        projectRoot: PROJECT_ROOT,
+        task,
+        profile,
+        requestedChannel,
+        plan: contentPlan,
+      });
+
     const plannerBrief =
       formatContentPlanForWriter(
         contentPlan
@@ -1292,6 +1296,9 @@ ${retrieved.context}`,
         outputContract,
 
         contentPlan,
+
+        storedContentPlan:
+          storedPlan,
 
         strategyDocuments:
           STRATEGY_FILES,

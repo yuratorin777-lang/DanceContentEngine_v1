@@ -13,6 +13,7 @@ DanceContentEngine_v1
 │   │       └── 01 Как я пришел в танцы.md
 │   ├── 2026-08-15_02_Что_удержало_меня_в_тенцах_на_десятилетия
 │   │   └── raw_parts
+│   │       ├── 02_Что_удержало_меня_в_тенцах_на_десятилетия — копия.md
 │   │       └── 02_Что_удержало_меня_в_тенцах_на_десятилетия.md
 │   ├── 2026-08-15_03_что_я_понял_о_танцах_спустя_много_времени
 │   │   └── raw_parts
@@ -26,14 +27,24 @@ DanceContentEngine_v1
 │   ├── 2026-08-15_06 Что в танцах стало хуже
 │   │   └── raw_parts
 │   │       └── 06 Что в танцах стало хуже.md
+│   ├── 2026-08-17_07 какие ошибки совершал
+│   │   └── raw_parts
+│   │       └── 07 какие ошибки совершал.md
+│   ├── 2026-08-17_08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2
+│   │   └── raw_parts
+│   │       └── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.md
 │   ├── .gitkeep
 │   ├── KNOWLEDGE_INDEX.md
 │   ├── OWNER_INPUT_RULES.md
 │   └── README.md
 ├── 02_RESEARCH
 │   ├── Аналитик
+│   │   ├── Аналитика.zip
 │   │   ├── SERPUKHOV-AUDIENCE-ANALYSIS.md
+│   │   ├── SERPUKHOV-AUDIENCE-DEEP-DIVE.md
+│   │   ├── SERPUKHOV-AUDIENCE-RESEARCH-HANDOVER.md
 │   │   ├── SERPUKHOV-COMPETITOR-MAP.md
+│   │   ├── SERPUKHOV-DECISION-JOURNEY.md
 │   │   ├── SERPUKHOV-EXECUTIVE-BRIEF.md
 │   │   ├── SERPUKHOV-HANDOVER.md
 │   │   ├── SERPUKHOV-MARKET-ANALYSIS.md
@@ -54,7 +65,10 @@ DanceContentEngine_v1
 │   └── README.md
 ├── 04_CONTENT
 │   ├── .gitkeep
+│   ├── CHANNEL_STRATEGY.md
+│   ├── CONTENT_CHANNEL_ARCHITECTURE.md
 │   ├── CONTENT_INDEX.md
+│   ├── CONTENT_STRATEGY.md
 │   ├── CONTENT_WORK_RULES.md
 │   └── README.md
 ├── 05_SEO
@@ -73,7 +87,6 @@ DanceContentEngine_v1
 │   ├── knowledge-retrieval
 │   │   ├── index.ts
 │   │   ├── README.md
-│   │   ├── retriever-smoke-test.ts
 │   │   ├── retriever.ts
 │   │   └── tsconfig.json
 │   ├── Rardar_world feed
@@ -90,7 +103,8 @@ DanceContentEngine_v1
 │   │   ├── RADAR_OUTPUT_SPEC.md
 │   │   ├── RADAR_PROFILE_DANCE_SERPUKHOV.md
 │   │   ├── RADAR_SOURCE_STRATEGY.md
-│   │   └── README.md
+│   │   ├── README.md
+│   │   └── run-radar.cmd
 │   ├── validator
 │   │   ├── index.ts
 │   │   └── README.md
@@ -101,10 +115,10 @@ DanceContentEngine_v1
 │   ├── AUTOMATION_INDEX.md
 │   └── README.md
 ├── 08_INPUT
+│   ├── _processed
+│   │   ├── 07 какие ошибки совершал.aac
+│   │   └── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.aac
 │   ├── .gitkeep
-│   ├── 05_Что_сегодня_в_танцах_стало_лучше.aac
-│   ├── 06 Что в танцах стало хуже.aac
-│   ├── тест.aac
 │   ├── INPUT_INDEX.md
 │   └── README.md
 ├── 09_ARCHIVE
@@ -112,6 +126,785 @@ DanceContentEngine_v1
 │   └── README.md
 ├── apps
 │   ├── web
+│   │   ├── .next
+│   │   │   ├── cache
+│   │   │   │   ├── turbopack
+│   │   │   │   │   └── v16.3.0-d73f5622
+│   │   │   │   │       ├── 00000001.sst
+│   │   │   │   │       ├── 00000002.sst
+│   │   │   │   │       ├── 00000003.sst
+│   │   │   │   │       ├── 00000004.sst
+│   │   │   │   │       ├── 00000005.meta
+│   │   │   │   │       ├── 00000006.meta
+│   │   │   │   │       ├── 00000007.meta
+│   │   │   │   │       ├── 00000008.meta
+│   │   │   │   │       ├── 00000009.sst
+│   │   │   │   │       ├── 00000010.sst
+│   │   │   │   │       ├── 00000011.sst
+│   │   │   │   │       ├── 00000012.sst
+│   │   │   │   │       ├── 00000013.meta
+│   │   │   │   │       ├── 00000014.meta
+│   │   │   │   │       ├── 00000015.meta
+│   │   │   │   │       ├── 00000016.meta
+│   │   │   │   │       ├── CURRENT
+│   │   │   │   │       └── LOG
+│   │   │   │   ├── .previewinfo
+│   │   │   │   ├── .rscinfo
+│   │   │   │   └── .tsbuildinfo
+│   │   │   ├── dev
+│   │   │   │   ├── cache
+│   │   │   │   │   ├── turbopack
+│   │   │   │   │   │   └── v16.3.0-d73f5622
+│   │   │   │   │   │       ├── 00000001.sst
+│   │   │   │   │   │       ├── 00000002.sst
+│   │   │   │   │   │       ├── 00000003.sst
+│   │   │   │   │   │       ├── 00000004.sst
+│   │   │   │   │   │       ├── 00000005.sst
+│   │   │   │   │   │       ├── 00000006.sst
+│   │   │   │   │   │       ├── 00000007.sst
+│   │   │   │   │   │       ├── 00000008.meta
+│   │   │   │   │   │       ├── 00000009.meta
+│   │   │   │   │   │       ├── 00000010.meta
+│   │   │   │   │   │       ├── 00000011.meta
+│   │   │   │   │   │       ├── 00000012.sst
+│   │   │   │   │   │       ├── 00000013.sst
+│   │   │   │   │   │       ├── 00000014.sst
+│   │   │   │   │   │       ├── 00000015.sst
+│   │   │   │   │   │       ├── 00000016.meta
+│   │   │   │   │   │       ├── 00000017.meta
+│   │   │   │   │   │       ├── 00000018.meta
+│   │   │   │   │   │       ├── 00000019.meta
+│   │   │   │   │   │       ├── 00000020.sst
+│   │   │   │   │   │       ├── 00000021.sst
+│   │   │   │   │   │       ├── 00000022.sst
+│   │   │   │   │   │       ├── 00000023.sst
+│   │   │   │   │   │       ├── 00000024.meta
+│   │   │   │   │   │       ├── 00000025.meta
+│   │   │   │   │   │       ├── 00000026.meta
+│   │   │   │   │   │       ├── 00000027.meta
+│   │   │   │   │   │       ├── 00000028.sst
+│   │   │   │   │   │       ├── 00000029.sst
+│   │   │   │   │   │       ├── 00000030.sst
+│   │   │   │   │   │       ├── 00000031.meta
+│   │   │   │   │   │       ├── 00000032.meta
+│   │   │   │   │   │       ├── 00000033.meta
+│   │   │   │   │   │       ├── 00000034.sst
+│   │   │   │   │   │       ├── 00000035.sst
+│   │   │   │   │   │       ├── 00000036.sst
+│   │   │   │   │   │       ├── 00000037.sst
+│   │   │   │   │   │       ├── 00000038.meta
+│   │   │   │   │   │       ├── 00000039.meta
+│   │   │   │   │   │       ├── 00000040.meta
+│   │   │   │   │   │       ├── 00000041.meta
+│   │   │   │   │   │       ├── 00000042.sst
+│   │   │   │   │   │       ├── 00000043.sst
+│   │   │   │   │   │       ├── 00000044.sst
+│   │   │   │   │   │       ├── 00000045.meta
+│   │   │   │   │   │       ├── 00000046.meta
+│   │   │   │   │   │       ├── 00000047.meta
+│   │   │   │   │   │       ├── 00000048.sst
+│   │   │   │   │   │       ├── 00000049.sst
+│   │   │   │   │   │       ├── 00000050.sst
+│   │   │   │   │   │       ├── 00000051.sst
+│   │   │   │   │   │       ├── 00000052.meta
+│   │   │   │   │   │       ├── 00000053.meta
+│   │   │   │   │   │       ├── 00000054.meta
+│   │   │   │   │   │       ├── 00000055.meta
+│   │   │   │   │   │       ├── 00000056.sst
+│   │   │   │   │   │       ├── 00000057.sst
+│   │   │   │   │   │       ├── 00000058.sst
+│   │   │   │   │   │       ├── 00000059.meta
+│   │   │   │   │   │       ├── 00000060.meta
+│   │   │   │   │   │       ├── 00000061.meta
+│   │   │   │   │   │       ├── 00000062.sst
+│   │   │   │   │   │       ├── 00000063.sst
+│   │   │   │   │   │       ├── 00000064.sst
+│   │   │   │   │   │       ├── 00000065.sst
+│   │   │   │   │   │       ├── 00000066.meta
+│   │   │   │   │   │       ├── 00000067.meta
+│   │   │   │   │   │       ├── 00000068.meta
+│   │   │   │   │   │       ├── 00000069.meta
+│   │   │   │   │   │       ├── 00000070.sst
+│   │   │   │   │   │       ├── 00000071.sst
+│   │   │   │   │   │       ├── 00000072.sst
+│   │   │   │   │   │       ├── 00000073.sst
+│   │   │   │   │   │       ├── 00000074.meta
+│   │   │   │   │   │       ├── 00000075.meta
+│   │   │   │   │   │       ├── 00000076.meta
+│   │   │   │   │   │       ├── 00000077.meta
+│   │   │   │   │   │       ├── 00000078.sst
+│   │   │   │   │   │       ├── 00000079.sst
+│   │   │   │   │   │       ├── 00000080.sst
+│   │   │   │   │   │       ├── 00000081.meta
+│   │   │   │   │   │       ├── 00000082.meta
+│   │   │   │   │   │       ├── 00000083.meta
+│   │   │   │   │   │       ├── 00000084.sst
+│   │   │   │   │   │       ├── 00000085.sst
+│   │   │   │   │   │       ├── 00000086.sst
+│   │   │   │   │   │       ├── 00000087.meta
+│   │   │   │   │   │       ├── 00000088.meta
+│   │   │   │   │   │       ├── 00000089.meta
+│   │   │   │   │   │       ├── 00000090.sst
+│   │   │   │   │   │       ├── 00000091.sst
+│   │   │   │   │   │       ├── 00000092.sst
+│   │   │   │   │   │       ├── 00000093.meta
+│   │   │   │   │   │       ├── 00000094.meta
+│   │   │   │   │   │       ├── 00000095.meta
+│   │   │   │   │   │       ├── 00000096.sst
+│   │   │   │   │   │       ├── 00000097.sst
+│   │   │   │   │   │       ├── 00000098.sst
+│   │   │   │   │   │       ├── 00000099.meta
+│   │   │   │   │   │       ├── 00000100.meta
+│   │   │   │   │   │       ├── 00000101.meta
+│   │   │   │   │   │       ├── 00000102.sst
+│   │   │   │   │   │       ├── 00000103.sst
+│   │   │   │   │   │       ├── 00000104.sst
+│   │   │   │   │   │       ├── 00000105.meta
+│   │   │   │   │   │       ├── 00000106.meta
+│   │   │   │   │   │       ├── 00000107.meta
+│   │   │   │   │   │       ├── 00000108.sst
+│   │   │   │   │   │       ├── 00000109.sst
+│   │   │   │   │   │       ├── 00000110.sst
+│   │   │   │   │   │       ├── 00000111.meta
+│   │   │   │   │   │       ├── 00000112.meta
+│   │   │   │   │   │       ├── 00000113.meta
+│   │   │   │   │   │       ├── 00000114.sst
+│   │   │   │   │   │       ├── 00000115.sst
+│   │   │   │   │   │       ├── 00000116.sst
+│   │   │   │   │   │       ├── 00000117.meta
+│   │   │   │   │   │       ├── 00000118.meta
+│   │   │   │   │   │       ├── 00000119.meta
+│   │   │   │   │   │       ├── 00000120.sst
+│   │   │   │   │   │       ├── 00000121.sst
+│   │   │   │   │   │       ├── 00000122.sst
+│   │   │   │   │   │       ├── 00000123.meta
+│   │   │   │   │   │       ├── 00000124.meta
+│   │   │   │   │   │       ├── 00000125.meta
+│   │   │   │   │   │       ├── 00000126.sst
+│   │   │   │   │   │       ├── 00000127.sst
+│   │   │   │   │   │       ├── 00000128.sst
+│   │   │   │   │   │       ├── 00000129.meta
+│   │   │   │   │   │       ├── 00000130.meta
+│   │   │   │   │   │       ├── 00000131.meta
+│   │   │   │   │   │       ├── 00000132.sst
+│   │   │   │   │   │       ├── 00000133.sst
+│   │   │   │   │   │       ├── 00000134.sst
+│   │   │   │   │   │       ├── 00000135.meta
+│   │   │   │   │   │       ├── 00000136.meta
+│   │   │   │   │   │       ├── 00000137.meta
+│   │   │   │   │   │       ├── 00000138.sst
+│   │   │   │   │   │       ├── 00000139.sst
+│   │   │   │   │   │       ├── 00000140.sst
+│   │   │   │   │   │       ├── 00000141.meta
+│   │   │   │   │   │       ├── 00000142.meta
+│   │   │   │   │   │       ├── 00000143.meta
+│   │   │   │   │   │       ├── 00000144.sst
+│   │   │   │   │   │       ├── 00000145.sst
+│   │   │   │   │   │       ├── 00000146.sst
+│   │   │   │   │   │       ├── 00000147.meta
+│   │   │   │   │   │       ├── 00000148.meta
+│   │   │   │   │   │       ├── 00000149.meta
+│   │   │   │   │   │       ├── 00000150.sst
+│   │   │   │   │   │       ├── 00000151.sst
+│   │   │   │   │   │       ├── 00000152.sst
+│   │   │   │   │   │       ├── 00000153.meta
+│   │   │   │   │   │       ├── 00000154.meta
+│   │   │   │   │   │       ├── 00000155.meta
+│   │   │   │   │   │       ├── 00000156.sst
+│   │   │   │   │   │       ├── 00000157.sst
+│   │   │   │   │   │       ├── 00000158.sst
+│   │   │   │   │   │       ├── 00000159.meta
+│   │   │   │   │   │       ├── 00000160.meta
+│   │   │   │   │   │       ├── 00000161.meta
+│   │   │   │   │   │       ├── 00000162.sst
+│   │   │   │   │   │       ├── 00000163.sst
+│   │   │   │   │   │       ├── 00000164.sst
+│   │   │   │   │   │       ├── 00000165.meta
+│   │   │   │   │   │       ├── 00000166.meta
+│   │   │   │   │   │       ├── 00000167.meta
+│   │   │   │   │   │       ├── 00000168.sst
+│   │   │   │   │   │       ├── 00000169.sst
+│   │   │   │   │   │       ├── 00000170.sst
+│   │   │   │   │   │       ├── 00000171.meta
+│   │   │   │   │   │       ├── 00000172.meta
+│   │   │   │   │   │       ├── 00000173.meta
+│   │   │   │   │   │       ├── 00000174.sst
+│   │   │   │   │   │       ├── 00000175.sst
+│   │   │   │   │   │       ├── 00000176.sst
+│   │   │   │   │   │       ├── 00000177.meta
+│   │   │   │   │   │       ├── 00000178.meta
+│   │   │   │   │   │       ├── 00000179.meta
+│   │   │   │   │   │       ├── 00000180.sst
+│   │   │   │   │   │       ├── 00000181.sst
+│   │   │   │   │   │       ├── 00000182.sst
+│   │   │   │   │   │       ├── 00000183.sst
+│   │   │   │   │   │       ├── 00000184.meta
+│   │   │   │   │   │       ├── 00000185.meta
+│   │   │   │   │   │       ├── 00000186.meta
+│   │   │   │   │   │       ├── 00000187.meta
+│   │   │   │   │   │       ├── 00000188.sst
+│   │   │   │   │   │       ├── 00000189.sst
+│   │   │   │   │   │       ├── 00000190.sst
+│   │   │   │   │   │       ├── 00000191.meta
+│   │   │   │   │   │       ├── 00000192.meta
+│   │   │   │   │   │       ├── 00000193.meta
+│   │   │   │   │   │       ├── 00000194.sst
+│   │   │   │   │   │       ├── 00000195.sst
+│   │   │   │   │   │       ├── 00000196.sst
+│   │   │   │   │   │       ├── 00000197.meta
+│   │   │   │   │   │       ├── 00000198.meta
+│   │   │   │   │   │       ├── 00000199.meta
+│   │   │   │   │   │       ├── 00000200.sst
+│   │   │   │   │   │       ├── 00000201.sst
+│   │   │   │   │   │       ├── 00000202.sst
+│   │   │   │   │   │       ├── 00000203.meta
+│   │   │   │   │   │       ├── 00000204.meta
+│   │   │   │   │   │       ├── 00000205.meta
+│   │   │   │   │   │       ├── 00000206.sst
+│   │   │   │   │   │       ├── 00000207.sst
+│   │   │   │   │   │       ├── 00000208.sst
+│   │   │   │   │   │       ├── 00000209.meta
+│   │   │   │   │   │       ├── 00000210.meta
+│   │   │   │   │   │       ├── 00000211.meta
+│   │   │   │   │   │       ├── 00000212.sst
+│   │   │   │   │   │       ├── 00000213.sst
+│   │   │   │   │   │       ├── 00000214.sst
+│   │   │   │   │   │       ├── 00000215.meta
+│   │   │   │   │   │       ├── 00000216.meta
+│   │   │   │   │   │       ├── 00000217.meta
+│   │   │   │   │   │       ├── 00000218.sst
+│   │   │   │   │   │       ├── 00000219.sst
+│   │   │   │   │   │       ├── 00000220.sst
+│   │   │   │   │   │       ├── 00000221.meta
+│   │   │   │   │   │       ├── 00000222.meta
+│   │   │   │   │   │       ├── 00000223.meta
+│   │   │   │   │   │       ├── 00000224.sst
+│   │   │   │   │   │       ├── 00000225.sst
+│   │   │   │   │   │       ├── 00000226.sst
+│   │   │   │   │   │       ├── 00000227.meta
+│   │   │   │   │   │       ├── 00000228.meta
+│   │   │   │   │   │       ├── 00000229.meta
+│   │   │   │   │   │       ├── 00000230.sst
+│   │   │   │   │   │       ├── 00000231.sst
+│   │   │   │   │   │       ├── 00000232.sst
+│   │   │   │   │   │       ├── 00000233.meta
+│   │   │   │   │   │       ├── 00000234.meta
+│   │   │   │   │   │       ├── 00000235.meta
+│   │   │   │   │   │       ├── 00000236.sst
+│   │   │   │   │   │       ├── 00000237.sst
+│   │   │   │   │   │       ├── 00000238.sst
+│   │   │   │   │   │       ├── 00000239.sst
+│   │   │   │   │   │       ├── 00000240.meta
+│   │   │   │   │   │       ├── 00000241.meta
+│   │   │   │   │   │       ├── 00000242.meta
+│   │   │   │   │   │       ├── 00000243.meta
+│   │   │   │   │   │       ├── 00000244.sst
+│   │   │   │   │   │       ├── 00000245.sst
+│   │   │   │   │   │       ├── 00000246.sst
+│   │   │   │   │   │       ├── 00000247.sst
+│   │   │   │   │   │       ├── 00000248.meta
+│   │   │   │   │   │       ├── 00000249.meta
+│   │   │   │   │   │       ├── 00000250.meta
+│   │   │   │   │   │       ├── 00000251.meta
+│   │   │   │   │   │       ├── 00000252.sst
+│   │   │   │   │   │       ├── 00000253.sst
+│   │   │   │   │   │       ├── 00000254.sst
+│   │   │   │   │   │       ├── 00000255.meta
+│   │   │   │   │   │       ├── 00000256.meta
+│   │   │   │   │   │       ├── 00000257.meta
+│   │   │   │   │   │       ├── 00000258.sst
+│   │   │   │   │   │       ├── 00000259.sst
+│   │   │   │   │   │       ├── 00000260.sst
+│   │   │   │   │   │       ├── 00000261.sst
+│   │   │   │   │   │       ├── 00000262.meta
+│   │   │   │   │   │       ├── 00000263.meta
+│   │   │   │   │   │       ├── 00000264.meta
+│   │   │   │   │   │       ├── 00000265.meta
+│   │   │   │   │   │       ├── 00000266.sst
+│   │   │   │   │   │       ├── 00000267.sst
+│   │   │   │   │   │       ├── 00000268.sst
+│   │   │   │   │   │       ├── 00000269.meta
+│   │   │   │   │   │       ├── 00000270.meta
+│   │   │   │   │   │       ├── 00000271.meta
+│   │   │   │   │   │       ├── 00000272.sst
+│   │   │   │   │   │       ├── 00000273.sst
+│   │   │   │   │   │       ├── 00000274.sst
+│   │   │   │   │   │       ├── 00000275.meta
+│   │   │   │   │   │       ├── 00000276.meta
+│   │   │   │   │   │       ├── 00000277.meta
+│   │   │   │   │   │       ├── 00000278.sst
+│   │   │   │   │   │       ├── 00000279.sst
+│   │   │   │   │   │       ├── 00000280.sst
+│   │   │   │   │   │       ├── 00000281.meta
+│   │   │   │   │   │       ├── 00000282.meta
+│   │   │   │   │   │       ├── 00000283.meta
+│   │   │   │   │   │       ├── 00000284.sst
+│   │   │   │   │   │       ├── 00000285.sst
+│   │   │   │   │   │       ├── 00000286.sst
+│   │   │   │   │   │       ├── 00000287.meta
+│   │   │   │   │   │       ├── 00000288.meta
+│   │   │   │   │   │       ├── 00000289.meta
+│   │   │   │   │   │       ├── 00000290.sst
+│   │   │   │   │   │       ├── 00000291.sst
+│   │   │   │   │   │       ├── 00000292.sst
+│   │   │   │   │   │       ├── 00000293.meta
+│   │   │   │   │   │       ├── 00000294.meta
+│   │   │   │   │   │       ├── 00000295.meta
+│   │   │   │   │   │       ├── 00000296.sst
+│   │   │   │   │   │       ├── 00000297.sst
+│   │   │   │   │   │       ├── 00000298.sst
+│   │   │   │   │   │       ├── 00000299.meta
+│   │   │   │   │   │       ├── 00000300.meta
+│   │   │   │   │   │       ├── 00000301.meta
+│   │   │   │   │   │       ├── 00000302.sst
+│   │   │   │   │   │       ├── 00000303.sst
+│   │   │   │   │   │       ├── 00000304.sst
+│   │   │   │   │   │       ├── 00000305.meta
+│   │   │   │   │   │       ├── 00000306.meta
+│   │   │   │   │   │       ├── 00000307.meta
+│   │   │   │   │   │       ├── 00000308.sst
+│   │   │   │   │   │       ├── 00000309.sst
+│   │   │   │   │   │       ├── 00000310.sst
+│   │   │   │   │   │       ├── 00000311.sst
+│   │   │   │   │   │       ├── 00000312.meta
+│   │   │   │   │   │       ├── 00000313.meta
+│   │   │   │   │   │       ├── 00000314.meta
+│   │   │   │   │   │       ├── 00000315.meta
+│   │   │   │   │   │       ├── 00000316.sst
+│   │   │   │   │   │       ├── 00000317.sst
+│   │   │   │   │   │       ├── 00000318.sst
+│   │   │   │   │   │       ├── 00000319.sst
+│   │   │   │   │   │       ├── 00000320.meta
+│   │   │   │   │   │       ├── 00000321.meta
+│   │   │   │   │   │       ├── 00000322.meta
+│   │   │   │   │   │       ├── 00000323.meta
+│   │   │   │   │   │       ├── 00000324.sst
+│   │   │   │   │   │       ├── 00000325.sst
+│   │   │   │   │   │       ├── 00000326.sst
+│   │   │   │   │   │       ├── 00000327.sst
+│   │   │   │   │   │       ├── 00000328.meta
+│   │   │   │   │   │       ├── 00000329.meta
+│   │   │   │   │   │       ├── 00000330.meta
+│   │   │   │   │   │       ├── 00000331.meta
+│   │   │   │   │   │       ├── 00000332.sst
+│   │   │   │   │   │       ├── 00000333.sst
+│   │   │   │   │   │       ├── 00000334.sst
+│   │   │   │   │   │       ├── 00000335.meta
+│   │   │   │   │   │       ├── 00000336.meta
+│   │   │   │   │   │       ├── 00000337.meta
+│   │   │   │   │   │       ├── CURRENT
+│   │   │   │   │   │       └── LOG
+│   │   │   │   │   ├── .rscinfo
+│   │   │   │   │   └── next-devtools-config.json
+│   │   │   │   ├── logs
+│   │   │   │   │   └── next-development.log
+│   │   │   │   ├── server
+│   │   │   │   │   ├── app
+│   │   │   │   │   │   ├── api
+│   │   │   │   │   │   │   └── ai
+│   │   │   │   │   │   │       ├── route
+│   │   │   │   │   │   │       │   ├── app-paths-manifest.json
+│   │   │   │   │   │   │       │   ├── build-manifest.json
+│   │   │   │   │   │   │       │   └── server-reference-manifest.json
+│   │   │   │   │   │   │       ├── route_client-reference-manifest.js
+│   │   │   │   │   │   │       ├── route.js
+│   │   │   │   │   │   │       └── route.js.map
+│   │   │   │   │   │   ├── page
+│   │   │   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   │   ├── client-components-ssr.js
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   │   │   ├── page_client-reference-manifest.js
+│   │   │   │   │   │   ├── page.js
+│   │   │   │   │   │   └── page.js.map
+│   │   │   │   │   ├── chunks
+│   │   │   │   │   │   ├── ssr
+│   │   │   │   │   │   │   ├── _01g9zq-._.js
+│   │   │   │   │   │   │   ├── _01g9zq-._.js.map
+│   │   │   │   │   │   │   ├── _next-internal_server_app_page_actions_0hhsz1j.js
+│   │   │   │   │   │   │   ├── _next-internal_server_app_page_actions_0hhsz1j.js.map
+│   │   │   │   │   │   │   ├── [externals]__05yr04l._.js
+│   │   │   │   │   │   │   ├── [externals]__05yr04l._.js.map
+│   │   │   │   │   │   │   ├── [externals]__0mly4vc._.js
+│   │   │   │   │   │   │   ├── [externals]__0mly4vc._.js.map
+│   │   │   │   │   │   │   ├── [externals]__1vp7etu._.js
+│   │   │   │   │   │   │   ├── [externals]__1vp7etu._.js.map
+│   │   │   │   │   │   │   ├── [externals]_next_dist_1e1zfvs._.js
+│   │   │   │   │   │   │   ├── [externals]_next_dist_1e1zfvs._.js.map
+│   │   │   │   │   │   │   ├── [root-of-the-server]__09gp5cy._.js
+│   │   │   │   │   │   │   ├── [root-of-the-server]__09gp5cy._.js.map
+│   │   │   │   │   │   │   ├── [root-of-the-server]__09x-cth._.js
+│   │   │   │   │   │   │   ├── [root-of-the-server]__09x-cth._.js.map
+│   │   │   │   │   │   │   ├── [root-of-the-server]__0y0_snu._.js
+│   │   │   │   │   │   │   ├── [root-of-the-server]__0y0_snu._.js.map
+│   │   │   │   │   │   │   ├── [turbopack]_runtime.js
+│   │   │   │   │   │   │   ├── [turbopack]_runtime.js.map
+│   │   │   │   │   │   │   ├── node_modules_01xbj_9._.js
+│   │   │   │   │   │   │   ├── node_modules_01xbj_9._.js.map
+│   │   │   │   │   │   │   ├── node_modules_02es85m._.js
+│   │   │   │   │   │   │   ├── node_modules_02es85m._.js.map
+│   │   │   │   │   │   │   ├── node_modules_1_aarlg._.js
+│   │   │   │   │   │   │   ├── node_modules_1_aarlg._.js.map
+│   │   │   │   │   │   │   ├── node_modules_18l6gai._.js
+│   │   │   │   │   │   │   ├── node_modules_18l6gai._.js.map
+│   │   │   │   │   │   │   ├── node_modules_1hzxkc4._.js
+│   │   │   │   │   │   │   ├── node_modules_1hzxkc4._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_1_o5zxs._.js
+│   │   │   │   │   │   │   ├── node_modules_next_1_o5zxs._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_0254xxt._.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_0254xxt._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_1rpjqn_._.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_1rpjqn_._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_0wpq8j3._.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_0wpq8j3._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_0-o-goa.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_0-o-goa.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_compiled_0d323sd._.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_compiled_0d323sd._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_esm_1bj8o03._.js
+│   │   │   │   │   │   │   ├── node_modules_next_dist_esm_1bj8o03._.js.map
+│   │   │   │   │   │   │   ├── node_modules_next_dist_server_route-modules_app-page_0qo_rmc._.js
+│   │   │   │   │   │   │   └── node_modules_next_dist_server_route-modules_app-page_0qo_rmc._.js.map
+│   │   │   │   │   │   ├── _next-internal_server_app_api_ai_route_actions_19_py98.js
+│   │   │   │   │   │   ├── _next-internal_server_app_api_ai_route_actions_19_py98.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0kml68u._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0kml68u._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0tkw8f5._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0tkw8f5._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__1uqw-tx._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__1uqw-tx._.js.map
+│   │   │   │   │   │   ├── [turbopack]_runtime.js
+│   │   │   │   │   │   ├── [turbopack]_runtime.js.map
+│   │   │   │   │   │   ├── node_modules_next_1c-uw2a._.js
+│   │   │   │   │   │   ├── node_modules_next_1c-uw2a._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1enegc3._.js
+│   │   │   │   │   │   └── node_modules_next_dist_1enegc3._.js.map
+│   │   │   │   │   ├── pages
+│   │   │   │   │   │   ├── _app
+│   │   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   │   ├── client-build-manifest.json
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── pages-manifest.json
+│   │   │   │   │   │   │   └── react-loadable-manifest.json
+│   │   │   │   │   │   ├── _document
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── pages-manifest.json
+│   │   │   │   │   │   │   └── react-loadable-manifest.json
+│   │   │   │   │   │   ├── _error
+│   │   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   │   ├── client-build-manifest.json
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── pages-manifest.json
+│   │   │   │   │   │   │   └── react-loadable-manifest.json
+│   │   │   │   │   │   ├── _app.js
+│   │   │   │   │   │   ├── _app.js.map
+│   │   │   │   │   │   ├── _document.js
+│   │   │   │   │   │   ├── _document.js.map
+│   │   │   │   │   │   ├── _error.js
+│   │   │   │   │   │   └── _error.js.map
+│   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   ├── interception-route-rewrite-manifest.js
+│   │   │   │   │   ├── middleware-build-manifest.js
+│   │   │   │   │   ├── middleware-manifest.json
+│   │   │   │   │   ├── next-font-manifest.js
+│   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   ├── pages-manifest.json
+│   │   │   │   │   ├── server-reference-manifest.js
+│   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   ├── static
+│   │   │   │   │   ├── chunks
+│   │   │   │   │   │   ├── pages
+│   │   │   │   │   │   │   ├── _app.js
+│   │   │   │   │   │   │   └── _error.js
+│   │   │   │   │   │   ├── _08bm286._.js.map
+│   │   │   │   │   │   ├── _1anvha4._.js
+│   │   │   │   │   │   ├── _219uq1s._.js
+│   │   │   │   │   │   ├── [next]_entry_page-loader_ts_0z3haqk._.js
+│   │   │   │   │   │   ├── [next]_entry_page-loader_ts_0z3haqk._.js.map
+│   │   │   │   │   │   ├── [next]_entry_page-loader_ts_1aoli7m._.js
+│   │   │   │   │   │   ├── [next]_entry_page-loader_ts_1aoli7m._.js.map
+│   │   │   │   │   │   ├── [next]_internal_font_google_geist_a71539c9_module_css_1igg3k2._.single.css
+│   │   │   │   │   │   ├── [next]_internal_font_google_geist_a71539c9_module_css_1igg3k2._.single.css.map
+│   │   │   │   │   │   ├── [next]_internal_font_google_geist_mono_8d43a2aa_module_css_1igg3k2._.single.css
+│   │   │   │   │   │   ├── [next]_internal_font_google_geist_mono_8d43a2aa_module_css_1igg3k2._.single.css.map
+│   │   │   │   │   │   ├── [root-of-the-server]__02sxxph._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__02sxxph._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__04kpziu._.css
+│   │   │   │   │   │   ├── [root-of-the-server]__04kpziu._.css.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0l4r13l._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0l4r13l._.js.map
+│   │   │   │   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js
+│   │   │   │   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js.map
+│   │   │   │   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js
+│   │   │   │   │   │   ├── [turbopack]_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js.map
+│   │   │   │   │   │   ├── node_modules_@swc_helpers_cjs_1r9vbqw._.js
+│   │   │   │   │   │   ├── node_modules_@swc_helpers_cjs_1r9vbqw._.js.map
+│   │   │   │   │   │   ├── node_modules_10e2-xo._.js
+│   │   │   │   │   │   ├── node_modules_10e2-xo._.js.map
+│   │   │   │   │   │   ├── node_modules_next_app_0yrdk3r.js
+│   │   │   │   │   │   ├── node_modules_next_app_0yrdk3r.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_0dfntjm._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_0dfntjm._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1atto1n._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_1atto1n._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1e8vcs8._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_1e8vcs8._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1gdrd03._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_1gdrd03._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_20wefz_._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_20wefz_._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_build_polyfills_polyfill-nomodule.js
+│   │   │   │   │   │   ├── node_modules_next_dist_build_polyfills_polyfill-nomodule.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_0_90u2t._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_0_90u2t._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_16lnmlo._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_16lnmlo._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_14ibvna._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_14ibvna._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_1amofcm._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_1amofcm._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_090k2jm.js
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_next-devtools_index_090k2jm.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_react-dom_096_9a-._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_react-dom_096_9a-._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_shared_lib_196_nl_._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_shared_lib_196_nl_._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_shared_lib_1vsvqbg._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_shared_lib_1vsvqbg._.js.map
+│   │   │   │   │   │   ├── node_modules_react-dom_0kla17-._.js
+│   │   │   │   │   │   ├── node_modules_react-dom_0kla17-._.js.map
+│   │   │   │   │   │   ├── pages__app_0du2_q-._.js
+│   │   │   │   │   │   ├── pages__app_0e7z0ug._.js.map
+│   │   │   │   │   │   ├── pages__error_0du2_q-._.js
+│   │   │   │   │   │   ├── pages__error_1g3qll_._.js.map
+│   │   │   │   │   │   ├── src_app_globals_162hn9o.css
+│   │   │   │   │   │   ├── src_app_globals_162hn9o.css.map
+│   │   │   │   │   │   ├── src_app_globals_css_1igg3k2._.single.css
+│   │   │   │   │   │   ├── src_app_globals_css_1igg3k2._.single.css.map
+│   │   │   │   │   │   ├── turbopack-_08bm286._.js
+│   │   │   │   │   │   ├── turbopack-pages__app_0e7z0ug._.js
+│   │   │   │   │   │   └── turbopack-pages__error_1g3qll_._.js
+│   │   │   │   │   ├── development
+│   │   │   │   │   │   ├── _buildManifest.js
+│   │   │   │   │   │   ├── _clientMiddlewareManifest.js
+│   │   │   │   │   │   └── _ssgManifest.js
+│   │   │   │   │   └── media
+│   │   │   │   │       ├── 4fa387ec64143e14-s.2tuy5pz7dlieh.woff2
+│   │   │   │   │       ├── 53b9e256198e5412-s.390ncx5urfkfu.woff2
+│   │   │   │   │       ├── 5ce348bf30bf5439-s.31988l_ccedte.woff2
+│   │   │   │   │       ├── 6306c77e7c8268e4-s.2dbetqa9o8jxf.woff2
+│   │   │   │   │       ├── 7178b3e590c64307-s.21jp631_3pja2.woff2
+│   │   │   │   │       ├── 797e433ab948586e-s.p.0r6juujl39pe6.woff2
+│   │   │   │   │       ├── 7d817b4c03b0c5f1-s.1uyisp29ctx0d.woff2
+│   │   │   │   │       ├── 8a480f0b521d4e75-s.1qq4vpdcun5oj.woff2
+│   │   │   │   │       ├── bbc41e54d2fcbd21-s.1rgnod-3esatf.woff2
+│   │   │   │   │       ├── caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2
+│   │   │   │   │       ├── favicon.2vob68tjqpejf.ico
+│   │   │   │   │       └── fef07dbb0973bf53-s.3p2_lha1f2xer.woff2
+│   │   │   │   ├── types
+│   │   │   │   │   ├── cache-life.d.ts
+│   │   │   │   │   ├── root-params.d.ts
+│   │   │   │   │   ├── routes.d.ts
+│   │   │   │   │   └── validator.ts
+│   │   │   │   ├── build-manifest.json
+│   │   │   │   ├── fallback-build-manifest.json
+│   │   │   │   ├── package.json
+│   │   │   │   ├── prerender-manifest.json
+│   │   │   │   ├── routes-manifest.json
+│   │   │   │   └── trace
+│   │   │   ├── diagnostics
+│   │   │   │   ├── build-diagnostics.json
+│   │   │   │   ├── framework.json
+│   │   │   │   └── route-bundle-stats.json
+│   │   │   ├── server
+│   │   │   │   ├── app
+│   │   │   │   │   ├── _global-error
+│   │   │   │   │   │   ├── page
+│   │   │   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   │   │   ├── page_client-reference-manifest.js
+│   │   │   │   │   │   ├── page.js
+│   │   │   │   │   │   ├── page.js.map
+│   │   │   │   │   │   └── page.js.nft.json
+│   │   │   │   │   ├── _global-error.segments
+│   │   │   │   │   │   ├── __PAGE__.segment.rsc
+│   │   │   │   │   │   ├── _full.segment.rsc
+│   │   │   │   │   │   └── _tree.segment.rsc
+│   │   │   │   │   ├── _not-found
+│   │   │   │   │   │   ├── page
+│   │   │   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   │   │   ├── page_client-reference-manifest.js
+│   │   │   │   │   │   ├── page.js
+│   │   │   │   │   │   ├── page.js.map
+│   │   │   │   │   │   └── page.js.nft.json
+│   │   │   │   │   ├── _not-found.segments
+│   │   │   │   │   │   ├── _not-found
+│   │   │   │   │   │   │   └── __PAGE__.segment.rsc
+│   │   │   │   │   │   ├── _full.segment.rsc
+│   │   │   │   │   │   └── _tree.segment.rsc
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── ai
+│   │   │   │   │   │       ├── route
+│   │   │   │   │   │       │   ├── app-paths-manifest.json
+│   │   │   │   │   │       │   ├── build-manifest.json
+│   │   │   │   │   │       │   └── server-reference-manifest.json
+│   │   │   │   │   │       ├── route_client-reference-manifest.js
+│   │   │   │   │   │       ├── route.js
+│   │   │   │   │   │       ├── route.js.map
+│   │   │   │   │   │       └── route.js.nft.json
+│   │   │   │   │   ├── favicon.ico
+│   │   │   │   │   │   ├── route
+│   │   │   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   │   │   └── build-manifest.json
+│   │   │   │   │   │   ├── route.js
+│   │   │   │   │   │   ├── route.js.map
+│   │   │   │   │   │   └── route.js.nft.json
+│   │   │   │   │   ├── index.segments
+│   │   │   │   │   │   ├── __PAGE__.segment.rsc
+│   │   │   │   │   │   ├── _full.segment.rsc
+│   │   │   │   │   │   └── _tree.segment.rsc
+│   │   │   │   │   ├── page
+│   │   │   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   │   │   ├── build-manifest.json
+│   │   │   │   │   │   ├── next-font-manifest.json
+│   │   │   │   │   │   ├── react-loadable-manifest.json
+│   │   │   │   │   │   └── server-reference-manifest.json
+│   │   │   │   │   ├── _global-error.html
+│   │   │   │   │   ├── _global-error.meta
+│   │   │   │   │   ├── _global-error.rsc
+│   │   │   │   │   ├── _not-found.html
+│   │   │   │   │   ├── _not-found.meta
+│   │   │   │   │   ├── _not-found.rsc
+│   │   │   │   │   ├── favicon.ico.body
+│   │   │   │   │   ├── favicon.ico.meta
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── index.meta
+│   │   │   │   │   ├── index.rsc
+│   │   │   │   │   ├── page_client-reference-manifest.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   ├── page.js.map
+│   │   │   │   │   └── page.js.nft.json
+│   │   │   │   ├── chunks
+│   │   │   │   │   ├── ssr
+│   │   │   │   │   │   ├── _next-internal_server_app__global-error_page_actions_0zi5s8-.js
+│   │   │   │   │   │   ├── _next-internal_server_app__global-error_page_actions_0zi5s8-.js.map
+│   │   │   │   │   │   ├── _next-internal_server_app__not-found_page_actions_0pt47yr.js
+│   │   │   │   │   │   ├── _next-internal_server_app__not-found_page_actions_0pt47yr.js.map
+│   │   │   │   │   │   ├── _next-internal_server_app_page_actions_0hhsz1j.js
+│   │   │   │   │   │   ├── _next-internal_server_app_page_actions_0hhsz1j.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0ew55hb._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0ew55hb._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0xpcv9w._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0xpcv9w._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__0y_e9do._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__0y_e9do._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__185wq1z._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__185wq1z._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__1f2jx51._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__1f2jx51._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__1lkwx6a._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__1lkwx6a._.js.map
+│   │   │   │   │   │   ├── [root-of-the-server]__1uw42cz._.js
+│   │   │   │   │   │   ├── [root-of-the-server]__1uw42cz._.js.map
+│   │   │   │   │   │   ├── [turbopack]_runtime.js
+│   │   │   │   │   │   ├── [turbopack]_runtime.js.map
+│   │   │   │   │   │   ├── node_modules_01xbj_9._.js
+│   │   │   │   │   │   ├── node_modules_01xbj_9._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1--45f-._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_1--45f-._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_1n3w9lb._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_1n3w9lb._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_0wpq8j3._.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_0wpq8j3._.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_0q-w892.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_global-error_0q-w892.js.map
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js
+│   │   │   │   │   │   ├── node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js.map
+│   │   │   │   │   │   ├── src_app_layout_tsx_0r5yz5t._.js
+│   │   │   │   │   │   └── src_app_layout_tsx_0r5yz5t._.js.map
+│   │   │   │   │   ├── _0uxp3uh._.js
+│   │   │   │   │   ├── _0uxp3uh._.js.map
+│   │   │   │   │   ├── _next-internal_server_app_api_ai_route_actions_19_py98.js
+│   │   │   │   │   ├── _next-internal_server_app_api_ai_route_actions_19_py98.js.map
+│   │   │   │   │   ├── _next-internal_server_app_favicon_ico_route_actions_0g2jjls.js
+│   │   │   │   │   ├── _next-internal_server_app_favicon_ico_route_actions_0g2jjls.js.map
+│   │   │   │   │   ├── [externals]__0l8ei7u._.js
+│   │   │   │   │   ├── [externals]__0l8ei7u._.js.map
+│   │   │   │   │   ├── [externals]__0xll52b._.js
+│   │   │   │   │   ├── [externals]__0xll52b._.js.map
+│   │   │   │   │   ├── [root-of-the-server]__0l3yhx4._.js
+│   │   │   │   │   ├── [root-of-the-server]__0l3yhx4._.js.map
+│   │   │   │   │   ├── [root-of-the-server]__1g_irro._.js
+│   │   │   │   │   ├── [root-of-the-server]__1g_irro._.js.map
+│   │   │   │   │   ├── [turbopack]_runtime.js
+│   │   │   │   │   └── [turbopack]_runtime.js.map
+│   │   │   │   ├── pages
+│   │   │   │   │   ├── 404.html
+│   │   │   │   │   └── 500.html
+│   │   │   │   ├── app-paths-manifest.json
+│   │   │   │   ├── functions-config-manifest.json
+│   │   │   │   ├── interception-route-rewrite-manifest.js
+│   │   │   │   ├── middleware-build-manifest.js
+│   │   │   │   ├── middleware-manifest.json
+│   │   │   │   ├── next-font-manifest.js
+│   │   │   │   ├── next-font-manifest.json
+│   │   │   │   ├── pages-manifest.json
+│   │   │   │   ├── prefetch-hints.json
+│   │   │   │   ├── server-reference-manifest.js
+│   │   │   │   └── server-reference-manifest.json
+│   │   │   ├── static
+│   │   │   │   ├── -xRxuVXDG1B4Zo5M9lSqw
+│   │   │   │   │   ├── _buildManifest.js
+│   │   │   │   │   ├── _clientMiddlewareManifest.js
+│   │   │   │   │   └── _ssgManifest.js
+│   │   │   │   ├── chunks
+│   │   │   │   │   ├── 08ttfj81-47mu.js
+│   │   │   │   │   ├── 0cz1d0mv5g_q7.js
+│   │   │   │   │   ├── 12pds7o0aodig.css
+│   │   │   │   │   ├── 2y4wans9ulj_u.js
+│   │   │   │   │   ├── 3fntmmi971322.js
+│   │   │   │   │   ├── 3l04zcqx63h3y.js
+│   │   │   │   │   └── turbopack-1m14ias-r6ul9.js
+│   │   │   │   └── media
+│   │   │   │       └── favicon.2vob68tjqpejf.ico
+│   │   │   ├── types
+│   │   │   │   ├── cache-life.d.ts
+│   │   │   │   ├── root-params.d.ts
+│   │   │   │   ├── routes.d.ts
+│   │   │   │   └── validator.ts
+│   │   │   ├── app-path-routes-manifest.json
+│   │   │   ├── BUILD_ID
+│   │   │   ├── build-manifest.json
+│   │   │   ├── export-marker.json
+│   │   │   ├── fallback-build-manifest.json
+│   │   │   ├── images-manifest.json
+│   │   │   ├── next-minimal-server.js.nft.json
+│   │   │   ├── next-server.js.nft.json
+│   │   │   ├── package.json
+│   │   │   ├── prerender-manifest.json
+│   │   │   ├── required-server-files.js
+│   │   │   ├── required-server-files.json
+│   │   │   ├── routes-manifest.json
+│   │   │   ├── trace
+│   │   │   ├── trace-build
+│   │   │   └── turbopack
 │   │   ├── public
 │   │   │   ├── file.svg
 │   │   │   ├── globe.svg
@@ -144,10 +937,10 @@ DanceContentEngine_v1
 │   ├── README_NEXT.md
 │   └── README.md
 ├── .gitignore
+├── ANALYST_RESEARCH_EXPORT.txt
 ├── CREATE_NEXT.cmd
 ├── INTERVIEW_150_QUESTIONS.md
 ├── process_audio.py
-├── project_tree.js
 ├── README.md
 ├── START_HERE.md
 └── structure.txt
