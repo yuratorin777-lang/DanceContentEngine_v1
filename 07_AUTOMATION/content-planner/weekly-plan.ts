@@ -333,54 +333,67 @@ export function parseWeeklyContentPlan(
 ): WeeklyContentPlan {
   const text = raw.trim();
 
+  if (!text) {
+    throw new Error(
+      "WEEKLY CONTENT PLANNER ERROR: Gemini returned an empty response."
+    );
+  }
+
   try {
     return normalizeWeeklyPlan(
       JSON.parse(text)
     );
   } catch {
-    const fenced =
-      text.match(
-        /```(?:json)?\s*([\s\S]*?)\s*```/i
-      );
-
-    if (fenced?.[1]) {
-      try {
-        return normalizeWeeklyPlan(
-          JSON.parse(
-            fenced[1]
-          )
-        );
-      } catch {
-        // continue
-      }
-    }
-
-    const start =
-      text.indexOf("{");
-
-    const end =
-      text.lastIndexOf("}");
-
-    if (
-      start >= 0 &&
-      end > start
-    ) {
-      try {
-        return normalizeWeeklyPlan(
-          JSON.parse(
-            text.slice(
-              start,
-              end + 1
-            )
-          )
-        );
-      } catch {
-        // continue
-      }
-    }
-
-    return normalizeWeeklyPlan({});
+    // continue
   }
+
+  const fenced =
+    text.match(
+      /```(?:json)?\s*([\s\S]*?)\s*```/i
+    );
+
+  if (fenced?.[1]) {
+    try {
+      return normalizeWeeklyPlan(
+        JSON.parse(
+          fenced[1]
+        )
+      );
+    } catch {
+      // continue
+    }
+  }
+
+  const start =
+    text.indexOf("{");
+
+  const end =
+    text.lastIndexOf("}");
+
+  if (
+    start >= 0 &&
+    end > start
+  ) {
+    try {
+      return normalizeWeeklyPlan(
+        JSON.parse(
+          text.slice(
+            start,
+            end + 1
+          )
+        )
+      );
+    } catch {
+      // continue
+    }
+  }
+
+  throw new Error(
+    `WEEKLY CONTENT PLANNER ERROR: Unable to parse Gemini response as JSON. Raw response: ${text.slice(
+      0,
+      2000
+    )}`
+  );
 }
 
 export function buildWeeklyPlannerSystemPrompt(): string {

@@ -1541,9 +1541,17 @@ const includeRadar =
         );
 
       const weeklyPlan =
-        parseWeeklyContentPlan(
-          weeklyPlanner.content
-        );
+  parseWeeklyContentPlan(
+    weeklyPlanner.content
+  );
+
+if (
+  weeklyPlan.items.length === 0
+) {
+  throw new Error(
+    "WEEKLY CONTENT PLANNER ERROR: Gemini returned a valid JSON Weekly Content Plan, but items array is empty."
+  );
+}
 
       const storedWeeklyPlan =
         await saveWeeklyContentPlan({
