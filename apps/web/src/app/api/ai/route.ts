@@ -1199,7 +1199,7 @@ async function callAI(
       content,
 
       model:
-        "gemini-2.5-flash",
+        "gemini-3.5-flash-lite",
 
       usage:
         data?.usageMetadata ||
