@@ -1632,50 +1632,54 @@ const includeRadar =
      * ------------------------------------------------
      */
 
-    const planner =
-      await callAI(
-        buildPlannerSystemPrompt(),
+    const plannerUserPrompt =
+  buildPlannerUserPrompt({
+    task,
+    profile,
+    context: "",
+    analystContext:
+      analystContext.context,
+    strategyContext,
+    requestedChannel,
+  });
 
-        buildPlannerUserPrompt({
-          task,
+if (
+  !plannerUserPrompt.includes(
+    "ANALYST EVIDENCE"
+  )
+) {
+  throw new Error(
+    "CONTENT PLANNER HANDOFF ERROR: Analyst Evidence was not included in Planner prompt."
+  );
+}
 
-          profile,
-
-          /*
-           * Deliberately empty:
-           *
-           * the broad Retriever context
-           * belongs to Writer.
-           */
-          context:
-            "",
-
-          /*
-           * Mandatory analytical layer.
-           */
-          analystContext:
-            analystContext.context,
-
-          strategyContext,
-
-          requestedChannel,
-        }),
-
-        6000,
-
-        {
-          responseMimeType:
-            "application/json",
-
-          responseSchema:
-            CONTENT_PLAN_SCHEMA,
-        }
-      );
+const planner =
+  await callAI(
+    buildPlannerSystemPrompt(),
+    plannerUserPrompt,
+    6000,
+    {
+      responseMimeType:
+        "application/json",
+      responseSchema:
+        CONTENT_PLAN_SCHEMA,
+    }
+  );
 
     const contentPlan =
-      parseContentPlan(
-        planner.content
-      );
+  parseContentPlan(
+    planner.content
+  );
+
+if (
+  !contentPlan ||
+  !contentPlan.topic ||
+  !contentPlan.channel
+) {
+  throw new Error(
+    "CONTENT PLANNER HANDOFF ERROR: Planner returned an incomplete Content Plan."
+  );
+}
 
     /*
      * ------------------------------------------------
@@ -1710,9 +1714,27 @@ const includeRadar =
     }
 
     const plannerBrief =
-      formatContentPlanForWriter(
-        contentPlan
-      );
+  formatContentPlanForWriter(
+    contentPlan
+  );
+
+if (
+  !plannerBrief.trim()
+) {
+  throw new Error(
+    "WRITER HANDOFF ERROR: Content Plan Brief is empty."
+  );
+}
+
+if (
+  !plannerBrief.includes(
+    contentPlan.channel
+  )
+) {
+  throw new Error(
+    "WRITER HANDOFF ERROR: Content Plan channel is missing from Writer Brief."
+  );
+}
 
     /*
      * ------------------------------------------------
@@ -1776,30 +1798,25 @@ WRITER EXECUTION LAYER
 ${writerSystemPrompt}
 `;
 
-    const userPrompt =
-      buildWriterUserPrompt({
-        task,
-
-        profile,
-
-        context:
-          `${plannerBrief}
-
+    const writerUserPrompt =
+  buildWriterUserPrompt({
+    task,
+    profile,
+    context:
+      `${plannerBrief}
 ==================================================
 RETRIEVED PROJECT CONTEXT
 ==================================================
-
 ${formatContext(
   retrieved.context
 )}`,
-
-        outputContract,
-      });
+    outputContract,
+  });
 
     const ai =
       await callAI(
         systemPrompt,
-        userPrompt,
+        writerUserPrompt,
         4000
       );
 
@@ -1809,21 +1826,34 @@ ${formatContext(
      * ------------------------------------------------
      */
 
-    const validation =
-      await validateWriterOutput({
-        task,
+    const validationContext = `
+==================================================
+CONTENT PLAN
+==================================================
+${plannerBrief}
 
-        outputContract,
+==================================================
+ANALYST EVIDENCE
+==================================================
+${analystContext.context}
 
-        content:
-          ai.content,
+==================================================
+RETRIEVED PROJECT CONTEXT
+==================================================
+${retrieved.context}
+`;
 
-        context:
-          retrieved.context,
-
-        projectRoot:
-          PROJECT_ROOT,
-      });
+const validation =
+  await validateWriterOutput({
+    task,
+    outputContract,
+    content:
+      ai.content,
+    context:
+      validationContext,
+    projectRoot:
+      PROJECT_ROOT,
+  });
 
     /*
      * ------------------------------------------------

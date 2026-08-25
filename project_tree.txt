@@ -64,6 +64,7 @@ DanceContentEngine_v1
 │   ├── AUDIENCE_INDEX.md
 │   └── README.md
 ├── 04_CONTENT
+│   ├── plans
 │   ├── .gitkeep
 │   ├── CHANNEL_STRATEGY.md
 │   ├── CONTENT_CHANNEL_ARCHITECTURE.md
@@ -83,7 +84,9 @@ DanceContentEngine_v1
 ├── 07_AUTOMATION
 │   ├── content-planner
 │   │   ├── index.ts
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── weekly-plan-store.ts
+│   │   └── weekly-plan.ts
 │   ├── knowledge-retrieval
 │   │   ├── index.ts
 │   │   ├── README.md
@@ -941,6 +944,7 @@ DanceContentEngine_v1
 ├── CREATE_NEXT.cmd
 ├── INTERVIEW_150_QUESTIONS.md
 ├── process_audio.py
+├── PROJECT_IMPLEMENTATION_EXPORT.txt
 ├── README.md
 ├── START_HERE.md
 └── structure.txt

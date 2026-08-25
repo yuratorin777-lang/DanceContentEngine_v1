@@ -622,18 +622,27 @@ The chosen channel must be justified by the content job, audience need, decision
 STRATEGIC CONTEXT
 ==================================================
 
-${
-  strategyContext.trim() ||
-  "No strategic documents supplied."
+${ 
+  strategyContext.trim() || 
+  "No strategic documents supplied." 
+}
+
+==================================================
+ANALYST EVIDENCE
+==================================================
+
+${ 
+  analystContext.trim() ||
+  "No Analyst evidence supplied."
 }
 
 ==================================================
 PROJECT / RETRIEVED CONTEXT
 ==================================================
 
-${
-  context.trim() ||
-  "No project context supplied."
+${ 
+  context.trim() || 
+  "No project context supplied." 
 }
 
 ==================================================
