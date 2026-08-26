@@ -145,7 +145,7 @@ const RETRIEVAL_MAX_SOURCES = 30;
  * ==================================================
  */
 
-const ANALYST_MAX_CHARACTERS = 90_000;
+const ANALYST_MAX_CHARACTERS = 180_000;
 
 /*
  * ==================================================
