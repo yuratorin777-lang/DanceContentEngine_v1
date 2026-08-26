@@ -1031,7 +1031,7 @@ async function callAI(
 
   try {
     const url =
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     const response =
       await fetch(url, {
@@ -1130,7 +1130,7 @@ async function callAI(
       content,
 
       model:
-        "gemini-2.5-flash",
+        "gemini-3.5-flash-lite",
 
       usage:
         data?.usageMetadata || null,
