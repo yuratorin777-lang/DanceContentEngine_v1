@@ -1026,7 +1026,7 @@ async function callAI(
 
   const timeoutId = setTimeout(
     () => controller.abort(),
-    60000
+    120000
   );
 
   try {
