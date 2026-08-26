@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import fs from "fs/promises";
 import fsSync from "fs";
@@ -393,10 +393,10 @@ function buildRetrievalSeed(
       )
         ? contentPlan.knowledgeNeeds
         : [
-            "СЂРµР°Р»СЊРЅС‹Р№ РѕРїС‹С‚",
-            "СЌРєСЃРїРµСЂС‚РЅС‹Рµ Р·РЅР°РЅРёСЏ",
-            "Р°РєС‚СѓР°Р»СЊРЅС‹Рµ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ",
-            "Р°СѓРґРёС‚РѕСЂРёСЏ",
+            "реальный опыт",
+            "экспертные знания",
+            "актуальные исследования",
+            "аудитория",
           ],
 
     radarSignals:
@@ -421,7 +421,7 @@ function buildRetrievalSeed(
       )
         ? contentPlan.constraints
         : [
-            "РќРµ РїСЂРёРґСѓРјС‹РІР°С‚СЊ С„Р°РєС‚С‹, РєРѕС‚РѕСЂС‹С… РЅРµС‚ РІ Р±РёР±Р»РёРѕС‚РµРєРµ РїСЂРѕРµРєС‚Р°.",
+            "Не придумывать факты, которых нет в библиотеке проекта.",
           ],
 
     /*
@@ -729,7 +729,7 @@ function isAnalystDocument(
 
   return (
     normalized.includes(
-      "/02_research/Р°РЅР°Р»РёС‚РёРє/"
+      "/02_research/аналитик/"
     ) ||
     normalized.includes(
       "/02_research/analyst/"
@@ -744,7 +744,7 @@ async function buildAnalystEvidenceContext(): Promise<
     path.join(
       PROJECT_ROOT,
       "02_RESEARCH",
-      "РђРЅР°Р»РёС‚РёРє"
+      "Аналитик"
     ),
 
     path.join(
@@ -934,7 +934,7 @@ CORE PRINCIPLES:
 
 6. Treat 02_RESEARCH as research evidence.
 
-7. Treat 02_RESEARCH/РђРЅР°Р»РёС‚РёРє as research
+7. Treat 02_RESEARCH/Аналитик as research
    produced by the AI Analyst.
 
 8. Treat 03_AUDIENCE as audience information.
@@ -982,17 +982,17 @@ CONTENT PRODUCTION ARCHITECTURE:
 The production pipeline is:
 
 INPUT
-в†“
+↓
 ANALYST EVIDENCE
-в†“
+↓
 CONTENT PLANNER
-в†“
+↓
 CONTENT PLAN
-в†“
+↓
 RETRIEVER
-в†“
+↓
 WRITER
-в†“
+↓
 VALIDATOR
 
 The Content Planner determines WHAT should
@@ -1030,14 +1030,14 @@ contribution according to the current Content Plan.
 Therefore:
 
 Content Plan
-в†’ Retriever
-в†’ relevant 01_KNOWLEDGE
-в†’ relevant RADAR
-в†’ relevant Research
-в†’ relevant Audience
-в†’ relevant Content methodology
-в†’ relevant SEO
-в†’ other relevant project sources
+→ Retriever
+→ relevant 01_KNOWLEDGE
+→ relevant RADAR
+→ relevant Research
+→ relevant Audience
+→ relevant Content methodology
+→ relevant SEO
+→ other relevant project sources
 
 The presence of a source does not mean every
 piece of that source must be used.
@@ -1167,7 +1167,7 @@ async function callAI(
 
   const timeoutId = setTimeout(
     () => controller.abort(),
-    240000
+    120000
   );
 
   try {
@@ -1484,7 +1484,7 @@ export async function POST(
           ok: false,
 
           error:
-            "Content Planner requires Analyst Evidence, but no Analyst documents were found in 02_RESEARCH/РђРЅР°Р»РёС‚РёРє.",
+            "Content Planner requires Analyst Evidence, but no Analyst documents were found in 02_RESEARCH/Аналитик.",
 
           meta: {
             analystEvidence:
@@ -1523,9 +1523,9 @@ export async function POST(
      * the normal:
      *
      * Content Plan
-     * в†’ Retriever
-     * в†’ Writer
-     * в†’ Validator
+     * → Retriever
+     * → Writer
+     * → Validator
      *
      * pipeline.
      */
@@ -1829,7 +1829,7 @@ END MANDATORY ANALYST EVIDENCE
 
     /*
      * ------------------------------------------------
-     * PLANNER в†’ RETRIEVER
+     * PLANNER → RETRIEVER
      * ------------------------------------------------
      *
      * THIS IS THE CRITICAL ARCHITECTURAL CHANGE.
@@ -1893,7 +1893,7 @@ END MANDATORY ANALYST EVIDENCE
 
     /*
      * ------------------------------------------------
-     * PLANNER в†’ WRITER BRIEF
+     * PLANNER → WRITER BRIEF
      * ------------------------------------------------
      */
 
