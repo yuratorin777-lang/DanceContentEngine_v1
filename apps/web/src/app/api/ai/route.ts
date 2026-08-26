@@ -190,11 +190,14 @@ type RetrievalCandidate = {
 
 type RetrievalPackage = {
   generatedAt: string;
+
   limits: {
     maxCharacters: number;
     maxSources: number;
   };
+
   composition: Record<string, number>;
+
   selected: RetrievalCandidate[];
 };
 
@@ -227,33 +230,53 @@ function safeProjectPath(
     return null;
   }
 
-  const absolute = path.resolve(
+  const absolutePath = path.resolve(
     PROJECT_ROOT,
     normalized
   );
 
   if (
-    absolute !== PROJECT_ROOT &&
-    !absolute.startsWith(
+    absolutePath !== PROJECT_ROOT &&
+    !absolutePath.startsWith(
       PROJECT_ROOT + path.sep
     )
   ) {
     return null;
   }
 
-  return absolute;
+  return absolutePath;
 }
 
 /*
  * ==================================================
  * RETRIEVAL SEED
  * ==================================================
+ *
+ * IMPORTANT:
+ *
+ * Retriever is intentionally executed AFTER
+ * Content Planner.
+ *
+ * Therefore the retrieval seed is built from:
+ *
+ * 1. original task
+ * 2. profile
+ * 3. requested paths
+ * 4. FINAL CONTENT PLAN
+ *
+ * The Content Plan is now the primary retrieval
+ * instruction.
+ *
+ * 01_KNOWLEDGE and RADAR remain permanent
+ * information sources and are always available
+ * to Retriever.
  */
 
 function buildRetrievalSeed(
   task: string,
   profile: ContextProfile,
-  requestedPaths: string[]
+  requestedPaths: string[],
+  contentPlan: any
 ) {
   const defaultPriorities: Record<
     ContextProfile,
@@ -261,6 +284,7 @@ function buildRetrievalSeed(
   > = {
     CONTENT: [
       "01_KNOWLEDGE",
+      "RADAR",
       "03_AUDIENCE",
       "02_RESEARCH",
       "04_CONTENT",
@@ -271,6 +295,7 @@ function buildRetrievalSeed(
     RESEARCH: [
       "02_RESEARCH",
       "01_KNOWLEDGE",
+      "RADAR",
       "03_AUDIENCE",
       "04_CONTENT",
       "05_SEO",
@@ -282,6 +307,7 @@ function buildRetrievalSeed(
       "02_RESEARCH",
       "03_AUDIENCE",
       "01_KNOWLEDGE",
+      "RADAR",
       "04_CONTENT",
       "05_SEO",
       "08_INPUT",
@@ -289,6 +315,7 @@ function buildRetrievalSeed(
 
     GENERAL: [
       "01_KNOWLEDGE",
+      "RADAR",
       "02_RESEARCH",
       "03_AUDIENCE",
       "04_CONTENT",
@@ -298,33 +325,112 @@ function buildRetrievalSeed(
     ],
   };
 
+  /*
+   * The complete Content Plan is converted to a
+   * bounded textual retrieval instruction.
+   *
+   * This allows Retriever to understand not only
+   * the topic, but also:
+   *
+   * - audience
+   * - angle
+   * - key message
+   * - goal
+   * - constraints
+   * - knowledge requirements
+   * - research requirements
+   * - SEO requirements
+   */
+
+  const contentPlanText = JSON.stringify(
+    contentPlan ?? {},
+    null,
+    2
+  );
+
   return {
-    audience: "",
-    topic: task,
-    subtopic: profile,
-    goal: task,
-    audienceNeed: "",
-    keyMessage: task,
-    contentAngle: task,
+    /*
+     * Original request remains available as
+     * secondary retrieval context.
+     */
+    audience:
+      contentPlan?.audience || "",
 
-    researchSignals: [],
-
-    knowledgeNeeds: [
-      "реальный опыт",
-      "экспертные знания",
-      "актуальные исследования",
-      "аудитория",
-    ],
-
-    radarSignals: [
+    topic:
+      contentPlan?.topic ||
       task,
-    ],
 
-    seoConsiderations: [],
+    subtopic:
+      contentPlan?.subtopic ||
+      profile,
 
-    constraints: [
-      "Не придумывать факты, которых нет в библиотеке проекта.",
-    ],
+    goal:
+      contentPlan?.goal ||
+      task,
+
+    audienceNeed:
+      contentPlan?.audienceNeed ||
+      "",
+
+    keyMessage:
+      contentPlan?.keyMessage ||
+      task,
+
+    contentAngle:
+      contentPlan?.contentAngle ||
+      task,
+
+    researchSignals:
+      Array.isArray(
+        contentPlan?.researchSignals
+      )
+        ? contentPlan.researchSignals
+        : [],
+
+    knowledgeNeeds:
+      Array.isArray(
+        contentPlan?.knowledgeNeeds
+      )
+        ? contentPlan.knowledgeNeeds
+        : [
+            "реальный опыт",
+            "экспертные знания",
+            "актуальные исследования",
+            "аудитория",
+          ],
+
+    radarSignals:
+      Array.isArray(
+        contentPlan?.radarSignals
+      )
+        ? contentPlan.radarSignals
+        : [
+            contentPlan?.topic || task,
+          ],
+
+    seoConsiderations:
+      Array.isArray(
+        contentPlan?.seoConsiderations
+      )
+        ? contentPlan.seoConsiderations
+        : [],
+
+    constraints:
+      Array.isArray(
+        contentPlan?.constraints
+      )
+        ? contentPlan.constraints
+        : [
+            "Не придумывать факты, которых нет в библиотеке проекта.",
+          ],
+
+    /*
+     * This is the critical new field.
+     *
+     * Retriever receives the actual strategic
+     * Content Plan instead of only the original task.
+     */
+    contentPlan: contentPlanText,
 
     sourcePriorities: [
       ...requestedPaths,
@@ -360,7 +466,8 @@ ${JSON.stringify(
   item.radarMetadata,
   null,
   2
-)}`
+)}
+`
       : "";
 
     return [
@@ -433,9 +540,14 @@ ${JSON.stringify(
  * BUILD FULL RETRIEVED CONTEXT
  * ==================================================
  *
- * This context is for Writer.
+ * This context is built AFTER Content Plan.
  *
- * It remains broad and diverse.
+ * It is the execution knowledge package for Writer.
+ *
+ * 01_KNOWLEDGE and RADAR are not optional sources
+ * at architecture level.
+ *
+ * Retriever decides relevance and composition.
  */
 
 async function buildRetrievedContext(
@@ -521,7 +633,8 @@ END SOURCE: ${pathLabel}
   }
 
   return {
-    filesLoaded: sources.length,
+    filesLoaded:
+      sources.length,
 
     contextCharacters:
       totalCharacters,
@@ -545,21 +658,18 @@ State that the required context is missing.
  * ANALYST EVIDENCE
  * ==================================================
  *
- * Analyst evidence is independent from Retriever.
+ * Analyst evidence is an independent strategic
+ * evidence layer.
  *
- * Planner receives this layer as mandatory evidence.
+ * Planner receives it BEFORE Retriever.
  *
- * Source:
- *
- * 02_RESEARCH/Аналитик
- *
- * or:
- *
- * 02_RESEARCH/Analyst
+ * Retriever receives the resulting Content Plan.
  */
 
 /*
- * Recursively collect Markdown files.
+ * --------------------------------------------------
+ * RECURSIVELY COLLECT MARKDOWN FILES
+ * --------------------------------------------------
  */
 
 async function collectMarkdownFiles(
@@ -593,6 +703,7 @@ async function collectMarkdownFiles(
         );
 
       result.push(...nested);
+
       continue;
     }
 
@@ -757,7 +868,8 @@ END ANALYST EVIDENCE SOURCE: ${relativePath}
   }
 
   return {
-    filesLoaded: sources.length,
+    filesLoaded:
+      sources.length,
 
     contextCharacters:
       totalCharacters,
@@ -865,73 +977,102 @@ CORE PRINCIPLES:
     from the full project library; do not assume
     it is the whole library.
 
-CONTENT PLANNER ARCHITECTURE:
+CONTENT PRODUCTION ARCHITECTURE:
 
-The Content Planner creates the strategic
-Content Plan.
+The production pipeline is:
 
-The Content Plan MUST be based primarily
-on the AI Analyst evidence layer.
+INPUT
+↓
+ANALYST EVIDENCE
+↓
+CONTENT PLANNER
+↓
+CONTENT PLAN
+↓
+RETRIEVER
+↓
+WRITER
+↓
+VALIDATOR
 
-The Writer then uses the Content Plan together
-with the wider retrieved project library.
+The Content Planner determines WHAT should
+be created.
+
+The Retriever determines WHICH project
+knowledge and signals are required to execute
+that Content Plan.
+
+The Writer uses the Content Plan together
+with the retrieved knowledge package.
+
+The Validator checks the final result against
+the task, Content Plan and supplied evidence.
+
+IMPORTANT RETRIEVAL PRINCIPLE:
+
+01_KNOWLEDGE and RADAR are permanent information
+sources of the content system.
+
+01_KNOWLEDGE contains expert knowledge,
+owner experience and accumulated project knowledge.
+
+RADAR contains external signals and emerging
+information.
+
+Both are continuously updated.
+
+They must remain available to Retriever for
+content production.
+
+However, Retriever must select their actual
+contribution according to the current Content Plan.
 
 Therefore:
 
-ANALYST EVIDENCE
-→ CONTENT PLANNER
-→ CONTENT PLAN
-→ WRITER
-→ VALIDATOR
+Content Plan
+→ Retriever
+→ relevant 01_KNOWLEDGE
+→ relevant RADAR
+→ relevant Research
+→ relevant Audience
+→ relevant Content methodology
+→ relevant SEO
+→ other relevant project sources
 
-The Planner does not replace Analyst findings
-with generic model knowledge.
-
-The Writer does not replace the Content Plan.
+The presence of a source does not mean every
+piece of that source must be used.
 
 PROFILE BEHAVIOR:
 
 CONTENT
 
-- use the Analyst evidence as the strategic
+- use Analyst evidence as the strategic
   evidence base for the Content Plan;
-
-- use broad project knowledge only later,
-  during Writer execution;
-
-- use Radar only when relevant.
+- use the resulting Content Plan as the
+  primary instruction for retrieval;
+- use 01_KNOWLEDGE heavily when expert
+  knowledge or owner experience is relevant;
+- use RADAR when external signals are relevant;
+- use other project sources according to
+  the Content Plan.
 
 RESEARCH
 
 - prioritize research evidence;
-
 - focus on findings, gaps, contradictions
-  and evidence.
+  and evidence;
+- use 01_KNOWLEDGE and RADAR when relevant.
 
 ANALYTICS
 
 - prioritize analytics;
-
 - use research and audience information
-  when relevant.
+  when relevant;
+- use 01_KNOWLEDGE and RADAR when relevant.
 
 GENERAL
 
 - use the most relevant supplied context.
-
-GENERAL DATA FLOW:
-
-INPUT
-→ Librarian
-→ Retriever
-→ Analyst Evidence
-→ Content Plan
-→ Draft
-→ Validation
-→ Approved
-→ Published
-→ Analytics
-→ feedback into Research / Audience / Knowledge
 
 ROLES:
 
@@ -942,7 +1083,7 @@ Maintains the factual map of the information library.
 RETRIEVER
 
 Builds a bounded and diverse context package
-for content production.
+AFTER the Content Plan has been created.
 
 ANALYST
 
@@ -964,7 +1105,7 @@ Content Plan.
 WRITER
 
 Creates the final content using the Content Plan
-and wider project context.
+and retrieved project context.
 
 SEO ENGINE
 
@@ -1105,7 +1246,8 @@ async function callAI(
     let data: any;
 
     try {
-      data = JSON.parse(raw);
+      data =
+        JSON.parse(raw);
     } catch {
       throw new Error(
         "Gemini API returned invalid JSON."
@@ -1161,9 +1303,10 @@ export async function GET() {
   }
 
   try {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
-    );
+    const res =
+      await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`
+      );
 
     const data =
       await res.json();
@@ -1267,7 +1410,8 @@ export async function POST(
                 item.trim() !== ""
             )
             .map(
-              (item) => item.trim()
+              (item) =>
+                item.trim()
             )
         : [];
 
@@ -1309,53 +1453,15 @@ export async function POST(
 
     /*
      * ------------------------------------------------
-     * LIBRARIAN → RETRIEVER
-     * ------------------------------------------------
-     */
-
-    const retrievalSeed =
-      buildRetrievalSeed(
-        task,
-        profile,
-        requestedPaths
-      );
-
-    const retrievalPackage =
-      (await buildRetrievalPackage(
-        PROJECT_ROOT,
-        retrievalSeed,
-        {
-          maxCharacters:
-            RETRIEVAL_MAX_CHARACTERS,
-
-          maxSources:
-            RETRIEVAL_MAX_SOURCES,
-        }
-      )) as RetrievalPackage;
-
-    /*
-     * ------------------------------------------------
-     * FULL LIBRARY CONTEXT
-     * ------------------------------------------------
-     *
-     * This will be used by Writer.
-     */
-
-    const retrieved =
-      await buildRetrievedContext(
-        retrievalPackage,
-        includeRadar
-      );
-
-    /*
-     * ------------------------------------------------
      * ANALYST EVIDENCE
      * ------------------------------------------------
      *
      * IMPORTANT:
      *
-     * This is intentionally independent
-     * from the generic Retriever package.
+     * Analyst Evidence is loaded BEFORE
+     * Content Planner.
+     *
+     * Retriever is intentionally NOT called here.
      */
 
     const analystContext =
@@ -1383,29 +1489,6 @@ export async function POST(
           meta: {
             analystEvidence:
               analystContext,
-
-            retrieval: {
-              composition:
-                retrievalPackage.composition,
-
-              selected:
-                retrievalPackage.selected.map(
-                  (candidate) => ({
-                    path:
-                      candidate.item?.path ||
-                      candidate.item?.title ||
-                      "",
-
-                    role:
-                      candidate.role ||
-                      candidate.item
-                        ?.sourceRole ||
-                      candidate.item
-                        ?.type ||
-                      "source",
-                  })
-                ),
-            },
           },
         },
         {
@@ -1427,6 +1510,24 @@ export async function POST(
      * ------------------------------------------------
      * WEEKLY CONTENT PLAN
      * ------------------------------------------------
+     *
+     * Weekly planning is a strategic planning
+     * operation.
+     *
+     * It does not execute individual content items.
+     *
+     * Therefore Retriever is intentionally not
+     * executed here.
+     *
+     * Later, each selected Weekly Item can enter
+     * the normal:
+     *
+     * Content Plan
+     * → Retriever
+     * → Writer
+     * → Validator
+     *
+     * pipeline.
      */
 
     if (
@@ -1555,8 +1656,9 @@ export async function POST(
      * 2. Strategy
      *
      * Planner does NOT receive
-     * the full Writer library context.
-     * ------------------------------------------------
+     * the full Retriever context.
+     *
+     * This is intentional.
      */
 
     const plannerUserPromptBase =
@@ -1576,23 +1678,9 @@ export async function POST(
       });
 
     /*
-     * ==================================================
+     * ------------------------------------------------
      * CRITICAL ANALYST HANDOFF
-     * ==================================================
-     *
-     * We do not rely only on the internal
-     * implementation of buildPlannerUserPrompt().
-     *
-     * Analyst Evidence is explicitly appended
-     * to the final prompt sent to Gemini.
-     *
-     * This guarantees:
-     *
-     * Analyst
-     *    ↓
-     * Planner Gemini
-     *
-     * even if the builder changes later.
+     * ------------------------------------------------
      */
 
     const plannerUserPrompt = `
@@ -1741,6 +1829,70 @@ END MANDATORY ANALYST EVIDENCE
 
     /*
      * ------------------------------------------------
+     * PLANNER → RETRIEVER
+     * ------------------------------------------------
+     *
+     * THIS IS THE CRITICAL ARCHITECTURAL CHANGE.
+     *
+     * Retriever is now called ONLY AFTER
+     * Content Planner has produced the final
+     * Content Plan.
+     */
+
+    const retrievalSeed =
+      buildRetrievalSeed(
+        task,
+        profile,
+        requestedPaths,
+        contentPlan
+      );
+
+    const retrievalPackage =
+      (await buildRetrievalPackage(
+        PROJECT_ROOT,
+
+        retrievalSeed,
+
+        {
+          maxCharacters:
+            RETRIEVAL_MAX_CHARACTERS,
+
+          maxSources:
+            RETRIEVAL_MAX_SOURCES,
+        }
+      )) as RetrievalPackage;
+
+    /*
+     * ------------------------------------------------
+     * BUILD RETRIEVED CONTEXT
+     * ------------------------------------------------
+     *
+     * Retriever has now selected the knowledge
+     * required to execute the Content Plan.
+     */
+
+    const retrieved =
+      await buildRetrievedContext(
+        retrievalPackage,
+        includeRadar
+      );
+
+    /*
+     * ------------------------------------------------
+     * RETRIEVAL SAFETY
+     * ------------------------------------------------
+     */
+
+    if (
+      retrieved.filesLoaded === 0
+    ) {
+      console.warn(
+        "RETRIEVER WARNING: No project context was retrieved for the Content Plan."
+      );
+    }
+
+    /*
+     * ------------------------------------------------
      * PLANNER → WRITER BRIEF
      * ------------------------------------------------
      */
@@ -1750,7 +1902,9 @@ END MANDATORY ANALYST EVIDENCE
         contentPlan
       );
 
-    if (!plannerBrief.trim()) {
+    if (
+      !plannerBrief.trim()
+    ) {
       throw new Error(
         "WRITER HANDOFF ERROR: Content Plan Brief is empty."
       );
@@ -1775,7 +1929,9 @@ END MANDATORY ANALYST EVIDENCE
      *
      * Content Plan
      * +
-     * full retrieved project context
+     * Retriever context
+     *
+     * NOT the entire project library.
      */
 
     const writerSystemPrompt =
@@ -1790,28 +1946,42 @@ ${buildSystemPrompt(profile)}
 CONTENT PLANNER EXECUTION LAYER
 ==================================================
 
-The Content Planner has already converted
-the Analyst Evidence into a strategic
-Content Plan.
+The Content Planner has already created the
+strategic Content Plan.
 
-The selected PRIMARY CHANNEL is authoritative.
+The Content Plan is authoritative.
 
 The Writer MUST follow the PRIMARY CHANNEL
-specified in the Content Planner Brief.
+specified in the Content Plan.
 
 Do not silently move the content to another channel.
 
 The Writer must adapt tone, depth, structure,
 CTA and presentation to the selected channel.
 
-The Content Plan is the strategic instruction.
+==================================================
+RETRIEVER EXECUTION LAYER
+==================================================
 
-The retrieved project context is the broad
-factual and knowledge layer used to execute
-the Content Plan.
+The Retriever was executed AFTER the Content Plan.
 
-Do not replace the Content Plan with generic
-model assumptions.
+Therefore the retrieved context is specifically
+selected to support execution of the Content Plan.
+
+The retrieved context is NOT the entire project
+library.
+
+Use it as the factual and knowledge layer for
+writing the content.
+
+01_KNOWLEDGE and RADAR are permanent sources
+available to the Retriever.
+
+RADAR is an external signal source and must not
+automatically be treated as verified fact.
+
+Do not invent information that is not supported
+by the Content Plan or retrieved project context.
 
 ==================================================
 CONTENT PLANNER BRIEF
@@ -1833,6 +2003,10 @@ ${writerSystemPrompt}
         profile,
 
         context: `
+==================================================
+CONTENT PLAN
+==================================================
+
 ${plannerBrief}
 
 ==================================================
@@ -1842,6 +2016,10 @@ RETRIEVED PROJECT CONTEXT
 ${formatContext(
   retrieved.context
 )}
+
+==================================================
+END RETRIEVED PROJECT CONTEXT
+==================================================
 `,
 
         outputContract,
@@ -1866,6 +2044,9 @@ ${formatContext(
      * ------------------------------------------------
      * VALIDATOR
      * ------------------------------------------------
+     *
+     * Validator sees the same strategic and
+     * factual layers that governed Writer.
      */
 
     const validationContext = `
@@ -1886,6 +2067,10 @@ RETRIEVED PROJECT CONTEXT
 ==================================================
 
 ${retrieved.context}
+
+==================================================
+END VALIDATION CONTEXT
+==================================================
 `;
 
     const validation =
@@ -1933,7 +2118,7 @@ ${retrieved.context}
 
         /*
          * Exact Analyst evidence used
-         * to build the plan.
+         * to build the Content Plan.
          */
 
         analystEvidence: {
@@ -1947,11 +2132,23 @@ ${retrieved.context}
             analystContext.sources,
         },
 
+        /*
+         * Strategy documents used by Planner.
+         */
+
         strategyDocuments:
           STRATEGY_FILES,
 
+        /*
+         * Planner model.
+         */
+
         plannerModel:
           planner.model,
+
+        /*
+         * Writer model.
+         */
 
         model:
           ai.model,
@@ -1960,7 +2157,7 @@ ${retrieved.context}
           "Google Gemini",
 
         /*
-         * Broad Writer context.
+         * Retriever output.
          */
 
         filesLoaded:
@@ -2059,7 +2256,6 @@ ${retrieved.context}
             ? error.message
             : "Unknown AI gateway error.",
       },
-
       {
         status: 500,
       }
