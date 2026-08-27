@@ -1,0 +1,191 @@
+{
+    "planId":  "WCP-Serpukhov-NewSeason-001",
+    "periodDays":  7,
+    "audience":  "Родители детей 2-12 лет в Серпухове",
+    "strategicObjective":  "Построение доверия, информирование родителей для принятия решения о выборе танцевальной студии и увеличение набора учеников.",
+    "channels":  [
+                     "VK",
+                     "Telegram",
+                     "Website / SEO"
+                 ],
+    "analystBasis":  [
+                         "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-EXECUTIVE-BRIEF.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-HANDOVER.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-MARKET-ANALYSIS.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md",
+                         "04_CONTENT/CONTENT_CHANNEL_ARCHITECTURE.md",
+                         "04_CONTENT/CONTENT_STRATEGY.md",
+                         "04_CONTENT/CHANNEL_STRATEGY.md"
+                     ],
+    "items":  [
+                  {
+                      "id":  "WCP-001-DAY1-VK",
+                      "day":  1,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-4 лет",
+                      "topic":  "Преимущества раннего начала занятий танцами",
+                      "subtopic":  "Почему стоит отдавать ребенка на танцы с 2-3 лет: развитие и адаптация",
+                      "goal":  "Привлечь внимание родителей малышей, показать ценность раннего старта, инициировать дискуссию.",
+                      "decisionStage":  "Awareness/Exploration",
+                      "contentJob":  "Decision support, Expert authority",
+                      "contentRole":  "Educational",
+                      "format":  "Короткий пост с вопросом для обсуждения",
+                      "repurposingPotential":  "Короткое видео, сторис, FAQ для сайта",
+                      "rationale":  "Бизнес-контекст указывает на приоритет Baby Dance (3-7 лет) и эксперименты с 2-летками. Анализ рынка подтверждает, что дошкольный возраст — ключевой входной шлюз. Контент должен снять родительские опасения и показать преимущества раннего старта.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-MARKET-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY2-Website",
+                      "day":  2,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители детей 2-7 лет",
+                      "topic":  "Как выбрать танцевальную студию для ребенка в Серпухове",
+                      "subtopic":  "Исчерпывающее руководство по выбору студии для детей дошкольного и младшего школьного возраста",
+                      "goal":  "Предоставить родителям полную информацию для осознанного выбора, охватить ключевые критерии (возраст, стиль, педагог, методика, логистика).",
+                      "decisionStage":  "Exploration/Shortlist/Comparison",
+                      "contentJob":  "Decision support, Local relevance",
+                      "contentRole":  "Decision-support, Comparative",
+                      "format":  "Длинная статья-руководство",
+                      "repurposingPotential":  "Серия постов для VK/Telegram, чек-лист для скачивания",
+                      "rationale":  "Поисковый спрос показывает высокий интерес к запросам \u0027как выбрать танцы ребенку\u0027. Это высокоценный контент для этапа принятия решения, который должен быть размещен на сайте для долгосрочного SEO-эффекта. Стратегия контента подчеркивает важность глубокой поддержки принятия решений.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-EXECUTIVE-BRIEF.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md",
+                                           "04_CONTENT/CONTENT_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY3-Telegram",
+                      "day":  3,
+                      "channel":  "Telegram",
+                      "audience":  "Родители детей 2-7 лет (новые и текущие)",
+                      "topic":  "Что делать, если ребенок не хочет идти на танцы: взгляд руководителя",
+                      "subtopic":  "Адаптация или нежелание? Как поддержать ребенка и не совершить ошибку",
+                      "goal":  "Снять распространенные страхи родителей по поводу \u0027не хочу\u0027, показать экспертный и поддерживающий подход школы к адаптации, углубить доверие и построить отношения.",
+                      "decisionStage":  "Adaptation",
+                      "contentJob":  "Problem solving, Expert authority, Relationship",
+                      "contentRole":  "Authorial, Problem-oriented",
+                      "format":  "Личное обращение/размышление руководителя",
+                      "repurposingPotential":  "Видеообращение, пост для VK с сокращенной версией",
+                      "rationale":  "Владелец школы акцентирует внимание на важности прохождения периода \u0027не хочу\u0027. Анализ аудитории показывает, что страх \u0027ребенку не понравится\u0027 является ключевым. Telegram идеально подходит для глубокого личного обращения и экспертного мнения руководителя, создавая более тесную связь с аудиторией.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md",
+                                           "04_CONTENT/CONTENT_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY4-VK",
+                      "day":  4,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-12 лет",
+                      "topic":  "Видимые результаты наших учеников: что меняется в детях",
+                      "subtopic":  "Истории успеха и прогресс наших маленьких танцоров и их родителей в Серпухове",
+                      "goal":  "Продемонстрировать реальные результаты методики школы, укрепить доверие, показать ценность занятий и мотивировать новых учеников.",
+                      "decisionStage":  "Comparison/First Contact",
+                      "contentJob":  "Proof / progress, Local relevance",
+                      "contentRole":  "Proof / progress",
+                      "format":  "Пост с фотографиями/видео и цитатами родителей",
+                      "repurposingPotential":  "Короткие видео-отзывы, раздел \u0027Отзывы\u0027 на сайте, серия сторис",
+                      "rationale":  "Бизнес-контекст подчеркивает достижения учеников (\u0027топ-10 России\u0027, \u0027чемпионы\u0027), а анализ аудитории показывает, что родители ценят \u0027видимый прогресс\u0027. VK является отличным каналом для демонстрации школьной жизни и социального подтверждения, что важно на этапах сравнения и первого контакта.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md",
+                                           "04_CONTENT/CONTENT_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY5-Website",
+                      "day":  5,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители детей 2-7 лет",
+                      "topic":  "Ответы на частые вопросы родителей перед записью на танцы",
+                      "subtopic":  "Что нужно знать о первом занятии, форме одежды и адаптации для детей 2-7 лет",
+                      "goal":  "Снять типовые возражения и вопросы родителей, снизить барьеры для первого контакта и записи, предоставив всю необходимую информацию.",
+                      "decisionStage":  "First Contact/Exploration",
+                      "contentJob":  "Problem solving, Decision support",
+                      "contentRole":  "Problem-oriented, Decision-support",
+                      "format":  "Страница с FAQ",
+                      "repurposingPotential":  "Короткие посты для VK, ответы в Telegram-чате, видео-FAQ",
+                      "rationale":  "Бизнес-контекст указывает на стандартные вопросы родителей (\u0027какая программа\u0027, \u0027форма одежды\u0027). Поисковые возможности включают запросы о подготовке к первому занятию. Сайт является идеальной платформой для размещения долгосрочного, легкодоступного FAQ, который помогает родителям на последних этапах принятия решения.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md",
+                                           "04_CONTENT/CONTENT_STRATEGY.md"
+                                       ],
+                      "priority":  "MEDIUM",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY6-VK",
+                      "day":  6,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-12 лет",
+                      "topic":  "Приглашаем на занятия Baby Dance и Dance Kids в Серпухове!",
+                      "subtopic":  "Откройте мир танца для вашего ребенка: идет набор в группы",
+                      "goal":  "Прямой призыв к действию, информирование о продолжающемся наборе, подчеркивание локальной доступности и удобства.",
+                      "decisionStage":  "First Contact/Enrollment",
+                      "contentJob":  "Conversion / retention, Local relevance",
+                      "contentRole":  "Commercial",
+                      "format":  "Короткий анонс с CTA и ссылкой на запись",
+                      "repurposingPotential":  "Рекламный баннер, сторис, короткое видео",
+                      "rationale":  "Сезонность явно указывает на август/сентябрь как пик набора. Бизнес-контекст подтверждает основной набор в этот период. VK — первичный социальный канал для обнаружения и поддержки конверсии. Этот пост служит прямым CTA, напоминая о возможности записаться.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-001-DAY7-Telegram",
+                      "day":  7,
+                      "channel":  "Telegram",
+                      "audience":  "Родители детей 2-12 лет (новые и текущие)",
+                      "topic":  "Наша методика: почему мы учим именно так, и что это дает ребенку",
+                      "subtopic":  "Как строится развитие ребенка от простого к сложному и почему это эффективно",
+                      "goal":  "Углубить понимание родителями уникальности и эффективности методики школы, построить долгосрочное доверие и подчеркнуть экспертность.",
+                      "decisionStage":  "Exploration/Adaptation/Loyalty",
+                      "contentJob":  "Expert authority, Relationship",
+                      "contentRole":  "Authorial, Educational",
+                      "format":  "Развернутый пост с объяснением принципов методики",
+                      "repurposingPotential":  "Статья для сайта, серия коротких объясняющих видео",
+                      "rationale":  "Бизнес-контекст подробно описывает методику \u0027от простого к сложному\u0027, основанную на десятилетиях опыта. Владелец школы считает это одним из ключевых отличий. Telegram, как канал для глубоких отношений, идеально подходит для подробного объяснения сложных концепций, которые формируют экспертный авторитет и долгосрочное доверие.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "04_CONTENT/CHANNEL_STRATEGY.md",
+                                           "04_CONTENT/CONTENT_STRATEGY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  }
+              ]
+}
