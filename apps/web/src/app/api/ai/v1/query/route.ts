@@ -87,7 +87,7 @@ export async function POST(req: Request) {
     const fullSystemInstruction = `${baseSystemInstruction}\n\nАКТУАЛЬНЫЙ КОНТЕКСТ ИЗ БАЗЫ ЗНАНИЙ:\n${contextText || 'Контекст не подтягивался (короткая реплика) или не найден.'}`;
 
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.5-flash-lite',
       systemInstruction: fullSystemInstruction,
     });
 
