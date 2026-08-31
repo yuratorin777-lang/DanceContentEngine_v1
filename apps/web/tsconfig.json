@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@automation/*": ["../../07_AUTOMATION/*"]
     }
   },
   "include": [

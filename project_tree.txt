@@ -33,6 +33,39 @@ DanceContentEngine_v1
 │   ├── 2026-08-17_08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2
 │   │   └── raw_parts
 │   │       └── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.md
+│   ├── 2026-08-27_Важное для Weekly plan
+│   │   └── raw_parts
+│   │       └── Важное для Weekly plan.md
+│   ├── 2026-08-27_Доказательства
+│   │   └── raw_parts
+│   │       └── Доказательства.md
+│   ├── 2026-08-27_Как_работать_с_детьми_которые_боятся_или_не_занимаются
+│   │   └── raw_parts
+│   │       └── Как_работать_с_детьми_которые_боятся_или_не_занимаются.md
+│   ├── 2026-08-27_Коммерчнская реальность (1)
+│   │   └── raw_parts
+│   │       └── Коммерчнская реальность (1).md
+│   ├── 2026-08-27_компетенции предприятия
+│   │   └── raw_parts
+│   │       └── компетенции предприятия.md
+│   ├── 2026-08-27_Кто мы
+│   │   └── raw_parts
+│   │       └── Кто мы.md
+│   ├── 2026-08-27_методика и подход
+│   │   └── raw_parts
+│   │       └── методика и подход.md
+│   ├── 2026-08-27_почему_родитель_должен_выбрать_нас
+│   │   └── raw_parts
+│   │       └── почему_родитель_должен_выбрать_нас.md
+│   ├── 2026-08-27_Реальные отличия
+│   │   └── raw_parts
+│   │       └── Реальные отличия.md
+│   ├── 2026-08-27_Родитель и продукт
+│   │   └── raw_parts
+│   │       └── Родитель и продукт.md
+│   ├── 2026-08-27_Что именно мы продаем
+│   │   └── raw_parts
+│   │       └── Что именно мы продаем.md
 │   ├── .gitkeep
 │   ├── KNOWLEDGE_INDEX.md
 │   ├── OWNER_INPUT_RULES.md
@@ -40,6 +73,7 @@ DanceContentEngine_v1
 ├── 02_RESEARCH
 │   ├── Аналитик
 │   │   ├── Аналитика.zip
+│   │   ├── BUSINESS-CONTEXT.md
 │   │   ├── SERPUKHOV-AUDIENCE-ANALYSIS.md
 │   │   ├── SERPUKHOV-AUDIENCE-DEEP-DIVE.md
 │   │   ├── SERPUKHOV-AUDIENCE-RESEARCH-HANDOVER.md
@@ -48,7 +82,8 @@ DanceContentEngine_v1
 │   │   ├── SERPUKHOV-EXECUTIVE-BRIEF.md
 │   │   ├── SERPUKHOV-HANDOVER.md
 │   │   ├── SERPUKHOV-MARKET-ANALYSIS.md
-│   │   └── SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
+│   │   ├── SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
+│   │   └── SERPUKHOV-SEASONALITY-MAP.md
 │   ├── .gitkeep
 │   ├── AI-ANALYST-BRIEF.md
 │   ├── AI-ANALYST-ONBOARDING.md
@@ -64,7 +99,21 @@ DanceContentEngine_v1
 │   ├── AUDIENCE_INDEX.md
 │   └── README.md
 ├── 04_CONTENT
+│   ├── content
+│   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-1-VK-content.md
+│   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-6-Website - SEO-content.md
+│   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-7-VK-content.md
+│   │   └── WCP-Serpukhov-NewSeason-001-day-1-VK-content.md
 │   ├── plans
+│   │   └── weekly
+│   │       ├── serpukhov-weekly-content-plan-week-1.json
+│   │       ├── serpukhov-weekly-content-plan-week-1.md
+│   │       ├── SERPUKHOV-WEEKLY-PLAN-2026-W34.json
+│   │       ├── SERPUKHOV-WEEKLY-PLAN-2026-W34.md
+│   │       ├── WCP-Serpukhov-NewSeason-001.json
+│   │       ├── WCP-Serpukhov-NewSeason-001.md
+│   │       ├── weekly-plan-serpukhov-dance-2026-w34.json
+│   │       └── weekly-plan-serpukhov-dance-2026-w34.md
 │   ├── .gitkeep
 │   ├── CHANNEL_STRATEGY.md
 │   ├── CONTENT_CHANNEL_ARCHITECTURE.md
@@ -120,7 +169,18 @@ DanceContentEngine_v1
 ├── 08_INPUT
 │   ├── _processed
 │   │   ├── 07 какие ошибки совершал.aac
-│   │   └── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.aac
+│   │   ├── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.aac
+│   │   ├── Важное для Weekly plan.aac
+│   │   ├── Доказательства.aac
+│   │   ├── Как_работать_с_детьми_которые_боятся_или_не_занимаются.aac
+│   │   ├── Коммерчнская реальность (1).aac
+│   │   ├── компетенции предприятия.aac
+│   │   ├── Кто мы.aac
+│   │   ├── методика и подход.aac
+│   │   ├── почему_родитель_должен_выбрать_нас.aac
+│   │   ├── Реальные отличия.aac
+│   │   ├── Родитель и продукт.aac
+│   │   └── Что именно мы продаем.aac
 │   ├── .gitkeep
 │   ├── INPUT_INDEX.md
 │   └── README.md
@@ -918,7 +978,8 @@ DanceContentEngine_v1
 │   │   │   └── app
 │   │   │       ├── api
 │   │   │       │   ├── ai
-│   │   │       │   │   └── route.ts
+│   │   │       │   │   ├── route.ts
+│   │   │       │   │   └── route.ts.bak
 │   │   │       │   └── clean-transcript
 │   │   │       │       └── route.ts
 │   │   │       ├── favicon.ico
@@ -940,8 +1001,12 @@ DanceContentEngine_v1
 │   ├── README_NEXT.md
 │   └── README.md
 ├── .gitignore
+├── роут тг хук.txt
 ├── ANALYST_RESEARCH_EXPORT.txt
+├── api-response.json
 ├── CREATE_NEXT.cmd
+├── generate-content-from-weekly.ps1
+├── generate-weekly-plan.ps1
 ├── INTERVIEW_150_QUESTIONS.md
 ├── process_audio.py
 ├── PROJECT_IMPLEMENTATION_EXPORT.txt
