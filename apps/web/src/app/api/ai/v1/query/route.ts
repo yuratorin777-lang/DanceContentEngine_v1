@@ -24,35 +24,40 @@ export async function POST(req: Request) {
         parts: [{ text: String(item.content || item.text || '').trim() }]
       }));
 
-    // 2. Определение контекста поиска для RAG
-    // Если пользователь ответил коротко (например: "Да", "Расскажи", "Хорошо"), 
-    // берем предыдущую тему диалога, чтобы ретривер не искал по пустому слову "Да"
-    let searchQuery = query;
-    if (query.trim().length <= 15 && formattedHistory.length > 0) {
-      const lastMessages = [...formattedHistory].reverse();
-      const lastModelMsg = lastMessages.find(m => m.role === 'model');
-      const lastUserMsg = lastMessages.find(m => m.role === 'user');
-      searchQuery = `${lastUserMsg?.parts[0]?.text || ''} ${lastModelMsg?.parts[0]?.text || ''} ${query}`.slice(0, 300);
+    // 2. Вызов ретривера базы знаний (с защитой от сбоев на короткие ответы)
+    const isShortReply = query.trim().length <= 15;
+    let contextText = '';
+    let sourcesCount = 0;
+
+    if (!isShortReply) {
+      // Для полноценных вопросов вычисляем контекст и запрашиваем базу знаний
+      let searchQuery = query;
+      if (formattedHistory.length > 0) {
+        const lastMessages = [...formattedHistory].reverse();
+        const lastModelMsg = lastMessages.find(m => m.role === 'model');
+        const lastUserMsg = lastMessages.find(m => m.role === 'user');
+        searchQuery = `${lastUserMsg?.parts[0]?.text || ''} ${lastModelMsg?.parts[0]?.text || ''} ${query}`.slice(0, 300);
+      }
+
+      const projectRoot = path.resolve(process.cwd(), '../..');
+      const plan = {
+        topic: searchQuery,
+        keyMessage: searchQuery,
+        subtopic: '',
+        goal: '',
+        audience: '',
+        audienceNeed: '',
+        contentAngle: '',
+      };
+
+      const knowledgePackage = await buildRetrievalPackage(projectRoot, plan);
+      contextText = knowledgePackage.selected
+        .map((source, index) => `--- Источник ${index + 1}: ${source.item.title || source.item.path} ---\n${source.content}`)
+        .join('\n\n');
+      sourcesCount = knowledgePackage.selected.length;
     }
 
-    // 3. Вызов ретривера базы знаний
-    const projectRoot = path.resolve(process.cwd(), '../..');
-    const plan = {
-      topic: searchQuery,
-      keyMessage: searchQuery,
-      subtopic: '',
-      goal: '',
-      audience: '',
-      audienceNeed: '',
-      contentAngle: '',
-    };
-
-    const knowledgePackage = await buildRetrievalPackage(projectRoot, plan);
-    const contextText = knowledgePackage.selected
-      .map((source, index) => `--- Источник ${index + 1}: ${source.item.title || source.item.path} ---\n${source.content}`)
-      .join('\n\n');
-
-    // 4. Системный промт с жесткими правилами продолжения бесед
+    // 3. Расширенный системный промпт (сохранен ваш исходный текст + добавлены точечные улучшения)
     const baseSystemInstruction = `Ты — заботливый, умный и опытный ИИ-наставник и ассистент детской танцевальной студии DanceKids.
 Твоя главная задача — быть внимательным собеседником и экспертным консультантом для родителей в Личном Кабинете.
 
@@ -68,20 +73,25 @@ export async function POST(req: Request) {
 - Избегай общих философских лекций (о "современных родителях", "влиянии гаджетов", "трендах воспитания"), если родитель просит конкретный совет по поведению или эмоциям ребёнка.
 - Говори с родителем поддерживающе, с душой и заботой, без поучений и наставнического тона.
 
+ПРАВИЛА ИЗБЕЖАНИЯ ПОВТОРОВ И ДИНАМИКИ ДИАЛОГА (КРИТИЧЕСКИ ВАЖНО):
+- НЕ ПОВТОРЯЙ ОДНИ И ТЕ ЖЕ СОВЕТЫ! Если ты уже давал списки про "поговорите с ребенком", "приходите раньше" и "не пропускайте" В ВЫШЕСТОЯЩЕЙ ПЕРЕПИСКЕ — НЕ ПИШИ ИХ СНОВА.
+- Отвечай точечно на конкретный вопрос. Если спросили "Через сколько пройдет?" — ответь только про сроки (от 2 до 4 недель) и как педагог аккуратно вовлекает ребенка (без повторного списка базовых советов).
+- Будь живым собеседником. Не выдавай длинные инструкции из 5 пунктов на каждый короткий ответ родителя.
+
 ПРАВИЛА НЕПРЕРЫВНОГО ДИАЛОГА (КРИТИЧЕСКИ ВАЖНО):
 - Если пользователь пишет короткий ответ ("Да", "Расскажи", "Интересно", "Давай" и т.д.) — он отвечает на ТВОЙ ПОСЛЕДНИЙ ВОПРОС!
-- СРАЗУ раскрывай тему, которую ты сам пообещал или предложил в своём предыдущем сообщении! 
+- СРАЗУ раскрывай тему, которую ты сам пообещал или предложил в своём предыдущем сообщении (например, расскажи подробно, как ИМЕННО педагоги работают со стеснением на занятии). 
 - КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО при ответах вроде "Да" спрашивать родителю заново: "Чем я могу помочь?" или "Какой у вас возник вопрос?". Ты ДОЛЖЕН ПРИСТУПАТЬ к раскрытию предложенной темы.
 - КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО повторять приветствия ("Здравствуйте", "Добрый день", "Я к вашим услугам").`;
 
-    const fullSystemInstruction = `${baseSystemInstruction}\n\nАКТУАЛЬНЫЙ КОНТЕКСТ ИЗ БАЗЫ ЗНАНИЙ:\n${contextText || 'Контекст не найден.'}`;
+    const fullSystemInstruction = `${baseSystemInstruction}\n\nАКТУАЛЬНЫЙ КОНТЕКСТ ИЗ БАЗЫ ЗНАНИЙ:\n${contextText || 'Контекст не подтягивался (короткая реплика) или не найден.'}`;
 
     const model = genAI.getGenerativeModel({ 
       model: 'gemini-2.5-flash',
       systemInstruction: fullSystemInstruction,
     });
 
-    // 5. Запуск чата с историей
+    // 4. Запуск чата с историей
     const chat = model.startChat({
       history: formattedHistory,
     });
@@ -91,7 +101,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ 
       text: finalAnswer,
-      sourcesCount: knowledgePackage.selected.length 
+      sourcesCount: sourcesCount
     });
 
   } catch (error) {
