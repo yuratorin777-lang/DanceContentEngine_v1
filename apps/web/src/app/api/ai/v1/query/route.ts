@@ -38,7 +38,7 @@ export async function POST(req: Request) {
 
     // 3. Задаем РОЛЬ АССИСТЕНТА для Gemini (исправлено: двоеточие вместо =)
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.5-flash-lite',
       systemInstruction: `Ты — заботливый, умный и опытный ИИ-наставник и ассистент детской танцевальной студии DanceKids.
 Твоя главная задача — помогать родителям и ученикам в чате Личного Кабинета, давая глубокие, экспертные и понятные ответы.
 
