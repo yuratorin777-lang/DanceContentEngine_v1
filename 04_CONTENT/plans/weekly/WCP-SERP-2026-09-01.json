@@ -1,0 +1,180 @@
+{
+    "planId":  "WCP-SERP-2026-09-01",
+    "periodDays":  7,
+    "audience":  "Родители дошкольников и младших школьников (2-7 лет) в Серпухове",
+    "strategicObjective":  "Помочь родителям принять решение о выборе танцев для детей, укрепить доверие к школе через экспертность и уникальные знания руководителя, поддержать конверсию и удержание.",
+    "channels":  [
+                     "VK",
+                     "Telegram",
+                     "Website / SEO"
+                 ],
+    "analystBasis":  [
+                         "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-EXECUTIVE-BRIEF.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-MARKET-ANALYSIS.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md",
+                         "04_CONTENT/CONTENT_CHANNEL_ARCHITECTURE.md",
+                         "04_CONTENT/CONTENT_STRATEGY.md",
+                         "04_CONTENT/CHANNEL_STRATEGY.md"
+                     ],
+    "items":  [
+                  {
+                      "id":  "item-001-day1-vk",
+                      "day":  1,
+                      "channel":  "VK",
+                      "audience":  "Родители, начинающие поиск занятий для ребенка",
+                      "topic":  "Важность начала занятий танцами для дошкольников",
+                      "subtopic":  "Как танцы развивают ребенка 3-5 лет: не только физика",
+                      "goal":  "Привлечь внимание родителей к возможности развития ребенка через танцы в начале нового сезона, показать ценность не только физического, но и личностного развития.",
+                      "decisionStage":  "TRIGGER",
+                      "contentJob":  "Decision support",
+                      "contentRole":  "Discovery",
+                      "format":  "Пост с инфографикой/коротким видео",
+                      "repurposingPotential":  "Короткий видеоролик для Stories, тезисы для Telegram-канала",
+                      "rationale":  "Начать неделю с контента, который отвечает на вопрос \u0027Почему сейчас?\u0027 и \u0027Зачем?\u0027. Ориентирован на этап TRIGGER / AWARENESS, когда родители только начинают задумываться о секциях. VK для широкого охвата и возможности обсуждения.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-002-day2-tg",
+                      "day":  2,
+                      "channel":  "Telegram",
+                      "audience":  "Родители, уже заинтересованные в танцах для дошкольников",
+                      "topic":  "Как мы работаем с детьми 3-4 лет: наша уникальная методика",
+                      "subtopic":  "Программа Baby Dance: первые шаги и главные задачи",
+                      "goal":  "Детально объяснить подход к самой младшей возрастной группе, снять возможные страхи и показать экспертность школы в работе с малышами, укрепить доверие к методике.",
+                      "decisionStage":  "EXPLORATION",
+                      "contentJob":  "Expert authority",
+                      "contentRole":  "Depth",
+                      "format":  "Длинный пост с экспертным комментарием руководителя",
+                      "repurposingPotential":  "FAQ на сайте, серия коротких постов для VK",
+                      "rationale":  "После общего введения, дать более глубокое понимание для тех, кто уже заинтересовался, сфокусировавшись на приоритетной возрастной группе и уникальной методике. Telegram подходит для глубокого погружения и экспертного комментария.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-003-day3-vk",
+                      "day":  3,
+                      "channel":  "VK",
+                      "audience":  "Родители, опасающиеся, что ребенок не захочет ходить или будет стесняться",
+                      "topic":  "Что делать, если ребенок стесняется или не хочет идти на танцы?",
+                      "subtopic":  "Советы родителям от руководителя школы: адаптация и мотивация",
+                      "goal":  "Снять распространенные возражения и страхи родителей, показать понимание детской психологии и опыт школы в вопросах адаптации и мотивации, стимулировать запись.",
+                      "decisionStage":  "COMPARISON",
+                      "contentJob":  "Problem solving",
+                      "contentRole":  "Trust",
+                      "format":  "Пост-история или \u0027Вопрос-ответ\u0027 с фотографиями занятий",
+                      "repurposingPotential":  "Короткие видео-советы, раздел FAQ на сайте",
+                      "rationale":  "Адресовать одну из главных родительских проблем и опасений. Показать, что школа не только учит танцам, но и помогает в адаптации, используя опыт руководителя. VK для обсуждения и поддержки сообщества.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-004-day4-website",
+                      "day":  4,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители, ищущие информацию о долгосрочных результатах и методиках",
+                      "topic":  "Когда ждать первых результатов: что должен уметь ребенок после 3 месяцев занятий",
+                      "subtopic":  "Понятная система прогресса и «Испытание на медали» в нашей школе",
+                      "goal":  "Установить реалистичные ожидания по прогрессу, показать прозрачность методики и мотивировать на долгосрочные занятия, отвечая на поисковые запросы о результатах.",
+                      "decisionStage":  "COMPARISON",
+                      "contentJob":  "Decision support",
+                      "contentRole":  "Evergreen content",
+                      "format":  "Статья-руководство",
+                      "repurposingPotential":  "Тезисы для Telegram-канала, серия постов для VK",
+                      "rationale":  "Родители ищут видимые результаты и прозрачность. Этот контент отвечает на вопрос \u0027Что будет через 3-12 месяцев?\u0027 и \u0027Есть ли результат?\u0027. Разместить на сайте для SEO и как evergreen контент.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-005-day5-tg",
+                      "day":  5,
+                      "channel":  "Telegram",
+                      "audience":  "Родители, выбирающие школу по квалификации педагогов",
+                      "topic":  "Наши педагоги: кто учит ваших детей и почему это важно",
+                      "subtopic":  "Квалификация, опыт и подход к каждому ребенку в Dance Kids",
+                      "goal":  "Подчеркнуть высокий уровень преподавательского состава и индивидуальный подход, ключевые факторы доверия для родителей, углубить понимание экспертности школы.",
+                      "decisionStage":  "SHORTLIST",
+                      "contentJob":  "Expert authority",
+                      "contentRole":  "Relationship",
+                      "format":  "Личная история педагога или серия коротких интервью",
+                      "repurposingPotential":  "Карточки \u0027Знакомство с педагогом\u0027 для VK, раздел \u0027Команда\u0027 на сайте",
+                      "rationale":  "\u0027Кто учит моего ребенка и как они с ним взаимодействуют\u0027 — это один из главных механизмов доверия. Расширить тему профессионализма педагогов, показать их квалификацию и подход через более личный канал.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-006-day6-vk",
+                      "day":  6,
+                      "channel":  "VK",
+                      "audience":  "Родители, интересующиеся возможностями выступлений и общественной жизнью школы",
+                      "topic":  "Сцена для самых маленьких: зачем малышам участвовать в фестивалях и конкурсах?",
+                      "subtopic":  "Внутриклубные мероприятия и первые выходы на сцену в Dance Kids",
+                      "goal":  "Показать ценность выступлений как части образовательного процесса и развития, снизить страх сцены, продемонстрировать возможности школы и ее активную жизнь.",
+                      "decisionStage":  "EXPLORATION",
+                      "contentJob":  "Relationship / brand",
+                      "contentRole":  "Proof / progress",
+                      "format":  "Пост с фото/видео с прошлых мероприятий",
+                      "repurposingPotential":  "Раздел \u0027Наши достижения\u0027 на сайте, подборка в Telegram",
+                      "rationale":  "Выступления — важный видимый результат и мотивация для детей, а также доказательство работы школы для родителей. Подчеркнуть, что это доступно даже малышам. VK для демонстрации школьной жизни и событий.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md"
+                                       ],
+                      "priority":  "MEDIUM",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "item-007-day7-website",
+                      "day":  7,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители, готовые к записи на занятия",
+                      "topic":  "Как записаться на первое занятие в Dance Kids в Серпухове?",
+                      "subtopic":  "Ваш путь от заявки до первых танцевальных шагов: пошаговая инструкция",
+                      "goal":  "Максимально упростить процесс записи, ответить на последние вопросы по логистике и снять барьеры, мотивировать к целевому действию.",
+                      "decisionStage":  "FIRST CONTACT",
+                      "contentJob":  "Conversion / retention",
+                      "contentRole":  "Decision support",
+                      "format":  "Страница-инструкция / FAQ",
+                      "repurposingPotential":  "Короткий пост для VK/Telegram с призывом к действию и ссылкой",
+                      "rationale":  "В конце недели, когда аудитория уже получила много информации и укрепила доверие, предложить четкий и простой путь к действию. Сайт для прямого ответа на коммерческий запрос и обеспечения полной информацией.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  }
+              ]
+}

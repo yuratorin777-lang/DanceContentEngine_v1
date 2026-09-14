@@ -1,0 +1,177 @@
+{
+    "planId":  "WCP-OCT-ADAPTATION-2026",
+    "periodDays":  7,
+    "audience":  "Родители детей 2-7 лет в Серпухове",
+    "strategicObjective":  "Помочь родителям принимать лучшие решения о танцах для детей, дифференцировать школу через экспертность, укреплять доверие и конвертировать внимание в заявки, занятия и лояльность.",
+    "channels":  [
+                     "VK",
+                     "Telegram",
+                     "Website / SEO"
+                 ],
+    "analystBasis":  [
+                         "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md",
+                         "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md"
+                     ],
+    "items":  [
+                  {
+                      "id":  "WCP-OCT-D1-VK1",
+                      "day":  1,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Адаптация к танцам: что делать, если ребенок не хочет идти?",
+                      "subtopic":  "Нормально ли это и как помочь малышу в первые месяцы занятий.",
+                      "goal":  "Снизить тревогу родителей по поводу возможного нежелания ребенка посещать занятия, показать понимание проблемы и предложить поддержку.",
+                      "decisionStage":  "Adaptation",
+                      "contentJob":  "Problem solving",
+                      "contentRole":  "Поддержка, экспертное мнение",
+                      "format":  "Короткий пост с советами и вопросом к аудитории",
+                      "repurposingPotential":  "Telegram (расширенный пост), Website (FAQ-секция)",
+                      "rationale":  "В период адаптации родители часто сталкиваются с нежеланием ребенка посещать занятия. Этот пост напрямую отвечает на их страхи, предлагая поддержку и нормализуя ситуацию, что подтверждено в аналитике аудитории.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D2-TG1",
+                      "day":  2,
+                      "channel":  "Telegram",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Период \u0027не хочу\u0027: взгляд руководителя на адаптацию ребенка в танцах.",
+                      "subtopic":  "Почему это важный этап для развития дисциплины и концентрации.",
+                      "goal":  "Углубить понимание родителей о важности прохождения этапа адаптации, укрепить доверие к методике школы и позиции руководителя.",
+                      "decisionStage":  "Adaptation",
+                      "contentJob":  "Expert authority",
+                      "contentRole":  "Экспертное объяснение, личные наблюдения",
+                      "format":  "Авторский пост руководителя",
+                      "repurposingPotential":  "Website (блог), VK (серия коротких постов)",
+                      "rationale":  "Telegram — канал для более глубокого взаимодействия. Взгляд руководителя на адаптацию, основанный на многолетнем опыте, усиливает экспертность и доверие, помогая родителям пройти этот сложный этап, что отражает опасения родителей и опыт владельца.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D3-WEB1",
+                      "day":  3,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Первые результаты в танцах: когда их ждать и что они означают для ребенка.",
+                      "subtopic":  "Поэтапное развитие координации, осанки и уверенности через 3, 6, 12 месяцев.",
+                      "goal":  "Установить реалистичные ожидания родителей относительно прогресса, показать долгосрочную ценность занятий и привлечь тех, кто ищет конкретные \u0027результаты детских танцев\u0027.",
+                      "decisionStage":  "Progress",
+                      "contentJob":  "Decision support",
+                      "contentRole":  "Руководство, демонстрация прогресса",
+                      "format":  "Статья-руководство",
+                      "repurposingPotential":  "Telegram (серия карточек), VK (инфографика)",
+                      "rationale":  "Родители ищут видимый прогресс. Статья на сайте, отвечающая на вопросы о сроках и видах результатов, закрывает информационные потребности на этапах сравнения и оценки, а также соответствует поисковому спросу.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D4-VK2",
+                      "day":  4,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Закулисье: как наши маленькие танцоры справляются с волнением на \u0027Испытаниях на медали\u0027.",
+                      "subtopic":  "Фотоотчет с внутренних экзаменов и истории успеха детей.",
+                      "goal":  "Показать реальный опыт детей в школе, продемонстрировать атмосферу, прогресс и работу с волнением, укрепить доверие через визуальный контент и локальный контекст.",
+                      "decisionStage":  "Progress",
+                      "contentJob":  "Proof / progress",
+                      "contentRole":  "Демонстрация, вдохновение",
+                      "format":  "Фотопост с коротким текстом",
+                      "repurposingPotential":  "Telegram (галерея с комментариями), Shorts/Reels (короткое видео)",
+                      "rationale":  "Визуальное подтверждение успехов и атмосферы (внутренние мероприятия, экзамены) очень важны для родителей. Это демонстрирует ценность методики и помогает снять страхи о выступлениях, что подтверждено анализом конкурентов и аудитории.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md"
+                                       ],
+                      "priority":  "MEDIUM",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D5-TG2",
+                      "day":  5,
+                      "channel":  "Telegram",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "3 простых способа поддержать ребенка в танцах дома без давления.",
+                      "subtopic":  "Как создать мотивирующую среду и избежать конфликтов вокруг занятий.",
+                      "goal":  "Дать родителям конкретные, применимые советы для поддержки ребенка, укрепить их вовлеченность и помочь в периоды снижения мотивации, снижая риск оттока.",
+                      "decisionStage":  "Adaptation",
+                      "contentJob":  "Problem solving",
+                      "contentRole":  "Практическое руководство, полезные советы",
+                      "format":  "Список советов / чек-лист",
+                      "repurposingPotential":  "VK (короткие советы), Website (расширенная статья)",
+                      "rationale":  "Прямые практические советы в Telegram углубляют отношения с аудиторией. Это помогает родителям активно участвовать в процессе адаптации и развития ребенка, что является ключевым для удержания.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D6-WEB2",
+                      "day":  6,
+                      "channel":  "Website / SEO",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Профессиональная школа танцев или кружок: 5 ключевых отличий для родителей в Серпухове.",
+                      "subtopic":  "Что гарантирует результат, правильное развитие и спортивные достижения вашего ребенка.",
+                      "goal":  "Помочь родителям понять разницу между подходами, обосновать ценность профессиональной школы Dance Kids и привлечь тех, кто ищет качество и долгосрочные результаты.",
+                      "decisionStage":  "Comparison",
+                      "contentJob":  "Decision support",
+                      "contentRole":  "Сравнение, обоснование выбора",
+                      "format":  "Сравнительная статья / руководство",
+                      "repurposingPotential":  "VK (серия постов \u0027Мифы и факты\u0027), Telegram (экспертное мнение)",
+                      "rationale":  "Анализ конкурентов показывает, что рынок фрагментирован. Эта статья позиционирует школу, объясняя преимущества профессионального подхода и методики, что является сильной стороной предприятия и отвечает на запрос родителей, сравнивающих варианты.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md"
+                                       ],
+                      "priority":  "HIGH",
+                      "status":  "PLANNED"
+                  },
+                  {
+                      "id":  "WCP-OCT-D7-VK3",
+                      "day":  7,
+                      "channel":  "VK",
+                      "audience":  "Родители детей 2-7 лет в Серпухове",
+                      "topic":  "Еще не определились? Как проходит запись и что нужно для первого занятия в Dance Kids.",
+                      "subtopic":  "Личный кабинет, заморозка абонемента и максимальное удобство для родителей.",
+                      "goal":  "Снять последние барьеры перед записью, показать удобство и сервис школы, стимулировать заявки и пробные занятия для тех, кто находится на стадии \u0027First Contact\u0027 или \u0027Shortlist\u0027.",
+                      "decisionStage":  "First Contact",
+                      "contentJob":  "Conversion / retention",
+                      "contentRole":  "Информация о сервисе, призыв к действию",
+                      "format":  "Короткий пост с информацией о процессе записи и преимуществах",
+                      "repurposingPotential":  "Website (FAQ), Telegram (закрепленное сообщение)",
+                      "rationale":  "После недели контента, снимающего тревоги и демонстрирующего ценность, важно предоставить четкий и удобный путь к действию. Информация о сервисе и удобстве напрямую влияет на решение родителей, что подтверждено в анализе аудитории.",
+                      "analystBasis":  [
+                                           "02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md",
+                                           "02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md"
+                                       ],
+                      "priority":  "MEDIUM",
+                      "status":  "PLANNED"
+                  }
+              ]
+}
