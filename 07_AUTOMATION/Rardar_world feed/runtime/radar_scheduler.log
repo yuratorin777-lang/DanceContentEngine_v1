@@ -150,3 +150,59 @@ TOP SIGNALS:
    CORE_DANCE | Google News — dance children development
    https://news.google.com/rss/articles/CBMiX0FVX3lxTE5rb1dEZm0waFlnWGVlb0sxY19Uc2lCblZ0bUl4V292dU5mVE9GMVBxYnNCUnpueFo0bS1oTm9aeWdHbjcyVHc3LWF4bWJRMlZoT2ctbFE1NmtrRzgwd1RZ?oc=5
 
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — детские танцы Россия ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance children development ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance world championships ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — child physical activity ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance health injury ... ERROR: getaddrinfo ENOTFOUND news.google.com
+
+----------------------------------------------
+Raw facts:          0
+Unique facts:       0
+Duplicates removed: 0
+Classified facts:   0
+Relevant signals:   0
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... ERROR: read ECONNRESET
+→ Google News — детские танцы Россия ... ERROR: read ECONNRESET
+→ Google News — dance children development ... ERROR: read ECONNRESET
+→ Google News — dance world championships ... ERROR: read ECONNRESET
+→ Google News — child physical activity ... ERROR: read ECONNRESET
+→ Google News — dance health injury ... ERROR: read ECONNRESET
+
+----------------------------------------------
+Raw facts:          0
+Unique facts:       0
+Duplicates removed: 0
+Classified facts:   0
+Relevant signals:   0
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+

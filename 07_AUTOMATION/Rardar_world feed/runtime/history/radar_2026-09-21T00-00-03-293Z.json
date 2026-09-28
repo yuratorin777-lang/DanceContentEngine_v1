@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-09-27T00:02:01.201Z",
+  "runAt": "2026-09-21T00:00:03.281Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -20,7 +20,7 @@
     "duplicatesRemoved": 0,
     "classifiedFacts": 0,
     "relevantSignals": 0,
-    "durationMs": 118616
+    "durationMs": 156
   },
   "distribution": {},
   "sourceBreakdown": [
@@ -28,43 +28,43 @@
       "source": "Google News — Серпухов дети танцы",
       "ok": false,
       "count": 0,
-      "durationMs": 22671,
-      "error": "read ECONNRESET"
+      "durationMs": 93,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": false,
       "count": 0,
-      "durationMs": 19054,
-      "error": "read ECONNRESET"
+      "durationMs": 9,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     },
     {
       "source": "Google News — dance children development",
       "ok": false,
       "count": 0,
-      "durationMs": 19087,
-      "error": "read ECONNRESET"
+      "durationMs": 4,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     },
     {
       "source": "Google News — dance world championships",
       "ok": false,
       "count": 0,
-      "durationMs": 19100,
-      "error": "read ECONNRESET"
+      "durationMs": 3,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     },
     {
       "source": "Google News — child physical activity",
       "ok": false,
       "count": 0,
-      "durationMs": 19209,
-      "error": "read ECONNRESET"
+      "durationMs": 4,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     },
     {
       "source": "Google News — dance health injury",
       "ok": false,
       "count": 0,
-      "durationMs": 19084,
-      "error": "read ECONNRESET"
+      "durationMs": 3,
+      "error": "getaddrinfo ENOTFOUND news.google.com"
     }
   ],
   "signals": []
