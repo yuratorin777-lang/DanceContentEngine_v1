@@ -23,11 +23,11 @@ jobs:
           node-version: '20'
 
       - name: Установка зависимостей радара
-        working-directory: ./"07_AUTOMATION/Rardar_world feed"
+        working-directory: '07_AUTOMATION/Rardar_world feed'
         run: npm install
 
       - name: Запуск сбора новостей (Radar Engine)
-        working-directory: ./"07_AUTOMATION/Rardar_world feed"
+        working-directory: '07_AUTOMATION/Rardar_world feed'
         run: npm run radar
 
       - name: Сохранение результатов в Git
