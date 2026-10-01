@@ -1,0 +1,39 @@
+﻿name: Dance Content Engine — Daily Radar
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 MSK
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-radar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Чеккаут кода из репозитория
+        uses: actions/checkout@v4
+
+      - name: Настройка Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Установка зависимостей радара
+        working-directory: ./"07_AUTOMATION/Rardar_world feed"
+        run: npm install
+
+      - name: Запуск сбора новостей (Radar Engine)
+        working-directory: ./"07_AUTOMATION/Rardar_world feed"
+        run: npm run radar
+
+      - name: Сохранение результатов в Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "auto: update radar feed [$(date -u +'%Y-%m-%d %H:%M UTC')]" || exit 0
+          git push

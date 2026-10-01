@@ -672,35 +672,57 @@ async function run() {
     );
 
   /*
-   * Deduplication.
+   * Deduplication с "сроком годности" (TTL = 3 дня).
    */
 
-  const uniqueMap =
-    new Map();
+  const SEEN_FILE = path.join(RUNTIME, 'seen_history.json');
+  const TTL_MS = 3 * 24 * 60 * 60 * 1000; // 3 дня в миллисекундах
+  const now = Date.now();
 
-  let duplicates = 0;
+  let seenMap = {}; // id -> timestamp добавления
+  if (fs.existsSync(SEEN_FILE)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(SEEN_FILE, 'utf8'));
+      if (Array.isArray(raw)) {
+        // Миграция со старого формата [ "id1", "id2" ]
+        raw.forEach(id => {
+          if (typeof id === 'string') seenMap[id] = now;
+        });
+      } else if (typeof raw === 'object' && raw !== null) {
+        seenMap = raw;
+      }
+    } catch (e) {}
+  }
 
-  for (
-    const fact of all
-  ) {
-    if (
-      uniqueMap.has(
-        fact.id
-      )
-    ) {
-      duplicates++;
-    } else {
-      uniqueMap.set(
-        fact.id,
-        fact
-      );
+  // Очищаем из истории новости, которым больше 3 дней
+  const activeSeenIds = new Set();
+  const updatedSeenMap = {};
+  for (const [id, timestamp] of Object.entries(seenMap)) {
+    if (now - timestamp < TTL_MS) {
+      activeSeenIds.add(id);
+      updatedSeenMap[id] = timestamp;
     }
   }
 
-  const unique =
-    [
-      ...uniqueMap.values()
-    ];
+  const uniqueMap = new Map();
+  let duplicates = 0;
+
+  for (const fact of all) {
+    if (uniqueMap.has(fact.id) || activeSeenIds.has(fact.id)) {
+      duplicates++;
+    } else {
+      uniqueMap.set(fact.id, fact);
+    }
+  }
+
+  const unique = [...uniqueMap.values()];
+
+  // Записываем новые уникальные новости с меткой времени
+  unique.forEach(fact => {
+    updatedSeenMap[fact.id] = now;
+  });
+
+  fs.writeFileSync(SEEN_FILE, JSON.stringify(updatedSeenMap, null, 2));
 
   /*
    * Classification.

@@ -206,3 +206,259 @@ Saved: runtime/latest.json
 
 DISTRIBUTION:
 
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... OK (15)
+→ Google News — детские танцы Россия ... OK (15)
+→ Google News — dance children development ... OK (15)
+→ Google News — dance world championships ... OK (15)
+→ Google News — child physical activity ... OK (15)
+→ Google News — dance health injury ... OK (15)
+
+----------------------------------------------
+Raw facts:          90
+Unique facts:       62
+Duplicates removed: 28
+Classified facts:   62
+Relevant signals:   41
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+LOCAL_DANCE: 8
+DANCE_WORLD: 5
+CORE_DANCE: 17
+ADJACENT_DOMAIN: 3
+LOCAL_ECOSYSTEM: 8
+
+TOP SIGNALS:
+
+1. [100] 15 студий хореографии и школ балета для детей в Петербурге: куда отдать ребенка на танцы - PITER.NOW
+   LOCAL_DANCE | Google News — детские танцы Россия
+   https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyR250eElYTU15VDlEakljcFpzeS1pUDA4X3lDSlUzQ1ZZWVhGRTZGWFdKNEFFbFNSemwyc05xb2lBZXNkbU5BY2JJYms0NG90dzJMQ0xqRGV3d05VcVRmR25n?oc=5
+
+2. [72] UC Dance Team represents US at ICU World Championships - The News Record
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5
+
+3. [68] KYRGYZSTAN HOSTS THE NATIONAL QUALIFIER FOR THE FUSION CONCEPT WORLD CHAMPIONSHIP 2026 - EGOV.KG
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGVzN0eWV4cVU4cVFDNlBCbGprTVA2ZmFxTXMtXzBHNm5BREt4MFFXNmZtRHgxb3lPZVllMExZQWoyQzREdHNsWXhUZ1FfeXQ1by1uVk9WN2JXQQ?oc=5
+
+4. [68] U.S. Sends Full Slate of Skaters to World Championships - U.S. Figure Skating
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiygFBVV95cUxPS1lYSWdWT1dmUGJMNXc5bmJuWnVhZ1J3U1lwU25pRjhhelphNlN5ajJUOU1HNGF4NWtnR1h5cko2VEE3djF6TTYtZGd2eFhtVFlqTlBabThvZ0xLS1pNdnNGeHc4aTk5NDU4NDgyQXlabUFKclN5TjM1VVgtcHQycUtTeWVYSDhXZnpGTEdCUDRRTmNRdHpxZ3BydmRMZkd3NGxhSHlRQlpnR3FLN2lkd0tFeUFsb2c0OXlsRmRNakVmb2F0M0VpZWRB?oc=5
+
+5. [68] Marquette student places in Irish Dance World Championship - Marquette Wire
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5
+
+6. [68] Essex High School freshman prepares for Irish Dancing World Championships - WCAX
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMipAFBVV95cUxNNTlROXY2ZElwTzdtakEtRTEyaDJQLWY5SHBtMnZPcTA2aTlkalR4dDRCTkZ0V3JjNHpidndMaE5PcmdVUkhaOUFiMEpPS21wXzlCWEtFTi1rVWFQS0xfeG1qX3ctV3d1YmZnSW9aaE5JUWdQMTdJSlhldjNIYmRZWW5iMG9CcEVpVERmVUJ1enV5RS05MVlGV1VfSmt4anNObU1OT9IBuAFBVV95cUxOU3RPVUdZRUNSbHA4NGkzZlIwcEFsRlR5cnVBSjZ6T2l4UVB5ZHRmT0ZHaXVTQUJnakRWSDJWMDAwbGpEWFR2QXRyV0NxN3JWdGNwVENjRHQ4a1BhOHhqRWZTdFRoYmlqdlB6YXFQSm9FTWxiOEIwZU9EOW1KMk5VaWRlT2tTRnBZUDQ5TmRfeHF6M20zRVp2LUpNVzNTZjVCZW1FbGhMRjVxUFluNGtuSkZhenRDemRU?oc=5
+
+7. [65] Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка
+   LOCAL_DANCE | Google News — Серпухов дети танцы
+   https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5
+
+8. [64] The influence of integrating national dance elements into children dance curriculum on cultural identity and aesthetic literacy: a randomized controlled trial - Frontiers
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGVjNEFWRzZZR1VrcnVCUFpEMy1uMjVtbWZ3MWZFeGtXeWJ5b19kR1pleWFRa29qNGhCTVF4cjV2em9HanpYbkxkRF85eTNnLTNvTXpDWTQtNVdyLVJZVTV1TmtLUTBKX2g2MHo4RW5pWlpIRnJpN0FMTUN3MG0yUmxXMjdiVGlsam5SMnJtTjA?oc=5
+
+9. [64] How Dance Develops In Children - Association for Psychological Science
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5
+
+10. [64] Effects of a 16-week dance intervention on loneliness and self-esteem in left behind children: a randomised controlled trial - Nature
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiX0FVX3lxTE54TjRQejhrYmdPTVMxRzIwM3l1dEhEcEZfa2huVVNKWkFkYXZzNjhOWFpwMkFhRlhfaU9rdkk3bEw5Rzl5NlB1cGwyZnFwd3BCckRpV0NvR1RYV2V5UTdj?oc=5
+
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... OK (15)
+→ Google News — детские танцы Россия ... OK (15)
+→ Google News — dance children development ... OK (15)
+→ Google News — dance world championships ... OK (15)
+→ Google News — child physical activity ... OK (15)
+→ Google News — dance health injury ... OK (15)
+
+----------------------------------------------
+Raw facts:          90
+Unique facts:       63
+Duplicates removed: 27
+Classified facts:   63
+Relevant signals:   42
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+LOCAL_DANCE: 8
+DANCE_WORLD: 5
+CORE_DANCE: 18
+ADJACENT_DOMAIN: 3
+LOCAL_ECOSYSTEM: 8
+
+TOP SIGNALS:
+
+1. [100] 15 студий хореографии и школ балета для детей в Петербурге: куда отдать ребенка на танцы - piter.now
+   LOCAL_DANCE | Google News — детские танцы Россия
+   https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyR250eElYTU15VDlEakljcFpzeS1pUDA4X3lDSlUzQ1ZZWVhGRTZGWFdKNEFFbFNSemwyc05xb2lBZXNkbU5BY2JJYms0NG90dzJMQ0xqRGV3d05VcVRmR25n?oc=5
+
+2. [72] UC Dance Team represents US at ICU World Championships - The News Record
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5
+
+3. [68] KYRGYZSTAN HOSTS THE NATIONAL QUALIFIER FOR THE FUSION CONCEPT WORLD CHAMPIONSHIP 2026 - EGOV.KG
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGVzN0eWV4cVU4cVFDNlBCbGprTVA2ZmFxTXMtXzBHNm5BREt4MFFXNmZtRHgxb3lPZVllMExZQWoyQzREdHNsWXhUZ1FfeXQ1by1uVk9WN2JXQQ?oc=5
+
+4. [68] U.S. Sends Full Slate of Skaters to World Championships - usfigureskating.org
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiygFBVV95cUxPS1lYSWdWT1dmUGJMNXc5bmJuWnVhZ1J3U1lwU25pRjhhelphNlN5ajJUOU1HNGF4NWtnR1h5cko2VEE3djF6TTYtZGd2eFhtVFlqTlBabThvZ0xLS1pNdnNGeHc4aTk5NDU4NDgyQXlabUFKclN5TjM1VVgtcHQycUtTeWVYSDhXZnpGTEdCUDRRTmNRdHpxZ3BydmRMZkd3NGxhSHlRQlpnR3FLN2lkd0tFeUFsb2c0OXlsRmRNakVmb2F0M0VpZWRB?oc=5
+
+5. [68] Marquette student places in Irish Dance World Championship - Marquette Wire
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5
+
+6. [68] Essex High School freshman prepares for Irish Dancing World Championships - WCAX
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMipAFBVV95cUxNNTlROXY2ZElwTzdtakEtRTEyaDJQLWY5SHBtMnZPcTA2aTlkalR4dDRCTkZ0V3JjNHpidndMaE5PcmdVUkhaOUFiMEpPS21wXzlCWEtFTi1rVWFQS0xfeG1qX3ctV3d1YmZnSW9aaE5JUWdQMTdJSlhldjNIYmRZWW5iMG9CcEVpVERmVUJ1enV5RS05MVlGV1VfSmt4anNObU1OT9IBuAFBVV95cUxOU3RPVUdZRUNSbHA4NGkzZlIwcEFsRlR5cnVBSjZ6T2l4UVB5ZHRmT0ZHaXVTQUJnakRWSDJWMDAwbGpEWFR2QXRyV0NxN3JWdGNwVENjRHQ4a1BhOHhqRWZTdFRoYmlqdlB6YXFQSm9FTWxiOEIwZU9EOW1KMk5VaWRlT2tTRnBZUDQ5TmRfeHF6M20zRVp2LUpNVzNTZjVCZW1FbGhMRjVxUFluNGtuSkZhenRDemRU?oc=5
+
+7. [65] Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - smitanka.ru
+   LOCAL_DANCE | Google News — Серпухов дети танцы
+   https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5
+
+8. [64] How Dance Develops In Children - Association for Psychological Science
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5
+
+9. [64] Effects of a 16-week dance intervention on loneliness and self-esteem in left behind children: a randomised controlled trial - nature.com
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiX0FVX3lxTE54TjRQejhrYmdPTVMxRzIwM3l1dEhEcEZfa2huVVNKWkFkYXZzNjhOWFpwMkFhRlhfaU9rdkk3bEw5Rzl5NlB1cGwyZnFwd3BCckRpV0NvR1RYV2V5UTdj?oc=5
+
+10. [64] Dance class transforms lives of autistic kids - UCLA Health
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiigFBVV95cUxPdU4ycGRvOFZYTXU5NzFHVGxtSWhZOEN6UmtPaUl3czlPN29yRmpJVWxzTWZKLWNrWVZ3ZTk0QWNUZzBfUnczbGw3TloxMWVtMzhLY0J2MUsyUUh5NHA1U0VNSnhaYVR2eGlOaUJyS0k3NDRmZUFhMUQ4MFJXdGdRZG1nTnZSWkpMcGc?oc=5
+
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — детские танцы Россия ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance children development ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance world championships ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — child physical activity ... ERROR: getaddrinfo ENOTFOUND news.google.com
+→ Google News — dance health injury ... ERROR: getaddrinfo ENOTFOUND news.google.com
+
+----------------------------------------------
+Raw facts:          0
+Unique facts:       0
+Duplicates removed: 0
+Classified facts:   0
+Relevant signals:   0
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+
+> dance-content-engine-radar@1.0.0 radar
+> node engine/radar_engine.js
+
+==============================================
+ DANCE CONTENT ENGINE — RADAR / WORLD FEED v1
+==============================================
+Sources: 6
+Collecting real external data...
+
+→ Google News — Серпухов дети танцы ... OK (15)
+→ Google News — детские танцы Россия ... OK (15)
+→ Google News — dance children development ... OK (15)
+→ Google News — dance world championships ... OK (15)
+→ Google News — child physical activity ... OK (15)
+→ Google News — dance health injury ... OK (15)
+
+----------------------------------------------
+Raw facts:          90
+Unique facts:       63
+Duplicates removed: 27
+Classified facts:   63
+Relevant signals:   43
+Saved: runtime/latest.json
+----------------------------------------------
+
+DISTRIBUTION:
+
+LOCAL_DANCE: 9
+DANCE_WORLD: 5
+CORE_DANCE: 18
+ADJACENT_DOMAIN: 3
+LOCAL_ECOSYSTEM: 8
+
+TOP SIGNALS:
+
+1. [100] 15 студий хореографии и школ балета для детей в Петербурге: куда отдать ребенка на танцы - PITER.NOW
+   LOCAL_DANCE | Google News — детские танцы Россия
+   https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyR250eElYTU15VDlEakljcFpzeS1pUDA4X3lDSlUzQ1ZZWVhGRTZGWFdKNEFFbFNSemwyc05xb2lBZXNkbU5BY2JJYms0NG90dzJMQ0xqRGV3d05VcVRmR25n?oc=5
+
+2. [72] UC Dance Team represents US at ICU World Championships - The News Record
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd1EyQ3VYQjVlQ1ZkMEJTekJDdmVaWXlnSmZ6ZnJMSWRpZ3FuM0ptSmpQUWxYTkctZU5DZHRkWWRlSC1CZGR0QkFOR01FN3pFQkpkZktId1YtSVZpYjN4SVl0RjRzRlIxb2tjMXpjUk85T1Q4eHFQYWlJMUpwemJIYnd2ZTd0bDVESVFFSTlhVXNEbmZ3ZGtBNEJMTnE1WmNXWGVuZENwbXNlTzhqc0Z4VmdOYWVLWER0c0ZsYWd0UndNZ0toRGZicTF3TkUxUUNTemh0bQ?oc=5
+
+3. [68] KYRGYZSTAN HOSTS THE NATIONAL QUALIFIER FOR THE FUSION CONCEPT WORLD CHAMPIONSHIP 2026 - EGOV.KG
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGVzN0eWV4cVU4cVFDNlBCbGprTVA2ZmFxTXMtXzBHNm5BREt4MFFXNmZtRHgxb3lPZVllMExZQWoyQzREdHNsWXhUZ1FfeXQ1by1uVk9WN2JXQQ?oc=5
+
+4. [68] U.S. Sends Full Slate of Skaters to World Championships - U.S. Figure Skating
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMiygFBVV95cUxPS1lYSWdWT1dmUGJMNXc5bmJuWnVhZ1J3U1lwU25pRjhhelphNlN5ajJUOU1HNGF4NWtnR1h5cko2VEE3djF6TTYtZGd2eFhtVFlqTlBabThvZ0xLS1pNdnNGeHc4aTk5NDU4NDgyQXlabUFKclN5TjM1VVgtcHQycUtTeWVYSDhXZnpGTEdCUDRRTmNRdHpxZ3BydmRMZkd3NGxhSHlRQlpnR3FLN2lkd0tFeUFsb2c0OXlsRmRNakVmb2F0M0VpZWRB?oc=5
+
+5. [68] Marquette student places in Irish Dance World Championship - Marquette Wire
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMinAFBVV95cUxPVThPVHlTN3cxMmRuYnM1cTZrNXJobmxwclFvZXV4ZDZ0T3E0czFFYlQxSXRyeXNzanhDcmJ1cVNwTUZBWkdZcDBkUGl4QXFiMGNSZUQtenJjR2tUdjYxZ0oxU1Z4UDJ4SEVVdUppeVdzOUlHdjFNMkdmcGpaZ01IQUlBc0thbkh0bkM1b0tOMUFyWk9xeU9jQWpQYnQ?oc=5
+
+6. [68] Essex High School freshman prepares for Irish Dancing World Championships - WCAX
+   DANCE_WORLD | Google News — dance world championships
+   https://news.google.com/rss/articles/CBMipAFBVV95cUxNNTlROXY2ZElwTzdtakEtRTEyaDJQLWY5SHBtMnZPcTA2aTlkalR4dDRCTkZ0V3JjNHpidndMaE5PcmdVUkhaOUFiMEpPS21wXzlCWEtFTi1rVWFQS0xfeG1qX3ctV3d1YmZnSW9aaE5JUWdQMTdJSlhldjNIYmRZWW5iMG9CcEVpVERmVUJ1enV5RS05MVlGV1VfSmt4anNObU1OT9IBuAFBVV95cUxOU3RPVUdZRUNSbHA4NGkzZlIwcEFsRlR5cnVBSjZ6T2l4UVB5ZHRmT0ZHaXVTQUJnakRWSDJWMDAwbGpEWFR2QXRyV0NxN3JWdGNwVENjRHQ4a1BhOHhqRWZTdFRoYmlqdlB6YXFQSm9FTWxiOEIwZU9EOW1KMk5VaWRlT2tTRnBZUDQ5TmRfeHF6M20zRVp2LUpNVzNTZjVCZW1FbGhMRjVxUFluNGtuSkZhenRDemRU?oc=5
+
+7. [65] Серпуховские Мальдивы и Гавайи открываются: падл-корты, бургеры и танцы у воды - Смитанка
+   LOCAL_DANCE | Google News — Серпухов дети танцы
+   https://news.google.com/rss/articles/CBMiowFBVV95cUxQRlBlLVp2YU01amlCbFJSeEZMaGxPQUZSbXprOHpURk9fTmtmcHUwbmoxUmI3Z0kxRXZiNExaTHd4amlZbEl6b2FWczlqOExIbkJQME1fWTA4bGlSOThDbXptNGpEWld4SU9feWc4RVhSMjlLcDJuRDVlZTdMOXBQcVltd2lmenpfSzAyYW04VnNYekxZYjZaelkxY3lmUWYyYzRR?oc=5
+
+8. [64] Ameliorating social anxiety in rural left-behind children through line dance combined with multisensory stimulation - frontiersin.org
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMikgFBVV95cUxNRWFPM2dDRldMalF5VXp4Q1NyTWJhazVGdk1GZ1ZVeGZaN25Bb216RldIdUlJM2VyM0hZRVVjRVFHVnRXUEV2RTl5Ni1jdVF2YlhDVmNJWUh1WlBKOUxVMGlublc1SzNVaGlwVWJiSThKWERXVVprV1BNNUR2aDBSVTQzU2ZDNFlLdlR3LVFOTWthZw?oc=5
+
+9. [64] How Dance Develops In Children - psychologicalscience.org
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMie0FVX3lxTE83dWpYWU90Q1hRVEFTbFFDcmpNX1lOLXllaS14VDQtcHVWeEFocUJIblZVd1FFY0duR0xzV3c1cFBRNmVSZk1nWWJPWGRCN1ZSZU5HNkxoYTZKNXVFakViRFdGX0t3cjZ5YzkzMVdvandudFFNZ2Y5M2lRZw?oc=5
+
+10. [64] Effects of a 16-week dance intervention on loneliness and self-esteem in left behind children: a randomised controlled trial - Nature
+   CORE_DANCE | Google News — dance children development
+   https://news.google.com/rss/articles/CBMiX0FVX3lxTE54TjRQejhrYmdPTVMxRzIwM3l1dEhEcEZfa2huVVNKWkFkYXZzNjhOWFpwMkFhRlhfaU9rdkk3bEw5Rzl5NlB1cGwyZnFwd3BCckRpV0NvR1RYV2V5UTdj?oc=5
+

@@ -66,6 +66,21 @@ DanceContentEngine_v1
 │   ├── 2026-08-27_Что именно мы продаем
 │   │   └── raw_parts
 │   │       └── Что именно мы продаем.md
+│   ├── 2026-09-11_09_что_отличает_сильного_тренера_от_среднего
+│   │   └── raw_parts
+│   │       └── 09_что_отличает_сильного_тренера_от_среднего.md
+│   ├── 2026-09-11_10_что_отличает_сильную_школу_от_средней
+│   │   └── raw_parts
+│   │       └── 10_что_отличает_сильную_школу_от_средней.md
+│   ├── 2026-09-11_11_какие_вещи_профессии_нельзя_понять_по_учебнику
+│   │   └── raw_parts
+│   │       └── 11_какие_вещи_профессии_нельзя_понять_по_учебнику.md
+│   ├── 2026-09-11_12_что_я_умею_видеть_в_ребенке_после_нескольких_минут_наблюдения
+│   │   └── raw_parts
+│   │       └── 12_что_я_умею_видеть_в_ребенке_после_нескольких_минут_наблюдения.md
+│   ├── 2026-09-11_13_какие_признаки_показывают_что_ребенку_действительно_подходят
+│   │   └── raw_parts
+│   │       └── 13_какие_признаки_показывают_что_ребенку_действительно_подходят.md
 │   ├── .gitkeep
 │   ├── KNOWLEDGE_INDEX.md
 │   ├── OWNER_INPUT_RULES.md
@@ -100,18 +115,34 @@ DanceContentEngine_v1
 │   └── README.md
 ├── 04_CONTENT
 │   ├── content
+│   │   ├── adhoc-ВК-20260908-141009.md
+│   │   ├── adhoc-канал ВК-20260908-134017.md
 │   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-1-VK-content.md
 │   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-6-Website - SEO-content.md
 │   │   ├── SERPUKHOV-WEEKLY-PLAN-2026-W34-day-7-VK-content.md
-│   │   └── WCP-Serpukhov-NewSeason-001-day-1-VK-content.md
+│   │   ├── WCP-OCT-ADAPTATION-2026-day-4-VK-content.md
+│   │   ├── WCP-SERP-2026-09-01-day-1-VK-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-001-day-1-VK-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-1-day-1-VK-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-1-day-2-Website - SEO-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-1-day-3-Telegram-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-1-day-4-VK-content.md
+│   │   ├── WCP-Serpukhov-NewSeason-1-day-6-Telegram-content.md
+│   │   └── WCP-Serpukhov-NewSeason-1-day-7-VK-content.md
 │   ├── plans
 │   │   └── weekly
 │   │       ├── serpukhov-weekly-content-plan-week-1.json
 │   │       ├── serpukhov-weekly-content-plan-week-1.md
 │   │       ├── SERPUKHOV-WEEKLY-PLAN-2026-W34.json
 │   │       ├── SERPUKHOV-WEEKLY-PLAN-2026-W34.md
+│   │       ├── WCP-OCT-ADAPTATION-2026.json
+│   │       ├── WCP-OCT-ADAPTATION-2026.md
+│   │       ├── WCP-SERP-2026-09-01.json
+│   │       ├── WCP-SERP-2026-09-01.md
 │   │       ├── WCP-Serpukhov-NewSeason-001.json
 │   │       ├── WCP-Serpukhov-NewSeason-001.md
+│   │       ├── WCP-Serpukhov-NewSeason-1.json
+│   │       ├── WCP-Serpukhov-NewSeason-1.md
 │   │       ├── weekly-plan-serpukhov-dance-2026-w34.json
 │   │       └── weekly-plan-serpukhov-dance-2026-w34.md
 │   ├── .gitkeep
@@ -170,6 +201,11 @@ DanceContentEngine_v1
 │   ├── _processed
 │   │   ├── 07 какие ошибки совершал.aac
 │   │   ├── 08_какие_ошибки_чаще_всего_совершают_начинающие_тренера_2.aac
+│   │   ├── 09_что_отличает_сильного_тренера_от_среднего.aac
+│   │   ├── 10_что_отличает_сильную_школу_от_средней.aac
+│   │   ├── 11_какие_вещи_профессии_нельзя_понять_по_учебнику.aac
+│   │   ├── 12_что_я_умею_видеть_в_ребенке_после_нескольких_минут_наблюдения.aac
+│   │   ├── 13_какие_признаки_показывают_что_ребенку_действительно_подходят.aac
 │   │   ├── Важное для Weekly plan.aac
 │   │   ├── Доказательства.aac
 │   │   ├── Как_работать_с_детьми_которые_боятся_или_не_занимаются.aac
@@ -978,6 +1014,9 @@ DanceContentEngine_v1
 │   │   │   └── app
 │   │   │       ├── api
 │   │   │       │   ├── ai
+│   │   │       │   │   ├── v1
+│   │   │       │   │   │   └── query
+│   │   │       │   │   │       └── route.ts
 │   │   │       │   │   ├── route.ts
 │   │   │       │   │   └── route.ts.bak
 │   │   │       │   └── clean-transcript
@@ -1005,6 +1044,7 @@ DanceContentEngine_v1
 ├── ANALYST_RESEARCH_EXPORT.txt
 ├── api-response.json
 ├── CREATE_NEXT.cmd
+├── generate-adhoc-post.ps1
 ├── generate-content-from-weekly.ps1
 ├── generate-weekly-plan.ps1
 ├── INTERVIEW_150_QUESTIONS.md

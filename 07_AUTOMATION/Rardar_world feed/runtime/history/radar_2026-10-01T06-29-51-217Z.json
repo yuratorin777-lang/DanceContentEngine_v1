@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-08-13T15:16:34.187Z",
+  "runAt": "2026-10-01T06:29:51.210Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -13,56 +13,58 @@
   },
   "statistics": {
     "sourcesConfigured": 6,
-    "sourcesSucceeded": 6,
-    "sourcesFailed": 0,
-    "rawFacts": 90,
-    "uniqueFacts": 1,
-    "duplicatesRemoved": 89,
+    "sourcesSucceeded": 0,
+    "sourcesFailed": 6,
+    "rawFacts": 0,
+    "uniqueFacts": 0,
+    "duplicatesRemoved": 0,
+    "classifiedFacts": 0,
     "relevantSignals": 0,
-    "durationMs": 4160
+    "durationMs": 117101
   },
+  "distribution": {},
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
-      "ok": true,
-      "count": 15,
-      "durationMs": 727,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 19226,
+      "error": "read ECONNRESET"
     },
     {
       "source": "Google News — детские танцы Россия",
-      "ok": true,
-      "count": 15,
-      "durationMs": 494,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 19063,
+      "error": "read ECONNRESET"
     },
     {
       "source": "Google News — dance children development",
-      "ok": true,
-      "count": 15,
-      "durationMs": 798,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 19112,
+      "error": "read ECONNRESET"
     },
     {
       "source": "Google News — dance world championships",
-      "ok": true,
-      "count": 15,
-      "durationMs": 680,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 19095,
+      "error": "read ECONNRESET"
     },
     {
       "source": "Google News — child physical activity",
-      "ok": true,
-      "count": 15,
-      "durationMs": 755,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 21503,
+      "error": "read ECONNRESET"
     },
     {
       "source": "Google News — dance health injury",
-      "ok": true,
-      "count": 15,
-      "durationMs": 684,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "durationMs": 19031,
+      "error": "read ECONNRESET"
     }
   ],
   "signals": []
