@@ -706,8 +706,19 @@ async function run() {
 
   const uniqueMap = new Map();
   let duplicates = 0;
+  const ONE_DAY_MS = 24 * 60 * 60 * 1000; // Строго 24 часа
 
   for (const fact of all) {
+    // Проверка даты публикации новости
+    if (fact.publishedAt) {
+      const pubTime = new Date(fact.publishedAt).getTime();
+      if (!isNaN(pubTime) && (now - pubTime > ONE_DAY_MS)) {
+        duplicates++;
+        continue;
+      }
+    }
+
+    // Проверка по базе просмотренных
     if (uniqueMap.has(fact.id) || activeSeenIds.has(fact.id)) {
       duplicates++;
     } else {
