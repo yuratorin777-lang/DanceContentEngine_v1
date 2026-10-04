@@ -101,9 +101,7 @@ jobs:
               -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) `
               -TimeoutSec 180
 
-          $raw = [System.Text.Encoding]::UTF8.GetString(
-              $response.Content
-          )
+          $raw = [string]$response.Content
 
           $data = $raw | ConvertFrom-Json
 
