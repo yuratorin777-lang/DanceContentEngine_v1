@@ -1,0 +1,240 @@
+name: Weekly Content Plan
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-plan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PowerShell
+        shell: bash
+        run: |
+          pwsh --version
+
+      - name: Generate weekly plan
+        shell: pwsh
+        env:
+          API_URL: https://dance-content-engine-v1.vercel.app/api/ai
+        run: |
+          $ErrorActionPreference = "Stop"
+
+          $ProjectRoot = $env:GITHUB_WORKSPACE
+          $ApiUrl = $env:API_URL
+          $PlansDir = Join-Path $ProjectRoot "04_CONTENT\plans\weekly"
+
+          New-Item -ItemType Directory -Force -Path $PlansDir | Out-Null
+
+          $task = @"
+          Сформируй недельный контент-план на 7 дней для DanceKids.
+
+          Самостоятельно определи текущий контекст кампании:
+          campaign
+          campaignGoal
+          location
+          ageFocus
+
+          Используй Analyst Evidence, аудиторию, исследование рынка,
+          поисковый спрос, стратегию, Radar и знания проекта.
+
+          Сформируй недельный план для каналов:
+          VK
+          Telegram
+          Website / SEO
+
+          Для каждого элемента обязательно укажи:
+
+          day
+          channel
+          audience
+          topic
+          subtopic
+          goal
+          decisionStage
+          contentJob
+          contentRole
+          format
+          repurposingPotential
+          rationale
+          analystBasis
+          priority
+          status
+
+          План должен быть стратегическим.
+          Не создавай Writer output.
+          Не пиши готовые посты.
+          Не выдумывай факты.
+
+          Язык: русский.
+
+          status должен быть PLANNED.
+          priority: HIGH, MEDIUM или LOW.
+
+          Верни валидный JSON согласно WEEKLY_CONTENT_PLAN_SCHEMA.
+          "@
+
+          $body = @{
+              mode = "WEEKLY_PLAN"
+              task = $task
+              profile = "CONTENT"
+              channels = @(
+                  "VK"
+                  "Telegram"
+                  "Website / SEO"
+              )
+              includeRadar = $true
+          } | ConvertTo-Json -Depth 20
+
+          Write-Host "Calling API..."
+
+          $response = Invoke-WebRequest `
+              -Uri $ApiUrl `
+              -Method POST `
+              -ContentType "application/json; charset=utf-8" `
+              -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) `
+              -TimeoutSec 180
+
+          $raw = [System.Text.Encoding]::UTF8.GetString(
+              $response.Content
+          )
+
+          $data = $raw | ConvertFrom-Json
+
+          if ($data.ok -ne $true) {
+              throw "API returned ok != true. Response: $raw"
+          }
+
+          if (-not $data.weeklyContentPlan) {
+              throw "weeklyContentPlan отсутствует в ответе API."
+          }
+
+          $plan = $data.weeklyContentPlan
+
+          if (-not $plan.planId) {
+              $planId = "weekly-plan-" + (Get-Date -Format "yyyy-MM-dd-HHmmss")
+          }
+          else {
+              $planId = [string]$plan.planId
+          }
+
+          $jsonPath = Join-Path $PlansDir "$planId.json"
+          $mdPath = Join-Path $PlansDir "$planId.md"
+
+          $planJson = $plan | ConvertTo-Json -Depth 50
+
+          [System.IO.File]::WriteAllText(
+              $jsonPath,
+              $planJson,
+              [System.Text.UTF8Encoding]::new($false)
+          )
+
+          $md = @"
+          # Weekly Content Plan
+
+          ## Plan ID
+
+          `$planId`
+
+          ## Campaign
+
+          $($plan.campaign)
+
+          ## Campaign Goal
+
+          $($plan.campaignGoal)
+
+          ## Location
+
+          $($plan.location)
+
+          ## Age Focus
+
+          $($plan.ageFocus)
+
+          ## Strategic Objective
+
+          $($plan.strategicObjective)
+
+          ## Audience
+
+          $($plan.audience)
+
+          ## Channels
+
+          $($plan.channels -join ", ")
+
+          ## Weekly Items
+
+          "@
+
+          $index = 1
+
+          foreach ($item in $plan.items) {
+              $md += @"
+
+          ### $index. Day $($item.day) — $($item.channel)
+
+          **Audience:** $($item.audience)
+
+          **Topic:** $($item.topic)
+
+          **Subtopic:** $($item.subtopic)
+
+          **Goal:** $($item.goal)
+
+          **Decision Stage:** $($item.decisionStage)
+
+          **Content Job:** $($item.contentJob)
+
+          **Content Role:** $($item.contentRole)
+
+          **Format:** $($item.format)
+
+          **Repurposing Potential:** $($item.repurposingPotential)
+
+          **Priority:** $($item.priority)
+
+          **Status:** $($item.status)
+
+          **Rationale:** $($item.rationale)
+
+          **Analyst Basis:** $($item.analystBasis)
+
+          "@
+
+              $index++
+          }
+
+          [System.IO.File]::WriteAllText(
+              $mdPath,
+              $md,
+              [System.Text.UTF8Encoding]::new($false)
+          )
+
+          Write-Host ""
+          Write-Host "Created:"
+          Write-Host $jsonPath
+          Write-Host $mdPath
+
+      - name: Commit generated plan
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add 04_CONTENT/plans/weekly/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Generate weekly content plan"
+          git push
