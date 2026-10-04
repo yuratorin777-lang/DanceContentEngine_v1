@@ -22,11 +22,11 @@ $planId
 
 ## Strategic Objective
 
-Reduce parent uncertainty, demonstrate real owner methodology, build trust across the decision journey, and drive targeted enquiries for Baby Dance and Dance Kids programmes
+Построить доверие к экспертной методике школы, снизить неопределенность родителей на этапе выбора и адаптации, продемонстрировать реальные результаты и перевести аудиторию от этапа интереса к заявкам и зачислению в группы в Серпухове.
 
 ## Audience
 
-Parents of children aged 2-12 in Serpukhov considering dance, modern choreography, or ballroom sports
+Родители детей в возрасте от 2 до 12 лет в Серпухове, ищущие качественное физическое и хореографическое развитие, преодолевающие сомнения относительно адаптации, результатов и выбора подходящего направления.
 
 ## Channels
 
@@ -36,196 +36,196 @@ VK, Telegram, Website / SEO
 
 ### 1. Day 1 — VK
 
-**Audience:** Parents of preschoolers (3-5 years) exploring local dance options
+**Audience:** Родители дошкольников (3-5 лет) в Серпухове
 
-**Topic:** First-time dance selection
+**Topic:** Выбор первого танцевального направления и возрастного старта
 
-**Subtopic:** What actually happens at the first group session
+**Subtopic:** Почему для малышей 3-5 лет важна общеразвивающая хореография, а не ранняя узкая специализация
 
-**Goal:** Reduce pre-contact anxiety and explain the transition from home to a structured group environment
+**Goal:** Сформировать понимание ценности правильной базовой подготовки и снять первые сомнения родителей на этапе поиска
 
-**Decision Stage:** Exploration
+**Decision Stage:** Исследование
 
-**Content Job:** Decision support
+**Content Job:** Поддержка принятия решений
 
-**Content Role:** Discovery and trust building
+**Content Role:** Ознакомление и объяснение базовой пользы
 
-**Format:** Short discussion post with visual card
+**Format:** Пост с инфографикой и разбором программы
 
-**Repurposing Potential:** High
+**Repurposing Potential:** Материал может быть адаптирован в статью для сайта и карточки для Telegram
 
 **Priority:** HIGH
 
 **Status:** PLANNED
 
-**Rationale:** Local reviews show parents care deeply about child comfort and adaptation; helps answer early exploratory questions before application.
+**Rationale:** Родители малышей часто сталкиваются с вопросом выбора направления и нуждаются в экспертном разъяснении пользы раннего развития без избыточных нагрузок
 
-**Analyst Basis:** SERPUKHOV-AUDIENCE-ANALYSIS SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md
 
 ### 2. Day 2 — Telegram
 
-**Audience:** Engaged parent community and current families
+**Audience:** Родители, находящиеся в поиске секции или размышляющие о начале занятий
 
-**Topic:** Methodology and owner perspective
+**Topic:** Авторская методика и опыт руководителя
 
-**Subtopic:** Why we structure training from simple to complex across age groups
+**Subtopic:** Как 37 лет опыта в танцах и 15 лет разработки методики превращаются в результат без травм
 
-**Goal:** Deepen trust through proprietary owner methodology and multi-year experience
+**Goal:** Продемонстрировать экспертную авторитетность руководителя и уникальность подхода школы, отличающего ее от обычных кружков
 
-**Decision Stage:** Comparison
+**Decision Stage:** Сравнение
 
-**Content Job:** Expert authority
+**Content Job:** Экспертная авторитетность
 
-**Content Role:** Expertise and relationship building
+**Content Role:** Углубленное объяснение принципов работы
 
-**Format:** Detailed authorial reflection post
+**Format:** Экспертная заметка руководителя с личным опытом
 
-**Repurposing Potential:** High
+**Repurposing Potential:** Основа для авторской статьи или видео-интервью
 
 **Priority:** HIGH
 
 **Status:** PLANNED
 
-**Rationale:** Owner experience and structured methodology serve as the primary strategic moat against generic local dance sections.
+**Rationale:** Владельческий опыт и прописанная система от простого к сложному являются ключевым дифференциатором против локальных альтернатив
 
-**Analyst Basis:** BUSINESS-CONTEXT CONTENT_STRATEGY
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-DEEP-DIVE.md
 
 ### 3. Day 3 — Website / SEO
 
-**Audience:** Parents searching for local dance options in Serpukhov
+**Audience:** Родители, выбирающие танцевальную студию в Серпухове и ищущие ответы на организационные вопросы
 
-**Topic:** Age-specific choice guide
+**Topic:** Первое занятие и адаптация ребенка
 
-**Subtopic:** Choosing between Baby Dance (2-4 years) and older groups in Serpukhov
+**Subtopic:** Что происходит на первом занятии танцами в Серпухове и как помочь ребенку преодолеть стеснение
 
-**Goal:** Capture durable search demand and provide a definitive reference guide for preschool entry
+**Goal:** Закрыть поисковый спрос на тему адаптации и снять барьеры перед первым визитом в студию
 
-**Decision Stage:** Exploration
+**Decision Stage:** Первый контакт
 
-**Content Job:** Decision support
+**Content Job:** Поддержка принятия решений
 
-**Content Role:** Evergreen search asset
+**Content Role:** Справочный evergreen-материал
 
-**Format:** Long-form SEO article / Guide
+**Format:** SEO-статья / подробный гид для родителей
 
-**Repurposing Potential:** High
+**Repurposing Potential:** Чек-лист для Telegram и серия коротких советов для VK
 
 **Priority:** HIGH
 
 **Status:** PLANNED
 
-**Rationale:** Local market structure divides offers clearly by age groups; search intent around preschool dance is high.
+**Rationale:** Родительские страхи перед первым занятием и стеснением ребенка детально зафиксированы в аналитике и отзывах как ключевой барьер
 
-**Analyst Basis:** SERPUKHOV-MARKET-ANALYSIS SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES
+**Analyst Basis:** 02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md, 02_RESEARCH/Аналитик/SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES.md
 
 ### 4. Day 4 — VK
 
-**Audience:** Parents experiencing resistance or hesitation from their child
+**Audience:** Родители детей 3-7 лет, столкнувшиеся с сопротивлением ребенка
 
-**Topic:** Handling child resistance
+**Topic:** Преодоление фразы «я не хочу идти на танцы»
 
-**Subtopic:** What to do when the child says 'I don't want to go to dance class'
+**Subtopic:** Как реагировать, когда ребенок капризничает перед тренировкой: грань между адаптацией и давлением
 
-**Goal:** Help parents distinguish normal adaptation from persistent mismatch without forcing or dropping prematurely
+**Goal:** Дать родителям психологическую опору и экспертный взгляд на периодические кризисы мотивации у детей
 
-**Decision Stage:** Adaptation
+**Decision Stage:** Адаптация
 
-**Content Job:** Problem solving
+**Content Job:** Решение проблем
 
-**Content Role:** Community support and engagement
+**Content Role:** Психологическая и практическая поддержка родителей
 
-**Format:** Case-based explanation post with engagement prompt
+**Format:** Дискуссионный пост с разбором типичной ситуации
 
-**Repurposing Potential:** Medium
+**Repurposing Potential:** Пост в Telegram с акцентом на личную позицию руководителя
 
 **Priority:** HIGH
 
 **Status:** PLANNED
 
-**Rationale:** Owner knowledge and dropout literature highlight the critical nature of the adaptation phase and managing 'I don't want to' moments.
+**Rationale:** Проблема «не хочу» универсальна для всех детей, и правильная реакция родителей напрямую влияет на долгосрочный результат и сохранение дисциплины
 
-**Analyst Basis:** BUSINESS-CONTEXT SERPUKHOV-AUDIENCE-DEEP-DIVE
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-DECISION-JOURNEY.md
 
 ### 5. Day 5 — Telegram
 
-**Audience:** Parents evaluating training quality and long-term results
+**Audience:** Существующие и потенциальные родители студии
 
-**Topic:** Progress and milestones
+**Topic:** Организационная прозрачность и удобство сервиса
 
-**Subtopic:** How we track progress every 3 months through medal tests and examinations
+**Subtopic:** Как работают родительские чаты Telegram, личный кабинет и система заморозки абонементов при болезнях
 
-**Goal:** Explain the step-by-step evaluation system and dispel the myth of instant results
+**Goal:** Показать высокий уровень сервиса, заботы о клиентах и прозрачности организационных процессов
 
-**Decision Stage:** Progress
+**Decision Stage:** Первый контакт
 
-**Content Job:** Decision support
+**Content Job:** Отношения и бренд
 
-**Content Role:** Transparency and retention support
+**Content Role:** Демография внутренней жизни и удобства
 
-**Format:** Practical guide / checklist for parents
+**Format:** Практический гид по возможностям личного кабинета и заморозки
 
-**Repurposing Potential:** Medium
+**Repurposing Potential:** Инструкция для сайта в раздел FAQ
 
 **Priority:** MEDIUM
 
 **Status:** PLANNED
 
-**Rationale:** Parents need observable evidence of change; structured 3-month examinations provide clear proof of developmental milestones.
+**Rationale:** Удобство цифровых сервисов, заморозка по справкам и прозрачная коммуникация являются сильными аргументами при выборе школы в Серпухове
 
-**Analyst Basis:** BUSINESS-CONTEXT SERPUKHOV-AUDIENCE-ANALYSIS
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-AUDIENCE-ANALYSIS.md
 
 ### 6. Day 6 — Website / SEO
 
-**Audience:** Parents comparing dance studios in Serpukhov
+**Audience:** Родители школьников и детей от 8 лет в Серпухове
 
-**Topic:** Studio comparison and criteria
+**Topic:** Спортивные танцы и путь к высоким достижениям
 
-**Subtopic:** What makes a professional dance school different from a general hobby club
+**Subtopic:** Танцевальный спорт в Серпухове: официальные разряды, Федерация танцевального спорта и путь от хобби до топ-10 России
 
-**Goal:** Support the comparison stage by highlighting professional training standards vs entertainment
+**Goal:** Привлечь аудиторию, ориентированную на спортивные результаты, дисциплину и официальную федеральную подготовку
 
-**Decision Stage:** Comparison
+**Decision Stage:** Сравнение
 
-**Content Job:** Decision support
+**Content Job:** Экспертная авторитетность
 
-**Content Role:** Evergreen decision support
+**Content Role:** Долгосрочный экспертный материал
 
-**Format:** Comparison framework article
+**Format:**  SEO-статья с описанием спортивной траектории
 
-**Repurposing Potential:** High
-
-**Priority:** MEDIUM
-
-**Status:** PLANNED
-
-**Rationale:** Competitor mapping shows a fragmented market ranging from multi-service centers to specialized sports dance; parents need clear criteria.
-
-**Analyst Basis:** SERPUKHOV-COMPETITOR-MAP SERPUKHOV-SEARCH-AND-CONTENT-OPPORTUNITIES
-
-### 7. Day 7 — VK
-
-**Audience:** Ready parents and active local families in Serpukhov
-
-**Topic:** Program availability and next steps
-
-**Subtopic:** Group capacity limits (mini-groups of 9) and enrollment process for current season
-
-**Goal:** Drive targeted applications and communicate organizational transparency
-
-**Decision Stage:** First contact
-
-**Content Job:** Conversion / retention
-
-**Content Role:** Commercial announcement and local conversion
-
-**Format:** Community post with clear call to action and group details
-
-**Repurposing Potential:** Low
+**Repurposing Potential:** Презентация для VK с примерами достижений воспитанников
 
 **Priority:** HIGH
 
 **Status:** PLANNED
 
-**Rationale:** Mini-group format (max 9 children) is a verified commercial advantage and operational differentiator that supports enrolment.
+**Rationale:** Школа имеет подтвержденные достижения (чемпионы России, попадание воспитанников в топ-10), что важно для родителей, ориентированных на серьезный спорт
 
-**Analyst Basis:** BUSINESS-CONTEXT SERPUKHOV-MARKET-ANALYSIS
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-COMPETITOR-MAP.md
+
+### 7. Day 7 — VK
+
+**Audience:** Родители в Серпухове, выбирающие секцию на новый сезон
+
+**Topic:** Итоговый гид по выбору группы и запись на занятия
+
+**Subtopic:** Как записать ребенка в мини-группы до 9 человек в Серпухове: расписание, возрастные группы и старт занятий
+
+**Goal:** Конвертировать накопленный интерес и снятые возражения в целевое действие — заявку на запись в студию
+
+**Decision Stage:** Первый контакт
+
+**Content Job:** Конверсия и удержание
+
+**Content Role:** Прямое предложение и призыв к действию
+
+**Format:** Коммерческий пост с четким призывом и описанием формата мини-групп
+
+**Repurposing Potential:** Рассылка в Telegram и обновление блока записи на сайте
+
+**Priority:** HIGH
+
+**Status:** PLANNED
+
+**Rationale:** Формат мини-групп до 9 человек обеспечивает максимальное внимание к каждому ребенку и является сильным коммерческим аргументом на финальном этапе принятия решения
+
+**Analyst Basis:** 02_RESEARCH/Аналитик/BUSINESS-CONTEXT.md, 02_RESEARCH/Аналитик/SERPUKHOV-SEASONALITY-MAP.md
