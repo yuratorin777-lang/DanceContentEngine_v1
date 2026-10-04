@@ -1,0 +1,255 @@
+name: Ad-Hoc Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Тема поста / события"
+        required: true
+        type: string
+
+      channel:
+        description: "Канал"
+        required: true
+        default: "VK"
+        type: string
+
+      audience:
+        description: "Целевая аудитория"
+        required: true
+        default: "Родители детей DanceKids"
+        type: string
+
+      event_facts:
+        description: "Ключевые факты события"
+        required: true
+        type: string
+
+jobs:
+  generate-adhoc:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate ad-hoc content
+        shell: pwsh
+        env:
+          TOPIC: ${{ inputs.topic }}
+          CHANNEL: ${{ inputs.channel }}
+          AUDIENCE: ${{ inputs.audience }}
+          EVENT_FACTS: ${{ inputs.event_facts }}
+        run: |
+
+          [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+          $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+          [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+          # ============================================================
+          # CONFIG
+          # ============================================================
+
+          $ProjectRoot = $env:GITHUB_WORKSPACE
+
+          $ApiUrl = "https://dance-content-engine-v1.vercel.app/api/ai"
+
+          $ContentDir = Join-Path $ProjectRoot "04_CONTENT\content"
+
+          New-Item -ItemType Directory -Force -Path $ContentDir | Out-Null
+
+          Write-Host ""
+          Write-Host "============================================================" -ForegroundColor Cyan
+          Write-Host " DANCE CONTENT ENGINE — СИТУАТИВНЫЙ / AD-HOC ПОСТ" -ForegroundColor Cyan
+          Write-Host "============================================================" -ForegroundColor Cyan
+          Write-Host ""
+
+          # ============================================================
+          # INPUT
+          # ============================================================
+
+          $Topic = [string]$env:TOPIC
+          $Channel = [string]$env:CHANNEL
+          $Audience = [string]$env:AUDIENCE
+          $EventFacts = [string]$env:EVENT_FACTS
+
+          if ([string]::IsNullOrWhiteSpace($Topic)) {
+              Write-Host "Ошибка: тема не может быть пустой" -ForegroundColor Red
+              exit 1
+          }
+
+          if ([string]::IsNullOrWhiteSpace($Channel)) {
+              $Channel = "VK"
+          }
+
+          if ([string]::IsNullOrWhiteSpace($Audience)) {
+              $Audience = "Родители детей DanceKids"
+          }
+
+          if ([string]::IsNullOrWhiteSpace($EventFacts)) {
+              Write-Host "Ошибка: факты события не могут быть пустыми" -ForegroundColor Red
+              exit 1
+          }
+
+          Write-Host "Тема:"
+          Write-Host "  $Topic"
+          Write-Host ""
+
+          Write-Host "Канал:"
+          Write-Host "  $Channel"
+          Write-Host ""
+
+          Write-Host "Аудитория:"
+          Write-Host "  $Audience"
+          Write-Host ""
+
+          Write-Host "Факты события:"
+          Write-Host "$EventFacts"
+          Write-Host ""
+
+          # ============================================================
+          # TASK BUILDER
+          # ============================================================
+
+          $task = @"
+          ВЫПОЛНИ СОЗДАНИЕ СИТУАТИВНОГО / AD-HOC КОНТЕНТА ПО ПРЕДОСТАВЛЕННЫМ ФАКТАМ.
+
+          Канал: $Channel
+          Тема: $Topic
+          Аудитория: $Audience
+
+          ФАКТИЧЕСКИЕ ВВОДНЫЕ СОБЫТИЯ:
+          $EventFacts
+
+          ============================================================
+          ОБЯЗАТЕЛЬНАЯ АРХИТЕКТУРА EXECUTION PIPELINE
+          ============================================================
+
+          Задействуй полный мультиагентный пайплайн проекта:
+
+          1. ANALYST EVIDENCE:
+             - Выдели ключевые факты события из предоставленного ввода.
+             - Определи эмоциональный и смысловой вектор для аудитории $Audience.
+
+          2. CONTENT PLANNER:
+             - Сформируй структуру публикации под формат $Channel.
+             - Определи ключевой призыв и связь события с жизнью школы и набором.
+
+          3. RETRIEVER:
+             - Извлеки релевантный контекст, tone of voice и стандарты качества из базы знаний (01_KNOWLEDGE, 02_RESEARCH, 03_AUDIENCE).
+
+          4. WRITER:
+             - Напиши готовый текст поста, используя факты события и стиль проекта.
+             - Не выдумывай имена, даты или цифры, которых нет в фактических вводных.
+
+          5. VALIDATOR:
+             - Проверь текст на соответствие бренд-войсу, отсутствие сухих отчетов и естественность подачи.
+
+          ============================================================
+          ТРЕБОВАНИЯ К ВЫХОДУ
+          ============================================================
+
+          - Верни финальный готовый пост без служебных мета-комментариев.
+          - Язык — русский.
+          "@
+
+          # ============================================================
+          # API REQUEST
+          # ============================================================
+
+          $bodyObject = @{
+              mode         = "CONTENT"
+              task         = $task
+              profile      = "CONTENT"
+              channel      = $Channel
+              channels     = @($Channel)
+              includeRadar = $true
+          }
+
+          $bodyJson = $bodyObject | ConvertTo-Json -Depth 30
+
+          Write-Host ""
+          Write-Host "Отправка запроса на Vercel..." -ForegroundColor Yellow
+
+          try {
+
+              $response = Invoke-WebRequest `
+                  -Uri $ApiUrl `
+                  -Method Post `
+                  -ContentType "application/json; charset=utf-8" `
+                  -Body $bodyJson `
+                  -UseBasicParsing `
+                  -TimeoutSec 120
+
+              $jsonText = [string]$response.Content
+
+              $data = $jsonText | ConvertFrom-Json
+          }
+          catch {
+
+              Write-Host ""
+              Write-Host "ОШИБКА API: $($_.Exception.Message)" -ForegroundColor Red
+              exit 1
+          }
+
+          # ============================================================
+          # API VALIDATION
+          # ============================================================
+
+          if ($data.ok -ne $true -or -not $data.result) {
+
+              Write-Host "Ошибка генерации:" -ForegroundColor Red
+
+              $data | ConvertTo-Json -Depth 10
+
+              exit 1
+          }
+
+          # ============================================================
+          # SAVE CONTENT
+          # ============================================================
+
+          $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+
+          $safeChannel = $Channel -replace '[\/:*?"<>|]', '-'
+
+          $contentFilePath =
+              Join-Path $ContentDir "adhoc-$safeChannel-$timestamp.md"
+
+          [System.IO.File]::WriteAllText(
+              $contentFilePath,
+              [string]$data.result,
+              [System.Text.UTF8Encoding]::new($false)
+          )
+
+          # ============================================================
+          # RESULT
+          # ============================================================
+
+          Write-Host ""
+          Write-Host "============================================================" -ForegroundColor Green
+          Write-Host " ГОТОВО! Файл сохранен:" -ForegroundColor Green
+          Write-Host " $contentFilePath"
+          Write-Host "============================================================" -ForegroundColor Green
+
+      - name: Commit generated content
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add 04_CONTENT/content/
+
+          if git diff --cached --quiet; then
+            echo "No content changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Generate ad-hoc content"
+          git push
