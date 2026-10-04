@@ -1,0 +1,460 @@
+name: Transcribe Audio
+
+on:
+  push:
+    paths:
+      - "08_input/**"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ============================================================
+      # CHECKOUT
+      # ============================================================
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ============================================================
+      # PYTHON
+      # ============================================================
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # ============================================================
+      # FFMPEG
+      # ============================================================
+
+      - name: Install FFmpeg
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      # ============================================================
+      # WHISPER
+      # ============================================================
+
+      - name: Install Whisper
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai-whisper requests
+
+      # ============================================================
+      # TRANSCRIBE + CLEAN
+      # ============================================================
+
+      - name: Process audio files
+        shell: python
+        env:
+          VERCEL_API_URL: https://dance-content-engine-v1.vercel.app/api/clean-transcript
+        run: |
+
+          import os
+          import glob
+          import shutil
+          from datetime import datetime
+
+          import requests
+          import whisper
+
+
+          # ============================================================
+          # CONFIG
+          # ============================================================
+
+          BASE_DIR = os.environ["GITHUB_WORKSPACE"]
+
+          INPUT_DIR = os.path.join(BASE_DIR, "08_input")
+          PROCESSED_DIR = os.path.join(INPUT_DIR, "_processed")
+          KNOWLEDGE_DIR = os.path.join(BASE_DIR, "01_KNOWLEDGE")
+
+          VERCEL_API_URL = os.environ["VERCEL_API_URL"]
+
+
+          # ============================================================
+          # DIRECTORIES
+          # ============================================================
+
+          os.makedirs(INPUT_DIR, exist_ok=True)
+          os.makedirs(PROCESSED_DIR, exist_ok=True)
+          os.makedirs(KNOWLEDGE_DIR, exist_ok=True)
+
+
+          print("")
+          print("=" * 60)
+          print(" DANCE CONTENT ENGINE — TRANSCRIBE AUDIO")
+          print("=" * 60)
+          print("")
+
+
+          # ============================================================
+          # FIND AUDIO FILES
+          # ============================================================
+
+          extensions = (
+              "*.aac",
+              "*.mp3",
+              "*.m4a",
+              "*.wav",
+              "*.ogg"
+          )
+
+          audio_files = []
+
+          for ext in extensions:
+              for file_path in glob.glob(
+                  os.path.join(INPUT_DIR, ext)
+              ):
+                  if os.path.isfile(file_path):
+                      audio_files.append(file_path)
+
+
+          if not audio_files:
+              print("📥 В 08_input нет новых аудиофайлов.")
+              print("Завершение.")
+              raise SystemExit(0)
+
+
+          print("Найдено аудиофайлов:", len(audio_files))
+          print("")
+
+
+          # ============================================================
+          # LOAD WHISPER
+          # ============================================================
+
+          print("🎙️ Загрузка модели Whisper (small)...")
+          print("")
+
+          model = whisper.load_model("small")
+
+
+          # ============================================================
+          # PROCESS FILES
+          # ============================================================
+
+          processed_count = 0
+
+          for file_path in audio_files:
+
+              filename = os.path.basename(file_path)
+
+              name_without_ext, _ = os.path.splitext(filename)
+
+              date_prefix = datetime.now().strftime("%Y-%m-%d")
+
+              topic_folder_name = (
+                  f"{date_prefix}_{name_without_ext}"
+              )
+
+              expected_md_path = os.path.join(
+                  KNOWLEDGE_DIR,
+                  topic_folder_name,
+                  "raw_parts",
+                  f"{name_without_ext}.md"
+              )
+
+
+              print("")
+              print("=" * 60)
+              print("ФАЙЛ:", filename)
+              print("=" * 60)
+              print("")
+
+
+              # ========================================================
+              # ALREADY PROCESSED
+              # ========================================================
+
+              if os.path.exists(expected_md_path):
+
+                  print(
+                      f"⏭️ Пропуск (уже обработан): {filename}"
+                  )
+
+                  os.makedirs(PROCESSED_DIR, exist_ok=True)
+
+                  dest_path = os.path.join(
+                      PROCESSED_DIR,
+                      filename
+                  )
+
+                  if os.path.exists(dest_path):
+                      os.remove(dest_path)
+
+                  shutil.move(file_path, dest_path)
+
+                  print(
+                      f"📦 Файл перемещен в "
+                      f"08_input/_processed/{filename}"
+                  )
+
+                  continue
+
+
+              # ========================================================
+              # WHISPER
+              # ========================================================
+
+              print(
+                  f"⏳ 1/2 Транскрибация Whisper: {filename}..."
+              )
+
+              result = model.transcribe(
+                  file_path,
+                  language="ru",
+                  fp16=False
+              )
+
+              raw_transcript = result["text"].strip()
+
+
+              if not raw_transcript:
+
+                  print(
+                      "⚠️ Whisper не вернул текст."
+                  )
+
+                  continue
+
+
+              print("")
+              print(
+                  f"Получено символов: "
+                  f"{len(raw_transcript)}"
+              )
+
+
+              # ========================================================
+              # VERCEL / GEMINI CLEANUP
+              # ========================================================
+
+              print("")
+              print(
+                  "🤖 2/2 Обработка через Gemini..."
+              )
+
+              try:
+
+                  response = requests.post(
+                      VERCEL_API_URL,
+                      json={
+                          "text": raw_transcript,
+                          "filename": filename
+                      },
+                      headers={
+                          "Content-Type": "application/json"
+                      },
+                      timeout=120
+                  )
+
+                  if response.status_code == 200:
+
+                      response_data = response.json()
+
+                      cleaned_transcript = response_data.get(
+                          "cleanedText",
+                          raw_transcript
+                      )
+
+                  else:
+
+                      print(
+                          f"⚠️ Ошибка Vercel API "
+                          f"({response.status_code})"
+                      )
+
+                      print(response.text)
+
+                      print(
+                          "Сохраняем сырой текст."
+                      )
+
+                      cleaned_transcript = raw_transcript
+
+              except Exception as error:
+
+                  print(
+                      f"⚠️ Не удалось связаться с Vercel: "
+                      f"{error}"
+                  )
+
+                  print(
+                      "Сохраняем сырой текст."
+                  )
+
+                  cleaned_transcript = raw_transcript
+
+
+              # ========================================================
+              # CREATE KNOWLEDGE FOLDER
+              # ========================================================
+
+              target_folder = os.path.join(
+                  KNOWLEDGE_DIR,
+                  topic_folder_name
+              )
+
+              raw_parts_folder = os.path.join(
+                  target_folder,
+                  "raw_parts"
+              )
+
+              os.makedirs(
+                  raw_parts_folder,
+                  exist_ok=True
+              )
+
+
+              # ========================================================
+              # SAVE MARKDOWN
+              # ========================================================
+
+              md_file_path = os.path.join(
+                  raw_parts_folder,
+                  f"{name_without_ext}.md"
+              )
+
+
+              with open(
+                  md_file_path,
+                  "w",
+                  encoding="utf-8"
+              ) as f:
+
+                  f.write(
+                      f"# {name_without_ext}\n\n"
+                  )
+
+                  f.write(
+                      f"**Дата:** "
+                      f"{datetime.now().strftime('%d.%m.%Y %H:%M')}\n"
+                  )
+
+                  f.write(
+                      f"**Исходник:** {filename}\n\n"
+                  )
+
+                  f.write(
+                      "---\n\n"
+                  )
+
+                  f.write(
+                      cleaned_transcript
+                  )
+
+
+              print("")
+              print(
+                  "✅ Транскрипция сохранена:"
+              )
+
+              print(
+                  f"01_KNOWLEDGE/"
+                  f"{topic_folder_name}/"
+                  f"raw_parts/"
+                  f"{name_without_ext}.md"
+              )
+
+
+              # ========================================================
+              # MOVE AUDIO
+              # ========================================================
+
+              os.makedirs(
+                  PROCESSED_DIR,
+                  exist_ok=True
+              )
+
+              dest_path = os.path.join(
+                  PROCESSED_DIR,
+                  filename
+              )
+
+              if os.path.exists(dest_path):
+                  os.remove(dest_path)
+
+              shutil.move(
+                  file_path,
+                  dest_path
+              )
+
+
+              print("")
+              print(
+                  f"📦 Исходное аудио перемещено в:"
+              )
+
+              print(
+                  f"08_input/_processed/{filename}"
+              )
+
+
+              processed_count += 1
+
+
+          # ============================================================
+          # RESULT
+          # ============================================================
+
+          print("")
+          print("=" * 60)
+          print(" ИТОГ")
+          print("=" * 60)
+          print("")
+
+          print(
+              f"Успешно обработано: {processed_count}"
+          )
+
+          print("")
+
+          if processed_count == 0:
+
+              print(
+                  "⚠️ Ни одного нового файла не обработано."
+              )
+
+          else:
+
+              print(
+                  "FULL TRANSCRIPTION PIPELINE ЗАВЕРШЕН"
+              )
+
+      # ============================================================
+      # COMMIT
+      # ============================================================
+
+      - name: Commit transcription results
+        shell: bash
+        run: |
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add 01_KNOWLEDGE/08_input/ 2>/dev/null || true
+          git add 01_KNOWLEDGE/ 2>/dev/null || true
+          git add 08_input/ 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "No transcription changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Transcribe audio [skip ci]"
+          git push
