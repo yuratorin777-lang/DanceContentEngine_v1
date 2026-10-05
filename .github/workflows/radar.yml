@@ -2,8 +2,8 @@
 
 on:
   schedule:
-    # 06:00 UTC = 09:00 MSK
-    - cron: '0 6 * * *'
+    # 06:17 UTC = 09:17 MSK (уходим от затора на 00 минут)
+    - cron: '17 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -36,4 +36,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "auto: update radar feed [$(date -u +'%Y-%m-%d %H:%M UTC')]" || exit 0
-          git push
+          git pull --rebase origin main
+          git push origin main
