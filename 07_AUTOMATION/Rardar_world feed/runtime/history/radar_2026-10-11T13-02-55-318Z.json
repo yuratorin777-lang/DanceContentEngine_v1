@@ -1,0 +1,290 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-11T13:02:55.318Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 26,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 12,
+    "classifiedFacts": 14,
+    "relevantSignals": 7,
+    "durationMs": 1722
+  },
+  "distribution": {
+    "DANCE_WORLD": 4,
+    "LOCAL_DANCE": 1,
+    "CORE_DANCE": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 243,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 279,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 291,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 335,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 9,
+      "durationMs": 307,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 264,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "IRONMAN World Championship 2026: 'Last dance' ends early for former champ Patrick Lange - TRI247",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeTVzQWNLakJqSnQ3c2p3emxFUENYb1BFeDR5TkFGdkZDdnJQVlJDZVBkenlZOVlya2IxYzVDM2w4SjY0Um1Ud0gzU09RbXRLdmhHVTgxNlpDRWdNcVdTZWJaZzA4aGQ2dlN4c2tONVQyUTFpaVM4SzBKdDBVMkI5NVYyb1hmdjY3TkoxTzRYQWxac1hlNW5VLVZlTTFRdVNQ?oc=5",
+      "content": "IRONMAN World Championship 2026: 'Last dance' ends early for former champ Patrick Lange &nbsp;&nbsp; TRI247",
+      "publishedAt": "2026-10-11T10:00:00.000Z",
+      "collectedAt": "2026-10-11T13:02:54.745Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Conker the world: Championship draws international crowd to Northamptonshire - Rayo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcEkyLVVSeUlyTVZxbXlfcE9MSXFfNkxNbWo3UFBNZnVjelpRMEFKRXlkanBTNmluZG81NWg4SWJTdlpuN1ZOOG5NTTB0QVZRb1h0dEJCSmxnUFJIbzl0aGwtYzhrOWNKY2p6X2NndVFiMEY4eVB0amdGTHJFM0x3cmtkaGRBWGNjNlVUVnJCWGhsU3Y1aU1FbmpFTGNrak84Q0ZkNVRhWXYySHNqa0E?oc=5",
+      "content": "Conker the world: Championship draws international crowd to Northamptonshire &nbsp;&nbsp; Rayo",
+      "publishedAt": "2026-10-11T04:34:13.000Z",
+      "collectedAt": "2026-10-11T13:02:54.746Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "international"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "IRONMAN World Championship 2026: Men’s full finishing order and Pro Series standings - TRI247",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd2V6RzQtT1ZtZEJuR3pmcF9fM0RWdUoxa0lwcTlBNFpTN2xDeEpjcTdscElzaUtLQjRFaTBMbV9RNFY5VlJJX2JJZWkxUnhnZTRGOExmVEx5NUtZVVFYMXg0S3J5c2JFMk9DN1ZoekR6Ul9CVlFqOTlFRmlZbjEtb3lKbmxvclhnTVpZV2cxRDdaS2xhYUQ5V2tELUpuZlZZWmV0b1hGa2Q?oc=5",
+      "content": "IRONMAN World Championship 2026: Men’s full finishing order and Pro Series standings &nbsp;&nbsp; TRI247",
+      "publishedAt": "2026-10-11T09:01:10.000Z",
+      "collectedAt": "2026-10-11T13:02:54.746Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "IRONMAN World Championship 2026: Will Vincent Luis rethink retirement plans? - TRI247",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNLXJiRTNXY201bkNuUDBxVlFRUFRxN1IxbFg1Z0IyLUZMM1V1M3hkaW5fRXV1NDRuTnRWSXhsbXBvVnhpa3dOVlFUNF9QbFhNb0ltY2hrMjMtS1M1WVREVzd3MG5UVFJTdHF3dWUyY3JLSXJ6OFRQUm5LZk9hUmdSNC1RTmlwUm1LS0RMeVFIT1VOYnMxTXUxZXI0MDZEeFBxckppLVhYVQ?oc=5",
+      "content": "IRONMAN World Championship 2026: Will Vincent Luis rethink retirement plans? &nbsp;&nbsp; TRI247",
+      "publishedAt": "2026-10-11T08:42:13.000Z",
+      "collectedAt": "2026-10-11T13:02:54.746Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Во Владикавказе состоялся Межрегиональный фестиваль «Танцевальные вершины» - Iryston Tv",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRTZVbVZGNmRxV1I0VVZ0aXRBZ1FQVDBYOUJFMXNDOUVtTDc1Vmt4SW9CVUZMYmpIbndNTmtWOXNrWjdSRm10SkhrR3RVV3lqMUh6YXN6SnFuNG8tdTIzbGRUWFJDSG1NbmtMcXNUa1JDeHdQXzlKMllDTF84RVJ6S284ZjJGaV9iaTJZMUVDYW9Hemd5Mm0wa2ln?oc=5",
+      "content": "Во Владикавказе состоялся Межрегиональный фестиваль «Танцевальные вершины» &nbsp;&nbsp; Iryston Tv",
+      "publishedAt": "2026-10-10T16:21:44.000Z",
+      "collectedAt": "2026-10-11T13:02:54.120Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "фестиваль",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Local dance instructor tapped to represent Canada on world stage - InnisfilToday.ca",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTldVOEd3SU9PMTZkY0VIdElOUVNyVlVQOGMta0F1cXd2TWlteXBHV0o0UkxlelYwOS1CemwwbmZLcUxGOHhGa0pIVmN6akFsM0t3YXMxMnBFclYtTTlKV1BjMTJSWGVRRmNzazRUU2xQcDhvNU1wU1pzQ3kzYWpTRnh6Vnppdy14ZVp2VHhpMm1qWEJtcTJaaXNtaU1yeXV1a21xbjF0d2ZWdnAzY2thVHAyUQ?oc=5",
+      "content": "Local dance instructor tapped to represent Canada on world stage &nbsp;&nbsp; InnisfilToday.ca",
+      "publishedAt": "2026-10-10T18:35:25.000Z",
+      "collectedAt": "2026-10-11T13:02:54.746Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Strictly’s Shirley Ballas' scoring of rumoured dancer boyfriend ‘didn’t breach rules’ at competition - Metro.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOX28yX25XRmNUQnFTR3BaYTBJQzNtbHJrTjFxTlZZbkpDWXVxUDV5UUhUMkhnOUZ2MGVmcjAtdk9tQk1GVnVXdXJlWXkwb0Zya1h1d1VRMEdvaVY0TU5mTnkzWDh3MUtiTzVHUUFnaXN1SmhxRV9kck1vaWNVWkJScGZ1cXFmRnZEX0k2eVpLd04tYVM4dk12RlUwNTRWRnVCckg1SXNsWFJlVzhiTnR2TWo1bFN1VHBJWUVhdlowdHpQQdIBxwFBVV95cUxNUEI4S1RnZjZ0cUNyek9RT24zYjM0eE5fc056d3pEZ2l0U2ZXam5fYzBQQjZvcHp1N04zMDJRN3JLM25Vd3UzU3BQVVZxMHNGZUFtTU9XT294aC1qWjV5ZzFWaHhNX1NyYTJvTk01eW1FSHJhd29TQ0E4dXdDbmZlSVduUjZBcUx2ZndEYkRiY0R0N0NKbkZ1bm9odGVVZ2Z1MjAyMVB0MmVqelEzdjQ4QjZuTzY5cHNvbVRieExidkNnSzVYWTdJ?oc=5",
+      "content": "Strictly’s Shirley Ballas' scoring of rumoured dancer boyfriend ‘didn’t breach rules’ at competition &nbsp;&nbsp; Metro.co.uk",
+      "publishedAt": "2026-10-11T10:35:00.000Z",
+      "collectedAt": "2026-10-11T13:02:54.746Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "competition"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
