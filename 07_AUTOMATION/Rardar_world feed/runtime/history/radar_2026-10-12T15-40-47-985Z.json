@@ -1,0 +1,429 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-12T15:40:47.985Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 37,
+    "uniqueFacts": 24,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 24,
+    "relevantSignals": 11,
+    "durationMs": 2226
+  },
+  "distribution": {
+    "LOCAL_DANCE": 6,
+    "DANCE_WORLD": 1,
+    "ADJACENT_DOMAIN": 1,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 2,
+      "durationMs": 406,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 7,
+      "durationMs": 370,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 307,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 461,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 13,
+      "durationMs": 371,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 306,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
+      "source": "Google News — Серпухов дети танцы",
+      "sourceScope": "LOCAL",
+      "sourceWeight": 1,
+      "title": "Студенты из Серпухова победили на международном турнире по танцам - 360.ru",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS2Y3VEVhS3BhNlF3R0dWcks5M3Vob3p5bE56MHd0ODlUS1huc3ZlNlJzRE1CS19lWWJBbEx0OVpyVi1Fa1d0ZFYySGFrdTJZVnptZVFhazdMVmo0Q25tR0wwbFVZQ3Z3ZW5FTkRZdndYR1V0dUFPckZaNFlRQ2hnWU4wRXRxZ1N4NWN4eU5aV0JGbDFQbUNDdkRLMHlra2E0RUFRMw?oc=5",
+      "content": "Студенты из Серпухова победили на международном турнире по танцам &nbsp;&nbsp; 360.ru",
+      "publishedAt": "2026-10-12T08:42:00.000Z",
+      "collectedAt": "2026-10-12T15:40:46.167Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "Серпухов",
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "международн",
+            "международ"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Weightlifting World Championships: Armenian national team roster - NEWS.am Sport",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPR1lVTEY0ZlB0M3NlbUVuUnRaa1JBcDRIQlZGSTZRNDR1LUJtV3Jib21mdWdlVHpid0hZem8zUEZ5eUdiMmlNSW51OTdWd3YwR3l2RDROdWdmT2F0YmlkaDJZNTY5M2EzTzU5QXpGVlQtSlRZYmF5TDFSclJEWUJTYmFvR0FJV21tRnd4REpwTHNsNTlwSWEyTGhQWTB1OVBHdWlKUnhHZjBkQQ?oc=5",
+      "content": "Weightlifting World Championships: Armenian national team roster &nbsp;&nbsp; NEWS.am Sport",
+      "publishedAt": "2026-10-12T14:09:47.000Z",
+      "collectedAt": "2026-10-12T15:40:47.305Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Хореографические коллективы Самарской области приглашают к участию в фестивале \"Матушка Россия\" - Волга Ньюс",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrcnVkcndZMUVNOWlURUh4QV95cndfY0dnU00tNGdvTjg2RXE4Wl9CRmtoTkRBRFZ2WHJJVm4zNmRsUXR2LVBzUWhPcTN3VjA?oc=5",
+      "content": "Хореографические коллективы Самарской области приглашают к участию в фестивале \"Матушка Россия\" &nbsp;&nbsp; Волга Ньюс",
+      "publishedAt": "2026-10-12T12:32:00.000Z",
+      "collectedAt": "2026-10-12T15:40:46.536Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "хореограф"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Школьники Тверской области исполнили танцы народов России - Караван Ярмарка",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMlZTN1hGSGJTQ1Mzc3JFUE5YcGxUT25xYS1lUGhneDJSd09fX3ZTSEdTVUptQnVxNVN6Um1rdkQxNWRmMmdzdExuaFVCSjlOTTBYSDdhM296QlhlNHdiLXc3VDVydWxuSXF5S0RHUld0WkFvcklocm5yNmNfV285VlJlZm9lSFJH?oc=5",
+      "content": "Школьники Тверской области исполнили танцы народов России &nbsp;&nbsp; Караван Ярмарка",
+      "publishedAt": "2026-10-12T06:17:52.000Z",
+      "collectedAt": "2026-10-12T15:40:46.536Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltd2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Музыка, танцы и творчество: в Павловске открылся детский центр - http://ulus.media/",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdHlXS1JRWTdyNS1zSklGMFFZYkJ1a242OEZma1VyaVRxOXNVeDZ4a095MUxYT1FqclRFQUdlNzF6Ykt3cFhlMm9SVXNpMFBXVk9Rbk11bUQ3enFpTXhqTW92M29xLVc5RTM3VnJEQ0hyc1YxUy1KSTJmX1ZwQW8zWmVMSHJ0UEFRNDEzN29UNkdSLWdGTjFOZGtLRQ?oc=5",
+      "content": "Музыка, танцы и творчество: в Павловске открылся детский центр &nbsp;&nbsp; http://ulus.media/",
+      "publishedAt": "2026-10-12T07:01:34.000Z",
+      "collectedAt": "2026-10-12T15:40:46.537Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1a2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Флешмоб «Танцы народов России» объединил больше тысячи школьников Верхневолжья - НИА-Федерация",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hLTY5TjdXTlNSV0ZDaVFaLW9hUG9TZ0dNbnZ5a2JYM0pDYVlWN05iM253eTk1cVZsQ0xZbndtTGpLaU0yc0RFRHpxV0pDWU53TEE?oc=5",
+      "content": "Флешмоб «Танцы народов России» объединил больше тысячи школьников Верхневолжья &nbsp;&nbsp; НИА-Федерация",
+      "publishedAt": "2026-10-12T07:18:57.000Z",
+      "collectedAt": "2026-10-12T15:40:46.537Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Новогодний оркестр с родителями — Видео от Сценарии праздников для детского сада - ВКонтакте",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPOXR0ZTdqYnNiUFRmTFVTSlNiUDg3WWp5VFBaUkdEN1ZBY3JDSnNUZllmc1MxNTFGb0R3QmE4OEIyVjc4aThONGZJQldOTnU4c3Rr?oc=5",
+      "content": "Новогодний оркестр с родителями — Видео от Сценарии праздников для детского сада &nbsp;&nbsp; ВКонтакте",
+      "publishedAt": "2026-10-11T19:52:56.000Z",
+      "collectedAt": "2026-10-12T15:40:46.537Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "PSYCHOLOGY_PEDAGOGY": [
+            "родител"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlza2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Воронежский танцевальный коллектив «Горицвет» стал обладателем Гран-при Всероссийского фестиваля-конкурса «Наследие нации» - Культура ВРН",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8tc2lnT0pOQlIxa0Y2NGdnQTl5Nlh0Q2V2SHVEUm5zbVFNbi1CZUF6UV9QY1UyNHdCY09oTlhqM3IwUVU3QkVlRkhB?oc=5",
+      "content": "Воронежский танцевальный коллектив «Горицвет» стал обладателем Гран-при Всероссийского фестиваля-конкурса «Наследие нации» &nbsp;&nbsp; Культура ВРН",
+      "publishedAt": "2026-10-11T16:45:00.000Z",
+      "collectedAt": "2026-10-12T15:40:46.537Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "конкурс",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Baku to host anniversary edition of Azerbaijan Dance Festival featuring int'l stars [PHOTOS/VIDEO] - AzerNews",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vRG1lXy1fS285U2pKTW5Ra2JfREIyRnBQOUJMQjM3bmM3cXpjSWpEaFhsRzE3azlVVTAyTTdweUY1R0UwYUt5X2NWWWlnWC0tUS1keVhn?oc=5",
+      "content": "Baku to host anniversary edition of Azerbaijan Dance Festival featuring int'l stars [PHOTOS/VIDEO] &nbsp;&nbsp; AzerNews",
+      "publishedAt": "2026-10-12T07:59:00.000Z",
+      "collectedAt": "2026-10-12T15:40:47.305Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 World Artistic Gymnastics Championships: Every competitor announced so far - Gymnastics Now",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWTNScVM1dktlMDFISTJyLXMycWh2cTF5XzFwUmJjU1JBS3FSMjFxWGppamdNWlpxMU9QaDZ3STc3Z2hoTVljSWZRWHZQX1BFOUFGRmVWSmhTS0tTa3JkTEotRllnN2RLWC1XeFNKZ2dEcHFweERIU0lRVGZpR3ZxcjQ1eU9XdTQ5US1SNUxIR3ppYUtt?oc=5",
+      "content": "2026 World Artistic Gymnastics Championships: Every competitor announced so far &nbsp;&nbsp; Gymnastics Now",
+      "publishedAt": "2026-10-12T08:14:33.000Z",
+      "collectedAt": "2026-10-12T15:40:47.305Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "4 teams take top honours at 13th MGM Cup Lion Dance Championship - The Macau Post Daily",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOWFRubUJVVXhlVVRjUHVyVFhXQmZlV0V1SVRycm9VRXF5SjlhalNvaDBzMnVfcjVLZk5oSTRYUXBYWkd1YjBnSXIzQ0xsUQ?oc=5",
+      "content": "4 teams take top honours at 13th MGM Cup Lion Dance Championship &nbsp;&nbsp; The Macau Post Daily",
+      "publishedAt": "2026-10-11T20:32:06.000Z",
+      "collectedAt": "2026-10-12T15:40:47.305Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
