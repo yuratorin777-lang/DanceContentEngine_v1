@@ -1,0 +1,105 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-13T14:21:23.478Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 33,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 17,
+    "relevantSignals": 1,
+    "durationMs": 2095
+  },
+  "distribution": {
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 228,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 302,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 2,
+      "durationMs": 362,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 438,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 447,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 312,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlla2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Jordan’s ‘Last Dance’ Jersey Sells For Record £10.6m - Arise News",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41bnV2WUxSRDAya2lTVnZxdERnT3d6WjV6clFEdkRBVzFsUEtvaTR2aEhLSDlmM0pmNzg2dlhmVm1qQTFLU3dUYkJUalV0cHdaRWxXWE9QX19mSm5XZmEwb0lkSEVDbkkyTkwybjNhUXVFVFFmQ19RZll3?oc=5",
+      "content": "Jordan’s ‘Last Dance’ Jersey Sells For Record £10.6m &nbsp;&nbsp; Arise News",
+      "publishedAt": "2026-10-13T09:28:07.000Z",
+      "collectedAt": "2026-10-13T14:21:22.716Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
