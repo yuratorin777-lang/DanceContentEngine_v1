@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-14T12:03:28.751Z",
+  "runAt": "2026-10-15T11:40:41.319Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,82 +15,83 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 31,
-    "uniqueFacts": 16,
-    "duplicatesRemoved": 15,
-    "classifiedFacts": 16,
-    "relevantSignals": 6,
-    "durationMs": 2063
+    "rawFacts": 32,
+    "uniqueFacts": 15,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 15,
+    "relevantSignals": 5,
+    "durationMs": 2062
   },
   "distribution": {
-    "DANCE_WORLD": 3,
-    "CORE_DANCE": 3
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 272,
+      "durationMs": 317,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 1,
-      "durationMs": 262,
+      "count": 2,
+      "durationMs": 285,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 371,
+      "durationMs": 384,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 454,
+      "durationMs": 413,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 375,
+      "durationMs": 379,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 323,
+      "durationMs": 280,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2pidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "LSU gymnastics: Hezley Rivera, other future Tigers head to world championships; 2027 schedule set - NOLA.com",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOWF9CcXpzd0xvZzhreFI5Z0JYdlF4cXVPTFdIUndONl81WldKM3hUVHdRbjl5Tkh6UzlUUWlTcnRsVm90ek5DbEZGNWVhcG43SGxheWE4TkM2SjFFYS1qRElGbHlTZDNHU3R2ZHlZQUI2cHpQUllLZVlLN2N0S3hwc2VJRXRsM3FrNmd4eWFYNjFpZG9wY01PLTc2NE5wRllKMm0yQkQ5UG1wU2RsS2tpN0RKVVREOTQ1U0dscjBCRHFsTkZuc0tydVFHbmUwRl9fVE9xUmJYaklLRGV2aXk3NGdVTTQtNW9wSTZfYzhTeWE0RVhmUHVRd0lubWhldFNKdk5ZY1hidlFKdTZ6bGJWZW9tR3lad9IBmwJBVV95cUxNdnlvVGNCRy1RRUJoMXd4SlYwaTBtMDVhc2hpZkNHNGJwTEp6dnpmSE9fOUNtWXhZOFZtNWJVRmVxVHdrV0VybERIWkN2RHhvT0hER192WmhsQmtVVzBMcEx3T29ILTIwRm1HWDB1RjFiSkZ5c3J0RGctQkppOEVtQk5NVEZpOEs5bk0tTHhBVlY1QkE2VTdCMFBQSGRjQzdQLWZrWUpFVE04akk3djEtU3NhYVNwazhGNUkzODlSLUxGLWNmVFlSSXFjTC1EeGQ0TURTb0NITU1mQjY3ZkdUOXZjYmhVX1dONVNOZ295N2pZMGtPWTVRdGJnOWxPaTFKTW1xTkc0SGE4WnNSN3pORDZBWUREQTV5ZlQw?oc=5",
-      "content": "LSU gymnastics: Hezley Rivera, other future Tigers head to world championships; 2027 schedule set &nbsp;&nbsp; NOLA.com",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "collectedAt": "2026-10-14T12:03:28.049Z",
+      "title": "2026 T.I.P. Championship Winners Announced - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQem1aNUFyLW1hZVBaWGhtbmprTDNJZU5yRmwyY3lGdmVuYnR1NGpkeFF4dURENW1JdklsNnQ3bmZsSkoyU3ljUkpjb3o1LUJFSk12T05IMlpfZGFmeWxEd2xvVkxrTUhVY2JSZnoyeXdzYXF4VW1xQWJnblRDZmVJUFc4ek4?oc=5",
+      "content": "2026 T.I.P. Championship Winners Announced &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-14T17:33:48.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
       "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "championship"
           ],
-          "DANCE_WORLD": [
-            "world championship"
+          "ACTIVITY_CONTEXT": [
+            "sport"
           ]
         },
         "context": {
@@ -103,46 +104,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Reviving the legacy: 1xBat joins the World Championship of Legends 2026 as an official partner - The Tribune",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTk5RUmNXTDlxWC1meVZydVpieG5tVWV0SXJlQkNhU3AxRFhLeWZHMkp5eEs1VkU0WXV1anpsLU9IeVBPd0kxemppR3FsOUJyTDZnX0JTWmFCVFFGMDR4dGZlOVd6Y2h5OWxDTS1zZ0w2SkV1dWFyZUVpSjhheHJUYng2VHRRRURBeUVBUkpleXJMZjl0ZGRlN2d0bHIyXzU0V3NudnFaM3V3aWpyaVgyekw3X0ZSak9DQWlSc2dPSjlydlh0b0tRMmYtR3ZwN0xYVEJr0gHXAUFVX3lxTE8zSEVhQjdOTDhNd3R2a19qNnVPRkp2a0lNTUJoaVFBZ3JSUmRqcEdwX3FhMHY2T09JaTdqZ2tUeUhaazVMS0Jsb1NRc25JblRPNUhrTTYycmVUaWJyd1VIR1JqLXVxbmpzbklRLTEzdnF4cldINFNZUVdRVmkxUThBRHNTVkdOLUc0MlR3LWhyUmNZU2lpRjUwTjh5T3BTcE11ZnpNOFh2RXlxdVc5SnNDZU83aWliN1BoN2owQkMtdVB2QS1ocUt4VTlLMm5vUTE1LWoxeElN?oc=5",
-      "content": "Reviving the legacy: 1xBat joins the World Championship of Legends 2026 as an official partner &nbsp;&nbsp; The Tribune",
-      "publishedAt": "2026-10-14T06:21:00.000Z",
-      "collectedAt": "2026-10-14T12:03:28.049Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk2d2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Ghana’s Vivie’s Dance and Theatre Academy wins six awards as all five dancers qualify for World Championship finals - GBC Ghana Online",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPUlotVkY0Wm8zcDlsZjZTUUwwbmxqVGRlckc4SmxIWW1rdnoxTjVqZmhDRmI4Y3doWU55QUp2RzdmamREbnRBTWk4RnlNT282Tmx2d1M4eTdoQmhpN0NqTno1aDRXenFyYkxRU1A1T2JjY2tHYTl2MGxua1BnMTBEUGRJbWNyVElKSlVBTTBSRExlNXhiN190bWpEMHVOdlF2ODYxUzV3V2w5ODR4ZnpuMUFUblJoclRMbGVtUEduT2p6dUsxOHd2QTNpckJpR1dVQ3gyd0hNT2lZeDNDTkJvalNobnZLX3VLMUFn?oc=5",
-      "content": "Ghana’s Vivie’s Dance and Theatre Academy wins six awards as all five dancers qualify for World Championship finals &nbsp;&nbsp; GBC Ghana Online",
-      "publishedAt": "2026-10-13T15:49:43.000Z",
-      "collectedAt": "2026-10-14T12:03:28.049Z",
+      "title": "Glencairn tap dancer earns Protea colours and place at world championships - False Bay Echo",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNkhRdHlLaWx5NkFiLUhiNl8tUEdrYjh3azBUZThwejNEc1ZhaXZQSEtVcXpOZGE4QURvN0dxMWZ6RDJfVWVoM2ZPTGdDT0VHTnZBUXpOZ0ZwUGtGYVF3TmlGWkJ3Qk9EQm1GZUE5U1dmUWhDQ0hBT1NSdmhaU0dzdUZpSEFNSU14NjRBbkhfNXV0cTNpY2tkSnY3UEpQVEl0TnNzQ0tfMll1YW1tTjZoNmZQbncycDZCaXc?oc=5",
+      "content": "Glencairn tap dancer earns Protea colours and place at world championships &nbsp;&nbsp; False Bay Echo",
+      "publishedAt": "2026-10-15T08:56:35.000Z",
+      "collectedAt": "2026-10-15T11:40:40.657Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -166,22 +136,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0YWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "From Hofstra University to Team USA: Dance team brings home gold - The Hofstra Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdXVJNTBXNDdIUFBnaUptWXRweFFfRXdxVVVTQTNEcVl2V2w3OWlFSndIT2hTMmZMdzVnX25RUmRHNXpkUmYxdVZ2ZHM2ZlBGMGhGVWp1ZEg1dTB4cDBwajk4VUdTOUdjLVlsS0U3b3hxdWhuY2dLUGM0SWIybWtjUHJ5ek9HOXFsdUlDUk42Znp5NUVvbHEwV0pGYk1fZ2dsVzQ1eS1PNkZwTEha?oc=5",
-      "content": "From Hofstra University to Team USA: Dance team brings home gold &nbsp;&nbsp; The Hofstra Chronicle",
-      "publishedAt": "2026-10-13T19:33:48.000Z",
-      "collectedAt": "2026-10-14T12:03:28.049Z",
+      "title": "Netherlands Blocks Three Pro-Putin Russian Gymnasts From World Championships - UNITED24 Media",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVXlYdEotS2RIVjd2c2pTNjZOcndTTU9FSERpUWxFMXdDYko0bEJaRGRBZkJFQlh6TExMby1iUmVtWE1oWm04encwUjRVQ2xsS2x4alNfVC10NGtzOHB4ejZaNmNTcVU4d3puQkVnRzNIOG5OdXh1dUFLSHB4WktIbC1MUzgxSFZ1dXlucW5Lejh6UkxNNmZSeDJCdTJKNDNveEpGMWFjM1VXQ3NXaUNubjBVSzY?oc=5",
+      "content": "Netherlands Blocks Three Pro-Putin Russian Gymnasts From World Championships &nbsp;&nbsp; UNITED24 Media",
+      "publishedAt": "2026-10-14T12:03:49.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
       "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
           ]
         },
         "context": {
@@ -194,15 +167,47 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlhMGZ2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Книги, игры, танцы: работники Брагинской центральной районной библиотеки встретились с ребятами санаторного детского сада — Сайт газеты - Брагинская районная газета",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZWg3S1p2cXd2STktdUVwODZGQk1xS3RXTldUWUdraThRd3VhbVJEdjQwWFFHeS1DYXV3N2hZOE1GV2w5V21hQ0Jyd1dpYjBYeC1HZzNkRndZc29GNjdWYlJmNGNicWl6aXpPcHdBeEszX2tIYWs2RlpZZFZ1aFl4b0MwUkRud1YzbFo3YnZWc1ZqRmt4ZWt5Ulo0bE94SGpIejk3c0x0eXVIOXRPVnRSWUhiY183cEVtcDZLR1FIZmt2QzYxWF9XTTB0SG9UdHc1bmd6dmQzRS1iUHVLMGhqX1Zn?oc=5",
+      "content": "Книги, игры, танцы: работники Брагинской центральной районной библиотеки встретились с ребятами санаторного детского сада — Сайт газеты &nbsp;&nbsp; Брагинская районная газета",
+      "publishedAt": "2026-10-14T16:21:15.000Z",
+      "collectedAt": "2026-10-15T11:40:39.861Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4YWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "World Artistic Gymnastics Championships: Russian trio denied visas by Netherlands - BBC",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAyNFl4UGQxdlAzbVBrcHlWcDdwRUVCb2xYWjdqUjlnZWJNWUFfbWQ2Rm9MQmp4ZENUc2dXRmpid0FYbm5oQkg1XzlIN3FzamRpemFBb3hPVHRQVkZYTWxCd3VEMzhfdks0SFFV?oc=5",
-      "content": "World Artistic Gymnastics Championships: Russian trio denied visas by Netherlands &nbsp;&nbsp; BBC",
-      "publishedAt": "2026-10-13T15:56:15.000Z",
-      "collectedAt": "2026-10-14T12:03:28.049Z",
+      "title": "Puzzle authors from across the globe share their experiences at 33rd World Puzzle Championship - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQLU1FYS1SdGMwZHdzSGZsNXgyMEU0NUNtWEh5UktTa0JUWExOYkJXUmdTNWVoYWF0eTdCVlBNSkltSXVjbFpyMV9CWXVSMzhJRDJqRGhPRS0xNEdkOGk2emUyWXhrekhqUi1XMEptUHpxNm1TRFhJaF9PcjFBdUswUlMzRVhDWFNLNFFKTmhsT3ZONEhqNjh0cGl1d0txZVBoWFdzSF9BdTdscGRyVnVZaGdnSDd2NG0zTjRhLU5oSXQ2cDBXdnVlT0F2U3ZfN1FHdjBWR3BVRUY5alE3aGp1Y2MtNGlqTFVXNklYbzc4VGbSAfcBQVVfeXFMTm1BRWJPaVhBWE94MEdtbkpqMUFja0N5NGhmd05ZMFQwV0FYQW1HaFpZZjR5OTJwOFZtVVJlM2c5V3VHYzRYNzM2UGlfdlAzdzJ2UXVtdE9xclAtWkR3LWx5ZVZxWmRvRTl0T0dMUlVLNDJvUXdZMXpVd0w4eUdlMnVRYkRhY0dleWFSOVBlMllZeHRXcFFmZXRxb1pnbGF1VE1CWU5DTTFreGtRMTFFRkZfYlVaaEN4RHRLSV9Xd0FmUmEtcVlySGtHNmtQUl9aYTgzOEdacDUtcFJ4NzdPT0hMUXpqV3FDV3d0ZUthelpNcU45Yml2Zw?oc=5",
+      "content": "Puzzle authors from across the globe share their experiences at 33rd World Puzzle Championship &nbsp;&nbsp; The Hindu",
+      "publishedAt": "2026-10-14T21:10:00.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -210,34 +215,6 @@
         "matchedCategories": {
           "CORE_DANCE": [
             "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6YWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Tessa Virtue Talks Her Solo at Fall For Dance North Toronto - The Kit",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ0tvMGhqZDg0M3VrN0NvQlNLUEp3bURBNHhFRUJ4VlhpQmdKYzNhMUlTaWt5YkUtNVVTSk95amN5MEg1bDlIZ044cVZkUW1RX0pjZzhJWnprczlIelFNdGlrd1NFX09yNl9sR0p0VDhKRFhaSTdqdW9ySlZIdlhBTVhuQU5EX0llMThmTEVocmVxdmM4aXh3WmI1elFzcXQ2aXBrdWtoZmhtSlZqR2VUMjBVQTFhNk0yNm9hdjYzcktSbGZFdm13ZXNEOGPSAcwBQVVfeXFMUGdLbzBoamQ4NDN1azdDb0JTS1BKd21EQTR4RUVCeFZYaUJnSmMzYTFJU2lreWJFLTVVU0pPeWpjeTBINWw5SGdOOHFWZFFtUV9KY2c4SVp6a3M5SHpRTXRpa3dTRV9PcjZfbEdKdFQ4SkRYWkk3anVvckpWSHZYQU1YbkFORF9JZTE4ZkxFaHJlcXZjOGl4d1piNXpRc3F0Nmlwa3VraGZobUpWakdlVDIwVUExYTZNMjZvYXY2M3JLUmxmRXZtd2VzRDhj?oc=5",
-      "content": "Tessa Virtue Talks Her Solo at Fall For Dance North Toronto &nbsp;&nbsp; The Kit",
-      "publishedAt": "2026-10-13T16:22:11.000Z",
-      "collectedAt": "2026-10-14T12:03:28.050Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
           ]
         },
         "context": {

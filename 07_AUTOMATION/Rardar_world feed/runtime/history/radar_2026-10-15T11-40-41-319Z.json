@@ -1,0 +1,230 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-15T11:40:41.319Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 32,
+    "uniqueFacts": 15,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 15,
+    "relevantSignals": 5,
+    "durationMs": 2062
+  },
+  "distribution": {
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 317,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 285,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 384,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 413,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 379,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 280,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 T.I.P. Championship Winners Announced - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQem1aNUFyLW1hZVBaWGhtbmprTDNJZU5yRmwyY3lGdmVuYnR1NGpkeFF4dURENW1JdklsNnQ3bmZsSkoyU3ljUkpjb3o1LUJFSk12T05IMlpfZGFmeWxEd2xvVkxrTUhVY2JSZnoyeXdzYXF4VW1xQWJnblRDZmVJUFc4ek4?oc=5",
+      "content": "2026 T.I.P. Championship Winners Announced &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-14T17:33:48.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Glencairn tap dancer earns Protea colours and place at world championships - False Bay Echo",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNkhRdHlLaWx5NkFiLUhiNl8tUEdrYjh3azBUZThwejNEc1ZhaXZQSEtVcXpOZGE4QURvN0dxMWZ6RDJfVWVoM2ZPTGdDT0VHTnZBUXpOZ0ZwUGtGYVF3TmlGWkJ3Qk9EQm1GZUE5U1dmUWhDQ0hBT1NSdmhaU0dzdUZpSEFNSU14NjRBbkhfNXV0cTNpY2tkSnY3UEpQVEl0TnNzQ0tfMll1YW1tTjZoNmZQbncycDZCaXc?oc=5",
+      "content": "Glencairn tap dancer earns Protea colours and place at world championships &nbsp;&nbsp; False Bay Echo",
+      "publishedAt": "2026-10-15T08:56:35.000Z",
+      "collectedAt": "2026-10-15T11:40:40.657Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Netherlands Blocks Three Pro-Putin Russian Gymnasts From World Championships - UNITED24 Media",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVXlYdEotS2RIVjd2c2pTNjZOcndTTU9FSERpUWxFMXdDYko0bEJaRGRBZkJFQlh6TExMby1iUmVtWE1oWm04encwUjRVQ2xsS2x4alNfVC10NGtzOHB4ejZaNmNTcVU4d3puQkVnRzNIOG5OdXh1dUFLSHB4WktIbC1MUzgxSFZ1dXlucW5Lejh6UkxNNmZSeDJCdTJKNDNveEpGMWFjM1VXQ3NXaUNubjBVSzY?oc=5",
+      "content": "Netherlands Blocks Three Pro-Putin Russian Gymnasts From World Championships &nbsp;&nbsp; UNITED24 Media",
+      "publishedAt": "2026-10-14T12:03:49.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Книги, игры, танцы: работники Брагинской центральной районной библиотеки встретились с ребятами санаторного детского сада — Сайт газеты - Брагинская районная газета",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZWg3S1p2cXd2STktdUVwODZGQk1xS3RXTldUWUdraThRd3VhbVJEdjQwWFFHeS1DYXV3N2hZOE1GV2w5V21hQ0Jyd1dpYjBYeC1HZzNkRndZc29GNjdWYlJmNGNicWl6aXpPcHdBeEszX2tIYWs2RlpZZFZ1aFl4b0MwUkRud1YzbFo3YnZWc1ZqRmt4ZWt5Ulo0bE94SGpIejk3c0x0eXVIOXRPVnRSWUhiY183cEVtcDZLR1FIZmt2QzYxWF9XTTB0SG9UdHc1bmd6dmQzRS1iUHVLMGhqX1Zn?oc=5",
+      "content": "Книги, игры, танцы: работники Брагинской центральной районной библиотеки встретились с ребятами санаторного детского сада — Сайт газеты &nbsp;&nbsp; Брагинская районная газета",
+      "publishedAt": "2026-10-14T16:21:15.000Z",
+      "collectedAt": "2026-10-15T11:40:39.861Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Puzzle authors from across the globe share their experiences at 33rd World Puzzle Championship - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQLU1FYS1SdGMwZHdzSGZsNXgyMEU0NUNtWEh5UktTa0JUWExOYkJXUmdTNWVoYWF0eTdCVlBNSkltSXVjbFpyMV9CWXVSMzhJRDJqRGhPRS0xNEdkOGk2emUyWXhrekhqUi1XMEptUHpxNm1TRFhJaF9PcjFBdUswUlMzRVhDWFNLNFFKTmhsT3ZONEhqNjh0cGl1d0txZVBoWFdzSF9BdTdscGRyVnVZaGdnSDd2NG0zTjRhLU5oSXQ2cDBXdnVlT0F2U3ZfN1FHdjBWR3BVRUY5alE3aGp1Y2MtNGlqTFVXNklYbzc4VGbSAfcBQVVfeXFMTm1BRWJPaVhBWE94MEdtbkpqMUFja0N5NGhmd05ZMFQwV0FYQW1HaFpZZjR5OTJwOFZtVVJlM2c5V3VHYzRYNzM2UGlfdlAzdzJ2UXVtdE9xclAtWkR3LWx5ZVZxWmRvRTl0T0dMUlVLNDJvUXdZMXpVd0w4eUdlMnVRYkRhY0dleWFSOVBlMllZeHRXcFFmZXRxb1pnbGF1VE1CWU5DTTFreGtRMTFFRkZfYlVaaEN4RHRLSV9Xd0FmUmEtcVlySGtHNmtQUl9aYTgzOEdacDUtcFJ4NzdPT0hMUXpqV3FDV3d0ZUthelpNcU45Yml2Zw?oc=5",
+      "content": "Puzzle authors from across the globe share their experiences at 33rd World Puzzle Championship &nbsp;&nbsp; The Hindu",
+      "publishedAt": "2026-10-14T21:10:00.000Z",
+      "collectedAt": "2026-10-15T11:40:40.658Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
