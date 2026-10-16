@@ -1,0 +1,230 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-16T11:34:25.984Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 28,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 11,
+    "classifiedFacts": 17,
+    "relevantSignals": 5,
+    "durationMs": 1981
+  },
+  "distribution": {
+    "DANCE_WORLD": 3,
+    "CORE_DANCE": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 318,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 256,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 337,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 416,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 11,
+      "durationMs": 349,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 299,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Will Simone Biles return? As gymnastics World Championships begin, the question lingers - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS2Z5dzR6ZE5XS1RXSDRHQ2p1MFV1bmhUQ0xCdmoxZ2g3VDU1Um1TR2dCb2cxS3NFMktiMC1pR3ZjVm1TcTlMb3luWkM3bk51LU1fVERkMGpRRW9id2lxZ2VTWUxDTnhwZ04yZWZhRG9GU0VYa1d6Qngyd0xxekQxbmxvZVNmXzkwM1dZMlpibHUzWWZZdnR4UlJKRWFsdHpuemRiQXd0WjdiajduMHRna0UxUWFaN2xW?oc=5",
+      "content": "Will Simone Biles return? As gymnastics World Championships begin, the question lingers &nbsp;&nbsp; The New York Times",
+      "publishedAt": "2026-10-16T10:00:03.000Z",
+      "collectedAt": "2026-10-16T11:34:25.333Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Where to watch World Gymnastics Championships 2026: Schedule, times, channels, live streams for men, women - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQWNadmYtZlo4a0M4anNPMlAyUVp4Y2x0MEtIc25YV21fMUNPWFRLNVZHUDg4LW8xcTl0bXJuamFSaUVhVU0taG1XYk1lbnJjZFdZRzlPWlMyMjhlNHJPZENkTklHV3dSMlhqX1VPVk9oaUFuQXRoanltRnFXS1RBMEJaX1ozLU9ld1otaE5RTUt2YXlEcFE?oc=5",
+      "content": "Where to watch World Gymnastics Championships 2026: Schedule, times, channels, live streams for men, women &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-16T05:00:00.000Z",
+      "collectedAt": "2026-10-16T11:34:25.334Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "16-year-old VA native competes in gymnastics world championship as youngest on team - NBC4 Washington",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQR3lLZC0wZ3gxRFk1TGR5cWNWSm5BbzFZRlBJVDJNM01ENXRiRmJYR1k2azFrbkJHdUlvWWhRY1BIbUpUMXhEX1lOOGczUUpmRXZSdW1kN1VOY1FEbG1hcW9hQTJiREJ1TUxOalBXVWNrYjVZM0xRc3lUV3l2TUVaQkl4SlRzWW14Mk1FaElobHgzWmRRd0w3NWl6UzUwbXZNaEhtOXN6T3NPd28yS2dVX3JOZ216TmJETHQ2MnNoT0VXUWFCTTJFN05EanlrUWxCZjlIWnlB0gHeAUFVX3lxTE1KalpLc2NsSVpIb2NnNU9zV3BUUDBQVmIwcmVESEtJYVJMQjlRT3NXekhfcHZZYTFGUU56SVhzZWp0TW5PQXhpTVN6bzVaZWJfMXdWR3JZNFRGMU9NdnMxM0xKSFM2YU1wLU1yRDhVOUd0Y2dlZ1c1MGhIZTNHb2FQYTBKZEV3Rlc2cERQRzQwQ1h4b0w3TTdaVzV3VGpmOHI3VlZBSjl0TDF1UkNHNG9vemVWb3BtU3g5U3ZqUUpibXVaUkQxM3p6dm5weGs4VXJrTURVVGJvb0cwdUw4dw?oc=5",
+      "content": "16-year-old VA native competes in gymnastics world championship as youngest on team &nbsp;&nbsp; NBC4 Washington",
+      "publishedAt": "2026-10-15T16:09:29.000Z",
+      "collectedAt": "2026-10-16T11:34:25.333Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "When is the 2026 League of Legends World Championship: Play-In and Main Event Dates, Qualified Teams, and the - Diario AS",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNOEZQZW1WSVJvSzUwNWRPSzZMZUdLUlcxcWVXczNOdDBqZnNGVlNteG5QaHM2bzQ0VFBkS3cxOVFKX05uNjRISmtKeGFoMFIwY3RPVWF4eUxaZ21pMTZrMXFUUTJHM0NBVktNanNWRWJPTGVTYWVncWhKZWZuTkszODhvYXMySUpCQTVXQ25iUTlFLTl0aWdaTGY2VkZ0NXNtZDI0WDVYTUhTdWt6NVNBaFVNVTdqVkZRNndLWmZUWENhUmwzZmlYMFJwVTJQazdMc1NHb1NFcEtkalNqaDhpQi1taXJ3V0Uza0lRRDhQZElDd3dKV3hn0gGLAkFVX3lxTE9tVGZNQ3oydkd2VGZfLUlsbHFpNkNFVndNYjA3SGRpSEZ6WEVnelFNbnZzV3dMa3hiN0xJWEJLWUdVOUlsU1dMRDVoT0hjT09PODBYdGNzWXdFaFdMLVpCdmVKeUNtTm4xaEV6dEpPNmxKdzlkMmk4ejhBUEhtLURsRWFmU3N5NlZmNUlaRkp5UnlubHFFZ1JjMFNQQmVROTM2S1p1YVpQVy1XNzZaMFUwaFlOd1FlR3FyNFJ5dnVMTjhYSG1LYXd4dFh6ekduRG82Tm1Jdk5rcW1LVS1WQ3pEM21GYVBUbWFyb3ljZXBxcC1ZT3BOTVU4SlRhQ0FRb0l1ZXZ4b0ZCb212MA?oc=5",
+      "content": "When is the 2026 League of Legends World Championship: Play-In and Main Event Dates, Qualified Teams, and the &nbsp;&nbsp; Diario AS",
+      "publishedAt": "2026-10-15T17:50:54.000Z",
+      "collectedAt": "2026-10-16T11:34:25.333Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "The largest croquet club in the world is on the Northern Neck. It's hosting the North American championships this weekend - The Richmonder",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMWFpRXlfQVJKVnp1UFVncGxOc1A3eU1WN3hsc2U5aEtySFZxd2ROMVVrMkd6LTVnNV9Hb1d2SFlFOWNJMjk5Vk1yMTFjN3VVck9HU0M1U1dVdUhRbWowZzhTRVIzQ1Q2RkNMdFlKNEdpMzRYMW5XdjRYcTg4QVNpSkpJVkhEZ183MllDRWk3NFB4U19XcVFYOEhpOUFnbjRRRU9lcnZKdVBNSmg1ekN6TXJzNlpZbGdiSGZ6Y25tYXF5M0ZOWFFVVktXZzBSTDVTRE05cnQ1emYxZjFNYWt5Rg?oc=5",
+      "content": "The largest croquet club in the world is on the Northern Neck. It's hosting the North American championships this weekend &nbsp;&nbsp; The Richmonder",
+      "publishedAt": "2026-10-15T19:37:57.000Z",
+      "collectedAt": "2026-10-16T11:34:25.333Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
