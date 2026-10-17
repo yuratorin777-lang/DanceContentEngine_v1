@@ -1,0 +1,232 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-17T10:54:01.337Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 28,
+    "uniqueFacts": 12,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 12,
+    "relevantSignals": 5,
+    "durationMs": 4760
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 2,
+      "durationMs": 283,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 234,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 355,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 442,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 8,
+      "durationMs": 300,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 1,
+      "durationMs": 3144,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "‘Super proud’: Young Saanich dancers to represent Canada at world championships in Poland - CHEK News",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3ZuYkFQbFNZMC1KWFhZVDR0LTB2VGRQNlRLU3dYZ0QtclBZbFU2U0ZHNkhQLXRUdWN1TGs2cnQydXNCOHRYd01LTnlJRE5oS182QUdsX1FHRU4teDZQOEFaZEo4Q0d5WFZWYmZsanhkcUhFR0JMRmJheVUyQXZMWDZ1eFlja3hmeXNkYzE4dEJMR2diTTliWHctVG1oNFFhaDJuSFJNOFdhV1NIWHk5WlJwdlFYdw?oc=5",
+      "content": "‘Super proud’: Young Saanich dancers to represent Canada at world championships in Poland &nbsp;&nbsp; CHEK News",
+      "publishedAt": "2026-10-17T02:33:13.000Z",
+      "collectedAt": "2026-10-17T10:53:57.892Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Artistic Gymnastics World Championships 2026: Olympic gold medallist Sanne Wevers confirms her home farewell - \"My decision is final this time\" - olympics.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRjJzUXlDemE0U1V6Q2pRMHFOLXZaeUg2a2RpOFN5ZllhODVDT0FwLTFKZWpudzNZandEZHYwOTIyam1zRGNPYzdnTHl2VTczaDlaM0JoZnR0V184X3ZUVm5UbEJmeHpyNG9DVkFOaVNmQTcxT3hBNHByTTlUNGJvSU9GcGlHMm5LYVduR2ZIaVQ5czhvTDJEbWRaVXRFNDNZbEE?oc=5",
+      "content": "Artistic Gymnastics World Championships 2026: Olympic gold medallist Sanne Wevers confirms her home farewell - \"My decision is final this time\" &nbsp;&nbsp; olympics.com",
+      "publishedAt": "2026-10-16T17:30:00.000Z",
+      "collectedAt": "2026-10-17T10:53:57.892Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyd2ZidnY5",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "District Judo Championship Rajouri promotes sportsmanship, discipline, self-defence amongst children - The Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN3dEM0pCanREa0VxUGx2MGlDVHdPNmVPLVFyU2wyZnRXWXhudFJja3pxenpaQTJsU2Q0bFBmcm5oTXl0TG1xYnhnRmZZdDNmRzJjLVhfY2xrUnRSWVlSSVJkU0M0MlpxUHpnVnRtRE5UX2tsUTRpWEdvNXNwY2RuU0V6b1hJeVdxZnJTTENVV2JEVGo2cF9WdEFBYmFkaU1Cd1A1OXJLSDFXdmUwVmM0UEhXQzltRkZCcTVVTS1TbHVPUXhsM2NaVTIyOTd3V3doX1hOZjNkak5WY2PSAdsBQVVfeXFMTTd3RDNKQmp0RGtFcVBsdjBpQ1R3TzZlTy1RclNsMmZ0V1l4bnRSY2t6cXp6WkEybFNkNGxQZnJuaE15dExtcWJ4Z0ZmWXQzZkcyYy1YX2Nsa1J0UllZUklSZFNDNDJacVB6Z1Z0bUROVF9rbFE0aVhHbzVzcGNkblNFem9YSXlXcWZyU0xDVVdiRFRqNnBfVnRBQWJhZGlNQndQNTlyS0gxV3ZlMFZjNFBIV0M5bUZGQnE1VU0tU2x1T1F4bDNjWlUyMjk3d1d3aF9YTmYzZGpOVmNj?oc=5",
+      "content": "District Judo Championship Rajouri promotes sportsmanship, discipline, self-defence amongst children &nbsp;&nbsp; The Tribune",
+      "publishedAt": "2026-10-17T06:30:59.000Z",
+      "collectedAt": "2026-10-17T10:53:58.192Z",
+      "analysis": {
+        "relevance": 56,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Five-Star Irish Christmas Show Featuring Champion Irish Dancers Comes to Florida - The Boca Raton Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQX3lqY2U1ZHRIVUtpSEc3NEQzU2Z1SWJnR0FoXzNHUWloVWY4WGxsdy1Ec1ZpTi1zNzQ4dlA4Qkw3YXp5ckVyVTV5dTM2QWhuRGYyQy0xYl84UUxTdktwY1NnYVlVVDVMbFg5WXNEWGJ0Z2h4dmt4TDM1MklUYTlITGhxWDdwYXF0ZmJuVFdOY1pqZ05yWW9JTXRzMkJFcWY5bmswanVLNFNLdXJJQTgwaFFOZlN4NGt6Yk9TZm0xVDY1UHVOWFl6WFlRUndlUUpXSUE?oc=5",
+      "content": "Five-Star Irish Christmas Show Featuring Champion Irish Dancers Comes to Florida &nbsp;&nbsp; The Boca Raton Tribune",
+      "publishedAt": "2026-10-16T12:27:00.000Z",
+      "collectedAt": "2026-10-17T10:53:57.892Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "112 athletes will compete at the 2026 National Junior Figure Skating Championships. - Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV0ttV2hiZzZ5MGZpclc4eFRZa1ZVbUdtR2lQOUUwWkZaUlN5TFdZRHI4QXlRQWpaUDFpX2lvOHk1Q1JRZUppcXJGY3dIWlN2Y2NkUnlQanFaVk10T1RsQWtXaXlNMDVHZVV2YnpRWFRraFExdlkyUVJjWEZyNWdpeE1BQ0l1dnRnOWctbGNRRHlCZWdGRVRkMVlacU90U09HelU0ZDRR?oc=5",
+      "content": "112 athletes will compete at the 2026 National Junior Figure Skating Championships. &nbsp;&nbsp; Vietnam.vn",
+      "publishedAt": "2026-10-17T07:03:24.000Z",
+      "collectedAt": "2026-10-17T10:53:57.892Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
