@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-18T11:19:43.316Z",
+  "runAt": "2026-10-19T13:32:52.209Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,16 +15,17 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 29,
-    "uniqueFacts": 16,
+    "rawFacts": 32,
+    "uniqueFacts": 19,
     "duplicatesRemoved": 13,
-    "classifiedFacts": 16,
-    "relevantSignals": 10,
-    "durationMs": 1963
+    "classifiedFacts": 19,
+    "relevantSignals": 8,
+    "durationMs": 1890
   },
   "distribution": {
-    "CORE_DANCE": 6,
-    "DANCE_WORLD": 3,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1,
+    "CORE_DANCE": 4,
     "LOCAL_ECOSYSTEM": 1
   },
   "sourceBreakdown": [
@@ -32,228 +33,69 @@
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 1,
-      "durationMs": 300,
+      "durationMs": 277,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 1,
-      "durationMs": 303,
+      "count": 2,
+      "durationMs": 324,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 0,
-      "durationMs": 321,
+      "count": 2,
+      "durationMs": 348,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 377,
+      "durationMs": 354,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 12,
-      "durationMs": 327,
+      "durationMs": 322,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 329,
+      "durationMs": 259,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2pidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Olympic gold medalist Hezly Rivera withdraws from world gymnastics championships with ankle injury - kens5.com",
-      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNdVUzVkVDWmk2Ukx3RFlaR0ZMem9nZVBJcDdLajU3VTh2czN3TUNyV0RyRHlKc2JtY2pXZjhrLURubEZwalo3c1RTd2JiLTlYWHNMdTg1MHJXQ0lxQ1lZaVNhRW16MzI2Q05xVVpCeTJtZ0FvNzlLaHRfNjR0Q0Q1bXliM2trYnMzSEdNaUo5S09TSk82TUpwZXRYemVOUm5UUFQtdlZ1d1diX29vajNIQ1VHTHExaWlOWFVMcWE0RmU2OUE4eUlTM09obHo2S1ZPRmhyTjg2U29kTmdVaVQzU1BlZzZZWU5fbW9PUGxNTjZtNFZIY2p0ZDFQZDlRaWFaRjFnRkNxb3o3SXlfS1UzdU1NWGJZc2hubngxRDNVOENrNWc?oc=5",
-      "content": "Olympic gold medalist Hezly Rivera withdraws from world gymnastics championships with ankle injury &nbsp;&nbsp; kens5.com",
-      "publishedAt": "2026-10-17T16:21:00.000Z",
-      "collectedAt": "2026-10-18T11:19:42.656Z",
+      "title": "Two street dancers from Switzerland ahead of the world finals in Zurich - blue News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOREN2VXBOR1lNM0c1MlJVTWt1aHFfNlh2ZkU1eDJSZDBpdnk3dm9idVZTRnhvYUVyeFd1eHFYYzNzQ21IT2lMTVkyQUtpTTVHMlBtTkJtMnlvWXdnV205LVUwZm0wbGVzSmozU3R1ZFFTY01qdXNDcURnWXVfQTBxUk0tRHZxOUFXNW5fbFRBdDNMOWQ2QjRFM2xWdTU2UEUtb1NKa1dFc01NYXZydmdhR3VwYmQ0V3VESFE?oc=5",
+      "content": "Two street dancers from Switzerland ahead of the world finals in Zurich &nbsp;&nbsp; blue News",
+      "publishedAt": "2026-10-19T11:04:11.000Z",
+      "collectedAt": "2026-10-19T13:32:51.625Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "HEALTH_SAFETY": [
-            "injury"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpYWpidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Olympic gold medalist Hezly Rivera withdraws from world gymnastics championships with ankle injury - Eagle-Tribune",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQZmN3QW5MRFR1M2ZBVjZWNEYyYS1jZUI5aWdNaTl1N19LSkhkOWFibFFLNGtrZUpyTElsLWhiOG1fUlVoU2dndGY3ak9ObG1VOFJKRE1zUm9ha2ItaGIwclR3ckRSWDExdi0zYXVQUkFjNkxfWjJsUnQ3OXRkVmVGZUduWWo3cVdTSWFINjl1QnotWnYyOXlpYUE4N2U4R1R3dVFwQ084SUxwaW9lby1vV3U5SnFRNXdPampZS21RbHZYRnhnWUZxaGJ1dWpNc0RoMU1FM3o5NnJJV0lxMUJod3VoWW1SVGRMVnZXN0tKbGRmdzFidTlXZXk4Y0xQTzlTa0xSYkRzY18?oc=5",
-      "content": "Olympic gold medalist Hezly Rivera withdraws from world gymnastics championships with ankle injury &nbsp;&nbsp; Eagle-Tribune",
-      "publishedAt": "2026-10-17T16:21:04.000Z",
-      "collectedAt": "2026-10-18T11:19:42.657Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "HEALTH_SAFETY": [
-            "injury"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Breaking. Hezly Rivera Withdraws From 2026 World Championships - Inside Gymnastics Magazine",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVGhETmFaNXM1SENrOWh5WjBJYXVvaFdtRVhmZ2swSDlaODRDTW5Va3Q5YUxxOC13RkxVLWxRQzVRUEdGQmx4QTZVOXBIbzl1WkJGSEtBdEhsc3RHR1V2TXRnbGFhWDFKZU92OVBQd3NnenIybUItbFlSYW03NnVSeDg1U0oyNDZhZVdYc0Q5UmV1UlhybWd0M09PdnptMzlBSkpsM3V5dFhJZ3lHeDVv?oc=5",
-      "content": "Breaking. Hezly Rivera Withdraws From 2026 World Championships &nbsp;&nbsp; Inside Gymnastics Magazine",
-      "publishedAt": "2026-10-17T15:24:58.000Z",
-      "collectedAt": "2026-10-18T11:19:42.656Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
         "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "dance"
           ],
           "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3YWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "US Olympic Champion Hezly Rivera Forced to Sit Out World Championships Second Time in a Row - Yardbarker",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQRGozZEdyeGJJTi1vdWRFc1hBZ0laMFBydE9uNm1fSWVVdmRIdXZSQTdtU1RGTjNEWk8zLWJkb3l2OUJpX0NKV3RCUEptY281ZmlTY0h6M3dJTE5ReEJINWhkaWdrQ1dpVG8zdG5oVkhSQ3pkMnRWNTZ6TEt6STYwTkVaRlJpRmlDWGVyaVBER09YSWFBNTMwYUp2b0k3Rm90UWppRjdCZmxkWUZheGxScF9yeXZiTXVVQ1p5eThXODNfVjVMbjZmSzdYX0JOeDhHUC01Z2paM1o0TGo2ZUdnRlB3STJCU09SdkFKSA?oc=5",
-      "content": "US Olympic Champion Hezly Rivera Forced to Sit Out World Championships Second Time in a Row &nbsp;&nbsp; Yardbarker",
-      "publishedAt": "2026-10-18T09:20:16.000Z",
-      "collectedAt": "2026-10-18T11:19:42.656Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Dorset athlete eyes world championship glory with Team GB - Bournemouth Echo",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTGpoU213NDV5cU1aZnFZMVYwc0xneEdILWVwcVRwWWhUQ3ZyUDBkbHA2UkxxRFF0Z0NjalJlWUFEQVZPWUdJbnVySDVLY2RvUFVmZkVXQl9iUUN4WE5VTmtWWTN2WmdybHFBeXVMZ0RZbmlEdEJQdkIzVVpGVGdpaUJxSFBZdWJPSDVGenZQMmpjSFozZERvVVhzZjM?oc=5",
-      "content": "Dorset athlete eyes world championship glory with Team GB &nbsp;&nbsp; Bournemouth Echo",
-      "publishedAt": "2026-10-17T23:00:00.000Z",
-      "collectedAt": "2026-10-18T11:19:42.657Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxd2ZidnY5",
-      "source": "Google News — child physical activity",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.7,
-      "title": "District Judo Championship Rajouri promotes sportsmanship, discipline, self-defence amongst children - India's News.Net",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPazBZUFljbnFyNU9pZm9XSGw1ZnZRZkhxUmNyTy1HMldjV0gwd2VDeUhlcmpsZmVSYVpmbEExRVhQd2phYnRJQ18tLXBoVk9VbGtkOEZtWGtBWDQ0cFRlak9tZFIwRnhPZEtZLUdMNnhHWGIzN0Z3dnZBOGJCQnVNT3RLWW4yQjdvLWxpWEJSdjhpLXV0Ym9mSEI1aGlVTU8tV2pEeXdWRTYxbDFSYkxiRDdfY0NuMTNDZS16YzRjRkExWXhBMVN5OFZqRmVYQjFDOVNBTk5FUQ?oc=5",
-      "content": "District Judo Championship Rajouri promotes sportsmanship, discipline, self-defence amongst children &nbsp;&nbsp; India's News.Net",
-      "publishedAt": "2026-10-17T12:33:00.000Z",
-      "collectedAt": "2026-10-18T11:19:42.984Z",
-      "analysis": {
-        "relevance": 59,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "CHILD_DEVELOPMENT": [
-            "child",
-            "children"
+            "world final"
           ],
           "CONTENT_SIGNAL": [
             "new"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
           ]
         },
         "context": {
@@ -266,15 +108,81 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2YWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Road to Rotterdam: Women’s Europe & Algeria preview – 2026 World Artistic Gymnastics Championships - Gymnastics Now",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQmZocmNkanRneG1kY3JKaGxVVzIyTGtnUk5rR3Q2dkU2Njk2d242QVJzbzg5WFdFRmRXcUlvblh2WG13eVZFZXBZazNNam8yaVlGWVlUUlcwbG1HVlZ5elVpdEI2WEJLM1BFUjdqN0NzcTVZaVdTNDlBekx0Nl9ERGRWVmdsZE1Xa1BFQThIVlFuUWhQNUZsbFpfOV9sb0UzQjdKQi1sY255MFlfd25pNUhzS1NmZVJmTXVLUg?oc=5",
-      "content": "Road to Rotterdam: Women’s Europe & Algeria preview – 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
-      "publishedAt": "2026-10-17T15:59:35.000Z",
-      "collectedAt": "2026-10-18T11:19:42.656Z",
+      "title": "2026 World Championships | WAG Qualifications Day 2 Live Blog - The Gymternet",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNekJKZ1NSejhwLTRLSDJqYm12RkVzQmtscGM0dVVfYjNWRWE3OXpUSkM2SFpncjQ1MUxEdExmLVBoenh5REZ0ajlDekI1dDg1NUFNV0ttMk1Dc29jUFZES1N1ZHkzZlp1S2lyZmpiSHNNVmoyTDV1UnFCTDN1alplN011NFZhUURKVkN6SGpvUFdUaFhfajl2dw?oc=5",
+      "content": "2026 World Championships | WAG Qualifications Day 2 Live Blog &nbsp;&nbsp; The Gymternet",
+      "publishedAt": "2026-10-19T07:01:02.000Z",
+      "collectedAt": "2026-10-19T13:32:51.624Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Мастер-класс «Фолк как синтез современных и аутентичных форм танца» - Улпресса - все новости Ульяновска",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQkpZYjlfSzRGUUUzNVhlM09XSGtBSGttWi1CVFU4TlBiRDJsZ3FIQ01WbmJKUkVxdmRIVWF0Q0xuZTVtVEtLbm9sMHFmbTNWa2Ewbmw0ZV8zZFo1TmNsUVRkVTBRcThXVzdnLUdnb1lNdmVaTzJEQW9uUWFqRGNOMHpXalh6Z0dzUG0xM05oblNWT1RUZGZwNEhqX0g3Q3JsY0lNbldOajA?oc=5",
+      "content": "Мастер-класс «Фолк как синтез современных и аутентичных форм танца» &nbsp;&nbsp; Улпресса - все новости Ульяновска",
+      "publishedAt": "2026-10-19T07:35:40.000Z",
+      "collectedAt": "2026-10-19T13:32:50.923Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов",
+            "как"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Live updates: Women’s qualifying at the 2026 World Artistic Gymnastics Championships - Gymnastics Now",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRHB6YTRHRmtXeGdPeEJSY1g5ZDJNSy1QVWpJLUZyRGhrRTg2R1JGTjhIU1hRSUs3NDNJNTFVTWliekRBMkhweDl4czN2SlNWYUo4V0RKUF9Kemh3XzJHOGhCQjRsZnRWNkVZRm5pWDA3TEVMS21fc0JmZUZPX2p0cWJnZ3pvaXNPYzYyNEZaRGtycGUw?oc=5",
+      "content": "Live updates: Women’s qualifying at the 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
+      "publishedAt": "2026-10-19T09:48:46.000Z",
+      "collectedAt": "2026-10-19T13:32:51.624Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -294,15 +202,43 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Strictly Come Dancing professionals line-up | Meet the 2026 dancers - Radio Times",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSTBSeFNfak5Sd1QxUlk3QlFHWWtYT28wSWhPd0hONXFwb290SHZ5dmdRSEVBVDJ3X2lzbEROVVFXNjhYa2dWMDhFSzhRMnlaTWphZF91VG0xX29sSlBZZDRoMDA0MUJHcDdPZVlEOHVhaF9kNmJkbUdFeWlfSXdyYjFrZWNEMndEMUJyTXZ6QktOdw?oc=5",
-      "content": "Strictly Come Dancing professionals line-up | Meet the 2026 dancers &nbsp;&nbsp; Radio Times",
-      "publishedAt": "2026-10-17T19:21:11.000Z",
-      "collectedAt": "2026-10-18T11:19:42.657Z",
+      "title": "Larisa Iordache will commentate on the World Artistic Gymnastics Championships - Informat.ro",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd0N1bzVZR25HS2NXOFlzZXVHNFN1TVMzSnNrRmltNjhSS3dCTVVETi00YUVjY3VLaDk4QloxYi1xeHNmZWt1bDdURzFQeDUtTE9vcFhleGRRWVRIVVRGRDhhd2JvT1ZlX2thdGdJNC02dWREeTZXQzdOWTdmQUFhNzBUNWdiYUl1R3B3eHgyMGRLUzhBd01ia1BWNkI2UzNsM1NyRGRPbEY5SzQ1WXZjWGs1UQ?oc=5",
+      "content": "Larisa Iordache will commentate on the World Artistic Gymnastics Championships &nbsp;&nbsp; Informat.ro",
+      "publishedAt": "2026-10-19T11:02:15.000Z",
+      "collectedAt": "2026-10-19T13:32:51.625Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Started with 23 dancers – now it’s SA’s best - Adelaide Now",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNYmhIeGxYMFVKYWljdEhMdHR4aUJKa0k2WlRSSGs4T3NTWWRaV2o0ZWwyWm9Td21wSFdvN0lQamRLelVfWEt4Q3hCN2pmRW9ZUkR6SGk5bktQa2pxQzU4alpzSWJyR29iOUVtaEpwWEJDcDVjc1FrUlA0b0VjMVhLSTBoSGxsYk9DNUh1MHJ6VVZ6b3NTb1N4bjhIaUlwS2JWaWRBQ0NMQndFM0ZYU0ZVVnlvYTd1UEhZYnk5UFBmWUlmUWJnR1FNYmxYYUhHa1o5ckRGQmh5REloWHpzbmlaRjF3cko4ZFRvVUhiUmVXLWJxUmh2ZFY5WDdsdEk?oc=5",
+      "content": "Started with 23 dancers – now it’s SA’s best &nbsp;&nbsp; Adelaide Now",
+      "publishedAt": "2026-10-19T06:32:11.000Z",
+      "collectedAt": "2026-10-19T13:32:51.625Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -322,23 +258,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0d2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk1Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "The 2026 National Junior Figure Skating Championships will expand competition opportunities for athletes. - Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUzdMMXFQVVo4Z3ozcUxhLTVkb1lYQmRCSmlTWlVteGNrMm13cnI3Ykd2SjlDVUc3RTV2YlJRb3hMZW5KVmJsdG50b0djNGNERk12UFNSQWxaN3NxWklEaEJzc0FLeVd5bzZhMmgydmE1MjFzR0NnZk0zTENRX2xmeHJGaE5LZkFRUjV4YkxjNlNyQU5ReDBzWm5Qdk1hRUZVQ29TQjhXLURvelhjeERMV1BmV0xoOWs?oc=5",
-      "content": "The 2026 National Junior Figure Skating Championships will expand competition opportunities for athletes. &nbsp;&nbsp; Vietnam.vn",
-      "publishedAt": "2026-10-17T16:09:44.000Z",
-      "collectedAt": "2026-10-18T11:19:42.657Z",
+      "title": "Over 1.3 million cash prize pool fuels return of premier Philippine tennis championship - GMA Network",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUHdhMHdqdkxNVVNVTFIydEJEdWNOdktlUlJqdmRyZVZpQ1RXM0J0QzBXMVp6RGZ1YVFqS1NYeWpLMWk4UGVsMFhXcnlDajdzYXRRelBCNE1NRmJpdVNtRTdfa2FKSHY0U2Z1OGljMlRVNHJWZ1F4eTE3aWFaRjdqY3JCa3V1cnFsVURGNk0tSnFaMm1CeWU0SUhTcUtGc2o0R0k2MFJfaF9HMnJuWURzR2hpQnRFQl9xYkI1V3hKWHp0R3pqV2FrWjIyLTJNT1BuMXFmQU9vZWNsWnhhdlRwNVZQVzJ4Zw?oc=5",
+      "content": "Over 1.3 million cash prize pool fuels return of premier Philippine tennis championship &nbsp;&nbsp; GMA Network",
+      "publishedAt": "2026-10-19T06:06:53.000Z",
+      "collectedAt": "2026-10-19T13:32:51.625Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship",
-            "competition"
+            "championship"
           ]
         },
         "context": {
@@ -351,15 +286,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlud2ZidnY5",
       "source": "Google News — Серпухов дети танцы",
       "sourceScope": "LOCAL",
       "sourceWeight": 1,
-      "title": "Шахматы, коньки и падел: Серпухове отметили День отца - Смитанка",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcTg0Xzg4dmhGSFNSSU9vODlOR0prdnVjTVFoR1lpVXBONFVZUEI0bFAzQS1JeERqak5pRnE1NWhjd1EzOUJWZTZTRXpuQVV0M3hUWDl3SktKZXI4a1dDRDRBVVJ2eWwwRXI3TFhRSTBVRXk2SVJIMkxuZVpySW5jaFhjMDVXVVFnVGtCeW1MT3c?oc=5",
-      "content": "Шахматы, коньки и падел: Серпухове отметили День отца &nbsp;&nbsp; Смитанка",
-      "publishedAt": "2026-10-17T13:32:30.000Z",
-      "collectedAt": "2026-10-18T11:19:41.655Z",
+      "title": "В Серпухове ко Дню отца состоялся праздничный концерт - ОТВ-Серпухов",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbk9BbHliTmFqbkFVeGdhTmpfX3JmNnBSbzFxWXAxaTBmMmJNeWpjOXVvOUp1NjJ1YXhLMmU0ZnA2SW82U2FscWxnbnRzeTQwVUx4UjM1WXRHNEhMVmtnWVN4M21YbWxxNTR5UTMtUEt4UlhPYmwxYUVKSDA4b2xMcmQ2ZXoxTVZTWUdQdnMxTzV0aGNyWDVkS1h0NklmQ1E?oc=5",
+      "content": "В Серпухове ко Дню отца состоялся праздничный концерт &nbsp;&nbsp; ОТВ-Серпухов",
+      "publishedAt": "2026-10-19T10:46:49.000Z",
+      "collectedAt": "2026-10-19T13:32:50.599Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",
