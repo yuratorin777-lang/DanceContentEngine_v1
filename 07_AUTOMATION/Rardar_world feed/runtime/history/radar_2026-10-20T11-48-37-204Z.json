@@ -1,0 +1,263 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-20T11:48:37.204Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 21,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 21,
+    "relevantSignals": 6,
+    "durationMs": 1961
+  },
+  "distribution": {
+    "DANCE_WORLD": 4,
+    "ADJACENT_DOMAIN": 1,
+    "LOCAL_ECOSYSTEM": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 1,
+      "durationMs": 265,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 265,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 338,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 417,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 362,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 309,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Photo highlights from the artistic gymnastics world championships in Rotterdam - McAlester News-Capital",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOU2JqU0w0TW5JTWJSbjFOQUhqMkRob1J1MkJhX1FCdF9oQWVPalN0cDdOV09uay1XT0tnQnczb0lxY1FQSEFKbUhUSFlpVUpWQkZwRlJaSlp0d1N3Rmk2THRnWkkxMGd1djEycDVpZ2lORHJDREFCVklZTTFPNldrZ01yMi0zaks4aUk4VGhpUkJta3J4REctcDRhT2tTMWhNaUlwXzZEbTdad2QyQ2U2RTVPMTVaM0NuY1paQmIxQzFNTGRrejN3aXpDUzdSLXlQZ2RSZ0pJSkctTnNSbHV1ZlFnRl93OThlbE9UckdZSzVyLW14a215cQ?oc=5",
+      "content": "Photo highlights from the artistic gymnastics world championships in Rotterdam &nbsp;&nbsp; McAlester News-Capital",
+      "publishedAt": "2026-10-20T09:41:35.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Photo highlights from the artistic gymnastics world championships in Rotterdam - Times Union",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaDc5NS15U2JKaXdCMmpYOHlWQzNrd25PTndWY09Qd005d1FVVTNURjg0aDI1RXhRRFRSa01zYzAxOEI0YllrazBiUXRqS1J5SkVxb2dUMlR3QlFqaFZHTW1YT3g4NU9EZHFIXzB4U1draGE5dUM3aGtJMWlRNGZDbUpEM3VfSnBKQzF0N18wcWYzMnJ2dGRTVFVZd2QwLVhON3RiSXlwcw?oc=5",
+      "content": "Photo highlights from the artistic gymnastics world championships in Rotterdam &nbsp;&nbsp; Times Union",
+      "publishedAt": "2026-10-20T10:42:50.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Photo highlights from the Artistic Gymnastics World Championships in Rotterdam - Eagle-Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONnlJOUgyZVQwMHZpRkRvTlBNYnpvakxzZmwwY0g5WW8tX0ZzZjYzLVZzMC1RRWhXbTlTS3p5TThYazc5VkR0N2RDSWFvMU9DcmxGcTFuSWMtRms3WDl6bmh6WFFZZ0JiUE5CWkhTM1JTNXhmQzJWNHhad2ZuRVlwUU5aZUNVbWY0YkdQMmRGNDRST0lxYWNSVW85STBmR1dYS1B2ZXlwU2hSWEhIUjRSS0cwNzh6Z2tka0hLdVl1b282RTRGRXluZU95cHRDcm9zeXFwS1Y3NjJxbDdXN3Y1ZzFINENMckY4N2pJcHRPLXp6Wk9ITFZJ?oc=5",
+      "content": "Photo highlights from the Artistic Gymnastics World Championships in Rotterdam &nbsp;&nbsp; Eagle-Tribune",
+      "publishedAt": "2026-10-20T08:19:08.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Unity dancer makes her mark at world championships in Poland - WestCentralOnline",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVmJKRTVITVNFZm5KaEM1cmF2WjBWVFVPbnR3aFB4UDgtdnhFMTRYdTJqVFladWtKYVd4VXRZZ3QzaUQ2V2xhdWRFbXRKeXloREpzdElFcmZWNEtHbDZzYUxHV1dWZ3RuZGNhdG1rNzMwUGtsRHJET21jdHlPMDIyMTJxaEhmdmVVSGRVMFMyaml3b3RvMHZ3Y21oYllLSTgtM1JTajZ3?oc=5",
+      "content": "Unity dancer makes her mark at world championships in Poland &nbsp;&nbsp; WestCentralOnline",
+      "publishedAt": "2026-10-19T18:03:10.000Z",
+      "collectedAt": "2026-10-20T11:48:36.530Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Grand Prix France kicks off figure skating season with all top returning Olympic medalists - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUWdJMVRweUlldmRJRk9VOTRaQjFZdTUyZ3lzaXdLUWlXc2hwRl9vMWpvUGJHYVR2SGxqWC11eU45cDFqeGJQU2Fnc25WWFZBa1FtTEJHQmtIQlVDenNIMWFWNWo5XzdkUnk1QldlRDVTZy1UZmxyMW1rV3JwZEttSlV3?oc=5",
+      "content": "Grand Prix France kicks off figure skating season with all top returning Olympic medalists &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-19T17:05:42.000Z",
+      "collectedAt": "2026-10-20T11:48:36.530Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — Серпухов дети танцы",
+      "sourceScope": "LOCAL",
+      "sourceWeight": 1,
+      "title": "В Серпухове ко Дню отца состоялся праздничный концерт - ОТВ-Серпухов",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcld1TDR0S3ZhRDlCeUJoUWVmalRTOThQRGdNTjAySVhCNWFrMVpLMEtROFpCdXE3X0pyRGRHZjBwNmp2NE9FWXNYSERvYUJFLVNhck9mSHBiSmpudTIxMVlBZ0psVHF4YmdUdGo0VnFOaUg4ZjBWRndJUlU5ZUhkUm5sak80RkxGdVkzSmw3ZzlCaUQydmZwRS1lVW9RTVRQ?oc=5",
+      "content": "В Серпухове ко Дню отца состоялся праздничный концерт &nbsp;&nbsp; ОТВ-Серпухов",
+      "publishedAt": "2026-10-19T12:17:16.000Z",
+      "collectedAt": "2026-10-20T11:48:35.510Z",
+      "analysis": {
+        "relevance": 25,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "Серпухов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": false,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

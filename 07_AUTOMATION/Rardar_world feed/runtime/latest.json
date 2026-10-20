@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-19T13:32:52.209Z",
+  "runAt": "2026-10-20T11:48:37.204Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,17 +15,16 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 32,
-    "uniqueFacts": 19,
+    "rawFacts": 34,
+    "uniqueFacts": 21,
     "duplicatesRemoved": 13,
-    "classifiedFacts": 19,
-    "relevantSignals": 8,
-    "durationMs": 1890
+    "classifiedFacts": 21,
+    "relevantSignals": 6,
+    "durationMs": 1961
   },
   "distribution": {
-    "DANCE_WORLD": 2,
-    "LOCAL_DANCE": 1,
-    "CORE_DANCE": 4,
+    "DANCE_WORLD": 4,
+    "ADJACENT_DOMAIN": 1,
     "LOCAL_ECOSYSTEM": 1
   },
   "sourceBreakdown": [
@@ -33,66 +32,66 @@
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 1,
-      "durationMs": 277,
+      "durationMs": 265,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 2,
-      "durationMs": 324,
+      "count": 3,
+      "durationMs": 265,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 2,
-      "durationMs": 348,
+      "count": 0,
+      "durationMs": 338,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 354,
+      "durationMs": 417,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 12,
-      "durationMs": 322,
+      "count": 15,
+      "durationMs": 362,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 259,
+      "durationMs": 309,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Two street dancers from Switzerland ahead of the world finals in Zurich - blue News",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOREN2VXBOR1lNM0c1MlJVTWt1aHFfNlh2ZkU1eDJSZDBpdnk3dm9idVZTRnhvYUVyeFd1eHFYYzNzQ21IT2lMTVkyQUtpTTVHMlBtTkJtMnlvWXdnV205LVUwZm0wbGVzSmozU3R1ZFFTY01qdXNDcURnWXVfQTBxUk0tRHZxOUFXNW5fbFRBdDNMOWQ2QjRFM2xWdTU2UEUtb1NKa1dFc01NYXZydmdhR3VwYmQ0V3VESFE?oc=5",
-      "content": "Two street dancers from Switzerland ahead of the world finals in Zurich &nbsp;&nbsp; blue News",
-      "publishedAt": "2026-10-19T11:04:11.000Z",
-      "collectedAt": "2026-10-19T13:32:51.625Z",
+      "title": "Photo highlights from the artistic gymnastics world championships in Rotterdam - McAlester News-Capital",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOU2JqU0w0TW5JTWJSbjFOQUhqMkRob1J1MkJhX1FCdF9oQWVPalN0cDdOV09uay1XT0tnQnczb0lxY1FQSEFKbUhUSFlpVUpWQkZwRlJaSlp0d1N3Rmk2THRnWkkxMGd1djEycDVpZ2lORHJDREFCVklZTTFPNldrZ01yMi0zaks4aUk4VGhpUkJta3J4REctcDRhT2tTMWhNaUlwXzZEbTdad2QyQ2U2RTVPMTVaM0NuY1paQmIxQzFNTGRrejN3aXpDUzdSLXlQZ2RSZ0pJSkctTnNSbHV1ZlFnRl93OThlbE9UckdZSzVyLW14a215cQ?oc=5",
+      "content": "Photo highlights from the artistic gymnastics world championships in Rotterdam &nbsp;&nbsp; McAlester News-Capital",
+      "publishedAt": "2026-10-20T09:41:35.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
         "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
+            "championship"
           ],
           "DANCE_WORLD": [
-            "world final"
+            "world championship"
           ],
           "CONTENT_SIGNAL": [
             "new"
@@ -108,15 +107,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "2026 World Championships | WAG Qualifications Day 2 Live Blog - The Gymternet",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNekJKZ1NSejhwLTRLSDJqYm12RkVzQmtscGM0dVVfYjNWRWE3OXpUSkM2SFpncjQ1MUxEdExmLVBoenh5REZ0ajlDekI1dDg1NUFNV0ttMk1Dc29jUFZES1N1ZHkzZlp1S2lyZmpiSHNNVmoyTDV1UnFCTDN1alplN011NFZhUURKVkN6SGpvUFdUaFhfajl2dw?oc=5",
-      "content": "2026 World Championships | WAG Qualifications Day 2 Live Blog &nbsp;&nbsp; The Gymternet",
-      "publishedAt": "2026-10-19T07:01:02.000Z",
-      "collectedAt": "2026-10-19T13:32:51.624Z",
+      "title": "Photo highlights from the artistic gymnastics world championships in Rotterdam - Times Union",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaDc5NS15U2JKaXdCMmpYOHlWQzNrd25PTndWY09Qd005d1FVVTNURjg0aDI1RXhRRFRSa01zYzAxOEI0YllrazBiUXRqS1J5SkVxb2dUMlR3QlFqaFZHTW1YT3g4NU9EZHFIXzB4U1draGE5dUM3aGtJMWlRNGZDbUpEM3VfSnBKQzF0N18wcWYzMnJ2dGRTVFVZd2QwLVhON3RiSXlwcw?oc=5",
+      "content": "Photo highlights from the artistic gymnastics world championships in Rotterdam &nbsp;&nbsp; Times Union",
+      "publishedAt": "2026-10-20T10:42:50.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -139,57 +138,57 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Мастер-класс «Фолк как синтез современных и аутентичных форм танца» - Улпресса - все новости Ульяновска",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQkpZYjlfSzRGUUUzNVhlM09XSGtBSGttWi1CVFU4TlBiRDJsZ3FIQ01WbmJKUkVxdmRIVWF0Q0xuZTVtVEtLbm9sMHFmbTNWa2Ewbmw0ZV8zZFo1TmNsUVRkVTBRcThXVzdnLUdnb1lNdmVaTzJEQW9uUWFqRGNOMHpXalh6Z0dzUG0xM05oblNWT1RUZGZwNEhqX0g3Q3JsY0lNbldOajA?oc=5",
-      "content": "Мастер-класс «Фолк как синтез современных и аутентичных форм танца» &nbsp;&nbsp; Улпресса - все новости Ульяновска",
-      "publishedAt": "2026-10-19T07:35:40.000Z",
-      "collectedAt": "2026-10-19T13:32:50.923Z",
+      "title": "Photo highlights from the Artistic Gymnastics World Championships in Rotterdam - Eagle-Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONnlJOUgyZVQwMHZpRkRvTlBNYnpvakxzZmwwY0g5WW8tX0ZzZjYzLVZzMC1RRWhXbTlTS3p5TThYazc5VkR0N2RDSWFvMU9DcmxGcTFuSWMtRms3WDl6bmh6WFFZZ0JiUE5CWkhTM1JTNXhmQzJWNHhad2ZuRVlwUU5aZUNVbWY0YkdQMmRGNDRST0lxYWNSVW85STBmR1dYS1B2ZXlwU2hSWEhIUjRSS0cwNzh6Z2tka0hLdVl1b282RTRGRXluZU95cHRDcm9zeXFwS1Y3NjJxbDdXN3Y1ZzFINENMckY4N2pJcHRPLXp6Wk9ITFZJ?oc=5",
+      "content": "Photo highlights from the Artistic Gymnastics World Championships in Rotterdam &nbsp;&nbsp; Eagle-Tribune",
+      "publishedAt": "2026-10-20T08:19:08.000Z",
+      "collectedAt": "2026-10-20T11:48:36.529Z",
       "analysis": {
-        "relevance": 63,
+        "relevance": 68,
         "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "танц"
+            "championship"
           ],
-          "LOCAL_ECOSYSTEM": [
-            "танц"
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Unity dancer makes her mark at world championships in Poland - WestCentralOnline",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVmJKRTVITVNFZm5KaEM1cmF2WjBWVFVPbnR3aFB4UDgtdnhFMTRYdTJqVFladWtKYVd4VXRZZ3QzaUQ2V2xhdWRFbXRKeXloREpzdElFcmZWNEtHbDZzYUxHV1dWZ3RuZGNhdG1rNzMwUGtsRHJET21jdHlPMDIyMTJxaEhmdmVVSGRVMFMyaml3b3RvMHZ3Y21oYllLSTgtM1JTajZ3?oc=5",
+      "content": "Unity dancer makes her mark at world championships in Poland &nbsp;&nbsp; WestCentralOnline",
+      "publishedAt": "2026-10-19T18:03:10.000Z",
+      "collectedAt": "2026-10-20T11:48:36.530Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
           ],
-          "CONTENT_SIGNAL": [
-            "нов",
-            "как"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Live updates: Women’s qualifying at the 2026 World Artistic Gymnastics Championships - Gymnastics Now",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRHB6YTRHRmtXeGdPeEJSY1g5ZDJNSy1QVWpJLUZyRGhrRTg2R1JGTjhIU1hRSUs3NDNJNTFVTWliekRBMkhweDl4czN2SlNWYUo4V0RKUF9Kemh3XzJHOGhCQjRsZnRWNkVZRm5pWDA3TEVMS21fc0JmZUZPX2p0cWJnZ3pvaXNPYzYyNEZaRGtycGUw?oc=5",
-      "content": "Live updates: Women’s qualifying at the 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
-      "publishedAt": "2026-10-19T09:48:46.000Z",
-      "collectedAt": "2026-10-19T13:32:51.624Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
+          "DANCE_WORLD": [
+            "world championship"
           ]
         },
         "context": {
@@ -202,22 +201,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Larisa Iordache will commentate on the World Artistic Gymnastics Championships - Informat.ro",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd0N1bzVZR25HS2NXOFlzZXVHNFN1TVMzSnNrRmltNjhSS3dCTVVETi00YUVjY3VLaDk4QloxYi1xeHNmZWt1bDdURzFQeDUtTE9vcFhleGRRWVRIVVRGRDhhd2JvT1ZlX2thdGdJNC02dWREeTZXQzdOWTdmQUFhNzBUNWdiYUl1R3B3eHgyMGRLUzhBd01ia1BWNkI2UzNsM1NyRGRPbEY5SzQ1WXZjWGs1UQ?oc=5",
-      "content": "Larisa Iordache will commentate on the World Artistic Gymnastics Championships &nbsp;&nbsp; Informat.ro",
-      "publishedAt": "2026-10-19T11:02:15.000Z",
-      "collectedAt": "2026-10-19T13:32:51.625Z",
+      "title": "Grand Prix France kicks off figure skating season with all top returning Olympic medalists - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUWdJMVRweUlldmRJRk9VOTRaQjFZdTUyZ3lzaXdLUWlXc2hwRl9vMWpvUGJHYVR2SGxqWC11eU45cDFqeGJQU2Fnc25WWFZBa1FtTEJHQmtIQlVDenNIMWFWNWo5XzdkUnk1QldlRDVTZy1UZmxyMW1rV3JwZEttSlV3?oc=5",
+      "content": "Grand Prix France kicks off figure skating season with all top returning Olympic medalists &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-19T17:05:42.000Z",
+      "collectedAt": "2026-10-20T11:48:36.530Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "primaryCategory": "ADJACENT_DOMAIN",
         "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
           ]
         },
         "context": {
@@ -230,71 +232,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Started with 23 dancers – now it’s SA’s best - Adelaide Now",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNYmhIeGxYMFVKYWljdEhMdHR4aUJKa0k2WlRSSGs4T3NTWWRaV2o0ZWwyWm9Td21wSFdvN0lQamRLelVfWEt4Q3hCN2pmRW9ZUkR6SGk5bktQa2pxQzU4alpzSWJyR29iOUVtaEpwWEJDcDVjc1FrUlA0b0VjMVhLSTBoSGxsYk9DNUh1MHJ6VVZ6b3NTb1N4bjhIaUlwS2JWaWRBQ0NMQndFM0ZYU0ZVVnlvYTd1UEhZYnk5UFBmWUlmUWJnR1FNYmxYYUhHa1o5ckRGQmh5REloWHpzbmlaRjF3cko4ZFRvVUhiUmVXLWJxUmh2ZFY5WDdsdEk?oc=5",
-      "content": "Started with 23 dancers – now it’s SA’s best &nbsp;&nbsp; Adelaide Now",
-      "publishedAt": "2026-10-19T06:32:11.000Z",
-      "collectedAt": "2026-10-19T13:32:51.625Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk1Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Over 1.3 million cash prize pool fuels return of premier Philippine tennis championship - GMA Network",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUHdhMHdqdkxNVVNVTFIydEJEdWNOdktlUlJqdmRyZVZpQ1RXM0J0QzBXMVp6RGZ1YVFqS1NYeWpLMWk4UGVsMFhXcnlDajdzYXRRelBCNE1NRmJpdVNtRTdfa2FKSHY0U2Z1OGljMlRVNHJWZ1F4eTE3aWFaRjdqY3JCa3V1cnFsVURGNk0tSnFaMm1CeWU0SUhTcUtGc2o0R0k2MFJfaF9HMnJuWURzR2hpQnRFQl9xYkI1V3hKWHp0R3pqV2FrWjIyLTJNT1BuMXFmQU9vZWNsWnhhdlRwNVZQVzJ4Zw?oc=5",
-      "content": "Over 1.3 million cash prize pool fuels return of premier Philippine tennis championship &nbsp;&nbsp; GMA Network",
-      "publishedAt": "2026-10-19T06:06:53.000Z",
-      "collectedAt": "2026-10-19T13:32:51.625Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlud2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
       "source": "Google News — Серпухов дети танцы",
       "sourceScope": "LOCAL",
       "sourceWeight": 1,
       "title": "В Серпухове ко Дню отца состоялся праздничный концерт - ОТВ-Серпухов",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbk9BbHliTmFqbkFVeGdhTmpfX3JmNnBSbzFxWXAxaTBmMmJNeWpjOXVvOUp1NjJ1YXhLMmU0ZnA2SW82U2FscWxnbnRzeTQwVUx4UjM1WXRHNEhMVmtnWVN4M21YbWxxNTR5UTMtUEt4UlhPYmwxYUVKSDA4b2xMcmQ2ZXoxTVZTWUdQdnMxTzV0aGNyWDVkS1h0NklmQ1E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcld1TDR0S3ZhRDlCeUJoUWVmalRTOThQRGdNTjAySVhCNWFrMVpLMEtROFpCdXE3X0pyRGRHZjBwNmp2NE9FWXNYSERvYUJFLVNhck9mSHBiSmpudTIxMVlBZ0psVHF4YmdUdGo0VnFOaUg4ZjBWRndJUlU5ZUhkUm5sak80RkxGdVkzSmw3ZzlCaUQydmZwRS1lVW9RTVRQ?oc=5",
       "content": "В Серпухове ко Дню отца состоялся праздничный концерт &nbsp;&nbsp; ОТВ-Серпухов",
-      "publishedAt": "2026-10-19T10:46:49.000Z",
-      "collectedAt": "2026-10-19T13:32:50.599Z",
+      "publishedAt": "2026-10-19T12:17:16.000Z",
+      "collectedAt": "2026-10-20T11:48:35.510Z",
       "analysis": {
         "relevance": 25,
         "relevanceLevel": "LOW",
