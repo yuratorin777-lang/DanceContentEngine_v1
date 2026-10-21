@@ -1,0 +1,232 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-21T12:00:09.968Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 33,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 19,
+    "classifiedFacts": 14,
+    "relevantSignals": 5,
+    "durationMs": 2027
+  },
+  "distribution": {
+    "DANCE_WORLD": 3,
+    "LOCAL_DANCE": 1,
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 272,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 288,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 384,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 363,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 439,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 278,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Ricardo Arias Sets New Paraguayan Record At Backyard Ultra World Championship - The Asunción Times",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQV9hUTZEUndPSkRSS2pIekNIa2U3M25sdjdrZ3ZDWkRIRjdMUlRSVFMyQ1dkOHM2WjRRTzNNU3VNNl9yWjhjVzZVYnRMbkxZY0VjeHM3NEowQ3ZOZUtXT01QS2xGSTkyeFU1VVRtSVFMZTJJekd2TjE2NUVXSkVjRUhDZ1hBUTl4YzhJZGxvcmpsTTU4SkVJLWVRR3BCc25VS1hlbEdNclM0VDdPb3JPOU41UGMxZjFkSHpFZFFDMEx2LVpxZVZ1ejR3?oc=5",
+      "content": "Ricardo Arias Sets New Paraguayan Record At Backyard Ultra World Championship &nbsp;&nbsp; The Asunción Times",
+      "publishedAt": "2026-10-21T09:52:00.000Z",
+      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Japan claims men’s team gold in dramatic World Championships final in Rotterdam - International Gymnast Magazine Online",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM0hlNEJDTXU5anNXQV80aTl5c0xlcDRhdmd3czMtazlaQVJzaTh6eDhuUXg1SjNWSjNweEhfVk8wODd3M3hNZUtxaU4xOFREZXlaTGtJUTd1dmhxX19YMDlTUGtBc1lxcHRucFlmT3FiMVlsYXh4WXB5QUNWNTFuZkc0U3ZuNENteGZqU0ZxaVlfM1hLQmZsOHE3d2t0dGNvWUF2S09iUFRxOXpPNGMyRUlR?oc=5",
+      "content": "Japan claims men’s team gold in dramatic World Championships final in Rotterdam &nbsp;&nbsp; International Gymnast Magazine Online",
+      "publishedAt": "2026-10-20T21:12:52.000Z",
+      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship",
+            "international"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Artistic Gymnastics World Championships 2026: Japan defend team title led by Hashimoto Daiki and Oka Shinnosuke - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU3FxeUR4aHYtUDQtbE0wSVU5U1lkcXMxVEVnekJNVmE1ZU80RWxuZWU1LTlpUnFlbnNERFlXc2RNdGVRYS15OTdiR1FDekpLeGFDMkNkT05zVGZXaUpUS2pGaGhHUTFpYmpUclJPUHZoeC1USkdLNVJpSlZfbDRfUXdsa01WdGYyR3pOeDBMa0hpeUxpZEFlUEZwZ3F4dkVvWUVv?oc=5",
+      "content": "Artistic Gymnastics World Championships 2026: Japan defend team title led by Hashimoto Daiki and Oka Shinnosuke &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-20T20:50:00.000Z",
+      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Радий Хабиров поздравил жителей Башкортостана с Днём национального танца - Resbash.ru",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWmtHMHh5Q1ZleXE0VktUUTA4UHFNdHptQy1Pd0gwWEVkZHRPcmphYkN0UExNekxfc2RrejhDM0pXOEV5WWxuSHlWWXU3VWtVWVNxOG9kUXdPNDVkTUJHN29VZnVTWE01SWV2OXpoNDdJQkJVc29kclFoVFBYbGFTeXVhRDk3Y2pSNDlRY25VWjdLRkhhWUVhOEdoOG1ka3VneUYwdWVLNXB5cnZReDZZbXg3bzhMWWtGY2hseE4yOG1hZzZhZXc?oc=5",
+      "content": "Радий Хабиров поздравил жителей Башкортостана с Днём национального танца &nbsp;&nbsp; Resbash.ru",
+      "publishedAt": "2026-10-21T07:29:30.000Z",
+      "collectedAt": "2026-10-21T12:00:08.502Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "What's the DWTS theme tonight? Songs, dances, lineup, guests - Bergen Record",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUFM2TVlaVU5Ca3NuLWo1RFg5ZE9GSHY5ckNjQjd1ZDhnOHQ2OHMzUUsxekdqdUdMYkpLTXMzRFU1VzhIOEp3eklVeTAyUUJXZEhlVm5od2ZRbTBfeTNPRkFNMG9lUm5ZZXNZT2VFN3RkYkZqRVVIOGNDNHFWR3g0TnBfcUpxNWpxRmxPZXhNWFZnQkk2Nm5Sd0hkRVhjQUdUNzNBTUhWLUZKZHNCQTJCSg?oc=5",
+      "content": "What's the DWTS theme tonight? Songs, dances, lineup, guests &nbsp;&nbsp; Bergen Record",
+      "publishedAt": "2026-10-21T00:22:00.000Z",
+      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
