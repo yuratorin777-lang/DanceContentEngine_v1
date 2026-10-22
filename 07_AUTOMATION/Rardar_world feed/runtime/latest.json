@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-21T12:00:09.968Z",
+  "runAt": "2026-10-22T12:03:04.890Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,76 +15,75 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 33,
-    "uniqueFacts": 14,
-    "duplicatesRemoved": 19,
-    "classifiedFacts": 14,
-    "relevantSignals": 5,
-    "durationMs": 2027
+    "rawFacts": 34,
+    "uniqueFacts": 11,
+    "duplicatesRemoved": 23,
+    "classifiedFacts": 11,
+    "relevantSignals": 4,
+    "durationMs": 1942
   },
   "distribution": {
-    "DANCE_WORLD": 3,
-    "LOCAL_DANCE": 1,
-    "CORE_DANCE": 1
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 3
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 272,
+      "durationMs": 346,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
       "count": 3,
-      "durationMs": 288,
+      "durationMs": 381,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 0,
-      "durationMs": 384,
+      "count": 1,
+      "durationMs": 246,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 363,
+      "durationMs": 350,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 439,
+      "durationMs": 324,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 278,
+      "durationMs": 290,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Ricardo Arias Sets New Paraguayan Record At Backyard Ultra World Championship - The Asunción Times",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQV9hUTZEUndPSkRSS2pIekNIa2U3M25sdjdrZ3ZDWkRIRjdMUlRSVFMyQ1dkOHM2WjRRTzNNU3VNNl9yWjhjVzZVYnRMbkxZY0VjeHM3NEowQ3ZOZUtXT01QS2xGSTkyeFU1VVRtSVFMZTJJekd2TjE2NUVXSkVjRUhDZ1hBUTl4YzhJZGxvcmpsTTU4SkVJLWVRR3BCc25VS1hlbEdNclM0VDdPb3JPOU41UGMxZjFkSHpFZFFDMEx2LVpxZVZ1ejR3?oc=5",
-      "content": "Ricardo Arias Sets New Paraguayan Record At Backyard Ultra World Championship &nbsp;&nbsp; The Asunción Times",
-      "publishedAt": "2026-10-21T09:52:00.000Z",
-      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "title": "2026 ADCC World Championships Presented by FloGrappling - FloGrappling",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFdBUzJvdW1uRVUxQVJHaWxNYkNKMkFjbVJOSllON2tVdzdDNkNzVU9CY3l1VWI0aVRLd2I5R3hCRjgwYUtHVnVWR3k5eFhaN1NhT3lYVGI4eFBNRjV6WVNnaXFOQXFSNnVvRWFoc3ZOaUhCd2FidVF4cEY1YlZTdktCRHFiQV9CLWY4MV9VODVZV3R6WnBtQ3h3RVZZdnRoV1R6QUpOZi15aXM?oc=5",
+      "content": "2026 ADCC World Championships Presented by FloGrappling &nbsp;&nbsp; FloGrappling",
+      "publishedAt": "2026-10-22T09:07:44.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
         "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
@@ -92,6 +91,34 @@
           ],
           "DANCE_WORLD": [
             "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana - Trinidad Express Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZFhLcUhVS1ZRU2NWUUFQUzdUdk1FMDIybjl4d2czUnZGZ00wTThFMXVxUE9fcGtlc1hMUkdyWk1QMVcyVWtUMU1SX3Z5QmE4Qmp2Q29mTHN0QnFxWElIU0liX3J1TWY0WENLZGRVSWZzbFBfRXJCTmFhTmZSYnd6MmVQR3VLVTlUZGJWRzc0NzdxU2V0eWZVODJPYzhRalctb3VSVUx1S1E5NWpwT0RqNkpDaGcxbmVWTmQwNXRnVzVTaktuVVV1Szh5ZGhIR0t1blc3UU5uUVgyaTk1dXlWbk15ek5CVEVONjBjNXJKOUdyQUhaQnfSAfsBQVVfeXFMTWIzbEZQTjJnRWlQMkpsY2NZbFU2Y1RfTzluS2dxb1hNMms3RHFFbGMxMTBMcVNVVjFnZkNTRXZTM3VRS0tFclZDNkZmbzR3OFMxTm5id09YUUxEcDlHazRWLTlKWThGUWsxaVVDU3Nja0VSN2pReWJZenZJdkR5WEk1aEM0a3J0b2gtazY2OGxYNlJHdGJyWktKR0NGWEpMZ1R1N2JVdmM0YktTN0dZaDlWNHVQU1FoYXc0SFRVTFgxRWhQQ25CMVgwdFhkMjBKZVRnZUt1NTYtU0pPTHcwcVA5blBUU0tMZGtpbEZ0ekd4QkR3ODB4NkhDVWs?oc=5",
+      "content": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana &nbsp;&nbsp; Trinidad Express Newspapers",
+      "publishedAt": "2026-10-21T23:22:00.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
           ],
           "CONTENT_SIGNAL": [
             "new"
@@ -107,116 +134,51 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Japan claims men’s team gold in dramatic World Championships final in Rotterdam - International Gymnast Magazine Online",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM0hlNEJDTXU5anNXQV80aTl5c0xlcDRhdmd3czMtazlaQVJzaTh6eDhuUXg1SjNWSjNweEhfVk8wODd3M3hNZUtxaU4xOFREZXlaTGtJUTd1dmhxX19YMDlTUGtBc1lxcHRucFlmT3FiMVlsYXh4WXB5QUNWNTFuZkc0U3ZuNENteGZqU0ZxaVlfM1hLQmZsOHE3d2t0dGNvWUF2S09iUFRxOXpPNGMyRUlR?oc=5",
-      "content": "Japan claims men’s team gold in dramatic World Championships final in Rotterdam &nbsp;&nbsp; International Gymnast Magazine Online",
-      "publishedAt": "2026-10-20T21:12:52.000Z",
-      "collectedAt": "2026-10-21T12:00:09.249Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship",
-            "international"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Artistic Gymnastics World Championships 2026: Japan defend team title led by Hashimoto Daiki and Oka Shinnosuke - Olympics",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOU3FxeUR4aHYtUDQtbE0wSVU5U1lkcXMxVEVnekJNVmE1ZU80RWxuZWU1LTlpUnFlbnNERFlXc2RNdGVRYS15OTdiR1FDekpLeGFDMkNkT05zVGZXaUpUS2pGaGhHUTFpYmpUclJPUHZoeC1USkdLNVJpSlZfbDRfUXdsa01WdGYyR3pOeDBMa0hpeUxpZEFlUEZwZ3F4dkVvWUVv?oc=5",
-      "content": "Artistic Gymnastics World Championships 2026: Japan defend team title led by Hashimoto Daiki and Oka Shinnosuke &nbsp;&nbsp; Olympics",
-      "publishedAt": "2026-10-20T20:50:00.000Z",
-      "collectedAt": "2026-10-21T12:00:09.249Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "Радий Хабиров поздравил жителей Башкортостана с Днём национального танца - Resbash.ru",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWmtHMHh5Q1ZleXE0VktUUTA4UHFNdHptQy1Pd0gwWEVkZHRPcmphYkN0UExNekxfc2RrejhDM0pXOEV5WWxuSHlWWXU3VWtVWVNxOG9kUXdPNDVkTUJHN29VZnVTWE01SWV2OXpoNDdJQkJVc29kclFoVFBYbGFTeXVhRDk3Y2pSNDlRY25VWjdLRkhhWUVhOEdoOG1ka3VneUYwdWVLNXB5cnZReDZZbXg3bzhMWWtGY2hseE4yOG1hZzZhZXc?oc=5",
-      "content": "Радий Хабиров поздравил жителей Башкортостана с Днём национального танца &nbsp;&nbsp; Resbash.ru",
-      "publishedAt": "2026-10-21T07:29:30.000Z",
-      "collectedAt": "2026-10-21T12:00:08.502Z",
-      "analysis": {
-        "relevance": 59,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "What's the DWTS theme tonight? Songs, dances, lineup, guests - Bergen Record",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUFM2TVlaVU5Ca3NuLWo1RFg5ZE9GSHY5ckNjQjd1ZDhnOHQ2OHMzUUsxekdqdUdMYkpLTXMzRFU1VzhIOEp3eklVeTAyUUJXZEhlVm5od2ZRbTBfeTNPRkFNMG9lUm5ZZXNZT2VFN3RkYkZqRVVIOGNDNHFWR3g0TnBfcUpxNWpxRmxPZXhNWFZnQkk2Nm5Sd0hkRVhjQUdUNzNBTUhWLUZKZHNCQTJCSg?oc=5",
-      "content": "What's the DWTS theme tonight? Songs, dances, lineup, guests &nbsp;&nbsp; Bergen Record",
-      "publishedAt": "2026-10-21T00:22:00.000Z",
-      "collectedAt": "2026-10-21T12:00:09.249Z",
+      "title": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON3B5T3RzMWlYcDZCXzd2Q3BKNzVrRFFpejVodVB4Yzc3S3BuLUY2MGxMZnlVaGd0YldYR3dhMWdrSWMxRGtPUUowRkNqRC02Y2V0eVlOYzZsOHVGUmNDSFpGOXBEeUdOenpqaDVyVXE1Tk55SEE1cDJmRjZOdGtZVjFvbm5XQQ?oc=5",
+      "content": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-21T13:46:00.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dancers shine at SA Open Championship - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGI3YWNpby1VUDFsa1g0TEFNeEVpT2YzODFRVVFrUmdoWWtxVFVyVG04ZFJUWmFFWkw0NXh2eC03WFRMRGVHVlgxN09rbVhvNHFKWVF1QTc3ejI1UlBNN3VjdzlITjJpZU1WZmJib0h2QTlGV0pqT3BDZzE1a3Q3bEdCblNKU2h6MW1VU1dZYng3Wm5ybEdBaVV3OFR3MG9jTk9yRg?oc=5",
+      "content": "Dancers shine at SA Open Championship &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-10-22T07:06:21.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
           ]
         },
         "context": {

@@ -1,0 +1,194 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-22T12:03:04.890Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 11,
+    "duplicatesRemoved": 23,
+    "classifiedFacts": 11,
+    "relevantSignals": 4,
+    "durationMs": 1942
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 346,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 381,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 246,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 350,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 324,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 290,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 ADCC World Championships Presented by FloGrappling - FloGrappling",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFdBUzJvdW1uRVUxQVJHaWxNYkNKMkFjbVJOSllON2tVdzdDNkNzVU9CY3l1VWI0aVRLd2I5R3hCRjgwYUtHVnVWR3k5eFhaN1NhT3lYVGI4eFBNRjV6WVNnaXFOQXFSNnVvRWFoc3ZOaUhCd2FidVF4cEY1YlZTdktCRHFiQV9CLWY4MV9VODVZV3R6WnBtQ3h3RVZZdnRoV1R6QUpOZi15aXM?oc=5",
+      "content": "2026 ADCC World Championships Presented by FloGrappling &nbsp;&nbsp; FloGrappling",
+      "publishedAt": "2026-10-22T09:07:44.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana - Trinidad Express Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZFhLcUhVS1ZRU2NWUUFQUzdUdk1FMDIybjl4d2czUnZGZ00wTThFMXVxUE9fcGtlc1hMUkdyWk1QMVcyVWtUMU1SX3Z5QmE4Qmp2Q29mTHN0QnFxWElIU0liX3J1TWY0WENLZGRVSWZzbFBfRXJCTmFhTmZSYnd6MmVQR3VLVTlUZGJWRzc0NzdxU2V0eWZVODJPYzhRalctb3VSVUx1S1E5NWpwT0RqNkpDaGcxbmVWTmQwNXRnVzVTaktuVVV1Szh5ZGhIR0t1blc3UU5uUVgyaTk1dXlWbk15ek5CVEVONjBjNXJKOUdyQUhaQnfSAfsBQVVfeXFMTWIzbEZQTjJnRWlQMkpsY2NZbFU2Y1RfTzluS2dxb1hNMms3RHFFbGMxMTBMcVNVVjFnZkNTRXZTM3VRS0tFclZDNkZmbzR3OFMxTm5id09YUUxEcDlHazRWLTlKWThGUWsxaVVDU3Nja0VSN2pReWJZenZJdkR5WEk1aEM0a3J0b2gtazY2OGxYNlJHdGJyWktKR0NGWEpMZ1R1N2JVdmM0YktTN0dZaDlWNHVQU1FoYXc0SFRVTFgxRWhQQ25CMVgwdFhkMjBKZVRnZUt1NTYtU0pPTHcwcVA5blBUU0tMZGtpbEZ0ekd4QkR3ODB4NkhDVWs?oc=5",
+      "content": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana &nbsp;&nbsp; Trinidad Express Newspapers",
+      "publishedAt": "2026-10-21T23:22:00.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON3B5T3RzMWlYcDZCXzd2Q3BKNzVrRFFpejVodVB4Yzc3S3BuLUY2MGxMZnlVaGd0YldYR3dhMWdrSWMxRGtPUUowRkNqRC02Y2V0eVlOYzZsOHVGUmNDSFpGOXBEeUdOenpqaDVyVXE1Tk55SEE1cDJmRjZOdGtZVjFvbm5XQQ?oc=5",
+      "content": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-21T13:46:00.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dancers shine at SA Open Championship - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGI3YWNpby1VUDFsa1g0TEFNeEVpT2YzODFRVVFrUmdoWWtxVFVyVG04ZFJUWmFFWkw0NXh2eC03WFRMRGVHVlgxN09rbVhvNHFKWVF1QTc3ejI1UlBNN3VjdzlITjJpZU1WZmJib0h2QTlGV0pqT3BDZzE1a3Q3bEdCblNKU2h6MW1VU1dZYng3Wm5ybEdBaVV3OFR3MG9jTk9yRg?oc=5",
+      "content": "Dancers shine at SA Open Championship &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-10-22T07:06:21.000Z",
+      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
