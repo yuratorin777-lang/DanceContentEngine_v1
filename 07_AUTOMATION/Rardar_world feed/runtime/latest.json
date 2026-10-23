@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-22T12:03:04.890Z",
+  "runAt": "2026-10-23T11:48:21.526Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,113 +15,122 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 34,
-    "uniqueFacts": 11,
-    "duplicatesRemoved": 23,
-    "classifiedFacts": 11,
-    "relevantSignals": 4,
-    "durationMs": 1942
+    "rawFacts": 32,
+    "uniqueFacts": 16,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 16,
+    "relevantSignals": 6,
+    "durationMs": 3313
   },
   "distribution": {
-    "DANCE_WORLD": 1,
-    "CORE_DANCE": 3
+    "LOCAL_DANCE": 1,
+    "CORE_DANCE": 4,
+    "LOCAL_ECOSYSTEM": 1
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 346,
+      "durationMs": 319,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 3,
-      "durationMs": 381,
+      "count": 2,
+      "durationMs": 259,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 1,
-      "durationMs": 246,
+      "count": 0,
+      "durationMs": 470,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 350,
+      "durationMs": 620,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 324,
+      "durationMs": 645,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 290,
+      "durationMs": 994,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "2026 ADCC World Championships Presented by FloGrappling - FloGrappling",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFdBUzJvdW1uRVUxQVJHaWxNYkNKMkFjbVJOSllON2tVdzdDNkNzVU9CY3l1VWI0aVRLd2I5R3hCRjgwYUtHVnVWR3k5eFhaN1NhT3lYVGI4eFBNRjV6WVNnaXFOQXFSNnVvRWFoc3ZOaUhCd2FidVF4cEY1YlZTdktCRHFiQV9CLWY4MV9VODVZV3R6WnBtQ3h3RVZZdnRoV1R6QUpOZi15aXM?oc=5",
-      "content": "2026 ADCC World Championships Presented by FloGrappling &nbsp;&nbsp; FloGrappling",
-      "publishedAt": "2026-10-22T09:07:44.000Z",
-      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "title": "Танцоры из Коммунара получили награды Международного конкурса - Гатчинская Служба Новостей",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFhsRVF5dHFRb1FUaHlENUpiRWFoMGMzVWJremo2bWczaHdUTjNuTVBSQllJdkQxQkFPUU42SW1QTXZfb2J3TmR3bU1xRkNmT3BjR0M5bDdMUDh6ZlgwY1lGMnptZEpKZUkxSlV5VGlmTjN0VHNPeXJhQ3lfT0hXOU5Bb1JOZUFFUzdQNHNvM0pXdjNicUkta2J0d3JMZw?oc=5",
+      "content": "Танцоры из Коммунара получили награды Международного конкурса &nbsp;&nbsp; Гатчинская Служба Новостей",
+      "publishedAt": "2026-10-22T13:46:40.000Z",
+      "collectedAt": "2026-10-23T11:48:18.794Z",
       "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 95,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "конкурс",
+            "танц"
           ],
           "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana - Trinidad Express Newspapers",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZFhLcUhVS1ZRU2NWUUFQUzdUdk1FMDIybjl4d2czUnZGZ00wTThFMXVxUE9fcGtlc1hMUkdyWk1QMVcyVWtUMU1SX3Z5QmE4Qmp2Q29mTHN0QnFxWElIU0liX3J1TWY0WENLZGRVSWZzbFBfRXJCTmFhTmZSYnd6MmVQR3VLVTlUZGJWRzc0NzdxU2V0eWZVODJPYzhRalctb3VSVUx1S1E5NWpwT0RqNkpDaGcxbmVWTmQwNXRnVzVTaktuVVV1Szh5ZGhIR0t1blc3UU5uUVgyaTk1dXlWbk15ek5CVEVONjBjNXJKOUdyQUhaQnfSAfsBQVVfeXFMTWIzbEZQTjJnRWlQMkpsY2NZbFU2Y1RfTzluS2dxb1hNMms3RHFFbGMxMTBMcVNVVjFnZkNTRXZTM3VRS0tFclZDNkZmbzR3OFMxTm5id09YUUxEcDlHazRWLTlKWThGUWsxaVVDU3Nja0VSN2pReWJZenZJdkR5WEk1aEM0a3J0b2gtazY2OGxYNlJHdGJyWktKR0NGWEpMZ1R1N2JVdmM0YktTN0dZaDlWNHVQU1FoYXc0SFRVTFgxRWhQQ25CMVgwdFhkMjBKZVRnZUt1NTYtU0pPTHcwcVA5blBUU0tMZGtpbEZ0ekd4QkR3ODB4NkhDVWs?oc=5",
-      "content": "11 Trophies and a Golden Ticket: P83 Dance Makes Its Mark in Punta Cana &nbsp;&nbsp; Trinidad Express Newspapers",
-      "publishedAt": "2026-10-21T23:22:00.000Z",
-      "collectedAt": "2026-10-22T12:03:04.274Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
+            "международн",
+            "международ"
           ],
           "CONTENT_SIGNAL": [
-            "new"
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Pool Championship Heads to Bahrain for First Time - Sports Travel Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYlZrMGo1ZmlvS3ZuMVE0Zjg2Zk5wV2pKYWxxenlYTVRFbEcwUzZZcS1BaHRHdkg3c2R3OGpDNVhBbGVyYmhDTUVFREV3QXdNR3Q2bVVLY0JjV0psR3BvaEhJU2tfbGRkRTFFbUprRnBoX3FXYnlqYzB6TGV1V2pRMTBPQWVMZWpvWVk1bWQwY1NkNkoxVk8ybg?oc=5",
+      "content": "World Pool Championship Heads to Bahrain for First Time &nbsp;&nbsp; Sports Travel Magazine",
+      "publishedAt": "2026-10-22T21:42:47.000Z",
+      "collectedAt": "2026-10-23T11:48:19.884Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
           ]
         },
         "context": {
@@ -134,15 +143,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad - Olympics",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON3B5T3RzMWlYcDZCXzd2Q3BKNzVrRFFpejVodVB4Yzc3S3BuLUY2MGxMZnlVaGd0YldYR3dhMWdrSWMxRGtPUUowRkNqRC02Y2V0eVlOYzZsOHVGUmNDSFpGOXBEeUdOenpqaDVyVXE1Tk55SEE1cDJmRjZOdGtZVjFvbm5XQQ?oc=5",
-      "content": "World Wrestling Championships 2026: Sujeet Kalkal in focus as Aman Sehrawat, Antim Panghal opt out - full India squad &nbsp;&nbsp; Olympics",
-      "publishedAt": "2026-10-21T13:46:00.000Z",
-      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "title": "From The Athletic: China won its first women’s team title at the World Artistic Gymnastics Championships since 2006, breaking the United States’ streak of seven straight team world golds. - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNajNFSkFENy1rZHVaLThzMHZ4ZlNZVnhOS2k4T2pEMnc1cHE5d3I4MnV6cVJnV2syV3RMZGRSM0VEU3dkdVYwMlYwN3VyLWl6b0FpN3dGR3JNZU5ObmpUYmVIRTMxTVdoT0otOU1mN05aTmFiTUEzNVBFc19aYll5dVg2QlhXbk9mQ2JlV2xXREZZRWd0V2doVzhWT2VIS2NvX1lUcFlfOTJrRW82YVVoQlJrYzRzT21PR1BKSkRJNFYxb3pUVkpSVGZDcjN1ZGpFdGhN?oc=5",
+      "content": "From The Athletic: China won its first women’s team title at the World Artistic Gymnastics Championships since 2006, breaking the United States’ streak of seven straight team world golds. &nbsp;&nbsp; Facebook",
+      "publishedAt": "2026-10-22T14:25:03.000Z",
+      "collectedAt": "2026-10-23T11:48:19.884Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -162,22 +171,21 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Dancers shine at SA Open Championship - The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGI3YWNpby1VUDFsa1g0TEFNeEVpT2YzODFRVVFrUmdoWWtxVFVyVG04ZFJUWmFFWkw0NXh2eC03WFRMRGVHVlgxN09rbVhvNHFKWVF1QTc3ejI1UlBNN3VjdzlITjJpZU1WZmJib0h2QTlGV0pqT3BDZzE1a3Q3bEdCblNKU2h6MW1VU1dZYng3Wm5ybEdBaVV3OFR3MG9jTk9yRg?oc=5",
-      "content": "Dancers shine at SA Open Championship &nbsp;&nbsp; The Citizen",
-      "publishedAt": "2026-10-22T07:06:21.000Z",
-      "collectedAt": "2026-10-22T12:03:04.274Z",
+      "title": "Todd Benzinger, a member of the Cincinnati Reds' 1990 World Series championship team, dies at 63 - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQmRDTmJDcXlrTml1UmNuNXpRcy1lUDdDbE53dGtMbE1fR3FMc2pJRWtsUThLRF94V09JeTdyQlZFWEUyRlI1OFV6dGlSbUltYlczU25sLWlYRTVKWFBSVUpxUWZZVEdjQ01OQ2hHUm5CZElIZ1RkN194V3NILVBmVHF3eld1UlFoM21jUy02UTh1Rlp6bmlGLXdQMmYzNWtvRlh0OTZTQTJSdndDa2lpdU5uM3RqYjBJZGRVbnc0cG9zbU93LXloR0Ewck9pS1ZZeEtFVzQ0OTI?oc=5",
+      "content": "Todd Benzinger, a member of the Cincinnati Reds' 1990 World Series championship team, dies at 63 &nbsp;&nbsp; WKMG",
+      "publishedAt": "2026-10-22T17:46:14.000Z",
+      "collectedAt": "2026-10-23T11:48:19.884Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance",
             "championship"
           ]
         },
@@ -185,6 +193,66 @@
           "local": false,
           "russia": false,
           "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Recap: Men’s all-around final at the 2026 World Artistic Gymnastics Championships - Gymnastics Now",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU2tzbDloZy12R05WUnFQNmg5OE1zMy03M0gzYTRNeS03cXBDcVdLSkl3cE1yVzREZmZoMVFPUTN1enNGVnhXeUdMQVJJdEc3am14eks4eFpyVU92OTNzVHNnX2tiOVdUMWV1bHllSXozMDAtX3JLOTFfblN5LVFSZ3VnT2tnUXlobVJTSW5SXzkwMnNvNHl3R1VR?oc=5",
+      "content": "Recap: Men’s all-around final at the 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
+      "publishedAt": "2026-10-22T19:26:12.000Z",
+      "collectedAt": "2026-10-23T11:48:19.884Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский сад как площадка для интеграции: опыт работы с детьми иностранных граждан - Новосибирский информационно-образовательный сайт",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLXhCcmY0dUxlNE15S1ZhQndYb1diVmhQbmxqQVdwbGNFVGd6Rm5UUXpEeVVILTEtQ0swUU5ZQ2hiUUNhYUZMS0tvSUdZVmtSYTVwOWFUZFQ0aEpiYnplTXNPSGxIRnhXbnRfQnlncWluMFlBSFhJeGFBUGYtVGNKRThrNFZaVHRpYkJmTEZBRFZaZnE4LUdDTk05VGF1NlNpT2VpeGdsTy0?oc=5",
+      "content": "Детский сад как площадка для интеграции: опыт работы с детьми иностранных граждан &nbsp;&nbsp; Новосибирский информационно-образовательный сайт",
+      "publishedAt": "2026-10-23T03:02:46.000Z",
+      "collectedAt": "2026-10-23T11:48:18.794Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов",
+            "как"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
         },
         "isFact": true,
         "confidence": 0.8
