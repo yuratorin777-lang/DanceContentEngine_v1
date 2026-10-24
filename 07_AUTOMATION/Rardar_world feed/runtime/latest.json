@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-23T11:48:21.526Z",
+  "runAt": "2026-10-24T11:13:44.772Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,88 +15,115 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 32,
-    "uniqueFacts": 16,
-    "duplicatesRemoved": 16,
-    "classifiedFacts": 16,
-    "relevantSignals": 6,
-    "durationMs": 3313
+    "rawFacts": 25,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 11,
+    "classifiedFacts": 14,
+    "relevantSignals": 5,
+    "durationMs": 1834
   },
   "distribution": {
+    "DANCE_WORLD": 1,
     "LOCAL_DANCE": 1,
-    "CORE_DANCE": 4,
-    "LOCAL_ECOSYSTEM": 1
+    "ADJACENT_DOMAIN": 2,
+    "CORE_DANCE": 1
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 319,
+      "durationMs": 244,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 2,
-      "durationMs": 259,
+      "count": 1,
+      "durationMs": 243,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 470,
+      "durationMs": 293,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 620,
+      "durationMs": 437,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 15,
-      "durationMs": 645,
+      "count": 9,
+      "durationMs": 322,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 994,
+      "durationMs": 293,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "U.S. gymnast Skye Blakely's long road to top ends with artistic world championship gold - CBC",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS1ZPUTduajNnbUhHSmhSRjlPUFdaV2FOckdmc0ZYNzFQTHRNYUszdkxGNDJRcDJuN2MtSFJROVVPU3dBWTFhdzNMRTViQ3RMV3dFM1pTZ2p1X0kxWG5ib0I2bFZEOEhxRHdseGk2NXhxZVdVWUM3X2dDM2pVYlB1VXpQMzluTTVMaGlwREZ4WG9jc0VWTXR2MURQN2N4MkllUnZXZ3Jn?oc=5",
+      "content": "U.S. gymnast Skye Blakely's long road to top ends with artistic world championship gold &nbsp;&nbsp; CBC",
+      "publishedAt": "2026-10-23T23:18:51.000Z",
+      "collectedAt": "2026-10-24T11:13:44.156Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2pidnY5",
       "source": "Google News — детские танцы Россия",
       "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Танцоры из Коммунара получили награды Международного конкурса - Гатчинская Служба Новостей",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFhsRVF5dHFRb1FUaHlENUpiRWFoMGMzVWJremo2bWczaHdUTjNuTVBSQllJdkQxQkFPUU42SW1QTXZfb2J3TmR3bU1xRkNmT3BjR0M5bDdMUDh6ZlgwY1lGMnptZEpKZUkxSlV5VGlmTjN0VHNPeXJhQ3lfT0hXOU5Bb1JOZUFFUzdQNHNvM0pXdjNicUkta2J0d3JMZw?oc=5",
-      "content": "Танцоры из Коммунара получили награды Международного конкурса &nbsp;&nbsp; Гатчинская Служба Новостей",
-      "publishedAt": "2026-10-22T13:46:40.000Z",
-      "collectedAt": "2026-10-23T11:48:18.794Z",
+      "title": "Возвращение «Очень простой истории», «сказочные» киноновинки и кавказские танцы: куда сходить в Ставрополе 24 и 25 октября - Победа 26",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPT0V3bGlfVjZOc0lYVVVIQ2RQSmZTcUxqZDVDX2lXcEg1MDAwSENuWHZhUWtoenQyc2lGbFVhRkthOGVoOXdjSlZFOUQ0ZDh5X1pyenhEYkQ4aGI1LXM5dlFHNWU1YVVZM2I0OXQxZ3hxVC1JamhCdXNtQmpHWXA5S1N4SnAzYk1udHFaQldRamZYaVVkS0tSNF9aRGFuQjctOUJUYlJPdHB2Y0xQd2lHdUkwQUZieVhoRlBfT19pVjV4SE1NUXB2cXdjYjk4WXpTblBzbmNEODVDVENHcktsSFliRkxnTUF0LTlvX21MTzR4VUZ4TjNucWpBLU1TanpxbWxnM01R?oc=5",
+      "content": "Возвращение «Очень простой истории», «сказочные» киноновинки и кавказские танцы: куда сходить в Ставрополе 24 и 25 октября &nbsp;&nbsp; Победа 26",
+      "publishedAt": "2026-10-23T18:00:00.000Z",
+      "collectedAt": "2026-10-24T11:13:43.426Z",
       "analysis": {
-        "relevance": 95,
-        "relevanceLevel": "HIGH",
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
         "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "танц"
           ],
           "LOCAL_ECOSYSTEM": [
-            "конкурс",
             "танц"
-          ],
-          "DANCE_WORLD": [
-            "международн",
-            "международ"
           ],
           "CONTENT_SIGNAL": [
             "нов"
@@ -105,29 +132,32 @@
         "context": {
           "local": true,
           "russia": true,
-          "global": true
+          "global": false
         },
         "isFact": true,
         "confidence": 0.8
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "World Pool Championship Heads to Bahrain for First Time - Sports Travel Magazine",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYlZrMGo1ZmlvS3ZuMVE0Zjg2Zk5wV2pKYWxxenlYTVRFbEcwUzZZcS1BaHRHdkg3c2R3OGpDNVhBbGVyYmhDTUVFREV3QXdNR3Q2bVVLY0JjV0psR3BvaEhJU2tfbGRkRTFFbUprRnBoX3FXYnlqYzB6TGV1V2pRMTBPQWVMZWpvWVk1bWQwY1NkNkoxVk8ybg?oc=5",
-      "content": "World Pool Championship Heads to Bahrain for First Time &nbsp;&nbsp; Sports Travel Magazine",
-      "publishedAt": "2026-10-22T21:42:47.000Z",
-      "collectedAt": "2026-10-23T11:48:19.884Z",
+      "title": "How to watch the 2026 Figure Skating Grand Prix France this weekend: Channel, streaming info, schedule and more - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNLVlzcHRUS2c4TUx4X3FJNVpHTktzaXY3OTB2eGFuSTRLeW9UdUNHUU5hcWRLdFROa1Brd3RpTEJuQWVVUGRqc3ROeDhXZW4xeW0wYllTWDNuSGZrbjFuX0d0ODFOQ29ad2JNRVNzRzdHVHYxMDBSU2p4NGtiTlpXNlVFN2ExS2hRaXduTy04RlBiUnA1Z3YzUkQyaW1lMnZ1TEJQRHVpdkZvUkh0WjlidzRsVGVidE8zNFVZMEFJcGQ1UGl6MWJTOXNHaHI4V1I5bjEzMFRWR1JSdndyNnNabzZWZmk0NTZ2eVFJWmtPc1NZeEF3YW5tSA?oc=5",
+      "content": "How to watch the 2026 Figure Skating Grand Prix France this weekend: Channel, streaming info, schedule and more &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-23T21:19:00.000Z",
+      "collectedAt": "2026-10-24T11:13:44.156Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
         "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "CONTENT_SIGNAL": [
+            "how to"
           ],
           "ACTIVITY_CONTEXT": [
             "sport"
@@ -143,116 +173,59 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "From The Athletic: China won its first women’s team title at the World Artistic Gymnastics Championships since 2006, breaking the United States’ streak of seven straight team world golds. - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNajNFSkFENy1rZHVaLThzMHZ4ZlNZVnhOS2k4T2pEMnc1cHE5d3I4MnV6cVJnV2syV3RMZGRSM0VEU3dkdVYwMlYwN3VyLWl6b0FpN3dGR3JNZU5ObmpUYmVIRTMxTVdoT0otOU1mN05aTmFiTUEzNVBFc19aYll5dVg2QlhXbk9mQ2JlV2xXREZZRWd0V2doVzhWT2VIS2NvX1lUcFlfOTJrRW82YVVoQlJrYzRzT21PR1BKSkRJNFYxb3pUVkpSVGZDcjN1ZGpFdGhN?oc=5",
-      "content": "From The Athletic: China won its first women’s team title at the World Artistic Gymnastics Championships since 2006, breaking the United States’ streak of seven straight team world golds. &nbsp;&nbsp; Facebook",
-      "publishedAt": "2026-10-22T14:25:03.000Z",
-      "collectedAt": "2026-10-23T11:48:19.884Z",
+      "title": "Ke Qinqin of China on world all-around bronze: ‘It gives me motivation to keep striving’ - International Gymnast Magazine Online",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOa2VZVkZyWVlIQ3AzZkllb3Y3Q1l1aUFJSzRuOExLdkNpM2toRTJ6dUhYYk9JbzIyQVJPVmJ6cHg1QTAyLVdEMDVtUFBOZTd5bWtrd25IZ21FT0VISURtRHlVX2J3dG0wZno2bjZvcjFmTFZEUFhWWnlEczN0NVgyT1Q4Y2xvX2c4eTYzbmdjbWVfOXo0TVFOc2hkelFlVHdHSzZMN1JfMjRiWFgwaVpLUnM0VDNqNUNrMUJlRldhWkNCaWhpbkpHRENsQUdVS3pLMzVMQ2F3?oc=5",
+      "content": "Ke Qinqin of China on world all-around bronze: ‘It gives me motivation to keep striving’ &nbsp;&nbsp; International Gymnast Magazine Online",
+      "publishedAt": "2026-10-24T05:31:31.000Z",
+      "collectedAt": "2026-10-24T11:13:44.156Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "primaryCategory": "ADJACENT_DOMAIN",
         "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Todd Benzinger, a member of the Cincinnati Reds' 1990 World Series championship team, dies at 63 - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQmRDTmJDcXlrTml1UmNuNXpRcy1lUDdDbE53dGtMbE1fR3FMc2pJRWtsUThLRF94V09JeTdyQlZFWEUyRlI1OFV6dGlSbUltYlczU25sLWlYRTVKWFBSVUpxUWZZVEdjQ01OQ2hHUm5CZElIZ1RkN194V3NILVBmVHF3eld1UlFoM21jUy02UTh1Rlp6bmlGLXdQMmYzNWtvRlh0OTZTQTJSdndDa2lpdU5uM3RqYjBJZGRVbnc0cG9zbU93LXloR0Ewck9pS1ZZeEtFVzQ0OTI?oc=5",
-      "content": "Todd Benzinger, a member of the Cincinnati Reds' 1990 World Series championship team, dies at 63 &nbsp;&nbsp; WKMG",
-      "publishedAt": "2026-10-22T17:46:14.000Z",
-      "collectedAt": "2026-10-23T11:48:19.884Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Recap: Men’s all-around final at the 2026 World Artistic Gymnastics Championships - Gymnastics Now",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU2tzbDloZy12R05WUnFQNmg5OE1zMy03M0gzYTRNeS03cXBDcVdLSkl3cE1yVzREZmZoMVFPUTN1enNGVnhXeUdMQVJJdEc3am14eks4eFpyVU92OTNzVHNnX2tiOVdUMWV1bHllSXozMDAtX3JLOTFfblN5LVFSZ3VnT2tnUXlobVJTSW5SXzkwMnNvNHl3R1VR?oc=5",
-      "content": "Recap: Men’s all-around final at the 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
-      "publishedAt": "2026-10-22T19:26:12.000Z",
-      "collectedAt": "2026-10-23T11:48:19.884Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "Детский сад как площадка для интеграции: опыт работы с детьми иностранных граждан - Новосибирский информационно-образовательный сайт",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLXhCcmY0dUxlNE15S1ZhQndYb1diVmhQbmxqQVdwbGNFVGd6Rm5UUXpEeVVILTEtQ0swUU5ZQ2hiUUNhYUZMS0tvSUdZVmtSYTVwOWFUZFQ0aEpiYnplTXNPSGxIRnhXbnRfQnlncWluMFlBSFhJeGFBUGYtVGNKRThrNFZaVHRpYkJmTEZBRFZaZnE4LUdDTk05VGF1NlNpT2VpeGdsTy0?oc=5",
-      "content": "Детский сад как площадка для интеграции: опыт работы с детьми иностранных граждан &nbsp;&nbsp; Новосибирский информационно-образовательный сайт",
-      "publishedAt": "2026-10-23T03:02:46.000Z",
-      "collectedAt": "2026-10-23T11:48:18.794Z",
-      "analysis": {
-        "relevance": 27,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "LOCAL_ECOSYSTEM",
-        "matchedCategories": {
-          "LOCAL_ECOSYSTEM": [
-            "детск"
+          "PSYCHOLOGY_PEDAGOGY": [
+            "motivation"
           ],
-          "CONTENT_SIGNAL": [
-            "нов",
-            "как"
+          "DANCE_WORLD": [
+            "international"
           ]
         },
         "context": {
-          "local": true,
-          "russia": true,
-          "global": false
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Recap: Women’s all-around final at the 2026 World Artistic Gymnastics Championships - Gymnastics Now",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRFNGZC1ubHltdk1FeVhHM1R5SXc0aUU4aVBIY3hmei1iLWhPaFdEb3Y4ajEzT3F2SGpLQXBDZ1JWdzN0Xzdna1hLSXN3UGJMZzBRSHlGd0RzMjFrOTZ2cENVWVZwSVctS1pqeTEwLTFKcGNmOWZsa1JRemhacTIwbjJPemhQbFRCYkFEa1lBVVEzZ29PVC14d2haSm4?oc=5",
+      "content": "Recap: Women’s all-around final at the 2026 World Artistic Gymnastics Championships &nbsp;&nbsp; Gymnastics Now",
+      "publishedAt": "2026-10-23T20:45:34.000Z",
+      "collectedAt": "2026-10-24T11:13:44.156Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
         },
         "isFact": true,
         "confidence": 0.8
