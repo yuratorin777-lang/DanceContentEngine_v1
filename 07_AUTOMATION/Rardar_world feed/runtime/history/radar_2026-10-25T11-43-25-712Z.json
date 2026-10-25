@@ -1,0 +1,253 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-25T11:43:25.712Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 23,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 9,
+    "classifiedFacts": 14,
+    "relevantSignals": 6,
+    "durationMs": 1802
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 2,
+    "LOCAL_ECOSYSTEM": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 1,
+      "durationMs": 313,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 235,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 326,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 358,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 5,
+      "durationMs": 299,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 268,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Artistic Gymnastics World Championships 2026: Full schedule, all results, scores and medals – complete list - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSS1RYmZYaElOUWhXeDd4T2hHcUdhOEMwZTlzRTB5bzhUWHlTNURqMFlmNXFKNjVPTzh0TVhHenRyTXRpeWNDUG41eXFwaWozNEtvdWpfcnY0dzhLMzI0OTJBNGNteV9aZVRWMFdzbDUyTnhwLUlKX05wdWYwVmpNcjJOaVR0NThKVzFNSWpyV2F5Wk9mem1mRXBDNzV1Tzl2bXAxZmliQkF3TWRG?oc=5",
+      "content": "Artistic Gymnastics World Championships 2026: Full schedule, all results, scores and medals – complete list &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-24T15:23:00.000Z",
+      "collectedAt": "2026-10-25T11:43:25.142Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "This is the Red Bull Dance Your Style 2026 World Final line-up - Red Bull",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zMFJHNWthRVlXTHhzZzZ1VzJXdUc4eUxVU05xMjNBdE1pbmctVnprOTZHOWxXZHVHN0RuZy1VYUtJcHVKaDFWaWhmaDNDZDlwUTZ3YlE4Z25Ndnpoa19jQk1oaWduaVUtOGVFWFZTNW1OZ1U?oc=5",
+      "content": "This is the Red Bull Dance Your Style 2026 World Final line-up &nbsp;&nbsp; Red Bull",
+      "publishedAt": "2026-10-24T22:45:46.000Z",
+      "collectedAt": "2026-10-25T11:43:25.142Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "DANCE_WORLD": [
+            "world final"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Willis, 16, Is the 2026 Red Bull Dance Your Style World Champion - urbanstreet.com.pe",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNelcyWWM3R0g5M0NyTU9SSTB1ZWtCZk5aZFNRWXlUcDNWQkhaMlVKRjNMUXoyYkduQ1BDU2pUZzdvY01vcEo5d1BVVHNWNVRPd2VPVmtadU5telE0cDJ6RzVyMktaclp4eUtfVHBxQnJKMlVXUncyR2xDaThRUDZXYVVWMUI3QmVuVVVGNVZmR2tJdw?oc=5",
+      "content": "Willis, 16, Is the 2026 Red Bull Dance Your Style World Champion &nbsp;&nbsp; urbanstreet.com.pe",
+      "publishedAt": "2026-10-25T09:00:00.000Z",
+      "collectedAt": "2026-10-25T11:43:25.142Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 Gymnastics Worlds: Simone Biles returns to global championship: 'It's nice to be in this atmosphere again' - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTjJCU1BXdDRqTGxEbDJRdW9wclI3OHFCRW5wV080dllGeFdSWFBSQTdGZTFIVkw2MkpQdWQwX095V0pERVpKWHlJNXEwd05faEJXTFVWelVHZ0tzYTdQSHVEZ0swbWE3b3pORUhDcnFFcmlsMGt6QUNVemU2S0ZVWmZ2T0JyZlFiQ2xZeGpUSXFaMlgyWlpCeWEwMDNMN3E2eGc0QmFYTEw5UlZIaHF0a1VKR3I2YVE4enhZZzUxaTFvaUV3ZDNxSEFLZ3NfYW4wR0NjZGk3UQ?oc=5",
+      "content": "2026 Gymnastics Worlds: Simone Biles returns to global championship: 'It's nice to be in this atmosphere again' &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-24T13:03:00.000Z",
+      "collectedAt": "2026-10-25T11:43:25.142Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Стало известно, кто войдет в состав жюри конкурса «Самоцветы России» в Иванове - Известно.ру",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2FhZDU5bmhwRjRPOEk0Q0E4Z20yZmFhOFhMS1REM3otdklOYlFab0M3ZUJCdXNueVlFY2hxNjRPNWJZVk5Za3M0VjV1N3RMS0Qya3Z5b2RNZDVIa1lJMVlZMGlQcDZPenJwNmgxMVB2RTg4Z0ZIVU0tSmxia19nZ3Y2NnJvb3dkMnpveDVhS0IwYU9HNFFoRHZVSGNncTlW?oc=5",
+      "content": "Стало известно, кто войдет в состав жюри конкурса «Самоцветы России» в Иванове &nbsp;&nbsp; Известно.ру",
+      "publishedAt": "2026-10-25T09:07:15.000Z",
+      "collectedAt": "2026-10-25T11:43:24.459Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "конкурс"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2d2ZidnY5",
+      "source": "Google News — Серпухов дети танцы",
+      "sourceScope": "LOCAL",
+      "sourceWeight": 1,
+      "title": "Искусство, деньги и веселье: чем заняться в Серпухове 25 октября - REGIONS.ru",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQakNMRnJZNjVmQXlyemlPZnBBalZnQ2pGV3FIaGgwNHVIUS1fN1hwZDBiZXRrZGhZV2hWdWN6ckoxa1JLMWpNZjZjd0Nob2V4dlhKZUc2dVRUWUkzOUdMLUl3RkZoN0xuRzQyZFlFTGZXdzFPSDR0ekVQa1NCNXUxVHJrb21LWTNTbEx5NUFGUjlLbk8tZXhCT2dMZS11dENuUEN2ZTRySk53WnJEV1BRUlZNZTV6VGg3M3BWM2VZWQ?oc=5",
+      "content": "Искусство, деньги и веселье: чем заняться в Серпухове 25 октября &nbsp;&nbsp; REGIONS.ru",
+      "publishedAt": "2026-10-25T07:03:00.000Z",
+      "collectedAt": "2026-10-25T11:43:24.224Z",
+      "analysis": {
+        "relevance": 25,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "Серпухов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": false,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
