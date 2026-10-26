@@ -1,0 +1,319 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-26T13:15:47.450Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 31,
+    "uniqueFacts": 19,
+    "duplicatesRemoved": 12,
+    "classifiedFacts": 19,
+    "relevantSignals": 8,
+    "durationMs": 2065
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "LOCAL_DANCE": 1,
+    "LOCAL_ECOSYSTEM": 1,
+    "CORE_DANCE": 5
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 292,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 276,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 365,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 496,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 13,
+      "durationMs": 343,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 291,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Russia to host first sporting World Championships since invasion of Ukraine - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbk1oRVJZSS1NNl9RX2ZyV2ZCTGtOUnlXWE1QdFJ5LTRJbDAwY1JqVXFEUFB3NkpiT1lyQjlHaTZmSWZFc0NwU2I1MDYxTXlkbk1sSzU0RXFsRnl6MFUwUU52S0lGalFPZzA1SUxzMUl3TUp1MnZ0VjFVRkpiY3kzbXdSdGtYRHZV?oc=5",
+      "content": "Russia to host first sporting World Championships since invasion of Ukraine &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-10-25T18:38:31.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "«Улыбка» открыла сезон на родной сцене В Свердловской детской филармонии прошёл первый в сезоне концерт ансамбля танца «Улыбка». Программа получилась... 2026 - ВКонтакте",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE54SDRJNzZJUUZucUlvZThHTVdRSmRURGdYY0ZzRkJoaUNkc1d1VW5lLVBLUXZ2VzZLT1l2TXg3bzlOX2laZFBDbg?oc=5",
+      "content": "«Улыбка» открыла сезон на родной сцене В Свердловской детской филармонии прошёл первый в сезоне концерт ансамбля танца «Улыбка». Программа получилась... 2026 &nbsp;&nbsp; ВКонтакте",
+      "publishedAt": "2026-10-26T07:31:55.000Z",
+      "collectedAt": "2026-10-26T13:15:45.953Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1a2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Эстрадная студия «Час ханат» стала лауреатом Международного конкурса «AРТist Сибири. Крылья творчества» - НИА-Хакасия",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fdTdhd0x3OUdKSmNUNkQ4Wi16RnhicGctcXVOampTRWNZT3JhNzZxdE16bHhuSzZOS1c3YTJabnplY3FZVkxXVWxlVzVCU1czQlE?oc=5",
+      "content": "Эстрадная студия «Час ханат» стала лауреатом Международного конкурса «AРТist Сибири. Крылья творчества» &nbsp;&nbsp; НИА-Хакасия",
+      "publishedAt": "2026-10-26T09:19:03.000Z",
+      "collectedAt": "2026-10-26T13:15:45.953Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "конкурс"
+          ],
+          "DANCE_WORLD": [
+            "международн",
+            "международ"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "HCM City students win world robotics championship - DTiNews",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaGNydVhYZmN4YTVSYWlSckZ5U0hsU1ZRdHR4ZVNneW04YUFKS1RuNXphTTU2dFNVemZHVFptMmZrS3hFbFFDQnA0M19xYXJEeGd3QkJHMGMtRHcweUdVZEY4eE1lbWY5MXBnZnBacWhDVzJqX2hKeUtUbDkzQnlOR0JZVjJrTmc3ZHlNWmpOdzJ3TS1aZTlSNlJNdjdvV190WXloZEx2aHNuMVE3c0o0b25QRWphdw?oc=5",
+      "content": "HCM City students win world robotics championship &nbsp;&nbsp; DTiNews",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWpidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Americans Claire Pease and Reese Esponda top the podium on floor at world gymnastics championships - Bozeman Daily Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPaXpyMEZBbnFGbXFDUVdhYk50UlBIOUthWnFpVVBxSDJHRmtjQW4zdTM3NTNuSUptZ09sLVpHa1VtX2htYmNUVTdaamRnUU9PM2lpOVdhLV8wM0NxeDBobFhQZkxrQnpYZmZSU0R6cGF0UkIxNXROd2ZiRHI1VWhyRmctOGFpM2RTRUJVdnZyV1dER3JiS1c5aFp6NmhvRU4tU3podV9XbW5tVWN4VElpeGQ4YnVYZHhmY0tZajZUQVQ4T21GZDB4VnYtX0NJS1Y0ejJxZGdSVDczV0x1OWdvUmVuVW93WVlZZU5yV19jZzhoMjU1aDA5ZmVsNUI4czRzTDcxTkstV1dWbVVSMTd6QzJBcWtxZzk3RGxzbmVncHRTdDky?oc=5",
+      "content": "Americans Claire Pease and Reese Esponda top the podium on floor at world gymnastics championships &nbsp;&nbsp; Bozeman Daily Chronicle",
+      "publishedAt": "2026-10-25T18:44:06.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Skye Blakely earns 4 medals at historic World Gymnastics Championships - Gators Wire",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM0V6aTVxZzZvZWRKSURvcXByclE5UjBPdFUyVmRERTJ2RXBkZnlrdzdrckVaMkxmT2taemFCLTlTX2VHaElDTlk0TnAzcFZGZjgwc2ZKbC1BdGY1M2lIZC10d3VKMDRCYmUwLWFvSXBnUjhXVGZhSl83Q2lYMUJVRXlTU0hSMHAzYmljNHY0Ul9SUnJjREtxdUdhbm5sc1dYZVcyTnh0WnBnNEJDa1dTZTA3WndCNnZOZDZmN3pSNVY0UEFyc0xsX1hHVG9CNWZQNHFkbnFWcmxtRVBr?oc=5",
+      "content": "Skye Blakely earns 4 medals at historic World Gymnastics Championships &nbsp;&nbsp; Gators Wire",
+      "publishedAt": "2026-10-25T18:48:00.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dancers showcase their talent at SA Open Championship - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOVc2VW5LOGUtc1hpVVhYcWVZeTBaMjNTLTVPNUJaT0lGNFJxN09mZ3FuWjJHX1ZmV1FDOVExcHpCSWVKS1dqczI0bUxpWExZcTlRLUJmQndEdmV1LXkyTDlDSEt4bk9PaUdyaDhoaWE0cUtqdmJYUkthQjlGYnZDTjFoWVA2aHB1UmNDQUVIUVZMNUFqMThmeXp0MEZUNDhiam93NzdBbVdrLWcyUGpZYUxPTXNHWUJqWnlIenpDdFB6RGRsNlY2a3NNWjgtUFVo?oc=5",
+      "content": "Dancers showcase their talent at SA Open Championship &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-10-25T18:51:02.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Russia given first championships since Ukraine invasion - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVUhramJsYUNhQ1ZaYlJqU1hjbXVNQ1p0YXM3S2pDMWxScjFBanRUaHgyMkNDYm5TeS1ua0hFR0RZaF9YTkRtaU8xOUNzd2xpTzhua0o5ckF4QzB3N2pCMzVNTFNIRE8wLUU1djNWMDBscVJWb2FSV215SlVXT1k2NktxcUVGZHBoS3c?oc=5",
+      "content": "Russia given first championships since Ukraine invasion &nbsp;&nbsp; AOL.com",
+      "publishedAt": "2026-10-25T14:34:38.000Z",
+      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
