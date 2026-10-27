@@ -1,0 +1,193 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-27T12:23:44.771Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 27,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 10,
+    "classifiedFacts": 17,
+    "relevantSignals": 4,
+    "durationMs": 1944
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 274,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 228,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 421,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 405,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 10,
+      "durationMs": 321,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 291,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "American gymnast Skye Blakely's long road to the top ends with gold at the world championships - Madison Courier",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOVE02TUJNaHVHTTFNQUVsbnpVd1pkWkpyc0dKTFZwX2RXejBBUklhQnU4ck1IbVk5em5WZTR2aWd0cmduNkZ1WGx1eWpYRXhidmlXWGQ0Yy1oNldVQm11c1R3MWZGOW5sNkVVXzVkOHlhWUJ5dHJmSlkxVFNvWGg4amh3S0d4Sldfb1NtT3ZYTXBqT3g4Y1E1Nk45NHRrUmxTTTJhVGxiSTlUN0ZNbHk1TGc1OVdtVU8tek5BeC1Cd2RBSWFodDNLQThzLV9CeEJ2WkN3MGgxbzJkRWNpSTBsOFlUUnFWUlNDdjNTQzNWelNDSExxWjdPZWxyTEtTRlE?oc=5",
+      "content": "American gymnast Skye Blakely's long road to the top ends with gold at the world championships &nbsp;&nbsp; Madison Courier",
+      "publishedAt": "2026-10-27T01:39:08.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk2d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Kenilworth’s Twin Kicks Karate Team JP Strikes Gold at WKA World Championships - TAPinto",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQjZZbk9FT010aVg1Q2gtUHdkQnJXM2wyOFlKbHBRMTZaWHV5T0MxWkhjbEpFMGhKY3ZZX2VpZnQxaEFKRGxMRDJYdjlZWGpVd2c0b09JNEl6czgwZlJpMkxJNlV3MTdmUzhTalJoTkROUFhGeDdYeFRhbXdGMmNxamdxbkNVeWJCQjR2UGljWkF6QUs1MlR6cEZlRjd3Z014ZC1vTWlRNnRzZzF6dkJaV3VWT2p2Y2ZlaElYMHBMTFNOQVFsQmhPdmtmNUlpYk9rOUhtNjBYU0pqZXlKbXptN0pjb1U2R2RvWTdV?oc=5",
+      "content": "Kenilworth’s Twin Kicks Karate Team JP Strikes Gold at WKA World Championships &nbsp;&nbsp; TAPinto",
+      "publishedAt": "2026-10-26T16:19:39.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlla2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Kasi boy dances his way to world fame! - Daily Sun",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91Vll5YncyLWN2d3liaGtROHBHTENHcnhiRHhmR2lWajVZbE5za1pHSkZ5RGlqNnpBamswemlKZ1luQk5CaGF4b3hQZFJ6S3FBMDBpYmxWaTlEZ2VMMTNxYkFQSUw2UDJKVnhZWGsyWUJYZ0JjRGw3TnZn?oc=5",
+      "content": "Kasi boy dances his way to world fame! &nbsp;&nbsp; Daily Sun",
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqd2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Mirabai Chanu to spearhead India's challenge at World Weightlifting Championships 2026 in China - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPRWVqempGWHdWT2lwaDUwOEx3ZEJYMGFMbkZlMG1fZG0zWHp2ZVQwT3ZMckNRekdpYVd6MlczTGtxRDFIVDF5YkRGWjNHTHA1Vkl4WEtZanptLTJRQWJxT3lQcE9FSl9GdmJDd2FmcjkzanZrQ3VySkNzWE93bHhhXzh4a2dicktMODdfSzRJaWxjN21ZZUJWTEJVaDdzZHlGUEVzVUVRcXJ1WU9EQXYzamlxOXRreXdpSkpBLUNYQ3VJMTZBNHZWcDJ5VFRRRmRGSW5JemZKSGxiQ09IZ014UWRqdVl0N18xWmR3aEZMN2JDbG94ZDlxN2RBY1RIZ0g1SHQ4akoyQVpKY29DQ3NV?oc=5",
+      "content": "Mirabai Chanu to spearhead India's challenge at World Weightlifting Championships 2026 in China &nbsp;&nbsp; The Economic Times",
+      "publishedAt": "2026-10-27T03:34:07.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

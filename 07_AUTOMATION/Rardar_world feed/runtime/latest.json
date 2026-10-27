@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-10-26T13:15:47.450Z",
+  "runAt": "2026-10-27T12:23:44.771Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,53 +15,51 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 31,
-    "uniqueFacts": 19,
-    "duplicatesRemoved": 12,
-    "classifiedFacts": 19,
-    "relevantSignals": 8,
-    "durationMs": 2065
+    "rawFacts": 27,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 10,
+    "classifiedFacts": 17,
+    "relevantSignals": 4,
+    "durationMs": 1944
   },
   "distribution": {
-    "DANCE_WORLD": 1,
-    "LOCAL_DANCE": 1,
-    "LOCAL_ECOSYSTEM": 1,
-    "CORE_DANCE": 5
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 2
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 292,
+      "durationMs": 274,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 3,
-      "durationMs": 276,
+      "count": 1,
+      "durationMs": 228,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 0,
-      "durationMs": 365,
+      "count": 1,
+      "durationMs": 421,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 496,
+      "durationMs": 405,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 13,
-      "durationMs": 343,
+      "count": 10,
+      "durationMs": 321,
       "error": null
     },
     {
@@ -74,18 +72,18 @@
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Russia to host first sporting World Championships since invasion of Ukraine - Yahoo Sports",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbk1oRVJZSS1NNl9RX2ZyV2ZCTGtOUnlXWE1QdFJ5LTRJbDAwY1JqVXFEUFB3NkpiT1lyQjlHaTZmSWZFc0NwU2I1MDYxTXlkbk1sSzU0RXFsRnl6MFUwUU52S0lGalFPZzA1SUxzMUl3TUp1MnZ0VjFVRkpiY3kzbXdSdGtYRHZV?oc=5",
-      "content": "Russia to host first sporting World Championships since invasion of Ukraine &nbsp;&nbsp; Yahoo Sports",
-      "publishedAt": "2026-10-25T18:38:31.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "title": "American gymnast Skye Blakely's long road to the top ends with gold at the world championships - Madison Courier",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOVE02TUJNaHVHTTFNQUVsbnpVd1pkWkpyc0dKTFZwX2RXejBBUklhQnU4ck1IbVk5em5WZTR2aWd0cmduNkZ1WGx1eWpYRXhidmlXWGQ0Yy1oNldVQm11c1R3MWZGOW5sNkVVXzVkOHlhWUJ5dHJmSlkxVFNvWGg4amh3S0d4Sldfb1NtT3ZYTXBqT3g4Y1E1Nk45NHRrUmxTTTJhVGxiSTlUN0ZNbHk1TGc1OVdtVU8tek5BeC1Cd2RBSWFodDNLQThzLV9CeEJ2WkN3MGgxbzJkRWNpSTBsOFlUUnFWUlNDdjNTQzNWelNDSExxWjdPZWxyTEtTRlE?oc=5",
+      "content": "American gymnast Skye Blakely's long road to the top ends with gold at the world championships &nbsp;&nbsp; Madison Courier",
+      "publishedAt": "2026-10-27T01:39:08.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
       "analysis": {
-        "relevance": 100,
-        "relevanceLevel": "HIGH",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
         "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
@@ -93,9 +91,6 @@
           ],
           "DANCE_WORLD": [
             "world championship"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
           ]
         },
         "context": {
@@ -108,89 +103,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZWZ2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk2d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "«Улыбка» открыла сезон на родной сцене В Свердловской детской филармонии прошёл первый в сезоне концерт ансамбля танца «Улыбка». Программа получилась... 2026 - ВКонтакте",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE54SDRJNzZJUUZucUlvZThHTVdRSmRURGdYY0ZzRkJoaUNkc1d1VW5lLVBLUXZ2VzZLT1l2TXg3bzlOX2laZFBDbg?oc=5",
-      "content": "«Улыбка» открыла сезон на родной сцене В Свердловской детской филармонии прошёл первый в сезоне концерт ансамбля танца «Улыбка». Программа получилась... 2026 &nbsp;&nbsp; ВКонтакте",
-      "publishedAt": "2026-10-26T07:31:55.000Z",
-      "collectedAt": "2026-10-26T13:15:45.953Z",
+      "title": "Kenilworth’s Twin Kicks Karate Team JP Strikes Gold at WKA World Championships - TAPinto",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQjZZbk9FT010aVg1Q2gtUHdkQnJXM2wyOFlKbHBRMTZaWHV5T0MxWkhjbEpFMGhKY3ZZX2VpZnQxaEFKRGxMRDJYdjlZWGpVd2c0b09JNEl6czgwZlJpMkxJNlV3MTdmUzhTalJoTkROUFhGeDdYeFRhbXdGMmNxamdxbkNVeWJCQjR2UGljWkF6QUs1MlR6cEZlRjd3Z014ZC1vTWlRNnRzZzF6dkJaV3VWT2p2Y2ZlaElYMHBMTFNOQVFsQmhPdmtmNUlpYk9rOUhtNjBYU0pqZXlKbXptN0pjb1U2R2RvWTdV?oc=5",
+      "content": "Kenilworth’s Twin Kicks Karate Team JP Strikes Gold at WKA World Championships &nbsp;&nbsp; TAPinto",
+      "publishedAt": "2026-10-26T16:19:39.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
       "analysis": {
-        "relevance": 59,
+        "relevance": 68,
         "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "детск",
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1a2Z2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "Эстрадная студия «Час ханат» стала лауреатом Международного конкурса «AРТist Сибири. Крылья творчества» - НИА-Хакасия",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fdTdhd0x3OUdKSmNUNkQ4Wi16RnhicGctcXVOampTRWNZT3JhNzZxdE16bHhuSzZOS1c3YTJabnplY3FZVkxXVWxlVzVCU1czQlE?oc=5",
-      "content": "Эстрадная студия «Час ханат» стала лауреатом Международного конкурса «AРТist Сибири. Крылья творчества» &nbsp;&nbsp; НИА-Хакасия",
-      "publishedAt": "2026-10-26T09:19:03.000Z",
-      "collectedAt": "2026-10-26T13:15:45.953Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "LOCAL_ECOSYSTEM",
-        "matchedCategories": {
-          "LOCAL_ECOSYSTEM": [
-            "конкурс"
+            "championship"
           ],
           "DANCE_WORLD": [
-            "международн",
-            "международ"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "HCM City students win world robotics championship - DTiNews",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaGNydVhYZmN4YTVSYWlSckZ5U0hsU1ZRdHR4ZVNneW04YUFKS1RuNXphTTU2dFNVemZHVFptMmZrS3hFbFFDQnA0M19xYXJEeGd3QkJHMGMtRHcweUdVZEY4eE1lbWY5MXBnZnBacWhDVzJqX2hKeUtUbDkzQnlOR0JZVjJrTmc3ZHlNWmpOdzJ3TS1aZTlSNlJNdjdvV190WXloZEx2aHNuMVE3c0o0b25QRWphdw?oc=5",
-      "content": "HCM City students win world robotics championship &nbsp;&nbsp; DTiNews",
-      "publishedAt": "2026-10-26T08:00:00.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
+            "world championship"
           ]
         },
         "context": {
@@ -203,22 +134,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWpidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlla2Z2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Americans Claire Pease and Reese Esponda top the podium on floor at world gymnastics championships - Bozeman Daily Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPaXpyMEZBbnFGbXFDUVdhYk50UlBIOUthWnFpVVBxSDJHRmtjQW4zdTM3NTNuSUptZ09sLVpHa1VtX2htYmNUVTdaamRnUU9PM2lpOVdhLV8wM0NxeDBobFhQZkxrQnpYZmZSU0R6cGF0UkIxNXROd2ZiRHI1VWhyRmctOGFpM2RTRUJVdnZyV1dER3JiS1c5aFp6NmhvRU4tU3podV9XbW5tVWN4VElpeGQ4YnVYZHhmY0tZajZUQVQ4T21GZDB4VnYtX0NJS1Y0ejJxZGdSVDczV0x1OWdvUmVuVW93WVlZZU5yV19jZzhoMjU1aDA5ZmVsNUI4czRzTDcxTkstV1dWbVVSMTd6QzJBcWtxZzk3RGxzbmVncHRTdDky?oc=5",
-      "content": "Americans Claire Pease and Reese Esponda top the podium on floor at world gymnastics championships &nbsp;&nbsp; Bozeman Daily Chronicle",
-      "publishedAt": "2026-10-25T18:44:06.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "title": "Kasi boy dances his way to world fame! - Daily Sun",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91Vll5YncyLWN2d3liaGtROHBHTENHcnhiRHhmR2lWajVZbE5za1pHSkZ5RGlqNnpBamswemlKZ1luQk5CaGF4b3hQZFJ6S3FBMDBpYmxWaTlEZ2VMMTNxYkFQSUw2UDJKVnhZWGsyWUJYZ0JjRGw3TnZn?oc=5",
+      "content": "Kasi boy dances his way to world fame! &nbsp;&nbsp; Daily Sun",
+      "publishedAt": "2026-10-27T09:00:00.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "dance"
           ]
         },
         "context": {
@@ -231,72 +162,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqd2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Skye Blakely earns 4 medals at historic World Gymnastics Championships - Gators Wire",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM0V6aTVxZzZvZWRKSURvcXByclE5UjBPdFUyVmRERTJ2RXBkZnlrdzdrckVaMkxmT2taemFCLTlTX2VHaElDTlk0TnAzcFZGZjgwc2ZKbC1BdGY1M2lIZC10d3VKMDRCYmUwLWFvSXBnUjhXVGZhSl83Q2lYMUJVRXlTU0hSMHAzYmljNHY0Ul9SUnJjREtxdUdhbm5sc1dYZVcyTnh0WnBnNEJDa1dTZTA3WndCNnZOZDZmN3pSNVY0UEFyc0xsX1hHVG9CNWZQNHFkbnFWcmxtRVBr?oc=5",
-      "content": "Skye Blakely earns 4 medals at historic World Gymnastics Championships &nbsp;&nbsp; Gators Wire",
-      "publishedAt": "2026-10-25T18:48:00.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Dancers showcase their talent at SA Open Championship - The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOVc2VW5LOGUtc1hpVVhYcWVZeTBaMjNTLTVPNUJaT0lGNFJxN09mZ3FuWjJHX1ZmV1FDOVExcHpCSWVKS1dqczI0bUxpWExZcTlRLUJmQndEdmV1LXkyTDlDSEt4bk9PaUdyaDhoaWE0cUtqdmJYUkthQjlGYnZDTjFoWVA2aHB1UmNDQUVIUVZMNUFqMThmeXp0MEZUNDhiam93NzdBbVdrLWcyUGpZYUxPTXNHWUJqWnlIenpDdFB6RGRsNlY2a3NNWjgtUFVo?oc=5",
-      "content": "Dancers showcase their talent at SA Open Championship &nbsp;&nbsp; The Citizen",
-      "publishedAt": "2026-10-25T18:51:02.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance",
-            "championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpZ2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Russia given first championships since Ukraine invasion - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVUhramJsYUNhQ1ZaYlJqU1hjbXVNQ1p0YXM3S2pDMWxScjFBanRUaHgyMkNDYm5TeS1ua0hFR0RZaF9YTkRtaU8xOUNzd2xpTzhua0o5ckF4QzB3N2pCMzVNTFNIRE8wLUU1djNWMDBscVJWb2FSV215SlVXT1k2NktxcUVGZHBoS3c?oc=5",
-      "content": "Russia given first championships since Ukraine invasion &nbsp;&nbsp; AOL.com",
-      "publishedAt": "2026-10-25T14:34:38.000Z",
-      "collectedAt": "2026-10-26T13:15:46.815Z",
+      "title": "Mirabai Chanu to spearhead India's challenge at World Weightlifting Championships 2026 in China - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPRWVqempGWHdWT2lwaDUwOEx3ZEJYMGFMbkZlMG1fZG0zWHp2ZVQwT3ZMckNRekdpYVd6MlczTGtxRDFIVDF5YkRGWjNHTHA1Vkl4WEtZanptLTJRQWJxT3lQcE9FSl9GdmJDd2FmcjkzanZrQ3VySkNzWE93bHhhXzh4a2dicktMODdfSzRJaWxjN21ZZUJWTEJVaDdzZHlGUEVzVUVRcXJ1WU9EQXYzamlxOXRreXdpSkpBLUNYQ3VJMTZBNHZWcDJ5VFRRRmRGSW5JemZKSGxiQ09IZ014UWRqdVl0N18xWmR3aEZMN2JDbG94ZDlxN2RBY1RIZ0g1SHQ4akoyQVpKY29DQ3NV?oc=5",
+      "content": "Mirabai Chanu to spearhead India's challenge at World Weightlifting Championships 2026 in China &nbsp;&nbsp; The Economic Times",
+      "publishedAt": "2026-10-27T03:34:07.000Z",
+      "collectedAt": "2026-10-27T12:23:44.158Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
