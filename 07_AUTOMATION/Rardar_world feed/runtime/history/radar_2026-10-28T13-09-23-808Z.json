@@ -1,0 +1,370 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-28T13:09:23.808Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 28,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 10,
+    "classifiedFacts": 18,
+    "relevantSignals": 10,
+    "durationMs": 1953
+  },
+  "distribution": {
+    "CORE_DANCE": 7,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 274,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 270,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 333,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 365,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 10,
+      "durationMs": 414,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 295,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlhZWZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Meet Mark Ballas’ Parents, Former Pro Dancers Corky and Shirley Ballas - People.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SemVROFEzYlBMY3Rmb2t1RHZMRFhzNFk2LWpXMzF1VzRpZDRMVUctQ25EajNpRXQzWXJQd2gxRlNZeE5vWmFIU1hqMG40Q1NnUnlEMVltTTNITmtYS09tRzBzU2paOW4w?oc=5",
+      "content": "Meet Mark Ballas’ Parents, Former Pro Dancers Corky and Shirley Ballas &nbsp;&nbsp; People.com",
+      "publishedAt": "2026-10-27T19:53:00.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "PSYCHOLOGY_PEDAGOGY": [
+            "parent"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Drew Bell wows ‘em at World Senior Games – wins World Championship - Madison Record",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZmEzaVlZN1RNU2tNRFFxbElmRTZkVVktWFNvYmhlNXZsWks4U2NIc3ZBS3VKamQ0YTZzWUpOemVJZXVER0s1V1FHTUdGd2hSTnJWaVpYY0VPX3FPak83V21ybUVBZUlhaEppVUMzRng2ZEFCVUZZYXEyX01Bb0M0RUU2cUN4aUVVN0Ryc1ZIYm15TTQ5aXVqZUJkNFU5NXlHaFFTMjlRcDM?oc=5",
+      "content": "Drew Bell wows ‘em at World Senior Games – wins World Championship &nbsp;&nbsp; Madison Record",
+      "publishedAt": "2026-10-28T11:05:56.000Z",
+      "collectedAt": "2026-10-28T13:09:23.097Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Tenenbaum Set to Compete with Swiss National Team in Preparation for IIHF Women's World Championship - Minnesota State University - Mankato Athletics",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVl82NTM0VXZSMWYzWm4xZGVjTHJQek1kMi1OZ0F5SE85WkJNdWZQUC04NXpzd2xnN3RVSnM2UDEyOEpwZGN5RTJVVW5pdkpqeXB2N0dVU1N4YWp2elNiNXVOQjZwNU9fQldBaHNQVGRqZ2ppTjE0cjdBdFJqMk1WMTd0cl9FN2Y5a1BkUHlsaUFEbXdIT0VyQmx2OEV6ZV9XMkxRZi1ZR3h0NjNYdTcwM0Y1VlFPS0FsaHF3emc3UXhIbjQ4Q0txbkdJOGk3bUNiZ1pSLTJKYm5oTmE4cXdhdXpJMFlMU0hHYzV4Sk5vN2l2dw?oc=5",
+      "content": "Tenenbaum Set to Compete with Swiss National Team in Preparation for IIHF Women's World Championship &nbsp;&nbsp; Minnesota State University - Mankato Athletics",
+      "publishedAt": "2026-10-27T18:33:42.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Луховичане стали первыми на Национальной премии детского и юношеского танца - REGIONS.ru",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMGNDOEwzWWthS1l5Qi0wV3dVNHBXaU5BRHFtZlpXOFlXRDUxZGRRRGtjYUwydkU2dGdqeHFjQ2lMWmlfSlBmY3NyQUh0QXF4TnRBQ244TkJJUkYzcllVa1dZZTA4cUI0MFBuc2JhY0dYSUozTmpjdzBkSVJhX0ZpcnpHYkxmQ3pxY09GSmFmYmVLRWtBYXl2b3Vxckd6eGNvcHB1NVFqS1pTZ1llQ0hxVWhnemV0V0Uw?oc=5",
+      "content": "Луховичане стали первыми на Национальной премии детского и юношеского танца &nbsp;&nbsp; REGIONS.ru",
+      "publishedAt": "2026-10-28T09:03:00.000Z",
+      "collectedAt": "2026-10-28T13:09:22.400Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "How an all-Malayali dance crew is creating buzz in the UK - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTBEY01jNy1KUzFGcllCVGd3N05ha2VvR2RGdldTT3RHT1V0SHZJZ2hMeUNxd3JJOUJMSlAxQ3ZGUGRPY3djdXBlVTUyT0U3NDZUYkt1OEZqOFZMOU1hWGFsTDB5MkZOQnY3N0hIOGRiNk9JMmgtTHZVSU8yakVUS2t2UHFQbTdNbWtCRjhEdXhIdWRYWUJaYXZIWHhVdTJtMGdQYnZlZ0NDYlBHeFN2SWFWM0RxQUxNTlNTVDRXd3o2M3BpNkdKWUVjMNIBywFBVV95cUxOMTBEY01jNy1KUzFGcllCVGd3N05ha2VvR2RGdldTT3RHT1V0SHZJZ2hMeUNxd3JJOUJMSlAxQ3ZGUGRPY3djdXBlVTUyT0U3NDZUYkt1OEZqOFZMOU1hWGFsTDB5MkZOQnY3N0hIOGRiNk9JMmgtTHZVSU8yakVUS2t2UHFQbTdNbWtCRjhEdXhIdWRYWUJaYXZIWHhVdTJtMGdQYnZlZ0NDYlBHeFN2SWFWM0RxQUxNTlNTVDRXd3o2M3BpNkdKWUVjMA?oc=5",
+      "content": "How an all-Malayali dance crew is creating buzz in the UK &nbsp;&nbsp; The Hindu",
+      "publishedAt": "2026-10-28T10:25:11.000Z",
+      "collectedAt": "2026-10-28T13:09:23.097Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Chloe San Jose shares message for Carlos Yulo after World Gymnastics Championships - GMA Network",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdllQVGR6bmE1NU9DN0Z6SXFKcnk5ekVrdE1FWEl4eXJUVldyYVd5T3BYNldOampBSHpFcmZDemhuYjJESG9TV1FTc3B6aVZWNEE2YkJJNlh3RFV4aXZRWkdxQjNwSGU5eC1rVzZQQkdnRk5ZNlBfWkw0MWY1eFFQRDBuSGU1UFhVZDJ2SEZETWNrM0lRa204Tk9lVWlhRk84X2xHTDVzelhHaGFuMWQxRXB3d2EtNWk1MUQtamZ5UDV2cV94N3lBeUNrYmVhaDk3Q0lPdXk3dHRPYVh2WUYw?oc=5",
+      "content": "Chloe San Jose shares message for Carlos Yulo after World Gymnastics Championships &nbsp;&nbsp; GMA Network",
+      "publishedAt": "2026-10-28T11:32:46.000Z",
+      "collectedAt": "2026-10-28T13:09:23.097Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Once afraid of his fame fading, the choreographer behind EXO's championship-winning choreography emerged after 24 years. - Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdmdpSVRwZmQyUFBlYnRtQi1nOEhHUTFXeVVwSEx5RUJfcjRZWWpiU3NFeEM2U3F1Z3RIeEc1MEphQm5jbHp3TkpsY3c4OTllYlpzcFlteVdMWWNXUkM4TzJiVlZQR1d5NFpnckRPOWZEOVhENWRjcG84dG0wVm5Rc2VHSzROVzFVc1RJY2g4bzBTS1h6NUd4M0ZRc3JKcmhn?oc=5",
+      "content": "Once afraid of his fame fading, the choreographer behind EXO's championship-winning choreography emerged after 24 years. &nbsp;&nbsp; Vietnam.vn",
+      "publishedAt": "2026-10-28T12:38:17.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "choreograph",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvZ2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Knoxville to host FIA World Rally Championship's US return in 2027 after nearly 40 years without touching American soil - WBIR",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNTzZLVWoxVk1DTlhMLXdBRHZIYWlhWDg0MkljbHJ2dGZXVUgtYzhSOUhkQzdMMHFGOG90QWNKVUZRamhmZU1FVmRGb2NUQkZGR1pCMl9KZ3AwTUlWdVc5Tl9oOXRDa3UwSS1QT2FoYUo3Q3cxMGVsM1RCS2FPVS0yalZiX0pEb0ZUYzJUX3hMV0NQX3FSOFBOOEw2X21DX0NwV3YwZEJ4V2FsSU5sUDZKelBkSnRPajluZDJUWGd6Zno2eXhoc3dzWnU1dHFNRG5ISFlJbHBFLWttNmxZSnYweGIzY2dUOTc5amFqWm93anpwOFNKUnd3c25Ja3h5bGdGb2pIa0pULW9pYkN6d0hpTHFETWxQdFdSZkVMaGZoXzRlQQ?oc=5",
+      "content": "Knoxville to host FIA World Rally Championship's US return in 2027 after nearly 40 years without touching American soil &nbsp;&nbsp; WBIR",
+      "publishedAt": "2026-10-27T16:21:00.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "National karaoke competition begins search for the next big star - GMA Network",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUTFVQm0tdzRrNEc1aHM4cV9PSi1OVHE5Rm9ybTFHVHpfTUVxUlFLZkVwQkE1Z1Q0OUhCcU8xZ1lub2o5T1NMZS1DTnZDWTRzU3U4c3ZmSmRELVFTRnctUTNva2djMjFQcEtIUV9DY01XODBlSnN4UWZ5WlhXaUcwUmx2WUhYSzhkRlB0QndIMXpSUXVoOVlOV3A0elIzejEyTHRITlV5OTlORGdtQ1J2ZVRlUzBxX3h0cXFz?oc=5",
+      "content": "National karaoke competition begins search for the next big star &nbsp;&nbsp; GMA Network",
+      "publishedAt": "2026-10-27T13:24:54.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "competition"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2MGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Exo choreographer Back Koo-young steps into his own spotlight - The Korea Herald",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFByeUpYUGNHUlpFZGNtMDY5bC1aTHM4T1FGTV90UnZpNXJmT18xVEY2N2lETUlPM1ktTjlISnFrUVZoc2M4S2tBR19KTDNfWVVEZk8xVmNBWQ?oc=5",
+      "content": "Exo choreographer Back Koo-young steps into his own spotlight &nbsp;&nbsp; The Korea Herald",
+      "publishedAt": "2026-10-28T05:36:07.000Z",
+      "collectedAt": "2026-10-28T13:09:23.098Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "choreograph"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
