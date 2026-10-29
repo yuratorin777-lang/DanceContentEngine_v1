@@ -1,0 +1,169 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-29T13:16:18.613Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 18,
+    "uniqueFacts": 12,
+    "duplicatesRemoved": 6,
+    "classifiedFacts": 12,
+    "relevantSignals": 3,
+    "durationMs": 2033
+  },
+  "distribution": {
+    "LOCAL_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 312,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 338,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 391,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 2,
+      "durationMs": 361,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 12,
+      "durationMs": 374,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 253,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Липчане стали призерами чемпионата России по танцам на колясках - GorodLIP",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBvY2dfSVlic01HbDJpMWJxQlNlelRWbnc3RHFSVlVSVEQwaXlVN1MzeFVvLXREMTV6Y3BaU1JBRUptTFdXRTVwTw?oc=5",
+      "content": "Липчане стали призерами чемпионата России по танцам на колясках &nbsp;&nbsp; GorodLIP",
+      "publishedAt": "2026-10-29T12:11:47.000Z",
+      "collectedAt": "2026-10-29T13:16:17.232Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwMGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Образцовый хореографический коллектив «Коктейль» завоевал 10 призовых мест на Чемпионате России по народным танцам имени Миры Кольцовой - ГОРБАТКА.РУ",
+      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTFBxaFBnY1RZcl9yekpGUFR6US12UEdJc2liQ1d2bldvVVFvRWlmTHcxVlV4V2lYYTRkZEtWSjRQOA?oc=5",
+      "content": "Образцовый хореографический коллектив «Коктейль» завоевал 10 призовых мест на Чемпионате России по народным танцам имени Миры Кольцовой &nbsp;&nbsp; ГОРБАТКА.РУ",
+      "publishedAt": "2026-10-29T09:54:26.000Z",
+      "collectedAt": "2026-10-29T13:16:17.232Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц",
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "хореограф",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljMGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Балеты народов России представят в главной детской библиотеке страны - Пресс-релиз.ру",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAwd2xSX1hoY1hiQ2o4R3F6MHBPcU04Y1E4cGtqS1VJTU5CemFCaWJRbHlySXdBXzh0RzlYYXJXZ0NXcllHdmRsVXh6SEVDNnp6Ynl6U3VILUQzMEY2ZW1rWXdzQk0xNlRzSFB5MkpvbTBJczg?oc=5",
+      "content": "Балеты народов России представят в главной детской библиотеке страны &nbsp;&nbsp; Пресс-релиз.ру",
+      "publishedAt": "2026-10-28T18:23:04.000Z",
+      "collectedAt": "2026-10-29T13:16:17.232Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "балет"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
