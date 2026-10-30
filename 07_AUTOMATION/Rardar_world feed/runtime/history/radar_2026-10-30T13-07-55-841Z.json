@@ -1,0 +1,429 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-30T13:07:55.840Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 40,
+    "uniqueFacts": 27,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 27,
+    "relevantSignals": 11,
+    "durationMs": 1704
+  },
+  "distribution": {
+    "LOCAL_DANCE": 4,
+    "DANCE_WORLD": 2,
+    "LOCAL_ECOSYSTEM": 1,
+    "CORE_DANCE": 4
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 228,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 12,
+      "durationMs": 347,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 307,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 281,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 13,
+      "durationMs": 306,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 231,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Десять медалей завоевали вологодские спортсмены на Чемпионате России по танцам на колясках - Vologda-poisk.ru",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaXBHb2g2UGtiaG0tZlFIdHZldmVRN1JqNlUzZ0h1dG1nSXQ1Nmk5RmRUNUwza0ppU3d0TUJ0akFwcVcwVFF6RmNWYXBMRzNLUWU3d3dOdGVHMjB1S19pRUJfcVllMG1KWU1xSWpUTzFHb1lZMVZSVW9qVHlZR3VtY3lGbGo4ZGtCV25CYzA3WEQ3WGpwcjlfc09qakk5RXViWmpjZDh2YVNYUkdqRWdSelM1U0JKNm9HNUlvM1VZbHFwN2RCTWNtOQ?oc=5",
+      "content": "Десять медалей завоевали вологодские спортсмены на Чемпионате России по танцам на колясках &nbsp;&nbsp; Vologda-poisk.ru",
+      "publishedAt": "2026-10-29T14:34:00.000Z",
+      "collectedAt": "2026-10-30T13:07:54.713Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "спорт"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Championships: Arsen Harutyunyan and Arman Andreasyan are out of the running for the title - NEWS.am Sport",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeWZ5VjJfZU01Z0k4QjVYYkFfOTdCSkp0b05jZ092YnAzVkozSi1tcjh4SEJSVm9aVXZ6bHRCa2tRU1YwbVZCV081OGV1Z0JNUEN2Yk9uaUNmWTBaVFlXZlFXeGtRQ2o5blJ2LXlCY0FubnZ5eGJXRkZUa3NGRjZGeHVjMHdlZ2VZbm45YlRRaGxwYVpzOW1zV0VXTEUtaDBCd2ExeFZ2emVUQnJ3SzlVYkRrTWc5c3NoOHl3MHRiczhzWmtsZEVfTVpsSzZuTENuSjlhcg?oc=5",
+      "content": "World Championships: Arsen Harutyunyan and Arman Andreasyan are out of the running for the title &nbsp;&nbsp; NEWS.am Sport",
+      "publishedAt": "2026-10-30T10:14:25.000Z",
+      "collectedAt": "2026-10-30T13:07:55.301Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Unity dancer brings home world championship from Poland - battlefordsNOW",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ01OeEVadm1aZFBvdjNHY01QQ255eTcwMFdDVnpuZGZTdHNXRmZUNEpVOFgycW9MVEJrdXNpSG9fZGt5d0F4U0xqRWFWb3Q3eml5TEl0VC1UTk1KNFJlTkpBazczV2hIdkh0bTFLbnVLOWE2THZQcGZvSWN6TlFRR1I3TVpZYnBmV2FRbFBOdVFiUlhDeHFMMXl3?oc=5",
+      "content": "Unity dancer brings home world championship from Poland &nbsp;&nbsp; battlefordsNOW",
+      "publishedAt": "2026-10-29T22:19:00.000Z",
+      "collectedAt": "2026-10-30T13:07:55.300Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "В российском регионе загорелось здание с детской школой танцев - NEWS.ru",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcENpNHpMdEd5VTB3enhkSXh1NjVwR0xRR0JRMHExX3gyVld2dXNseEdlREt5MFl0WWV4RDNnakxndDhDcGl5YjVZdEpvOFF2SmFWYWhhQ0FqaFBRTy05TUtWZzJ4OWM1RFc0LTN2cndGd2dLTWpLeElzaE9UcnJNQkx4Q3BBSTJGcXFweXk3b0YxbGow0gGUAUFVX3lxTE1wQ2k0ekx0R3lVMHd6eGRJeHU2NXBHTFFHQlEwcTFfeDJWV3Z1c2x4R2VES3kwWXRZZXhEM2dqTGd0OENwaXliNVl0Sm84UXZKYVZhaGFDQWpoUFFPLTlNS1ZnMng5YzVEVzQtM3Zyd0Z3Z0tNakt4SXNoT1Ryck1CTHhDcEFJMkZxcXB5eTdvRjFsajA?oc=5",
+      "content": "В российском регионе загорелось здание с детской школой танцев &nbsp;&nbsp; NEWS.ru",
+      "publishedAt": "2026-10-30T05:33:36.000Z",
+      "collectedAt": "2026-10-30T13:07:54.712Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlza2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "В Томске загорелось здание с магазинами, сауной и детской школой танцев | NEWS.ru - Дзен",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5JT0pZV3ZMZG5oZlE2QXdfNVlVYXFJb0lqWTh0Q2EzV2NlU3l6elJDN0dsQm4welVhVFd6LUJOODN1Vm9pWGRvQjRR?oc=5",
+      "content": "В Томске загорелось здание с магазинами, сауной и детской школой танцев | NEWS.ru &nbsp;&nbsp; Дзен",
+      "publishedAt": "2026-10-30T05:49:58.000Z",
+      "collectedAt": "2026-10-30T13:07:54.712Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxd2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Ансамбли народного танца \"Сувар\" и \"Суварята\" завоевали Гран-при фестиваля \"Симбирские выкрутасы\" - Чебоксары.ру",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZWVzeXJCTy1sbFVBX3JQUGlVcUhLcENxekVldlVTOVBuaUlWSkJOb29naXJXMXhLMVFrd2pSQnd4ZzNaamtLZUZNaUxBSHJkeGxfbDMyMl9lbW5HWVFIVTE4c0JpanFYNGxhQVhlREhMZE83RUpOUzVSdXY4WlJ4LVFzZjJuS2xZSWU3SDZ6YWVOYWhTVzR2Q2xiODBQWVRlV2JBQmR1dWxXQ21STTBHY283TnVKV2dfcjNvTllfMFFBM3dYMzhKaG9jLUpaMVBaT1RHSGo0VQ?oc=5",
+      "content": "Ансамбли народного танца \"Сувар\" и \"Суварята\" завоевали Гран-при фестиваля \"Симбирские выкрутасы\" &nbsp;&nbsp; Чебоксары.ру",
+      "publishedAt": "2026-10-30T10:01:17.000Z",
+      "collectedAt": "2026-10-30T13:07:54.712Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский ансамбль из Улан-Удэ покорил международный конкурс - Arigus.tv",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0xUbjhLdHNqSURZYXhhYjFPZVViaW81S1czeDhvRGQ0cDNmNHNoaDVVMG1XRGN3UEFScm1TMUlRcGluTEh1YzgxRGQ4QnF1dnp4UEpMb2xfeXZ5UEtQandxNFZxSTVlMXF2bEVCYUJxbkYzTHhpVTNwRDF5ZmpNZkNRVFVRUUlneExicFlXaTBrSHFSY2JOVjZrc0Rzdw?oc=5",
+      "content": "Детский ансамбль из Улан-Удэ покорил международный конкурс &nbsp;&nbsp; Arigus.tv",
+      "publishedAt": "2026-10-30T00:45:00.000Z",
+      "collectedAt": "2026-10-30T13:07:54.712Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "конкурс",
+            "детск"
+          ],
+          "DANCE_WORLD": [
+            "международн",
+            "международ"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlud2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Uno Shoma/Honda Marin set for competitive ice dance debut in qualifying event for Japan Figure Skating Championships 2026 - Olympics",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM3FRZkc4ZF95d0dtakNPcmkwTEdXWnVNN2ZRM3V0ZmtpbzlKNU5XQkY5Z3BLaDQ2Y1lnRXNuTGQwU3JBWG91WUFGaWJaVHdfbl9EeVh5NUMxWFRTRm1XcE9GSmNDRVhXUFROWW1NQV9SdzZ2c2lFZDB6bWhZcDlqZ0VkXzRHdkVucjFRdVlFRUNETkV3YmJDQ3hGYV9BQ28?oc=5",
+      "content": "Uno Shoma/Honda Marin set for competitive ice dance debut in qualifying event for Japan Figure Skating Championships 2026 &nbsp;&nbsp; Olympics",
+      "publishedAt": "2026-10-29T13:34:00.000Z",
+      "collectedAt": "2026-10-30T13:07:55.300Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Unity dancer helps Team Canada win gold at world hip-hop championships - SaskToday.ca",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQV0NFUUphOGFKQjdzaW5zdTBPcTl6ZllXMnF3U0U1YUpfUHBid3dkMzREMF9FdWVwREhmYkV2NTRRNHZaT1JJUTFBcmt1VmotMW9XY0V4a1BEV1dfcTdvVS1KakliQTFILXYwRUhQakNsMjBNb0o4M3FnckREeU53Wklmc0prVHIzaFI4dGxHaGtvMjNKU0JlaHZYME1wTi1nMXFKVTNsV05iamI1dHV6NWkxczN4elRobnhDT2tzbFc5WWg5MnFkVXgyczRWTFJEY0xSbzNvM3g?oc=5",
+      "content": "Unity dancer helps Team Canada win gold at world hip-hop championships &nbsp;&nbsp; SaskToday.ca",
+      "publishedAt": "2026-10-30T01:32:34.000Z",
+      "collectedAt": "2026-10-30T13:07:55.300Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "hip-hop",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Meerim Jumanaazarova won silver at the World Wrestling Championship - open.kg",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSnVfeDk3empLMHJsbHBOZ2M1cXZnQ1plSkFHOWtXMkZYejlZTlBHazluc1lSVjRmZXZMbGNlcmViOUZpeHJqWnljeURJSjJ3T1VKN3UxSlZwUmlrVlRnNzVXUVBVbVpEbUJaaE1oNU9IaG0yTW51WUZaNE1IOUgtZXdXYV9MbGR2RHJVaG9ZekhhUHVWbXhMZ25aY25FRGV1NGNQSWV5RU1YWDZFRTl1eXlNWQ?oc=5",
+      "content": "Meerim Jumanaazarova won silver at the World Wrestling Championship &nbsp;&nbsp; open.kg",
+      "publishedAt": "2026-10-29T14:56:22.000Z",
+      "collectedAt": "2026-10-30T13:07:55.301Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4MGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Championship Brew - Neil’s Substack",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWUnItdDlCV010M3NHOUdNc2FfX29sanEwTllFbmZDU21Za2p0SGNJLXRwUUJDSHliYVdKS1E0YUk1V19IbFpxZ3VUamlxYUpiRmpPWEpjOHNHLW9POFJv?oc=5",
+      "content": "Championship Brew &nbsp;&nbsp; Neil’s Substack",
+      "publishedAt": "2026-10-29T13:08:41.000Z",
+      "collectedAt": "2026-10-30T13:07:55.301Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
