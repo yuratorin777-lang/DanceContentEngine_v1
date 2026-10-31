@@ -1,0 +1,267 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-10-31T12:44:45.669Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 27,
+    "uniqueFacts": 12,
+    "duplicatesRemoved": 15,
+    "classifiedFacts": 12,
+    "relevantSignals": 6,
+    "durationMs": 1923
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "LOCAL_DANCE": 2,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 284,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 5,
+      "durationMs": 250,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 349,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 433,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 6,
+      "durationMs": 341,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 263,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Russia is back in the ice hockey world championships after sports court ruling - KRON4",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSmg0dUZHM3pQakE2TEowb2ZBSTg0SzAtbG92clF4YzZKZ19FQVZxTmZnd2JnQmhzMWd1N2dXZk1YV0dlZEQ2bWVzbkZmcFlqSENvSVo3TUtETzVCQ2p1bWJKbjJWZzlkakZINDhlVUczT1RqUE9YZkJZYWRINEFRb0dxVkpXMkdEQkZiNGN3Sk9COG5DUE5mQ2Y3OEpxajhIVkZNWHhIRDBRZVlTaExQc0x3ZlFVSkJTWUhjY09Hd3dKSGVKTUJ3T2h0ZWJHNlp5RmNwQnhRcWt5OU3SAeABQVVfeXFMUFBockhTX1l5TkVkWUdXNEN5cmxfa2xFUFNDaHhjck05Njk4TFZOQUV4dERLbVhySTMyUXlJUDlTVWFmbFU5QVV2NThqMk5zQURXbDhQdWtQZGNmRXpHcW9qUEZuRU1LTjd5T1Z5NGIxdGNxNzVvVXh2OEhpTV9VOEVmS3Y3Z1FVMzB4cWtyUm45MC1LTlhsaTBjQkQ5dXJMOU00VDhYaWRqcHR3dDV0bktjd1hfT0I3VzBCWGc2OUxSVEtuckxnOXZhbm5aLW80dXRkOU9Pc2FGSDhEeFFmUFU?oc=5",
+      "content": "Russia is back in the ice hockey world championships after sports court ruling &nbsp;&nbsp; KRON4",
+      "publishedAt": "2026-10-30T15:03:18.000Z",
+      "collectedAt": "2026-10-31T12:44:45.064Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский ансамбль танца «Радуга» из Ставрополя отмечен на международном фестивале в нескольких номинациях - prospect.com.ru",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbGE2aV9sdnJ3a1FMbGViR0hWMG13S05DYVczazFOcXZqY0FjRkt2UXdnWTd1SDA1V2JocnVxOVROVFpkN2NyTDNVdWhmWWVUSHJKU1FYaFM5TjBaV01ZbFkzZG9Rd3VvUFF2Ti00TTZTSFFhSjdrazJnWjRyaUVjckoxTTduYndmblZUeXdLSkdZX3MtQ1JRX28xd1hpZi1YaE5fQ3dxdnBZU1hYOVNQMmJvREhfZTF6cDBPQzZLMktzc3paZ0FFbW1xZG5iQ25zOUVmVEFtdmdJZw?oc=5",
+      "content": "Детский ансамбль танца «Радуга» из Ставрополя отмечен на международном фестивале в нескольких номинациях &nbsp;&nbsp; prospect.com.ru",
+      "publishedAt": "2026-10-30T15:46:06.000Z",
+      "collectedAt": "2026-10-31T12:44:44.281Z",
+      "analysis": {
+        "relevance": 90,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "международн",
+            "международ"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Липецкий коллектив «Параллели» завоевал пять медалей на чемпионате России по танцам на колясках - newslipetsk.ru",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5rb0ZEVjFpLU41c29mQld0RW1RVnZsbWZja1lVaXl1Z2lGSTVEaUhJc2dnYUF3OWctOVFxSWh2RE1FUlN2Y2dBNlFlYW1aNjQ?oc=5",
+      "content": "Липецкий коллектив «Параллели» завоевал пять медалей на чемпионате России по танцам на колясках &nbsp;&nbsp; newslipetsk.ru",
+      "publishedAt": "2026-10-31T08:20:52.000Z",
+      "collectedAt": "2026-10-31T12:44:44.281Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk1d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "How to watch the Milwaukee Brewers' World Series Championship parade - thv11.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPN2cyOExPWWVFaGg4M09yWmdoWk1uSmFlNGR5RTFOWnp1TzIxQ3ZWc3JkZkwtOEdpT0cta0ZFWXRubnBmUm9ZNHZNcl9jZlhfQXZfczdUVUxxNkhiRXdDbktPYjZUdlhDRXd2M05NbUhITWkzaEFzTDNwTWVFRFgydVU4eTYyQ0pNVGhJUXdrenVhNjJqMmx4VkRhVEpXeWJhVWF3WV9EaDFHUTJ5WjF4cjdabTFRMnlqVjJMSWJqVk1zU0NxOGtySFo3QjByUFBMc2VSanhGcjcwWGtsSHRGdHFCcVJpWDg?oc=5",
+      "content": "How to watch the Milwaukee Brewers' World Series Championship parade &nbsp;&nbsp; thv11.com",
+      "publishedAt": "2026-10-30T13:00:00.000Z",
+      "collectedAt": "2026-10-31T12:44:45.064Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "how to"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Brewers World Series championship parade in downtown Milwaukee - MATC Times",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ2FxeDBBSWc4NzQ2Ty1WOExONm9xeGpBeFg0MmtnaXhpYzlZeGhtWWxHZ2RxVDUyNVlpQk1BM3RFSXdqZklla0pSTXQ3cm83b0tBUk9JLWx0X25CMll1Sy1NYnlUbWk3LTktcmJCa0JSXzNzRXl4bjBPaGpnWTlqMlRuRWpCOE5LaWxlYUkxaEctUHhoYThFeF9CYkZkQmg1WUlyYWJn?oc=5",
+      "content": "Brewers World Series championship parade in downtown Milwaukee &nbsp;&nbsp; MATC Times",
+      "publishedAt": "2026-10-30T20:17:53.000Z",
+      "collectedAt": "2026-10-31T12:44:45.063Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk1Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Could Scottish ice dancers Lewis Gibson and Lilah Fear win gold this year in open post-Olympic field - The Scotsman",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOV3lhT25BLXdqaTAwRDU3YUpIWTgtN09FR0htZkdrNS1jTnd6NE1WRkNZVEcwX2dybnVSVjBTNkQwMzNZUjJLRFNXQlNvR2wwSnRkWjlLXzZSVmRPbzRkYm5CMTVNSXRYeXhjLXRVaXVmaXhTR2twWkhmU01wMWV5ZnUtZkVDOWZjRUpIX1JPWWJ0a0h0S2VaS2R4VHFpMXBQeno3VzFITXNlaGJMMDF0UUFzS3lncV85MEJHdEItTEd4Y3ZJbW1jVktBX3M3Mnp3R1lsdU1jOVlzQW0xQ3BxZGp5TTl3UQ?oc=5",
+      "content": "Could Scottish ice dancers Lewis Gibson and Lilah Fear win gold this year in open post-Olympic field &nbsp;&nbsp; The Scotsman",
+      "publishedAt": "2026-10-30T16:45:00.000Z",
+      "collectedAt": "2026-10-31T12:44:45.064Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
