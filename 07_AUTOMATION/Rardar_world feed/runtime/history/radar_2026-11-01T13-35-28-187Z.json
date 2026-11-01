@@ -1,0 +1,260 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-01T13:35:28.187Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 18,
+    "relevantSignals": 6,
+    "durationMs": 1716
+  },
+  "distribution": {
+    "LOCAL_DANCE": 2,
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 270,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 4,
+      "durationMs": 243,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 309,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 302,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 14,
+      "durationMs": 298,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 290,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский ансамбль из Бурятии покорил всероссийскую танцевальную олимпиаду - Arigus.tv",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUTJPcnNrSXhHU3BpM29pbHhvVGhCM2tXeGYxMjRCc1ljcHVaR3kyWUtvSW56Si1RNWpVdjUzM0ZYTE14OUd6cnZlSHkwSmJxdWN1bWdCcjRkVXpDWVBvakI3d21za24yM2htVmU3THpJU1JWMnNvMEVSQ3pTTTRoOG9MSDQ5R2NIcEw0ZVRBa0hucUo0ODFtc2dCY09zX28yYk9RSVpPeDlYV3pabjQ2TDY3Nko?oc=5",
+      "content": "Детский ансамбль из Бурятии покорил всероссийскую танцевальную олимпиаду &nbsp;&nbsp; Arigus.tv",
+      "publishedAt": "2026-11-01T02:00:00.000Z",
+      "collectedAt": "2026-11-01T13:35:26.986Z",
+      "analysis": {
+        "relevance": 90,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "олимп"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship - WPSD Local 6",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQai1kTVJXdnB1YVVoWkxhNFFid2R0NnhJOUVTTXBUc1BmVF9aRF9Pbm1QRTRDLTZkTGhXaDhuTlZrYUxtUmJNZVotZG5yLU9vbGRyaXhNQjJKa0NGd0cwVEhBZ3lNQ1ZHMVZCc2Z6RXVscGh4VDZacXFjcnRmTFNqaDVaQUtmS0VMV1JHbjM2bTBNS2I1NGNCR0pMWXhsaDlGRk1kSG5VcUtlNUNqN01HUm5odUtfUG1JdkVDTHlZMTFQeEpsdE5qdWc2N0J1bW1Nd3ByZUpRZnFjSjVUWkFBanRoVFN2Y2JrcXB1R1BBdDA1Y0ZER2lF?oc=5",
+      "content": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship &nbsp;&nbsp; WPSD Local 6",
+      "publishedAt": "2026-11-01T01:38:00.000Z",
+      "collectedAt": "2026-11-01T13:35:27.597Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Юные артисты Лениногорска исполнили песни и танцы разных народов - Татарстан 24",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUzRkcG9IdGxVWFdpckZBREVNcmpwN2M5X054cUFzOU5jY0tYcm9nLTVSRENkdTJBNnN5Z1dYdjFxdmZlYlZVd1psRnk0QkkyNm5ST3VpNUFqMF9Zbzdid3VBc0dwdzBoY3ptU1hVcHF3TTdHbTlMX0h3ZndBYnMzMnNLamZpSVN4V1hCUnloV2ZUWHg4bUVkR2VEekZSV192?oc=5",
+      "content": "Юные артисты Лениногорска исполнили песни и танцы разных народов &nbsp;&nbsp; Татарстан 24",
+      "publishedAt": "2026-10-31T15:50:00.000Z",
+      "collectedAt": "2026-11-01T13:35:26.986Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Figure skating: New ice dance pair of Uno, Honda come 4th in debut event - Japan Wire by Kyodo News",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TVTFHbTNpdWlTMkhUWDJQa1h1aUEzb0I3eUlsLVN1UWtHY3BHV1Bid0pIcWl3dFBIWHFLeGNXRVhCOHFpYUd4REdxZmJybGR2NnRnOGFWVENvZw?oc=5",
+      "content": "Figure skating: New ice dance pair of Uno, Honda come 4th in debut event &nbsp;&nbsp; Japan Wire by Kyodo News",
+      "publishedAt": "2026-11-01T09:30:00.000Z",
+      "collectedAt": "2026-11-01T13:35:27.597Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkZWZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "ECW World Television Championship - WWE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1vTURBNTVfNkZzdWdvc0N3UlZOUGxhSWQtQWJ4M09uS0p5bjk0Um5iRkZzYUxLeE8zUGtCcE0yRG83MHpidzNsWmY2RzhKSUtuRWJrdkg3bnZWd0JuX1d0eGhEYWtVV2VIb1NPa1QzcDVkNFJ0?oc=5",
+      "content": "ECW World Television Championship &nbsp;&nbsp; WWE",
+      "publishedAt": "2026-11-01T04:15:57.000Z",
+      "collectedAt": "2026-11-01T13:35:27.597Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Manisha Bhanwala makes history with gold at World Wrestling Championships - IndulgExpress",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbWNXczFMNkI4ZlZ4ME50NkwxN3FENS04WkppQkdsMTBmNXlxS0FRdVIyRk9kbXF4Z2tXYm9zTm4ySnh2VHJpeHhPSVBTS01aelVaOFN3Yy1JaTNxWm56U2ZPd1hHdUZab0JOMmNMemZjQy1CQldidjZ2UW5lb0pVekdSTk1hVFZXNkZZU1BYOWVTUk9fcFZzdGFMdnpmc1dHaGwyV2EtMW1lNU5EMXJsTkpxNGpFdXZtNXFva0tDc9IBzAFBVV95cUxPWFh3VmF6TjJxSkVSUnhVVHJvZW9CUUVfS3dyT0JDMGhSMG5TQkExUU1KMk1laGZJdTRDTlpyMlcwUTRYZ2ljcXhJTjBkWF9Udnp3QjFZLWpxS2pESnZIaHI5Ynk0d2VvMlB2T2swNGNPUGRQN3dFZHU4anZMcnFlajRRWmZwNGJGeTB6MnFDY3JLaUhrZ05BMGtyRllMUTlZQ3g2a094R0w1S3RtX2pZd3RzNS00bkoxbGN1UldMZmU5T042bE90MHNPclo?oc=5",
+      "content": "Manisha Bhanwala makes history with gold at World Wrestling Championships &nbsp;&nbsp; IndulgExpress",
+      "publishedAt": "2026-11-01T06:27:58.000Z",
+      "collectedAt": "2026-11-01T13:35:27.597Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
