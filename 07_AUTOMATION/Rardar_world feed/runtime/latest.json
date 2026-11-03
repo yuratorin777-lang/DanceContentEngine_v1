@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-02T16:11:53.634Z",
+  "runAt": "2026-11-03T14:26:42.402Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,249 +15,86 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 33,
-    "uniqueFacts": 24,
-    "duplicatesRemoved": 9,
-    "classifiedFacts": 24,
-    "relevantSignals": 10,
-    "durationMs": 1773
+    "rawFacts": 36,
+    "uniqueFacts": 23,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 23,
+    "relevantSignals": 7,
+    "durationMs": 1813
   },
   "distribution": {
-    "CORE_DANCE": 3,
-    "DANCE_WORLD": 4,
     "LOCAL_DANCE": 2,
-    "ADJACENT_DOMAIN": 1
+    "DANCE_WORLD": 3,
+    "CORE_DANCE": 2
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 243,
+      "durationMs": 269,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 4,
-      "durationMs": 272,
+      "count": 8,
+      "durationMs": 285,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 1,
-      "durationMs": 360,
+      "count": 0,
+      "durationMs": 344,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 323,
+      "durationMs": 329,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 13,
-      "durationMs": 296,
+      "durationMs": 305,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 271,
+      "durationMs": 278,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Insider Info: 2026 UCA & UDA Smoky Mountain Championship - Yahoo Sports",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOSkYtam5NcGswZG44d3I2bjRSR2IxdVkwbkcyZXl3VkdQUEwxbGNBMXJfMUlLdDFBT0hfQWJfRDI3bVZXdjBDRFlMV19OUjlPMWdmMU5SMFVTTmpHVENsRzZ0UXk4dTVwSWpEckxQN2x3NVlXVnNWc2EtS0JXZFRLVA?oc=5",
-      "content": "Insider Info: 2026 UCA & UDA Smoky Mountain Championship &nbsp;&nbsp; Yahoo Sports",
-      "publishedAt": "2026-11-02T14:01:53.000Z",
-      "collectedAt": "2026-11-02T16:11:53.062Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3d2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "3 Monmouth County Lifeguards To Compete At World Championships - News12 | New Jersey",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZWNHVDBJTlg3UjgtVG12YjVQWVdjN3huLXZEdzhfSWhMM250NVNKdzZQWUxpVjB0U0hzVFJOU3BKdy1qTWx4UVpmeEdSX21oMThvNW1ONkZZSV80MnRhM3FOekY2RWpRWHZQbUZXVTlVRlNBSk4xMFdESVV6bGFUT3NKbHRDNk8yUkExY3ZwTWt2TUdLN0dZRmpiQ00wNzFneUpZUC1IWDFRYWo3UEJwbmJhVW14VWI5eVdBZHM0bHZvbVE?oc=5",
-      "content": "3 Monmouth County Lifeguards To Compete At World Championships &nbsp;&nbsp; News12 | New Jersey",
-      "publishedAt": "2026-11-02T01:24:04.000Z",
-      "collectedAt": "2026-11-02T16:11:53.062Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2ZWZ2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Azerbaijan’s Hasan Muhamqazi wins first bout at IMMAF World Championships in Tbilisi [PHOTOS] - AzerNews",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aSy1TbFBlZS1rcnIyMHBwY0gxb2xsNF9uSDhHZmxMUHBqeW9oZFZQSm02M1JsYkhJRlVlb3p0VEZlamhrRGhxRE1QWS1EbTQ2TVZtOA?oc=5",
-      "content": "Azerbaijan’s Hasan Muhamqazi wins first bout at IMMAF World Championships in Tbilisi [PHOTOS] &nbsp;&nbsp; AzerNews",
-      "publishedAt": "2026-11-02T12:40:00.000Z",
-      "collectedAt": "2026-11-02T16:11:53.063Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "SA Siblings Strike Gold and Bronze on the World Dance Stage - Good Things Guy",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNDMtdVRRcTJ1SWhpSjdSWFdIYlhDR0FOcmRRQ2hZLTBNUVp4YThVRU9mVTBsYlljQUFSSnd2RXhYQjdpclVTV3JGMHNzb09LRnFqR2s5OTVVelA2ZGtxWGlUZHMwTHhZNHU1SEh0ZlJSdUQ5dVFzdmdSQ3hpSnNVd2lB?oc=5",
-      "content": "SA Siblings Strike Gold and Bronze on the World Dance Stage &nbsp;&nbsp; Good Things Guy",
-      "publishedAt": "2026-11-02T13:00:49.000Z",
-      "collectedAt": "2026-11-02T16:11:53.062Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
-          ],
-          "DANCE_WORLD": [
-            "world dance"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Kyren Wilson apologises after 'getting a bit angry' at International Championship - Metro.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUDRaWjV5YVpOeEw5eU9Yd21ULXlzTFpxVzNudzdkclNRaFNlMGtobzVKQzFnU19samtGWVJyekZQM3R2UlZOVXhpQ1ZMU0tqUkZsb3dRLUlOUzdWd2ZuZzk3NzRfQ2JpQUtrTEVhR0ZkanUwSGt4QzY0U2I4VDFhSjN4VU9JMEt5M0UzV3o0WjQ2SmtPT210R0RRZFhqZDNPZ191Qk5pamY0SEtkb3lBatIBtgFBVV95cUxNYlYyTjZoUWp4S25Uc29RMmhNTXd4OWtpcXZNeFVxU0xXNjdoUkNsU0o3R3A5OUtJeGRROUJpaldpdzQ1N1hfRDVLeEpkc3BvbXphWVFJNHd5Wm9ZWkczWXloODY2VllBRHZOTlI0WHZkOVRhUXNhSi1aelp1M2thYzVxN0lpTkhQZmxycWhiMWE0bUM2eFdCeVA1SjA2dENmR0tvV214M3NIeEF4SDI1MEZmNlhYQQ?oc=5",
-      "content": "Kyren Wilson apologises after 'getting a bit angry' at International Championship &nbsp;&nbsp; Metro.co.uk",
-      "publishedAt": "2026-11-02T08:49:00.000Z",
-      "collectedAt": "2026-11-02T16:11:53.063Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "international"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxa2Z2eDNs",
       "source": "Google News — детские танцы Россия",
       "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Колокола, танцы и вкусы регионов: как Петербург отметит День народного единства - Upscayl",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNczZpaFNwRVl5R2w5QXNRSDBQaGw4V1JvM1lyOW0zdGRHZHFhSHBKVnZpYUxRbnQ3UUxocDZ4RS1JV2NTRng3SGhURUVYSlZRamh4UU5YcFRtakJ5RXhXUENCS3c4ZmNiazV3SGkyUDYwVF9xa3lMVmJlNV9XMjVkTm9MdDFiM3hTQTR4Y0llLUx0cXN6ZTFJVV92ZU5hWFNUbHRN?oc=5",
-      "content": "Колокола, танцы и вкусы регионов: как Петербург отметит День народного единства &nbsp;&nbsp; Upscayl",
-      "publishedAt": "2026-11-02T11:04:54.000Z",
-      "collectedAt": "2026-11-02T16:11:52.380Z",
+      "title": "Расследование Yle: WhatsApp показывает незнакомым взрослым танцевальные видео 10-летних детей - Yle",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9WLU92aEFFeWtXaVJza0hsVmVIU21CQm1NUkx4ZlhyTm1aRlJpX3h1MndOZng0cXFpZmh2NHJzc2wzdw?oc=5",
+      "content": "Расследование Yle: WhatsApp показывает незнакомым взрослым танцевальные видео 10-летних детей &nbsp;&nbsp; Yle",
+      "publishedAt": "2026-11-03T10:03:59.000Z",
+      "collectedAt": "2026-11-03T14:26:41.144Z",
       "analysis": {
-        "relevance": 63,
-        "relevanceLevel": "MEDIUM",
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
         "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "танц"
           ],
+          "CHILD_DEVELOPMENT": [
+            "детей"
+          ],
           "LOCAL_ECOSYSTEM": [
             "танц"
-          ],
-          "CONTENT_SIGNAL": [
-            "нов",
-            "как"
           ]
         },
         "context": {
@@ -270,15 +107,110 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 U23 World Championship - FloWrestling",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYmJmNE5CY21PbDlOUHdKdnB4SFg1N1NYamlfLU9YNi1lNF94bEVPWXZrcG5JUUMtNXlyX2p2ZDV6ZndhbFNkeHFBZldyYTdCcXY5VzhTbVZfMHNhVHB2YVEtOGJpWUNHWGFKMnZTbkM4d19uQmFIcWVFOFZUY2ItSG00a0RmakhiS2RpajFR?oc=5",
+      "content": "2026 U23 World Championship &nbsp;&nbsp; FloWrestling",
+      "publishedAt": "2026-11-03T05:25:54.000Z",
+      "collectedAt": "2026-11-03T14:26:41.816Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "JFDance Gibraltar wins European championship titles in Czech Republic - Gibraltar Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNanFpOE9ZQng0Q3FjeFBZSDdMcGk3cU9hSHIzcTEyaGVqMkc3RDg5YmptdWFFOEtJVW5lSG1Ga0F1Z2E5NS1DdkVoeG11eWpXQnBTTEVFX1VhRXc2YWxxUlRscUw3eHNhVDk4SDUxa1F4eTgtSHZQOXQxX1lLNFBhbmRYZTlNSE9GRVp3V20xZ2VqWlBpVFZxTnB0RQ?oc=5",
+      "content": "JFDance Gibraltar wins European championship titles in Czech Republic &nbsp;&nbsp; Gibraltar Chronicle",
+      "publishedAt": "2026-11-03T11:11:15.000Z",
+      "collectedAt": "2026-11-03T14:26:41.817Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "european championship",
+            "european"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Norway joins Finland in boycotting hockey world championship games against Russia - Times Union",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOclR5NGR3eW83NUYzekpWZ1FTaWxmUExFUG1YVjZxdThKdHNYdURLa203emhnRmkySkJZaUZNazFVVFhNRllsUmFxX3F2X25mb0R3NUlEcDM3UzFsTXFlRnlhX29BRE9uM3Z0ZjF0a0Zrem05UG10OVIwamx0S0c1d2FHdjVtSkxrVGEtUWZuNXZJWW03cVJBUVVtM2hlUnczd0NTSg?oc=5",
+      "content": "Norway joins Finland in boycotting hockey world championship games against Russia &nbsp;&nbsp; Times Union",
+      "publishedAt": "2026-11-03T12:02:07.000Z",
+      "collectedAt": "2026-11-03T14:26:41.817Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlja2Z2eDNs",
       "source": "Google News — детские танцы Россия",
       "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Областной фестиваль народного танца прошел в Дмитрове - Национальные проекты России",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU1pVcTl2VnNwZnQ0TUlYMzRGcVROUkhoUDhiWGRWUUozSWY2QVVUa0x1enhTSk5iTkY4bWR2MnQzWmx3THBTMHhlRzVObmlhV1MwQXR5bjhBT1FOT1dDa3ZsM3RES3hSOGxpY3NZazBQTUt0MUVRTTRYclJmeTQ0ei1mOWstR0ZkUmxOemxWWDF3Wnk0cmdURHMwQm5abjRkYUNJY3VMYWhVZw?oc=5",
-      "content": "Областной фестиваль народного танца прошел в Дмитрове &nbsp;&nbsp; Национальные проекты России",
-      "publishedAt": "2026-11-02T10:45:17.000Z",
-      "collectedAt": "2026-11-02T16:11:52.380Z",
+      "title": "Национальная премия детского и юношеского танца «Весна священная»: объявлены победители. Доброе утро. 2026.11.03 — Видео от Первый канал - ВКонтакте",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzdmJwazNvZ28tdXVQeEswMXZReTRuSDVMYjJuMlp1Q2hIandiLTJ0RU51ZnZfVUNQakhreEN4WlRLeVJPYlF4RzVCeWJVVlUzM2lfNDZ6SURlVndqU2NqWXA4TXFCOGRFcHRkYVkxX3ZxUQ?oc=5",
+      "content": "Национальная премия детского и юношеского танца «Весна священная»: объявлены победители. Доброе утро. 2026.11.03 — Видео от Первый канал &nbsp;&nbsp; ВКонтакте",
+      "publishedAt": "2026-11-03T07:33:41.000Z",
+      "collectedAt": "2026-11-03T14:26:41.143Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
@@ -288,7 +220,7 @@
             "танц"
           ],
           "LOCAL_ECOSYSTEM": [
-            "фестиваль",
+            "детск",
             "танц"
           ]
         },
@@ -302,25 +234,23 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljMGZ2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Figure skating: New ice dance pair of Uno, Honda come 4th in debut event - 毎日新聞",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BWWhoUTdiZnp1cm4xX0wxemI1TzBJekY2R0t6NVpMSEwxbEo4QTNhM3ZLdWowOXJqamhNYW1FYmVleHRVR09uYnpyZ2llNGtMNW9KajZ5eWRwazduRDN3WXI4VjJZUm9NdE1DMGdwQ21Fc2s?oc=5",
-      "content": "Figure skating: New ice dance pair of Uno, Honda come 4th in debut event &nbsp;&nbsp; 毎日新聞",
-      "publishedAt": "2026-11-02T00:32:37.000Z",
-      "collectedAt": "2026-11-02T16:11:53.063Z",
+      "title": "A metro Detroit wheelchair ballroom program, Dance Mobility, helped bring authenticity to the indie dance drama “Ballroom.” See link below ⬇️ 📸 Provided by Freestyle Digital Media - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYWVXZU5XeWlPeGNwLUdWaUJhSVJnanVRTWprcUlXeXFQejA1cHpLdEZaTEQ4LWdLaWMwSXhsb2FwV19icVU2MXY4YnhWb0g5Z21HU1FrbWM3OUcyU09nWUxIdVRKakRQQ2dheUV1Wnk4SjlLalVhY2Y3U3g1LUZxSDYxWGlfc0tyTE1jVmNsSnlsNHZBSDFiekUySk5jTlNmWGxtWHI4a3RUbC15bGhIbWxpZDNDYVFBU2p3b1BPdkVMdXpTZVNjdGprWVRNSlZ3a3FzZHJhVm9jck5GSTRF?oc=5",
+      "content": "A metro Detroit wheelchair ballroom program, Dance Mobility, helped bring authenticity to the indie dance drama “Ballroom.” See link below ⬇️ 📸 Provided by Freestyle Digital Media &nbsp;&nbsp; Facebook",
+      "publishedAt": "2026-11-02T17:02:16.000Z",
+      "collectedAt": "2026-11-03T14:26:41.816Z",
       "analysis": {
-        "relevance": 41,
+        "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
+            "dance",
+            "ballroom"
           ]
         },
         "context": {
@@ -333,53 +263,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "DanceABILITIES Teams Can Now Compete at The Dance Worlds - Dance Spirit",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcGJralZJRmNIOHprZEI2R1BPSjhvZE9RQU40TTJoTXJ2OE5QYUh2Y0F1eW5NQmI3ZVdTVGVjY0pOSUlPUWpSc0FYZDFqQk43ZzV6T1VLNzIxbWlNVTRrQkZ2RlQ5Ty1yNkVyS0RaUDhoTzFfdnJmUVlsV2VVWVQtQS1zYw?oc=5",
-      "content": "DanceABILITIES Teams Can Now Compete at The Dance Worlds &nbsp;&nbsp; Dance Spirit",
-      "publishedAt": "2026-11-02T14:19:26.000Z",
-      "collectedAt": "2026-11-02T16:11:53.062Z",
+      "title": "Raksha Khadse says India hosting 47th World Armwrestling championship is a “very big opportunity” - The Tribune",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdVRoUENJYXU0c1JmclBvVUdKQ2Vpb1hfcXg1eDVWb0dvQkNIT2FXSzdpZDVzeDlrVXJnbDdnY3VhZWIzNEpZWklvaEItTGxTMzBLRFFkWk9IVFBNRnY3TUgzbVByRUhrRG1sTE5mWWNPbEFWNmdWQ1ROaVhOZlZldW5PMmN3U3ZRVGR0NG1SanNmbk5KeU9vOTNsY1pQQk9vb05CN2tVdFpqVnlwRWxOLTFZQm9UdkxRS2JUcVB0UkNHYmFOWm82Ni1B0gHOAUFVX3lxTE92ZjJYZ2x3WnFXejVRM1BGcHZsSlNqOWFudjFlTURaekZNSFA2dml4TXh5VG5IQ0gzclNlNW1QMWU2MXAySWhZNnN0VEI3bi0zWUtQdGtDc09NRmtSXzlmeHBRbF90VC1LWDAtbEgyaldsbDRmRkdPQllVdkJkeGs0b2VtdFZQblI1SC01YkdZMkpoeVRLekd0MUcyWDg3cC1EcElWVUkzcmg5VlJxazNNSjRGemhwS1AzWENRMmRtWE9aMXFVT0dxRnR0WlNn?oc=5",
+      "content": "Raksha Khadse says India hosting 47th World Armwrestling championship is a “very big opportunity” &nbsp;&nbsp; The Tribune",
+      "publishedAt": "2026-11-03T12:47:19.000Z",
+      "collectedAt": "2026-11-03T14:26:41.817Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Mao Shimada wins Skate Canada in highly anticipated Grand Prix debut - Yahoo Sports",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmIzMmZJSWVaalJ6LXNJOEJyVWt2b0xmajdMUFl2UEFtXzBwZUplWXBDbnJnRHpEdTJNekxSSXZxT1BfUEpYa2I3ZTh5UkRsd3ZJNlJnTzlJbjdpdWpSVVZpcUJtQnRaVEtqZDlxV1BJSjR4bEFLYWY0N3hyQ0lIZ0p1MmY?oc=5",
-      "content": "Mao Shimada wins Skate Canada in highly anticipated Grand Prix debut &nbsp;&nbsp; Yahoo Sports",
-      "publishedAt": "2026-11-01T21:49:18.000Z",
-      "collectedAt": "2026-11-02T16:11:53.063Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
-        "matchedCategories": {
-          "DANCE_WORLD": [
-            "grand prix"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
+            "championship"
           ]
         },
         "context": {
