@@ -1,0 +1,228 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-04T14:41:05.862Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 38,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 20,
+    "classifiedFacts": 18,
+    "relevantSignals": 5,
+    "durationMs": 2705
+  },
+  "distribution": {
+    "DANCE_WORLD": 3,
+    "CORE_DANCE": 1,
+    "LOCAL_ECOSYSTEM": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 269,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 8,
+      "durationMs": 325,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 357,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 1048,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 392,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 310,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpZ2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship - WPSD Local 6",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOMUZRSUFJd0prMzdmbHhwZXNOMHlldjlUaUJSZzlmRHQxY0NLLUlqbS1wTXJjMFAyM19FVWVmVGFNWWVuN0djWTdqXzVLa2c2N2luVjdUV0pPSEZGMkthM1gtSjB1c1k1RzhrWF9FTncwZ08zSkdwc3RrMEFMdVZmek80ellHUG9ad1g4cENfX25BSFJRSzdDZV8zUENGRDNHV0YzbG5zNUZ0R0RPZFdlQkRHQjc0YlQtOW5ReVE0Z2U1THZCa192bm9vZDdPZi1RRVIxM3VSWjRqdFZmRWVMNTdGSERZQ2RDeXNYVG5QVVhRbWVxRDB5NXdhWWNEXzNPVzM2alA2WjdQQQ?oc=5",
+      "content": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship &nbsp;&nbsp; WPSD Local 6",
+      "publishedAt": "2026-11-04T07:16:30.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlka2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Santa Cruz Lifeguards Head to World Championships - Good Times | Santa Cruz California's Leading Free Weekly",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwTGdWdTlYa0xZcU5KM1pCUU5qNVFKRDI2bWFzdWg4WDVLOFJfUktDWFR1S3hockdPWWpiczNxeGU4ZHVhV1piSDBXbFBXZFpqZUUzeFpOMlI0NmxXSnctTXNpMDhDdmE4YWtVaFpFelk0NmtMQ2c?oc=5",
+      "content": "Santa Cruz Lifeguards Head to World Championships &nbsp;&nbsp; Good Times | Santa Cruz California's Leading Free Weekly",
+      "publishedAt": "2026-11-04T06:59:45.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Ice hockey world championship main sponsor Skoda to ‘reassess’ backing if Russia plays - Texomashomepage.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVERhZVBURlV1QTR1bkx3N3VVZnQ4NlVXdXYwXzJSb0x3NkxndnF1RnVNYXhFT2I3LVZjaXdoa19NSzEwR0E5NzBJc3hKM1B2UFVNUVpOcGVuWWNIRUZNcXNjMjlEY0dGbmZWc19NckRab0dtdkl4LXQ4OTVieFFUZnZJYl9NNXJNYVVGNEJuYVZBNTR6NFc1QTRxd0otZmE0NWN4aVZBc0JmZml2bGZDSVlIM0lfSkZjVnVabVB1ZGJpTVlMTGfSAcsBQVVfeXFMUHpDUjhkQTR1Uy13MndHSHNfWWtaZVEwZ0d4WnRYZThoclVoRWQtSDJ3UjJhWVU4dUNKNTBlMjVKREQ1QlNWc0Y2eWVRVVFMM3ZTOEpOSnBQMnVDQnhNUmNpb2Z3czhpUllhLXJqdzFSQ1dldWxXMERQd3FwMEtiVUNOcjNWWm5WN3ZMbmRjNVBIeFhzcmpfVjdPZkZWbHg5UW1QWngyb0tBNE9QMmRDSWJtU0tfYTFYZEYzM2lDeHhNUTJOUG96QjU2ZXM?oc=5",
+      "content": "Ice hockey world championship main sponsor Skoda to ‘reassess’ backing if Russia plays &nbsp;&nbsp; Texomashomepage.com",
+      "publishedAt": "2026-11-04T10:13:56.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Road To LA28! 2027 Xfinity U.S. Gymnastics Championships Return To Tampa - Inside Gymnastics Magazine",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPcVI1Nm1Kc0s0am50cUJhUUdxNUljUDJqUGRXRFVZREU5TnVxRGxPMGlLQUs2QTNEYjNmbU0xcG9iYVNxUC12c0F0N2ZSbVYtX2JWQk9sejcxY0hwRWluVFFaeFhGaUZVUWtuM3ZzalJIanBvRUF1c0UwLWZneldhV1c0SG9jYnQ2V0VOb3lJd1FSeFRpUVlPQ1N0dmpTZVBXSjREV3RKWnhieXFCbmtKc3JoMGtGSnJ2X3MxV2V3dXp3V3FEQkk1dFZWZzl1R2t5dGF6VGh0NmozdDF0YjhxcUJGT25zU2tYX1NOZkJB?oc=5",
+      "content": "Road To LA28! 2027 Xfinity U.S. Gymnastics Championships Return To Tampa &nbsp;&nbsp; Inside Gymnastics Magazine",
+      "publishedAt": "2026-11-03T16:34:21.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский сад «Огонёк» провёл кругосветное путешествие ко Дню народного единства - Новости Камских Полян",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMXJFSVJTNFVHTWNPWWRSQ1F3OWthMjhvQ1VJaDFlUXdnbVBqaHhNVWhpYXdrSmlMeE1PSVh0cXc2MXpVMjhNN25nUzdhT09BSXV2TjVRWjBjN21xNnlmaTE3bGpDbElHbUlhZ0RIMnBwOHlJYXhkZ2VaNUQxeFZvLUJiVXkwMXFXWjVpcWNXeGZRa3BSYklQR0lyY2ZKakZNc1hqSFpWOEhtRWJSZjBaWjdIaHhZelNuRHc?oc=5",
+      "content": "Детский сад «Огонёк» провёл кругосветное путешествие ко Дню народного единства &nbsp;&nbsp; Новости Камских Полян",
+      "publishedAt": "2026-11-04T10:02:24.000Z",
+      "collectedAt": "2026-11-04T14:41:03.753Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

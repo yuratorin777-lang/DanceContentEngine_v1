@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-03T14:26:42.402Z",
+  "runAt": "2026-11-04T14:41:05.862Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,17 +15,17 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 36,
-    "uniqueFacts": 23,
-    "duplicatesRemoved": 13,
-    "classifiedFacts": 23,
-    "relevantSignals": 7,
-    "durationMs": 1813
+    "rawFacts": 38,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 20,
+    "classifiedFacts": 18,
+    "relevantSignals": 5,
+    "durationMs": 2705
   },
   "distribution": {
-    "LOCAL_DANCE": 2,
     "DANCE_WORLD": 3,
-    "CORE_DANCE": 2
+    "CORE_DANCE": 1,
+    "LOCAL_ECOSYSTEM": 1
   },
   "sourceBreakdown": [
     {
@@ -39,83 +39,49 @@
       "source": "Google News — детские танцы Россия",
       "ok": true,
       "count": 8,
-      "durationMs": 285,
+      "durationMs": 325,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 344,
+      "durationMs": 357,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 329,
+      "durationMs": 1048,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 13,
-      "durationMs": 305,
+      "count": 15,
+      "durationMs": 392,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 278,
+      "durationMs": 310,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxa2Z2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "Расследование Yle: WhatsApp показывает незнакомым взрослым танцевальные видео 10-летних детей - Yle",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9WLU92aEFFeWtXaVJza0hsVmVIU21CQm1NUkx4ZlhyTm1aRlJpX3h1MndOZng0cXFpZmh2NHJzc2wzdw?oc=5",
-      "content": "Расследование Yle: WhatsApp показывает незнакомым взрослым танцевальные видео 10-летних детей &nbsp;&nbsp; Yle",
-      "publishedAt": "2026-11-03T10:03:59.000Z",
-      "collectedAt": "2026-11-03T14:26:41.144Z",
-      "analysis": {
-        "relevance": 100,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "CHILD_DEVELOPMENT": [
-            "детей"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpZ2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "2026 U23 World Championship - FloWrestling",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYmJmNE5CY21PbDlOUHdKdnB4SFg1N1NYamlfLU9YNi1lNF94bEVPWXZrcG5JUUMtNXlyX2p2ZDV6ZndhbFNkeHFBZldyYTdCcXY5VzhTbVZfMHNhVHB2YVEtOGJpWUNHWGFKMnZTbkM4d19uQmFIcWVFOFZUY2ItSG00a0RmakhiS2RpajFR?oc=5",
-      "content": "2026 U23 World Championship &nbsp;&nbsp; FloWrestling",
-      "publishedAt": "2026-11-03T05:25:54.000Z",
-      "collectedAt": "2026-11-03T14:26:41.816Z",
+      "title": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship - WPSD Local 6",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOMUZRSUFJd0prMzdmbHhwZXNOMHlldjlUaUJSZzlmRHQxY0NLLUlqbS1wTXJjMFAyM19FVWVmVGFNWWVuN0djWTdqXzVLa2c2N2luVjdUV0pPSEZGMkthM1gtSjB1c1k1RzhrWF9FTncwZ08zSkdwc3RrMEFMdVZmek80ellHUG9ad1g4cENfX25BSFJRSzdDZV8zUENGRDNHV0YzbG5zNUZ0R0RPZFdlQkRHQjc0YlQtOW5ReVE0Z2U1THZCa192bm9vZDdPZi1RRVIxM3VSWjRqdFZmRWVMNTdGSERZQ2RDeXNYVG5QVVhRbWVxRDB5NXdhWWNEXzNPVzM2alA2WjdQQQ?oc=5",
+      "content": "Kuttawa angler Matt Robertson wins $1.25 million in bass fishing world championship &nbsp;&nbsp; WPSD Local 6",
+      "publishedAt": "2026-11-04T07:16:30.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -138,48 +104,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlka2Z2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "JFDance Gibraltar wins European championship titles in Czech Republic - Gibraltar Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNanFpOE9ZQng0Q3FjeFBZSDdMcGk3cU9hSHIzcTEyaGVqMkc3RDg5YmptdWFFOEtJVW5lSG1Ga0F1Z2E5NS1DdkVoeG11eWpXQnBTTEVFX1VhRXc2YWxxUlRscUw3eHNhVDk4SDUxa1F4eTgtSHZQOXQxX1lLNFBhbmRYZTlNSE9GRVp3V20xZ2VqWlBpVFZxTnB0RQ?oc=5",
-      "content": "JFDance Gibraltar wins European championship titles in Czech Republic &nbsp;&nbsp; Gibraltar Chronicle",
-      "publishedAt": "2026-11-03T11:11:15.000Z",
-      "collectedAt": "2026-11-03T14:26:41.817Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance",
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "european championship",
-            "european"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Norway joins Finland in boycotting hockey world championship games against Russia - Times Union",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOclR5NGR3eW83NUYzekpWZ1FTaWxmUExFUG1YVjZxdThKdHNYdURLa203emhnRmkySkJZaUZNazFVVFhNRllsUmFxX3F2X25mb0R3NUlEcDM3UzFsTXFlRnlhX29BRE9uM3Z0ZjF0a0Zrem05UG10OVIwamx0S0c1d2FHdjVtSkxrVGEtUWZuNXZJWW03cVJBUVVtM2hlUnczd0NTSg?oc=5",
-      "content": "Norway joins Finland in boycotting hockey world championship games against Russia &nbsp;&nbsp; Times Union",
-      "publishedAt": "2026-11-03T12:02:07.000Z",
-      "collectedAt": "2026-11-03T14:26:41.817Z",
+      "title": "Santa Cruz Lifeguards Head to World Championships - Good Times | Santa Cruz California's Leading Free Weekly",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwTGdWdTlYa0xZcU5KM1pCUU5qNVFKRDI2bWFzdWg4WDVLOFJfUktDWFR1S3hockdPWWpiczNxeGU4ZHVhV1piSDBXbFBXZFpqZUUzeFpOMlI0NmxXSnctTXNpMDhDdmE4YWtVaFpFelk0NmtMQ2c?oc=5",
+      "content": "Santa Cruz Lifeguards Head to World Championships &nbsp;&nbsp; Good Times | Santa Cruz California's Leading Free Weekly",
+      "publishedAt": "2026-11-04T06:59:45.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -202,55 +135,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlja2Z2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "Национальная премия детского и юношеского танца «Весна священная»: объявлены победители. Доброе утро. 2026.11.03 — Видео от Первый канал - ВКонтакте",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzdmJwazNvZ28tdXVQeEswMXZReTRuSDVMYjJuMlp1Q2hIandiLTJ0RU51ZnZfVUNQakhreEN4WlRLeVJPYlF4RzVCeWJVVlUzM2lfNDZ6SURlVndqU2NqWXA4TXFCOGRFcHRkYVkxX3ZxUQ?oc=5",
-      "content": "Национальная премия детского и юношеского танца «Весна священная»: объявлены победители. Доброе утро. 2026.11.03 — Видео от Первый канал &nbsp;&nbsp; ВКонтакте",
-      "publishedAt": "2026-11-03T07:33:41.000Z",
-      "collectedAt": "2026-11-03T14:26:41.143Z",
-      "analysis": {
-        "relevance": 59,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "детск",
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "A metro Detroit wheelchair ballroom program, Dance Mobility, helped bring authenticity to the indie dance drama “Ballroom.” See link below ⬇️ 📸 Provided by Freestyle Digital Media - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYWVXZU5XeWlPeGNwLUdWaUJhSVJnanVRTWprcUlXeXFQejA1cHpLdEZaTEQ4LWdLaWMwSXhsb2FwV19icVU2MXY4YnhWb0g5Z21HU1FrbWM3OUcyU09nWUxIdVRKakRQQ2dheUV1Wnk4SjlLalVhY2Y3U3g1LUZxSDYxWGlfc0tyTE1jVmNsSnlsNHZBSDFiekUySk5jTlNmWGxtWHI4a3RUbC15bGhIbWxpZDNDYVFBU2p3b1BPdkVMdXpTZVNjdGprWVRNSlZ3a3FzZHJhVm9jck5GSTRF?oc=5",
-      "content": "A metro Detroit wheelchair ballroom program, Dance Mobility, helped bring authenticity to the indie dance drama “Ballroom.” See link below ⬇️ 📸 Provided by Freestyle Digital Media &nbsp;&nbsp; Facebook",
-      "publishedAt": "2026-11-02T17:02:16.000Z",
-      "collectedAt": "2026-11-03T14:26:41.816Z",
+      "title": "Ice hockey world championship main sponsor Skoda to ‘reassess’ backing if Russia plays - Texomashomepage.com",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVERhZVBURlV1QTR1bkx3N3VVZnQ4NlVXdXYwXzJSb0x3NkxndnF1RnVNYXhFT2I3LVZjaXdoa19NSzEwR0E5NzBJc3hKM1B2UFVNUVpOcGVuWWNIRUZNcXNjMjlEY0dGbmZWc19NckRab0dtdkl4LXQ4OTVieFFUZnZJYl9NNXJNYVVGNEJuYVZBNTR6NFc1QTRxd0otZmE0NWN4aVZBc0JmZml2bGZDSVlIM0lfSkZjVnVabVB1ZGJpTVlMTGfSAcsBQVVfeXFMUHpDUjhkQTR1Uy13MndHSHNfWWtaZVEwZ0d4WnRYZThoclVoRWQtSDJ3UjJhWVU4dUNKNTBlMjVKREQ1QlNWc0Y2eWVRVVFMM3ZTOEpOSnBQMnVDQnhNUmNpb2Z3czhpUllhLXJqdzFSQ1dldWxXMERQd3FwMEtiVUNOcjNWWm5WN3ZMbmRjNVBIeFhzcmpfVjdPZkZWbHg5UW1QWngyb0tBNE9QMmRDSWJtU0tfYTFYZEYzM2lDeHhNUTJOUG96QjU2ZXM?oc=5",
+      "content": "Ice hockey world championship main sponsor Skoda to ‘reassess’ backing if Russia plays &nbsp;&nbsp; Texomashomepage.com",
+      "publishedAt": "2026-11-04T10:13:56.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
       "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance",
-            "ballroom"
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
           ]
         },
         "context": {
@@ -263,15 +166,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Raksha Khadse says India hosting 47th World Armwrestling championship is a “very big opportunity” - The Tribune",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdVRoUENJYXU0c1JmclBvVUdKQ2Vpb1hfcXg1eDVWb0dvQkNIT2FXSzdpZDVzeDlrVXJnbDdnY3VhZWIzNEpZWklvaEItTGxTMzBLRFFkWk9IVFBNRnY3TUgzbVByRUhrRG1sTE5mWWNPbEFWNmdWQ1ROaVhOZlZldW5PMmN3U3ZRVGR0NG1SanNmbk5KeU9vOTNsY1pQQk9vb05CN2tVdFpqVnlwRWxOLTFZQm9UdkxRS2JUcVB0UkNHYmFOWm82Ni1B0gHOAUFVX3lxTE92ZjJYZ2x3WnFXejVRM1BGcHZsSlNqOWFudjFlTURaekZNSFA2dml4TXh5VG5IQ0gzclNlNW1QMWU2MXAySWhZNnN0VEI3bi0zWUtQdGtDc09NRmtSXzlmeHBRbF90VC1LWDAtbEgyaldsbDRmRkdPQllVdkJkeGs0b2VtdFZQblI1SC01YkdZMkpoeVRLekd0MUcyWDg3cC1EcElWVUkzcmg5VlJxazNNSjRGemhwS1AzWENRMmRtWE9aMXFVT0dxRnR0WlNn?oc=5",
-      "content": "Raksha Khadse says India hosting 47th World Armwrestling championship is a “very big opportunity” &nbsp;&nbsp; The Tribune",
-      "publishedAt": "2026-11-03T12:47:19.000Z",
-      "collectedAt": "2026-11-03T14:26:41.817Z",
+      "title": "Road To LA28! 2027 Xfinity U.S. Gymnastics Championships Return To Tampa - Inside Gymnastics Magazine",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPcVI1Nm1Kc0s0am50cUJhUUdxNUljUDJqUGRXRFVZREU5TnVxRGxPMGlLQUs2QTNEYjNmbU0xcG9iYVNxUC12c0F0N2ZSbVYtX2JWQk9sejcxY0hwRWluVFFaeFhGaUZVUWtuM3ZzalJIanBvRUF1c0UwLWZneldhV1c0SG9jYnQ2V0VOb3lJd1FSeFRpUVlPQ1N0dmpTZVBXSjREV3RKWnhieXFCbmtKc3JoMGtGSnJ2X3MxV2V3dXp3V3FEQkk1dFZWZzl1R2t5dGF6VGh0NmozdDF0YjhxcUJGT25zU2tYX1NOZkJB?oc=5",
+      "content": "Road To LA28! 2027 Xfinity U.S. Gymnastics Championships Return To Tampa &nbsp;&nbsp; Inside Gymnastics Magazine",
+      "publishedAt": "2026-11-03T16:34:21.000Z",
+      "collectedAt": "2026-11-04T14:41:05.158Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -285,6 +188,37 @@
           "local": false,
           "russia": false,
           "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детский сад «Огонёк» провёл кругосветное путешествие ко Дню народного единства - Новости Камских Полян",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMXJFSVJTNFVHTWNPWWRSQ1F3OWthMjhvQ1VJaDFlUXdnbVBqaHhNVWhpYXdrSmlMeE1PSVh0cXc2MXpVMjhNN25nUzdhT09BSXV2TjVRWjBjN21xNnlmaTE3bGpDbElHbUlhZ0RIMnBwOHlJYXhkZ2VaNUQxeFZvLUJiVXkwMXFXWjVpcWNXeGZRa3BSYklQR0lyY2ZKakZNc1hqSFpWOEhtRWJSZjBaWjdIaHhZelNuRHc?oc=5",
+      "content": "Детский сад «Огонёк» провёл кругосветное путешествие ко Дню народного единства &nbsp;&nbsp; Новости Камских Полян",
+      "publishedAt": "2026-11-04T10:02:24.000Z",
+      "collectedAt": "2026-11-04T14:41:03.753Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
         },
         "isFact": true,
         "confidence": 0.8
