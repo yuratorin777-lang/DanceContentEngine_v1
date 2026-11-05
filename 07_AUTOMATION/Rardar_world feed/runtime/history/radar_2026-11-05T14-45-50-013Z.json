@@ -1,0 +1,231 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-05T14:45:50.013Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 39,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 22,
+    "classifiedFacts": 17,
+    "relevantSignals": 5,
+    "durationMs": 1993
+  },
+  "distribution": {
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 272,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 8,
+      "durationMs": 320,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 369,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 369,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 386,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 270,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Malaysian Aerialist Mei Er Yee Takes First Place at World Pole & Aerial Sports Championships 2026 - Mini Me Insights",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQa1g5bHBoWXF4Njl6Xzdfd0lrYkRlekI0ZEZBdFluZklvWGRIWFVIYnFrNGFwbXVnVS01c3hQWEhGMGhMNXBVMWpfdzhqd3JNcXNwbmFtZmdtaC1HZWtFc01CTnFxMWszX0hjbHQybFZsOUowRTJUY3dDNDF6R0JwcWlBRGFpUjZpdExSekhYdjhldWM1YWxReE01Wk8xenVST21hQkF0MW5OVHZkT3BxZ0w0alZNTURvdUlpWlZ0QXRoVHUzSVpwXzZfdXFNTTVxY2o0UQ?oc=5",
+      "content": "Malaysian Aerialist Mei Er Yee Takes First Place at World Pole & Aerial Sports Championships 2026 &nbsp;&nbsp; Mini Me Insights",
+      "publishedAt": "2026-11-05T02:18:54.000Z",
+      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Ice hockey world championship sponsors increase pressure on IIHF over Russia's return - Times West Virginian",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWDJDZVN5M3NxM3VQc0JETFhuV3BJcTl5Q0o0TFpxUVVNaDF0QXdySlB6RTIwdXlvTGRHUEhNR0hRaHU3WWxmWEZ5TGJCdC1FR05TQ3VtbWZaeEV5NnAzbE1XOG5XUXJOb2c0VzFsX2RtMVA2c2RqR3FhUXA5U3haRE10cUxTbmJCbWdPMloxU1hnOXRYaTdpSDYwUVF3b3l4cjZZbHUxUjF2YVBIUVRHZm81bFNBQU1FY25Pd0dORU1JSDNtZ0VKMUw3V0J5V1dFcUxrazY5ckFUSDZjWG5pTzk0U1lBYVFYT19EVWdTNzhMNXdMRllWcA?oc=5",
+      "content": "Ice hockey world championship sponsors increase pressure on IIHF over Russia's return &nbsp;&nbsp; Times West Virginian",
+      "publishedAt": "2026-11-04T15:15:00.000Z",
+      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyd2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "US enters world championship eager to raise the women's hockey bar further after Olympic gold win - The Winchester Star",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQS08tU1V2Nm9aNjBwT2hhM0hoWEE4eERPdmhic09wWU5waWhRU0F3QkxaYmpGVVQ3Q0pMeGxJUjBxYjdvMjZRbVVBLVVKMlVjUFFtUlk5UVlkTE5sbW9sUU5nNEc5OHF0MTBhcW9VSzAzTzhDWTJMenE0SGgzT0dMM1h1NXlqdlV5WVB4anljYW54bFhGWEQwUzB0RUphbnluWFlvWXZYTXY1Sk5WcXJmWVRDcXZ4eld3d0FVLTN4SjJRR05hQVpMX0REY1JwdExPN1JpSjl3aEZSZU5sSmJzanZWNVRVelh3RlhyZG5FeFhrUU5BZmF2WWZSYnExMGJlVV9Xei0wZF9jV0NoLWRVVW5qQlFfTGNTOUNxUEZ2em1EYXc1QXlnR3IyLV9KN00?oc=5",
+      "content": "US enters world championship eager to raise the women's hockey bar further after Olympic gold win &nbsp;&nbsp; The Winchester Star",
+      "publishedAt": "2026-11-05T10:10:06.000Z",
+      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1ZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Песни и танцы народов: концерт «Многоликая душа России» в Пскове - новости Пскова и Псковской области сегодня",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1cWhaczJMN1NwWTVaVVhTR1g2eTJGX2pKTkRwVXdOOGhWbjdyUVpwOTk4NjZmSkdQa1ZGSXlZNUw3UFAwSlFtWGhkc2NtS282?oc=5",
+      "content": "Песни и танцы народов: концерт «Многоликая душа России» в Пскове &nbsp;&nbsp; новости Пскова и Псковской области сегодня",
+      "publishedAt": "2026-11-04T20:48:00.000Z",
+      "collectedAt": "2026-11-05T14:45:48.615Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlmMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans - CBC",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZLVRYcFo1cFVoRW94WnJhX2dSYkZ5dVVqWnh3T0lEc2c0R1FfaERJTzFQdGxXNmkyakZIbU1hcW9rcDZSYnVlRjFLMVVVNmNXUUxwal9ialgycXZZVWtfbWFpMnE3UjVUT1pWRWdzejM0S0Y4TC1DVkhKMVJhenM?oc=5",
+      "content": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans &nbsp;&nbsp; CBC",
+      "publishedAt": "2026-11-05T03:41:00.000Z",
+      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
