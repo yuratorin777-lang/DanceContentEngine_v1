@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-05T14:45:50.013Z",
+  "runAt": "2026-11-06T14:24:12.458Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,83 +15,85 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 39,
-    "uniqueFacts": 17,
+    "rawFacts": 40,
+    "uniqueFacts": 18,
     "duplicatesRemoved": 22,
-    "classifiedFacts": 17,
-    "relevantSignals": 5,
-    "durationMs": 1993
+    "classifiedFacts": 18,
+    "relevantSignals": 7,
+    "durationMs": 1833
   },
   "distribution": {
-    "CORE_DANCE": 2,
-    "DANCE_WORLD": 2,
-    "LOCAL_DANCE": 1
+    "DANCE_WORLD": 4,
+    "LOCAL_DANCE": 2,
+    "LOCAL_ECOSYSTEM": 1
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 272,
+      "durationMs": 302,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 8,
-      "durationMs": 320,
+      "count": 9,
+      "durationMs": 245,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 1,
-      "durationMs": 369,
+      "durationMs": 307,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 369,
+      "durationMs": 318,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 386,
+      "durationMs": 408,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 270,
+      "durationMs": 249,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWpidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Malaysian Aerialist Mei Er Yee Takes First Place at World Pole & Aerial Sports Championships 2026 - Mini Me Insights",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQa1g5bHBoWXF4Njl6Xzdfd0lrYkRlekI0ZEZBdFluZklvWGRIWFVIYnFrNGFwbXVnVS01c3hQWEhGMGhMNXBVMWpfdzhqd3JNcXNwbmFtZmdtaC1HZWtFc01CTnFxMWszX0hjbHQybFZsOUowRTJUY3dDNDF6R0JwcWlBRGFpUjZpdExSekhYdjhldWM1YWxReE01Wk8xenVST21hQkF0MW5OVHZkT3BxZ0w0alZNTURvdUlpWlZ0QXRoVHUzSVpwXzZfdXFNTTVxY2o0UQ?oc=5",
-      "content": "Malaysian Aerialist Mei Er Yee Takes First Place at World Pole & Aerial Sports Championships 2026 &nbsp;&nbsp; Mini Me Insights",
-      "publishedAt": "2026-11-05T02:18:54.000Z",
-      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "title": "Southborough dancer wins two medals at international competition: 'It was such a crazy experience' - Community Advocate",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPUGxDRjFTdFR6eFJ4azVMOG80ZDVjWkVIVUJ1WUxHMDZRaGI5d3lvbmtwM3h5bjM0VTZDSW5TUFRleU0xMXo2RTZSLXVJOHNuLVAxbXUyZmo5c19ieVlSRG1vMi1zLWZybHVPVFhadzRYMk1PX25JYzU3VEp2M1lLcHA3NWdCNzQwWTlGZVFsOE9fWHRpa0ZGQmp1NjUxR19fWFlscFprQnplNl84eWZaV255ejI2MXRsOFQtN0Zianh6TVpJRmZTclQwWDJmVE50UFVscE9hZk1UdXBCZzJvVTk3bWxnY29YMDRxU2g1WlMxU1NtUTBvQmtfZFpjUUsyMnRvZlRXUktJRjhDSW54ajA1eHdZQjlH?oc=5",
+      "content": "Southborough dancer wins two medals at international competition: 'It was such a crazy experience' &nbsp;&nbsp; Community Advocate",
+      "publishedAt": "2026-11-06T12:57:00.000Z",
+      "collectedAt": "2026-11-06T14:24:11.799Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "dance",
+            "competition"
           ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
+          "DANCE_WORLD": [
+            "international competition",
+            "international"
           ]
         },
         "context": {
@@ -104,15 +106,47 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk1d2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Ice hockey world championship sponsors increase pressure on IIHF over Russia's return - Times West Virginian",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWDJDZVN5M3NxM3VQc0JETFhuV3BJcTl5Q0o0TFpxUVVNaDF0QXdySlB6RTIwdXlvTGRHUEhNR0hRaHU3WWxmWEZ5TGJCdC1FR05TQ3VtbWZaeEV5NnAzbE1XOG5XUXJOb2c0VzFsX2RtMVA2c2RqR3FhUXA5U3haRE10cUxTbmJCbWdPMloxU1hnOXRYaTdpSDYwUVF3b3l4cjZZbHUxUjF2YVBIUVRHZm81bFNBQU1FY25Pd0dORU1JSDNtZ0VKMUw3V0J5V1dFcUxrazY5ckFUSDZjWG5pTzk0U1lBYVFYT19EVWdTNzhMNXdMRllWcA?oc=5",
-      "content": "Ice hockey world championship sponsors increase pressure on IIHF over Russia's return &nbsp;&nbsp; Times West Virginian",
-      "publishedAt": "2026-11-04T15:15:00.000Z",
-      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "title": "Stanwood dancers win medals at international tap competition in Prague - goSkagit",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeHVZV2hMSHJhQ1BzdXlXSTg5S2FEWG11WTZ0ZVNXMVFydUlfcVVCWU9SeE9jUXRSUE4tWko1ZVBnQnFEb1dObUFORVBIWk9uSUk4Zi1PbjFzYy02NGZORlBEVkZDQkRFZXFsUElMOU1jdy1KQTh1YzE4ZWxyOWdjbWlUaHduaEJtTUJ1OEd4dzRWZ1pUejBzUTlxWG5hVTVlczRhd0oxWnEwMW5QX3BLWmVQVmROMGhvNnZlR0g5ZDJQYThOUGJBWHRnRy1LcXdtS2VhWURvM3pmdWVsTndjRV9rVFhzUm8?oc=5",
+      "content": "Stanwood dancers win medals at international tap competition in Prague &nbsp;&nbsp; goSkagit",
+      "publishedAt": "2026-11-06T01:30:00.000Z",
+      "collectedAt": "2026-11-06T14:24:11.799Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "competition"
+          ],
+          "DANCE_WORLD": [
+            "international"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Shooter Veronika Major Wins World Championship Bronze and LA Olympic Quota - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcHppa2NXR2FHaVVkUWlTaHdpeWlYOXNiU2JSYWhpeWFqVjJuNnE4NHI0U0xnRUN5VGtDQ1p5TTBxTEUxQWw5NzZ4WGszSE5ZZ3ZGNDZfbXNXRXA3S1g1WlgyZGhBNHZpeVRaVnZTeWZNOHhPRjRHcVJXX1JMUjJXTG12X1dlakR6R21RRkZaRTJCZ1B1U1ljdEs1dW5hRjNq?oc=5",
+      "content": "Shooter Veronika Major Wins World Championship Bronze and LA Olympic Quota &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-06T10:52:16.000Z",
+      "collectedAt": "2026-11-06T14:24:11.799Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -135,21 +169,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyd2pidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5d2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "US enters world championship eager to raise the women's hockey bar further after Olympic gold win - The Winchester Star",
-      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQS08tU1V2Nm9aNjBwT2hhM0hoWEE4eERPdmhic09wWU5waWhRU0F3QkxaYmpGVVQ3Q0pMeGxJUjBxYjdvMjZRbVVBLVVKMlVjUFFtUlk5UVlkTE5sbW9sUU5nNEc5OHF0MTBhcW9VSzAzTzhDWTJMenE0SGgzT0dMM1h1NXlqdlV5WVB4anljYW54bFhGWEQwUzB0RUphbnluWFlvWXZYTXY1Sk5WcXJmWVRDcXZ4eld3d0FVLTN4SjJRR05hQVpMX0REY1JwdExPN1JpSjl3aEZSZU5sSmJzanZWNVRVelh3RlhyZG5FeFhrUU5BZmF2WWZSYnExMGJlVV9Xei0wZF9jV0NoLWRVVW5qQlFfTGNTOUNxUEZ2em1EYXc1QXlnR3IyLV9KN00?oc=5",
-      "content": "US enters world championship eager to raise the women's hockey bar further after Olympic gold win &nbsp;&nbsp; The Winchester Star",
-      "publishedAt": "2026-11-05T10:10:06.000Z",
-      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "title": "Benoni tap dancer makes history with world championship gold - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMHdzUXFfQk5QdmFicTY0S19QR2kyb2RjVHBPcDhpQVZmY25yV3lTQjZxbTdkblR6ejRUN0RlQVZDbTkwRnhhSnJ1cUdoR1JWRThnaEhJVU5OUXJCTF9QZl9neDVIekpUUy1neGhoQmNINVVDLXpLS2Y4S1pIQml6UnotMkxvRzFaYl92NjUzTGxQQlFRZll3a1VwUzVaMms4WHUwYjJpTkwyVkItVklub3FhakxkSzZzR1IzcER3WEFjNGdsOVBJSkR5VQ?oc=5",
+      "content": "Benoni tap dancer makes history with world championship gold &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-11-06T04:46:04.000Z",
+      "collectedAt": "2026-11-06T14:24:11.800Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
         "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
+            "dance",
             "championship"
           ],
           "DANCE_WORLD": [
@@ -166,15 +201,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1ZWZ2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlya2Z2eDNs",
       "source": "Google News — детские танцы Россия",
       "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Песни и танцы народов: концерт «Многоликая душа России» в Пскове - новости Пскова и Псковской области сегодня",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1cWhaczJMN1NwWTVaVVhTR1g2eTJGX2pKTkRwVXdOOGhWbjdyUVpwOTk4NjZmSkdQa1ZGSXlZNUw3UFAwSlFtWGhkc2NtS282?oc=5",
-      "content": "Песни и танцы народов: концерт «Многоликая душа России» в Пскове &nbsp;&nbsp; новости Пскова и Псковской области сегодня",
-      "publishedAt": "2026-11-04T20:48:00.000Z",
-      "collectedAt": "2026-11-05T14:45:48.615Z",
+      "title": "Народные танцы и огромный триколор: угольщики СУЭК-Красноярск отметили День народного единства - Newslab",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1aZlRNWjd6R1FkVERlRGpyM2Y4WkVsR0s1RzhZRTRNRnRCczhSblFmWDhUOUszd0YxTldqbDZqQldWOGYxM1HSAVpBVV95cUxPcEx6cDR1ZWpnQVBERkRvRW42NTJ5LTYxVjBCeEkwVVZNQmhYWDVWOWNfdEZCY241Wk8xMGx1TmhrbEpnc0FwNElJOWQ2WXRBd3pkZm9zZXc3RXc?oc=5",
+      "content": "Народные танцы и огромный триколор: угольщики СУЭК-Красноярск отметили День народного единства &nbsp;&nbsp; Newslab",
+      "publishedAt": "2026-11-06T10:46:00.000Z",
+      "collectedAt": "2026-11-06T14:24:11.174Z",
       "analysis": {
         "relevance": 63,
         "relevanceLevel": "MEDIUM",
@@ -187,7 +222,7 @@
             "танц"
           ],
           "CONTENT_SIGNAL": [
-            "нов"
+            "new"
           ]
         },
         "context": {
@@ -200,28 +235,66 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlmMGZ2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans - CBC",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZLVRYcFo1cFVoRW94WnJhX2dSYkZ5dVVqWnh3T0lEc2c0R1FfaERJTzFQdGxXNmkyakZIbU1hcW9rcDZSYnVlRjFLMVVVNmNXUUxwal9ialgycXZZVWtfbWFpMnE3UjVUT1pWRWdzejM0S0Y4TC1DVkhKMVJhenM?oc=5",
-      "content": "Valkyries celebrate WNBA championship with San Francisco and Oakland fans &nbsp;&nbsp; CBC",
-      "publishedAt": "2026-11-05T03:41:00.000Z",
-      "collectedAt": "2026-11-05T14:45:49.353Z",
+      "title": "«Мир танцевальных чудес»: детская хореографическая школа «Волжаночка» отмечает 30-летие - Городские вести» - Волгоград",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSGllSmZjV2tOcW51eElWcE1Qc2xXTUc1Xy1hbkdoUlZpZVY3UUNYb1dVV3QzOU1fU1pqZ2ljR1JseTJuTVJXM215cG5WWHR0d25Rd1kzTVlEQ0JqTlRZMFJQUWh6UmdGN3E0aXk0cFJ6ZFI4SzFCMmgxcS1pbm96aGs2UEp6SFZjd0ZHc0Jqb1hfM2ZKMEZrTEo2SDRobUdCZC15YmNiU0JJLXJpUldwQVIxTEF2Z2VPUWgyTk5qMC1QM0w0dW9HVTJBR3c?oc=5",
+      "content": "«Мир танцевальных чудес»: детская хореографическая школа «Волжаночка» отмечает 30-летие &nbsp;&nbsp; Городские вести» - Волгоград",
+      "publishedAt": "2026-11-06T11:01:00.000Z",
+      "collectedAt": "2026-11-06T14:24:11.174Z",
       "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "танц",
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "школа",
+            "хореограф",
+            "танц"
           ]
         },
         "context": {
-          "local": false,
-          "russia": false,
-          "global": true
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Луч света в тёмном царстве: когда в Севастополе говорят детские сердца - Новости Севастополя",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNGx5OVllZGpUbGJqUkVOaTJNWG9JeXRpMmZRYlROQy16QlEtalRscFFDbk5WcnhXWGFYdi1PNWd3NDU0dG8zRHM2SC1ZdXFMTWowNVhlakp6YWdHbVJNSzFiNTV6Z015cjFFYnFnQ2lQR25uOHJkSGpKV2JzdlhfZ0p4ajdUMzlxRERvMzk2WFAxY21jaTdaM2xPbnVLTnh3cVE?oc=5",
+      "content": "Луч света в тёмном царстве: когда в Севастополе говорят детские сердца &nbsp;&nbsp; Новости Севастополя",
+      "publishedAt": "2026-11-06T13:49:15.000Z",
+      "collectedAt": "2026-11-06T14:24:11.174Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
         },
         "isFact": true,
         "confidence": 0.8
