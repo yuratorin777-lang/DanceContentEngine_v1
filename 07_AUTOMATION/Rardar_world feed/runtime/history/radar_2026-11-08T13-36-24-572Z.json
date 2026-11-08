@@ -1,0 +1,222 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-08T13:36:24.572Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 25,
+    "uniqueFacts": 10,
+    "duplicatesRemoved": 15,
+    "classifiedFacts": 10,
+    "relevantSignals": 5,
+    "durationMs": 1446
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 234,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 201,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 247,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 340,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 9,
+      "durationMs": 231,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 189,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "The Yu-Gi-Oh! World Championship Reveals the Game’s Key Component - Crunchyroll",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX2pOYkF0WF9idDJHNW93Z1FkUmlEcDhuZUZNWDhvLVY2Q0s1MXliclhWTEhEd0Y5VzExejJqX1pRRmhRRmhHT2dIX1BlUE9pbHFnVnM2bG5BVUNWRVJMTUhnbWcySjA1Z0VpVTlocDRQbFJvRlhOUDQtdW0xSzNQZUNPVHY5SEJTZGVid3R6bE4zTXotZzhLN21lSHd1cVlZTDk0?oc=5",
+      "content": "The Yu-Gi-Oh! World Championship Reveals the Game’s Key Component &nbsp;&nbsp; Crunchyroll",
+      "publishedAt": "2026-11-08T00:02:27.000Z",
+      "collectedAt": "2026-11-08T13:36:24.149Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Dramatic relegation, podium no-show and subdued Lucinda Brand interview - Controversial jury decision as Marie Schreiber's European Championships victory overturned - CyclingUpToDate.com",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQN3dWcHRHRTNRVi0ydXh4TDBnSDV3SDdqbXczUVVzV3ExR2NsV240OHBiZDdxYUlqN1dzY2kxamM2Wi0td1N4NllFeWZyS3o3dDNtZE0wazVMVEc5eTZwMXFRVDFNd2xTWFRYaW1RR3dUVU9DR2hXalRxOWJMc3JpRkFVeVM4NDFyMHFiZl9SeG9seUtmLWdtdWgxV3o5WVJDSFVOcmgyNE9mYmhqSGE5THJtNTlOVm5IbnphRFFmMW83ZkRNS0NaaXVEVUxoekdMYW5TeGJuMUYxZTdqZTlfMFJKWVJTT3JSbXFXZHhjVVc0Vkt1bW1zTHdlVmVMRDQ3NndtTDFnYXc0bWhlTnNBbC02SHR1MWN5YzFfT3A2MWVtTzBqRVE?oc=5",
+      "content": "Dramatic relegation, podium no-show and subdued Lucinda Brand interview - Controversial jury decision as Marie Schreiber's European Championships victory overturned &nbsp;&nbsp; CyclingUpToDate.com",
+      "publishedAt": "2026-11-07T15:53:00.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "european championship",
+            "european"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkZWZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "ECW World Television Championship - WWE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1vTURBNTVfNkZzdWdvc0N3UlZOUGxhSWQtQWJ4M09uS0p5bjk0Um5iRkZzYUxLeE8zUGtCcE0yRG83MHpidzNsWmY2RzhKSUtuRWJrdkg3bnZWd0JuX1d0eGhEYWtVV2VIb1NPa1QzcDVkNFJ0?oc=5",
+      "content": "ECW World Television Championship &nbsp;&nbsp; WWE",
+      "publishedAt": "2026-11-08T02:39:49.000Z",
+      "collectedAt": "2026-11-08T13:36:24.149Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Maddie Ingoldsby facts: Professional dancer's age, partner, TV roles and more - Heart Radio",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVDVQTVRKYnZkWWFmQ1ZxOUJFUTNuelhIeXVVcmpRSkR5YkF2WmRRTU5SUHJhRDVZaFRibHdVX2ZybXBQTzVtdmhEYWREb2NXdUh6Mm55X0RUS1Mza005eUE0UHRkejVlSE5aOTRldV9MYmZiRVZ4UXF2RXpUbzI1WmtNYVh5N0xoRU9WTG8wVjhJc29rVzFN?oc=5",
+      "content": "Maddie Ingoldsby facts: Professional dancer's age, partner, TV roles and more &nbsp;&nbsp; Heart Radio",
+      "publishedAt": "2026-11-07T18:15:00.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Springboks thrash depleted Italy 66-7 with 9 tries in Nations Championship rugby - Herald Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMmkyUjJrVW9ZeVUxSTVHaUpnVkV6cTBkOE8taTVWS3E5c3k2SThIZlUyMEppNGNfbm1KR0d0X0NTcHRIU1oweWN6Rlg2UFNicERxV1lLQ19KX1o5bFR5UDEzVnRrMEtKSjdVLVk3bWJqbThHZEw3U1B6emRCLXBHSHF0RkQ0OGhyVEZqMENXSTJTZ05wS01lN0Rjbk45dFd0SEdTTTRLU0hlbzNKN3ZwNlRMLXg5WXZHQ1l0ZGVnNlY5Y0g1NjFUTmIwQWFnYkdmZHAybnVLUlRkV2tGME8zaXVtZUw4ZEhCSHNkeDlzc3d5V1hCMmJvUHFtSjZLZ2RDalE1THpuUkZaZ2hjOW5oUDVR?oc=5",
+      "content": "Springboks thrash depleted Italy 66-7 with 9 tries in Nations Championship rugby &nbsp;&nbsp; Herald Bulletin",
+      "publishedAt": "2026-11-07T13:54:51.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-07T13:15:03.747Z",
+  "runAt": "2026-11-08T13:36:24.572Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,172 +15,72 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 37,
-    "uniqueFacts": 21,
-    "duplicatesRemoved": 16,
-    "classifiedFacts": 21,
-    "relevantSignals": 10,
-    "durationMs": 2006
+    "rawFacts": 25,
+    "uniqueFacts": 10,
+    "duplicatesRemoved": 15,
+    "classifiedFacts": 10,
+    "relevantSignals": 5,
+    "durationMs": 1446
   },
   "distribution": {
-    "DANCE_WORLD": 4,
-    "CORE_DANCE": 2,
-    "LOCAL_DANCE": 2,
-    "ADJACENT_DOMAIN": 1,
-    "LOCAL_ECOSYSTEM": 1
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 3
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
-      "count": 2,
-      "durationMs": 302,
+      "count": 0,
+      "durationMs": 234,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 4,
-      "durationMs": 249,
+      "count": 1,
+      "durationMs": 201,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 1,
-      "durationMs": 482,
+      "count": 0,
+      "durationMs": 247,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 318,
+      "durationMs": 340,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 15,
-      "durationMs": 325,
+      "count": 9,
+      "durationMs": 231,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 272,
+      "durationMs": 189,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Georgetown adult tap dancers represent Canada at world championships in Prague - Halton Hills News",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSkZMN3B6b1V3NndkdElHLUxrbmFEcV92ZndoNHozVG9sNjhzYjk5WW5sS25KWTJ3UHpmUlNmTjRWNG5BYVMzTVo0ZVU1ZFpSVjN0NElsMVgxdDlZZ01tRmloWThNS3lVT1NCXzdTRU5aTWt2Q2Q2UTJNcTBtc3U3Z3pBWHl1UVZOX3g5RWdHWHA0aFpRUzdQVHJFR2ZwNGpPaGFJWS1UY3U3bEFLOWM0WUtuaDdWWkY0dGcyb2Fja2lnVEpVdXlVRFlB?oc=5",
-      "content": "Georgetown adult tap dancers represent Canada at world championships in Prague &nbsp;&nbsp; Halton Hills News",
-      "publishedAt": "2026-11-06T19:04:54.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance",
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkwd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "The Inner Circle 37 Main Event Result: Tye Ruotolo Dethrones Christian Lee In Round One, Crowned Two-Sport King - ONE Championship",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSnhUSW5maTRTSmNGZGRDR1lqUHJjbEtlT3Vqak5FVWRXeUY1U010dlhCS0U2cmJ5WWhLazl0XzFXOVRZZ05MNG5rdHpSZk9xcmxiUm9QN1l3LTh5amh0Q0pYNTdDalQtSGY4RnZxVV9jYmgwLVBvTVloX0g3RjZIcmN4bC1fM1V2ZndvMUd0RV9OUV9nV2pNR1E2dmN5RkpVOU8yd3pwbHRERWFzTEkyZlVPTXhrSHFlaFdEUUxSQ3lBRkV1WnN3a2hTR2RwaTAtTmxJ?oc=5",
-      "content": "The Inner Circle 37 Main Event Result: Tye Ruotolo Dethrones Christian Lee In Round One, Crowned Two-Sport King &nbsp;&nbsp; ONE Championship",
-      "publishedAt": "2026-11-06T14:06:59.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
-      "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqZ2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Corvallis student earns spot on world dance stage - Bitterroot Star",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOEpKeW1VY0p3eVg2TlBYcTQ5ZzZHYnZNWkhmOFNfY05KbFlLbmxmSWdpdXVtbVdpeUlQZGIwQ2ZrVmQ3bXhlR3pWbUxFOER0SWRfZmp3YXFmQTZTa19pc1Vkb3FDRmc5ZlBLcm5CWk9hZVRZVVNTdjB4THNvejVlRkxha0J3VVJtR01Sa1ln?oc=5",
-      "content": "Corvallis student earns spot on world dance stage &nbsp;&nbsp; Bitterroot Star",
-      "publishedAt": "2026-11-06T20:39:32.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
-          ],
-          "DANCE_WORLD": [
-            "world dance"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1d2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "CAPCOM CUP 13 and STREET FIGHTER LEAGUE WORLD CHAMPIONSHIP 2026 Venue Tickets Go on Sale November 9 for March 2027 Events at Ryogoku Kokugikan - www.haveagood-holiday.com",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOFlVLWlSaTE0aDhJQ3hsaGNuZUtLSmdaenhLSjA5NTFJdk1md3djZFJQbEhrQW5ZQXdGc0tCT01JR2IzVGpsb3ZQdXNyVnBaWTVKRnZiRFA2aVpvM1RjX09yN3VRVklFU3B3ZG52S2dhbWxtTl9GSnJkUDNWOUZIM2pkUk01UGVSOHpDd0tfdk4yRHFxYTNpUU9xVWV4ZFB1RWxBU0pOWVFBVldBcktaT2RCVjgyV2FoUnNJ?oc=5",
-      "content": "CAPCOM CUP 13 and STREET FIGHTER LEAGUE WORLD CHAMPIONSHIP 2026 Venue Tickets Go on Sale November 9 for March 2027 Events at Ryogoku Kokugikan &nbsp;&nbsp; www.haveagood-holiday.com",
-      "publishedAt": "2026-11-06T15:39:59.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
+      "title": "The Yu-Gi-Oh! World Championship Reveals the Game’s Key Component - Crunchyroll",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX2pOYkF0WF9idDJHNW93Z1FkUmlEcDhuZUZNWDhvLVY2Q0s1MXliclhWTEhEd0Y5VzExejJqX1pRRmhRRmhHT2dIX1BlUE9pbHFnVnM2bG5BVUNWRVJMTUhnbWcySjA1Z0VpVTlocDRQbFJvRlhOUDQtdW0xSzNQZUNPVHY5SEJTZGVid3R6bE4zTXotZzhLN21lSHd1cVlZTDk0?oc=5",
+      "content": "The Yu-Gi-Oh! World Championship Reveals the Game’s Key Component &nbsp;&nbsp; Crunchyroll",
+      "publishedAt": "2026-11-08T00:02:27.000Z",
+      "collectedAt": "2026-11-08T13:36:24.149Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -203,15 +103,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Russia's out, Canada and US among favorites: It's the 2026 IIHF Women's Ice Hockey World Championship - DW.com",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjBobkt4VzB6QXVOZGFuOXVOTE5YM3QxSVQ1Uzl2anJXXy1vWHozcGF1RkRfa2FIb1Fmd1g2RkNGN01idDZhR1k4b0NHZGhoOEQ4N2E2Vnk5TXN4cS1sdHhXS3NIQmhRWExmbDU3QmlIMWVwekRpcXM3WGhxeVJlMWV3M1BYUE5IN3BOSDdjdk16TzFLdHF2S3JLSG5TZ9IBngFBVV95cUxOYzBnc1lKbE5YWUlkbkFudVBFYVItckZQM3ItQmFESktidGhfd3Q2RXdwX2tKZGlGRUd0Z0JmVTNTRS1fZkdCVUFjZVpFS1EtbHN4N2xuSFkydGNzZjZuaUFuU3c3N19IdTVCbXB4TUNCZ0Z2N0dsZ1p1YXo0eEZmcDgtQXpFRkJsaGRiWGphaEdQdmRxTE5YTXM5MXV0UQ?oc=5",
-      "content": "Russia's out, Canada and US among favorites: It's the 2026 IIHF Women's Ice Hockey World Championship &nbsp;&nbsp; DW.com",
-      "publishedAt": "2026-11-06T21:08:42.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
+      "title": "Dramatic relegation, podium no-show and subdued Lucinda Brand interview - Controversial jury decision as Marie Schreiber's European Championships victory overturned - CyclingUpToDate.com",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQN3dWcHRHRTNRVi0ydXh4TDBnSDV3SDdqbXczUVVzV3ExR2NsV240OHBiZDdxYUlqN1dzY2kxamM2Wi0td1N4NllFeWZyS3o3dDNtZE0wazVMVEc5eTZwMXFRVDFNd2xTWFRYaW1RR3dUVU9DR2hXalRxOWJMc3JpRkFVeVM4NDFyMHFiZl9SeG9seUtmLWdtdWgxV3o5WVJDSFVOcmgyNE9mYmhqSGE5THJtNTlOVm5IbnphRFFmMW83ZkRNS0NaaXVEVUxoekdMYW5TeGJuMUYxZTdqZTlfMFJKWVJTT3JSbXFXZHhjVVc0Vkt1bW1zTHdlVmVMRDQ3NndtTDFnYXc0bWhlTnNBbC02SHR1MWN5YzFfT3A2MWVtTzBqRVE?oc=5",
+      "content": "Dramatic relegation, podium no-show and subdued Lucinda Brand interview - Controversial jury decision as Marie Schreiber's European Championships victory overturned &nbsp;&nbsp; CyclingUpToDate.com",
+      "publishedAt": "2026-11-07T15:53:00.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -221,7 +121,8 @@
             "championship"
           ],
           "DANCE_WORLD": [
-            "world championship"
+            "european championship",
+            "european"
           ]
         },
         "context": {
@@ -234,80 +135,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWliZWZ2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "В Москве мужчину арестовали на 10 суток за танцы толпы на дороге - Newsroom24",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UNGlaVVBOcFgyZ2tKUm9iQXZmRG94ZlVEc1VJVjFDRTVZbms2MGI2MjkyMGlZT3Bjak5TMUhDMC1jb0loODluSlFWN0tUd0RGTE1haEVBV1poUVNhUkNsNlc4ZjhjZFpkRkJveA?oc=5",
-      "content": "В Москве мужчину арестовали на 10 суток за танцы толпы на дороге &nbsp;&nbsp; Newsroom24",
-      "publishedAt": "2026-11-07T11:43:38.000Z",
-      "collectedAt": "2026-11-07T13:15:02.294Z",
-      "analysis": {
-        "relevance": 63,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "танц"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "От народного танца до Ивана Грозного: культурная неделя в регионах России - The World Inform",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeG84ZHEtWktoQ2YtMWlVR3dKSjNjMHRreHZwR2hMcm41eDFZYU9lWnpLUTVtcDQ4SktiMjYwSTRSdjlBWklfWVRQNXNaWlJ0Q0k0ZVR3dTduZU1EdGhZbUlBdWltWWFOSkkwLW82THFJeWM0a3Q1MVlVbTdUU3EwOXhYUTZKS0ZZM1dGNml0bXdldTNIUER6S0ZwNTJFZHl1dGwycWwtVWdXd19nc01wdjV1TQ?oc=5",
-      "content": "От народного танца до Ивана Грозного: культурная неделя в регионах России &nbsp;&nbsp; The World Inform",
-      "publishedAt": "2026-11-07T09:05:13.000Z",
-      "collectedAt": "2026-11-07T13:15:02.294Z",
-      "analysis": {
-        "relevance": 59,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlla2Z2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkZWZ2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Skating’s Brightest Stars Head to Utah for the 2027 U.S. Championships - Salt Lake Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1rZHgzSWRieUxxeXIzRXIwR3hlWVoweVFrQ0Y4MWNETXpoM2ZkMFlVOFJHWEFPdDA4cGhiZk1Vek9UajRNamp3VGhIWE5GLVJlUnd5dTZ6d19KbG1pNlByR2ZhcjJnY2tWZFFrUFVhdTlxYmF6QjhsbTJB?oc=5",
-      "content": "Skating’s Brightest Stars Head to Utah for the 2027 U.S. Championships &nbsp;&nbsp; Salt Lake Magazine",
-      "publishedAt": "2026-11-06T19:26:47.000Z",
-      "collectedAt": "2026-11-07T13:15:03.094Z",
+      "title": "ECW World Television Championship - WWE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1vTURBNTVfNkZzdWdvc0N3UlZOUGxhSWQtQWJ4M09uS0p5bjk0Um5iRkZzYUxLeE8zUGtCcE0yRG83MHpidzNsWmY2RzhKSUtuRWJrdkg3bnZWd0JuX1d0eGhEYWtVV2VIb1NPa1QzcDVkNFJ0?oc=5",
+      "content": "ECW World Television Championship &nbsp;&nbsp; WWE",
+      "publishedAt": "2026-11-08T02:39:49.000Z",
+      "collectedAt": "2026-11-08T13:36:24.149Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -327,28 +163,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
-      "source": "Google News — child physical activity",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsd2ZidnY5",
+      "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
-      "sourceWeight": 0.7,
-      "title": "Vietnam participates in the International Conference on Early Childhood Education in Mexico. - Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQME90MzNRRDJ5LV9QazJ6czU0U3RRam9ZQl9HUm41aG5uRUFpRDhQVUU4YXdiNTl4VkZUUTBjblZlQnIwZUFKdHdlek12MGJOdmZzQkw1SDAxVmU5ZHd5UjkxdVpQMjBvV0lveTNuWFNIZUZ1ZS11Uk5LcnVPd0tORlk5ZUo2NkpBWkd6NVJ5aEN1LVVC?oc=5",
-      "content": "Vietnam participates in the International Conference on Early Childhood Education in Mexico. &nbsp;&nbsp; Vietnam.vn",
-      "publishedAt": "2026-11-07T09:47:40.000Z",
-      "collectedAt": "2026-11-07T13:15:03.419Z",
+      "sourceWeight": 0.9,
+      "title": "Maddie Ingoldsby facts: Professional dancer's age, partner, TV roles and more - Heart Radio",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVDVQTVRKYnZkWWFmQ1ZxOUJFUTNuelhIeXVVcmpRSkR5YkF2WmRRTU5SUHJhRDVZaFRibHdVX2ZybXBQTzVtdmhEYWREb2NXdUh6Mm55X0RUS1Mza005eUE0UHRkejVlSE5aOTRldV9MYmZiRVZ4UXF2RXpUbzI1WmtNYVh5N0xoRU9WTG8wVjhJc29rVzFN?oc=5",
+      "content": "Maddie Ingoldsby facts: Professional dancer's age, partner, TV roles and more &nbsp;&nbsp; Heart Radio",
+      "publishedAt": "2026-11-07T18:15:00.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
       "analysis": {
-        "relevance": 28,
+        "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
-          "CHILD_DEVELOPMENT": [
-            "child"
-          ],
-          "PSYCHOLOGY_PEDAGOGY": [
-            "education"
-          ],
-          "DANCE_WORLD": [
-            "international"
+          "CORE_DANCE": [
+            "dance"
           ]
         },
         "context": {
@@ -361,28 +191,28 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrd2ZidnY5",
-      "source": "Google News — Серпухов дети танцы",
-      "sourceScope": "LOCAL",
-      "sourceWeight": 1,
-      "title": "Афиша Серпухова, Пущино и Протвино на выходные 7-8 ноября - Смитанка",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUGZ4VVQtUkY3TC1nZUlWQkM5TzFORTNSNkN0amQ4dmswZTRsWFBWeEtfdmJhM1Y0RUk2bU1mdmwyUDd6Y0tXV3BOTjVuZ0gyTXg3SkJXOVJiRlUzVDBxNHFreFhiVXAzcG8ybTZqNFUxVEViZDloMUVhNWxMZ3pJWEJjWE5wM3d4b01sbmlXZ0xyMkU?oc=5",
-      "content": "Афиша Серпухова, Пущино и Протвино на выходные 7-8 ноября &nbsp;&nbsp; Смитанка",
-      "publishedAt": "2026-11-06T14:27:33.000Z",
-      "collectedAt": "2026-11-07T13:15:02.045Z",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Springboks thrash depleted Italy 66-7 with 9 tries in Nations Championship rugby - Herald Bulletin",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQMmkyUjJrVW9ZeVUxSTVHaUpnVkV6cTBkOE8taTVWS3E5c3k2SThIZlUyMEppNGNfbm1KR0d0X0NTcHRIU1oweWN6Rlg2UFNicERxV1lLQ19KX1o5bFR5UDEzVnRrMEtKSjdVLVk3bWJqbThHZEw3U1B6emRCLXBHSHF0RkQ0OGhyVEZqMENXSTJTZ05wS01lN0Rjbk45dFd0SEdTTTRLU0hlbzNKN3ZwNlRMLXg5WXZHQ1l0ZGVnNlY5Y0g1NjFUTmIwQWFnYkdmZHAybnVLUlRkV2tGME8zaXVtZUw4ZEhCSHNkeDlzc3d5V1hCMmJvUHFtSjZLZ2RDalE1THpuUkZaZ2hjOW5oUDVR?oc=5",
+      "content": "Springboks thrash depleted Italy 66-7 with 9 tries in Nations Championship rugby &nbsp;&nbsp; Herald Bulletin",
+      "publishedAt": "2026-11-07T13:54:51.000Z",
+      "collectedAt": "2026-11-08T13:36:24.150Z",
       "analysis": {
-        "relevance": 25,
+        "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
-          "LOCAL_ECOSYSTEM": [
-            "Серпухов"
+          "CORE_DANCE": [
+            "championship"
           ]
         },
         "context": {
-          "local": true,
+          "local": false,
           "russia": false,
-          "global": false
+          "global": true
         },
         "isFact": true,
         "confidence": 0.8
