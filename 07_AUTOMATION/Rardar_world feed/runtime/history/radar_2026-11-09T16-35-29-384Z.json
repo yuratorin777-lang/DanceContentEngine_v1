@@ -1,0 +1,205 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-09T16:35:29.384Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 21,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 21,
+    "relevantSignals": 4,
+    "durationMs": 1755
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "ADJACENT_DOMAIN": 2,
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 253,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 238,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 335,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 351,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 325,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 248,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Unity's Mikaela Hennings wins world championship gold in Poland - WestCentralOnline",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeU5BdUQtY215QnkyQmY2UWVndTJCRDNKWVM0di1OUnBtVHhmYlJJazA0aWd1YmZTRnhTSTN3YjlxUXJMVnUyMUJJNWJTc3MxVW5TTEEtQmVUZTBhT29MMGV3SDFma09Tc2VQc0xodHdUUTJYaE1sbTluQmdsMGtMMmJXMjlad0thNTVpV0l6cDhkcTR6b2tHc3cyaEtRajFVeG5fS2kyYW8?oc=5",
+      "content": "Unity's Mikaela Hennings wins world championship gold in Poland &nbsp;&nbsp; WestCentralOnline",
+      "publishedAt": "2026-11-09T11:48:27.000Z",
+      "collectedAt": "2026-11-09T16:35:28.807Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlod2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 Skate America: How to watch, schedule, preview of figure skating Grand Prix event - NBC Sports",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNDlmU2hHODJaUXpYaDFtb1lfcS0yRVU5QVJrdFJaRHV2S0JHZDNhNDV5SFlQTUZIYTVHdkdQbWluamJaVHlfUngxbGVBTWhxZFpXdEVJdTZXcy1uQ0pMbTBLaWo1OGFDT0RweWdjYU82VUhzTlR4TTk2N3hlSE5Ma2tnTTlXbkk?oc=5",
+      "content": "2026 Skate America: How to watch, schedule, preview of figure skating Grand Prix event &nbsp;&nbsp; NBC Sports",
+      "publishedAt": "2026-11-09T11:01:48.000Z",
+      "collectedAt": "2026-11-09T16:35:28.808Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "CONTENT_SIGNAL": [
+            "how to"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Almost 1000 young Irish dancers descend on Dundalk for Ulster Irish Dancing Championships at Fairways Hotel - Irish Independent",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUDJjLUp0enJZYkFMYmI3RTlScENKT0lTUnFsVlFDVjVrRjYxZXNRTDEzWE1WZ1N1a1IxRm9tX2E0cHZUM0lmbExpYVVpdVdGVDM4UjBmaFRlb3IxN3NlNy1oVC1Wc3hxbzdzV2ZUMk5lVEpZUE41RTFTZDlhZWw0R3VpWDlKeDFmUVY2TVNqTy1STUJJa29sNnAxZ25pLUxGam1ya3FiUkhoNUphN2hBWnZRLU5HZHFHT29GY1ZYbjdsU3A0VGRBWnc4WW1fUl8wUlprYmFZMzRfVXF0ODZBRmdyUDdkaC11QUZ5YW9WenJISmJYaDU4?oc=5",
+      "content": "Almost 1000 young Irish dancers descend on Dundalk for Ulster Irish Dancing Championships at Fairways Hotel &nbsp;&nbsp; Irish Independent",
+      "publishedAt": "2026-11-09T16:00:00.000Z",
+      "collectedAt": "2026-11-09T16:35:28.808Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Vietnamese single mother raises two children through travel and self-study - VnExpress International",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUzM1NXFjbnQweHhmdkdHX3JnbkYzV2o2MVFBRWVoOXFVMWtVaHBQWmdRZmN2TUhteGQyLWNaeGRrcTY3SnZ3LXNXb0pmSzg5Nzh1eGcxVHk5VXFsYzlySUR4dlNmSVBXQm9NbVkzZGNaazVvZnprSDJoNU5VeWpfMm1SQVhDZV96SlZKNzNiMEdBWkVaS2xRaWhnLUV4V0tnLTBkZnh2cmNURDJLQllyaGkyTXhOclVqT190ZHRIZ1M2eE5QMFE?oc=5",
+      "content": "Vietnamese single mother raises two children through travel and self-study &nbsp;&nbsp; VnExpress International",
+      "publishedAt": "2026-11-09T13:14:16.000Z",
+      "collectedAt": "2026-11-09T16:35:29.132Z",
+      "analysis": {
+        "relevance": 31,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "DANCE_WORLD": [
+            "international"
+          ],
+          "CONTENT_SIGNAL": [
+            "study"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
