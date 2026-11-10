@@ -1,0 +1,253 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-10T14:59:58.293Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 37,
+    "uniqueFacts": 24,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 24,
+    "relevantSignals": 6,
+    "durationMs": 1948
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 4,
+    "ADJACENT_DOMAIN": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 290,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 4,
+      "durationMs": 383,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 3,
+      "durationMs": 343,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 342,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 318,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 267,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Atiqa Mir produces overtaking masterclass to finish 6th on FIA World Championship debut - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZzNja3czNUkxYnNJZktMSEhNbktIMXc1Y2xaMjNCeXRROXpTUWp6WnBjRWxMa3NaT1VuMlhZaHNVcEZsQzNRcGRpVHU2QnVjcFpaOGc3Vkl5VFFmc0tSUVBwVlF2RTIwbTFHTEFkaWhzUGRPMW1xcUhGbXlTMjhxV3FvRTg3RkpqWF90ZWoxR0tBR3Y3SDN3SUlMaDZTOGdON090RlRiS1NhaFdzeFFXR3Y1dzRJYUVWMVRocVRLT3UzYTlsLVNfZmwzS3pEaUhOc1ZLV9IB2wFBVV95cUxOVWkzSnlNcG1aQnFrcnhRdTVFaGtaU3doc3lZRVFJbjIwUmhzdFFfRTJUOTJndnM1YVhEVXVVVU83YjJGWXZabl9sSEh3RDJhZ09MYzVZNHZTLXQ5ZlV0OFdHSU80REJpM21uOHNyNGlRdlhZRElTc0xManlGZzVwZVE5YjgwR1c0Z1cyWERaaEZRWFZQNWJIdGFjZVVFTkVVRUxQWHMwRVFDZnJ5U0RJeXlTdUpWcm05ZUI1VUxqdUMwdEF4czdVcXlCb1QxSTgzNFE5amhRTlZVNUE?oc=5",
+      "content": "Atiqa Mir produces overtaking masterclass to finish 6th on FIA World Championship debut &nbsp;&nbsp; The Hindu",
+      "publishedAt": "2026-11-09T18:48:28.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Russia is getting Norway’s spot in Canada’s world juniors hockey championship - Global News",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOEt2RzdwaGdlRXpNT1ctRkNPNHRPSkR0SnJqYmZCLWlsVXhtNV9uamxKOTk2MVVCSTNqSjltTklwaW9LTXp4WFNYMFk1bUxKNEZScnRyaXZ3VXlUZThnNDBNUHBjcFdza1RpOXNrZVBKNnVPUGdFa3IwaDU4QmJtal9vLWVtbnNNQk80a2hzRGU4Wnc4WUpuUDJHOWU4R0ZQeFIyZ1Z2c1dfUzVsWXFFMVN3?oc=5",
+      "content": "Russia is getting Norway’s spot in Canada’s world juniors hockey championship &nbsp;&nbsp; Global News",
+      "publishedAt": "2026-11-09T22:44:56.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Amber Glenn out of Grand Prix Series while competing on 'Dancing with the Stars' - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMXZDVzI5S243VEhTSGJXSFc2Ri1mSGhNTGRzaXYzZ3JBUkV0NGJoMDA1aTg4emJIdTdIQ3B5UzhGVjhURlpNSXhfSHdUTVpZUVNXVHlnbk04NzhXLVVPVXh6UzA3dTlWRjFxSTZjNE96VEo0QmltUHZlenVyZmpQVm5WLWw?oc=5",
+      "content": "Amber Glenn out of Grand Prix Series while competing on 'Dancing with the Stars' &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-11-10T11:49:36.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "From Riverdance to running her own Irish dance school in Bristol - www.irishpost.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdUtyNWpEcXliXzFvRmpDUkNxT2xZX1ZwSFd1cXlLTzJfUXQ1YTdOYUJDbXpRNTBBZVBydmk5dFhjd1V6clhsVW56a28zbUFkZm9rSzUzYlN0MWc2MnY5aGRBSkNiVTBGWnFTMGhBX21LdE90NWlXVGt6SW04MnRGaWNVNWFWVmFjUGluMWZ4eTd0RjZhTmY0NHZBQVZLY2JlajNndGVxa0kwYkE?oc=5",
+      "content": "From Riverdance to running her own Irish dance school in Bristol &nbsp;&nbsp; www.irishpost.com",
+      "publishedAt": "2026-11-10T10:25:23.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2MGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Robert Piliposyan wins bronze at World Under-20 Blitz Chess Championship - Armenpress",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBKdVp3Z1NIdk0yQmQ4d01XTGNwdWY3VVBRaVBiR1ZpTVZDek9JWklqWmM3dTZ5UUtPZkJUdUwwNllSZ05NSlF1NS1nU1J3emFsdXgtcTc0b9IBV0FVX3lxTFBKdVp3Z1NIdk0yQmQ4d01XTGNwdWY3VVBRaVBiR1ZpTVZDek9JWklqWmM3dTZ5UUtPZkJUdUwwNllSZ05NSlF1NS1nU1J3emFsdXgtcTc0bw?oc=5",
+      "content": "Robert Piliposyan wins bronze at World Under-20 Blitz Chess Championship &nbsp;&nbsp; Armenpress",
+      "publishedAt": "2026-11-10T11:07:00.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Two Silver Medals at the World Wrestling Championships - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2N1d1hJNWUxc0pxTTFUOVhyNTVwWlZKTzM4V0F0ZTJDa1JmZjRNVmVVLUdUUjhTOGotNlBPYlBGaWJLa0Y5bElqM0YzTlBBS3F4MzdtYnItYjBaUXdxX3daejQtV2lQM3A2LWNpOHFmejJUQTZtZ2hDMHMtaDhpUzNhQkpBZw?oc=5",
+      "content": "Two Silver Medals at the World Wrestling Championships &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-10T09:46:28.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

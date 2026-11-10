@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-09T16:35:29.384Z",
+  "runAt": "2026-11-10T14:59:58.293Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,73 +15,73 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 34,
-    "uniqueFacts": 21,
+    "rawFacts": 37,
+    "uniqueFacts": 24,
     "duplicatesRemoved": 13,
-    "classifiedFacts": 21,
-    "relevantSignals": 4,
-    "durationMs": 1755
+    "classifiedFacts": 24,
+    "relevantSignals": 6,
+    "durationMs": 1948
   },
   "distribution": {
     "DANCE_WORLD": 1,
-    "ADJACENT_DOMAIN": 2,
-    "CORE_DANCE": 1
+    "CORE_DANCE": 4,
+    "ADJACENT_DOMAIN": 1
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 253,
+      "durationMs": 290,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 3,
-      "durationMs": 238,
+      "count": 4,
+      "durationMs": 383,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 1,
-      "durationMs": 335,
+      "count": 3,
+      "durationMs": 343,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 351,
+      "durationMs": 342,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 325,
+      "durationMs": 318,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 248,
+      "durationMs": 267,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkxYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Unity's Mikaela Hennings wins world championship gold in Poland - WestCentralOnline",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeU5BdUQtY215QnkyQmY2UWVndTJCRDNKWVM0di1OUnBtVHhmYlJJazA0aWd1YmZTRnhTSTN3YjlxUXJMVnUyMUJJNWJTc3MxVW5TTEEtQmVUZTBhT29MMGV3SDFma09Tc2VQc0xodHdUUTJYaE1sbTluQmdsMGtMMmJXMjlad0thNTVpV0l6cDhkcTR6b2tHc3cyaEtRajFVeG5fS2kyYW8?oc=5",
-      "content": "Unity's Mikaela Hennings wins world championship gold in Poland &nbsp;&nbsp; WestCentralOnline",
-      "publishedAt": "2026-11-09T11:48:27.000Z",
-      "collectedAt": "2026-11-09T16:35:28.807Z",
+      "title": "Atiqa Mir produces overtaking masterclass to finish 6th on FIA World Championship debut - The Hindu",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZzNja3czNUkxYnNJZktMSEhNbktIMXc1Y2xaMjNCeXRROXpTUWp6WnBjRWxMa3NaT1VuMlhZaHNVcEZsQzNRcGRpVHU2QnVjcFpaOGc3Vkl5VFFmc0tSUVBwVlF2RTIwbTFHTEFkaWhzUGRPMW1xcUhGbXlTMjhxV3FvRTg3RkpqWF90ZWoxR0tBR3Y3SDN3SUlMaDZTOGdON090RlRiS1NhaFdzeFFXR3Y1dzRJYUVWMVRocVRLT3UzYTlsLVNfZmwzS3pEaUhOc1ZLV9IB2wFBVV95cUxOVWkzSnlNcG1aQnFrcnhRdTVFaGtaU3doc3lZRVFJbjIwUmhzdFFfRTJUOTJndnM1YVhEVXVVVU83YjJGWXZabl9sSEh3RDJhZ09MYzVZNHZTLXQ5ZlV0OFdHSU80REJpM21uOHNyNGlRdlhZRElTc0xManlGZzVwZVE5YjgwR1c0Z1cyWERaaEZRWFZQNWJIdGFjZVVFTkVVRUxQWHMwRVFDZnJ5U0RJeXlTdUpWcm05ZUI1VUxqdUMwdEF4czdVcXlCb1QxSTgzNFE5amhRTlZVNUE?oc=5",
+      "content": "Atiqa Mir produces overtaking masterclass to finish 6th on FIA World Championship debut &nbsp;&nbsp; The Hindu",
+      "publishedAt": "2026-11-09T18:48:28.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -104,25 +104,53 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlod2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "2026 Skate America: How to watch, schedule, preview of figure skating Grand Prix event - NBC Sports",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNDlmU2hHODJaUXpYaDFtb1lfcS0yRVU5QVJrdFJaRHV2S0JHZDNhNDV5SFlQTUZIYTVHdkdQbWluamJaVHlfUngxbGVBTWhxZFpXdEVJdTZXcy1uQ0pMbTBLaWo1OGFDT0RweWdjYU82VUhzTlR4TTk2N3hlSE5Ma2tnTTlXbkk?oc=5",
-      "content": "2026 Skate America: How to watch, schedule, preview of figure skating Grand Prix event &nbsp;&nbsp; NBC Sports",
-      "publishedAt": "2026-11-09T11:01:48.000Z",
-      "collectedAt": "2026-11-09T16:35:28.808Z",
+      "title": "Russia is getting Norway’s spot in Canada’s world juniors hockey championship - Global News",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOEt2RzdwaGdlRXpNT1ctRkNPNHRPSkR0SnJqYmZCLWlsVXhtNV9uamxKOTk2MVVCSTNqSjltTklwaW9LTXp4WFNYMFk1bUxKNEZScnRyaXZ3VXlUZThnNDBNUHBjcFdza1RpOXNrZVBKNnVPUGdFa3IwaDU4QmJtal9vLWVtbnNNQk80a2hzRGU4Wnc4WUpuUDJHOWU4R0ZQeFIyZ1Z2c1dfUzVsWXFFMVN3?oc=5",
+      "content": "Russia is getting Norway’s spot in Canada’s world juniors hockey championship &nbsp;&nbsp; Global News",
+      "publishedAt": "2026-11-09T22:44:56.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
       "analysis": {
         "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Amber Glenn out of Grand Prix Series while competing on 'Dancing with the Stars' - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMXZDVzI5S243VEhTSGJXSFc2Ri1mSGhNTGRzaXYzZ3JBUkV0NGJoMDA1aTg4emJIdTdIQ3B5UzhGVjhURlpNSXhfSHdUTVpZUVNXVHlnbk04NzhXLVVPVXh6UzA3dTlWRjFxSTZjNE96VEo0QmltUHZlenVyZmpQVm5WLWw?oc=5",
+      "content": "Amber Glenn out of Grand Prix Series while competing on 'Dancing with the Stars' &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-11-10T11:49:36.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "ADJACENT_DOMAIN",
         "matchedCategories": {
           "DANCE_WORLD": [
             "grand prix"
-          ],
-          "CONTENT_SIGNAL": [
-            "how to"
           ],
           "ACTIVITY_CONTEXT": [
             "sport"
@@ -138,22 +166,49 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5d2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Almost 1000 young Irish dancers descend on Dundalk for Ulster Irish Dancing Championships at Fairways Hotel - Irish Independent",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUDJjLUp0enJZYkFMYmI3RTlScENKT0lTUnFsVlFDVjVrRjYxZXNRTDEzWE1WZ1N1a1IxRm9tX2E0cHZUM0lmbExpYVVpdVdGVDM4UjBmaFRlb3IxN3NlNy1oVC1Wc3hxbzdzV2ZUMk5lVEpZUE41RTFTZDlhZWw0R3VpWDlKeDFmUVY2TVNqTy1STUJJa29sNnAxZ25pLUxGam1ya3FiUkhoNUphN2hBWnZRLU5HZHFHT29GY1ZYbjdsU3A0VGRBWnc4WW1fUl8wUlprYmFZMzRfVXF0ODZBRmdyUDdkaC11QUZ5YW9WenJISmJYaDU4?oc=5",
-      "content": "Almost 1000 young Irish dancers descend on Dundalk for Ulster Irish Dancing Championships at Fairways Hotel &nbsp;&nbsp; Irish Independent",
-      "publishedAt": "2026-11-09T16:00:00.000Z",
-      "collectedAt": "2026-11-09T16:35:28.808Z",
+      "title": "From Riverdance to running her own Irish dance school in Bristol - www.irishpost.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdUtyNWpEcXliXzFvRmpDUkNxT2xZX1ZwSFd1cXlLTzJfUXQ1YTdOYUJDbXpRNTBBZVBydmk5dFhjd1V6clhsVW56a28zbUFkZm9rSzUzYlN0MWc2MnY5aGRBSkNiVTBGWnFTMGhBX21LdE90NWlXVGt6SW04MnRGaWNVNWFWVmFjUGluMWZ4eTd0RjZhTmY0NHZBQVZLY2JlajNndGVxa0kwYkE?oc=5",
+      "content": "From Riverdance to running her own Irish dance school in Bristol &nbsp;&nbsp; www.irishpost.com",
+      "publishedAt": "2026-11-10T10:25:23.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance",
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2MGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Robert Piliposyan wins bronze at World Under-20 Blitz Chess Championship - Armenpress",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBKdVp3Z1NIdk0yQmQ4d01XTGNwdWY3VVBRaVBiR1ZpTVZDek9JWklqWmM3dTZ5UUtPZkJUdUwwNllSZ05NSlF1NS1nU1J3emFsdXgtcTc0b9IBV0FVX3lxTFBKdVp3Z1NIdk0yQmQ4d01XTGNwdWY3VVBRaVBiR1ZpTVZDek9JWklqWmM3dTZ5UUtPZkJUdUwwNllSZ05NSlF1NS1nU1J3emFsdXgtcTc0bw?oc=5",
+      "content": "Robert Piliposyan wins bronze at World Under-20 Blitz Chess Championship &nbsp;&nbsp; Armenpress",
+      "publishedAt": "2026-11-10T11:07:00.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
             "championship"
           ]
         },
@@ -167,29 +222,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
-      "source": "Google News — child physical activity",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
+      "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
-      "sourceWeight": 0.7,
-      "title": "Vietnamese single mother raises two children through travel and self-study - VnExpress International",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUzM1NXFjbnQweHhmdkdHX3JnbkYzV2o2MVFBRWVoOXFVMWtVaHBQWmdRZmN2TUhteGQyLWNaeGRrcTY3SnZ3LXNXb0pmSzg5Nzh1eGcxVHk5VXFsYzlySUR4dlNmSVBXQm9NbVkzZGNaazVvZnprSDJoNU5VeWpfMm1SQVhDZV96SlZKNzNiMEdBWkVaS2xRaWhnLUV4V0tnLTBkZnh2cmNURDJLQllyaGkyTXhOclVqT190ZHRIZ1M2eE5QMFE?oc=5",
-      "content": "Vietnamese single mother raises two children through travel and self-study &nbsp;&nbsp; VnExpress International",
-      "publishedAt": "2026-11-09T13:14:16.000Z",
-      "collectedAt": "2026-11-09T16:35:29.132Z",
+      "sourceWeight": 0.9,
+      "title": "Two Silver Medals at the World Wrestling Championships - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2N1d1hJNWUxc0pxTTFUOVhyNTVwWlZKTzM4V0F0ZTJDa1JmZjRNVmVVLUdUUjhTOGotNlBPYlBGaWJLa0Y5bElqM0YzTlBBS3F4MzdtYnItYjBaUXdxX3daejQtV2lQM3A2LWNpOHFmejJUQTZtZ2hDMHMtaDhpUzNhQkpBZw?oc=5",
+      "content": "Two Silver Medals at the World Wrestling Championships &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-10T09:46:28.000Z",
+      "collectedAt": "2026-11-10T14:59:57.705Z",
       "analysis": {
-        "relevance": 31,
+        "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
-          "CHILD_DEVELOPMENT": [
-            "child",
-            "children"
-          ],
-          "DANCE_WORLD": [
-            "international"
-          ],
-          "CONTENT_SIGNAL": [
-            "study"
+          "CORE_DANCE": [
+            "championship"
           ]
         },
         "context": {
