@@ -1,0 +1,265 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-11T14:31:59.350Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 30,
+    "uniqueFacts": 15,
+    "duplicatesRemoved": 15,
+    "classifiedFacts": 15,
+    "relevantSignals": 6,
+    "durationMs": 2070
+  },
+  "distribution": {
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 3,
+    "LOCAL_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 347,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 336,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 354,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 354,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 11,
+      "durationMs": 340,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 1,
+      "durationMs": 334,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Grand Slam of Darts: Tommy Morris set to light up tournament in Wolverhampton with dance moves to rival Dimitri van den Bergh - Sky Sports",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNMy10bmpBQjg2YzFYZ05WeHpYejB6Wm1fWGtDRTJ4T2Y2WjRrdnRSdkRLWnEzS2F6TnFoNXcxU1N4Q3BDQnJTNTJiVjdtNXhCclByVXpZZ2ppc3dIRzBYWEdQZ0I5cXpyX1lGOUUyRGxFblljMFZOM2xIQUpGenE2UWJqeU41S0Q1NmQ4SWVnbHhHRXVnWHNBSEZpUl9CT2lwVEtHWFQyblhYLXJZNGJnTVVtWVlBV3VMcElmYms1T2NGRXgxTDE2bjdQWmpINkhXbGRvSGgwMVNNa1FCdXppelBkRTUzQ3FJclUydEtqX3UzYzdSOXMycTBnRTFTNTA?oc=5",
+      "content": "Grand Slam of Darts: Tommy Morris set to light up tournament in Wolverhampton with dance moves to rival Dimitri van den Bergh &nbsp;&nbsp; Sky Sports",
+      "publishedAt": "2026-11-11T07:01:35.000Z",
+      "collectedAt": "2026-11-11T14:31:58.673Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Insider Info: 2026 American Grand Grand Nationals DI/DII And Dance Nationals - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMUhKN0pmRnJaWjFnZFlaQ2tfNkxwZV9qNnVYYXNxeE5TLTVDRUZaQl9fZHRXZzhuaVA2ZVU3cUVFU3JPM1h6M3VSTnNlRXB6Nm02RUl6Z0poVDNIZWs0TDJwNVVLUEZNa3M0ZldDTUxuVFh0NWRLZkVfNzJpOTcteTZRdkcwY2R1Wmc?oc=5",
+      "content": "Insider Info: 2026 American Grand Grand Nationals DI/DII And Dance Nationals &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-11-10T19:27:14.000Z",
+      "collectedAt": "2026-11-11T14:31:58.673Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "A world championship just 10 minutes from home for Dani Kramer - The Southland Tribune",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZlBVZW0yRlhVbEU0TlpNV0EyWVZtNkNtWWNzSGlSb3l2ZTNNRkhGclRlQmc1bjNnUi12QWZ4bHZoem5xSTk1VWo2Yi1iMXBPR1JHeW45U3RHSDIwN2tLMDJTTkl6bG9ROW9iLUd5dDJnUHhjOXktQ2lxM3pMWlRhWWZR?oc=5",
+      "content": "A world championship just 10 minutes from home for Dani Kramer &nbsp;&nbsp; The Southland Tribune",
+      "publishedAt": "2026-11-11T09:44:52.000Z",
+      "collectedAt": "2026-11-11T14:31:58.673Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk2YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "One win away from history: Toledo wrestler chases world championship title - wtol.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNVEhaMkxuVTc4bWc0RTZpNFJoMVVyUjNCdkxwT08xRmxmZGtoeDdDX1BfeFNkUnc3ak9pVmd1Y0JiLUJOaUE3c1d6OHNOZ1JiY2hXSkxkbVdlbFVCdDlpc0xkS1ROQXpja2tNeFZIYWoyS2RvcDJwYmlRTjZ4Z0xnVHhLdVJpU3o0SUg2bDRRVE12SUI3NXhLQ09pdFc2cUtRcE1zd0VnQzVYRlJ6U1RWMDZhMEpGMHdIOTF1NVVkUTk1bkJYQnpiUDBZWUZtU3ZWSUhENXhzNEs1MlprNkkzSENGbTBQNGlT?oc=5",
+      "content": "One win away from history: Toledo wrestler chases world championship title &nbsp;&nbsp; wtol.com",
+      "publishedAt": "2026-11-11T03:59:00.000Z",
+      "collectedAt": "2026-11-11T14:31:58.673Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Shooter Veronika Major Wins World Championship Bronze and LA Olympic Quota - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcHppa2NXR2FHaVVkUWlTaHdpeWlYOXNiU2JSYWhpeWFqVjJuNnE4NHI0U0xnRUN5VGtDQ1p5TTBxTEUxQWw5NzZ4WGszSE5ZZ3ZGNDZfbXNXRXA3S1g1WlgyZGhBNHZpeVRaVnZTeWZNOHhPRjRHcVJXX1JMUjJXTG12X1dlakR6R21RRkZaRTJCZ1B1U1ljdEs1dW5hRjNq?oc=5",
+      "content": "Shooter Veronika Major Wins World Championship Bronze and LA Olympic Quota &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-11T00:07:27.000Z",
+      "collectedAt": "2026-11-11T14:31:58.673Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Запрещают пиццу и вражеские танцы : чем жил Запоребрик на неделе - DSNews",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeU9PaW9TZ1NaRTNpM25NMmx3dkYxY3NnWTJyLXl0ZmJOTGoybm1MdzEwWmFvWWtPZU9IRUFUa3NXejVZMHFqd0xfLXowcTU5NTNtWUFiVkdxMEhmRkFaRVhZTkExVUVVSDdRdDlRMEozdDBmR1FFT0s4ZFZpOFkxeGpCRi1ER3l0TmdVWGloek8yS1RxYTY3QS1INGFhWnBoZ2ZKZmMzdHBMM2ktVVdxbWVYUGQ2Ymh0MG1ybVY3RFBQT0py0gHKAUFVX3lxTE1wODlvTkdYY1lnMkwtdzlrLWhRclpSMHVVcWQ3TFZQcTVTQll5cGF1dE1LbjJnUnd3VmNXaURGV1U3WGx4dG9heEZhRFBmUVVfanB5eU13MTRmNE50X0VwbVZFUFdLQ1dnY0FKWmR1Nk5EeTdlV0ZNcVhuejRPbnZBc3VqclJaNXhuMGhoWHFoVnZNQUYtd1dxZHZOUmRNTG8xN2FjU0JKZW5zSERsNFlQcVYyUm5sQ3J5VEZpb1J0RjF3QmpWaXRkcWc?oc=5",
+      "content": "Запрещают пиццу и вражеские танцы : чем жил Запоребрик на неделе &nbsp;&nbsp; DSNews",
+      "publishedAt": "2026-11-10T15:30:35.000Z",
+      "collectedAt": "2026-11-11T14:31:57.966Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
