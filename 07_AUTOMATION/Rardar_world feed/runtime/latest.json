@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-12T15:24:43.497Z",
+  "runAt": "2026-11-13T14:42:02.738Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,117 +15,174 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 30,
-    "uniqueFacts": 13,
-    "duplicatesRemoved": 17,
-    "classifiedFacts": 13,
-    "relevantSignals": 3,
-    "durationMs": 1484
+    "rawFacts": 34,
+    "uniqueFacts": 16,
+    "duplicatesRemoved": 18,
+    "classifiedFacts": 16,
+    "relevantSignals": 6,
+    "durationMs": 1651
   },
   "distribution": {
-    "DANCE_WORLD": 2,
-    "CORE_DANCE": 1
+    "LOCAL_DANCE": 3,
+    "CORE_DANCE": 3
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 237,
+      "durationMs": 268,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 0,
-      "durationMs": 212,
+      "count": 4,
+      "durationMs": 349,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 246,
+      "durationMs": 229,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 299,
+      "durationMs": 291,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 251,
+      "durationMs": 256,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 234,
+      "durationMs": 254,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljMGZ2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2pidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "Capalaba Aerobics Team Heads to World Championships - Redland Bayside News",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5UYS1TR0U0QXNfRzdBa0RmbDhXRmo0WWhISHF1eVI0N1JUQXNkTlMtYkp5NVdyYjVWZ0RpX19jaEwxalZIOTFqNmttQUFHWVQtbWMxM0ZyTEFpZUpQSlcxTjd2WjNUZnV3OXJPemJGRHUzUXM?oc=5",
-      "content": "Capalaba Aerobics Team Heads to World Championships &nbsp;&nbsp; Redland Bayside News",
-      "publishedAt": "2026-11-11T22:05:00.000Z",
-      "collectedAt": "2026-11-12T15:24:43.009Z",
+      "title": "«СТАРТИН КИДС»: маленькие танцоры, большие амбиции и море энергии! — Красноуфимск Онлайн - Красноуфимск Онлайн",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQWGpRRjFfV3Z4TkwtZnk5eWhvM2xWcHlvN3FlSGdYbmFxUGQxVVdIdHpMOTNMMWlyN01lYTYzLTd2djBIOWQ1WU5JMkRRd2hNeW1NSHJvSDlhZVZuN3pGbUJUUzNaRWFNdzVDOE93Z3I3ZEJLbmQtcHlONklMTEV4c0JCdjBJVHdKN0MyX0ZVcnZTTWtmQUhmVmNQWWZWd1A0X3FPWUpVS1I4MmFfT3JQU2RiZXd4cURiZTRQSXdMbHFkM1drcnBrUFJIZ3ZtNzhCNnF4MUFwa0M5Vl9NZ05kN2JCVU50UTk0cXVRT1B1Q2pKTGpzUnFxOFJueXZ6OHg3RjVWMUFJUDJNdF9Hb2poWnYyQ0dvNEo2N1MwRENwNVRPSkRYaXdXSmlra1VONXNDaGc?oc=5",
+      "content": "«СТАРТИН КИДС»: маленькие танцоры, большие амбиции и море энергии! — Красноуфимск Онлайн &nbsp;&nbsp; Красноуфимск Онлайн",
+      "publishedAt": "2026-11-13T09:31:37.000Z",
+      "collectedAt": "2026-11-13T14:42:01.706Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "танц"
           ],
-          "DANCE_WORLD": [
-            "world championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
+          "LOCAL_ECOSYSTEM": [
+            "танц"
           ]
         },
         "context": {
-          "local": false,
-          "russia": false,
-          "global": true
+          "local": true,
+          "russia": true,
+          "global": false
         },
         "isFact": true,
         "confidence": 0.8
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllMGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "\"Щелкунчик\" театра танца \"Казаки России\" пройдет 16 и 17 декабря в БКЗ «Октябрьский» - Пресс-релиз.ру",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1mLVAyN2lLMTZ4RnZ5aHlXMU9vR2YxOVdqV1FqY3h0RHg0RGY1YTI0M1EzT2hkd0hnVGRUOHZkcE1MZkREU0FxOThrWFNYYzd3S09zSzZqTnhjMWwtRmtGVTh5UmJ2UlZUQXRKLV9BT1V4aExNbHpJVnlsaw?oc=5",
+      "content": "\"Щелкунчик\" театра танца \"Казаки России\" пройдет 16 и 17 декабря в БКЗ «Октябрьский» &nbsp;&nbsp; Пресс-релиз.ру",
+      "publishedAt": "2026-11-12T17:57:20.000Z",
+      "collectedAt": "2026-11-13T14:42:01.706Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3ZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Концерт «Живи, танцуя» хореографического ансамбля «Акварель» - NV86.ru",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5JUFhhVVR3aUV3LUp5WHRSdHNCTDJubkNOWHY1eUJZdzhKZ09kS2xZOFh1aHBsMVlEazdsSnNnbmk5OGFXWmJNc2pBdS1ob29HZFQ2NkhFSmU?oc=5",
+      "content": "Концерт «Живи, танцуя» хореографического ансамбля «Акварель» &nbsp;&nbsp; NV86.ru",
+      "publishedAt": "2026-11-12T15:53:39.000Z",
+      "collectedAt": "2026-11-13T14:42:01.706Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц",
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "хореограф",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqd2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Island Dancer Dancesport Championship 2026 opens a platform for Sri Lankan dancers - Island.lk",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPM0xqQTFUazB5LXROTWpFVXJFN0hFaVJFZzR6OWt3aE01TEFXbGtxd0JxX1IyQzRvUThXNW1BZ2M4RHNOUUVNcjhWeWRmLXZlYlNtTnpYM2tJck9QelRFMWh2MlppY0prMTdhYUk5bU5mbGNrRmxnb1pxNC1pNHJDU1FlVU1XQUJjS24yNGo5MDE3QmdXdkFMNUhfQWJ2eWRHdzBn?oc=5",
-      "content": "Island Dancer Dancesport Championship 2026 opens a platform for Sri Lankan dancers &nbsp;&nbsp; Island.lk",
-      "publishedAt": "2026-11-12T12:00:00.000Z",
-      "collectedAt": "2026-11-12T15:24:43.010Z",
+      "title": "Championship drama unfolds at Las Vegas Nationals - Escalon Times",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaTFFV1U1Q05rWWZidFRMdGJvd0Jtd2tQVFdyelUxNVpZcjFiMnNEcTVHU1BYejlXeWx1VldleWFhSjBkeTRkYUN2TmxGQWFuN3R3d2FxZUxJbnFnQVdhWldzVkV3bnBhZVFtR2VQUDFObTFZUTctRVhjVmtWVEtWN2hfd01NdXZGZ0JpazlORQ?oc=5",
+      "content": "Championship drama unfolds at Las Vegas Nationals &nbsp;&nbsp; Escalon Times",
+      "publishedAt": "2026-11-12T17:33:08.000Z",
+      "collectedAt": "2026-11-13T14:42:02.226Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
+        "relevance": 36,
+        "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance",
             "championship"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
           ]
         },
         "context": {
@@ -138,25 +195,50 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltd2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "World Championship Power Rankings: USA Still On The Path For Gold Heading To Elimination Round - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZFM1ejRZYS1pcWtDZ1dhOEtEeVdEb3RvNktIZ3g4WTBXUXZldlpDUVFmZ09NQm5fMkNRclE3SWl2V1E5MVk5WS03X1o4MHowc3poaVoyVWMzMEk4YW1PQ1FxVExrRi1HUFc3RmRCOHpVQW0zRy1Bak5PTXg1YlJsNGR0Q3E1ZFdESGxIRzB3?oc=5",
-      "content": "World Championship Power Rankings: USA Still On The Path For Gold Heading To Elimination Round &nbsp;&nbsp; Yahoo",
-      "publishedAt": "2026-11-12T12:55:38.000Z",
-      "collectedAt": "2026-11-12T15:24:43.009Z",
+      "title": "Travis Kelce and Jason Kelce to judge Dancing With the Stars? Professional dancer reveals his dream casti - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQREN0M3pEdWVBTlM4MlZPVWh1OGNOX05DREFXeGE5VlRNUEpjYzBhVVhVeVRqQ1ZVc1JkUlF0SVRpb1BEYm1yRzE5bG5GVXZmN00zQ3F3LWlRSk5xZnZxU1NOS0ZGUktBSmhfTUdJMVdSTkZ3ajlWc2NEejBwTm8xbWVwcWl3TTA0azdaQl9lRTkydHV6Q1RhcWM5UmpKWGNRNExiVmwxZ2o5TUdSdDc3bkpoaDJYa3Btc2pGRFd2REY5bHlRZjZfUHA4TWx4TmhUV18wYWlTNXd0c3lLaVVBbi1ZSWQ5ZEpULVVZTFd1djh1dWRaSDYtRy0ydk84TmRFeVVIbWlSa2luSm1oTGVETmxHSXZHbWZVckc00gGgAkFVX3lxTE9ra0RvUGtvQW1SWFpsZC14M1lXR2pNRHpxMVktVDRPci0wMWh2V3pYd1NYQXVhZUhMd21PTGNfTlJIVzB2UjBBYUNTakVYdkh4ZE1HZ3dsdWVRQUxLckFFSDd6VWRMLUc3MnY0TFFZSjBIU21aZ1Roc3lKNm04aGtUdXVXd3BqMmN5ZXlDYm85NlQ4b1F4NEQ1VE9WWHFXYVRSNko3RjdyeFpibkg3ekE3a2NyU0NMbVJRd3cxZ3oxMEw2ZkFBMGxRSEJwYWs2SERvQkdCbUpWVWNydzFucjBxekhxUEl6bmxXNTVsLXg4MGZBYUkwbjg2NnZUb3RVUFJWMnhfSEFuWGV5cmQyZHVUVWo3cnB1WFJSRmtlSkxnVQ?oc=5",
+      "content": "Travis Kelce and Jason Kelce to judge Dancing With the Stars? Professional dancer reveals his dream casti &nbsp;&nbsp; The Times of India",
+      "publishedAt": "2026-11-13T00:32:00.000Z",
+      "collectedAt": "2026-11-13T14:42:02.226Z",
       "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlmZWZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Athletics unveils timetable for 2027 championships in Beijing - Xinhua",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBPQVdNYWtUU3h5Z0hha2xkUHZHZmlaTHU5emNUODg4Yk9CZHpUY3RLN29TSlk0cmJCLWR0N0JiTWtkMTRtLUh1dFRJU2doSEplQ09VdkZrOVE4SHNfZjlEWmV5OW5namJYNGszNEVBMXNzY2Z6aV9WOHZsY1o?oc=5",
+      "content": "World Athletics unveils timetable for 2027 championships in Beijing &nbsp;&nbsp; Xinhua",
+      "publishedAt": "2026-11-13T03:49:16.000Z",
+      "collectedAt": "2026-11-13T14:42:02.226Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
           ]
         },
         "context": {
