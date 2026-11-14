@@ -1,0 +1,134 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-14T13:38:56.022Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 31,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 14,
+    "relevantSignals": 2,
+    "durationMs": 1664
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 259,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 237,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 302,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 312,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 287,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 263,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Canada holds off Czechia to advance to women's world championship semifinals - CBC",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CMF9oRjlld1ZoMm1xYVREY3hsX3lNb3o4TzdzQkVvUE51VmY2NnZSb2RmdEdpQndDNjFWSktsM0liWk91OE9oMHdnZ0FiZ3V4YmVDdnkyeDNGZw?oc=5",
+      "content": "Canada holds off Czechia to advance to women's world championship semifinals &nbsp;&nbsp; CBC",
+      "publishedAt": "2026-11-13T23:40:31.000Z",
+      "collectedAt": "2026-11-14T13:38:55.470Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "John Summit To Play College Football Playoff Championship Weekend - Billboard",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb3l1ZzFrdGw1MFNCamxlcXc4amJpT3RGVDRVTTZZeVljbndpVnF0dUlsUUtseFk4cXJTaThEVXprSU1sWHdNSmRVWkJjYWVCTkpRYnpScndEVVJ0bHNKOEhCdS1jR2ZxTjVPSnpKY19WS00yLTNyZ2I1aXRtdzIzYU93RU9tZWJ0LVZTTDJZT0JSN2RkdVp1MTc0ZV9EWldkU2FYdEtuWEFieDU4RlQxeGlwMA?oc=5",
+      "content": "John Summit To Play College Football Playoff Championship Weekend &nbsp;&nbsp; Billboard",
+      "publishedAt": "2026-11-13T23:17:25.000Z",
+      "collectedAt": "2026-11-14T13:38:55.470Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
