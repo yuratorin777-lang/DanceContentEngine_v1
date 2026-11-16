@@ -1,0 +1,229 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-16T16:00:31.766Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 35,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 18,
+    "relevantSignals": 5,
+    "durationMs": 1909
+  },
+  "distribution": {
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 237,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 319,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 2,
+      "durationMs": 337,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 301,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 435,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 277,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Emilea Zingas, Vadym Kolesnik win Saatva Skate America and take the U.S. ice dance torch - NBC Sports",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGpQN3Y2eG1pTGt3a1FzQVRrNEs1VTVpUEsxeGlkcV9URnRkMHNnazJYdVQxRWZaVm9tcnhkOVZBN090aUJZSFU2RnFRNVptVE5MQ2xqNTB3cm04Wm41RU52cVFhaDNuNm1NNTd6cUVPY25lM2pzTWxiaGNReUxFalc3Q3g0dHJFd3B5MXRDRFItZ1hveEV6cUZ6T001QQ?oc=5",
+      "content": "Emilea Zingas, Vadym Kolesnik win Saatva Skate America and take the U.S. ice dance torch &nbsp;&nbsp; NBC Sports",
+      "publishedAt": "2026-11-15T21:06:34.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljZWZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "KJ Mononyane Makes History with Moto3 World Championship Debut - Good Things Guy",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2SGxBY1ZwS2JseG9xalYyM1lWelpYYURaVEctOWJFaGRySjhUN1hDQlF6THVQejl2b2ZDV3FFeVdBc1JrUUstR1NPSV8xVmNUWnVrSlBNRXNaaUUzcWI2a1NLZ3NJTG9EVk9rTWNhaEk?oc=5",
+      "content": "KJ Mononyane Makes History with Moto3 World Championship Debut &nbsp;&nbsp; Good Things Guy",
+      "publishedAt": "2026-11-16T14:30:11.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Benoni tap dancer makes history with world championship gold - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXRCb3Y5b1VKVmE0WGpUQ0hCUlQwRFNZamFlak92RWVpcXJHbHJKYy1NYjQ3NUZhWHA0T0U3QzgwT0xxQmZ3WDZwSFAtM2tGYjN0VFJMdWNLcHZHdUE3c1NlSHZXY0xZNldla1hmTXB3aEF5cWFqdjZYR2c3ZEVrTWtRVEtwRkVhRWVZLUtvRHpMeU1RbTZZUUxKNlJ5LVFWZWdqZ0ZnOHJwQ010R09XRWVMOGNKenEybnpGbjNSZl9Nc3dkc2hIWGZKYm4tdw?oc=5",
+      "content": "Benoni tap dancer makes history with world championship gold &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-11-16T01:21:13.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Премьера детского балета «Белый голубь» прошла в Махачкале - РГВК «Дагестан»",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPczJYa3lENVYwOGh5bVo5QWJ1dlB6aEZiaXg0RGxPUjB0anYzMlk3d2J1bUVXREFkSzRuc3BrcVlhSV8tTk5yZUI0OUFFUndYc0IzMHBnRlpRZWxfbERzbk42aHRGWmY4Z0VEbjZ4c0dPNHZVYlUtTXg2MWRlQTZ5MEo0Z0o?oc=5",
+      "content": "Премьера детского балета «Белый голубь» прошла в Махачкале &nbsp;&nbsp; РГВК «Дагестан»",
+      "publishedAt": "2026-11-16T11:07:24.000Z",
+      "collectedAt": "2026-11-16T16:00:30.414Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "балет"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Nine Teams Claim Titles at 2026 GHSA Cheerleading State Championships - Cheer Daily",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN0ZYWEljVmxvRmNROTJMSkJuU0xoYVpMcG5ReDdpcEVtM2EwNlZaNXA0dnV5a1RLWVU2X3Q1LXZXWFVxajYta0FCQ3ZQLUY5VU0zUHV2ZGRjR1NQV0pWN3lTMlNPbG95Z0hoUjdlVlZtSGJOTktBOW02Zi1GSnRrdFk5V2p2WnVPNVRiVkd2WUFCcmxYUFRlSHFOODEwNDl1aWxobThB?oc=5",
+      "content": "Nine Teams Claim Titles at 2026 GHSA Cheerleading State Championships &nbsp;&nbsp; Cheer Daily",
+      "publishedAt": "2026-11-15T22:28:02.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

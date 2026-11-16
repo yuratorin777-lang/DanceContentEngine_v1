@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-15T14:04:00.224Z",
+  "runAt": "2026-11-16T16:00:31.766Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,16 +15,16 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 25,
-    "uniqueFacts": 17,
-    "duplicatesRemoved": 8,
-    "classifiedFacts": 17,
+    "rawFacts": 35,
+    "uniqueFacts": 18,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 18,
     "relevantSignals": 5,
-    "durationMs": 1677
+    "durationMs": 1909
   },
   "distribution": {
-    "CORE_DANCE": 3,
-    "DANCE_WORLD": 1,
+    "CORE_DANCE": 2,
+    "DANCE_WORLD": 2,
     "LOCAL_DANCE": 1
   },
   "sourceBreakdown": [
@@ -32,56 +32,56 @@
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 212,
+      "durationMs": 237,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 1,
-      "durationMs": 278,
+      "count": 3,
+      "durationMs": 319,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 0,
-      "durationMs": 278,
+      "count": 2,
+      "durationMs": 337,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 345,
+      "durationMs": 301,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 9,
-      "durationMs": 285,
+      "count": 15,
+      "durationMs": 435,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 276,
+      "durationMs": 277,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlfd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Grand Slam of Darts: Tommy Morris set to light up tournament in Wolverhampton with dance moves to rival Dimitri van den Bergh - Sky Sports",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNMy10bmpBQjg2YzFYZ05WeHpYejB6Wm1fWGtDRTJ4T2Y2WjRrdnRSdkRLWnEzS2F6TnFoNXcxU1N4Q3BDQnJTNTJiVjdtNXhCclByVXpZZ2ppc3dIRzBYWEdQZ0I5cXpyX1lGOUUyRGxFblljMFZOM2xIQUpGenE2UWJqeU41S0Q1NmQ4SWVnbHhHRXVnWHNBSEZpUl9CT2lwVEtHWFQyblhYLXJZNGJnTVVtWVlBV3VMcElmYms1T2NGRXgxTDE2bjdQWmpINkhXbGRvSGgwMVNNa1FCdXppelBkRTUzQ3FJclUydEtqX3UzYzdSOXMycTBnRTFTNTA?oc=5",
-      "content": "Grand Slam of Darts: Tommy Morris set to light up tournament in Wolverhampton with dance moves to rival Dimitri van den Bergh &nbsp;&nbsp; Sky Sports",
-      "publishedAt": "2026-11-15T10:51:02.000Z",
-      "collectedAt": "2026-11-15T14:03:59.660Z",
+      "title": "Emilea Zingas, Vadym Kolesnik win Saatva Skate America and take the U.S. ice dance torch - NBC Sports",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGpQN3Y2eG1pTGt3a1FzQVRrNEs1VTVpUEsxeGlkcV9URnRkMHNnazJYdVQxRWZaVm9tcnhkOVZBN090aUJZSFU2RnFRNVptVE5MQ2xqNTB3cm04Wm41RU52cVFhaDNuNm1NNTd6cUVPY25lM2pzTWxiaGNReUxFalc3Q3g0dHJFd3B5MXRDRFItZ1hveEV6cUZ6T001QQ?oc=5",
+      "content": "Emilea Zingas, Vadym Kolesnik win Saatva Skate America and take the U.S. ice dance torch &nbsp;&nbsp; NBC Sports",
+      "publishedAt": "2026-11-15T21:06:34.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
@@ -104,15 +104,46 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWljZWZ2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Strabane dance academy pupils shine at world championships - We Are Tyrone",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjJLM1kwUmxEUlE1R2t5NmJYOFB3dXhwRkVSSUpqVnVsMHRZMnA0M2pVUzNVUGVCM1BTcXlNRWRlUnhfLWdBa3ZHLUNIVGh2cFF5TUdRMFAwV0k2VkNNTm9OelpTR0tudEJ1RVpNN3dWRDY3THZRWnB5N3YwaTlXSXZ4VU85b3F5ZlYwSA?oc=5",
-      "content": "Strabane dance academy pupils shine at world championships &nbsp;&nbsp; We Are Tyrone",
-      "publishedAt": "2026-11-15T11:03:18.000Z",
-      "collectedAt": "2026-11-15T14:03:59.660Z",
+      "title": "KJ Mononyane Makes History with Moto3 World Championship Debut - Good Things Guy",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2SGxBY1ZwS2JseG9xalYyM1lWelpYYURaVEctOWJFaGRySjhUN1hDQlF6THVQejl2b2ZDV3FFeVdBc1JrUUstR1NPSV8xVmNUWnVrSlBNRXNaaUUzcWI2a1NLZ3NJTG9EVk9rTWNhaEk?oc=5",
+      "content": "KJ Mononyane Makes History with Moto3 World Championship Debut &nbsp;&nbsp; Good Things Guy",
+      "publishedAt": "2026-11-16T14:30:11.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl6Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Benoni tap dancer makes history with world championship gold - The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQSXRCb3Y5b1VKVmE0WGpUQ0hCUlQwRFNZamFlak92RWVpcXJHbHJKYy1NYjQ3NUZhWHA0T0U3QzgwT0xxQmZ3WDZwSFAtM2tGYjN0VFJMdWNLcHZHdUE3c1NlSHZXY0xZNldla1hmTXB3aEF5cWFqdjZYR2c3ZEVrTWtRVEtwRkVhRWVZLUtvRHpMeU1RbTZZUUxKNlJ5LVFWZWdqZ0ZnOHJwQ010R09XRWVMOGNKenEybnpGbjNSZl9Nc3dkc2hIWGZKYm4tdw?oc=5",
+      "content": "Benoni tap dancer makes history with world championship gold &nbsp;&nbsp; The Citizen",
+      "publishedAt": "2026-11-16T01:21:13.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -136,26 +167,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlza2Z2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloYWZidnY5",
       "source": "Google News — детские танцы Россия",
       "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "🟨🟥🟦 Дружба народов: в детском саду Искитима воспитанники разучили цыганские и еврейские танцы! В детском саду «Сибирячок» в Искитиме прошел... 2026 - ВКонтакте",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA5cDhmQUVtNGt2NEpLZ0hTbG1fc1FJREdmcXB5RG5tNnVjQVBkNnhNRkl2aXFmZVJBemhwemFPTUk5QzZoY2VlNWVn?oc=5",
-      "content": "🟨🟥🟦 Дружба народов: в детском саду Искитима воспитанники разучили цыганские и еврейские танцы! В детском саду «Сибирячок» в Искитиме прошел... 2026 &nbsp;&nbsp; ВКонтакте",
-      "publishedAt": "2026-11-15T09:20:00.000Z",
-      "collectedAt": "2026-11-15T14:03:59.038Z",
+      "title": "Премьера детского балета «Белый голубь» прошла в Махачкале - РГВК «Дагестан»",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPczJYa3lENVYwOGh5bVo5QWJ1dlB6aEZiaXg0RGxPUjB0anYzMlk3d2J1bUVXREFkSzRuc3BrcVlhSV8tTk5yZUI0OUFFUndYc0IzMHBnRlpRZWxfbERzbk42aHRGWmY4Z0VEbjZ4c0dPNHZVYlUtTXg2MWRlQTZ5MEo0Z0o?oc=5",
+      "content": "Премьера детского балета «Белый голубь» прошла в Махачкале &nbsp;&nbsp; РГВК «Дагестан»",
+      "publishedAt": "2026-11-16T11:07:24.000Z",
+      "collectedAt": "2026-11-16T16:00:30.414Z",
       "analysis": {
         "relevance": 59,
         "relevanceLevel": "MEDIUM",
         "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "танц"
+            "балет"
           ],
           "LOCAL_ECOSYSTEM": [
-            "детск",
-            "танц"
+            "детск"
           ]
         },
         "context": {
@@ -168,53 +198,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5d2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Nations Championship schedule, results, kick-off times and how to watch - The Independent",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVlN4NWlYWjlFdEx1SkM1TF9FUl8wemFpOFdPTGtuQmtSc1pvQ25BWloxVk4wQXVRdm5DdERzSEdtYzAzYmJKdjVfWjFEcFZVM2Q1UnctRlhmUkxRU0N0LUxiZGNvUnU3ZUQ3Y2FTYTVSUDlXUE8zSnU2dEM0S3VJSEdvcERXakVILTg0WG9hel9QUkZ5WjZiZE1jT0ZVOEFLM3QzLVJ0SmFoTldMcnd5YTJQRDRGVzBlM3M5N3RCMVBDZklPLW1tYXpjSQ?oc=5",
-      "content": "Nations Championship schedule, results, kick-off times and how to watch &nbsp;&nbsp; The Independent",
-      "publishedAt": "2026-11-15T10:37:45.000Z",
-      "collectedAt": "2026-11-15T14:03:59.661Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "how to"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Strictly Come Dancing professionals line-up | Meet the 2026 dancers - Radio Times",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSTBSeFNfak5Sd1QxUlk3QlFHWWtYT28wSWhPd0hONXFwb290SHZ5dmdRSEVBVDJ3X2lzbEROVVFXNjhYa2dWMDhFSzhRMnlaTWphZF91VG0xX29sSlBZZDRoMDA0MUJHcDdPZVlEOHVhaF9kNmJkbUdFeWlfSXdyYjFrZWNEMndEMUJyTXZ6QktOdw?oc=5",
-      "content": "Strictly Come Dancing professionals line-up | Meet the 2026 dancers &nbsp;&nbsp; Radio Times",
-      "publishedAt": "2026-11-14T22:58:18.000Z",
-      "collectedAt": "2026-11-15T14:03:59.660Z",
+      "title": "Nine Teams Claim Titles at 2026 GHSA Cheerleading State Championships - Cheer Daily",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN0ZYWEljVmxvRmNROTJMSkJuU0xoYVpMcG5ReDdpcEVtM2EwNlZaNXA0dnV5a1RLWVU2X3Q1LXZXWFVxajYta0FCQ3ZQLUY5VU0zUHV2ZGRjR1NQV0pWN3lTMlNPbG95Z0hoUjdlVlZtSGJOTktBOW02Zi1GSnRrdFk5V2p2WnVPNVRiVkd2WUFCcmxYUFRlSHFOODEwNDl1aWxobThB?oc=5",
+      "content": "Nine Teams Claim Titles at 2026 GHSA Cheerleading State Championships &nbsp;&nbsp; Cheer Daily",
+      "publishedAt": "2026-11-15T22:28:02.000Z",
+      "collectedAt": "2026-11-16T16:00:31.053Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
+            "championship"
           ]
         },
         "context": {
