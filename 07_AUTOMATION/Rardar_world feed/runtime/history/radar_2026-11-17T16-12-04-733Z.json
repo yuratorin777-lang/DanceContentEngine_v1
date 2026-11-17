@@ -1,0 +1,321 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-17T16:12:04.733Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 20,
+    "duplicatesRemoved": 14,
+    "classifiedFacts": 20,
+    "relevantSignals": 8,
+    "durationMs": 1713
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "CORE_DANCE": 5,
+    "LOCAL_ECOSYSTEM": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 234,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 4,
+      "durationMs": 317,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 258,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 330,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 336,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 233,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "USA Wins Gold Medal In Denmark Defending World Championship Title - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeHVwb0s2bUNIVzh4Nng3MmNPeHBEZVBYUjFHVHJoVGpZRG9UTC1KSkdSSnprQVhEdXdMS09sQnd1cnFFSlhsNDh1Mm93bkVYeUZkckItMHNEcEtkUDJpYjlHa0t2akRMTlEyNUVwMUh1RlFyQkZkcTE0ZlJDREFndFln?oc=5",
+      "content": "USA Wins Gold Medal In Denmark Defending World Championship Title &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-11-16T20:37:08.000Z",
+      "collectedAt": "2026-11-17T16:12:04.161Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "i-dle's MIYEON and SOYEON Return to Worlds After Eight Years: K-POP's Growing Presence in Esports [HT Focus] - Hanteo News",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oTlBycHpPdzN5S1ZKeTlpY0duNUdYY3RiSzFGcy05YVA0OWE5RzQ2anljZ2E3VHlfZ1BpNDhRZlpkNGFPdWFmZlVtTU5QSl94VGctOWln?oc=5",
+      "content": "i-dle's MIYEON and SOYEON Return to Worlds After Eight Years: K-POP's Growing Presence in Esports [HT Focus] &nbsp;&nbsp; Hanteo News",
+      "publishedAt": "2026-11-17T11:55:36.000Z",
+      "collectedAt": "2026-11-17T16:12:04.160Z",
+      "analysis": {
+        "relevance": 77,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "k-pop"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Indigenous hoop dancers turn movement into cultural stories - USA Today",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcXpNYk1xUDVnaFhEVlIyajJmcmwtcnV2TWdZR01USHBwS1JaLU44N29LSERfbG1xMFZ6LU9NQl9KQktISnBIbHFNSzFxbnk1X0JFMmFwQ3FORklTcGl3MHYzci03YkkxMENsQTZQWVN6a1VmSk1uNzV5ZVM0RTBlTmlMVmtGR0ZTNzJ6QlQyMFp1WGN2bU93UmI5aHpsdWViNUZlZnJJM29FdXRtdWl5UVZR?oc=5",
+      "content": "Indigenous hoop dancers turn movement into cultural stories &nbsp;&nbsp; USA Today",
+      "publishedAt": "2026-11-16T19:07:18.000Z",
+      "collectedAt": "2026-11-17T16:12:04.160Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "movement"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Bourton Roadrunner finishes seventh at Duathlon World Championship - Cotswold Journal",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTC1aWW9lREpZcWtySjRnZGlsbF9semxOMDJCaWRYQ0ZhazNPamNyak9LWWJ4eTh6anplWnhJd0QwTXlPUDk2Vk5nZUN0LUlZS0R1WXdRUTVaYWxSX21tNWktSzdIQ1J3dlNjbkxleHlXNjZybllLd0QxcVMydmRBS2pTSnN0alVGMUhPN05ySDBlWkNhcHdOR05hM3dTbkNTd1UwQTVvN2I?oc=5",
+      "content": "Bourton Roadrunner finishes seventh at Duathlon World Championship &nbsp;&nbsp; Cotswold Journal",
+      "publishedAt": "2026-11-17T05:00:00.000Z",
+      "collectedAt": "2026-11-17T16:12:04.160Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWloZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Two Silver Medals at the World Wrestling Championships - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2N1d1hJNWUxc0pxTTFUOVhyNTVwWlZKTzM4V0F0ZTJDa1JmZjRNVmVVLUdUUjhTOGotNlBPYlBGaWJLa0Y5bElqM0YzTlBBS3F4MzdtYnItYjBaUXdxX3daejQtV2lQM3A2LWNpOHFmejJUQTZtZ2hDMHMtaDhpUzNhQkpBZw?oc=5",
+      "content": "Two Silver Medals at the World Wrestling Championships &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-16T20:31:19.000Z",
+      "collectedAt": "2026-11-17T16:12:04.160Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Knight scores twice as US women take gold with 6-2 win over Canada in world hockey championship - KRQE",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNX2NxaXdHSmdwdmQ2dGdRRmlONVVQakY5dzhfMHVqQ0U1NllzcWl1QWlwWVVlTnY4Y3J6YU4wUS0zaEJYY29YT2FaUTZ4UkUtczBSUnBGS1paS2pyekI5SmxYT09zMVdaeEhXU0NZdVhwd3dmUGlLNEE3Sl91VlB0RWRIWjV6QzZ2eEtoQnMzamJER2RTejhvVlRZd0hBWlJNVnhuemFmVEozb2o4cEdrN2N6OEswOVZPOVpWMTNRSlE0eDVqdlHSAcsBQVVfeXFMTVBXbE91RGFZUWh6SHp1UzcxeEJiTUxDQnJ0YzhRTy1GeHloaG1Mdk55cV9PU01yaHpMWXl5SEduclpiWm5MLTRUcFBLTVFfZzVNOXlPMjdiV29Jb0dQenFoR1FNRjk1QjFCTFpydFd0em0tM3VFZDkxRGdXRFBObEV6SzlzZFJyWFhqLWMyOTNKV195UjJra2ExQ0tzczNpeEZzWmVqUXY3SHJDUU5mUThmclh0T0pMT256TGlqbklUeTB6S2R5R2pFSzA?oc=5",
+      "content": "Knight scores twice as US women take gold with 6-2 win over Canada in world hockey championship &nbsp;&nbsp; KRQE",
+      "publishedAt": "2026-11-16T23:00:28.000Z",
+      "collectedAt": "2026-11-17T16:12:04.161Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Knight scores twice as US women take gold with 6-2 win over Canada in world hockey championship - FOX16.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaVZ6YURIc0wyMUhDaWZ6bFJwSllsRGRLWDJBLVhPSUtjbVhQdUp6LXdzUkY2cmFMc0wxWjFabFZnRF93WnlWTEhKZk9PekdsYWp4ZWFGNzFsYU5nT0cxRlhxclR6Y3gtd3FkRmdqblVJWTQ3UmMtQ2U1VmlEOGZJVkpiNXREcmRYam54cTYtczZFclZLMC1fQUd4RVZNeFlJMUptVTgtS2Z1eWxqWUVOTk95cmkzUzJ1V3hOQ0lLdnZIX0VFR0Nn0gHMAUFVX3lxTFBuaGdRak96UFhVcm9SS2FIb2NmTmNJb0E1eThFWTJwUWkwaVkwa1Mzd0pPbXFmVno5d013X0Y2Q2Z4X2UzZk9JcEo2Z1JBWmhXTElIZlh6UjFHNGZFOWFwS1QxclJsU1FKdFd6ZDhXSjBvZ0RIdGVYTFdSNnUxNXQ1a1dmaGI2MkdBR2ZTZExkbU5vNkd5Y0x2OERONmNyalpEaWtyNFlLS2MwbGZQb1Y4Z3pBci1KLVBTMkVNWU5meDNudDJRNm1sUFVKSQ?oc=5",
+      "content": "Knight scores twice as US women take gold with 6-2 win over Canada in world hockey championship &nbsp;&nbsp; FOX16.com",
+      "publishedAt": "2026-11-16T21:04:54.000Z",
+      "collectedAt": "2026-11-17T16:12:04.161Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk5Z2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Основательницу детского проекта из Карачаево-Черкесии приговорили к пяти с половиной годам колонии за посты о войне в Украине - Гласная",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTU5KR3pEd0RqLVZoVGVib3dvUnBVeDhDd1MxY0lIUWxMRDY2ckQxa2ZBUjZqQjUxNm9OTlVrcE5nZTJ1bVhBRTNPZ1JHYnRkSy1ndjdsWHB2UW1iTURhd2l2LVlYNDRKa1gwTGZVZG9fS3hqMjJvVnpoQXpBZHBqeWxmdVZtSE83TWNvOU90U2tjU0kxWTYyQUMxQWRXRUJkTjVjR2JWc0pWdlJCRDBIbUlyUGJaRXRxUGd3RFMxZVVIYmh4Nmk1amE0clpQSnFDUi16dUx5T3FXSmdRc0VLX200WjU5Q1FzenVETTYzLVNsMDVIMXc?oc=5",
+      "content": "Основательницу детского проекта из Карачаево-Черкесии приговорили к пяти с половиной годам колонии за посты о войне в Украине &nbsp;&nbsp; Гласная",
+      "publishedAt": "2026-11-17T07:26:23.000Z",
+      "collectedAt": "2026-11-17T16:12:03.573Z",
+      "analysis": {
+        "relevance": 27,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "LOCAL_ECOSYSTEM",
+        "matchedCategories": {
+          "LOCAL_ECOSYSTEM": [
+            "детск"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
