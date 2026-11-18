@@ -1,0 +1,265 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-18T15:47:32.424Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 32,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 18,
+    "classifiedFacts": 14,
+    "relevantSignals": 6,
+    "durationMs": 2139
+  },
+  "distribution": {
+    "DANCE_WORLD": 2,
+    "LOCAL_DANCE": 2,
+    "CORE_DANCE": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 256,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 494,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 299,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 418,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 364,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 303,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "NWU Eagles soar to world championship glory in New Zealand - NWU News",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYWpRWXFRVjU3Zk9qYmlZbm1KcG1MWXhSTDNwNGRGRGZkdzJUMHF6ZzZ1bHlkb2dTR1ZXdWx6UTNEMzJHa01rT3JwdXdCMUU5ME1SNDBwdV8waGhjSVVqcFc0Z1lqSDNQUjdMX0xhZ2MtZW5YaGFkM01hNXRSUUExWQ?oc=5",
+      "content": "NWU Eagles soar to world championship glory in New Zealand &nbsp;&nbsp; NWU News",
+      "publishedAt": "2026-11-18T08:11:37.000Z",
+      "collectedAt": "2026-11-18T15:47:31.755Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "JFDance Gibraltar Wins Multiple World Champion Titles At European Championships - Your Gibraltar TV",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS3g4dHl0eEhwSVVoUU1TN0RKQUY4MUdITHdQYWtlV0dMbWZUeFpnOHRWY0RzRTBId0FqS0RCWjYwOHlBV2ZDcXp2VllxZkN1LUM5NV83emxBNjM5UW9lSmNxQ0hjSUlZb2p0NERaNkRtX3UtTG5JbEtqakw2Mk51bkVEd3hPYUhfcDFFbmFFYml2ZFRzUU0zVTZaZmc1dUFiTVg2MHB0dFkwWVhDUUFmd2pRZ1BGNkFU?oc=5",
+      "content": "JFDance Gibraltar Wins Multiple World Champion Titles At European Championships &nbsp;&nbsp; Your Gibraltar TV",
+      "publishedAt": "2026-11-18T06:44:42.000Z",
+      "collectedAt": "2026-11-18T15:47:31.755Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "european championship",
+            "european"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Юные миасцы станцевали \"Хоровод дружбы\" на городском фестивале - NewsMiass.ru",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MNjl2SjFIaGR0aWFIeXhVVDFwSGd1Z1h1TzFubzNKc1I2clBNdjhtTUlkeDZRZ2VQUDhqN2UxdC1XTVdCOE91eW5wcXRzWXQ3SDc4?oc=5",
+      "content": "Юные миасцы станцевали \"Хоровод дружбы\" на городском фестивале &nbsp;&nbsp; NewsMiass.ru",
+      "publishedAt": "2026-11-18T11:07:02.000Z",
+      "collectedAt": "2026-11-18T15:47:31.036Z",
+      "analysis": {
+        "relevance": 63,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlwd2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "В Уфе прошел фестиваль хореографии «Ветер перемен» - Панорама Башкортостана",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdTYta1l1QTl5bjdNSWE3WEV4SjUyeVlVOVVueWU4RFhnaXpBYzZWaE9RdWtiU09wVTVjRXpwNFhnOGJKSVFzNWlyeHlYLUVablRBd1FsY1QzSzV4Q1g5SHVFS0Fxdi04TjAtQTA5ektxTGh4WC11WURLVlJmWjNvWkROa2Y3UUlQMG11R1NPbkhERy1jMkdDN083S0lMNnJJMHNMMnhUNA?oc=5",
+      "content": "В Уфе прошел фестиваль хореографии «Ветер перемен» &nbsp;&nbsp; Панорама Башкортостана",
+      "publishedAt": "2026-11-18T04:33:00.000Z",
+      "collectedAt": "2026-11-18T15:47:31.037Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "хореограф"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "фестиваль",
+            "хореограф"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Milwaukee artist celebrates Brewers’ World Series championship with recycled wood art - WISN",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd3FFMk11ekZsY0E1YXFPT2lIOHF0VmNld0ZZS1Y4eHpSSFkzQkhuOXlpV0w1aGFKNGtNYmFnb0NmN1NyZVRRN2gtanJ3WU5MLWNjOFdjWXdSdldZWklkY3JNQVF3MFJMR2xqcHNIeW16WTJhUGZITEkyYnlOQk54VE1GajI5SFNQVXI2dXY5Z3d0R1M1bDg5bw?oc=5",
+      "content": "Milwaukee artist celebrates Brewers’ World Series championship with recycled wood art &nbsp;&nbsp; WISN",
+      "publishedAt": "2026-11-18T03:09:48.000Z",
+      "collectedAt": "2026-11-18T15:47:31.755Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "HERMAN AND DALEY TO COMPETE AT WORLD AQUATICS SWIMMING CHAMPIONSHIPS - University of Toronto Athletics",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNF8wYWZINnFJTk1WMUtRQmdCT3prRmM3Umw0N2hrMjF4MWVVVi1CanFkZC1DNTJWdGlITjlIbHBhdWdNa2tSbWZaVTFRWkw5MlB5Z2tCU2YzOWNfbzFfZ2RsOVZDZkt0NVdXVk5lXzB6RUFhTk14aFg2ZzltaHFiSWFqcXlRNzNyLTE5dnpRcVc3QlFNcnM3WmJYZUgtaWVTOGZ2NU16Si13TmkwWXB1WnhDN2hGWkg0YlpkQmNOMA?oc=5",
+      "content": "HERMAN AND DALEY TO COMPETE AT WORLD AQUATICS SWIMMING CHAMPIONSHIPS &nbsp;&nbsp; University of Toronto Athletics",
+      "publishedAt": "2026-11-17T17:02:18.000Z",
+      "collectedAt": "2026-11-18T15:47:31.755Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
