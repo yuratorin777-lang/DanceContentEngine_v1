@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-19T15:52:46.190Z",
+  "runAt": "2026-11-20T15:35:41.723Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,16 +15,16 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 35,
-    "uniqueFacts": 11,
-    "duplicatesRemoved": 24,
-    "classifiedFacts": 11,
+    "rawFacts": 33,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 19,
+    "classifiedFacts": 14,
     "relevantSignals": 7,
-    "durationMs": 2061
+    "durationMs": 7875
   },
   "distribution": {
+    "DANCE_WORLD": 3,
     "LOCAL_DANCE": 1,
-    "ADJACENT_DOMAIN": 3,
     "CORE_DANCE": 3
   },
   "sourceBreakdown": [
@@ -38,127 +38,60 @@
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 5,
-      "durationMs": 296,
+      "count": 3,
+      "durationMs": 223,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 333,
+      "durationMs": 1754,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 383,
+      "durationMs": 344,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 527,
+      "durationMs": 5003,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 253,
+      "durationMs": 281,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2YWZidnY5",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Вологжан приглашают на XXXIII Международный фестиваль музыки и танца «Союз талантов России - Молодежный портал Вологодской области",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVWdJTUZWbl9HNHJOVmYtLW96QXFjTzN1a2Y0cmwzNjdiQWJreGNTNldiVFNCVjloV0pEMkJPSnprVkxtZU14NS02dW5uNjdBeWdyR2hPeFVualh4Vl91bUZQc1haSnhTWnlrallnRTUzVGRLVWJvckZhRHRvczd1QWZWMFhmazFtUWx1Q1k0ZWxlT0J5MENGV0loZWVMUl9kNFN4XzNNd3Bneko4N0xEdEtUdDVlNHptd2lzYw?oc=5",
-      "content": "Вологжан приглашают на XXXIII Международный фестиваль музыки и танца «Союз талантов России &nbsp;&nbsp; Молодежный портал Вологодской области",
-      "publishedAt": "2026-11-19T12:48:08.000Z",
-      "collectedAt": "2026-11-19T15:52:44.692Z",
+      "title": "Pokémon World Championships dream takes off at new Oxfordshire café - Bicester Advertiser",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDhjVmh3dEt2MjZ2RDRyRDJwa0xWdnhMTGhadmtJaG9XUjNqZVFoRHZZeVdCQ0xsM2V1MnA2dkJCaGpnb21wZGU3ckxHanBBLVU0X2t3TGJLckFrQmlJaHVnY2tWZXN1MEZiT2FXZXZnenlnN3FYb0xnYWxCMHlWWTg3OXR6ZjNmMmNNYkpndXVrUzg1U1o2MXA3aHlKNWVzQjRJ?oc=5",
+      "content": "Pokémon World Championships dream takes off at new Oxfordshire café &nbsp;&nbsp; Bicester Advertiser",
+      "publishedAt": "2026-11-19T21:36:31.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
       "analysis": {
-        "relevance": 90,
+        "relevance": 72,
         "relevanceLevel": "HIGH",
-        "primaryCategory": "LOCAL_DANCE",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "фестиваль",
-            "танц"
+            "championship"
           ],
           "DANCE_WORLD": [
-            "международн",
-            "международ"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlod2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "How to watch Grand Prix Finland as figure skaters vie for Grand Prix Final spots - Yahoo Sports",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcndpZ1lEbUZVQkNLZ2g3OU1tVnVjNGppY2hDU1JDaEo4Vjc3UDF3T1hqdEJVVV9oUUV0RmlRc09jNHlxQjJ6a0hMUXBUY2tmYkFuaE1IZEdfNzNnWnhnbnA3ajRNMGxfWmM1b1BDQmkxamk3NW5icVNjUzVHZHFrRmpLWG1NUkE?oc=5",
-      "content": "How to watch Grand Prix Finland as figure skaters vie for Grand Prix Final spots &nbsp;&nbsp; Yahoo Sports",
-      "publishedAt": "2026-11-19T11:41:54.000Z",
-      "collectedAt": "2026-11-19T15:52:45.407Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
-        "matchedCategories": {
-          "DANCE_WORLD": [
-            "grand prix"
-          ],
-          "CONTENT_SIGNAL": [
-            "how to"
-          ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlmMGZ2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Local duo dance their way to world bronze | Polokwane Observer - newspaper - Magzter",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rRW5hbjZMRU1nQ1M0bGJMODFwc2txUXc5SDJIYjR5c3FaTzlfc3lFRlk3LXFEWGpEbzAyRXg5OTNDMlNSajc1Q3lzSTQ3cFBHSzlibEdyekdON05qVlBRdnVla2lEZ3phMG9XYlFHdHhrUk5qSjRhQWg0b19lTzQ?oc=5",
-      "content": "Local duo dance their way to world bronze | Polokwane Observer - newspaper &nbsp;&nbsp; Magzter",
-      "publishedAt": "2026-11-18T22:44:39.000Z",
-      "collectedAt": "2026-11-19T15:52:45.408Z",
-      "analysis": {
-        "relevance": 41,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
+            "world championship"
           ],
           "CONTENT_SIGNAL": [
             "new"
@@ -174,25 +107,26 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4YWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4YWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Karolina Danak & Katie Hand: From One International Sporting Arena to Another - WorldSBK",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYnJ6ZEMyRlNsX3lXX3hBQjNBM0Zmb3prU0FHVm5kSGtNZk94T0RIdWhtY01Ya0hrVG9zdFNHVTBfaUNHRlNPWWRHV0Z1Q0JFVmx5R25GdzV4eVlselp4LXFDOUxacEQtTlNta082YjFiOFc2REdjbzV2T2RfT2FQajU3TVpMTVJKRW5ubThYUUNkRndLOHprY2hTaVZmNjdtR05iUTQxRWtiaENzdHlVVlktOVFtTXRJUlllc2xRMThUWEN4?oc=5",
-      "content": "Karolina Danak & Katie Hand: From One International Sporting Arena to Another &nbsp;&nbsp; WorldSBK",
-      "publishedAt": "2026-11-19T12:02:01.000Z",
-      "collectedAt": "2026-11-19T15:52:45.407Z",
+      "title": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle - Sortir à Paris",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbFBYTG9Nb0didXpOUWk3ODJHWURhbHhrMGVQblZDOGlJTmNkSzZNeXN3a2pubWtSdHJxUGdOUm9UQVFpaGpubTBlbExHbzF1S3B1ZGJraUNaQy1jTXJnbEltWVdSLUFUYVdnWUlLN3NmZUxrZnVXX0NMSFlsUVNvbC1rYmVRRjV6NFl3dWlqRkhJLWd2a3A4SmxqcllwZGIyaF9SZU1yVVNLRmtpUEZwaFdjZU14alZkZ1p5NkJhUkJWY2JyTk1fOUNGSHRpSmE0N0xjVEZEOG5vUzNxVWZXNG5EOXJtX1JvWmVSVThpb0M?oc=5",
+      "content": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle &nbsp;&nbsp; Sortir à Paris",
+      "publishedAt": "2026-11-19T16:37:08.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
       "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
-          "DANCE_WORLD": [
-            "international"
+          "CORE_DANCE": [
+            "hip-hop",
+            "championship"
           ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
+          "DANCE_WORLD": [
+            "world championship"
           ]
         },
         "context": {
@@ -205,23 +139,85 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "‘NAG-GO-GROW 'YONG INTEREST IN COMPETITIVE SKATING’ Philippine Skating Union President Nikki Cheng is glad to see more young local skaters sign up for the Philippine National Figure Skating Championships 2026. The competition will run until No - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZlVOTnl4bkNxanhZVVJVckVSZ3dOakRkcnNJdXMwM2NqXzhFOWVaYlZ5ZlhpdVRDLW51aVdpUjF3dWxPcmczOGhIcDFlUGpoWVhEY3BYMTk3NUUwOTVXQ0IyNm8xcWxKdkg1ZVBONnB6NHJ5SXN2bnhOVlNXWkpvZjljNUNZN20wLXRDUTlUWnI2Zy01dGxLejd2OXZncjNBNjBkN05JaGhFTW1zLWsyR3BQVnNfNTFYSDNnNVdlVm5UYnotZXlOZTFydUhkQkhDNXpETkwtVVQ?oc=5",
-      "content": "‘NAG-GO-GROW 'YONG INTEREST IN COMPETITIVE SKATING’ Philippine Skating Union President Nikki Cheng is glad to see more young local skaters sign up for the Philippine National Figure Skating Championships 2026. The competition will run until No &nbsp;&nbsp; Facebook",
-      "publishedAt": "2026-11-19T10:06:11.000Z",
-      "collectedAt": "2026-11-19T15:52:45.407Z",
+      "title": "Environmental excellence, a key element of the 2027 UCI Road World Championships - Francs Jeux",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZnhzWDlHOHdZcFNSM3BsMk5BenFiLVoxRmFTOV90aUNEOWdwSVl0ZjRsckQ4TlM2S0ZYd0VQcVRtNWxaZnpIUDJqNnVCMTRoTTlnOThFZmhFRU9nNGFIb1hiTkR1WVU1NHBvaFpyMG1sMVlOd3FmZ28wakMxa241M2FRWVJnUkk0Qjh3NlY1V0FRYlozS2Ezb1JtNWVFcVdfd0FBdWR1UFNUNE9UakRFVDRJbXRYVF9RNGxwaGJ0UG13d1BhSXItN1dYajJFMW5HUVNKSWJ5eG4zWGNvV0szX3Jn?oc=5",
+      "content": "Environmental excellence, a key element of the 2027 UCI Road World Championships &nbsp;&nbsp; Francs Jeux",
+      "publishedAt": "2026-11-19T15:56:37.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "На детском празднике в Египте исполнили русские народные танцы - ФОНД РУССКИЙ МИР",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xemo4N1RFdDlVOHR4bkFnanNfcWZvaHNDTnI4NVV5X0Iyak8xVWIwY0s0S0dXT0lIdW9yUUlHbVBpc2Q3WHltcS1yOHFnRnc?oc=5",
+      "content": "На детском празднике в Египте исполнили русские народные танцы &nbsp;&nbsp; ФОНД РУССКИЙ МИР",
+      "publishedAt": "2026-11-20T13:33:14.000Z",
+      "collectedAt": "2026-11-20T15:35:34.339Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "UPDATE: National Solo Dance Criteria 26/27 - British Ice Skating",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWFxSm1qaG12QmN1Y054SW50bEV6NUc4Z2J0REpGYzh6cW9jVW4xbE5aNi1Ob0pHTUxLRUpPbnotUGNyNUFqdmtMb244REtvd0V5YmFqT3ZDTVZ2UXpycVd4dWhLLWJoeUthZVo3OEQwa1JMR2wwTDJBbEwxUlYwTnh2RQ?oc=5",
+      "content": "UPDATE: National Solo Dance Criteria 26/27 &nbsp;&nbsp; British Ice Skating",
+      "publishedAt": "2026-11-19T22:39:50.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship",
-            "competition"
+            "dance"
           ]
         },
         "context": {
@@ -234,15 +230,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Eventful 2026 On and Off-Track Leads Pierce to Third World of Outlaws Championship - World of Outlaws",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ3NrODRpZUhhV1FlOVZ1MWRxRDJBc0Y1OXpjMVo0SFpURnR2dTkxSU1HbVBzc1RDZTkxTHdOZmFIeHYwWUZibTdqcUExNmdBV0VPcFZxWVl1OWVDWEFUR0hQZ05wY0VTdzdtbkVWcUR0RjZFTUxiUGdWNnNGRmgtRjRhRERSTEpPVHB5R1F6Z2JkTklyc0V5VlFFUkdibmFGNVl4YWZzd1FKYmdkRElpZi1iMHJUanJTVFc2QlV3?oc=5",
-      "content": "Eventful 2026 On and Off-Track Leads Pierce to Third World of Outlaws Championship &nbsp;&nbsp; World of Outlaws",
-      "publishedAt": "2026-11-18T18:03:36.000Z",
-      "collectedAt": "2026-11-19T15:52:45.408Z",
+      "title": "Three Medals over the Weekend at the World Shooting Championships - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWjZ2WVJ1SjRrQVcwQ3ZmYnNLZHRXbG9hX3ZvZE1iSHFDb3BGUDViMDdwZnBHT3JVcTNOenhXLTBLeEpSVEFBcHhLT3lxS0pla2VZcERxclpBRkczVDVaaGhrOEIwNjBpakw0ZVJURklDNThwRmVRbTZNejdMYWRRV1plcWVWYmZ1MTYzQ3dGUkhPcnVY?oc=5",
+      "content": "Three Medals over the Weekend at the World Shooting Championships &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-20T01:05:43.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -262,25 +258,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0YWZidnY5",
-      "source": "Google News — child physical activity",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3Z2ZidnY5",
+      "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
-      "sourceWeight": 0.7,
-      "title": "International Men’s Day: “Opening up doesn't make you weak or less of a man” – Dom’s story - HSC Public Health Agency",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTDVWcVg1ektTeVJXTnE0dmlXamNSSVBWUHZBdEl3UGlrMldJNW9nUXYxZmhudjV0c3VqbHFpcnZPTU5fc1FmLWIyRFh6SWplWVBBbkFhWDZfVTdVYTllcXBPb3JmU2o3bEJvQnNiQUY5TnVvakp5QVk5aTdEQ0VIWTAxeXVjaTdKd1paZ1ROZFd1TXl2Si1CTlpqZXhGWGY4Ql9wMDE1RGc3VkVLVFNoeVBnR0I?oc=5",
-      "content": "International Men’s Day: “Opening up doesn't make you weak or less of a man” – Dom’s story &nbsp;&nbsp; HSC Public Health Agency",
-      "publishedAt": "2026-11-18T16:13:23.000Z",
-      "collectedAt": "2026-11-19T15:52:45.935Z",
+      "sourceWeight": 0.9,
+      "title": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORjc3UXlwdnVIa0R1OTh0MkVJOEtHOTF5UHYwN3FGY3NsNUkzWXpzUjdZZlpPOXV5RHgyOU1YeEpWZVBNS3RGYl93QUROYUZRZ0FscUhhUjRxN1ZJSVExOHFwcXZMZVpYWE02RVZFU2xCSVhNMXY0SU1RWTlqT21lQVByNWhHeHczSFFYOVV4SG5faThXZ05lOWZlcUZUR252N1VGamw5QXA5d0FzSTRWRkFtZGQ1dHBLVXktVl9JYmx5TDlOZVAxWUprTEFyUnhzUXlOWWdORU5JVWprS3piYnRBcHo2S1E2OW83N0hn?oc=5",
+      "content": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help &nbsp;&nbsp; Facebook",
+      "publishedAt": "2026-11-20T11:39:29.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
       "analysis": {
-        "relevance": 28,
+        "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "ADJACENT_DOMAIN",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
-          "HEALTH_SAFETY": [
-            "health"
-          ],
-          "DANCE_WORLD": [
-            "international"
+          "CORE_DANCE": [
+            "championship"
           ]
         },
         "context": {

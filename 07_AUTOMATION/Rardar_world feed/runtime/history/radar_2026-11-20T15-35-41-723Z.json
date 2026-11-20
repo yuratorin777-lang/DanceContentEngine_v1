@@ -1,0 +1,289 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-20T15:35:41.723Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 33,
+    "uniqueFacts": 14,
+    "duplicatesRemoved": 19,
+    "classifiedFacts": 14,
+    "relevantSignals": 7,
+    "durationMs": 7875
+  },
+  "distribution": {
+    "DANCE_WORLD": 3,
+    "LOCAL_DANCE": 1,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 265,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 3,
+      "durationMs": 223,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 1754,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 344,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 5003,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 281,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Pokémon World Championships dream takes off at new Oxfordshire café - Bicester Advertiser",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDhjVmh3dEt2MjZ2RDRyRDJwa0xWdnhMTGhadmtJaG9XUjNqZVFoRHZZeVdCQ0xsM2V1MnA2dkJCaGpnb21wZGU3ckxHanBBLVU0X2t3TGJLckFrQmlJaHVnY2tWZXN1MEZiT2FXZXZnenlnN3FYb0xnYWxCMHlWWTg3OXR6ZjNmMmNNYkpndXVrUzg1U1o2MXA3aHlKNWVzQjRJ?oc=5",
+      "content": "Pokémon World Championships dream takes off at new Oxfordshire café &nbsp;&nbsp; Bicester Advertiser",
+      "publishedAt": "2026-11-19T21:36:31.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle - Sortir à Paris",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbFBYTG9Nb0didXpOUWk3ODJHWURhbHhrMGVQblZDOGlJTmNkSzZNeXN3a2pubWtSdHJxUGdOUm9UQVFpaGpubTBlbExHbzF1S3B1ZGJraUNaQy1jTXJnbEltWVdSLUFUYVdnWUlLN3NmZUxrZnVXX0NMSFlsUVNvbC1rYmVRRjV6NFl3dWlqRkhJLWd2a3A4SmxqcllwZGIyaF9SZU1yVVNLRmtpUEZwaFdjZU14alZkZ1p5NkJhUkJWY2JyTk1fOUNGSHRpSmE0N0xjVEZEOG5vUzNxVWZXNG5EOXJtX1JvWmVSVThpb0M?oc=5",
+      "content": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle &nbsp;&nbsp; Sortir à Paris",
+      "publishedAt": "2026-11-19T16:37:08.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "hip-hop",
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Environmental excellence, a key element of the 2027 UCI Road World Championships - Francs Jeux",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZnhzWDlHOHdZcFNSM3BsMk5BenFiLVoxRmFTOV90aUNEOWdwSVl0ZjRsckQ4TlM2S0ZYd0VQcVRtNWxaZnpIUDJqNnVCMTRoTTlnOThFZmhFRU9nNGFIb1hiTkR1WVU1NHBvaFpyMG1sMVlOd3FmZ28wakMxa241M2FRWVJnUkk0Qjh3NlY1V0FRYlozS2Ezb1JtNWVFcVdfd0FBdWR1UFNUNE9UakRFVDRJbXRYVF9RNGxwaGJ0UG13d1BhSXItN1dYajJFMW5HUVNKSWJ5eG4zWGNvV0szX3Jn?oc=5",
+      "content": "Environmental excellence, a key element of the 2027 UCI Road World Championships &nbsp;&nbsp; Francs Jeux",
+      "publishedAt": "2026-11-19T15:56:37.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0MGZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "На детском празднике в Египте исполнили русские народные танцы - ФОНД РУССКИЙ МИР",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xemo4N1RFdDlVOHR4bkFnanNfcWZvaHNDTnI4NVV5X0Iyak8xVWIwY0s0S0dXT0lIdW9yUUlHbVBpc2Q3WHltcS1yOHFnRnc?oc=5",
+      "content": "На детском празднике в Египте исполнили русские народные танцы &nbsp;&nbsp; ФОНД РУССКИЙ МИР",
+      "publishedAt": "2026-11-20T13:33:14.000Z",
+      "collectedAt": "2026-11-20T15:35:34.339Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "UPDATE: National Solo Dance Criteria 26/27 - British Ice Skating",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWFxSm1qaG12QmN1Y054SW50bEV6NUc4Z2J0REpGYzh6cW9jVW4xbE5aNi1Ob0pHTUxLRUpPbnotUGNyNUFqdmtMb244REtvd0V5YmFqT3ZDTVZ2UXpycVd4dWhLLWJoeUthZVo3OEQwa1JMR2wwTDJBbEwxUlYwTnh2RQ?oc=5",
+      "content": "UPDATE: National Solo Dance Criteria 26/27 &nbsp;&nbsp; British Ice Skating",
+      "publishedAt": "2026-11-19T22:39:50.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Three Medals over the Weekend at the World Shooting Championships - Hungary Today",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWjZ2WVJ1SjRrQVcwQ3ZmYnNLZHRXbG9hX3ZvZE1iSHFDb3BGUDViMDdwZnBHT3JVcTNOenhXLTBLeEpSVEFBcHhLT3lxS0pla2VZcERxclpBRkczVDVaaGhrOEIwNjBpakw0ZVJURklDNThwRmVRbTZNejdMYWRRV1plcWVWYmZ1MTYzQ3dGUkhPcnVY?oc=5",
+      "content": "Three Medals over the Weekend at the World Shooting Championships &nbsp;&nbsp; Hungary Today",
+      "publishedAt": "2026-11-20T01:05:43.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3Z2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORjc3UXlwdnVIa0R1OTh0MkVJOEtHOTF5UHYwN3FGY3NsNUkzWXpzUjdZZlpPOXV5RHgyOU1YeEpWZVBNS3RGYl93QUROYUZRZ0FscUhhUjRxN1ZJSVExOHFwcXZMZVpYWE02RVZFU2xCSVhNMXY0SU1RWTlqT21lQVByNWhHeHczSFFYOVV4SG5faThXZ05lOWZlcUZUR252N1VGamw5QXA5d0FzSTRWRkFtZGQ1dHBLVXktVl9JYmx5TDlOZVAxWUprTEFyUnhzUXlOWWdORU5JVWprS3piYnRBcHo2S1E2OW83N0hn?oc=5",
+      "content": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help &nbsp;&nbsp; Facebook",
+      "publishedAt": "2026-11-20T11:39:29.000Z",
+      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
