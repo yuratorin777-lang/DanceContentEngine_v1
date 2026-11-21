@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-20T15:35:41.723Z",
+  "runAt": "2026-11-21T14:46:17.561Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,209 +15,83 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 33,
-    "uniqueFacts": 14,
-    "duplicatesRemoved": 19,
-    "classifiedFacts": 14,
+    "rawFacts": 31,
+    "uniqueFacts": 16,
+    "duplicatesRemoved": 15,
+    "classifiedFacts": 16,
     "relevantSignals": 7,
-    "durationMs": 7875
+    "durationMs": 1740
   },
   "distribution": {
-    "DANCE_WORLD": 3,
-    "LOCAL_DANCE": 1,
-    "CORE_DANCE": 3
+    "CORE_DANCE": 3,
+    "DANCE_WORLD": 2,
+    "ADJACENT_DOMAIN": 2
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 265,
+      "durationMs": 277,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
       "count": 3,
-      "durationMs": 223,
+      "durationMs": 284,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
       "count": 0,
-      "durationMs": 1754,
+      "durationMs": 326,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 344,
+      "durationMs": 324,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
-      "count": 15,
-      "durationMs": 5003,
+      "count": 13,
+      "durationMs": 260,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 281,
+      "durationMs": 263,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Pokémon World Championships dream takes off at new Oxfordshire café - Bicester Advertiser",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDhjVmh3dEt2MjZ2RDRyRDJwa0xWdnhMTGhadmtJaG9XUjNqZVFoRHZZeVdCQ0xsM2V1MnA2dkJCaGpnb21wZGU3ckxHanBBLVU0X2t3TGJLckFrQmlJaHVnY2tWZXN1MEZiT2FXZXZnenlnN3FYb0xnYWxCMHlWWTg3OXR6ZjNmMmNNYkpndXVrUzg1U1o2MXA3aHlKNWVzQjRJ?oc=5",
-      "content": "Pokémon World Championships dream takes off at new Oxfordshire café &nbsp;&nbsp; Bicester Advertiser",
-      "publishedAt": "2026-11-19T21:36:31.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "title": "2025 Pop Warner Cheer & Dance Nationals: 10 Most-Watched Routines on FloCheer - Yahoo Sports",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa0lPRWU5bjhMWmJsVVgtX3BmRlJpY2JtdXdwcVhxYTJVVXJRUzlGWDBIQmtLVEZSZTB1c01LdzVGSUd3TXlGeHA0Z0xBbDhNRFVaSmRDMVZJM1ZxWVVRTWFLTk9OaDJ0NVhuT1dLR1JNVmZPS1VvckVvTGItcmRfLWhn?oc=5",
+      "content": "2025 Pop Warner Cheer & Dance Nationals: 10 Most-Watched Routines on FloCheer &nbsp;&nbsp; Yahoo Sports",
+      "publishedAt": "2026-11-20T22:33:37.000Z",
+      "collectedAt": "2026-11-21T14:46:17.033Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk4YWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle - Sortir à Paris",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbFBYTG9Nb0didXpOUWk3ODJHWURhbHhrMGVQblZDOGlJTmNkSzZNeXN3a2pubWtSdHJxUGdOUm9UQVFpaGpubTBlbExHbzF1S3B1ZGJraUNaQy1jTXJnbEltWVdSLUFUYVdnWUlLN3NmZUxrZnVXX0NMSFlsUVNvbC1rYmVRRjV6NFl3dWlqRkhJLWd2a3A4SmxqcllwZGIyaF9SZU1yVVNLRmtpUEZwaFdjZU14alZkZ1p5NkJhUkJWY2JyTk1fOUNGSHRpSmE0N0xjVEZEOG5vUzNxVWZXNG5EOXJtX1JvWmVSVThpb0M?oc=5",
-      "content": "World Championships in Breaking & Hip-Hop Freestyle at Arena Porte de la Chapelle &nbsp;&nbsp; Sortir à Paris",
-      "publishedAt": "2026-11-19T16:37:08.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "hip-hop",
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk0Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Environmental excellence, a key element of the 2027 UCI Road World Championships - Francs Jeux",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZnhzWDlHOHdZcFNSM3BsMk5BenFiLVoxRmFTOV90aUNEOWdwSVl0ZjRsckQ4TlM2S0ZYd0VQcVRtNWxaZnpIUDJqNnVCMTRoTTlnOThFZmhFRU9nNGFIb1hiTkR1WVU1NHBvaFpyMG1sMVlOd3FmZ28wakMxa241M2FRWVJnUkk0Qjh3NlY1V0FRYlozS2Ezb1JtNWVFcVdfd0FBdWR1UFNUNE9UakRFVDRJbXRYVF9RNGxwaGJ0UG13d1BhSXItN1dYajJFMW5HUVNKSWJ5eG4zWGNvV0szX3Jn?oc=5",
-      "content": "Environmental excellence, a key element of the 2027 UCI Road World Championships &nbsp;&nbsp; Francs Jeux",
-      "publishedAt": "2026-11-19T15:56:37.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl0MGZ2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
-      "sourceWeight": 0.9,
-      "title": "На детском празднике в Египте исполнили русские народные танцы - ФОНД РУССКИЙ МИР",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xemo4N1RFdDlVOHR4bkFnanNfcWZvaHNDTnI4NVV5X0Iyak8xVWIwY0s0S0dXT0lIdW9yUUlHbVBpc2Q3WHltcS1yOHFnRnc?oc=5",
-      "content": "На детском празднике в Египте исполнили русские народные танцы &nbsp;&nbsp; ФОНД РУССКИЙ МИР",
-      "publishedAt": "2026-11-20T13:33:14.000Z",
-      "collectedAt": "2026-11-20T15:35:34.339Z",
-      "analysis": {
-        "relevance": 59,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "LOCAL_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "танц"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "детск",
-            "танц"
-          ]
-        },
-        "context": {
-          "local": true,
-          "russia": true,
-          "global": false
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlnd2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "UPDATE: National Solo Dance Criteria 26/27 - British Ice Skating",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWFxSm1qaG12QmN1Y054SW50bEV6NUc4Z2J0REpGYzh6cW9jVW4xbE5aNi1Ob0pHTUxLRUpPbnotUGNyNUFqdmtMb244REtvd0V5YmFqT3ZDTVZ2UXpycVd4dWhLLWJoeUthZVo3OEQwa1JMR2wwTDJBbEwxUlYwTnh2RQ?oc=5",
-      "content": "UPDATE: National Solo Dance Criteria 26/27 &nbsp;&nbsp; British Ice Skating",
-      "publishedAt": "2026-11-19T22:39:50.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "dance"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
           ]
         },
         "context": {
@@ -230,15 +104,106 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlsYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWliZWZ2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Three Medals over the Weekend at the World Shooting Championships - Hungary Today",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWjZ2WVJ1SjRrQVcwQ3ZmYnNLZHRXbG9hX3ZvZE1iSHFDb3BGUDViMDdwZnBHT3JVcTNOenhXLTBLeEpSVEFBcHhLT3lxS0pla2VZcERxclpBRkczVDVaaGhrOEIwNjBpakw0ZVJURklDNThwRmVRbTZNejdMYWRRV1plcWVWYmZ1MTYzQ3dGUkhPcnVY?oc=5",
-      "content": "Three Medals over the Weekend at the World Shooting Championships &nbsp;&nbsp; Hungary Today",
-      "publishedAt": "2026-11-20T01:05:43.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "title": "Blackpool Tower Ballroom Anchors Strictly Come Dancing Tradition - cwibc.co.id",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45MmlzMlp6Q2ZzZThfWFB4SHdJSUg3djAwcVNZVUt5amhSNkJ4V2Zubk1tTXJpZHUxNjAwM2lCR1VvR0EwT3lzTVJsY1BMSUlEQk9SUEptSFdFeTRQc3M1NU90NDZlNGVJMTU1MA?oc=5",
+      "content": "Blackpool Tower Ballroom Anchors Strictly Come Dancing Tradition &nbsp;&nbsp; cwibc.co.id",
+      "publishedAt": "2026-11-21T07:29:33.000Z",
+      "collectedAt": "2026-11-21T14:46:17.033Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "ballroom"
+          ],
+          "DANCE_WORLD": [
+            "Blackpool"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Blackpool Tower Ballroom Drives Strictly Come Dancing Tradition - Demokratis.co.id",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9EdTlERURxU3ItMTlibG9DeEgtRnlHOFpQUnRyYVBMdFlNUXR1d3BQVU9mOE43bGZxejdtUGVWSi1aVTl6eGwtakJIN2YxTy1ndXFUTG5FRFRuam5EdGV6a3YtbHZuUlhjMUhMa2lVY3RXc21OYzJ4VHFfMA?oc=5",
+      "content": "Blackpool Tower Ballroom Drives Strictly Come Dancing Tradition &nbsp;&nbsp; Demokratis.co.id",
+      "publishedAt": "2026-11-21T07:41:14.000Z",
+      "collectedAt": "2026-11-21T14:46:17.034Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "ballroom"
+          ],
+          "DANCE_WORLD": [
+            "Blackpool"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "PAH! Deaf Dance Company wins gold at global championships - Jamaica Observer",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWGlVdG0zSjBOT0ZhUzhHaVhSQVBrbGZfRUZVR2RYMUJSeVQyN21lRXRQWlJWVGxlenZVdWYwMGpsdWhEaUFlaUotQWlDcUV3WkdtUGNSaEhxTkc1OEZNMThxbi16QzV5blliZUxmOUw3NFJLbHFnYnBQMTNzUnNEb3N5blktZ1hOZTVRcmtGdThHb1lnYkpGQmpJcFU5QQ?oc=5",
+      "content": "PAH! Deaf Dance Company wins gold at global championships &nbsp;&nbsp; Jamaica Observer",
+      "publishedAt": "2026-11-20T20:17:56.000Z",
+      "collectedAt": "2026-11-21T14:46:17.033Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance",
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "DCI Open Class Championships Relocates to Indianapolis for 2027 - FloMarching",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb3VCUlpXdVh3SlVNSUFvQ0tvZ3Fpdk45SDRhU2dud0JEUURiZXc3YlA0ODBrZzNqcFYzUEFTaU41Ykk1d2RkcVRGQkRIb3poTHE2UzZTSjdBZ1hrcEtYUG95aEJGVkxuZGlmN1NLZUVUdzUwUXZhakY5VjVIUExCZEI5YzdlblJvS3BRZU5kX0s0OHdlanRPWEI1dzhnMVJnd3BWM3JPcUQzYXR6eldOag?oc=5",
+      "content": "DCI Open Class Championships Relocates to Indianapolis for 2027 &nbsp;&nbsp; FloMarching",
+      "publishedAt": "2026-11-20T14:56:07.000Z",
+      "collectedAt": "2026-11-21T14:46:17.034Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
@@ -258,22 +223,60 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWk3Z2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllZWZ2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORjc3UXlwdnVIa0R1OTh0MkVJOEtHOTF5UHYwN3FGY3NsNUkzWXpzUjdZZlpPOXV5RHgyOU1YeEpWZVBNS3RGYl93QUROYUZRZ0FscUhhUjRxN1ZJSVExOHFwcXZMZVpYWE02RVZFU2xCSVhNMXY0SU1RWTlqT21lQVByNWhHeHczSFFYOVV4SG5faThXZ05lOWZlcUZUR252N1VGamw5QXA5d0FzSTRWRkFtZGQ1dHBLVXktVl9JYmx5TDlOZVAxWUprTEFyUnhzUXlOWWdORU5JVWprS3piYnRBcHo2S1E2OW83N0hn?oc=5",
-      "content": "WELCOME BACK, ICE PRINCE ❄️⛸️ Two-time Winter Olympian Michael Martinez makes his comeback to competitive skating at the Philippine National Figure Skating Championships 2026. Martinez earlier said he’s returning not just for himself, but to help &nbsp;&nbsp; Facebook",
-      "publishedAt": "2026-11-20T11:39:29.000Z",
-      "collectedAt": "2026-11-20T15:35:36.437Z",
+      "title": "Brawl Stars World Finals 2026: Stream, match schedule, favorites, and full results - Esports.gg",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzN0hnMkdHSnJpU0ZoT3BDM29oTl9yUHJORE9WS0x1MmQ5RlNZa05RQWxhdmtIQXQ4bGVGNzJORzlWQy1MSU9rR09SLXNzM1VJQXdnSVI3SWZzMmJtSzhrZlJqdzJoSThNcjNMOTltMDhzWDVFT0VWag?oc=5",
+      "content": "Brawl Stars World Finals 2026: Stream, match schedule, favorites, and full results &nbsp;&nbsp; Esports.gg",
+      "publishedAt": "2026-11-21T11:56:10.000Z",
+      "collectedAt": "2026-11-21T14:46:17.034Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "primaryCategory": "ADJACENT_DOMAIN",
         "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
+          "DANCE_WORLD": [
+            "world final"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkzd2ZidnY5",
+      "source": "Google News — child physical activity",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.7,
+      "title": "Ga West Education Directorate celebrates International Children’s Day, calls for greater protection of children’s rights - MyJoyOnline",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRzBvUFN1RTBTU0tCaWZBWEhaVnlOemFBTllILVlFYmVCeFhRcU03cE1wY012WElGa1dBcmh0TVBvbGR5RXE3bEJ6c3V2SnRKZ2NTMkc0TFVnRGZVZ0FtOEVaUENzM0pjeVhaaTVnNGNlenE5NkZCdzkxR29qUVMtX2FvUDlPVFpWQlFLMV94RkduYWo2c0N6WHJ6T2k0X2k0RlQ0QWdCdFAyNGVMLXhremdkbmhObUxuTXhPT2lQYmJ3anYyWFI1cU9obWh6bi1OTndYWUFKZmF3YkVPX1g0?oc=5",
+      "content": "Ga West Education Directorate celebrates International Children’s Day, calls for greater protection of children’s rights &nbsp;&nbsp; MyJoyOnline",
+      "publishedAt": "2026-11-21T11:21:29.000Z",
+      "collectedAt": "2026-11-21T14:46:17.294Z",
+      "analysis": {
+        "relevance": 28,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "CHILD_DEVELOPMENT": [
+            "child",
+            "children"
+          ],
+          "PSYCHOLOGY_PEDAGOGY": [
+            "education"
+          ],
+          "DANCE_WORLD": [
+            "international"
           ]
         },
         "context": {
