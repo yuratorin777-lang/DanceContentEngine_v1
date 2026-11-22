@@ -1,0 +1,162 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-22T14:42:36.903Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 33,
+    "uniqueFacts": 16,
+    "duplicatesRemoved": 17,
+    "classifiedFacts": 16,
+    "relevantSignals": 3,
+    "durationMs": 1423
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 1,
+      "durationMs": 255,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 194,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 228,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 275,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 269,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 198,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Khon Kaen University Officially Opens the 52nd Pétanque World Championship, Welcoming Athletes from 48 Countries Under the Theme “WELCOME THE WORLD” - มหาวิทยาลัยขอนแก่น (KKU)",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1MMzdzcTJjZUpkU25SWHJWdmp2MEphMUY2UUtoSWx5VDRRWkJRSmt0VjNFWGFPVkh6RXZkRmMtNGh1UDU2SEY0?oc=5",
+      "content": "Khon Kaen University Officially Opens the 52nd Pétanque World Championship, Welcoming Athletes from 48 Countries Under the Theme “WELCOME THE WORLD” &nbsp;&nbsp; มหาวิทยาลัยขอนแก่น (KKU)",
+      "publishedAt": "2026-11-22T02:24:00.000Z",
+      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "France beat Argentina to set up Nations Championship final with South Africa - The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxON2p2Rl9kYTFMQ0x3QU9ELUhqVHFuZDZmZ1FhelBkLVlxc3hReDk5Yk1jZjNBYWhXdUkxWEd6eUJOZlhTMU5YMG1WWGM4N1ZLY0NpeHphdW1CaTNxWFl0RFBCaGdwWV92RWF3SjlOTnBxMGd1Z2s2RFZPT3dRTVJmaEhGRjVfOWJfcjE2ZWZQTlZ1TV90UnF5dWhDODllS20yTDlVQTBpZms2ZlZ3VkMwTldZNVZKQmlPeXJYeTcxOA?oc=5",
+      "content": "France beat Argentina to set up Nations Championship final with South Africa &nbsp;&nbsp; The Guardian",
+      "publishedAt": "2026-11-21T23:09:43.000Z",
+      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Tashkent hosts an official opening ceremony of the World Junior Judo Championships - UZA.uz",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbS1DV3Mxb19VUEYwTGpXMkFzUkZxdGM2VVJFUkZ1TEJPd3JVMUI1VVFQQnhGR2JYcXUwWURQOFJTcFl5OUEwajFyZVFTUThpYkJ1Mks1TWZCYjhmcUFLTGl5Zm5nWEFvVWNva1ZrVjZUS2xNM1FOdDlvY3R5YW0xMHdzOVllTFhkY1RaUHFIa1U2blBnc0Y4ZVNfaXZtVlIwVEFXazZoUnQxeE00REI5Q3g4SQ?oc=5",
+      "content": "Tashkent hosts an official opening ceremony of the World Junior Judo Championships &nbsp;&nbsp; UZA.uz",
+      "publishedAt": "2026-11-21T19:09:35.000Z",
+      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
