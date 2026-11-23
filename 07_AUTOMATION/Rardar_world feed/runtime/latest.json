@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-22T14:42:36.903Z",
+  "runAt": "2026-11-23T18:25:44.236Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,72 +15,144 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 33,
-    "uniqueFacts": 16,
-    "duplicatesRemoved": 17,
-    "classifiedFacts": 16,
-    "relevantSignals": 3,
-    "durationMs": 1423
+    "rawFacts": 39,
+    "uniqueFacts": 26,
+    "duplicatesRemoved": 13,
+    "classifiedFacts": 26,
+    "relevantSignals": 7,
+    "durationMs": 1622
   },
   "distribution": {
-    "DANCE_WORLD": 1,
+    "LOCAL_DANCE": 1,
+    "DANCE_WORLD": 4,
     "CORE_DANCE": 2
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
-      "count": 1,
-      "durationMs": 255,
+      "count": 0,
+      "durationMs": 213,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 2,
-      "durationMs": 194,
+      "count": 7,
+      "durationMs": 335,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 0,
-      "durationMs": 228,
+      "count": 2,
+      "durationMs": 288,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 275,
+      "durationMs": 302,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 269,
+      "durationMs": 267,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 198,
+      "durationMs": 212,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlyMGZ2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1ZWZ2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Детские танцы в России: почему родитель платит не за хореографию - Т—Ж",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9CaU5wS1JxcDl2bkkzYmp0YWRLSlAyM1lsUEJUV1MxVHdFcGpQUFVDUVgyX21kS1pKV243Skc5aDNjaUIwNVVkbWl4U0ZadmVq?oc=5",
+      "content": "Детские танцы в России: почему родитель платит не за хореографию &nbsp;&nbsp; Т—Ж",
+      "publishedAt": "2026-11-23T08:36:48.000Z",
+      "collectedAt": "2026-11-23T18:25:43.164Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц",
+            "хореограф"
+          ],
+          "PSYCHOLOGY_PEDAGOGY": [
+            "родител"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "детск",
+            "хореограф",
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Khon Kaen University Officially Opens the 52nd Pétanque World Championship, Welcoming Athletes from 48 Countries Under the Theme “WELCOME THE WORLD” - มหาวิทยาลัยขอนแก่น (KKU)",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1MMzdzcTJjZUpkU25SWHJWdmp2MEphMUY2UUtoSWx5VDRRWkJRSmt0VjNFWGFPVkh6RXZkRmMtNGh1UDU2SEY0?oc=5",
-      "content": "Khon Kaen University Officially Opens the 52nd Pétanque World Championship, Welcoming Athletes from 48 Countries Under the Theme “WELCOME THE WORLD” &nbsp;&nbsp; มหาวิทยาลัยขอนแก่น (KKU)",
-      "publishedAt": "2026-11-22T02:24:00.000Z",
-      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "title": "Goodwood figure skater earns world championship spot | TygerBurger - https://novanews.co.za/",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeVdidEdfOGpQSUpYbnNtdnFoVnhSNnB1eTVrRDNNMkJoQllKQjV2RTBTVzY0ZHJlbkh1bW1iWU10TklVYkhvUjVJNW1tYW5sZzJJSHRuSWI0RTJFcjBoUU83R0FOc0cxam1MWDVJTjRaNkViYXVaZllJU3BsWlFEVXlwVlA5dlVOaFpMODFETkVMdw?oc=5",
+      "content": "Goodwood figure skater earns world championship spot | TygerBurger &nbsp;&nbsp; https://novanews.co.za/",
+      "publishedAt": "2026-11-23T10:50:42.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026 ADCC World Championships Presented by FloGrappling - FloGrappling",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFdBUzJvdW1uRVUxQVJHaWxNYkNKMkFjbVJOSllON2tVdzdDNkNzVU9CY3l1VWI0aVRLd2I5R3hCRjgwYUtHVnVWR3k5eFhaN1NhT3lYVGI4eFBNRjV6WVNnaXFOQXFSNnVvRWFoc3ZOaUhCd2FidVF4cEY1YlZTdktCRHFiQV9CLWY4MV9VODVZV3R6WnBtQ3h3RVZZdnRoV1R6QUpOZi15aXM?oc=5",
+      "content": "2026 ADCC World Championships Presented by FloGrappling &nbsp;&nbsp; FloGrappling",
+      "publishedAt": "2026-11-23T12:35:50.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -103,22 +175,25 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2d2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlod2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "France beat Argentina to set up Nations Championship final with South Africa - The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxON2p2Rl9kYTFMQ0x3QU9ELUhqVHFuZDZmZ1FhelBkLVlxc3hReDk5Yk1jZjNBYWhXdUkxWEd6eUJOZlhTMU5YMG1WWGM4N1ZLY0NpeHphdW1CaTNxWFl0RFBCaGdwWV92RWF3SjlOTnBxMGd1Z2s2RFZPT3dRTVJmaEhGRjVfOWJfcjE2ZWZQTlZ1TV90UnF5dWhDODllS20yTDlVQTBpZms2ZlZ3VkMwTldZNVZKQmlPeXJYeTcxOA?oc=5",
-      "content": "France beat Argentina to set up Nations Championship final with South Africa &nbsp;&nbsp; The Guardian",
-      "publishedAt": "2026-11-21T23:09:43.000Z",
-      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "title": "WATCH LIVE: Grappling World Championships 2026 - United World Wrestling",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcUp2MVFyWVBYXzIweUNBYXlZdzUxOU52Nnlnb0g1dHRCNXo4VFk1b2liU1g2OHJfMl9qU3F0WFk4Q3dONTRFTGFKMUJ5M3U4a29TcG1uY1FFYmk4V0NqSzRaRXhLdlV5NVdaUk9CYy1qZHpqdzMxN2FxY1JqMHcwaGVuSXpEMVk?oc=5",
+      "content": "WATCH LIVE: Grappling World Championships 2026 &nbsp;&nbsp; United World Wrestling",
+      "publishedAt": "2026-11-23T06:22:56.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
       "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
         "matchedCategories": {
           "CORE_DANCE": [
             "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
           ]
         },
         "context": {
@@ -131,22 +206,84 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlzd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Tashkent hosts an official opening ceremony of the World Junior Judo Championships - UZA.uz",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbS1DV3Mxb19VUEYwTGpXMkFzUkZxdGM2VVJFUkZ1TEJPd3JVMUI1VVFQQnhGR2JYcXUwWURQOFJTcFl5OUEwajFyZVFTUThpYkJ1Mks1TWZCYjhmcUFLTGl5Zm5nWEFvVWNva1ZrVjZUS2xNM1FOdDlvY3R5YW0xMHdzOVllTFhkY1RaUHFIa1U2blBnc0Y4ZVNfaXZtVlIwVEFXazZoUnQxeE00REI5Q3g4SQ?oc=5",
-      "content": "Tashkent hosts an official opening ceremony of the World Junior Judo Championships &nbsp;&nbsp; UZA.uz",
-      "publishedAt": "2026-11-21T19:09:35.000Z",
-      "collectedAt": "2026-11-22T14:42:36.434Z",
+      "title": "Hong Kong hosts Asia's first Dragon World Championship with record 95-boat fleet - The Standard (HK)",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTjZna3FfS3JfYW90aEtMb3g5dTN4dEJxVXdmdW9PMG04RF80cUxrYkVYcThBRDhIX3F6aF9sLW0zNW9NU3dCVHEyb2FSZzRPeGZyNnhQeTk1dFZlcDBtR1dvVnVCSDdsOGk4RHpsWEpuNU5jSE5mZ0pPUmU1NExlVWwyZ3ZWV2duVGE0WjdCQkFCOXFUeHAxMlkyQ25HaWc3S0s5bnRBdzV4blltZFU1SGJHTVFLSTU4Wm80RjZFZ25LNjJUTk1sRWR3?oc=5",
+      "content": "Hong Kong hosts Asia's first Dragon World Championship with record 95-boat fleet &nbsp;&nbsp; The Standard (HK)",
+      "publishedAt": "2026-11-23T12:39:19.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlia2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Kim Hong-yeol, Known as 'Hongten', Defeats World No. 2 to Win Breaking Asian Championship - news.sbs.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAySng5NEFhanNrbzdBMldURlJoZ3oydEE5Yy1Ma1piWEJDNnU2Zk10aFl1bEJSNEQ2ZXBZdWRWYWhiQm9rc0ZETENkNmd6SVJLX1l3Vks1Rlhselh6ak45QVFMUjFQd1hiczF5SzZB?oc=5",
+      "content": "Kim Hong-yeol, Known as 'Hongten', Defeats World No. 2 to Win Breaking Asian Championship &nbsp;&nbsp; news.sbs.co.kr",
+      "publishedAt": "2026-11-23T08:32:14.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Fred Astaire Dance Studios Coming to Kettering - WhatNow",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQmRocnkxRHUwQUk0QUZsTnlZVGkwQ3I4UjNwb0ZqSG1SMnhwcTFuNDQzWXpxb1hDUDFqSVBySk1RYnotaTJSSnhmYzNNZUJxeElaNjVzZ2d1M3NwVmh4NWZPZDJLam5RZVdQdWc3WWRyR3lVc3JCRnlsS25yZU1PRVl2aXB4bkNaX0VN?oc=5",
+      "content": "Fred Astaire Dance Studios Coming to Kettering &nbsp;&nbsp; WhatNow",
+      "publishedAt": "2026-11-22T19:43:04.000Z",
+      "collectedAt": "2026-11-23T18:25:43.754Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "dance"
           ]
         },
         "context": {
