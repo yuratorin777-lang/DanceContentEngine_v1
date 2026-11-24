@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-23T18:25:44.236Z",
+  "runAt": "2026-11-24T17:55:19.007Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,110 +15,103 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 39,
-    "uniqueFacts": 26,
-    "duplicatesRemoved": 13,
-    "classifiedFacts": 26,
-    "relevantSignals": 7,
-    "durationMs": 1622
+    "rawFacts": 33,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 17,
+    "relevantSignals": 5,
+    "durationMs": 1847
   },
   "distribution": {
-    "LOCAL_DANCE": 1,
-    "DANCE_WORLD": 4,
-    "CORE_DANCE": 2
+    "CORE_DANCE": 3,
+    "DANCE_WORLD": 2
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 213,
+      "durationMs": 251,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 7,
-      "durationMs": 335,
+      "count": 2,
+      "durationMs": 262,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 2,
-      "durationMs": 288,
+      "count": 1,
+      "durationMs": 335,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 302,
+      "durationMs": 345,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 267,
+      "durationMs": 379,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 212,
+      "durationMs": 267,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1ZWZ2eDNs",
-      "source": "Google News — детские танцы Россия",
-      "sourceScope": "RUSSIA",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Детские танцы в России: почему родитель платит не за хореографию - Т—Ж",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9CaU5wS1JxcDl2bkkzYmp0YWRLSlAyM1lsUEJUV1MxVHdFcGpQUFVDUVgyX21kS1pKV243Skc5aDNjaUIwNVVkbWl4U0ZadmVq?oc=5",
-      "content": "Детские танцы в России: почему родитель платит не за хореографию &nbsp;&nbsp; Т—Ж",
-      "publishedAt": "2026-11-23T08:36:48.000Z",
-      "collectedAt": "2026-11-23T18:25:43.164Z",
+      "title": "World Darts Championship contenders: 6 players to watch in 2026/27 - Dave.Sport",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KSkQxZGdMd2EzMExuaGFCbEJzcWl0ZlFibTZSM2ZaX3NOZDF2alZTdDdmcVBDVURVTndfNlBSdldTN0xHaUNsYUFRa2FYeExiWVFtNGxCZWVmdlBYSHg5NmEwQi14WG9vN3BOYl9GdlVUYTRIWlI0?oc=5",
+      "content": "World Darts Championship contenders: 6 players to watch in 2026/27 &nbsp;&nbsp; Dave.Sport",
+      "publishedAt": "2026-11-24T11:00:00.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
       "analysis": {
-        "relevance": 100,
+        "relevance": 72,
         "relevanceLevel": "HIGH",
-        "primaryCategory": "LOCAL_DANCE",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "танц",
-            "хореограф"
+            "championship"
           ],
-          "PSYCHOLOGY_PEDAGOGY": [
-            "родител"
-          ],
-          "LOCAL_ECOSYSTEM": [
-            "детск",
-            "хореограф",
-            "танц"
+          "ACTIVITY_CONTEXT": [
+            "sport"
           ]
         },
         "context": {
-          "local": true,
-          "russia": true,
-          "global": false
+          "local": false,
+          "russia": false,
+          "global": true
         },
         "isFact": true,
         "confidence": 0.8
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrZ2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlma2Z2eDNs",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Goodwood figure skater earns world championship spot | TygerBurger - https://novanews.co.za/",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeVdidEdfOGpQSUpYbnNtdnFoVnhSNnB1eTVrRDNNMkJoQllKQjV2RTBTVzY0ZHJlbkh1bW1iWU10TklVYkhvUjVJNW1tYW5sZzJJSHRuSWI0RTJFcjBoUU83R0FOc0cxam1MWDVJTjRaNkViYXVaZllJU3BsWlFEVXlwVlA5dlVOaFpMODFETkVMdw?oc=5",
-      "content": "Goodwood figure skater earns world championship spot | TygerBurger &nbsp;&nbsp; https://novanews.co.za/",
-      "publishedAt": "2026-11-23T10:50:42.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "title": "New Performance to Star at the 2026 POSA World Championships - italiani.it",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZU1BMYU5lcmh2RjBkLVZCRUlzSWdKUHkzTTBselVKRlU0NWRIUjgtd3ZJYjJweXZwM0lGUlRERi1weFFPYmRxeVRDRFVFV0IwdkpCN19PYkZKUlRpN29ISWVOZ0JvZi1CV1ZqdTBrbkVBR2NHUWQ4VVlCUUxjUQ?oc=5",
+      "content": "New Performance to Star at the 2026 POSA World Championships &nbsp;&nbsp; italiani.it",
+      "publishedAt": "2026-11-24T05:45:50.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
       "analysis": {
         "relevance": 72,
         "relevanceLevel": "HIGH",
@@ -144,15 +137,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlxd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyd2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "2026 ADCC World Championships Presented by FloGrappling - FloGrappling",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRFdBUzJvdW1uRVUxQVJHaWxNYkNKMkFjbVJOSllON2tVdzdDNkNzVU9CY3l1VWI0aVRLd2I5R3hCRjgwYUtHVnVWR3k5eFhaN1NhT3lYVGI4eFBNRjV6WVNnaXFOQXFSNnVvRWFoc3ZOaUhCd2FidVF4cEY1YlZTdktCRHFiQV9CLWY4MV9VODVZV3R6WnBtQ3h3RVZZdnRoV1R6QUpOZi15aXM?oc=5",
-      "content": "2026 ADCC World Championships Presented by FloGrappling &nbsp;&nbsp; FloGrappling",
-      "publishedAt": "2026-11-23T12:35:50.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "title": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQZjhQV2tZUWoxVnJ2SDVGYk16RUczU1dHNC15b05SbGRlZDJzOFg2M2VKY1VITmxkVWlLUFNyOUF4Q0pMX2dvYUNNOWFtNUJfdV9CQnEyVFJFRFduc3NnV1hYaVMyQlhRa0M5cUdQMkJOOEFMQnpEUDVpamplcTgwUlk4NDV4ejE3RVhIdnRiQ0pEV29VN2tpY295UTNZb09IYWZ5el9jZ0RDc052UC1MMlA0WHNBVjU2TjIwdDlZM2w0Sl8tamF1b3Y4UmdXdi1xNHJ4SDk3MzUxSmZDbEN1WjJuV2VqMk81UnFLWWpLLXVJeDlOM0dCZUI5dkhndGh6cVVlVUkteFFNeTdyaFROMGcxc2EwTExBcVdDcG5qU1lGNFpnLTdtWTBqWlh6bkRXR0N6ZW1iMkxBdzRVdnlkbkM4TlFJLW9FVzRpVmZianF0aFZsTHJTUFNZQdIBkAJBVV95cUxQMzdES19JTU1qZG1kYWpibWtYSS1MalY5OGR5djJjY08wNnlNU2k5aG8tNUFCVHpEeXlhdnNZX2RuZlJubkZMV2FYQUVZUm10NEZfVkVUUzFYbGxSdHU1Uno1NUxyUDFlbV9fb3pVSnJ5ZnZLVnpwdFkzOWZmSldpQ1ZfMzRBSU5nZDBuNnY3ZDM3cEFIU28yYnBtQ0pyUXhzTWRvTmltZkxKbTVmTnJ3Z3didGZoOUdleEdOYm5oLVh6VF90TGh3WXJ0cmtXUVVkanZLVWwzSHRPNWVNdmtZV2NZVTJhSTQ5Z1o5WWdBM1VaTHl2ZVBtWXNrdWEtUE4ydU1mNlNjbVBWOGNLR0d5OA?oc=5",
+      "content": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship &nbsp;&nbsp; The Times of India",
+      "publishedAt": "2026-11-24T14:34:00.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
       "analysis": {
         "relevance": 68,
         "relevanceLevel": "MEDIUM",
@@ -175,87 +168,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlod2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "WATCH LIVE: Grappling World Championships 2026 - United World Wrestling",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcUp2MVFyWVBYXzIweUNBYXlZdzUxOU52Nnlnb0g1dHRCNXo4VFk1b2liU1g2OHJfMl9qU3F0WFk4Q3dONTRFTGFKMUJ5M3U4a29TcG1uY1FFYmk4V0NqSzRaRXhLdlV5NVdaUk9CYy1qZHpqdzMxN2FxY1JqMHcwaGVuSXpEMVk?oc=5",
-      "content": "WATCH LIVE: Grappling World Championships 2026 &nbsp;&nbsp; United World Wrestling",
-      "publishedAt": "2026-11-23T06:22:56.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "title": "Stanwood dancers travel to Prague for world tap dance contest - HeraldNet.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3RLMUtYNlpuaEpHYVpFazRWU0FYSldCeXpZaEhvY0hvWEUwdUIxQjZkZHJsOXFCenhjXzFrNTlJM3dVQldaUGd0cnlZcldRM2JJMHRrbU5tSEtIU0xFbGJ2ODN1TVVyUi1xNExoRDZub1BidlctTkotNkctcFNKS3pEYUVUM2loTEZsZDZLMUF5Q0ZTUVdiUDhyb2dKRHhN?oc=5",
+      "content": "Stanwood dancers travel to Prague for world tap dance contest &nbsp;&nbsp; HeraldNet.com",
+      "publishedAt": "2026-11-24T06:42:20.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
       "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5Z2ZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Hong Kong hosts Asia's first Dragon World Championship with record 95-boat fleet - The Standard (HK)",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTjZna3FfS3JfYW90aEtMb3g5dTN4dEJxVXdmdW9PMG04RF80cUxrYkVYcThBRDhIX3F6aF9sLW0zNW9NU3dCVHEyb2FSZzRPeGZyNnhQeTk1dFZlcDBtR1dvVnVCSDdsOGk4RHpsWEpuNU5jSE5mZ0pPUmU1NExlVWwyZ3ZWV2duVGE0WjdCQkFCOXFUeHAxMlkyQ25HaWc3S0s5bnRBdzV4blltZFU1SGJHTVFLSTU4Wm80RjZFZ25LNjJUTk1sRWR3?oc=5",
-      "content": "Hong Kong hosts Asia's first Dragon World Championship with record 95-boat fleet &nbsp;&nbsp; The Standard (HK)",
-      "publishedAt": "2026-11-23T12:39:19.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
-      "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlia2Z2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "Kim Hong-yeol, Known as 'Hongten', Defeats World No. 2 to Win Breaking Asian Championship - news.sbs.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAySng5NEFhanNrbzdBMldURlJoZ3oydEE5Yy1Ma1piWEJDNnU2Zk10aFl1bEJSNEQ2ZXBZdWRWYWhiQm9rc0ZETENkNmd6SVJLX1l3Vks1Rlhselh6ak45QVFMUjFQd1hiczF5SzZB?oc=5",
-      "content": "Kim Hong-yeol, Known as 'Hongten', Defeats World No. 2 to Win Breaking Asian Championship &nbsp;&nbsp; news.sbs.co.kr",
-      "publishedAt": "2026-11-23T08:32:14.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
-      "analysis": {
-        "relevance": 41,
+        "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
-          ],
-          "CONTENT_SIGNAL": [
-            "new"
+            "dance"
           ]
         },
         "context": {
@@ -268,15 +196,15 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlpd2ZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Fred Astaire Dance Studios Coming to Kettering - WhatNow",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQmRocnkxRHUwQUk0QUZsTnlZVGkwQ3I4UjNwb0ZqSG1SMnhwcTFuNDQzWXpxb1hDUDFqSVBySk1RYnotaTJSSnhmYzNNZUJxeElaNjVzZ2d1M3NwVmh4NWZPZDJLam5RZVdQdWc3WWRyR3lVc3JCRnlsS25yZU1PRVl2aXB4bkNaX0VN?oc=5",
-      "content": "Fred Astaire Dance Studios Coming to Kettering &nbsp;&nbsp; WhatNow",
-      "publishedAt": "2026-11-22T19:43:04.000Z",
-      "collectedAt": "2026-11-23T18:25:43.754Z",
+      "title": "In Harlem, The Trade War Reaches The Dance Floor - Harlem World Magazine",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMl9OVG0ta2hOcEJXeUlvajFuTE9RcVY3ZkRUQm1ObTJHUTdUY1FNMTR1alhZUkZJZ0RfTzJ4cWRtc0dkV1RaR0ROc0RNNEZ4VWJTZC1UM3VTQTBFWnJ4ZUp0dGFkQWVEVndhUVdRSElRRWs5NmdSSzVzMlpfcy0yUlFLbThwSHU4eVExVg?oc=5",
+      "content": "In Harlem, The Trade War Reaches The Dance Floor &nbsp;&nbsp; Harlem World Magazine",
+      "publishedAt": "2026-11-23T21:31:04.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",

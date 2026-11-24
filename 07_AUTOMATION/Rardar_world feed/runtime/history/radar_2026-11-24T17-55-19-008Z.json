@@ -1,0 +1,227 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-24T17:55:19.007Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 33,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 16,
+    "classifiedFacts": 17,
+    "relevantSignals": 5,
+    "durationMs": 1847
+  },
+  "distribution": {
+    "CORE_DANCE": 3,
+    "DANCE_WORLD": 2
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 251,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 2,
+      "durationMs": 262,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 1,
+      "durationMs": 335,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 345,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 379,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 267,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "World Darts Championship contenders: 6 players to watch in 2026/27 - Dave.Sport",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KSkQxZGdMd2EzMExuaGFCbEJzcWl0ZlFibTZSM2ZaX3NOZDF2alZTdDdmcVBDVURVTndfNlBSdldTN0xHaUNsYUFRa2FYeExiWVFtNGxCZWVmdlBYSHg5NmEwQi14WG9vN3BOYl9GdlVUYTRIWlI0?oc=5",
+      "content": "World Darts Championship contenders: 6 players to watch in 2026/27 &nbsp;&nbsp; Dave.Sport",
+      "publishedAt": "2026-11-24T11:00:00.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlma2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "New Performance to Star at the 2026 POSA World Championships - italiani.it",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZU1BMYU5lcmh2RjBkLVZCRUlzSWdKUHkzTTBselVKRlU0NWRIUjgtd3ZJYjJweXZwM0lGUlRERi1weFFPYmRxeVRDRFVFV0IwdkpCN19PYkZKUlRpN29ISWVOZ0JvZi1CV1ZqdTBrbkVBR2NHUWQ4VVlCUUxjUQ?oc=5",
+      "content": "New Performance to Star at the 2026 POSA World Championships &nbsp;&nbsp; italiani.it",
+      "publishedAt": "2026-11-24T05:45:50.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyd2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQZjhQV2tZUWoxVnJ2SDVGYk16RUczU1dHNC15b05SbGRlZDJzOFg2M2VKY1VITmxkVWlLUFNyOUF4Q0pMX2dvYUNNOWFtNUJfdV9CQnEyVFJFRFduc3NnV1hYaVMyQlhRa0M5cUdQMkJOOEFMQnpEUDVpamplcTgwUlk4NDV4ejE3RVhIdnRiQ0pEV29VN2tpY295UTNZb09IYWZ5el9jZ0RDc052UC1MMlA0WHNBVjU2TjIwdDlZM2w0Sl8tamF1b3Y4UmdXdi1xNHJ4SDk3MzUxSmZDbEN1WjJuV2VqMk81UnFLWWpLLXVJeDlOM0dCZUI5dkhndGh6cVVlVUkteFFNeTdyaFROMGcxc2EwTExBcVdDcG5qU1lGNFpnLTdtWTBqWlh6bkRXR0N6ZW1iMkxBdzRVdnlkbkM4TlFJLW9FVzRpVmZianF0aFZsTHJTUFNZQdIBkAJBVV95cUxQMzdES19JTU1qZG1kYWpibWtYSS1MalY5OGR5djJjY08wNnlNU2k5aG8tNUFCVHpEeXlhdnNZX2RuZlJubkZMV2FYQUVZUm10NEZfVkVUUzFYbGxSdHU1Uno1NUxyUDFlbV9fb3pVSnJ5ZnZLVnpwdFkzOWZmSldpQ1ZfMzRBSU5nZDBuNnY3ZDM3cEFIU28yYnBtQ0pyUXhzTWRvTmltZkxKbTVmTnJ3Z3didGZoOUdleEdOYm5oLVh6VF90TGh3WXJ0cmtXUVVkanZLVWwzSHRPNWVNdmtZV2NZVTJhSTQ5Z1o5WWdBM1VaTHl2ZVBtWXNrdWEtUE4ydU1mNlNjbVBWOGNLR0d5OA?oc=5",
+      "content": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship &nbsp;&nbsp; The Times of India",
+      "publishedAt": "2026-11-24T14:34:00.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Stanwood dancers travel to Prague for world tap dance contest - HeraldNet.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3RLMUtYNlpuaEpHYVpFazRWU0FYSldCeXpZaEhvY0hvWEUwdUIxQjZkZHJsOXFCenhjXzFrNTlJM3dVQldaUGd0cnlZcldRM2JJMHRrbU5tSEtIU0xFbGJ2ODN1TVVyUi1xNExoRDZub1BidlctTkotNkctcFNKS3pEYUVUM2loTEZsZDZLMUF5Q0ZTUVdiUDhyb2dKRHhN?oc=5",
+      "content": "Stanwood dancers travel to Prague for world tap dance contest &nbsp;&nbsp; HeraldNet.com",
+      "publishedAt": "2026-11-24T06:42:20.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "In Harlem, The Trade War Reaches The Dance Floor - Harlem World Magazine",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMl9OVG0ta2hOcEJXeUlvajFuTE9RcVY3ZkRUQm1ObTJHUTdUY1FNMTR1alhZUkZJZ0RfTzJ4cWRtc0dkV1RaR0ROc0RNNEZ4VWJTZC1UM3VTQTBFWnJ4ZUp0dGFkQWVEVndhUVdRSElRRWs5NmdSSzVzMlpfcy0yUlFLbThwSHU4eVExVg?oc=5",
+      "content": "In Harlem, The Trade War Reaches The Dance Floor &nbsp;&nbsp; Harlem World Magazine",
+      "publishedAt": "2026-11-23T21:31:04.000Z",
+      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
