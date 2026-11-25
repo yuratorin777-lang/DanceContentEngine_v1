@@ -1,0 +1,234 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-25T17:23:15.738Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 41,
+    "uniqueFacts": 23,
+    "duplicatesRemoved": 18,
+    "classifiedFacts": 23,
+    "relevantSignals": 5,
+    "durationMs": 1960
+  },
+  "distribution": {
+    "LOCAL_DANCE": 2,
+    "CORE_DANCE": 3
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 258,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 5,
+      "durationMs": 253,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 6,
+      "durationMs": 358,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 343,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 429,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 315,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Мушкетеры, танцы и пещерные медведи — исторический фестиваль для детей пройдет в Екатеринбурге - Европейско-Азиатские Новости",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdG9wWGhlM2ZoeUt0aUVBc1VOWWNTS0tIU2w4QXdVRUtneVQ2Y0Y1QTVZMDNnQVU5ZmFaZWVkN2N4V1daU282TVVoT1ZTT1Z6NEIyQU0xRENGdm5LNWR5ckFCZHU1aWNfMWltVG1xZDlEM3RUUXNoMC1pSUV1WGJoczB3ckF6UUhMTTU1XzRFTURHNWtYbHgyZDVwRTZDWVlsRU44dEgtVzJrZVV5bkozNzRGTmdoR0JJWm9kNGJyT21WZ180RnVmRHlFOHZXSUpGRklIa1dQNDZiZw?oc=5",
+      "content": "Мушкетеры, танцы и пещерные медведи — исторический фестиваль для детей пройдет в Екатеринбурге &nbsp;&nbsp; Европейско-Азиатские Новости",
+      "publishedAt": "2026-11-25T07:56:18.000Z",
+      "collectedAt": "2026-11-25T17:23:14.291Z",
+      "analysis": {
+        "relevance": 100,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "CHILD_DEVELOPMENT": [
+            "детей"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "фестиваль",
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "европ"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1a2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Танцоры из Ферзиковского округа стали троекратными победителями на Всероссийском фестивале - Сайт газеты Калужской области \"Весть\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTUFREeFQxRTBFdTJnUHFVQ1Y5bmg0alhsTXBNRkRpcE9KX2l6OUdOMW9VVGRVVzVNNGczbkNHekZTcGRQcDZqbFNVTXB3Q0JDcHc?oc=5",
+      "content": "Танцоры из Ферзиковского округа стали троекратными победителями на Всероссийском фестивале &nbsp;&nbsp; Сайт газеты Калужской области \"Весть\"",
+      "publishedAt": "2026-11-25T08:16:45.000Z",
+      "collectedAt": "2026-11-25T17:23:14.291Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Irish dancers wanted for Lisa McGee's new Netflix comedy \"Jig\" - IrishCentral",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaXZkQXJwWWQ3NVA3RjBJWG5fRURYLTB6THFkM2RoUm9STFpRQ3RTVF91NmNKTHh2VjlEU3J0ZGxFQnZ2QVlCRmlfNHVETkJLSFZfbXJWTFFTRXlrTXUxRzUwNlBoVXRZcUt4dlBVUGF2WmszNEMtajktNjE2SnJSeE1hX3pYdWpwNktoTEpFenrSAZABQVVfeXFMT2l2ZEFycFlkNzVQN0YwSVhuX0VEWC0wekxxZDNkaFJvUkxaUUN0U1RfdTZjSkx4dlY5RFNydGRsRUJ2dkFZQkZpXzR1RE5CS0hWX21yVkxRU0V5a011MUc1MDZQaFV0WXFLeHZQVVBhdlprMzRDLWo5LTYxNkpyUnhNYV96WHVqcDZLaExKRXp6?oc=5",
+      "content": "Irish dancers wanted for Lisa McGee's new Netflix comedy \"Jig\" &nbsp;&nbsp; IrishCentral",
+      "publishedAt": "2026-11-25T04:10:15.000Z",
+      "collectedAt": "2026-11-25T17:23:14.991Z",
+      "analysis": {
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2pidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Gukesh vs Sindarov Live Updates, World Chess Championship 2026 Game 2: Indian Grandmaster opens with Lond - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOSC1BR05yZzNtTXY5c2R5T3pyWklCODZESHlsN1RKN3h0SlVUQXhEMnRELVFoQ2pTaVVncHJEUDlDWE9zWVRwbjRVdUpxY0JqaVh4VWZtNW5Kc0kzTzRweHJHZUFKWVRBWVVSMl9wYWx6bDNPMVVKeXMtMVVMSG5SeHUzRmVkdVRnMFMtaDVuRUdhdE16NVF4SWxBakRzTzlYa3JSV2lUMno2Slk3NnhRa0hEOWRNanM4UG9VUDZ2Mm5vam9zckhTQ0wyaFlacE1KUWFkOVdKZEVxLVJLTW9ORmlWOTNLcDhEVGFjNnBwQ2djZmpnMGhKRlhLNjhIbXNZWGxGZDItYWM1V1o1TTkwTnM0czFGWjBXeTREdUNTUlNZeFpaUkt1b1o3ZVhFM2xPUmV6bWo2VUg1d9IBvwJBVV95cUxQSDVheDRNMGVMcDJEcUpNTGhaWEJjdFJmbXlTdkVRMng3d2hMbjhjMWVFNHFBb1I1YTEwXzFJcFh2Y1hZUEgyRDE2Zk0zZXFCSEIzcmNERnM3WkpUNVJPWVJjbUZlOWVqWThSRFE3WXgxbDZnTE5mU256MHJ5RUZ6V2VsQzBzU2xuTklpdFctbnhmcG40MGduN3ZKYnZISTNPWFcyRDNJbk10Q3BnSVFQWDkxTDlHNUFra0d1czZLMWhscVpYS3RvTk56ZmM0MHlvUS15WUZveXdFX3RBOTRBcW9TVndWdEItUE81RUxwdWpxV2NXdUJSOUYxakRrdUk1WjBpaEtWV3RkLTlPNUtMTFJ1c2EtVW53OU5iZ2UwNXJuaWt1cHVjQU12YVhZQzZGSWxMZlpnNUlfT3dEX1hZ?oc=5",
+      "content": "Gukesh vs Sindarov Live Updates, World Chess Championship 2026 Game 2: Indian Grandmaster opens with Lond &nbsp;&nbsp; The Times of India",
+      "publishedAt": "2026-11-25T14:14:00.000Z",
+      "collectedAt": "2026-11-25T17:23:14.991Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Niwot twins compete among world's best bikers at Enduro Championships in Italy - Left Hand Valley Courier",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV3NlQ0xnb2ZXclBqUTN4TV9ndHpocEhJS0VoUWJGR1pCOVJzMTNtSzRhc20yLXJNWnBBX25kaWFVY0xpRmhuUHMyTDlDaFlydWFOLXRGbDJKV0JVOVhXWi0ybUhJX19qVDVteFFlREpkUU5idVpSOGdGTHM4UG9QQmhnUTRxbmc2dThUb2piTnppdXh1NGZZZkJMXzE0QjhQQjl5NGk0d0dIWjNmMTB0R09SRExaa3pDWWhuTWdQRVFldVBKMldtZkE5QQ?oc=5",
+      "content": "Niwot twins compete among world's best bikers at Enduro Championships in Italy &nbsp;&nbsp; Left Hand Valley Courier",
+      "publishedAt": "2026-11-25T13:56:19.000Z",
+      "collectedAt": "2026-11-25T17:23:14.992Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}

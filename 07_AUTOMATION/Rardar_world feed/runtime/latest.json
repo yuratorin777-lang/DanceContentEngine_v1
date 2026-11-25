@@ -1,7 +1,7 @@
 {
   "engine": "DanceContentEngine Radar / World Feed",
   "version": "1.1.0",
-  "runAt": "2026-11-24T17:55:19.007Z",
+  "runAt": "2026-11-25T17:23:15.738Z",
   "realWorldData": true,
   "focus": {
     "local": [
@@ -15,87 +15,97 @@
     "sourcesConfigured": 6,
     "sourcesSucceeded": 6,
     "sourcesFailed": 0,
-    "rawFacts": 33,
-    "uniqueFacts": 17,
-    "duplicatesRemoved": 16,
-    "classifiedFacts": 17,
+    "rawFacts": 41,
+    "uniqueFacts": 23,
+    "duplicatesRemoved": 18,
+    "classifiedFacts": 23,
     "relevantSignals": 5,
-    "durationMs": 1847
+    "durationMs": 1960
   },
   "distribution": {
-    "CORE_DANCE": 3,
-    "DANCE_WORLD": 2
+    "LOCAL_DANCE": 2,
+    "CORE_DANCE": 3
   },
   "sourceBreakdown": [
     {
       "source": "Google News — Серпухов дети танцы",
       "ok": true,
       "count": 0,
-      "durationMs": 251,
+      "durationMs": 258,
       "error": null
     },
     {
       "source": "Google News — детские танцы Россия",
       "ok": true,
-      "count": 2,
-      "durationMs": 262,
+      "count": 5,
+      "durationMs": 253,
       "error": null
     },
     {
       "source": "Google News — dance children development",
       "ok": true,
-      "count": 1,
-      "durationMs": 335,
+      "count": 6,
+      "durationMs": 358,
       "error": null
     },
     {
       "source": "Google News — dance world championships",
       "ok": true,
       "count": 15,
-      "durationMs": 345,
+      "durationMs": 343,
       "error": null
     },
     {
       "source": "Google News — child physical activity",
       "ok": true,
       "count": 15,
-      "durationMs": 379,
+      "durationMs": 429,
       "error": null
     },
     {
       "source": "Google News — dance health injury",
       "ok": true,
       "count": 0,
-      "durationMs": 267,
+      "durationMs": 315,
       "error": null
     }
   ],
   "signals": [
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkMGZ2eDNs",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyZ2ZidnY5",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
       "sourceWeight": 0.9,
-      "title": "World Darts Championship contenders: 6 players to watch in 2026/27 - Dave.Sport",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KSkQxZGdMd2EzMExuaGFCbEJzcWl0ZlFibTZSM2ZaX3NOZDF2alZTdDdmcVBDVURVTndfNlBSdldTN0xHaUNsYUFRa2FYeExiWVFtNGxCZWVmdlBYSHg5NmEwQi14WG9vN3BOYl9GdlVUYTRIWlI0?oc=5",
-      "content": "World Darts Championship contenders: 6 players to watch in 2026/27 &nbsp;&nbsp; Dave.Sport",
-      "publishedAt": "2026-11-24T11:00:00.000Z",
-      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "title": "Мушкетеры, танцы и пещерные медведи — исторический фестиваль для детей пройдет в Екатеринбурге - Европейско-Азиатские Новости",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdG9wWGhlM2ZoeUt0aUVBc1VOWWNTS0tIU2w4QXdVRUtneVQ2Y0Y1QTVZMDNnQVU5ZmFaZWVkN2N4V1daU282TVVoT1ZTT1Z6NEIyQU0xRENGdm5LNWR5ckFCZHU1aWNfMWltVG1xZDlEM3RUUXNoMC1pSUV1WGJoczB3ckF6UUhMTTU1XzRFTURHNWtYbHgyZDVwRTZDWVlsRU44dEgtVzJrZVV5bkozNzRGTmdoR0JJWm9kNGJyT21WZ180RnVmRHlFOHZXSUpGRklIa1dQNDZiZw?oc=5",
+      "content": "Мушкетеры, танцы и пещерные медведи — исторический фестиваль для детей пройдет в Екатеринбурге &nbsp;&nbsp; Европейско-Азиатские Новости",
+      "publishedAt": "2026-11-25T07:56:18.000Z",
+      "collectedAt": "2026-11-25T17:23:14.291Z",
       "analysis": {
-        "relevance": 72,
+        "relevance": 100,
         "relevanceLevel": "HIGH",
-        "primaryCategory": "CORE_DANCE",
+        "primaryCategory": "LOCAL_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
+            "танц"
           ],
-          "ACTIVITY_CONTEXT": [
-            "sport"
+          "CHILD_DEVELOPMENT": [
+            "детей"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "фестиваль",
+            "танц"
+          ],
+          "DANCE_WORLD": [
+            "европ"
+          ],
+          "CONTENT_SIGNAL": [
+            "нов"
           ]
         },
         "context": {
-          "local": false,
-          "russia": false,
+          "local": true,
+          "russia": true,
           "global": true
         },
         "isFact": true,
@@ -103,25 +113,53 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlma2Z2eDNs",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1a2Z2eDNs",
+      "source": "Google News — детские танцы Россия",
+      "sourceScope": "RUSSIA",
+      "sourceWeight": 0.9,
+      "title": "Танцоры из Ферзиковского округа стали троекратными победителями на Всероссийском фестивале - Сайт газеты Калужской области \"Весть\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTUFREeFQxRTBFdTJnUHFVQ1Y5bmg0alhsTXBNRkRpcE9KX2l6OUdOMW9VVGRVVzVNNGczbkNHekZTcGRQcDZqbFNVTXB3Q0JDcHc?oc=5",
+      "content": "Танцоры из Ферзиковского округа стали троекратными победителями на Всероссийском фестивале &nbsp;&nbsp; Сайт газеты Калужской области \"Весть\"",
+      "publishedAt": "2026-11-25T08:16:45.000Z",
+      "collectedAt": "2026-11-25T17:23:14.291Z",
+      "analysis": {
+        "relevance": 59,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "LOCAL_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "танц"
+          ],
+          "LOCAL_ECOSYSTEM": [
+            "танц"
+          ]
+        },
+        "context": {
+          "local": true,
+          "russia": true,
+          "global": false
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlrYWZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "New Performance to Star at the 2026 POSA World Championships - italiani.it",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZU1BMYU5lcmh2RjBkLVZCRUlzSWdKUHkzTTBselVKRlU0NWRIUjgtd3ZJYjJweXZwM0lGUlRERi1weFFPYmRxeVRDRFVFV0IwdkpCN19PYkZKUlRpN29ISWVOZ0JvZi1CV1ZqdTBrbkVBR2NHUWQ4VVlCUUxjUQ?oc=5",
-      "content": "New Performance to Star at the 2026 POSA World Championships &nbsp;&nbsp; italiani.it",
-      "publishedAt": "2026-11-24T05:45:50.000Z",
-      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "title": "Irish dancers wanted for Lisa McGee's new Netflix comedy \"Jig\" - IrishCentral",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaXZkQXJwWWQ3NVA3RjBJWG5fRURYLTB6THFkM2RoUm9STFpRQ3RTVF91NmNKTHh2VjlEU3J0ZGxFQnZ2QVlCRmlfNHVETkJLSFZfbXJWTFFTRXlrTXUxRzUwNlBoVXRZcUt4dlBVUGF2WmszNEMtajktNjE2SnJSeE1hX3pYdWpwNktoTEpFenrSAZABQVVfeXFMT2l2ZEFycFlkNzVQN0YwSVhuX0VEWC0wekxxZDNkaFJvUkxaUUN0U1RfdTZjSkx4dlY5RFNydGRsRUJ2dkFZQkZpXzR1RE5CS0hWX21yVkxRU0V5a011MUc1MDZQaFV0WXFLeHZQVVBhdlprMzRDLWo5LTYxNkpyUnhNYV96WHVqcDZLaExKRXp6?oc=5",
+      "content": "Irish dancers wanted for Lisa McGee's new Netflix comedy \"Jig\" &nbsp;&nbsp; IrishCentral",
+      "publishedAt": "2026-11-25T04:10:15.000Z",
+      "collectedAt": "2026-11-25T17:23:14.991Z",
       "analysis": {
-        "relevance": 72,
-        "relevanceLevel": "HIGH",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 41,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
+            "dance"
           ],
           "CONTENT_SIGNAL": [
             "new"
@@ -137,25 +175,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWkyd2pidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1Z2pidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQZjhQV2tZUWoxVnJ2SDVGYk16RUczU1dHNC15b05SbGRlZDJzOFg2M2VKY1VITmxkVWlLUFNyOUF4Q0pMX2dvYUNNOWFtNUJfdV9CQnEyVFJFRFduc3NnV1hYaVMyQlhRa0M5cUdQMkJOOEFMQnpEUDVpamplcTgwUlk4NDV4ejE3RVhIdnRiQ0pEV29VN2tpY295UTNZb09IYWZ5el9jZ0RDc052UC1MMlA0WHNBVjU2TjIwdDlZM2w0Sl8tamF1b3Y4UmdXdi1xNHJ4SDk3MzUxSmZDbEN1WjJuV2VqMk81UnFLWWpLLXVJeDlOM0dCZUI5dkhndGh6cVVlVUkteFFNeTdyaFROMGcxc2EwTExBcVdDcG5qU1lGNFpnLTdtWTBqWlh6bkRXR0N6ZW1iMkxBdzRVdnlkbkM4TlFJLW9FVzRpVmZianF0aFZsTHJTUFNZQdIBkAJBVV95cUxQMzdES19JTU1qZG1kYWpibWtYSS1MalY5OGR5djJjY08wNnlNU2k5aG8tNUFCVHpEeXlhdnNZX2RuZlJubkZMV2FYQUVZUm10NEZfVkVUUzFYbGxSdHU1Uno1NUxyUDFlbV9fb3pVSnJ5ZnZLVnpwdFkzOWZmSldpQ1ZfMzRBSU5nZDBuNnY3ZDM3cEFIU28yYnBtQ0pyUXhzTWRvTmltZkxKbTVmTnJ3Z3didGZoOUdleEdOYm5oLVh6VF90TGh3WXJ0cmtXUVVkanZLVWwzSHRPNWVNdmtZV2NZVTJhSTQ5Z1o5WWdBM1VaTHl2ZVBtWXNrdWEtUE4ydU1mNlNjbVBWOGNLR0d5OA?oc=5",
-      "content": "WWE megastar Charlotte Flair says fans will 'hate her' in pursuit of 15th WWE World Championship &nbsp;&nbsp; The Times of India",
-      "publishedAt": "2026-11-24T14:34:00.000Z",
-      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "title": "Gukesh vs Sindarov Live Updates, World Chess Championship 2026 Game 2: Indian Grandmaster opens with Lond - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOSC1BR05yZzNtTXY5c2R5T3pyWklCODZESHlsN1RKN3h0SlVUQXhEMnRELVFoQ2pTaVVncHJEUDlDWE9zWVRwbjRVdUpxY0JqaVh4VWZtNW5Kc0kzTzRweHJHZUFKWVRBWVVSMl9wYWx6bDNPMVVKeXMtMVVMSG5SeHUzRmVkdVRnMFMtaDVuRUdhdE16NVF4SWxBakRzTzlYa3JSV2lUMno2Slk3NnhRa0hEOWRNanM4UG9VUDZ2Mm5vam9zckhTQ0wyaFlacE1KUWFkOVdKZEVxLVJLTW9ORmlWOTNLcDhEVGFjNnBwQ2djZmpnMGhKRlhLNjhIbXNZWGxGZDItYWM1V1o1TTkwTnM0czFGWjBXeTREdUNTUlNZeFpaUkt1b1o3ZVhFM2xPUmV6bWo2VUg1d9IBvwJBVV95cUxQSDVheDRNMGVMcDJEcUpNTGhaWEJjdFJmbXlTdkVRMng3d2hMbjhjMWVFNHFBb1I1YTEwXzFJcFh2Y1hZUEgyRDE2Zk0zZXFCSEIzcmNERnM3WkpUNVJPWVJjbUZlOWVqWThSRFE3WXgxbDZnTE5mU256MHJ5RUZ6V2VsQzBzU2xuTklpdFctbnhmcG40MGduN3ZKYnZISTNPWFcyRDNJbk10Q3BnSVFQWDkxTDlHNUFra0d1czZLMWhscVpYS3RvTk56ZmM0MHlvUS15WUZveXdFX3RBOTRBcW9TVndWdEItUE81RUxwdWpxV2NXdUJSOUYxakRrdUk1WjBpaEtWV3RkLTlPNUtMTFJ1c2EtVW53OU5iZ2UwNXJuaWt1cHVjQU12YVhZQzZGSWxMZlpnNUlfT3dEX1hZ?oc=5",
+      "content": "Gukesh vs Sindarov Live Updates, World Chess Championship 2026 Game 2: Indian Grandmaster opens with Lond &nbsp;&nbsp; The Times of India",
+      "publishedAt": "2026-11-25T14:14:00.000Z",
+      "collectedAt": "2026-11-25T17:23:14.991Z",
       "analysis": {
-        "relevance": 68,
-        "relevanceLevel": "MEDIUM",
-        "primaryCategory": "DANCE_WORLD",
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
             "championship"
-          ],
-          "DANCE_WORLD": [
-            "world championship"
           ]
         },
         "context": {
@@ -168,50 +203,22 @@
       }
     },
     {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlvYWZidnY5",
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl5d2ZidnY5",
       "source": "Google News — dance world championships",
       "sourceScope": "GLOBAL",
       "sourceWeight": 0.9,
-      "title": "Stanwood dancers travel to Prague for world tap dance contest - HeraldNet.com",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3RLMUtYNlpuaEpHYVpFazRWU0FYSldCeXpZaEhvY0hvWEUwdUIxQjZkZHJsOXFCenhjXzFrNTlJM3dVQldaUGd0cnlZcldRM2JJMHRrbU5tSEtIU0xFbGJ2ODN1TVVyUi1xNExoRDZub1BidlctTkotNkctcFNKS3pEYUVUM2loTEZsZDZLMUF5Q0ZTUVdiUDhyb2dKRHhN?oc=5",
-      "content": "Stanwood dancers travel to Prague for world tap dance contest &nbsp;&nbsp; HeraldNet.com",
-      "publishedAt": "2026-11-24T06:42:20.000Z",
-      "collectedAt": "2026-11-24T17:55:18.358Z",
+      "title": "Niwot twins compete among world's best bikers at Enduro Championships in Italy - Left Hand Valley Courier",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV3NlQ0xnb2ZXclBqUTN4TV9ndHpocEhJS0VoUWJGR1pCOVJzMTNtSzRhc20yLXJNWnBBX25kaWFVY0xpRmhuUHMyTDlDaFlydWFOLXRGbDJKV0JVOVhXWi0ybUhJX19qVDVteFFlREpkUU5idVpSOGdGTHM4UG9QQmhnUTRxbmc2dThUb2piTnppdXh1NGZZZkJMXzE0QjhQQjl5NGk0d0dIWjNmMTB0R09SRExaa3pDWWhuTWdQRVFldVBKMldtZkE5QQ?oc=5",
+      "content": "Niwot twins compete among world's best bikers at Enduro Championships in Italy &nbsp;&nbsp; Left Hand Valley Courier",
+      "publishedAt": "2026-11-25T13:56:19.000Z",
+      "collectedAt": "2026-11-25T17:23:14.992Z",
       "analysis": {
         "relevance": 36,
         "relevanceLevel": "LOW",
         "primaryCategory": "CORE_DANCE",
         "matchedCategories": {
           "CORE_DANCE": [
-            "dance"
-          ]
-        },
-        "context": {
-          "local": false,
-          "russia": false,
-          "global": true
-        },
-        "isFact": true,
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlqYWZidnY5",
-      "source": "Google News — dance world championships",
-      "sourceScope": "GLOBAL",
-      "sourceWeight": 0.9,
-      "title": "In Harlem, The Trade War Reaches The Dance Floor - Harlem World Magazine",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMl9OVG0ta2hOcEJXeUlvajFuTE9RcVY3ZkRUQm1ObTJHUTdUY1FNMTR1alhZUkZJZ0RfTzJ4cWRtc0dkV1RaR0ROc0RNNEZ4VWJTZC1UM3VTQTBFWnJ4ZUp0dGFkQWVEVndhUVdRSElRRWs5NmdSSzVzMlpfcy0yUlFLbThwSHU4eVExVg?oc=5",
-      "content": "In Harlem, The Trade War Reaches The Dance Floor &nbsp;&nbsp; Harlem World Magazine",
-      "publishedAt": "2026-11-23T21:31:04.000Z",
-      "collectedAt": "2026-11-24T17:55:18.358Z",
-      "analysis": {
-        "relevance": 36,
-        "relevanceLevel": "LOW",
-        "primaryCategory": "CORE_DANCE",
-        "matchedCategories": {
-          "CORE_DANCE": [
-            "dance"
+            "championship"
           ]
         },
         "context": {
