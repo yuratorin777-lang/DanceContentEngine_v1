@@ -1,0 +1,137 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-26T17:03:08.239Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 34,
+    "uniqueFacts": 10,
+    "duplicatesRemoved": 24,
+    "classifiedFacts": 10,
+    "relevantSignals": 2,
+    "durationMs": 1959
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 252,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 4,
+      "durationMs": 268,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 306,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 447,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 361,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 322,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWltZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Lakeside Calling – Your Guide to the 2026 WDF World Championship - Darts World Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTVgyOGVMemFOTzR5Q1pXSm01SmFxblhOS3pndGsxTV9WM2ZZekxhYk5Lbzk2ZC1KY2ZXUTMwVXlyYndGUXBIYUJvMkVnRldJcXpGYWl6ZzQyX0NOT3RwcFR1alh1YTJlYmRCRzkxazh1aHNDb2pMNXdvZm9XUzN6Z1plMlNTMDJkRTZnVk55Q0lVQzg3eUtGRXFn?oc=5",
+      "content": "Lakeside Calling – Your Guide to the 2026 WDF World Championship &nbsp;&nbsp; Darts World Magazine",
+      "publishedAt": "2026-11-26T08:17:56.000Z",
+      "collectedAt": "2026-11-26T17:03:07.554Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "guide"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWluZ2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Miller’s MotoGP farewell: His last dance – in Phillip Island colours - SPEEDWEEK.com",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcVVKLTRJUUY1am03OFhocUk3ZV9mc2hKdFBXQ1VyQS1nRXVhSDRyWVROcUNiTmw4OS1XMGFxaXJSNHlkNGRBQ2NqVElFdW91enFaSVZ1MHAyTFRzQ0tCaHJVTTdZenVEME53MkJrb3NHYkk2VHRvbml6SFNJTzRtWnFIUFZPS0NiMkR4d2NyQUJBbEZsWUdWNHQ2MkxFZw?oc=5",
+      "content": "Miller’s MotoGP farewell: His last dance – in Phillip Island colours &nbsp;&nbsp; SPEEDWEEK.com",
+      "publishedAt": "2026-11-26T08:57:01.000Z",
+      "collectedAt": "2026-11-26T17:03:07.554Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
