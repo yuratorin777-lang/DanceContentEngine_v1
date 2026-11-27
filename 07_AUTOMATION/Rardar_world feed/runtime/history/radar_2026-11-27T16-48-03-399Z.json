@@ -1,0 +1,197 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-27T16:48:03.399Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 31,
+    "uniqueFacts": 17,
+    "duplicatesRemoved": 14,
+    "classifiedFacts": 17,
+    "relevantSignals": 4,
+    "durationMs": 1764
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "CORE_DANCE": 2,
+    "ADJACENT_DOMAIN": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 298,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 242,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 0,
+      "durationMs": 307,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 322,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 15,
+      "durationMs": 307,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 285,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl3d2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Marc Marquez Retires Shortly After Winning His 8th MotoGP World Championship Title - blue News",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPblJHLXNFQ0FDaW9sLXhDTzc1V2xQVHREMG44dWJfbTJQbG12dzI4TUtRRVk2b0QyNGRTV3dyM2x2TEZsdTRuUkxXYXVKVDVEaXFuMnZ2eDh1dTdvR0N0VTQwVlBVTVY5QWtjenJIQWo1X05rWGZ1ak1LLTlxM0hlQ0FFTzVSc1h2OXdlTmJ6azRTX3NxcE05UDVfODV6WXIyWlo5U3V4S20xZHc4YVg2bTNxM1dfZmlYSDl6NmZneWNTdTQ?oc=5",
+      "content": "Marc Marquez Retires Shortly After Winning His 8th MotoGP World Championship Title &nbsp;&nbsp; blue News",
+      "publishedAt": "2026-11-27T13:14:57.000Z",
+      "collectedAt": "2026-11-27T16:48:02.805Z",
+      "analysis": {
+        "relevance": 72,
+        "relevanceLevel": "HIGH",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world championship"
+          ],
+          "CONTENT_SIGNAL": [
+            "new"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl2YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "2026-11 - Wits law student crowned world tap dance champion - Wits University",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTW1SSG1EM3NiWmtGZGx5eVh0MEthSk5GVERyaHUwdTBtZjhWNkdWOE5SU0x6NFpoMEhhQVVLUTJCNUxfX0xaUEkyNGd4Z29YUUFJc25vTDVaX2ZrV3RzSVljS1EzMlJxbnB3eHVFOFV1MmFxQ3NSbWpid3BOQ1M1Z1NzSmlxOGJhTHlxVmlxa01aVVhQTlhabHotemtvWkE3d2dyU01FbldYYjF5cXpUMVVkT2pidWpBSkh0eQ?oc=5",
+      "content": "2026-11 - Wits law student crowned world tap dance champion &nbsp;&nbsp; Wits University",
+      "publishedAt": "2026-11-27T11:06:42.000Z",
+      "collectedAt": "2026-11-27T16:48:02.805Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "dance"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWllMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "SNK World Finals 2026: $4M+ event overview, FATAL FURY and KOF XV results - Esports.gg",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XS1pTclZ4TjN4ckxnSkVPQ2htQUViNnZGdEtZZ3ZORWg5cmc2ODBtMmpiRnAtY0tpd0FBOUttWnJmeGlFcHdNekFKTklyNHBwTFNmSFhFNFFmV2Z3dGxaMVRyTzl4Qm4zeFpFSjJCVzJhSDhweWtoSzhyQQ?oc=5",
+      "content": "SNK World Finals 2026: $4M+ event overview, FATAL FURY and KOF XV results &nbsp;&nbsp; Esports.gg",
+      "publishedAt": "2026-11-27T13:49:10.000Z",
+      "collectedAt": "2026-11-27T16:48:02.805Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "DANCE_WORLD": [
+            "world final"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl1YWZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Adalyn Weber Is Grateful To Perform At ISDTA High School Championships - Raccoon Valley Radio",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMUZvOWxSSExwX05FTmNVdnlCaFZxTkEtQXRQNFhOTzhPVUVWRVhVSk94N3dLdlBaZGFTVUdWczNGR0NXS0tGU2JHRzN6RFI4LWNRWlpkMzhDa3dvVkQ0bk1HekJ4X1ZZbzE5MmdNbzF4TU9lQXF6cFprYlJfRDNoNXg5SkxfU0oxVll5TFFteVlTc0VBeUVsZXpnQlB4NmFuNjdMZ3F0RE8xeHRYYU9XNEJSZjdZWnJF?oc=5",
+      "content": "Adalyn Weber Is Grateful To Perform At ISDTA High School Championships &nbsp;&nbsp; Raccoon Valley Radio",
+      "publishedAt": "2026-11-27T13:13:02.000Z",
+      "collectedAt": "2026-11-27T16:48:02.806Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
