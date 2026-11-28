@@ -1,0 +1,166 @@
+{
+  "engine": "DanceContentEngine Radar / World Feed",
+  "version": "1.1.0",
+  "runAt": "2026-11-28T15:39:46.360Z",
+  "realWorldData": true,
+  "focus": {
+    "local": [
+      "Серпухов",
+      "Московская область",
+      "Россия"
+    ],
+    "globalFeed": true
+  },
+  "statistics": {
+    "sourcesConfigured": 6,
+    "sourcesSucceeded": 6,
+    "sourcesFailed": 0,
+    "rawFacts": 25,
+    "uniqueFacts": 16,
+    "duplicatesRemoved": 9,
+    "classifiedFacts": 16,
+    "relevantSignals": 3,
+    "durationMs": 1838
+  },
+  "distribution": {
+    "DANCE_WORLD": 1,
+    "ADJACENT_DOMAIN": 1,
+    "CORE_DANCE": 1
+  },
+  "sourceBreakdown": [
+    {
+      "source": "Google News — Серпухов дети танцы",
+      "ok": true,
+      "count": 0,
+      "durationMs": 279,
+      "error": null
+    },
+    {
+      "source": "Google News — детские танцы Россия",
+      "ok": true,
+      "count": 1,
+      "durationMs": 251,
+      "error": null
+    },
+    {
+      "source": "Google News — dance children development",
+      "ok": true,
+      "count": 2,
+      "durationMs": 351,
+      "error": null
+    },
+    {
+      "source": "Google News — dance world championships",
+      "ok": true,
+      "count": 15,
+      "durationMs": 389,
+      "error": null
+    },
+    {
+      "source": "Google News — child physical activity",
+      "ok": true,
+      "count": 7,
+      "durationMs": 299,
+      "error": null
+    },
+    {
+      "source": "Google News — dance health injury",
+      "ok": true,
+      "count": 0,
+      "durationMs": 264,
+      "error": null
+    }
+  ],
+  "signals": [
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWktd2ZidnY5",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Concacaf W Championship format: How does Women's World Cup qualification work? - Central Oregon Daily",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPT0xiN3YwejZRck12QlpueHo2V3BQdUthbEUyRHZlNlpwY1plNG5mNk9VVEQ1b2ZQUEpaRHN6X1QtX0VwVGlmcHU3ZkZRSTlqR3UyNUZjcFVIQV9obzd4SFJId0RxTFRDbWpPT3ZIcVZzSjhyelBkLW94OHR4VnJWQ05RSzdQbklzODlUdnJCemxTRnJOcDFUdlBpUUlaQTRjWEdHclRvQzdlcGJ3Y0dDT1FHU0p0R1RRbVZVZGtqcVhQdmxOYTc0QjY3R1ZoZ1NzaWtjT082NGF4cDIwSDcwa08tZFIwcjhhVThjNUVrWlFQM2M0eFZMdVV0Zw?oc=5",
+      "content": "Concacaf W Championship format: How does Women's World Cup qualification work? &nbsp;&nbsp; Central Oregon Daily",
+      "publishedAt": "2026-11-27T18:23:51.000Z",
+      "collectedAt": "2026-11-28T15:39:45.795Z",
+      "analysis": {
+        "relevance": 68,
+        "relevanceLevel": "MEDIUM",
+        "primaryCategory": "DANCE_WORLD",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ],
+          "DANCE_WORLD": [
+            "world cup"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWlkMGZ2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Ilia Malinin fights for NHK Trophy title, extends Grand Prix figure skating win streak - NBC Sports",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE52VUY1elVRTUQzZVZBMVJ5eHFPRU9vTWozd1p1RVdITkNNWU02YkRhMWJGNDZRSUs2TXRSYVN4cHNrQ2h2NVpINi0zRXRpTEhhWklITlpOQTZqdVdKblpPYnkzR0tKRTk4QzVSRDZOZmlVZDA5eldr?oc=5",
+      "content": "Ilia Malinin fights for NHK Trophy title, extends Grand Prix figure skating win streak &nbsp;&nbsp; NBC Sports",
+      "publishedAt": "2026-11-28T12:45:36.000Z",
+      "collectedAt": "2026-11-28T15:39:45.794Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "ADJACENT_DOMAIN",
+        "matchedCategories": {
+          "DANCE_WORLD": [
+            "grand prix"
+          ],
+          "ACTIVITY_CONTEXT": [
+            "sport"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdzLmdvb2dsZS5jb20vcnNzL2FydGljbGVzL2NibWl4a2Z2eDNs",
+      "source": "Google News — dance world championships",
+      "sourceScope": "GLOBAL",
+      "sourceWeight": 0.9,
+      "title": "Agius to bow out of Moto2 from pole as Championship twists again - www.motogp.com",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5FaDdoa2EyOEJuLUgxRHlKTWRLMzVTVFRZLUdmckdPdkN6ZnowV3Bya3h6MWtqWmhaZHZPSFk2c08wZXF2ejNDSlRzNXRQeHd6OVpoYUZJLUlBOWZRVmc?oc=5",
+      "content": "Agius to bow out of Moto2 from pole as Championship twists again &nbsp;&nbsp; www.motogp.com",
+      "publishedAt": "2026-11-28T14:08:59.000Z",
+      "collectedAt": "2026-11-28T15:39:45.794Z",
+      "analysis": {
+        "relevance": 36,
+        "relevanceLevel": "LOW",
+        "primaryCategory": "CORE_DANCE",
+        "matchedCategories": {
+          "CORE_DANCE": [
+            "championship"
+          ]
+        },
+        "context": {
+          "local": false,
+          "russia": false,
+          "global": true
+        },
+        "isFact": true,
+        "confidence": 0.8
+      }
+    }
+  ]
+}
